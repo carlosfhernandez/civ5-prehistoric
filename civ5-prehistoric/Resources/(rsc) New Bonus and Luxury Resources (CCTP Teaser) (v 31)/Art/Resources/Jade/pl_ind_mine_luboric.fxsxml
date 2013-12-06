@@ -1,0 +1,26 @@
+<Asset>
+  <Mesh file="pl_ind_mine_luboric.gr2"/>
+  <Texture file="Dirt_Rubble_DIFF.dds"/>
+  <Texture file="Dirt_Rubble_SREF.dds"/>
+  <Texture file="Generic_Grey_8.dds"/>
+  <Texture file="Mine_Decal_H.dds"/>
+  <Texture file="Mine_Decal_S.dds"/>
+  <Texture file="PL_IND_Mine_Hill_DIFF.dds"/>
+  <Texture file="PL_IND_Mine_Hill_SREF.dds"/>
+  <Texture file="PL_MED_Mine_DIFF.dds"/>
+  <Texture file="PL_MED_Mine_SREF.dds"/>
+  <Texture file="PL_Plantation_MID_DIFF.dds"/>
+  <Texture file="Plantation_MID_DIFF.dds"/>
+  <Texture file="Plantation_MID_SREF.dds"/>
+  <Texture file="Resource_Irradiance.dds"/>
+  <Texture file="Rubble_SREF.dds"/>
+  <Texture file="resource_Environment_Sharp.dds"/>
+  <Texture file="resources_Environment_Dull.dds"/>
+  <Texture file="luboric_rubble_diff.dds"/>
+  <Texture file="pl_mine_luboric_decal_d.dds"/>
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <TimedTrigger file="FX_Triggers_PL_MED_Mine_Copper.ftsxml" source="Tool" model="Object18" state="0,1,2,3" />
+  <BoneUsage>
+    <Bone name="FX_PillagedSmoke" />
+  </BoneUsage>
+</Asset>

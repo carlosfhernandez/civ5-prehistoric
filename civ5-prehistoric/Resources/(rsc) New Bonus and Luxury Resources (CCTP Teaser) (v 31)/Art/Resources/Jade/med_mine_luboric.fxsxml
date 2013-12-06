@@ -1,0 +1,22 @@
+<Asset>
+  <Mesh file="med_mine_luboric.gr2"/>
+  <Texture file="Dirt_Rubble_DIFF.dds"/>
+  <Texture file="Dirt_Rubble_SREF.dds"/>
+  <Texture file="Generic_Grey_8.dds"/>
+  <Texture file="MID_Mine_Hill_DIFF.dds"/>
+  <Texture file="MID_Mine_Hill_SREF.dds"/>
+  <Texture file="Mine_Decal_H.dds"/>
+  <Texture file="Mine_Decal_S.dds"/>
+  <Texture file="Plantation_MID_DIFF.dds"/>
+  <Texture file="Plantation_MID_SREF.dds"/>
+  <Texture file="Resource_Irradiance.dds"/>
+  <Texture file="Rubble_SREF.dds"/>
+  <Texture file="resources_Environment_Dull.dds"/>
+  <Texture file="Unit_Environment_Dull.dds"/>
+  <Texture file="Unit_Environment_Sharp.dds"/>
+  <Texture file="Unit_Irradiance.dds"/>
+  <Texture file="luboric_rubble_diff.dds"/>
+  <Texture file="luboric_ore_diff.dds"/>
+  <Texture file="Copper_ore_SREF.dds"/>
+  <Texture file="mine_luboric_decal_d.dds"/>
+</Asset>

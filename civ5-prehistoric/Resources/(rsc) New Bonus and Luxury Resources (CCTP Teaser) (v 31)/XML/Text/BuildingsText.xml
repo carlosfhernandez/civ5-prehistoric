@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/14/2013 11:25:45 AM -->
+<GameData>
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_TEMPLE"/>
+			<Set Help="TXT_KEY_BUILDING_TEMPLE_HELP"/>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_AMPHITHEATER"/>
+			<Set Help="TXT_KEY_BUILDING_AMPHITHEATER_HELP"/>
+		</Update>
+	</Buildings>
+	<Language_en_US>
+		<Update>
+			<Set Text ="+15% [ICON_PRODUCTION] Production when building Land Units.[NEWLINE][NEWLINE]Each source of [ICON_RES_IRON] Iron [ICON_TIN] Tin [ICON_MANGANESE] Manganese worked by this City produces +1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]City must have a mined source of Iron nearby."/>
+			<Where Tag ="TXT_KEY_BUILDING_FORGE_HELP"/>
+		</Update>
+		<Update>
+			<Set Text ="Each source of [ICON_RES_WHEAT][ICON_RES_BANANA][ICON_RES_DEER][ICON_BARLEY][ICON_CORN] worked by this City produce +1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization."/>
+			<Where Tag ="TXT_KEY_BUILDING_GRANARY_HELP"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CARAVANSARY_HELP"/>
+			<Set Text="Land trade routes originating from this city have a 50% increase in range and produce an additional 2 [ICON_GOLD] Gold when connecting to another civilization.[NEWLINE][NEWLINE]Each source of [ICON_TEA][ICON_COFFEE][ICON_CACAO][ICON_TOBACCO] worked by this City produce +1 [ICON_GOLD] Gold.[NEWLINE Each source of [ICON_MANGO] Mango worked by this City produce +1 [ICON_FOOD] Food."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FACTORY_HELP"/>
+			<Set Text="Requires 1 [ICON_RES_COAL] Coal.[NEWLINE][NEWLINE]Each source of [ICON_TITANIUM] worked by this City + 2 [ICON_PRODUCTION] Production."/>
+		</Update>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_AMPHITHEATER_HELP</Tag>
+			<Text>Each source of [ICON_FLAX] Flax worked by this City produce +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_TEMPLE_HELP</Tag>
+			<Text>Each source of [ICON_ALOEVERA] worked by this City produce +1 [ICON_GOLD] Gold and [ICON_WILDBERRIES] produce +1 [ICON_FOOD] Food.</Text>
+		</Row>
+	</Language_en_US>  
+</GameData>

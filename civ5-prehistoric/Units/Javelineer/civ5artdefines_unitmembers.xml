@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<UnitMemberArtInfos>
+	<UnitMemberArtInfo>
+		<Type>ART_DEF_UNIT_MEMBER_MALI_SOFA_MOD</Type>
+		<fScale>0.14</fScale>
+		<Granny>ZuluJavelineer.fxsxml</Granny>
+		<Combat>
+			<Defaults>ART_DEF_TEMPLATE_ARCHER</Defaults>
+			<Weapon>
+				<WeaponTypeTag>ARROW</WeaponTypeTag>
+				<WeaponTypeSoundOverrideTag>ARROW</WeaponTypeSoundOverrideTag>
+				<fProjectileSpeed>5.3</fProjectileSpeed>
+			</Weapon>
+		</Combat>
+		<MaterialTypeTag>CLOTH</MaterialTypeTag>
+		<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+	</UnitMemberArtInfo>
+</UnitMemberArtInfos>	

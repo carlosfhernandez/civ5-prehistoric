@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+GoodyHuts
+
+Copied from Expansion 2 with modifications. Potential problem with updates not 
+reflecting (e.g. new goody huts). At the same time, just modifying existing rows
+(e.g. deleting and/or editing) could pose a different problem with an update (new
+row) if there is, as an example, an overpowered attribute that doesn't play
+nice with prehistoric assumptions. 
+
+[CFH] I went the safer route.
+-->
+<GameData>
+	
+	<GoodyHuts>
+		
+		<!-- Reset all Goody Huts -->
+		<Delete/>
+		
+		<!-- 
+		TODO: [CFH] Change Goody Huts after certain era/tech is reached 
+		Goody Huts will eventaully yield different values depending on prehistoric era.
+		-->
+		
+    
+		<Row>
+			<ID>0</ID>
+			<Type>GOODY_WARRIOR</Type>
+			<Description>TXT_KEY_GOODY_WARRIOR</Description>
+			<Sound>AS2D_GOODY_WARRIOR</Sound>
+			<UnitClass>UNITCLASS_CAVEMAN</UnitClass>
+		</Row>
+		
+    <!-- 
+    TODO: [CFH] Delete was working, but rows were starting count at later numbers (e.g. 19), 
+    so hard-coding row IDs for now. 
+    -->
+    
+		<Row>
+      <ID>1</ID>
+			<Type>GOODY_POPULATION</Type>
+			<Description>TXT_KEY_GOODY_POPULATION</Description>
+			<Sound/>
+			<Population>1</Population>
+		</Row>
+		
+		<Row>
+      <ID>2</ID>
+			<Type>GOODY_CULTURE</Type>
+			<Description>TXT_KEY_GOODY_CULTURE</Description>
+			<Sound/>
+			<Culture>5</Culture> <!-- orig: 20 -->
+		</Row>
+
+		<Row>
+      <ID>3</ID>
+			<Type>GOODY_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>40</Gold>
+			<NumGoldRandRolls>2</NumGoldRandRolls>
+			<GoldRandAmount>11</GoldRandAmount>
+		</Row>
+		
+		<Row>
+      <ID>4</ID>
+			<Type>GOODY_MAP</Type>
+			<Description>TXT_KEY_GOODY_MAP</Description>
+			<Sound>AS2D_GOODY_MAP</Sound>
+			<MapOffset>4</MapOffset>
+			<MapRange>4</MapRange>
+			<MapProb>80</MapProb>
+		</Row>
+		
+		<Row>
+      <ID>5</ID>
+			<Type>GOODY_TECH</Type>
+			<Description>TXT_KEY_GOODY_TECH</Description>
+			<Sound/>
+			<Tech>true</Tech>
+		</Row>
+		
+		<Row>
+      <ID>6</ID>
+			<Type>GOODY_REVEAL_RESOURCE</Type>
+			<Description>TXT_KEY_GOODY_REVEAL_RESOURCE</Description>
+			<Sound/>
+			<RevealUnknownResource>true</RevealUnknownResource>
+		</Row>
+		
+		<Row>
+      <ID>7</ID>
+			<Type>GOODY_UPGRADE_UNIT</Type>
+			<Description>TXT_KEY_GOODY_UPGRADE_UNIT</Description>
+			<Sound/>
+			<UpgradeUnit>true</UpgradeUnit>
+		</Row>
+		
+		<Row>
+      <ID>8</ID>
+			<Type>GOODY_BARBARIANS_WEAK</Type>
+			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<Bad>true</Bad>
+			<BarbarianUnitClass>UNITCLASS_CAVEMAN</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
+			<MinBarbarians>1</MinBarbarians>
+		</Row>
+		
+		<Row>
+      <ID>9</ID>
+			<Type>GOODY_BARBARIANS_STRONG</Type>
+			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<Bad>true</Bad>
+			<BarbarianUnitClass>UNITCLASS_BERSERKER</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
+			<MinBarbarians>2</MinBarbarians>
+		</Row>
+		
+		<Row>
+      <ID>10</ID>
+			<Type>GOODY_LOW_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>30</Gold>
+			<NumGoldRandRolls>1</NumGoldRandRolls> <!-- orig: 5 -->
+			<GoldRandAmount>11</GoldRandAmount>
+		</Row>
+		
+		<Row>
+      <ID>11</ID>
+			<Type>GOODY_HIGH_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>40</Gold> <!-- orig: 100 -->
+			<NumGoldRandRolls>5</NumGoldRandRolls> <!-- orig: 10 -->
+			<GoldRandAmount>11</GoldRandAmount>
+		</Row>
+		
+		<Row>
+      <ID>12</ID>
+			<Type>GOODY_SETTLER</Type>
+			<Description>TXT_KEY_GOODY_SETTLER</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<UnitClass>UNITCLASS_SETTLER</UnitClass>
+		</Row>
+		
+		<Row>
+      <ID>13</ID>
+			<Type>GOODY_SCOUT</Type>
+			<Description>TXT_KEY_GOODY_SCOUT</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<UnitClass>UNITCLASS_SCOUT</UnitClass>
+		</Row>
+		
+		<Row>
+      <ID>14</ID>
+			<Type>GOODY_WORKER</Type>
+			<Description>TXT_KEY_GOODY_WORKER</Description>
+			<Sound>AS2D_GOODY_WORKER</Sound>
+			<UnitClass>UNITCLASS_LABORER</UnitClass>
+		</Row>
+		
+		<Row>
+      <ID>15</ID>
+			<Type>GOODY_EXPERIENCE</Type>
+			<Description>TXT_KEY_GOODY_EXPERIENCE</Description>
+			<Sound>AS2D_GOODY_XP</Sound>
+			<Experience>9</Experience>
+		</Row>
+		
+		<Row>
+      <ID>16</ID>
+			<Type>GOODY_HEALING</Type>
+			<Description>TXT_KEY_GOODY_HEALING</Description>
+			<Sound>AS2D_GOODY_HEAL</Sound>
+			<Healing>100</Healing>
+			<DamagePrereq>60</DamagePrereq>
+		</Row>
+		
+	</GoodyHuts>
+  
+  
+</GameData>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_HERDSMAN</Type>
+			<Description>TXT_KEY_UNIT_HERDSMAN</Description>
+			<DefaultUnit>UNIT_HERDSMAN</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_HERDSMAN_SHEEP</Type>
+			<Description>TXT_KEY_UNIT_HERDSMAN_SHEEP</Description>
+			<DefaultUnit>UNIT_HERDSMAN_SHEEP</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_HERDSMAN_COW</Type>
+			<Description>TXT_KEY_UNIT_HERDSMAN_COW</Description>
+			<DefaultUnit>UNIT_HERDSMAN_COW</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_HERDSMAN_HORSE</Type>
+			<Description>TXT_KEY_UNIT_HERDSMAN_HORSE</Description>
+			<DefaultUnit>UNIT_HERDSMAN_HORSE</DefaultUnit>
+		</Row>
+	</UnitClasses>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_HERDSMAN</Class>
+			<Type>UNIT_HERDSMAN</Type>
+			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
+			<Cost>100</Cost>
+			<Moves>2</Moves>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HERDSMAN</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_HERDSMAN_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_HERDSMAN_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_HERDSMAN</Help>
+			<AdvancedStartCost>20</AdvancedStartCost>
+			<WorkRate>100</WorkRate>
+			<CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT_HERDSMEN</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <UnitFlagAtlas>UNITS_HERDSMEN_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNITS_HERDSMEN_ICON_ATLAS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
+		<Row>
+			<Class>UNITCLASS_HERDSMAN_SHEEP</Class>
+			<Type>UNIT_HERDSMAN_SHEEP</Type>
+			<Cost>-1</Cost>
+			<Moves>1</Moves>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HERDSMAN_SHEEP</Description>
+			<ShowInPedia>false</ShowInPedia>
+			<WorkRate>100</WorkRate>
+			<CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT_HERDSMEN_CATTLE</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <UnitFlagAtlas>UNITS_HERDSMEN_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNITS_HERDSMEN_ICON_ATLAS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
+		<Row>
+			<Class>UNITCLASS_HERDSMAN_COW</Class>
+			<Type>UNIT_HERDSMAN_COW</Type>
+			<Cost>-1</Cost>
+			<Moves>1</Moves>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HERDSMAN_COW</Description>
+			<ShowInPedia>false</ShowInPedia>
+			<WorkRate>100</WorkRate>
+			<CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT_HERDSMEN_CATTLE</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <UnitFlagAtlas>UNITS_HERDSMEN_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNITS_HERDSMEN_ICON_ATLAS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
+		<Row>
+			<Class>UNITCLASS_HERDSMAN_HORSE</Class>
+			<Type>UNIT_HERDSMAN_HORSE</Type>
+			<Cost>-1</Cost>
+			<Moves>2</Moves>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HERDSMAN_HORSE</Description>
+			<ShowInPedia>false</ShowInPedia>
+			<WorkRate>100</WorkRate>
+			<UnitArtInfo>ART_DEF_UNIT_HERDSMEN_HORSES</UnitArtInfo>
+      <UnitFlagAtlas>UNITS_HERDSMEN_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNITS_HERDSMEN_ICON_ATLAS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+      <MoveRate>QUADRUPED</MoveRate>
+			<Combat>2</Combat>
+			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+			<XPValueAttack>1</XPValueAttack>
+			<XPValueDefense>1</XPValueDefense>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<UnitAIType>UNITAI_UNKNOWN</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_SHEEP</UnitType>
+			<UnitAIType>UNITAI_UNKNOWN</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_COW</UnitType>
+			<UnitAIType>UNITAI_UNKNOWN</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_HORSE</UnitType>
+			<UnitAIType>UNITAI_UNKNOWN</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_PASTURE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_CAMP</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_REMOVE_MARSH</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_REPAIR</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<BuildType>BUILD_RUSTLE</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_HERDSMAN_SHEEP</UnitType>
+			<BuildType>BUILD_UNRUSTLE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_COW</UnitType>
+			<BuildType>BUILD_UNRUSTLE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_HORSE</UnitType>
+			<BuildType>BUILD_UNRUSTLE</BuildType>
+		</Row>
+	</Unit_Builds>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_SHEEP</UnitType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_COW</UnitType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_HORSE</UnitType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_HERDSMAN</UnitClassType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+
+	<UnitGameplay2DScripts>
+		<Row>
+			<UnitType>UNIT_HERDSMAN</UnitType>
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_COW</UnitType>
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_HORSE</UnitType>
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HERDSMAN_SHEEP</UnitType>
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+	</UnitGameplay2DScripts>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_HERDSMAN">
+			<Text>Herdsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HERDSMAN_SHEEP">
+			<Text>Herdsman (with sheep)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HERDSMAN_COW">
+			<Text>Herdsman (with cows)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HERDSMAN_HORSE">
+			<Text>Herdsman (with horses)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_HERDSMAN">
+			<Text>Can relocate Sheep, Cows and Horses.  Can also build Pastures and Camps.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_ANTIQUITY_HERDSMAN_HEADING">
+			<Text>Herdsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_ANTIQUITY_HERDSMAN_TEXT">
+			<Text>Can relocate Sheep, Cows and Horses.  Can also build Pastures and Camps.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HERDSMAN_STRATEGY">
+			<Text>Can relocate Sheep, Cows and Horses.  Can also build Pastures and Camps.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<GameData>
+	<ArtDefine_StrategicView>
+		<Replace>
+			<StrategicViewType>ART_DEF_UNIT_MALI_SOFA_MOD</StrategicViewType>
+			<TileType>Unit</TileType>
+			<Asset>sv_Mali_Unit_Mod.dds</Asset>
+		</Replace>
+	</ArtDefine_StrategicView>
+</GameData>

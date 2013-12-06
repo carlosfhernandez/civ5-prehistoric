@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/10/2012 10:54:22 AM -->
+<GameData>
+	
+	
+
+	<Resources>
+
+    <!-- NEW RESOURCES -->
+    
+    <!--
+    Clay
+    Limestone
+    
+    
+    -->
+    
+
+    
+    
+    <!-- TECH REVEALS -->
+
+    
+    <!-- Tech: Simple Tools -->
+
+    <Update>
+      <Where Type="RESOURCE_STONE" />
+      <Set TechReveal="TECH_SIMPLE_TOOLS" />
+    </Update>
+
+
+    <!-- Tech: Gathering -->
+    <!-- Camp -->
+    <Update>
+      <Where Type="RESOURCE_BANANA" />
+      <Set TechReveal="TECH_GATHERING" />
+    </Update>    
+    
+    
+    <!-- Tech: Hunting -->
+    
+    <Update>
+      <Where Type="RESOURCE_DEER" />
+      <Set TechReveal="TECH_HUNTING_GATHERING" />
+    </Update>    
+
+
+    <!-- Tech: Harpooning -->
+
+    <Update>
+      <Where Type="RESOURCE_PEARLS" />
+      <Set TechReveal="TECH_HARPOONING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_CRAB" />
+      <Set TechReveal="TECH_HARPOONING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_FISH" />
+      <Set TechReveal="TECH_HARPOONING" />
+    </Update>
+
+
+    <!-- Tech: Tool Specialization -->
+
+
+
+
+    <!-- Tech: Art -->
+    
+    <Update>
+      <Where Type="RESOURCE_DYE" />
+      <Set TechReveal="TECH_ART" />
+    </Update>    
+    
+    
+    <!-- Tech: Agriculture -->
+    <!-- Worker, Farm -->
+    <Update>
+      <Where Type="RESOURCE_WHEAT" />
+      <Set TechReveal="TECH_AGRICULTURE" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_SUGAR" />
+      <Set TechReveal="TECH_AGRICULTURE" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_CITRUS" />
+      <Set TechReveal="TECH_AGRICULTURE" />
+    </Update>
+
+
+    <!-- Tech: Pottery -->
+    <!-- Granary -->
+    <Update>
+      <Where Type="RESOURCE_PORCELAIN" />
+      <Set TechReveal="TECH_POTTERY" />
+    </Update>
+    
+
+    <!-- Tech: Trapping -->
+    <!-- Circus -->
+    <Update>
+      <Where Type="RESOURCE_FUR" />
+      <Set TechReveal="TECH_TRAPPING" />
+    </Update>
+    
+
+    <!-- Tech: Trading -->
+    
+    <Update>
+      <Where Type="RESOURCE_IVORY" />
+      <Set TechReveal="TECH_TRADING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_INCENSE" />
+      <Set TechReveal="TECH_TRADING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_TRUFFLES" />
+      <Set TechReveal="TECH_TRADING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_SPICES" />
+      <Set TechReveal="TECH_TRADING" />
+    </Update>
+    
+    
+    <!-- Tech: Mining -->
+    <!-- Construct a Mine, Chop Down a Forest -->
+    <Update>
+      <Where Type="RESOURCE_SILVER" />
+      <Set TechReveal="TECH_MINING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_GOLD" />
+      <Set TechReveal="TECH_MINING" />
+    </Update>    
+    <Update>
+      <Where Type="RESOURCE_SALT" />
+      <Set TechReveal="TECH_MINING" />
+    </Update>
+
+
+    <!-- Tech: Numbers -->
+    <Update>
+      <Where Type="RESOURCE_SILK" />
+      <Set TechReveal="TECH_NUMBERS" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_SPICES" />
+      <Set TechReveal="TECH_NUMBERS" />
+    </Update>    
+
+
+    <!-- Tech: Animal Domestication -->
+    <Update>
+      <Where Type="RESOURCE_COW" />
+      <Set TechReveal="TECH_ANIMAL_DOMESTICATION" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_SHEEP" />
+      <Set TechReveal="TECH_ANIMAL_DOMESTICATION" />
+    </Update>
+
+    
+    <!-- The Wheel -->
+    <!-- Chariot Archer, Water Mill, Contruct a Road -->
+    <Update>
+      <Where Type="RESOURCE_COTTON" />
+      <Set TechReveal="TECH_THE_WHEEL" />
+    </Update>
+    
+
+    <!-- Tech: Mineralogy -->
+    <Update>
+      <Where Type="RESOURCE_GEMS" />
+      <Set TechReveal="TECH_MINERALOGY" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_JEWELRY" />
+      <Set TechReveal="TECH_MINERALOGY" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_MARBLE" />
+      <Set TechReveal="TECH_MINERALOGY" />
+    </Update>
+
+
+    <!-- Tech: Sailing -->
+    <!-- Work Boat, Trireme, Cargo Ship, Fish Boats, Embassies -->
+    <Update>
+      <Where Type="RESOURCE_WHALE" />
+      <Set TechReveal="TECH_SAILING" />
+    </Update>
+    
+    
+    <!-- Tech: Calendar -->
+    <!-- Stonehenge, Stone Works, Plantation -->
+
+    
+    <!-- Tech: Caravaning -->
+    <Update>
+      <Where Type="RESOURCE_WINE" />
+      <Set TechReveal="TECH_CARAVANING" />
+    </Update>
+
+
+    <!-- Tech: Husbandry -->
+    <Update>
+      <Where Type="RESOURCE_HORSE" />
+      <Set TechReveal="TECH_ANIMAL_HUSBANDRY" />
+    </Update>
+
+
+    <!-- Tech: Bronze Working -->
+    <!-- TODO: New Bronze era and tech -->
+    <Update>
+      <Where Type="RESOURCE_COPPER" />
+      <Set TechReveal="TECH_BRONZE_WORKING" />
+    </Update>
+    <!-- TODO: Move Iron -->
+    <Update>
+      <Where Type="RESOURCE_IRON" />
+      <Set TechReveal="TECH_BRONZE_WORKING" />
+    </Update>
+
+
+
+
+
+
+  </Resources>
+  
+  
+</GameData>

@@ -1,0 +1,11 @@
+<Asset>
+  <Mesh file="Amber.gr2" source="Max" />
+  <Texture file="Stone_ore_Decal_H.dds" source="Max" />
+  <Texture file="Generic_Grey_8.dds" source="Max" />
+  <Texture file="Amber_Decal_DIFF.dds" source="Max" />
+  <Texture file="Amber_ore_DIFF.dds" source="Max" />
+  <Texture file="Amber_ore_SREF.dds" source="Max" />
+  <Texture file="Unit_Environment_Dull.dds" source="Max" />
+  <Texture file="Unit_Environment_Sharp.dds" source="Max" />
+  <Texture file="Unit_Irradiance.dds" source="Max" />
+</Asset>

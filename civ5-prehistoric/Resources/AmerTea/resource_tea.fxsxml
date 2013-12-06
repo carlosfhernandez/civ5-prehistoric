@@ -1,0 +1,9 @@
+<Asset>
+  <Mesh file="resource_tea.gr2" source="Max" />
+  <Texture file="Desert_rock_DIFF.dds" source="Max" />
+  <Texture file="Desert_rock_SREF.dds" source="Max" />
+  <Texture file="Generic_Grey_8.dds" source="Max" />
+  <Texture file="Plant_Resource_Shadows.dds" source="Max" />
+  <Texture file="resource_tea_diff.dds" source="Max" />
+  <Texture file="resource_tea_sref.dds" source="Max" />
+</Asset>

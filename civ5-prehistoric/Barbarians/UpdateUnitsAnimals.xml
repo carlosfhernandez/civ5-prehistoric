@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2012-02-14 2:10:16 AM -->
+<GameData>
+	<Table name="Unit_TerrainNatives">
+		<Column name="UnitType" type="text" reference="Units(Type)"/>
+		<Column name="TerrainType" type="text" reference="Terrains(Type)"/>
+	</Table>
+	<Table name="Unit_FeatureNatives">
+		<Column name="UnitType" type="text" reference="Units(Type)"/>
+		<Column name="FeatureType" type="text" reference="Features(Type)"/>
+	</Table>
+</GameData>

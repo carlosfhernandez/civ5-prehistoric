@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/21/2013 12:44:58 PM -->
+<GameData>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>HA_BUILDINGS_A</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>HA_BuildingIcons_A_2048.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HA_BUILDINGS_A</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>HA_BuildingIcons_A_1024.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HA_BUILDINGS_A</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>HA_BuildingIcons_A_512.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HA_BUILDINGS_A</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>HA_BuildingIcons_A_640.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HA_BUILDINGS_A</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>HA_BuildingIcons_A_360.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

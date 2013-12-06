@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_PRIMITIVE_ARCHER</Type>
+			<Description>TXT_KEY_UNIT_PRIMITIVE_ARCHER</Description>
+			<DefaultUnit>UNIT_PRIMITIVE_ARCHER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+  
+	<Units>
+	  <Row>
+		  <Class>UNITCLASS_PRIMITIVE_ARCHER</Class>
+		  <Type>UNIT_PRIMITIVE_ARCHER</Type>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+		  <Combat>2</Combat>
+      <RangedCombat>4</RangedCombat>
+		  <Cost>14</Cost>
+		  <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+		  <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+		  <Domain>DOMAIN_LAND</Domain>
+		  <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+		  <Description>TXT_KEY_UNIT_PRIMITIVE_ARCHER</Description>
+      <Civilopedia>TXT_KEY_UNIT_PRIMITIVE_ARCHER_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_PRIMITIVE_ARCHER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_PRIMITIVE_ARCHER_HELP</Help>
+		  <MilitarySupport>true</MilitarySupport>
+		  <MilitaryProduction>true</MilitaryProduction>
+		  <Pillage>true</Pillage>
+		  <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+		  <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+		  <AdvancedStartCost>10</AdvancedStartCost>
+		  <XPValueAttack>3</XPValueAttack>
+		  <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_PRIMITIVE_ARCHER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>8</PortraitIndex>
+    </Row>
+	</Units>
+  
+	<Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+	</Unit_AITypes>
+  
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+			<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+  
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+  </Unit_Flavors>
+
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER">
+      <Text>Primitive Archer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_TEXT">
+      <Text>When man started walking upright and using the most basic tools he realized
+that some of these tools were not only helpful for self sustenance, hunting, and
+bettering his life, but could also be used as weapons that were more effective
+than simple brawling and biting.
+[NEWLINE]
+[NEWLINE]Throwing rocks and hurling them with other tools, like slings, were
+effective but not as accurate as the first bow.
+[NEWLINE]The first bows had equivalent range as their sling counterparts, but had
+more points of lethal contact. It was also easier to establish
+competency, although it did take longer to make.
+[NEWLINE]
+[NEWLINE]These first projectile weapons gave man a much greater range of threat both
+in hunting and in combat. Raids on other groups could now be started and
+supported with bows from the perimiter. The first bows now gave man the
+ability to hide in brush without having to expose himself as with the
+sling. It was also much more lethal throwing rocks.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_STRATEGY">
+      <Text>Primitive Archers are very weak in offense and especially defense. They should be next to another unit to attack since they can easily be overwhelmed in melee. This is still a small advantage since they will typically not receive retaliation damage and therefore should be used a support unit with other melee units.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_HELP">
+      <Text>
+A weak early ranged unit, using the most primitive of bows. Cheap and self-sufficient.
+      </Text>
+    </Row>
+  </Language_en_US>
+
+
+</GameData>

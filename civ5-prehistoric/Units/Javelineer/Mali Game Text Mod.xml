@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_MALI_SOFA_MOD">
+			<Text>Sofa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MALI_SOFA_MOD_HELP">
+			<Text>Skirmisher Unit excelling at hit-and-run tactics and supporting your army. Only Mali may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MALI_SOFA_MOD_STRATEGY">
+			<Text>The Sofa is the Mali unique unit, replacing the Crossbowman. As a Ranged unit it can deal significant damage to other Medieval Era units up to two hexes away, but it is vulnerable to melee attack. It serves as an excellent support unit starting with the Medic I promotion and the ability to move after firing on the enemy. The Sofa has a slightly higher defensive strength, but is weaker at ranged combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_MALI_SOFA_MOD_PEDIA">
+			<Text>By the time Ibn Battuta visited the Mali Empire during the reign of Mansa Suleyman, an elite corps among the military known as the farari ("braves") was present at court. These men were an outgrowth of the ton-tigui ("quiver-masters") that had fought alongside Sundjata and his immediate predecessors. Each farariya was a cavalry commander with officers and warriors beneath him.  All farari, like the ton-tigui of Sundjata's generation, were accompanied by jonow ("slaves") who followed on foot and cared for their master’s horses. These jonow were known as sofas, and they would have supplied their ton-tigui with extra javelins in the middle of battle or guarded his getaway horse if retreat was necessary. In fact, the word sofa translates as "horse father"; guardian of the horse.[NEWLINE][NEWLINE]The role of the sofa in Mali warfare changed dramatically after the reign of Sundjata from mere baggage handler to full-fledged warriors. A sofa was equipped by the state, whereas the horon (a royal relative or nobleman) brought their weapons. Sofa armies could be used to intimidate unfaithful governors, and they formed a majority of the infantry by the 15th century. Though imperial Mali was initially a horon-run army, its reliance on jonow as administrators and officers gradually transformed the character of its military.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALI_TREASURY_MOD">
+			<Text>Treasury</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALI_TREASURY_MOD_HELP">
+			<Text>Each source of [ICON_RES_GOLD] Gold, [ICON_RES_SILVER] Silver, or [ICON_RES_SALT] Salt worked by this city produces +2 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_GOLDEN_AGE] Golden Age Point for every 250 [ICON_GOLD] Gold in your [ICON_GOLD] Gold Reserves (up to a maximum of +4).[NEWLINE][NEWLINE]City must have at least one of these resources mined nearby.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALI_TREASURY_MOD_STRATEGY">
+			<Text>The Treasury can only be constructed in a city with improved gold, silver, or salt resources nearby. It increases the [ICON_GOLD] Gold output of each such resource the city has access to. Additionally, it hastens the progress towards your next [ICON_GOLDEN_AGE] Golden Age based off your total [ICON_GOLD] Gold reserves. Only Mali may build it.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDINGS_MALI_TREASURY_MOD_PEDIA">
+			<Text>The Mali Empire flourished because of trade above all else. It contained three immense gold mines within its borders unlike the Ghana Empire, which was only a transit point for gold. The empire taxed every ounce of gold or salt that entered its borders. By the beginning of the 14th century, Mali was the source of almost half the Old World's gold exported from mines in Bambuk, Boure and Galam.[NEWLINE][NEWLINE]Gold nuggets were the exclusive property of the Mansa, and were illegal to trade within his borders. All gold was immediately handed over to the imperial treasury in return for an equal value of gold dust. Gold dust had been weighed and bagged for use at least since the reign of the Ghana Empire. Mali borrowed the practice to stem inflation of the substance, since it was so prominent in the region. The most common measure for gold within the realm was the ambiguous mithqal (4.5 grams of gold). It is unclear if coined currency was used in the empire.[NEWLINE][NEWLINE]The next great unit of exchange in the Mali Empire was salt. Salt was as valuable, if not more valuable, than gold in Sub-Saharan Africa. It was cut into pieces and spent on goods with close to equal buying power throughout the empire. While it was as good as gold in the north, it was even better in the south. The people of the south needed salt for their diet, but it was extremely rare. The northern region on the other hand had no shortage of salt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_FIRST_GREETING_1">
+			<Text>Welcome, great ruler! Though I pay respect at your court, know that I kneel to no king but Allah.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_FIRST_GREETING_2">
+			<Text>Welcome to the Mali Empire! Here, have some gold. I've got plenty!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_DEFEATED_1">
+			<Text>All the gold and all the salt in the world could not buy me victory!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_DEFEATED_2">
+			<Text>What sin did I commit to deserve this fate? Did I not share my wealth with all who visited my court?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_DESC">
+			<Text>Mansa Musa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_LIVED">
+			<Text>ca. 1280 - 1337</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_NAME">
+			<Text>Mansa Musa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_SUBTITLE">
+			<Text>Leader of Mali</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TITLES_1">
+			<Text>Mansa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_1">
+			<Text>Musa I, commonly referred to as Mansa Musa, was the tenth Mansa or "King of Kings" of the Mali Empire. Upon reaching the throne Musa became a feverish Muslim, building countless mosques across the country and making Islam the state religion. The construction of madrasah, such as the University of Sankore, helped establish Mali as one of the learning centers of the Islamic world. Musa is perhaps most famous for his enormous wealth and is believed by many historians to have been the richest person to have ever lived. His famous hajj to Mecca is largely responsible for introducing Mali to the European world and not only caused an economic inflation in the Mediterranean but also indirectly supplied financial support for the Italian renaissance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_2">
+			<Text>Accession to the Throne</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_2">
+			<Text>What is known about the kings of the Mali Empire is taken from the writings of Arab scholars, including Al-Umari, Abu-sa'id Uthman ad-Dukkali, Ibn Khaldun, and Ibn Battuta. According to Ibn-Khaldun's comprehensive history of the Mali kings, Mansa Musa's grandfather was Abu-Bakr, a brother of Sundiata Keita, the founder of the Mali Empire as recorded through oral histories. Abu-Bakr did not ascend the throne, and his son, Musa's father, Faga Laye, has no significance in the History of Mali.[NEWLINE][NEWLINE]Mansa Musa came to the throne through the practice of appointing a deputy when a king goes on his pilgrimage to Mecca or some other endeavor, and later naming the deputy as heir. According to primary sources, Musa was appointed deputy of the king before him, who had reportedly embarked on an expedition to explore the limits of the Atlantic Ocean, and never returned. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_3">
+			<Text>Royal Hajj</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_3">
+			<Text>Musa was a devout Muslim and his pilgrimage to Mecca, a command ordained by Allah according to core teachings of Islam, made him well-known across northern Africa and the Middle East. To Musa, Islam was the foundation of the "cultured world of the Eastern Mediterranean". He would spend much time fostering the growth of Islam in his empire.[NEWLINE][NEWLINE]Musa made his pilgrimage in 1324, his procession reported to include 60,000 men, 12,000 slaves who each carried 4-lb. gold bars, heralds dressed in silks who bore gold staffs, organized horses and handled bags. Musa provided all necessities for the procession, feeding the entire company of men and animals. Also in the train were 80 camels, which varying reports claim carried between 50 and 300 pounds of gold dust each. He gave away the gold to the poor he met along his route. Musa not only gave to the cities he passed on the way to Mecca, including Cairo and Medina, but also traded gold for souvenirs. Furthermore, it has been recorded that he built a mosque each and every Friday.[NEWLINE][NEWLINE]Musa's journey was documented by several eyewitnesses along his route, who were in awe of his wealth and extensive procession, and records exist in a variety of sources, including journals, oral accounts, and histories. Musa is known to have visited with the Mamluk sultan Al-Nasir Muhammad of Egypt in July 1324.[NEWLINE][NEWLINE]Musa's generous actions, however, inadvertently devastated the economy of the region. In the cities of Cairo, Medina and Mecca, the sudden influx of gold devalued the metal for the next decade. Prices on goods and wares super inflated in an attempt to adjust to the newfound wealth that was spreading throughout local populations. To rectify the gold market, Musa borrowed all the gold he could carry from money-lenders in Cairo, at high interest. This is the only time recorded in history that one man directly controlled the price of gold in the Mediterranean.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_4">
+			<Text>Construction and Scholarship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_4">
+			<Text>It is recorded that Mansa Musa traveled through the cities of Timbuktu and Gao on his way to Mecca, and made them a part of his empire when he returned around 1325. He brought architects from Andalusia, a region in Spain, and Cairo to build his grand palace in Timbuktu and the great Djinguereber Mosque that still stands today.[NEWLINE][NEWLINE]Musa embarked on a large building program, raising mosques and madrasas in Timbuktu and Gao. Most famously the ancient center of learning Sankore Madrasah, or University of Sankore, was converted into a fully staffed Madrassa during his reign. The University was staffed with jurists, astronomers, and mathematicians. The university became a center of learning and culture, drawing Muslim scholars from around Africa and the Middle East to Timbuktu.[NEWLINE][NEWLINE]In Niani, he built the Hall of Audience, a building communicated by an interior door to the royal palace. It was "an admirable Monument" surmounted by a dome, adorned with arabesques of striking colours. The windows of an upper floor were plated with wood and framed in silver foil, those of a lower floor were plated with wood, framed in gold. Like the Great Mosque, a contemporaneous and grandiose structure in Timbuktu, the Hall was built of cut stone.[NEWLINE][NEWLINE]Timbuktu soon became a center of trade, culture, and Islam; markets brought in merchants from Hausaland, Egypt, and other African kingdoms, a university was founded in the city (as well as in the Mali cities of Djenne and Segou), and Islam was spread through the markets and university, making Timbuktu a new area for Islamic scholarship. News of the Mali Empire's city of wealth even traveled across the Mediterranean to southern Europe, where traders from Venice, Granada, and Genoa soon added Timbuktu to their maps to trade manufactured goods for gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_5">
+			<Text>Death and Legacy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_5">
+			<Text>The death of Mansa Musa is highly debated among modern historians and the Arab scholars who recorded history of Mali. When compared to the reigns of his successors, son Mansa Maghan (recorded rule from 1332 to 1336) and older brother Mansa Suleyman (recorded rule from 1336 to 1360), and Musa's recorded 25 years of rule, the calculated date of death is 1332. Other records declare Musa planned to abdicate the throne to his son Maghan, but he died soon after he returned from Mecca in 1325. Further, according to an account by Ibn-Khaldun, Mansa Musa was alive when the city of Tlemcen in Algeria was conquered in 1337, as he sent a representative to Algeria to congratulate the conquerors on their victory.[NEWLINE][NEWLINE]Mansa Musa's building program caused an intellectual and economic expansion that would continue into the later Middle Ages. It also established Mali as an economic "global power" and one of the intellectual capitals of the world. Mali became well known, attracting students as far as Europe and Asia. Mansa Musa is also credited with assisting the birth of Sudano-Sahelian architecture and the spread of Islamic religion in western Africa. His military campaigns allowed Mali to become the most powerful military on the continent rivaled only by Morocco and Egypt. His greatest legacy, however, was his royal hajj which not only caused an economic inflation in the Mediterranean but indirectly supplied financial support for the Italian renaissance.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_HEADING_6">
+			<Text>Factoid</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_MANSA_MUSA_MOD_TEXT_6">
+			<Text>Adjusting for inflation, Mansa Musa is the richest individual to have ever lived with an estimated net worth of $400 billion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_0">
+			<Text>Mahamane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_1">
+			<Text>Yacouba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_2">
+			<Text>Issa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_3">
+			<Text>Seydou</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_4">
+			<Text>Amadou</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_5">
+			<Text>Aminata</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_6">
+			<Text>Fatim</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_7">
+			<Text>Djeneba</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_8">
+			<Text>Kadiatou</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_MALI_MOD_9">
+			<Text>Massaba</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_NYENI">
+			<Text>Nyeni</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_KA_BA">
+			<Text>Ka-ba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_AWDAGHOST">
+			<Text>Awdaghost</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_TADMEKKET">
+			<Text>Tadmekket</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_TEKEDDA">
+			<Text>Tekedda</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_AGADEZ">
+			<Text>Agadez</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_KANO">
+			<Text>Kano</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_AWLI">
+			<Text>Awli</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_WADAN">
+			<Text>Wadan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_TEODENI">
+			<Text>Teodeni</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_KATSINA">
+			<Text>Katsina</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_ZARIA">
+			<Text>Zaria</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_BILMA">
+			<Text>Bilma</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_NGAZARGUMU">
+			<Text>Ngazargumu</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_TURA">
+			<Text>Tura</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_MULI">
+			<Text>Muli</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_TORON">
+			<Text>Toron</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_MOD_BAMAKO">
+			<Text>Bamako</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MALI_MOD_DESC">
+			<Text>Mali Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MALI_MOD_SHORT_DESC">
+			<Text>Mali</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MALI_MOD_ADJECTIVE">
+			<Text>Mali</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MALI_MOD">
+			<Text>Mali</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TITLE">
+			<Text>Mali</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_1">
+			<Text>One of the great centers of Islamic culture and wealth, Mali (one of sub-Saharan Africa's most ancient states) owes much of its reputation to its situation as a major trading center and to the tax that it levied on its trans-Saharan route. At its height in 1350, Mali was a confederation of 3 states - Mali, Memo, and Wagadou - and twelve garrisoned provinces. The Mansa ruled over 400 cities, towns and villages of various ethnicities and controlled a population of approximately 20 million people from the capital at Nyeni.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_2">
+			<Text>Climate and Terrain</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_2">
+			<Text>The Mali Empire was located on the Mandinka plateau in West Africa, and reached its largest size under the Laye Mansas. The empire's total area included nearly all the land within the western Sahara Desert up to Africa's western coastal forests. It spanned the modern-day countries of Senegal, southern Mauritania, Mali, northern Burkina Faso, western Niger, the Gambia, Guinea-Bissau, Guinea, the Ivory Coast and northern Ghana. By 1350, the empire covered approximately 439,400 square miles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_3">
+			<Text>Rise of an Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_3">
+			<Text>The Mali Empire was strategically located between the West African gold mines and the agriculturally rich Niger River floodplain.  Mali’s rise begins when the political leaders of Ghana could not reestablish that empire’s former glory following its conquest and occupation by the Almoravids in 1076. Consequently a number of small states vied to control the salt and gold trade that accounted for Ghana’s wealth and power. In 1235 Sundiata Keita, the leader of one of these states, Kangaba, defeated its principal rival, the neighboring kingdom of Susu, and began consolidating power in the region.  Sundiata’s conquest in 1235 is considered the founding of the Mali Empire. Under Sundiata’s successors Mali extended its control west to the Atlantic, south into the rain forest region, including the Wangara gold fields, and east beyond the great bend of the Niger River.[NEWLINE][NEWLINE]Modern oral traditions also related that the Mandinka kingdoms of Mali or Manden had already existed several centuries before Sundiata's unification as a small state just to the south of the Soninké empire of Wagadou, better known as the Ghana Empire. This area was composed of mountains, savannah and forest providing ideal protection and resources for the population of hunters. Those not living in the mountains formed small city-states such as Toron, Ka-Ba and Niani. The Keita dynasty from which nearly every Mali emperor came traces its lineage back to Bilal, the faithful muezzin of Islam's prophet Muhammad. It was common practice during the Middle Ages for both Christian and Muslim rulers to tie their bloodline back to a pivotal figure in their faith's history.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_4">
+			<Text>Economy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_4">
+			<Text>The Mali Empire flourished because of trade above all else. It contained three immense gold mines within its borders unlike the Ghana Empire, which was only a transit point for gold. The empire taxed every ounce of gold or salt that entered its borders. By the beginning of the 14th century, Mali was the source of almost half the Old World's gold exported from mines in Bambuk, Boure and Galam. The Sahelian and Saharan towns of the Mali Empire were organized as both staging posts in the long-distance caravan trade and trading centers for the various West African products.[NEWLINE][NEWLINE]Gold nuggets were the exclusive property of the Mansa, and were illegal to trade within his borders. All gold was immediately handed over to the imperial treasury in return for an equal value of gold dust. Gold dust had been weighed and bagged for use at least since the reign of the Ghana Empire. Mali borrowed the practice to stem inflation of the substance, since it was so prominent in the region. The most common measure for gold within the realm was the ambiguous mithqal (4.5 grams of gold). It is unclear if coined currency was used in the empire. Gold dust was used all over the empire, but was not valued equally in all regions.[NEWLINE][NEWLINE]The next great unit of exchange in the Mali Empire was salt. Salt was as valuable, if not more valuable than gold in Sub-Saharan Africa. It was cut into pieces and spent on goods with close to equal buying power throughout the empire. While it was as good as gold in the north, it was even better in the south. The people of the south needed salt for their diet, but it was extremely rare. The northern region on the other hand had no shortage of salt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_5">
+			<Text>Mansa Musa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_5">
+			<Text>The Mali Empire reached its zenith under the rule of Mansa Musa (1312-1337) in the early 14th century. Mansa Musa made a famous pilgrimage to Mecca in 1324 laden with gold and slaves to proclaim Mali's prosperity and power. It is said that he lavished so much wealth along his route that the price of gold was depressed for years afterwards.[NEWLINE][NEWLINE]On his return trip, Musa brought with him architects from throughout the Arab world. In doing so, he helped to create the Dogon style of architecture eptiomized by such famous landmarks as the University of Sankore and the Great Mosque of Djenne. Musa embarked on large construction programs in Gao, Timbuktu, and Niani creating an advanced level of urban living almost unmatched at the time. During Mansa Musa's rule Muslim scholarship reached new heights in Mali, and such cities as Timbuktu and Djenne became important centers of trade, learning, and culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_HEADING_6">
+			<Text>Songhai</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_TEXT_6">
+			<Text>After the decline of the Mali Empire, the territory became part of the Songhai Empire, which occupied an area covering parts of modern-day Guinea, Burkina Faso, Senegal, Mali, Mauritania, Niger, and Nigeria. Songhai was brought to an end and its territory usurped by the Moroccan invasion of 1591. With the decline of trans-Saharan trading routes in favor of naval commerce, the area enjoyed little strategic importance and was divided into small kingdoms for the next two centuries until the arrival of French colonists. Mali was absorbed into French West Africa in 1895. In 1960, together with what is now Senegal, it achieved independence as the Federation of Mali, although Senegal seceded after a few weeks.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_STATBOX">
+			<Text>[NEWLINE]        Leader: Mansa Musa[NEWLINE]        Unique Unit: Sofa[NEWLINE]        Unique Building: Treasury[NEWLINE][NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_FACTOID_HEADING">
+			<Text>Mali Factoids</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_FACTOID_TEXT">
+			<Text>At the end of the 13th century, the Mali Empire was the second largest empire in the world after the Mongol Empire.[NEWLINE][NEWLINE]The naming origins of the Mali Empire are complex and still debated in scholarly circles around the world. According to the traveler and scholar Chihab al-Umari, the official name of the empire was Nyeni (Niani), and that it took its name from the capital of the kingdom. Ibn Battuta, who also visited and wrote about the empire, referred to it simply as Mali. It is possible that this word is shorthand for the Malinke people who live in the region.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_DAWN_MANSA_MUSA_MOD_TEXT">
+			<Text>Praise to you Musa, Mansa of the Mali Empire, humble servant of God. You rule a land of limitless wealth at the heart of trans-Saharan trade. Rising from the ashes of the late Ghana Empire, the Mali astutely established themselves as the dominant force of West Africa. By converting to Islam, Great King, you established a legacy that would endure to this day. Timbuktu quickly became a center of trade and learning heralded throughout the Islamic world, and your famous hajj to Mecca cemented your empire's place in the hearts and minds of Europe. The Mali forever changed the cultural milieu of West Africa, spreading its language, laws, and customs along the Niger River. Yet, infighting would be Mali's downfall, leaving her weak and divided before the march of the Songhai.[NEWLINE][NEWLINE]King of Kings, you held claim to a vast wealth that to this day has never been surpassed. Your mere generosity threatened to bankrupt empires, and your piety inspired an architectural renaissance. What more could such a great king achieve? Can you build a civilization that will stand the test of time?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_ROYAL_HAJJ_MALI_MOD_SHORT">
+			<Text>Royal Hajj</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MALI_HOLY_CITY_BONUS">
+			<Text>Hajji</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MALI_HOLY_CITY_BONUS_HELP">
+			<Text>Has completed their Pilgrimage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_ROYAL_HAJJ_MALI_MOD">
+			<Text>[ICON_CONNECTED] City Connections generate +1 [ICON_PEACE] Faith. Great Prophets may visit a friendly foreign Holy City to generate a one-time [ICON_GOLD] Gold bonus (this does not consume the Unit).</Text>
+		</Row>
+		<!-- Dummy Buildings -->
+		<Row Tag="TXT_KEY_BUILDING_MALI_MOD_DUMMY_BUILDING_1_DESC">
+			<Text>Holy Shrine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MALI_MOD_DUMMY_BUILDING_1_STRATEGY">
+			<Text>The Holy Shrine facilitates the Mali unique ability, Royal Hajj, by increasing the [ICON_PEACE] Faith output of Cities connected with a [ICON_TRADE] Trade Route.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVLOPEDIA_MALI_MOD_DUMMY_BUILDING_1_TEXT">
+			<Text>A pilgrimage is a journey or search of moral or spiritual significance. Typically, it is a journey to a shrine or other location of importance to a person's beliefs and faith, although sometimes it can be a metaphorical journey in to someone's own beliefs. Many religions attach spiritual importance to particular places: the place of birth or death of founders or saints, or to the place of their "calling" or spiritual awakening, or of their connection (visual or verbal) with the divine, or to locations where miracles were performed or witnessed, or locations where a deity is said to live or be "housed," or any site that is seen to have special spiritual powers. Such sites may be commemorated with shrines or temples that devotees are encouraged to visit for their own spiritual benefit: to be healed or have questions answered or to achieve some other spiritual benefit. A person who makes such a journey is called a pilgrim.[NEWLINE][NEWLINE]The Holy Land acts as a focal point for the pilgrimages of the Abrahamic religions of Judaism, Christianity, and Islam. According to a Stockholm University study in 2011, these pilgrims visit the Holy Land to touch and see physical manifestations of their faith, confirm their beliefs in the holy context with collective excitation, and connect personally to the Holy Land. In the early 21st century the numbers of people of all faiths making pilgrimages has continued to rise, with 39 of the most popular sites alone receiving an estimated 200 million visitors every year.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MALI_ROYAL_HAJJ_NOTIFICATION">
+			<Text>{1_Name} has completed their pilgrimage. Their piety has rewarded you {2_Num} [ICON_GOLD] Gold.</Text>
+		</Row>
+	</Language_en_US>	
+</GameData>

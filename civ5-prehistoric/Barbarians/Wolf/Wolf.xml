@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_WOLF</Type>
+			<Description>TXT_KEY_UNIT_WOLF</Description>
+			<DefaultUnit/>
+		</Row>
+	</UnitClasses>
+  
+	<Units>
+		<Row>
+			<Class>UNITCLASS_WOLF</Class>
+			<Type>UNIT_WOLF</Type>
+			<PrereqTech>TECH_FUTURE_TECH</PrereqTech>
+			<ObsoleteTech>TECH_AGRICULTURE</ObsoleteTech>
+			<Animal>1</Animal>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WOLF</Description>
+			<Help>TXT_KEY_UNIT_WOLF_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<Conscription>1</Conscription>
+			<UnitArtInfo>ART_DEF_UNIT_WOLF</UnitArtInfo>
+			<UnitFlagAtlas>ANIMALS_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>ANIMALS_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+		</Row>
+	</Units>
+  
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_WOLF</UnitClassType>
+			<UnitType>UNIT_WOLF</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+  
+	<Unit_TerrainNatives>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Unit_TerrainNatives>
+  
+	<Unit_FeatureNatives>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+	</Unit_FeatureNatives>
+  
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_WOLF">
+			<Text>Wolf</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_WOLF_HELP">
+			<Text>A roaming animal unit.</Text>
+		</Row>
+	</Language_en_US>
+  
+</GameData>

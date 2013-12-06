@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/26/2012 5:34:17 PM -->
+<GameData>
+
+	
+<!-- 
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+ORIGINAL G&K:
+
+						          ANCIENT                          CLASSICAL               MEDIEVAL                              RENAISSANCE                                        INDUSTRIAL                                          MODERN                                               FUTURE
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+|                                                  ┊                   |                           |                                                 |                                                 |                                                      |                                                 |
+|                                 ┌─Sailing········┊─ Optics───────────|                 Compass   |                                                 |                                                 | Penicillin                                           |                                                 |
+|             ┌─ Pottery·········─┼─Calendar·······┊───────────────────| Theology                  | Astronomy        Navigation   Archaeology       |                                   Refrigeration | Plastics        Ecology          Globalization       |                                                 |
+|             │                   └─Writing········┊─ Philosophy─      |                 Education |                                                 |                                                 |                                                      |                                                 |
+|             │                   ┌─Trapping·······┊───────────────────| Civil Service             | Acoustics                     Scientific Theory | Biology       Electricity         Telegraph     | Electronics     Computers        Robotics            |                                                 |
+| Agriculture─┼─ Animal Husbandry─┤           ┌─···┊─ Horseback Riding─|                 Chivlary  |                                                 |                                   Radio         | Mass Media                                           | Particle Physics   Nanotechnology   Future Tech |
+|             │                   └─The Wheel─┤    ┊                   |                           | Banking          Economics    Military Science  | Steam Power   Replaceable Parts   Flight        | Radar           Rocketry         Satellites          |                                                 |
+|             ├─ Archery·····················─┴─···┊─ Mathematics──┬───| Currency                  |                                                 |                                                 |                                                      |                                                 |
+|             │                                    ┊               ├───| Engineering     Machinery | Printing Press                                  |               Railroad            Combustion    |                 Lasers           Stealth             | Nuclear Fusion                                  |
+|             └─ Mining───────────┬─Masonry········┊─ Construction─┤   |                 Physics   |                  Chemistry    Fertilizer        | Dynamite                                        |                                                      |                                                 |
+|                                 └─Bronze Working·┊─ Iron Working─┴───| Metal Casting   Steel     | Gunpowder        Metallurgy   Rifling           |                                                 | Atomic Theory   Nuclear Fusion   Advanced Ballistics |                                                 |
+|__________________________________________________┊___________________|___________________________|_________________________________________________|_________________________________________________|______________________________________________________|_________________________________________________|
+
+
+
+
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+ORIGINAL BNW:
+
+						          ANCIENT                                        CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+|                                                  ┊                                          ┊                                   ┊                                       ┊                                         ┊                                                      |                                                 |
+|                                 ┌─Sailing────────┊──Optics──────────────────────────────────┊─────────────────┬──Compass─────┐  ┊                                       ┊                                         ┊                                                                                       |                                                 |
+|             ┌──Pottery──────────┼─Calendar───────┊───────────────────┬─Philosophy────────┬──┊──Theology───────┤              ├──┊──Astronomy──────────Navigation─────┬──┊──Archaeology─────────┬──Biology──────┬──┊──Refrigeration───────────────────────────────Penicillin         Ecology          Globalization       |                                                 |
+|             │                   └─Writing────────┊───────────────────┴─Drama and Poetry*─┤  ┊                 ├──Education*──┤  ┊                                    |  ┊                      ├──Electricity──┼──┊──Radio                 Plastics             |                                                 |
+|             │                                    ┊                                       |  ┊                 |              ├──┊──Acoustics───────┬──Architecture*──┼──┊──Scientific Theory───┤               ├──┊──Replaceable Parts                           Atomic Theory         Telegraph     |      Computers        Robotics            |                                                 |
+| Agriculture─┼──Animal Husbandry─┬─Trapping─────┬─┊──Horseback Riding─────────────────────┼──┊──Civil Service──┤              |    ┊                |                 |  ┊                                         ┊                      | Electronics                                 Mass Media                                           | Particle Physics   Nanotechnology   Future Tech |
+|             │                   │              │ ┊                                       |  ┊                 ├──Chivlary────┼──┊──Banking─────────┼──Economics──────┼──┊──Industrialization*──┼──Steam Power──┼──┊──Flight              | Ballistics           Radar                 Rocketry         Satellites          |                                                 |
+|             ├──Archery──────────┴─The Wheel────┼─┊──Mathematics──────┬─Currency──────────┴──┊──Guilds*────────┤              |  ┊                  |                 |  ┊  Rifling─────────────┘                  ┊                                 |                                                 |
+|             │                                  │ ┊                   ├─Engineering───────┬──┊                 ├──Machinery───┼──┊──Printing Press──┤                 |  ┊                                      ├──┊──Railroad────────────────Combustion    |    Combined Arms*                     Lasers           Stealth             | Nuclear Fusion                                  |
+|             └──Mining───────────┬─Masonry──────┴─┊──Construction─────┘                   ├──┊──Metal Casting──┬──Physics─────┤  ┊                  ├──Metallurgy─────┼──┊──Military Science────┬──Dynamite─────┘  ┊                              |                                                      |                                                 |
+|                                 └─Bronze Working─┊─────────────────────Iron Working──────┘  ┊                 └──Steel───────┴──┊──Gunpowder───────┴──Chemistry──────┴──┊──Fertilizer──────────┘                  ┊                                                                  Nuclear Fusion    |                                                 |
+|__________________________________________________┊__________________________________________┊___________________________________┊_______________________________________┊_________________________________________┊______________________________________________________________|_________________________________________________|
+
+
+
+
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+Prehistoric Mod v1:
+
+                                       ANCIENT                                                                          CLASSICAL
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+|                                                                                                        ┊
+|                                                                                       ┌─Sailing────────┊
+|                                     ┌──Art───────┬──Idols────────┬──Pottery───────────┼─Calendar───────┊
+|           ┌──Tools──────────────────┼──Fire──────┤               │                    └─Writing────────┊
+|           │                         └──Scouting──┼──Agriculture──┤                                     ┊
+|           │                                      │               ├──Animal Husbandry──┬─Trapping─────┬─┊
+| Language──┼──Hunting and Gathering──┬──Trading───┤               │                    │              │ ┊
+|           │                         │            ├──Leadership───┼──Archery───────────┴─The Wheel────┼─┊
+|           └──Social Structure───────┴──Warfare───┘               │                                   │ ┊
+|                                                                  └──Mining────────────┬─Masonry──────┴─┊
+|                                                                                       └─Bronze Working─┊
+|____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+Prehistoric Mod v1.1.0a:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+																		                PREHISTORIC										                                                             ANCIENT                                                       CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    0                 1                  2                        3                        4                       5               6             7                         8                   9
+  ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  ║                                                                                                             |                                                                           |                                           |                                    |                                        |                                          |                                                      |                                                 |
+0 ║                                                                                                             |                                                       ┌──Sailing──────────|──Optics───────────────────────────────────|─────────────────┬──Compass─────┐   |                                        |                                          |                                                                                       |                                                 |
+1 ║                ┌──Complex Tools!─────Hunting──────────────────Scouting──────────────┐                       |               ┌──Pottery───────Numbers!───────────────┼──Calendar─────────|───────────────────┬─Philosophy────────┬───|──Theology───────┤              ├───|──Astronomy──────────Navigation─────┬───|──Archaeology─────────┬──Biology──────┬───|──Refrigeration───────────────────────────────Penicillin         Ecology          Globalization       |                                                 |
+2 ║                │                                                                    ├──Archery<─────────┐   |               │                                       └──Writing──────────|───────────────────┴─Drama and Poetry*─┤   |                 ├──Education*──┤   |                                    |   |                      ├──Electricity──┼───|──Radio                 Plastics             |                                                 |
+3 ║                │                                           ┌──Harpooning!───────────┴──Idols@───────────┤   |               │                                                           |                                       |   |                 |              ├───|──Acoustics───────┬──Architecture*──┼───|──Scientific Theory───┤               ├───|──Replaceable Parts                           Atomic Theory         Telegraph     |      Computers        Robotics            |                                                 |
+4 ║ Simple Tools!──┼──Fire@──────────────Cooking!───────────┬──┴──Tool Specialization!──┐                   ├───|──Agriculture──┼──Trapping<──┬──Animal Domestication!──┬───────────────────|──Husbandry~───────────────────────────┼───|──Civil Service──┤              |   |                  |                 |   |                      |               |   |                      | Electronics                                 Mass Media                                           | Particle Physics   Nanotechnology   Future Tech |
+5 ║                │                                        |                           ├──Art@─────────────┤   |               │             │                         │                   |                                       |   |                 ├──Chivlary────┼───|──Banking─────────┼──Economics──────┼───|──Industrialization*──┼──Steam Power──┼───|──Flight              | Ballistics           Radar                 Rocketry         Satellites          |                                                 |
+6 ║                │                                        |  ┌──Language@─────────────┤                   │   |               ├──Trading@>──┴──The Wheel<─────────────┼──Caravaning!──────|──Mathematics──────┬─Currency──────────┴───|──Guilds*────────┤              |   |                  |                 |   |  Rifling─────────────┘               |   |                                 |                                                 |
+7 ║                └──Gathering!─────────Social Structure@──┴──┼──Warfare@──────────────┼──Cooperation!─────┘   |               │                                       │                   |                   ├─Engineering───────┬───|                 ├──Machinery───┼───|──Printing Press──┤                 |   |                                      ├───|──Railroad────────────────Combustion    |    Combined Arms*                     Lasers           Stealth             | Nuclear Fusion                                  |
+8 ║                                                            └──Leadership@───────────┘                       |               └──Mining────────Minerology!────────────┼──Masonry──────────|──Construction─────┘                   ├───|──Metal Casting──┬──Physics─────┤   |                  ├──Metallurgy─────┼───|──Military Science────┬──Dynamite─────┘   |                              |                                                      |                                                 |
+9 ║                                                                                                             |                                                       └──Bronze Working───|─────────────────────Iron Working──────┘   |                 └──Steel───────┴───|──Gunpowder───────┴──Chemistry──────┴───|──Fertilizer──────────┘                   |                                                                  Nuclear Fusion    |                                                 |
+  ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+    0                 1                  2                        3                        4                       5               6             7                         8                   9
+                 Gathering                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                 Specialized Tools
+                 Cooking
+                 
+   LEGEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   < Moved Left from Previous                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   > Moved Right                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   * New in BNW                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   @ New in Original Prehistoric v1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   ! New in next version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+   ~ Name change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+Simple Tools:         -Settler, -Autochthon | +Tree of Life
+
+Complex Tools:        
+Fire:                 -Caveman
+Gathering:            [Banana]
+
+Hunting:              [Deer]
+Fire:                 -Fire Eater | +Bonfire | | *Wonderwerk Cave
+Social Structure:     -Laborer | +Chieftain's Hut
+
+Scouting:             -Scout | | Outpost
+Harpooning:           [Pearls, Crab, Fish]
+Tool Specialization:  | +Food Storage | [Stone]
+Language:             
+Warfare:              -Savage | +Palisade
+Leadership:           
+
+Archery:
+Idols:                | | | *Ggantija
+Art:                  | +Rock Paintings
+Cooperation:
+
+Agriculture:          [Wheat]
+
+Pottery:              [Jewelry, Porcelein]
+Trapping:             [Furs]
+Trading:              
+Mining:               [Copper, Silver, Gold, Salt, Marble, Gems, Stone]
+
+Numbers:              
+Animal Domestication: [Cow, Sheep]
+The Wheel:            
+Minerology:           
+
+-->	
+
+
+
+
+	<!-- New Techs -->
+	
+	<Technologies>
+	
+		<!-- 
+    Re-defined elsewhere.
+    TODO: Perform update instead of redefine to allow for better compatability with
+          updates and other mods.
+    -->
+		
+		<Delete Type="TECH_AGRICULTURE"/>
+    <Delete Type="TECH_ARCHERY"/>
+    <Delete Type="TECH_POTTERY"/>
+    <Delete Type="TECH_TRAPPING"/>
+    <Delete Type="TECH_MINING"/>
+    <Delete Type="TECH_THE_WHEEL"/>
+
+    <Delete Type="TECH_ANIMAL_HUSBANDRY"/>
+    
+		<!-- Prehistoric -->
+
+    
+
+    <!-- col -->
+		<Row>
+			<ID>0</ID>
+			<Type>TECH_SIMPLE_TOOLS</Type>
+			<Cost>4</Cost>
+			<Description>Tools</Description>
+			<Help>Allows the use of basic tools, such as sharpened stones, clubs or simple hammers. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR].</Help>
+			<Era>ERA_PREHISTORIC</Era>
+			<Trade>true</Trade>
+			<GoodyTech>true</GoodyTech>
+			<GridX>0</GridX>
+			<GridY>4</GridY>
+			<Quote>[NEWLINE][TAB][TAB]"Edged tools are dangerous things to handle, and not infrequently do much hurt."[NEWLINE][TAB][TAB]  - Agnes Repplier.[NEWLINE][TAB]</Quote>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+		</Row>		
+		
+
+    
+		<!-- col -->
+    <Row>
+      <Type>TECH_COMPLEX_TOOLS</Type>
+      <Cost>8</Cost>
+      <Description>Complex Tools</Description>
+      <Help>Enables you to train the [COLOR_POSITIVE_TEXT]Fire Eater[ENDCOLOR], the first ranged units in the game, and to build a [COLOR_POSITIVE_TEXT]Bonfire[ENDCOLOR] in Cities.</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>1</GridX>
+      <GridY>1</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"Out of the frying pan, into the fire."[NEWLINE][TAB][TAB]  - Tertullian.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>5</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_FIRE</Type>
+      <Cost>8</Cost>
+      <Description>Fire</Description>
+      <Help>Enables you to train the [COLOR_POSITIVE_TEXT]Fire Eater[ENDCOLOR], the first ranged units in the game, and to build a [COLOR_POSITIVE_TEXT]Bonfire[ENDCOLOR] in Cities.</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>1</GridX>
+      <GridY>4</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"Out of the frying pan, into the fire."[NEWLINE][TAB][TAB]  - Tertullian.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>5</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_GATHERING</Type>
+      <Cost>8</Cost>
+      <Description>Gathering</Description>
+      <Help>roots</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>1</GridX>
+      <GridY>7</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"nuts and nuts."[NEWLINE][TAB][TAB]  - Milton Friedman.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    
+
+
+    <!-- col -->
+    <Row>
+      <Type>TECH_HUNTING_GATHERING</Type>
+      <Cost>8</Cost>
+      <Description>Hunting</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>Reveals [COLOR_POSITIVE_TEXT]Wheat[ENDCOLOR], [COLOR_POSITIVE_TEXT]Cattle[ENDCOLOR], [COLOR_POSITIVE_TEXT]Sheep[ENDCOLOR], [COLOR_POSITIVE_TEXT]Deer[ENDCOLOR], [COLOR_POSITIVE_TEXT]Bananas[ENDCOLOR], [COLOR_POSITIVE_TEXT]Fish[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Stone[ENDCOLOR] on the map.</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>1</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>6</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_COOKING</Type>
+      <Cost>8</Cost>
+      <Description>Cooking</Description>
+      <Help>Cook</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>4</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"Coooook"[NEWLINE][TAB][TAB]  - Noone.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>5</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_SOCIAL_STRUCTURE</Type>
+      <Cost>8</Cost>
+      <Description>Social Structure</Description>
+      <Help>Makes your community more organized, under your firm and benevolent leadership. Allows you to build the [COLOR_POSITIVE_TEXT]Food Storage[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Chieftain's Hut[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>7</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"The problem of social organization is how to set up an arrangement under which greed will do the least harm."[NEWLINE][TAB][TAB]  - Milton Friedman.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>    
+    
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_SCOUTING</Type>
+      <Cost>16</Cost>
+      <Description>Scouting</Description>
+      <Help>Enables you to train [COLOR_POSITIVE_TEXT]Scouts[ENDCOLOR] and build the [COLOR_POSITIVE_TEXT]Outpost[ENDCOLOR] improvement in Forests and Jungles. Also allows you to establish Embassies in other civilizations.</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <AllowEmbassyTradingAllowed>true</AllowEmbassyTradingAllowed>
+      <GoodyTech>false</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>1</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"A Scout is never taken by surprise; he knows exactly what to do when anything unexpected happens."[NEWLINE][TAB][TAB]  - Robert Baden-Powell.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_TOOL_SPECIALIZATION</Type>
+      <Cost>16</Cost>
+      <Description>Tool Specialization</Description>
+      <Help>Allows the use of basic tools, such as sharpened stones, clubs or simple hammers. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>3</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"Edged tools are dangerous things to handle, and not infrequently do much hurt."[NEWLINE][TAB][TAB]  - Agnes Repplier.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_HARPOONING</Type>
+      <Cost>15</Cost>
+      <Description>Harpooning</Description>
+      <Help>Allows the use of basic tools, such as sharpened stones, clubs or simple hammers. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>4</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"Edged tools are dangerous things to handle, and not infrequently do much hurt."[NEWLINE][TAB][TAB]  - Agnes Repplier.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_LANGUAGE</Type>
+      <Cost>20</Cost>
+      <Description>Language</Description>
+      <Help>Enables your Citizens to communicate.</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>6</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"By and large, language is a tool for concealing the truth."[NEWLINE][TAB][TAB]  - George Carlin.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>2</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_WARFARE</Type>
+      <Cost>16</Cost>
+      <Description>Warfare</Description>
+      <Help>Unlocks the powerful [COLOR_POSITIVE_TEXT]Savage[ENDCOLOR], and the [COLOR_POSITIVE_TEXT]Palisade[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>7</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"The best weapon against an enemy is another enemy."[NEWLINE][TAB][TAB]  -  Friedrich Nietzsche.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>8</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_LEADERSHIP</Type>
+      <Cost>18</Cost>
+      <Description>Leadership</Description>
+      <Help>Ascend the throne of your kingdom and build your [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR]. Unlocks the [COLOR_POSITIVE_TEXT]Warrior[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>8</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"To rule is easy, to govern difficult."[NEWLINE][TAB][TAB]  -  Johann Wolfgang von Goethe.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>10</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_ARCHERY</Type>
+      <Cost>28</Cost>
+      <Description>TXT_KEY_TECH_ARCHERY_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_ARCHERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_ARCHERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>4</GridX>
+      <GridY>2</GridY>
+      <Quote>TXT_KEY_TECH_ARCHERY_QUOTE</Quote>
+      <PortraitIndex>7</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_ARCHERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_ARCHERY</AudioIntroHeader>
+    </Row>
+    <Row>
+      <Type>TECH_IDOLS</Type>
+      <Cost>22</Cost>
+      <Description>Idols</Description>
+      <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>4</GridX>
+      <GridY>3</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"Just as no one can be forced into belief, so no one can be forced into unbelief."[NEWLINE][TAB][TAB]  -  Sigmund Freud.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>9</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_ART</Type>
+      <Cost>24</Cost>
+      <Description>Art</Description>
+      <Help>Your citizens become skilled in rudimentary Art. They are now able to paint [COLOR_POSITIVE_TEXT]Cave Paintings[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>4</GridX>
+      <GridY>5</GridY>
+      <Quote>[NEWLINE][TAB][TAB]"A picture is worth a thousand words."[NEWLINE][TAB][TAB]  - Napoleon Bonaparte.[NEWLINE][TAB]</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+    <Row>
+      <Type>TECH_COOPERATION</Type>
+      <Cost>26</Cost>
+      <Description>Cooperation</Description>
+      <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR].</Help>
+      <Era>ERA_PREHISTORIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>4</GridX>
+      <GridY>7</GridY>
+      <Quote>
+        [NEWLINE][TAB][TAB]"Just as no one can be forced into belief, so no one can be forced into unbelief."[NEWLINE][TAB][TAB]  -  Sigmund Freud.[NEWLINE][TAB]
+      </Quote>
+      <PortraitIndex>9</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_AGRICULTURE</Type>
+      <Cost>30</Cost>
+      <Description>TXT_KEY_TECH_AGRICULTURE_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_AGRICULTURE_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_AGRICULTURE_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>false</GoodyTech>
+      <GridX>5</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_AGRICULTURE_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_POTTERY</Type>
+      <Cost>36</Cost>
+      <Description>TXT_KEY_TECH_POTTERY_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>6</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
+    </Row>
+    <Row>
+      <Type>TECH_TRAPPING</Type>
+      <Cost>33</Cost>
+      <Description>TXT_KEY_TECH_TRAPPING_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_TRAPPING_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_TRAPPING_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>6</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_TRAPPING_QUOTE</Quote>
+      <PortraitIndex>13</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_2</IconAtlas>
+      <AudioIntro>AS2D_TECH_TRAPPING</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_TRAPPING</AudioIntroHeader>
+    </Row>    
+    <Row>
+			<Type>TECH_TRADING</Type>
+			<Cost>38</Cost>
+			<Description>Trading</Description>
+			<Help>Reveals all [COLOR_POSITIVE_TEXT]Luxury Resources[ENDCOLOR] on the map.</Help>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GoodyTech>false</GoodyTech>
+			<GridX>6</GridX>
+			<GridY>6</GridY>
+			<Quote>
+				[NEWLINE][TAB][TAB]"I refuse to believe that trading recipes is silly. Tuna Fish casserole is at least as real as corporate stock."[NEWLINE][TAB][TAB]  -  Barbara Grizzuti Harrison.[NEWLINE][TAB]
+			</Quote>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+		</Row>
+    <Row>
+      <Type>TECH_MINING</Type>
+      <Cost>40</Cost>
+      <Description>TXT_KEY_TECH_MINING_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_MINING_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_MINING_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>6</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_MINING_QUOTE</Quote>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_MINING</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_MINING</AudioIntroHeader>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_NUMBERS</Type>
+      <Cost>35</Cost>
+      <Description>Numbers</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>7</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
+    </Row>
+    <Row>
+      <Type>TECH_ANIMAL_DOMESTICATION</Type>
+      <Cost>35</Cost>
+      <Description>Animal Domestication</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>7</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
+    </Row>
+    <Row>
+      <Type>TECH_THE_WHEEL</Type>
+      <Cost>55</Cost>
+      <Description>TXT_KEY_TECH_THE_WHEEL_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_THE_WHEEL_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_THE_WHEEL_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>7</GridX>
+      <GridY>6</GridY>
+      <Quote>TXT_KEY_TECH_THE_WHEEL_QUOTE</Quote>
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_THE_WHEEL</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_THE_WHEEL</AudioIntroHeader>
+    </Row>
+    <Row>
+      <Type>TECH_MINEROLOGY</Type>
+      <Cost>35</Cost>
+      <Description>Minerology</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>7</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_CARAVANING</Type>
+      <Cost>35</Cost>
+      <Description>Caravaning</Description>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>8</GridX>
+      <GridY>6</GridY>
+      <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
+      <PortraitIndex>4</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
+    </Row>    
+    
+    
+    
+    <!-- col -->
+    <Row>
+      <Type>TECH_ANIMAL_HUSBANDRY</Type>
+      <Cost>35</Cost>
+      <Description>TXT_KEY_TECH_ANIMAL_HUSBANDRY_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_ANIMAL_HUSBANDRY_DESC</Civilopedia>
+      <Help>TXT_KEY_TECH_ANIMAL_HUSBANDRY_HELP</Help>
+      <Era>ERA_ANCIENT</Era>
+      <InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>8</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_ANIMAL_HUSBANDRY_QUOTE</Quote>
+      <PortraitIndex>2</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_ANIMAL_HUSBANDRY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_ANIMAL_HUSBANDRY</AudioIntroHeader>
+    </Row>
+
+
+  </Technologies>
+	
+	
+  
+  
+  
+  
+  
+  
+  
+	<!-- Technology Prereqs -->
+
+	<Technology_PrereqTechs>
+		
+    <Delete TechType="TECH_AGRICULTURE"/>
+    <Delete TechType="TECH_ARCHERY"/>
+    <Delete TechType="TECH_POTTERY"/>
+    <Delete TechType="TECH_TRAPPING"/>
+    <Delete TechType="TECH_MINING"/>
+    <Delete TechType="TECH_THE_WHEEL"/>
+    <Delete TechType="TECH_ANIMAL_HUSBANDRY"/>
+    <Delete TechType="TECH_SAILING"/>
+    <Delete TechType="TECH_CALENDAR"/>
+    <Delete TechType="TECH_WRITING"/>
+    <Delete TechType="TECH_MASONRY"/>
+    <Delete TechType="TECH_BRONZE_WORKING"/>
+
+
+
+
+
+
+
+
+    <!-- col -->
+    <Row>
+      <TechType>TECH_SIMPLE_TOOLS</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_SIMPLE_TOOLS</TechType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_SIMPLE_TOOLS</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+
+
+    <!-- col -->
+    <Row>
+      <TechType>TECH_COMPLEX_TOOLS</TechType>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_FIRE</TechType>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_GATHERING</TechType>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+    </Row>
+
+
+
+    <!-- col -->
+		<Row>
+			<TechType>TECH_HUNTING_GATHERING</TechType>
+			<PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+		</Row>
+    
+    <Row>
+      <TechType>TECH_COOKING</TechType>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_SOCIAL_STRUCTURE</TechType>
+      <PrereqTech>TECH_GATHERING</PrereqTech>
+    </Row>
+
+
+
+
+    <!-- col -->
+    <Row>
+      <TechType>TECH_SCOUTING</TechType>
+      <PrereqTech>TECH_HUNTING_GATHERING</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_HARPOONING</TechType>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_TOOL_SPECIALIZATION</TechType>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+    </Row>
+        
+    <Row>
+      <TechType>TECH_LANGUAGE</TechType>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_WARFARE</TechType>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <TechType>TECH_ARCHERY</TechType>
+      <PrereqTech>TECH_SCOUTING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ARCHERY</TechType>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_IDOLS</TechType>
+      <PrereqTech>TECH_SCOUTING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_IDOLS</TechType>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_ART</TechType>
+      <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ART</TechType>
+      <PrereqTech>TECH_LANGUAGE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ART</TechType>
+      <PrereqTech>TECH_WARFARE</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_COOPERATION</TechType>
+      <PrereqTech>TECH_LANGUAGE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COOPERATION</TechType>
+      <PrereqTech>TECH_WARFARE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COOPERATION</TechType>
+      <PrereqTech>TECH_LEADERSHIP</PrereqTech>
+    </Row>
+
+
+    <!-- col -->
+		<Row>
+			<TechType>TECH_AGRICULTURE</TechType>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_AGRICULTURE</TechType>
+			<PrereqTech>TECH_IDOLS</PrereqTech>
+		</Row>
+    <Row>
+      <TechType>TECH_AGRICULTURE</TechType>
+      <PrereqTech>TECH_ART</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_AGRICULTURE</TechType>
+      <PrereqTech>TECH_COOPERATION</PrereqTech>
+    </Row>
+
+    
+    
+    <!-- col -->
+    <Row>
+      <TechType>TECH_POTTERY</TechType>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_TRAPPING</TechType>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_TRADING</TechType>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_MINING</TechType>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+    </Row>
+
+
+
+    <!-- col -->
+    <Row>
+      <TechType>TECH_NUMBERS</TechType>
+      <PrereqTech>TECH_POTTERY</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_ANIMAL_DOMESTICATION</TechType>
+      <PrereqTech>TECH_TRAPPING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ANIMAL_DOMESTICATION</TechType>
+      <PrereqTech>TECH_TRADING</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_THE_WHEEL</TechType>
+      <PrereqTech>TECH_TRAPPING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_THE_WHEEL</TechType>
+      <PrereqTech>TECH_TRADING</PrereqTech>
+    </Row>
+
+    <Row>
+      <TechType>TECH_MINEROLOGY</TechType>
+      <PrereqTech>TECH_MINING</PrereqTech>
+    </Row>
+
+
+    
+    <!-- col -->
+    <Row>
+      <TechType>TECH_SAILING</TechType>
+      <PrereqTech>TECH_NUMBERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_CALENDAR</TechType>
+      <PrereqTech>TECH_NUMBERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_WRITING</TechType>
+      <PrereqTech>TECH_NUMBERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <PrereqTech>TECH_ANIMAL_DOMESTICATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <PrereqTech>TECH_THE_WHEEL</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <PrereqTech>TECH_MINEROLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_MASONRY</TechType>
+      <PrereqTech>TECH_MINEROLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BRONZE_WORKING</TechType>
+      <PrereqTech>TECH_MINEROLOGY</PrereqTech>
+    </Row>
+    
+
+    
+    <!-- col -->
+    
+    <Row>
+      <TechType>TECH_ANIMAL_HUSBANDRY</TechType>
+      <PrereqTech>TECH_ANIMAL_DOMESTICATION</PrereqTech>
+    </Row>
+    
+
+
+  </Technology_PrereqTechs>
+	
+  
+  
+  
+  
+  
+	
+	<!-- Technology Flavors -->
+	
+	<Technology_Flavors>
+
+    <!-- Col 00 -->
+    <Row>
+      <TechType>TECH_SIMPLE_TOOLS</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
+
+
+    <Row>
+      <TechType>TECH_COMPLEX_TOOLS</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COMPLEX_TOOLS</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COMPLEX_TOOLS</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_FIRE</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_FIRE</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_FIRE</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_FIRE</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_GATHERING</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_GATHERING</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    
+    
+
+
+    <Row>
+      <TechType>TECH_HUNTING_GATHERING</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_HUNTING_GATHERING</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_HUNTING_GATHERING</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_COOKING</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COOKING</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COOKING</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COOKING</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_SOCIAL_STRUCTURE</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_SOCIAL_STRUCTURE</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>    
+    
+    
+    
+    
+    
+    <Row>
+      <TechType>TECH_SCOUTING</TechType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_SCOUTING</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_SCOUTING</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_HARPOONING</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    
+    <Row>
+      <TechType>TECH_TOOL_SPECIALIZATION</TechType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_TOOL_SPECIALIZATION</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_TOOL_SPECIALIZATION</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_LANGUAGE</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_WARFARE</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_WARFARE</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_LEADERSHIP</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+
+    
+    
+
+
+
+    <!-- ROW ARCHERY -->
+
+    <Row>
+      <TechType>TECH_IDOLS</TechType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_IDOLS</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+			<TechType>TECH_ART</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ART</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+
+    <Row>
+      <TechType>TECH_COOPERATION</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_COOPERATION</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
+
+
+    <!-- Col 04 -->
+    <!-- ROW AGRICULTURE -->
+
+
+
+    <!-- Col 05 -->
+    <!-- ROW POTTERY -->
+    <!-- ROW TRAPPING -->
+		<Row>
+			<TechType>TECH_TRADING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_TRADING</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+    <!-- ROW MINING -->
+
+
+
+    <!-- Col 06 -->
+    <Row>
+      <TechType>TECH_NUMBERS</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_ANIMAL_DOMESTICATION</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <!-- ROW THE_WHEEL -->
+    <Row>
+      <TechType>TECH_MINEROLOGY</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+
+
+
+    <!-- col07 -->
+    <!-- ROW SAILING -->
+    <!-- ROW CALENDAR -->
+    <!-- ROW WRITING -->
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <FlavorType>TECH_ANIMAL_DOMESTICATION</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <FlavorType>TECH_THE_WHEEL</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_CARAVANING</TechType>
+      <FlavorType>TECH_MINEROLOGY</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <!-- ROW MASONRY -->
+    <!-- ROW BRONZE_WORKGIN -->
+    
+  </Technology_Flavors>
+</GameData>

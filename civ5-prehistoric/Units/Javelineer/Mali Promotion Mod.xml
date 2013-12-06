@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Tomatekh -->
+<GameData>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MALI_HOLY_CITY_BONUS</Type>
+			<Description>TXT_KEY_PROMOTION_MALI_HOLY_CITY_BONUS</Description>
+			<Help>TXT_KEY_PROMOTION_MALI_HOLY_CITY_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MALI_HOLY_CITY_BONUS</PediaEntry>
+		</Row>
+	</UnitPromotions>
+</GameData>

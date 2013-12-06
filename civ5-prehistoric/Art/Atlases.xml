@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/30/2012 12:30:14 AM -->
+<GameData>
+	<IconTextureAtlases>
+
+		<!-- Units -->
+
+    <Row>
+			<Atlas>UNIT_ATLAS_PRE</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>UnitAtlas256_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>UNIT_ATLAS_PRE</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>UnitAtlas128_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>UNIT_ATLAS_PRE</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>UnitAtlas80_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>UNIT_ATLAS_PRE</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>UnitAtlas64_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>UNIT_ATLAS_PRE</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>UnitAtlas45_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+
+		<!-- Unit Flags -->
+
+		<Row>
+			<Atlas>FLAG_ATLAS_PRE</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>FlagAtlas32_PRE.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>4</IconsPerColumn>
+		</Row>
+    
+    <!-- Promotions -->
+
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>PromotionAtlas256_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>214</IconSize>
+      <Filename>PromotionAtlas214_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>128</IconSize>
+      <Filename>PromotionAtlas128_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>80</IconSize>
+      <Filename>PromotionAtlas80_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>PromotionAtlas64_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>PromotionAtlas45_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>    
+    <Row>
+      <Atlas>PROMOTION_ATLAS_PRE</Atlas>
+      <IconSize>32</IconSize>
+      <Filename>PromotionAtlas32_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>    
+
+		<!-- Buildings -->
+		
+		<Row>
+			<Atlas>BUILDING_ATLAS_PRE</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>BuildingAtlas256_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>BUILDING_ATLAS_PRE</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>BuildingAtlas128_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>BUILDING_ATLAS_PRE</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>BuildingAtlas64_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>BUILDING_ATLAS_PRE</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>BuildingAtlas45_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+
+		<!-- Techs -->
+
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>TechAtlas256_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>214</IconSize>
+			<Filename>TechAtlas214_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>TechAtlas128_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>TechAtlas80_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>TechAtlas64_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>TECH_ATLAS_PRE</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>TechAtlas45_PRE.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		
+    <!-- Barbarians -->
+    <!--
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>AnimalsUnitAtlas256.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>128</IconSize>
+      <Filename>AnimalsUnitAtlas128.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>80</IconSize>
+      <Filename>AnimalsUnitAtlas80.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>AnimalsUnitAtlas64.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>AnimalsUnitAtlas45.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_ATLAS</Atlas>
+      <IconSize>32</IconSize>
+      <Filename>AnimalsUnitAtlas32.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>AGE_OF_EVOLUTION_UNIT_FLAG_ATLAS</Atlas>
+      <IconSize>32</IconSize>
+      <Filename>AnimalsUnitFlagAtlas32.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>    
+    -->
+    
+	</IconTextureAtlases>
+</GameData>

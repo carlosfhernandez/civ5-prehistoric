@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	
+	<!--
+	================================================================================================
+	Free stuff for City States to make them stronger and more balanced
+	TODO: [CFH] Extract out to extra optional add-on file or game option
+	================================================================================================
+	-->
+
+	<Civilization_FreeBuildingClasses>
+
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALISADE</BuildingClassType>
+		</Row>
+		
+	</Civilization_FreeBuildingClasses>
+	
+	<Civilization_FreeUnits>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_AUTOCHTHON</UnitClassType>
+			<Count>1</Count>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Civilization_FreeUnits>
+
+	
+	
+	
+	
+	
+	<!--
+	================================================================================================
+	Change Civilizatons Traits
+	================================================================================================
+	-->
+	
+	
+	<!-- Huns -->
+	<!-- Postpone the free tech 'Animal Husbandry' until the appropriate tech is researched, in this case 'Hunting & Gathering'. -->
+	
+	<Language_en_US>
+		<Update>
+			<Set Text="Raze Cities at double speed. Borrow City names from other in-game Civs. Start with Hunting and Gathering technology. +1 [ICON_PRODUCTION] Production per Pasture."/>
+			<Where Tag="TXT_KEY_TRAIT_RAZE_AND_HORSES"/>
+		</Update>
+	</Language_en_US>
+	
+	<Civilization_FreeTechs>
+		<Update>
+			<Set TechType ="TECH_HUNTING_GATHERING"/>
+			<Where TechType ="TECH_ANIMAL_HUSBANDRY"/>
+		</Update>
+	</Civilization_FreeTechs>
+
+	
+	<!-- France -->
+	<!-- This section is taken from the "New Beginnings" mod with permission of its author JFD -->
+
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_ENHANCED_CULTURE" />
+			<Set PolicyCostModifier="-15" ObsoleteTech="NULL" CityCultureBonus="0"/>
+		</Update>
+	</Traits>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ENHANCED_CULTURE" />
+			<Set Text="-15% [ICON_CULTURE] Culture required for Social Policies."/>
+		</Update>
+	</Language_en_US>
+
+	
+	<!-- Aztecs -->
+
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_CULTURE_FROM_KILLS" />
+			<Set PrereqTech="TECH_LEADERSHIP"/>
+		</Update>
+	</Traits>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CULTURE_FROM_KILLS" />
+			<Set Text="After researching Leadership, gain [ICON_CULTURE] Culture for the empire from each enemy unit killed."/>
+		</Update>
+	</Language_en_US>
+
+	
+	<!-- Celts -->
+
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_FAITH_FROM_NATURE" />
+			<Set PrereqTech="TECH_IDOLS"/>
+		</Update>
+	</Traits>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_FAITH_FROM_NATURE" />
+			<Set Text="After researching Idols, receive +1 [ICON_PEACE] Faith per city with an adjacent unimproved Forest. Bonus increases to +2 [ICON_PEACE] Faith in Cities with 3 or more adjacent unimproved Forest tiles."/>
+		</Update>
+	</Language_en_US>
+
+	
+	<!-- Poland -->
+	<!-- No free social policy during first era advancement -->
+	
+	
+	
+	
+	
+	<!-- Zulus -->
+	<!-- TODO: [CFH] Possibly give them a limited early advantage and then the full trait advantage after a certain reseaerch point -->
+
+	
+
+
+
+	<!-- Shoshone -->
+	<!-- TODO: [CFH] Possible tech prereq -->
+
+
+	
+	
+	
+	<!-- Morocco -->
+	<!-- Should not need to worry about culture bonus from trade routes since they can't be established until later -->
+
+
+	
+	
+	
+
+
+
+	<!--
+	================================================================================================
+	Change AI Handicap Advantages
+	================================================================================================
+	-->
+	
+	<HandicapInfo_AIFreeTechs>
+		<Delete/>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<TechType>TECH_HUNTING_GATHERING</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<TechType>TECH_SIMPLE_TOOLS</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<TechType>TECH_HUNTING_GATHERING</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<TechType>TECH_SOCIAL_STRUCTURE</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<TechType>TECH_SIMPLE_TOOLS</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<TechType>TECH_HUNTING_GATHERING</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<TechType>TECH_SOCIAL_STRUCTURE</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<TechType>TECH_SIMPLE_TOOLS</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<TechType>TECH_WARFARE</TechType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<TechType>TECH_HUNTING_GATHERING</TechType>
+		</Row>
+	</HandicapInfo_AIFreeTechs>
+</GameData>

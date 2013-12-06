@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_RUSTLE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_RUSTLE</Description>
+			<OutsideBorders>true</OutsideBorders>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TEXT</Civilopedia>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PortraitIndex>29</PortraitIndex>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
+		</Row>
+		<Row>
+			<Type>IMPROVEMENT_UNRUSTLE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_UNRUSTLE</Description>
+			<HillsMakesValid>true</HillsMakesValid>
+			<FreshWaterMakesValid>true</FreshWaterMakesValid>
+			<OutsideBorders>false</OutsideBorders>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TEXT</Civilopedia>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PortraitIndex>29</PortraitIndex>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
+		</Row>
+	</Improvements>
+
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_RUSTLE</ImprovementType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_RUSTLE</ImprovementType>
+			<ResourceType>RESOURCE_COW</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_RUSTLE</ImprovementType>
+			<ResourceType>RESOURCE_SHEEP</ResourceType>
+		</Row>
+	</Improvement_ResourceTypes>
+
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_UNRUSTLE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_UNRUSTLE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+
+	<Builds>
+		<Row>
+			<Type>BUILD_RUSTLE</Type>
+			<Time>100</Time>
+			<ImprovementType>IMPROVEMENT_RUSTLE</ImprovementType>
+			<Description>TXT_KEY_BUILD_RUSTLE</Description>
+			<Help>TXT_KEY_BUILD_RUSTLE_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_RUSTLE_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_P</HotKey>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>29</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		<Row>
+			<Type>BUILD_UNRUSTLE</Type>
+			<Time>600</Time>
+			<ImprovementType>IMPROVEMENT_UNRUSTLE</ImprovementType>
+			<Description>TXT_KEY_BUILD_UNRUSTLE</Description>
+			<Help>TXT_KEY_BUILD_UNRUSTLE_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_UNRUSTLE_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_P</HotKey>
+			<OrderPriority>98</OrderPriority>
+			<ShowInPedia>false</ShowInPedia>
+			<ShowInTechTree>false</ShowInTechTree>
+			<IconIndex>29</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_IMPROVEMENT_RUSTLE">
+			<Text>Rustle</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_IMPROVEMENT_UNRUSTLE">
+			<Text>Relocate (un-rustle)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE">
+			<Text>Rustle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TEXT">
+			<Text>Permits the Herdsman Unit to round-up cows, sheep and horses before moving off with them.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TITLE1">
+			<Text>Technology Required</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TITLE2">
+			<Text>Where It Can Be Constructed</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TITLE3">
+			<Text>Yield Effect</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RUSTLE_TITLE4">
+			<Text>Resource Accessed</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE">
+			<Text>Relocate (un-rustle)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TEXT">
+			<Text>Permits the Herdsman Unit to relocate cows, sheep and horses that they have previously rustled.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TITLE1">
+			<Text>Technology Required</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TITLE2">
+			<Text>Where It Can Be Constructed</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TITLE3">
+			<Text>Yield Effect</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_UNRUSTLE_TITLE4">
+			<Text>Resource Accessed</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILD_RUSTLE">
+			<Text>Rustle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RUSTLE_REC">
+			<Text>It will allow the Herdsman Unit to rustle sheep, cows and horses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RUSTLE_HELP">
+			<Text>Permits the Herdsman Unit to round-up cows, sheep and horses before moving off with them.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILD_UNRUSTLE">
+			<Text>Relocate (un-rustle)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_UNRUSTLE_REC">
+			<Text>Permits the Herdsman Unit to relocate cows, sheep and horses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_UNRUSTLE_HELP">
+			<Text>Permits the Herdsman Unit to relocate cows, sheep and horses that they have previously rustled.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

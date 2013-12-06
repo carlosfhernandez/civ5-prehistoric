@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+  <UnitClasses>
+    <Row>
+      <Type>UNITCLASS_AUTOCHTHON</Type>
+      <Description>TXT_KEY_UNIT_AUTOCHTHON</Description>
+      <DefaultUnit>UNIT_AUTOCHTHON</DefaultUnit>
+    </Row>
+  </UnitClasses>
+  
+  <Units>
+    <Row>
+      <Class>UNITCLASS_AUTOCHTHON</Class>
+      <Type>UNIT_AUTOCHTHON</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>4</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AUTOCHTHON</Description>
+      <Civilopedia>TXT_KEY_UNIT_AUTOCHTHON_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AUTOCHTHON_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AUTOCHTHON_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUTOCHTHON</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+  </Units>
+  
+  <Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+  </Unit_AITypes>
+  
+  <Unit_ClassUpgrades>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitClassType>UNITCLASS_CAVEMAN</UnitClassType>
+    </Row>
+  </Unit_ClassUpgrades>
+  
+  <Unit_Flavors>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+  </Unit_Flavors>
+
+  <Unit_FreePromotions>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>NO_REVEAL_MAP</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>PROMOTION_FOREST_DWELLER</PromotionType>
+    </Row>
+  </Unit_FreePromotions>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON">
+      <Text>Autochthon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_TEXT">
+      <Text>Autochthons are the ancient ancestors of modern man. They learned to walk upright and this opened a whole new world to them.
+[NEWLINE][NEWLINE]They were a hunter-gatherer people who used their minds and technology to create simple tools that aided them in their daily activities. Slowly, they achieved the ability to control fire creating a cascading effect that would eventually enlarge their brains, and their intelligence.
+[NEWLINE][NEWLINE]This paleolithic man evolved over the course of two million years, eventually learning to create more complex tools allowing him to build better bows, more efficient carvings tools, and thus better dwellings. All this lead to an establishment of society and division of responsiblities.
+[NEWLINE][NEWLINE]With an increase in productivity there was an explosion in population and easier migrations. Man was starting to dominate the world...
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_STRATEGY">
+      <Text>Autochthons aren't much good at anything, but they have no maintenance. They have low offense and defense and will not be much of a match against anyone or anything else. They can be used to explore the nearby area but need to be careful against barbarian units. Taking on settlements is not recommended.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_HELP">
+      <Text>Very weak (but cheap) early unit. Lacking in offense and defense except in forests. +25% [ICON_COMBAT] Offense and +50% [ICON_DEFENSE] defense in forests.</Text>
+    </Row>    
+  </Language_en_US>  
+  
+  
+</GameData>

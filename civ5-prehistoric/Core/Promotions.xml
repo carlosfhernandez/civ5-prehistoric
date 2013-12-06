@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/22/2013 7:15:34 PM -->
+<GameData>
+
+  <UnitPromotions>
+
+    <!-- PROMOTION_ATLAS_PRE -->
+    
+    <Row>
+      <Type>PROMOTION_CITY_BRUTEFORCE</Type>
+      <Description>Desc: Brute Force</Description>
+      <Help>Help: Brute Force</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <CannotBeChosen>true</CannotBeChosen>
+      <LostWithUpgrade>true</LostWithUpgrade>
+      <CityAttack>40</CityAttack>
+      <PortraitIndex>40</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Ped: +40% [ICON_STRENGTH] Combat Strength against Cities.</PediaEntry>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_RECKLESS</Type>
+      <Description>Reckless</Description>
+      <Help>-20% [ICON_STRENGTH] Combat Strength when defending.</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <DefenseMod>-20</DefenseMod>
+      <PortraitIndex>57</PortraitIndex>
+      <LostWithUpgrade>true</LostWithUpgrade>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>-20% [ICON_STRENGTH] Combat Strength when defending.</PediaEntry>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_FOREST_DWELLER</Type>
+      <Description>Forest Dweller</Description>
+      <Help>25% [ICON_STRENGTH] Attack bonus and %50 [ICON_STRENGTH] Defense bonus when fighting in forests.</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Forest Dweller</PediaEntry>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_BURN_CITY</Type>
+      <Description>City Burner</Description>
+      <Help>Burn baby, burn!</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>City Burner</PediaEntry>
+    </Row>
+
+
+
+    <Row>
+      <Type>PROMOTION_WONDERWERK</Type>
+      <Description>Wonderwerk Cave</Description>
+      <Help>+1 [ICON_MOVES] Movement.</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <CannotBeChosen>true</CannotBeChosen>
+      <MovesChange>1</MovesChange>
+      <PortraitIndex>33</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>+1 [ICON_MOVES] Movement.</PediaEntry>
+    </Row>
+
+
+
+  </UnitPromotions>
+
+  <UnitPromotions_Features>
+    <Row>
+      <PromotionType>PROMOTION_AUTOCHTHON</PromotionType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+      <Defense>50</Defense>
+      <Attack>25</Attack>
+    </Row>
+  </UnitPromotions_Features>
+  
+</GameData>

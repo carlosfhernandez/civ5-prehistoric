@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+  
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_WONDERWERK</Type>
+			<DefaultBuilding>BUILDING_WONDERWERK</DefaultBuilding>
+			<Description>Wonderwerk Cave</Description>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+		</Row>
+	</BuildingClasses>
+  
+  
+	<Buildings>
+		<Row>
+			<Type>BUILDING_WONDERWERK</Type>
+			<BuildingClass>BUILDINGCLASS_WONDERWERK</BuildingClass>
+			<Cost>65</Cost>
+			<PrereqTech>TECH_GATHERING</PrereqTech>
+			<Help>+1 [ICON_MOVES] Movement for Workers.[NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from certain mineral and mined Resources worked by the City it is built in.[NEWLINE](includes Copper, Iron, Stone, and Salt)</Help>
+			<Description>Wonderwerk Cave</Description>
+			<Civilopedia>Wonderwerk Cave is an archaeological site, formed originally as an ancient solution cavity in Dolomite rocks of the Kuruman Hills, situated between Danielskuil and Kuruman in the Northern Cape Province, South Africa. It is a National Heritage Site within a servitude ceded to and managed as a satellite of the McGregor Museum in Kimberley. Geologically, hillside erosion exposed the northern end of the cavity, which extends horizontally for about 140 m into the base of a hill. Accumulted deposits inside the cave, up to 7 m in depth, reflect natural sedimentation processes such as water and wind deposition as well as the activities of animals, birds and human ancestors over a period of some 2 million years. The site has been studied and excavated by archaeologists since the 1940s and research here generates important insights into human history in the subcontinent of Southern Africa. Evidence within Wonderwerk cave has been called the oldest controlled fire. Wonderwerk means "miracle" in the Afrikaans language.[NEWLINE]- Quoted from en.wikipedia.org/wiki/Wonderwerk_Cave</Civilopedia>
+			<Quote>[NEWLINE]"If there hadn't been women we'd still be squatting in a cave eating raw meat, because we made civilization in order to impress our girlfriends."[NEWLINE]- Orson Welles.[NEWLINE]</Quote>
+			<ArtDefineTag>PETRA</ArtDefineTag>
+			<MaxStartEra>ERA_ANCIENT</MaxStartEra>
+			<NukeImmune>true</NukeImmune>
+      
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<FreePromotion>PROMOTION_WONDERWERK</FreePromotion>
+			<DisplayPosition>2</DisplayPosition>
+			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>WonderSplash_Wonderwerk.dds</WonderSplashImage>
+			<WonderSplashAnchor>R,B</WonderSplashAnchor>
+		</Row>
+	</Buildings>
+  
+  
+  <Building_ResourceYieldChanges>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_IRON</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_IRON</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_COPPER</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_COPPER</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_SALT</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_SALT</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Building_ResourceYieldChanges>
+  
+  
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_WONDERWERK</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WONDERWERK</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WONDERWERK</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
+  
+  
+	<Civilization_BuildingClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+			<BuildingType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+			<BuildingType/>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+
+  
+  <UnitPromotions_CivilianUnitType>
+    <Row>
+      <PromotionType>PROMOTION_WONDERWERK</PromotionType>
+      <UnitType>UNIT_WORKER</UnitType>
+    </Row>
+  </UnitPromotions_CivilianUnitType>
+  
+  
+</GameData>
