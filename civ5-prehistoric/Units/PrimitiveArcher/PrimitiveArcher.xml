@@ -16,7 +16,7 @@
 		  <Type>UNIT_PRIMITIVE_ARCHER</Type>
       <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
 		  <Combat>2</Combat>
-      <RangedCombat>4</RangedCombat>
+      <RangedCombat>3</RangedCombat>
 		  <Cost>14</Cost>
 		  <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>

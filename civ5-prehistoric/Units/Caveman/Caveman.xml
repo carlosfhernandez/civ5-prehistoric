@@ -16,7 +16,7 @@
 		  <Type>UNIT_CAVEMAN</Type>
       <PrereqTech>TECH_FIRE</PrereqTech>
 		  <Combat>5</Combat>
-		  <Cost>18</Cost>
+		  <Cost>22</Cost>
 		  <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>

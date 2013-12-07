@@ -1,0 +1,24 @@
+__ RELEASE NOTES v0.2.4a __
+
+Additions
+
++ Technologies: Simple Tools, Complex Tools, Gathering, Tool Specialization, Harpooning, Animal Domestication, Numbers, Mineralogy, Caravaning
++ Wonders: Skara Brae, Theopetra Cave
++ Units: Autochthon, Primitive Archer
++ Era: Prehistoric
++ Resources hidden until relevant technology discovered
+
+Fixes 
+
+= Goody Huts don't reward 'nothing' anymore.
+= AI tweaked and lightly improved for better build strategies.
+
+Modifications
+
+/ Fire Eater name change to Shaman; removed attack and run ability.
+/ Savage's city bonus reduced.
+/ Wonders modified to not be so overpowered.
+/ Campfire provides +1 Gold.
+/ Embasies moved to Language.
+/ Caravans start at Caravaning.
+/ Technology balanced for early game.

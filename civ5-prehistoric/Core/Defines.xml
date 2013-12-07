@@ -34,6 +34,11 @@ alter game speed due to addition of eras if and only if the player starts in pre
       <Value>20</Value>
     </Row>
 
+    <Update>
+      <Set Value="60" />
+      <Where Name="BARBARIAN_MAX_XP_VALUE" />
+    </Update>    
+    
   </Defines>
 	
 	
@@ -41,14 +46,18 @@ alter game speed due to addition of eras if and only if the player starts in pre
 
     
     
+    <!-- 
+    For now, drastically slow down growth in prehistoric era, but need to find a way to cap
+    the growth of a settlement.
+    -->
     <Update>
       <Where Type="ERA_PREHISTORIC"/>
-      <Set GrowthPercent="140"/>
+      <Set GrowthPercent="250"/>
     </Update>
 
     <Update>
       <Where Type="ERA_PREHISTORIC"/>
-      <Set ResearchPercent="150"/>
+      <Set ResearchPercent="200"/>
     </Update>
 
     <Update>
@@ -62,7 +71,6 @@ alter game speed due to addition of eras if and only if the player starts in pre
     </Update>
 
 
-
     <Update>
 			<Where Type="ERA_ANCIENT"/>
 			<Set GrowthPercent="110"/>
@@ -70,8 +78,28 @@ alter game speed due to addition of eras if and only if the player starts in pre
 
 		<Update>
 			<Where Type="ERA_ANCIENT"/>
-			<Set ResearchPercent="110"/>
+			<Set ResearchPercent="130"/>
 		</Update>
+
+
+    <Update>
+      <Where Type="ERA_CLASSICAL"/>
+      <Set ResearchPercent="120"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_MEDIEVAL"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_RENAISSANCE"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+    
+    
 
 	</Eras>
 	

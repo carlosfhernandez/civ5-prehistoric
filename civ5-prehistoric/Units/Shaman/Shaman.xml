@@ -17,7 +17,7 @@
 			<PrereqTech>TECH_FIRE</PrereqTech>
 			<Combat>1</Combat>
 			<RangedCombat>5</RangedCombat>
-			<Cost>30</Cost>
+			<Cost>24</Cost>
 			<Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
 			<Range>1</Range>

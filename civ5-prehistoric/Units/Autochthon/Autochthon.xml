@@ -15,7 +15,7 @@
       <Class>UNITCLASS_AUTOCHTHON</Class>
       <Type>UNIT_AUTOCHTHON</Type>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Combat>4</Combat>
+      <Combat>3</Combat>
       <Cost>12</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
@@ -29,7 +29,7 @@
       <MilitarySupport>true</MilitarySupport>
       <MilitaryProduction>true</MilitaryProduction>
       <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
       <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
       <AdvancedStartCost>10</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>

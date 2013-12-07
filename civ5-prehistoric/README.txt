@@ -23,6 +23,7 @@ Missing Thanks:
 - I am combing all my source material to make sure I thank and mention those that have helped me greatly. If you are one of those and I have missed you I truly do apologize and I will make sure to add you to the list. I am thankful for this wonderful community of contributors.
 ************************************ 
 
+v0.2.4a / 2013-12-06
 
 ______________________________ 
 
@@ -135,7 +136,7 @@ COMING SOON
 
 v0.2.5+
 
-Fix, Patch and Stabilization
+Fixes, Small Enhancements, and Stabilization
 
 v0.3.x - Barbarians and Resource Units release
 

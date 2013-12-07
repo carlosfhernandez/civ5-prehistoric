@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW)</Name>
-    <Guid>20dabc77-819d-4653-814e-c143fbd8382e</Guid>
-    <ModVersion>2</ModVersion>
+    <Name>Prehistoric Era (BNW)</Name>
+    <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
+    <ModVersion>7</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>[COLOR_POSITIVE_TEXT](v0.2.5)[ENDCOLOR] [COLOR_PROJECT_TEXT]Expands the Ancient Era with 2000 more years of human history.</Teaser>
     <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
     <Authors>Apshai (Carlos Codex)</Authors>
     <SpecialThanks>Muppets</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
-    <MinCompatibleSaveVersion>1</MinCompatibleSaveVersion>
+    <MinCompatibleSaveVersion>2</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
@@ -244,9 +244,9 @@
     <Folder Include="Art\Atlas\" />
     <Folder Include="Art\Atlas\Buildings\" />
     <Folder Include="Art\Atlas\Flag\" />
+    <Folder Include="Art\Atlas\Promotions\" />
     <Folder Include="Art\Atlas\Tech\" />
     <Folder Include="Art\Atlas\Units\" />
-    <Folder Include="Art\Promotions\" />
     <Folder Include="Art\Units\Laborer" />
     <Folder Include="Art\Units\Explorer" />
     <Folder Include="Art\_ Tmp" />
@@ -318,6 +318,42 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\Atlas\Promotions\art-atlas-promotions-notes.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas128_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas16_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas214_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas256_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas32_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas45_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas64_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\PromotionAtlas80_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Art\Atlas\Tech\TechAtlas128_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -359,38 +395,6 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Atlas\Units\UnitAtlas80_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas128_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas16_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas214_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas256_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas32_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas45_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas64_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Promotions\PromotionAtlas80_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -722,6 +726,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Core\Beliefs.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Core\Defines.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -774,7 +782,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="README-SMALL.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="README.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="RELEASE_NOTES.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
