@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <BuildingClasses>
+    <Row>
+      <Type>BUILDINGCLASS_SHELTER</Type>
+      <DefaultBuilding>BUILDING_SHELTER</DefaultBuilding>
+      <Description>Lean-to Shelter</Description>
+      <MaxPlayerInstances>1</MaxPlayerInstances>
+    </Row>
+  </BuildingClasses>
+  
+  <Buildings>
+    <Row>
+      <Type>BUILDING_SHELTER</Type>
+      <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
+      <PrereqTech>SIMPLE_TOOLS</PrereqTech>
+      <Cost>6</Cost>
+      <Help>
+        THe simple stick shelter is one of the most primitive of shelters.
+        It is portable, quick to set up, and protects from very basic elements.
+        [NEWLINE]
+        Provides [ICON_HAPPINESS_1] Happiness to you community.
+        Becomes obsolete with the discovery of Masonry.
+      </Help>
+      <Description>Lean-to Shelter</Description>
+      <Strategy>
+        The basic stick shelter is one of the most primitive of shelters, still in use today.
+        Its great advantage was the portable nature of the core components. It could
+        also be built almost anywhere. Simple to set up, it protects only against the
+        basic elements.
+        [NEWLINE]
+        Provides [ICON_HAPPINESS_1] Happiness to you community.
+        Becomes obsolete with the discovery of Masonry.
+      </Strategy>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <NukeImmune>true</NukeImmune>
+      <MinAreaSize>-1</MinAreaSize>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <DisplayPosition>32</DisplayPosition>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>10</PortraitIndex>
+    </Row>
+  </Buildings>
+  
+  <Building_FreeUnits>
+    <Row>
+      <BuildingType>BUILDING_SHELTER</BuildingType>
+      <UnitType>UNIT_PRE_ELDER</UnitType>
+      <NumUnits>0</NumUnits>
+    </Row>
+  </Building_FreeUnits>
+  
+  <Building_Flavors>
+    <Row>
+      <BuildingType>BUILDING_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>30</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+  </Building_Flavors>
+  
+</GameData>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Building: Campfire
+
+!NO 3D MAP ART
+
+-->
+<GameData>
+
+  <BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_CAMPFIRE</Type>
+			<DefaultBuilding>BUILDING_CAMPFIRE</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_CAMPFIRE_TITLE</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Row>
+			<Type>BUILDING_CAMPFIRE</Type>
+			<BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
+			<Cost>34</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<PrereqTech>TECH_FIRE</PrereqTech>
+			<Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
+			<Description>Campfire</Description>
+			<Strategy>The Campfire produces +1 [ICON_GOLD] Gold for your early settlement.</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<ObsoleteTech>TECH_CALENDAR</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+      <Gold>1</Gold>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>40</HurryCostModifier>
+			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_CAMPFIRE</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+	</Building_Flavors>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_TITLE">
+      <Text>Campfire</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_HELP">
+      <Text>Increases the [ICON_GOLD] Gold of your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Calendar[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_QUOTE">
+      <Text>
+        "Governing a great nation is like cooking a small fish - too much handling will spoil it."
+        [NEWLINE] - Lao Tzu[NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
+      <Text>
+        Skara Brae is a stone-built settlement built and inhabitant by early man, long ago abondoned. It is located on the largest of an archipelego of islands. It consists of eight clustered houses, each containing several pieces of stone built furniture such us cupboards, dressers, seats, and storage boxes.
+        [NEWLINE][NEWLINE]Given the number of homes, it seems likely that no more than fifty people lived in Skara Brae at any given time. They became pastorialists who raised cattle and sheep having first sustained themselves with an ocean-based diet of fish and other sea foods.
+      </Text>
+    </Row>
+  </Language_en_US>  
+  
+  
+  
+  
+</GameData>

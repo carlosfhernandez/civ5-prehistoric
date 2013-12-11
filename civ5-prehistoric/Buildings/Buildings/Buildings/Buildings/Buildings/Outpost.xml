@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Improvement: Outpost
+
+Issues:
+  > Can't get this damnable thing working!
+-->
+<GameData>
+	
+  <!-- 
+  TODO:
+  
+  -->
+  
+  <Improvements>
+		<Row>
+			<Type>IMPROVEMENT_OUTPOST</Type>
+			<Description>Outpost</Description>
+			<Civilopedia>Outposts have always played a vital role for the growth of civilizations. They are versatile improvements that can be used for various purposes. Usually, Outposts have some kind of Palisade protection and are well hidden inside Forests or Jungles. They provide additional defense and offer a Food storage for military or civilians who are stationed outside of Cities.[NEWLINE][NEWLINE]The Outpost provides 25% extra defense for military units stationed inside it, and increases the Food output of the tile it is constructed on. After the discovery of Archaeology, the Outpost may also be used for research purposes[NEWLINE]The need of nearby building material requires the Outpost to be constructed in Forest or Jungle. You can construct an Outpost within your territory, or directly adjacent to your territory.</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+			<RequiresFeature>true</RequiresFeature>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+  
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+  
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+  
+	<Improvement_Flavors>
+		<Row>
+			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Improvement_Flavors>
+  
+	<Builds>
+		<Row>
+			<Type>BUILD_OUTPOST</Type>
+			<PrereqTech>TECH_SCOUTING</PrereqTech>
+			<Time>700</Time>
+			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+			<Description>Construct an Outpost</Description>
+			<Recommendation>It will increase the tile's [ICON_FOOD] Food output, granting increased Growth for your City. It also provides increased defense for units stationed inside.</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<DefenseModifier>15</DefenseModifier>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>11</IconIndex>
+			<IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+		</Row>
+	</Builds>
+  
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_OUTPOST</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LABORER</UnitType>
+			<BuildType>BUILD_OUTPOST</BuildType>
+		</Row>
+	</Unit_Builds>
+  
+</GameData>

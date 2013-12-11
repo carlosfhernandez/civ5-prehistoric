@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Improvement: BananaBaskets
+
+
+
+-->
+<GameData>
+
+  <!-- 
+  TODO:
+  
+  -->
+
+  
+  <!-- IMPROVEMENT -->
+  
+  <Improvements>
+    <Row>
+      <Type>IMPROVEMENT_BANANA_CAMP</Type>
+      <Description>Banana Camp</Description>
+      <Civilopedia>pedia entry</Civilopedia>
+      <ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+      <DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+      <RequiresFeature>true</RequiresFeature>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>TERRAIN_ATLAS_PRE</IconAtlas>
+    </Row>
+  </Improvements>
+
+  <Improvement_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_Yields>
+
+  <Improvement_ValidTerrains>
+    <Row>
+      <ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+  </Improvement_ValidTerrains>  
+  
+  <Improvement_ValidFeatures>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+    </Row>
+  </Improvement_ValidFeatures>
+
+  <Improvement_Flavors>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+  </Improvement_Flavors>
+
+  <Improvement_ResourceTypes>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <ResourceType>RESOURCE_BANANA</ResourceType>
+    </Row>
+  </Improvement_ResourceTypes>
+
+  <Improvement_ResourceType_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <ResourceType>RESOURCE_COAL</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_ResourceType_Yields>
+  
+  
+  
+  <!-- BUILD -->
+  
+  <Builds>
+    <Row>
+      <Type>BUILD_BANANA_CAMP</Type>
+      <PrereqTech>TECH_GATHERING</PrereqTech>
+      <Time>400</Time>
+      <ImprovementType>IMPROVEMENT_BANANA_CAMP</ImprovementType>
+      <Description>Build Banana Camp</Description>
+      <Help>Help Build Banana Camp</Help>
+      <Recommendation>It will increase the tile's [ICON_FOOD] Food output, granting increased Growth for your City.</Recommendation>
+      <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+      <OrderPriority>97</OrderPriority>
+      <IconIndex>1</IconIndex>
+      <IconAtlas>TERRAIN_ATLAS_PRE</IconAtlas>
+    </Row>
+  </Builds>
+
+  <BuildFeatures>
+    <Row>
+      <BuildType>BUILD_BANANA_CAMP</BuildType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Time>900</Time>
+      <Remove>false</Remove>
+    </Row>
+  </BuildFeatures>
+
+  
+  
+  <!-- UNIT -->
+  
+  <Unit_Builds>
+    <Row>
+      <UnitType>UNIT_WORKER</UnitType>
+      <BuildType>BUILD_BANANA_CAMP</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_BANANA_CAMP</BuildType>
+    </Row>
+  </Unit_Builds>
+
+</GameData>

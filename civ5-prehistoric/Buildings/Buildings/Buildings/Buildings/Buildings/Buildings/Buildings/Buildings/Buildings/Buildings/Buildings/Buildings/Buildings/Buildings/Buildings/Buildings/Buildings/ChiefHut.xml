@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/27/2012 5:33:12 PM -->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_CHIEF_HUT</Type>
+			<DefaultBuilding>BUILDING_CHIEF_HUT</DefaultBuilding>
+			<Description>Chieftain's Hut</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_CHIEF_HUT</Type>
+			<BuildingClass>BUILDINGCLASS_CHIEF_HUT</BuildingClass>
+			<PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+			<Cost>16</Cost>
+      <Description>Chieftain's Hut</Description>
+      <Help>Your personal luxurious, glorious and magnificent hut. Comes with a comfortable bed made of a big flat rock.[NEWLINE]May only be built once in a Civilization. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].</Help>
+			<Strategy>The Chieftain's Hut is the center of early human politics. Here you act as leader, judge and counsellor to your people.</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<Happiness>1</Happiness>
+      <Gold>1</Gold>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_FreeUnits>
+		<Row>
+			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+			<UnitType>UNIT_PRE_ELDER</UnitType>
+			<NumUnits>1</NumUnits>
+		</Row>
+	</Building_FreeUnits>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+</GameData>

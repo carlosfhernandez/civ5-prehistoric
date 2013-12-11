@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+<!--
+  <Resources>
+    <Row>
+      <Type>RESOURCE_LUMBER</Type>
+      <Happiness>5</Happiness>
+      <Description>TXT_KEY_RESOURCE_LUMBER</Description>
+      <Civilopedia>TXT_KEY_CIV5_RESOURCE_LUMBER_TEXT</Civilopedia>
+      <Help>TXT_KEY_RESOURCE_LUMBER_HELP</Help>
+      <ResourceClassType>RESOURCECLASS_RUSH</ResourceClassType>
+      <ArtDefineTag>ART_DEF_FEATURE_FOREST</ArtDefineTag>
+      <TechReveal>TECH_FIRE</TechReveal>
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>0</MinLatitude>
+      <MaxLatitude>90</MaxLatitude>
+      <RandApp1>25</RandApp1>
+      <RandApp2>25</RandApp2>
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <Flatlands>1</Flatlands>
+      <NoRiverSize>1</NoRiverSize>
+      <IconString>[ICON_RES_LUMBER]</IconString>
+      <PortraitIndex>7</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </Row>
+  </Resources>
+  
+  <Resource_YieldChanges>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Resource_YieldChanges>
+  
+  <Resource_Flavors>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>    
+  </Resource_Flavors>
+  
+  <Resource_TerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+    </Row>
+  </Resource_TerrainBooleans>
+  
+  <Resource_FeatureBooleans>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+    </Row>
+  </Resource_FeatureBooleans>
+
+  <Resource_FeatureTerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+    </Row>
+  </Resource_FeatureTerrainBooleans>
+
+  <Resource_QuantityTypes>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <Quantity>6</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <Quantity>3</Quantity>
+    </Row>
+  </Resource_QuantityTypes>
+  
+  <Language_en_US>
+    <Row Tag="TXT_KEY_RESOURCE_LUMBER">
+      <Text>LUMBER</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_LUMBER_HELP">
+      <Text>+1 [ICON_PRODUCTION] Production when worked by a City.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER">
+      <Text>Lumber</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TEXT">
+      <Text>Oaks are a typical source for lumber, they have spirally arranged leaves, with lobed margins in many species; some have serrated leaves or entire leaves with smooth margins. Many deciduous species are marcescent, not dropping dead leaves until spring. The flowers are catkins, produced in spring. The fruit is a nut called an acorn, borne in a cup-like structure known as a cupule; each acorn contains one seed (rarely two or three) and takes 6–18 months to mature, depending on species.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TEXT1">
+      <Text>Always Visible</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TITLE1">
+      <Text>Technology Required to See</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TITLE2">
+      <Text>Location</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TITLE3">
+      <Text>Improvement</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TITLE4">
+      <Text>Yield Bonus</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RESOURCE_LUMBER_TITLE5">
+      <Text>Happiness Bonus</Text>
+    </Row>
+  </Language_en_US>
+  
+  <Improvement_ResourceTypes>
+    <Row>
+      <ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+    </Row>
+  </Improvement_ResourceTypes>
+
+  <Improvement_ResourceType_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+      <ResourceType>RESOURCE_LUMBER</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_ResourceType_Yields>
+-->
+</GameData>

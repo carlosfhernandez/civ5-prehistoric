@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+  <Improvements>
+    <Row>
+      <Type>IMPROVEMENT_OUTPOST</Type>
+      <Description>Outpost</Description>
+      <Civilopedia>Outposts have always played a vital role for the growth of civilizations. They are versatile improvements that can be used for various purposes. Usually, Outposts have some kind of Palisade protection and are well hidden inside Forests or Jungles. They provide additional defense and offer a Food storage for military or civilians who are stationed outside of Cities.[NEWLINE][NEWLINE]The Outpost provides 25% extra defense for military units stationed inside it, and increases the Food output of the tile it is constructed on. After the discovery of Archaeology, the Outpost may also be used for research purposes[NEWLINE]The need of nearby building material requires the Outpost to be constructed in Forest or Jungle. You can construct an Outpost within your territory, or directly adjacent to your territory.</Civilopedia>
+      <ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+      <OutsideBorders>true</OutsideBorders>
+      <RequiresFeature>true</RequiresFeature>
+      <PortraitIndex>21</PortraitIndex>
+      <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+    </Row>
+  </Improvements>
+
+  <Improvement_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_Yields>  
+  
+  <Improvement_ValidTerrains>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <TerrainType>TERRAIN_DESERT</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+  </Improvement_ValidTerrains>
+
+  <Improvement_ValidFeatures>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+    </Row>
+  </Improvement_ValidFeatures>
+
+  <Improvement_Flavors>
+    <Row>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+  </Improvement_Flavors>
+
+  <Builds>
+    <Row>
+      <Type>BUILD_OUTPOST</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Time>800</Time>
+      <ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
+      <Description>Build a Farty Outpost</Description>
+      <Help>Eat beans. Fart.</Help>
+      <Recommendation>Don't push too hard or you will get hemmies.</Recommendation>
+      <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+      <HotKey>KB_F</HotKey>
+      <CtrlDown>1</CtrlDown>
+      <OrderPriority>1</OrderPriority>
+      <IconIndex>30</IconIndex>
+      <IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+    </Row>    
+  </Builds>
+
+  <BuildFeatures>
+    <Row>
+      <BuildType>BUILD_OUTPOST</BuildType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Time>900</Time>
+      <Remove>false</Remove>
+    </Row>
+    <Row>
+      <BuildType>BUILD_OUTPOST</BuildType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Time>900</Time>
+      <Remove>false</Remove>
+    </Row>
+  </BuildFeatures>
+
+  
+  
+  
+  
+  <Unit_Builds>
+  
+    <Row>
+      <UnitType>UNIT_WORKER</UnitType>
+      <BuildType>BUILD_OUTPOST</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_OUTPOST</BuildType>
+    </Row>
+    
+  </Unit_Builds>
+  
+</GameData>
