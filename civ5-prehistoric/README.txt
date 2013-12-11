@@ -1,4 +1,4 @@
-This mod adds a new era, the Prehistoric Era, with 2000 years of human history. (v0.2.4a)
+This mod adds a new era, the Prehistoric Era, with 2000 years of human history. (Steam v8; v0.2.5a)
 
 *** Important Compatibility Section below to avoid conflicts with other Mods (and workarounds).
 *** Don't use mods that affect STARTING parameters!
@@ -23,7 +23,7 @@ Missing Thanks:
 - I am combing all my source material to make sure I thank and mention those that have helped me greatly. If you are one of those and I have missed you I truly do apologize and I will make sure to add you to the list. I am thankful for this wonderful community of contributors.
 ************************************ 
 
-v0.2.4a / 2013-12-06
+v0.2.5a / 2013-12-06 / Steam ver. 8
 
 ______________________________ 
 
@@ -48,7 +48,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
 
 ______________________________ 
 
-RELEASE NOTES v0.2.4a
+RELEASE NOTES v0.2.5a
 
 Additions
 

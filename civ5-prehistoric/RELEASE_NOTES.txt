@@ -1,3 +1,13 @@
+
+__ RELEASE NOTES v0.2.5a __
+
+Fixes 
+
+= Civ starting tech bonuses for Prince+.
+
+
+
+
 __ RELEASE NOTES v0.2.4a __
 
 Additions

@@ -145,7 +145,7 @@ Social Structure:     +@Chieftain's Hut (+1G,+1P)
 
 ::::::::::::::::::::::::::::::::::::::::::::
 
-Scouting:             -Scout, #@Outpost!!!!!!!, /-Pathfinder/
+Scouting:             -Scout, #@Outpost, /-Pathfinder/
 Tool Specialization:  +@Food Storage (+1F) {Must have Hunter or Gatherer unit}, {? -Raft}
 Harpooning:           $Pearls, $Crab, $Fish, *!Skara Brae
 Language:             &Embasies
@@ -199,13 +199,21 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
 
 ============================================
 
-
+8x8
 256:2048
 214:1712
 128:1024
  80:640
  64:512
  45:360
+
+4x4
+256:1024
+214:856
+128:512
+ 80:320
+ 64:256
+ 45:180
 -->
 
   <!-- New and Updated Techs -->

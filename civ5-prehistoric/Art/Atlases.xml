@@ -178,7 +178,88 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
-		
+
+    <!-- Terrain / Features -->
+
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>TerrainAtlas256_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>214</IconSize>
+      <Filename>TerrainAtlas214_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>128</IconSize>
+      <Filename>TerrainAtlas128_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>80</IconSize>
+      <Filename>TerrainAtlas80_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>TerrainAtlas64_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>TERRAIN_ATLAS_PRE</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>TerrainAtlas45_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>4</IconsPerColumn>
+    </Row>
+
+    
+    <!-- Resources -->
+
+    <Row>
+      <Atlas>RESOURCE_ATLAS_PRE</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>ResourceAtlas2048_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>RESOURCE_ATLAS_PRE</Atlas>
+      <IconSize>80</IconSize>
+      <Filename>ResourceAtlas640_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>RESOURCE_ATLAS_PRE</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>ResourceAtlas512_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>RESOURCE_ATLAS_PRE</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>ResourceAtlas360_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>    
+    
+    
+    
+    
+    
     <!-- Barbarians -->
     <!--
     <Row>
