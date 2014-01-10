@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+building: FirePit
+  requires: animal resource
+  bonus: +1 food
+  food kept
+  
+-->
+
+
+
+<GameData>
+
+  <BuildingClasses>
+    <Row>
+      <Type>BUILDINGCLASS_FIRE_PIT</Type>
+      <DefaultBuilding>BUILDING_FIRE_PIT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_TITLE</Description>
+    </Row>
+  </BuildingClasses>
+
+  <Buildings>
+    
+    <Row>
+      
+      <Type>BUILDING_FIRE_PIT</Type>
+      <BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
+      
+      <Cost>21</Cost>
+      <GoldMaintenance>1</GoldMaintenance>
+      
+      <PrereqTech>TECH_COOKING</PrereqTech>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
+      
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <HurryCostModifier>25</HurryCostModifier>
+      
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>6</PortraitIndex>
+      
+    </Row>
+    
+  </Buildings>
+
+  <Building_Flavors>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+  </Building_Flavors>
+
+  <Building_YieldChanges>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Building_YieldChanges>
+
+  <Building_LocalResourceOrs>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_DEER</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_COW</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_FISH</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_CRAB</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_HORSE</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_SHEEP</ResourceType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <ResourceType>RESOURCE_IVORY</ResourceType>
+    </Row>    
+  </Building_LocalResourceOrs>
+
+
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_TITLE">
+      <Text>Fire Pit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_DESC">
+      <Text>Fire Pit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_HELP">
+      <Text>Grants +1 [ICON_FOOD] Food but requires worked animal resources.[NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Metal Casting[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_STRATEGY">
+      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time. Grants additional +1 [ICON_FOOD] Food for your community.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_PEDIA">
+      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time.</Text>
+    </Row>
+  </Language_en_US>
+
+
+</GameData>

@@ -230,30 +230,30 @@
     <Row>
       <Atlas>RESOURCE_ATLAS_PRE</Atlas>
       <IconSize>256</IconSize>
-      <Filename>ResourceAtlas2048_PRE.dds</Filename>
-      <IconsPerRow>8</IconsPerRow>
-      <IconsPerColumn>8</IconsPerColumn>
+      <Filename>ResourceAtlas256_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
     </Row>
     <Row>
       <Atlas>RESOURCE_ATLAS_PRE</Atlas>
       <IconSize>80</IconSize>
-      <Filename>ResourceAtlas640_PRE.dds</Filename>
-      <IconsPerRow>8</IconsPerRow>
-      <IconsPerColumn>8</IconsPerColumn>
+      <Filename>ResourceAtlas80_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
     </Row>
     <Row>
       <Atlas>RESOURCE_ATLAS_PRE</Atlas>
       <IconSize>64</IconSize>
-      <Filename>ResourceAtlas512_PRE.dds</Filename>
-      <IconsPerRow>8</IconsPerRow>
-      <IconsPerColumn>8</IconsPerColumn>
+      <Filename>ResourceAtlas64_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
     </Row>
     <Row>
       <Atlas>RESOURCE_ATLAS_PRE</Atlas>
       <IconSize>45</IconSize>
-      <Filename>ResourceAtlas360_PRE.dds</Filename>
-      <IconsPerRow>8</IconsPerRow>
-      <IconsPerColumn>8</IconsPerColumn>
+      <Filename>ResourceAtlas45_PRE.dds</Filename>
+      <IconsPerRow>4</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
     </Row>    
     
     

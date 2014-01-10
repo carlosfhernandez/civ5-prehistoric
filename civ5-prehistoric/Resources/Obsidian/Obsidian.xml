@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <Resources>
+    <InsertOrAbort>
+
+      <Type>RESOURCE_OBSIDIAN</Type>
+      <Description>TXT_KEY_RESOURCE_OBSIDIAN_TITLE</Description>
+      <Civilopedia>TXT_KEY_RESOURCE_OBSIDIAN_PEDIA</Civilopedia>
+      <Help>TXT_KEY_RESOURCE_OBSIDIAN_HELP</Help>
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      <ArtDefineTag>ART_DEF_RESOURCE_OBSIDIAN</ArtDefineTag>
+      <!-- AltArtDefineTag, ArtDefineTagHeavy, AltArtDefineTagHeavy -->
+      <TechReveal>TECH_COMPLEX_TOOLS</TechReveal>
+      <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
+      <!-- <Happiness>1</Happiness> -->
+      <!-- WonderProductionMod, WonderProductionModObsoleteEra, StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>1</MinLatitude>
+      <MaxLatitude>90</MaxLatitude>
+      <RandApp1>25</RandApp1>
+      <RandApp2>25</RandApp2>
+      <!-- RandApp3, RandApp4 -->
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <!-- MinLandPercent, GroupRange, GroupRand, ResourceUsage, PresentOnAllValidPlots, Area [000000] -->
+      <Hills>1</Hills>
+      <Flatlands>1</Flatlands>
+      <!-- NoRiverSide, OnlyMinorCivs -->
+      <IconString>[ICON_RES_OBSIDIAN]</IconString>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </InsertOrAbort>
+
+  </Resources>
+
+
+  <!-- YIELDS -->
+  <!--
+  <Resource_YieldChanges>
+    <Row>
+      <ResourceType>RESOURCE_OBSIDIAN</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Resource_YieldChanges>
+  -->
+
+  <!-- FLAVORS -->
+
+  <Resource_Flavors>
+    <Row>
+      <ResourceType>RESOURCE_OBSIDIAN</ResourceType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Resource_Flavors>
+
+
+  <!-- BOOLEANS -->
+
+  <Resource_TerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_OBSIDIAN</ResourceType>
+      <TerrainType>TERRAIN_DESERT</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_OBSIDIAN</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_OBSIDIAN</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+  </Resource_TerrainBooleans>
+
+  <ArtDefine_Landmarks>
+
+    <Row>
+      <Era>Any</Era>
+      <State>Any</State>
+      <Scale>0.5</Scale>
+      <ImprovementType>ART_DEF_IMPROVEMENT_NONE</ImprovementType>
+      <LayoutHandler>SNAPSHOT</LayoutHandler>
+      <ResourceType>ART_DEF_RESOURCE_OBSIDIAN</ResourceType>
+      <Model>resource_obsidian.fxsxml</Model>
+      <TerrainContour>1</TerrainContour>
+    </Row>
+
+  </ArtDefine_Landmarks>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_RESOURCE_OBSIDIAN_TITLE">
+      <Text>Obsidian</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_OBSIDIAN_PEDIA">
+      <Text>Obsidian Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_OBSIDIAN_HELP">
+      <Text>+1 [ICON_PRODUCTION] Production from [COLOR_POSITIVE]Outpost[ENDCOLOR].</Text>
+    </Row>
+  </Language_en_US>
+
+</GameData>

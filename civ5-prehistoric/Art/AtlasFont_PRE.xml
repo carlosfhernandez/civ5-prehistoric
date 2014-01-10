@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+  <IconFontTextures>
+    <Row>
+      <IconFontTexture>ICON_FONT_TEXTURE_PRE</IconFontTexture>
+      <IconFontTextureFile>FontIconAtlas_PRE</IconFontTextureFile>
+    </Row>
+  </IconFontTextures>
+
+  <IconFontMapping>  
+    <Row>
+      <IconName>ICON_RES_BERRIES</IconName>
+      <IconFontTexture>ICON_FONT_TEXTURE_PRE</IconFontTexture>
+      <IconMapping>12</IconMapping>
+    </Row>
+  </IconFontMapping>
+  
+</GameData>

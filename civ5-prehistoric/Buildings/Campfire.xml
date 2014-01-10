@@ -20,20 +20,19 @@ Building: Campfire
 		<Row>
 			<Type>BUILDING_CAMPFIRE</Type>
 			<BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
-			<Cost>34</Cost>
+			<Cost>22</Cost>
 			<GoldMaintenance>0</GoldMaintenance>
 			<PrereqTech>TECH_FIRE</PrereqTech>
-			<Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
-			<Description>Campfire</Description>
-			<Strategy>The Campfire produces +1 [ICON_GOLD] Gold for your early settlement.</Strategy>
+      <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
 			<ArtDefineTag>MONUMENT</ArtDefineTag>
-			<ObsoleteTech>TECH_CALENDAR</ObsoleteTech>
 			<MinAreaSize>-1</MinAreaSize>
-      <Gold>1</Gold>
 			<ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
 			<HurryCostModifier>40</HurryCostModifier>
 			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>2</PortraitIndex>
 		</Row>
 	</Buildings>
@@ -46,12 +45,31 @@ Building: Campfire
 		</Row>
 	</Building_Flavors>
 
+  <Building_YieldChanges>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Building_YieldChanges>
+
+  
+  
+  
+  
+  
   <Language_en_US>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_TITLE">
       <Text>Campfire</Text>
     </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_DESC">
+      <Text>Tribe's Campfire</Text>
+    </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_HELP">
-      <Text>Increases the [ICON_GOLD] Gold of your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Calendar[ENDCOLOR].</Text>
+      <Text>
+        Increases the [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] of your community.
+        [NEWLINE]A campfire never becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR].
+      </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_QUOTE">
       <Text>
@@ -59,12 +77,18 @@ Building: Campfire
         [NEWLINE] - Lao Tzu[NEWLINE]
       </Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_STATEGY">
       <Text>
-        Skara Brae is a stone-built settlement built and inhabitant by early man, long ago abondoned. It is located on the largest of an archipelego of islands. It consists of eight clustered houses, each containing several pieces of stone built furniture such us cupboards, dressers, seats, and storage boxes.
-        [NEWLINE][NEWLINE]Given the number of homes, it seems likely that no more than fifty people lived in Skara Brae at any given time. They became pastorialists who raised cattle and sheep having first sustained themselves with an ocean-based diet of fish and other sea foods.
+        A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.
+        [NEWLINE]
       </Text>
     </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
+      <Text>
+        (Pedia) A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.
+        [NEWLINE]
+      </Text>
+    </Row>    
   </Language_en_US>  
   
   

@@ -1,4 +1,44 @@
 
+[[ v0.2.x RELEASE NOTES ]]
+==========================
+
+
+
+__ RELEASE NOTES v0.2.7a __
+
+Additions
+
++ Buildings: Shelter, Midden
++ Resources: Berries
++ Improvements: Foraging Site
+
+
+Fixes 
+
+= Outpost was not showing up as build option.
+
+
+Modification
+
+/ More gold production in early game. 
+
+
+Removals
+
+- Outpost: Too overpowered. I am changing it to only work for certain early minerla-type resources. 
+
+
+
+
+__ RELEASE NOTES v0.2.6a __
+
+Fixes 
+
+= Outpost was not showing up as build option.
+
+
+
+
 __ RELEASE NOTES v0.2.5a __
 
 Fixes 

@@ -55,6 +55,17 @@
       <PediaEntry>City Burner</PediaEntry>
     </Row>
 
+    <Row>
+      <Type>PROMOTION_CAUSEWAY</Type>
+      <Description>Marsh Walker</Description>
+      <Help>Extra [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement[ENDCOLOR] in [COLOR_POSITIVE_TEXT]Marshes[ENDCOLOR]</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Marsh Walker</PediaEntry>
+    </Row>    
+
 
 
     <Row>
@@ -74,6 +85,11 @@
 
   </UnitPromotions>
 
+  
+  
+  
+  
+  
   <UnitPromotions_Features>
     <Row>
       <PromotionType>PROMOTION_AUTOCHTHON</PromotionType>
@@ -81,6 +97,20 @@
       <Defense>50</Defense>
       <Attack>25</Attack>
     </Row>
+    <Row>
+      <PromotionType>PROMOTION_CAUSEWAY</PromotionType>
+      <FeatureType>FEATURE_MARSH</FeatureType>
+      <DoubleMove>1</DoubleMove>
+    </Row>
   </UnitPromotions_Features>
+
+<!--
+  <UnitPromotions_Terrains>
+    <Row>
+   
+    </Row>
+  </UnitPromotions_Terrains>
+-->  
+  
   
 </GameData>

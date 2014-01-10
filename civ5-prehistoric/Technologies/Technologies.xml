@@ -109,61 +109,76 @@ Prehistoric Mod BNW v1.1.0a:
    ~ Name change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 
-   % Barbarian Only
-   - Unit
-   + Building
-   * Wonder
-   # Improvement
-   $ Resource
-   & Ability
+   %  Barbarian Only
+   u- Unit
+   b- Building
+   *  Wonder
+   #  Improvement
+   $  Resource
+   &  Ability
    (abc) Bonus
    /abc/ Unique
    {abc} Future
 
-? Change Improvement Techs Required: bananas & fish 
+
   (two fishing boat types? two plantation types?)
 ? Laborer Useless until first improvement is enabled
 
-============================================
 
-Simple Tools:         -Settler, -@Laborer, -!Autochthon, 
-                      +@Tree of Life, [Stone], *Theopetra Cave
-                      {+Shelter (+1H)}
-                      
-::::::::::::::::::::::::::::::::::::::::::::
 
-Complex Tools:        -!Primitive Archer
-Fire:                 -@Caveman, -~@Shaman (Fire Eater), +@Campfire (+1G/+1H)
-Gathering:            *@Wonderwerk Cave, $Banana
-                      {? +Shell Mound +1G } , {? +Pit +1F }, {? -Gatherer: pre-Laborer}
-                      
-::::::::::::::::::::::::::::::::::::::::::::
-
-Hunting:              $Deer {-Hunter}
-Cooking:              ___________________________________________
-Social Structure:     +@Chieftain's Hut (+1G,+1P)
-
-::::::::::::::::::::::::::::::::::::::::::::
-
-Scouting:             -Scout, #@Outpost, /-Pathfinder/
-Tool Specialization:  +@Food Storage (+1F) {Must have Hunter or Gatherer unit}, {? -Raft}
-Harpooning:           $Pearls, $Crab, $Fish, *!Skara Brae
-Language:             &Embasies
-Warfare:              -@Savage, +@Palisade
-Leadership:           -%Galley {Buildable with limits}, +Palace
-
-::::::::::::::::::::::::::::::::::::::::::::
-
-Archery:              -Archer, *Temple of Artemis, /-Slinger/, /-Bowman/
-Idols:                +Shrine (+1R), *@Ggantija Temples, /+Pyramid/
-Art:                  +@Rock Paintings (+1C), [Dyes]
-Cooperation:          -Warrior, %Brute, /-Jaguar/, /-Maori/
-
-============================================
-
-Agriculture:          -Worker, #Farms, $Wheat, $Sugar, $Citrus, /Atlatlist/
-
-::::::::::::::::::::::::::::::::::::::::::::
+=========================================================================================|=========================|
+                      STATS ->                                                           | A G H P S C F Z T X I R | W
+                                                                                         | u o a r c u o f o t m e | 
+                                                                                         | B l p o i l o a u r p s |
+                                                                                         | a d p d e t d i r a r o |
+                                                                                         | s   i u n u   t i d o u |
+                                                                                         | e   n c c r   h s e v r |
+                                                                                         |     e t e e     m   e c |
+                                                                                         |                         |
+                                                                                         |                         |
+                                                                                         |                         |
+                                                                                         | A G H P S C F Z T X I R | W
+                                                                                    Base | . . * 1 1 . . . . . . . |
+Simple Tools:         u-Settler, u-@Laborer, u-!Autochthon,                              | . . . . . . . . . . . . | GPF
+                      b-@Tree of Life (Capitol), [Stone], *Theopetra Cave                | 2 2 . . . . . . . . . 1 |
+                      b-!Shelter (+1H)                                                   | . . 1 . . . . . . . . . |
+                                                                                         | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 2 1 1 1 . . . . . . 1 | 
+                                                                                         | . . . . . . . . . . . . |
+Complex Tools:        u-!Primitive Archer                                                | . . . . . . . . . . . . |
+Fire:                 u-@Caveman, u-~@Shaman (Fire Eater), b-@Campfire (+1G)             | . 1 . . . . . . . . . . |
+Gathering:            *@Wonderwerk Cave, $Banana, $!Berries, #!Foraging Site             | . . . . . . . . . . 1 2 | GPM
+                      b-!Midden (+1F), {? +Pit +1F },                                    | . . . . . . 1 . . . . . |
+                      {? -Gatherer: pre-Laborer}                                         | . . . . . . . . . . . . |
+                                                                                         | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 . 1 1 . 1 . . . 1 3 |
+                                                                                         | . . . . . . . . . . . . |
+Hunting:              $Deer {-Hunter}                                                    | . . . . . . . . . . . 1 | 
+Cooking:              *******************************************                        | . . . . . . . . . . . . | 
+Social Structure:     b-@Chieftain's Hut (+1G,+1P)                                       | . . 1 1 . . . . . . . . |
+                                                                                         | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 2 1 . 1 . . . 1 4 |
+                                                                                         | . . . . . . . . . . . . |
+Scouting:             -Scout, #@Outpost, /-Pathfinder/                                   | . . . . . . . . . . 1 . |
+Tool Specialization:  b-@Food Storage (+1F) {Must have Hunter or Gatherer unit},         | . . . . . . 1 . . . . . |
+                      {? -Raft}                                                          | . . . . . . . . . . . . |
+Harpooning:           $Pearls, $Crab, $Fish, *!Skara Brae                                | . . . . . . . . . . . 3 | ?
+Language:             &Embasies                                                          | . . . . . . . . . . . . |
+Warfare:              -@Savage, b-@Palisade                                              | . . . . . . . . . . . . |
+Leadership:           -%Galley {Buildable with limits}, b-Palace                         | . . . . . . . . . . . . |
+                                                                                         | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 2 1 . 2 . . . 2 7 | 
+                                                                                         | . . . . . . . . . . . . |
+Archery:              -Archer, *Temple of Artemis, /-Slinger/, /-Bowman/                 | . . . . . . . . . . . . |
+Idols:                +Shrine (+1R), *@Ggantija Temples, /+Pyramid/                      | . . . . . . . . . . . . |
+Art:                  b-@Rock Paintings (+1C), [Dyes]                                    | . . . . . . . . . . . . |
+Cooperation:          -Warrior, %Brute, /-Jaguar/, /-Maori/                              | . . . . . . . . . . . . |
+                                                                                         |                         |
+============================================                                             |                         |
+                                                                                         | A G H P S C F Z T X I R | W
+Agriculture:          -Worker, #Farms, $Wheat, $Sugar, $Citrus, /Atlatlist/              |                         | 
+                                                                                         |                         |
+::::::::::::::::::::::::::::::::::::::::::::                                             |                         |
 
 Pottery:              +Granary, $Porcelein
 Trapping:             +Circus, #Camp, $Furs
@@ -191,13 +206,16 @@ Bronze Working:       -Hoplite, /-Immortal/, /-Pict/, /-Battering Ram/,
 ::::::::::::::::::::::::::::::::::::::::::::
 
 Optics:               +Lighthouse, *Great Lighthouse, &Embark
-Horseback Riding:     -Companion Cavalry, -@Explorer /-Cataphraft/, /-African Forest Elephant/,
-                      +Stable, /+Ducal Stable/, +Carvansary, *Circus Maximus
-Mathematics:          -Catapult, /-Ballista/, /-Siege Tower/, +Courthouse, *Hanging Gardens
+Horseback Riding:     -Companion Cavalry, -@Explorer /-Cataphraft/, 
+                      /-African Forest Elephant/, +Stable, /+Ducal Stable/, 
+                      +Carvansary, *Circus Maximus
+Mathematics:          -Catapult, /-Ballista/, /-Siege Tower/, +Courthouse, 
+                      *Hanging Gardens
 Construction:         -Composite Bowman, +Colosseum, *Terracota Army, 
                       #Lumber Mill, /#Terrace Farm/, /#Moai/
 
-============================================
+=========================================================================================|=========================|
+
 
 8x8
 256:2048
@@ -320,7 +338,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Cost>12</Cost>
       <Description>Hunting</Description>
       <Civilopedia></Civilopedia>
-      <Help>With [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth.</Help>
+      <Help>With [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth. Your citizens may now go out and [COLOR_POSITIVE_TEXT]Forage[ENDCOLOR].</Help>
       <Quote>[NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>
@@ -1591,7 +1609,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SIMPLE_TOOLS_HELP">
-      <Text>Allows the use of basic tools, such as sharpened stones. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR], [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR], and [COLOR_POSITIVE_TEXT]{TXT_KEY_UNIT_AUTOCHTHON}[ENDCOLOR] (a unit with no maintenance cost, able to self-sustain naturally). Reveals [COLOR_YELLOW]Stone[ENDCOLOR]. Unlocks [COLOR_CYAN]Theopetra Cave[ENDCOLOR], the oldest known man-made structure, providing a powerful boost to your economy and production.</Text>
+      <Text>Allows the use of basic tools, such as sharpened stones. The [COLOR_POSITIVE_TEXT]Lean-to Shelter[ENDCOLOR] is available for building. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR], [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR], and [COLOR_POSITIVE_TEXT]{TXT_KEY_UNIT_AUTOCHTHON}[ENDCOLOR] (a unit with no maintenance cost, able to self-sustain naturally). Reveals [COLOR_YELLOW]Stone[ENDCOLOR]. Unlocks [COLOR_CYAN]Theopetra Cave[ENDCOLOR], the oldest known man-made structure, providing a powerful boost to your economy and production.</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SIMPLE_TOOLS_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Edged tools are dangerous things to handle, and not infrequently do much hurt."[NEWLINE][TAB][TAB]  - Agnes Repplier.[NEWLINE][TAB]</Text>
@@ -1632,7 +1650,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_GATHERING_HELP">
-      <Text>Takes your gathering culture to an new level. Reveals [ICON_RES_BANANA] [COLOR_YELLOW]Bananas[ENDCOLOR] on the map and allows you to build [COLOR_CYAN]Wonderwerk Cave[ENDCOLOR] which will help in resource production for your city.</Text>
+      <Text>Takes your gathering culture to an new level. Reveals [ICON_RES_BANANA] [COLOR_YELLOW]Bananas[ENDCOLOR] and [ICON_RES_BERRIES] [COLOR_YELLOW]Berries[ENDCOLOR] on the map and allows you to build a [COLOR_POSITIVE_TEXT]Midden[ENDCOLOR] for your settlement and [COLOR_CYAN]Wonderwerk Cave[ENDCOLOR] which will help in resource production.</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_GATHERING_QUOTE">
       <Text>

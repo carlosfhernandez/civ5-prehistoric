@@ -12,4 +12,5 @@ Androrc for:
 - JFD, who provided a new trait for France with his "New Beginnings" mod! 
 
 Wulfgar, Deliverator, WHoward, danrell, lemmy101
+- Horemvore for the resources examples and base art.
 

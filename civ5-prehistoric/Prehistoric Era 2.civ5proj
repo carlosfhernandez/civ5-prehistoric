@@ -5,14 +5,14 @@
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
     <Name>!Prehistoric Era (BNW)</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>9</ModVersion>
+    <ModVersion>11</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.2.6a)[ENDCOLOR] [COLOR_PROJECT_TEXT]Adds a new era, The Prehistoric Era, before the Ancient Era.</Teaser>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.2.8a)[ENDCOLOR] [COLOR_PROJECT_TEXT]Adds a new era, The Prehistoric Era, before the Ancient Era.</Teaser>
     <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
     <Authors>Apshai (Carlos Codex)</Authors>
-    <SpecialThanks>Muppets</SpecialThanks>
+    <SpecialThanks>Muppets and CivFanatics</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
-    <MinCompatibleSaveVersion>7</MinCompatibleSaveVersion>
+    <MinCompatibleSaveVersion>11</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
@@ -25,6 +25,11 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Art/Atlases.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Art/AtlasFont_PRE.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -69,12 +74,12 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Resources/Resources.xml</FileName>
+        <FileName>Core/Resources.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Resources/Lumber/Lumber.xml</FileName>
+        <FileName>Resources/Resources.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -115,6 +120,21 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Buildings/TreeOfLife.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Buildings/Shelter.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Buildings/Midden.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Buildings/FirePit.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -219,6 +239,51 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Resources/Berries/BerriesArt.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/Berries/Berries.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/Obsidian/ObsidianArt.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/Obsidian/Obsidian.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/Flint/FlintArt.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Resources/Flint/Flint.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Improvements/ForagingSite.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Improvements/ForagingSite.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Improvements/Outpost.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Improvements/Outpost.xml</FileName>
       </Action>
     </ModActions>
@@ -226,15 +291,9 @@
     <ModContent>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>PE_TechTree</Name>
-        <Description>Modifies Tech Tree icons, order, and other ui elements</Description>
-        <FileName>Interface/PE_TechTree.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>PE_ResourceGen</Name>
-        <Description>Generates extra resources</Description>
-        <FileName>Lua/ResourceGenMain_Prehistory.lua</FileName>
+        <Description>Generate extra resources</Description>
+        <FileName>Lua/AddResources_Prehistory.lua</FileName>
       </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -257,13 +316,20 @@
     <Folder Include="Art\Atlas\" />
     <Folder Include="Art\Atlas\Buildings\" />
     <Folder Include="Art\Atlas\Flag\" />
+    <Folder Include="Art\Atlas\Icon\" />
     <Folder Include="Art\Atlas\Resources" />
     <Folder Include="Art\Atlas\Terrain" />
     <Folder Include="Art\Atlas\Promotions\" />
     <Folder Include="Art\Atlas\Tech\" />
     <Folder Include="Art\Atlas\Units\" />
+    <Folder Include="Art\Improvements" />
+    <Folder Include="Art\Improvements\ForagingSite" />
     <Folder Include="Art\Resources\" />
+    <Folder Include="Art\Resources\Berries\" />
     <Folder Include="Art\Resources\Lumber\" />
+    <Folder Include="Art\Resources\Flint" />
+    <Folder Include="Art\Resources\Coconuts" />
+    <Folder Include="Art\Resources\Obsidian" />
     <Folder Include="Art\Units\Laborer" />
     <Folder Include="Art\Units\Explorer" />
     <Folder Include="Art\_ Tmp" />
@@ -282,6 +348,7 @@
     <Folder Include="Buildings\" />
     <Folder Include="Civilizations\" />
     <Folder Include="Core\" />
+    <Folder Include="Core\Mod" />
     <Folder Include="Eras\" />
     <Folder Include="Improvements\" />
     <Folder Include="Lang\" />
@@ -291,6 +358,11 @@
     <Folder Include="Assets" />
     <Folder Include="Lua\" />
     <Folder Include="Resources\Lumber\" />
+    <Folder Include="Resources\Berries" />
+    <Folder Include="Resources\Cactus" />
+    <Folder Include="Resources\Flint" />
+    <Folder Include="Resources\Obsidian" />
+    <Folder Include="Terrain\" />
     <Folder Include="Units\Javelineer" />
     <Folder Include="Units\Herdsman" />
     <Folder Include="Units\NeolithicMan" />
@@ -337,6 +409,14 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\Atlas\Icon\FontIconAtlas_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Icon\FontIconAtlas_PRE.ggxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Art\Atlas\Promotions\art-atlas-promotions-notes.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -373,19 +453,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Resources\ResourceAtlas2048_PRE.dds">
+    <Content Include="Art\Atlas\Resources\ResourceAtlas256_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Resources\ResourceAtlas360_PRE.dds">
+    <Content Include="Art\Atlas\Resources\ResourceAtlas45_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Resources\ResourceAtlas512_PRE.dds">
+    <Content Include="Art\Atlas\Resources\ResourceAtlas64_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Resources\ResourceAtlas640_PRE.dds">
+    <Content Include="Art\Atlas\Resources\ResourceAtlas80_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -454,6 +534,174 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Atlas\Units\UnitAtlas80_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\AtlasFont_PRE.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Improvements\ForagingSite\foraging_berries_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Improvements\ForagingSite\foraging_berries_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Improvements\ForagingSite\foraging_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Improvements\ForagingSite\foraging_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_grnd_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_improved.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_improved.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_improved_idle.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_improved_worked.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_sv.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_vineyard_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berries_vineyard_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berry_improved_idle.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\berry_improved_worked.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\crop_ground_berries_d.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\fx_triggers_pl_plantation_ind_berries.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\fx_triggers_pl_plantation_mid_berries.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\hb_plantation_ind_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\hb_plantation_ind_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\hb_plantation_mid_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\hb_plantation_mid_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\plantation_ind_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\plantation_ind_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\plantation_mid_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\plantation_mid_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\pl_plantation_ind_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\pl_plantation_ind_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\pl_plantation_mid_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\pl_plantation_mid_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\resource_berries.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Berries\resource_berries.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint_ore_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint_ore_decal_h.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint_ore_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint_ore_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\__flint_rubble_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\flint_sv.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Flint\resource_flint.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -538,6 +786,110 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Resources\Lumber\wood_ground_h.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\resource_obsidian.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\v_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian_ore_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian_ore_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian_rubble_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\fx_triggers_pl_ind_mine_amber.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\fx_triggers_pl_med_mine_amber.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\hb_ind_amber_mine.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\hb_ind_amber_mine.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\hb_med_amber_mine.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\hb_med_amber_mine.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\ind_mine_amber.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\ind_mine_amber.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\med_amber_mine.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\med_amber_mine.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\med_mine_amber.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\med_mine_amber.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\mine_amber_decal_d.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\pl_ind_mine_amber.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\pl_ind_mine_amber.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\pl_med_mine_amber.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\pl_med_mine_amber.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\pl_mine_amber_decal_d.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Resources\Obsidian\obsidian_sv.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -849,11 +1201,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Buildings\Midden.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Buildings\Shelter.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Buildings\StoneFirePit.xml">
+    <Content Include="Buildings\FirePit.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -866,6 +1222,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Core\Beliefs.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Core\Buildings.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -889,11 +1249,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Core\Resources.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Core\Resources.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Core\PF_Setup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Core\Terrain.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -917,7 +1285,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Improvements\DesertMine.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Improvements\Fart.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Improvements\ForagingSite.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -929,7 +1305,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Improvements\Outpost.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Improvements\Outpost.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Improvements\WaterWell.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -945,21 +1329,29 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Lua\Buildings.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\ResourceGenFunc_Prehistory.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ResourceGenMain_Prehistory.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ResourceGen_Prehistory.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="README-SMALL.txt">
+    <Content Include="Lua\SaveUtils.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ShareData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="README.txt">
       <SubType>Lua</SubType>
@@ -969,11 +1361,51 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Resources\Berries\Berries.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Berries\BerriesArt.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Cactus\Cactus.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Cactus\Cactus.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Flint\Flint.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Flint\FlintArt.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Lumber\Lumber.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Resources\Lumber\Lumber.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Resources\Obsidian\ObsidianArt.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Obsidian\Obsidian.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Resources\Resources.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Template.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

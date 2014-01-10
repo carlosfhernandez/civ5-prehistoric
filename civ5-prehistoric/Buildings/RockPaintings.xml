@@ -15,7 +15,7 @@
 			<Type>BUILDING_ROCK_PAINTINGS</Type>
 			<BuildingClass>BUILDINGCLASS_ROCK_PAINTINGS</BuildingClass>
 			<PrereqTech>TECH_ART</PrereqTech>
-			<Cost>18</Cost>
+			<Cost>32</Cost>
 			<Help>The Rock Paintings grant your community +1 [ICON_CULTURE] Culture.</Help>
 			<Description>Rock Paintings</Description>
 			<Strategy>Rock Paintings increase your Civilization's [ICON_CULTURE] Culture. Millennia later, archaeologists will be in awe of your amazing work.</Strategy>

@@ -1,10 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by ModBuddy on 11/18/2013 5:39:08 PM -->
+
+<!--
+Causeway: +1 Production per marsh tile worked by city.
+-->
+
 <GameData>
-  <!-- TODO: Insert table creation example here. -->
- 
-  <!-- TODO: Insert table data example here.-->
-  
-  <!-- Enter your Game Data here. -->
-  
+
+  <BuildingClasses>
+    <Row>
+      <Type>BUILDINGCLASS_CAUSEWAY</Type>
+      <DefaultBuilding>BUILDING_CAUSEWAY</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_CAUSEWAY_TITLE</Description>
+    </Row>
+  </BuildingClasses>
+
+  <Buildings>
+    <Row>
+      <Type>BUILDING_CAUSEWAY</Type>
+      <BuildingClass>BUILDINGCLASS_CAUSEWAY</BuildingClass>
+      <Cost>14</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <Description>TXT_KEY_BUILDING_CAUSEWAY_DESC</Description>
+      <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_CAUSEWAY_PEDIA</Civilopedia>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>10</PortraitIndex>
+    </Row>
+  </Buildings>
+
+  <Building_Flavors>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Building_Flavors>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_TITLE">
+      <Text>Causeway</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_DESC">
+      <Text>Causeway</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
+      <Text>
+        Provides a crude form of CAUSEWAY for your tribe, increasing [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] in your community.
+        [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_QUOTE">
+      <Text>
+        "Because it's that way."
+        [NEWLINE] - author[NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
+      <Text>
+        The basic stick CAUSEWAY is one of the most primitive of CAUSEWAYs, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.
+        [NEWLINE]
+        [NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to CAUSEWAY themselves from some environmental elements.
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
+      <Text>Causeway Pedia.</Text>
+    </Row>
+  </Language_en_US>
+
 </GameData>

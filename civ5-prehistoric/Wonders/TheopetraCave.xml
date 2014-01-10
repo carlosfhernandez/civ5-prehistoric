@@ -7,7 +7,7 @@
     <Row>
       <Type>BUILDINGCLASS_THEOPETRACAVE</Type>
       <DefaultBuilding>BUILDING_THEOPETRACAVE</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_THEOPETRACAVE</Description>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_DESC</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
   </BuildingClasses>
@@ -20,7 +20,8 @@
       <Cost>48</Cost>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <Help>TXT_KEY_WONDER_THEOPETRACAVE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_THEOPETRACAVE</Description>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_TITLE</Description>
+      <Strategy>TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_WONDER_THEOPETRACAVE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_THEOPETRACAVE_QUOTE</Quote>
       <ArtDefineTag>PETRA</ArtDefineTag> <!-- TODO -->
@@ -100,11 +101,19 @@
 
   
   <Language_en_US>
-    <Row Tag="TXT_KEY_BUILDING_THEOPETRACAVE">
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_TITLE">
+      <Text>Theopetra Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_DESC">
       <Text>Theopetra Cave</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_HELP">
       <Text>+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from Stone Resource worked by the City it is built in. Also provides +1 Food [ICON_FOOD].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY">
+      <Text>
+        A huge advantage if you can build it early in the game. 
+      </Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_QUOTE">
       <Text>[NEWLINE]When one has finished building one's house, one suddenly realizes that in the process one has learned something that one really needed to know in the worst way -- before one began.[NEWLINE]  - Friedrich Nietzsche</Text>

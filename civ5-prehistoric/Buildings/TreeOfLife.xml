@@ -19,8 +19,10 @@
 			<Type>BUILDING_TREE_LIFE</Type>
 			<BuildingClass>BUILDINGCLASS_TREE_LIFE</BuildingClass>
 			<Cost>0</Cost>
-			<Help>A tall, beautiful and fruitful tree, around which your community has been founded.[NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] Capital of the empire, until the construction of the Palace.</Help>
-			<Description>Tree of Life</Description>
+      <Description>Tree of Life</Description>
+      <Help>A tall, beautiful and fruitful tree, around which your community has been founded.
+        [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].
+      </Help>
 			<Strategy>The concept of a tree of life has been used in science, religion, philosophy, mythology, and other areas. A tree of life is a common motif in various world theologies, mythologies, and philosophies. A mystical concept alluding to the interconnection of all life on our planet; and a metaphor for common descent in the evolutionary sense. The term tree of life may also be used as a synonym for 'sacred tree'.[NEWLINE](Quoted from en.wikipedia.org/wiki/Tree_of_life)</Strategy>
 			<ArtDefineTag>MONUMENT</ArtDefineTag>
       <Gold>2</Gold>

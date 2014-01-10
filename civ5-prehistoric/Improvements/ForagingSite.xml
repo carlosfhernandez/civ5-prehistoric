@@ -1,10 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by ModBuddy on 12/10/2013 6:03:35 AM -->
+<!--
+Improvement: Foraging Site
+
+
+
+-->
 <GameData>
-  <!-- TODO: Insert table creation example here. -->
- 
-  <!-- TODO: Insert table data example here.-->
+
+  <!-- 
+  TODO:
   
-  <!-- Enter your Game Data here. -->
+  -->
+
+
+  <!-- IMPROVEMENT -->
+
+  <Improvements>
+    <Row>
+      <Type>IMPROVEMENT_FORAGING_SITE</Type>
+      <Description>Foraging Site</Description>
+      <Civilopedia>Early man would forage in prolific areas by establishing the necessary tools and supplies in the area for greater efficiency. Baskets and other containers, sharpened sticks, and other primitive tools were kept in the area while foragers collected food.</Civilopedia>
+      <Help>Foraging Site Help</Help>
+      <ArtDefineTag>ART_DEF_IMPROVEMENT_FORAGING_SITE</ArtDefineTag>
+      <DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>TERRAIN_ATLAS_PRE</IconAtlas>
+    </Row>
+  </Improvements>
+
+  <!--
+  <Improvement_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_Yields>
+
+  <Improvement_ValidTerrains>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+  </Improvement_ValidTerrains>
+  -->
   
+  
+  <Improvement_Flavors>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+  </Improvement_Flavors>
+
+  <Improvement_ResourceTypes>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <ResourceType>RESOURCE_BANANA</ResourceType>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+    </Row>
+  </Improvement_ResourceTypes>
+
+  <Improvement_ResourceType_Yields>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <ResourceType>RESOURCE_BANANA</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_ResourceType_Yields>
+
+  <!-- Improvement_TechYieldChanges -->
+
+
+  <!-- BUILD -->
+
+  <Builds>
+    <Row>
+      <Type>BUILD_FORAGING_SITE</Type>
+      <PrereqTech>TECH_GATHERING</PrereqTech>
+      <Time>600</Time>
+      <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
+      <Description>Build Foraging Site</Description>
+      <Help>Increases the tile's [ICON_FOOD] [COLOR_POSITIVE_TEXT]Food[ENDCOLOR] output +1.</Help>
+      <Recommendation>It will increase the tile's [ICON_FOOD] Food output, granting increased Growth for your City.</Recommendation>
+      <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+      <OrderPriority>98</OrderPriority>
+      <IconIndex>1</IconIndex>
+      <IconAtlas>TERRAIN_ATLAS_PRE</IconAtlas>
+    </Row>
+  </Builds>
+
+  
+  <BuildFeatures>
+    <Row>
+      <BuildType>BUILD_FORAGING_SITE</BuildType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Time>100</Time>
+      <Remove>false</Remove>
+    </Row>
+    <Row>
+      <BuildType>BUILD_FORAGING_SITE</BuildType>
+      <FeatureType>FEATURE_JUNGLE</FeatureType>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Time>200</Time>
+      <Remove>false</Remove>
+    </Row>    
+  </BuildFeatures>
+  
+
+
+  <!-- UNIT -->
+
+  <Unit_Builds>
+    <Row>
+      <UnitType>UNIT_WORKER</UnitType>
+      <BuildType>BUILD_FORAGING_SITE</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_FORAGING_SITE</BuildType>
+    </Row>
+  </Unit_Builds>
+
 </GameData>

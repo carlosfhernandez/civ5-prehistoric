@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <Resources>
+    <InsertOrAbort>
+
+      <!--
+      
+      Non-functional SQL just for illustration:
+      ===============================================================================
+      
+      Type,                   Description,                        Civilopedia,                              Help,                                   ResourceClassType,        
+      'RESOURCE_BERRIES',     'TXT_KEY_RESOURCE_BERRIES_TITLE',   'TXT_KEY_CIV5_RESOURCE_BERRIES_PEDIA',    'TXT_KEY_RESOURCE_BERRIES_HELP',        'RESOURCECLASS_BONUS',    
+      
+      ArtDefineTag,                 AltArtDefineTag,  ArtDefineTagHeavy,  AltArtDefineTagHeavy,   TechReveal,         PolicyReveal,   TechCityTrade,  TechObsolete, AIStopTradingEra, 
+      'ART_DEF_RESOURCE_BERRIES',   null,             null,               null,                   'TECH_GATHERING',   null,           null,           null,         null,             
+      
+      Happiness,  WonderProductionMod,  WonderProductionModObsoleteEra, StartingResourceQuantity, Normalize,  AITradeModifier,  AIObjective,  PlacementOrder, ConstAppearance,  
+      0,          0,                    null,                           0,                        0,          0,                0,            4,              50,               
+      
+      MinAreaSize,  MinLatitude,  MaxLatitude,  RandApp1, RandApp2, RandApp3, RandApp4, Player, TilesPer, MinLandPercent, GroupRange, GroupRand,  ResourceUsage,  PresentOnAllValidPlots, 
+      3,            0,            90,           25,       25,       0,        0,        0,      5,        0,              0,          0,          0,              0,                      
+      
+      Area,   Hills,  Flatlands,  NoRiverSide,  OnlyMinorCivs,  IconString,               PortraitIndex,  IconAtlas
+      0,      1,      1,          0,            0,              '[ICON_RES_BERRIES]',     0,              'RESOURCE_ATLAS_PRE'
+      
+      
+      
+      SQL:
+      ===============================================================================
+      
+      INSERT INTO Resources (
+      Type,                   Description,                        Civilopedia,                              Help,                                   ResourceClassType,        
+      ArtDefineTag,                 AltArtDefineTag,  ArtDefineTagHeavy,  AltArtDefineTagHeavy,   TechReveal,         PolicyReveal,   TechCityTrade,  TechObsolete, AIStopTradingEra, 
+      Happiness,  WonderProductionMod,  WonderProductionModObsoleteEra, StartingResourceQuantity, Normalize,  AITradeModifier,  AIObjective,  PlacementOrder, ConstAppearance,  
+      MinAreaSize,  MinLatitude,  MaxLatitude,  RandApp1, RandApp2, RandApp3, RandApp4, Player, TilesPer, MinLandPercent, GroupRange, GroupRand,  ResourceUsage,  PresentOnAllValidPlots, 
+      Area,   Hills,  Flatlands,  NoRiverSide,  OnlyMinorCivs,  IconString,               PortraitIndex,  IconAtlas
+      )
+      VALUES (
+      'RESOURCE_BERRIES',     'TXT_KEY_RESOURCE_BERRIES_TITLE',   'TXT_KEY_CIV5_RESOURCE_BERRIES_PEDIA',    'TXT_KEY_RESOURCE_BERRIES_HELP',        'RESOURCECLASS_BONUS',    
+      'ART_DEF_RESOURCE_BERRIES',   null,             null,               null,                   'TECH_GATHERING',   null,           null,           null,         null,             
+      0,          0,                    null,                           0,                        0,          0,                0,            4,              50,               
+      3,            0,            90,           25,       25,       0,        0,        0,      5,        0,              0,          0,          0,              0,                      
+      0,      1,      1,          0,            0,              '[ICON_RES_BERRIES]',     0,              'RESOURCE_ATLAS_PRE'
+      );
+      
+      
+      __OR__
+      
+      
+      INSERT INTO Resources   (Type,                  Description,                            Civilopedia,                                Help,                                       ResourceClassType,              ArtDefineTag,                       AltArtDefineTag,                    ArtDefineTagHeavy,                  AltArtDefineTagHeavy,       TechReveal,                     PolicyReveal,               TechCityTrade,                  TechObsolete,       AIStopTradingEra,   Happiness,  WonderProductionMod,    WonderProductionModObsoleteEra, StartingResourceQuantity,   Normalize,      AITradeModifier,    AIObjective,    PlacementOrder, ConstAppearance,    MinAreaSize,    MinLatitude,    MaxLatitude,    RandApp1,   RandApp2,   RandApp3,   RandApp4,   Player, TilesPer,   MinLandPercent, GroupRange, GroupRand,  ResourceUsage,  PresentOnAllValidPlots, Area,   Hills,  Flatlands,  NoRiverSide,    OnlyMinorCivs,  IconString,                     PortraitIndex,  IconAtlas) VALUES
+						      ('RESOURCE_BERRIES',	'TXT_KEY_RESOURCE_BERRIES',				'TXT_KEY_CIV5_RESOURCE_BERRIES_TEXT',		'TXT_KEY_RESOURCE_BERRIES_HELP',			'RESOURCECLASS_BONUS',			'ART_DEF_RESOURCE_BERRIES',			null,								null,								null,						null,							'POLICY_PIETY',				null,							null,				null,				0,			0,						null,							0,							0,				0,					0,				4,				50,					3,				0,				90,				25,			25,			0,			0,			0,		5,			0,				0,			0,			0,				0,						0,		1,		1,			0,				0,				'[ICON_RES_WILDBERRIES]',		16,				'NEW_RESOURCE_ATLAS');
+      
+      -->
+
+      <Type>RESOURCE_BERRIES</Type>
+      <Description>TXT_KEY_RESOURCE_BERRIES_TITLE</Description>
+      <Civilopedia>TXT_KEY_RESOURCE_BERRIES_PEDIA</Civilopedia>
+      <Help>TXT_KEY_RESOURCE_BERRIES_HELP</Help>
+      
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      
+      <ArtDefineTag>ART_DEF_RESOURCE_BERRIES</ArtDefineTag>
+      <ArtDefineTagHeavy></ArtDefineTagHeavy>
+      <AltArtDefineTagHeavy></AltArtDefineTagHeavy>
+      
+      <TechReveal>TECH_GATHERING</TechReveal>
+      <PolicyReveal></PolicyReveal>
+      <TechCityTrade></TechCityTrade>
+      <TechObsolete></TechObsolete>
+      
+      <AIStopTradingEra></AIStopTradingEra>
+      
+      <!-- Happiness: This may trigger resource type Luxury -->
+      <Happiness></Happiness>
+      
+      <WonderProductionMod></WonderProductionMod>
+      <WonderProductionModObsoleteEra></WonderProductionModObsoleteEra>
+      
+      <StartingResourceQuantity></StartingResourceQuantity>
+      <Normalize></Normalize>
+      <AITradeModifier></AITradeModifier>
+      <AIObjective></AIObjective>
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>1</MinLatitude>
+      <MaxLatitude>90</MaxLatitude>
+      <RandApp1>25</RandApp1>
+      <RandApp2>25</RandApp2>
+      <!-- RandApp3: Does not seem to be used -->
+      <RandApp3></RandApp3>
+      <!-- RandApp4: Does not seem to be used -->
+      <RandApp4></RandApp4>
+      
+      <Player>0</Player>
+      
+      <TilesPer>5</TilesPer>
+      <MinLandPercent></MinLandPercent>
+      <GroupRange></GroupRange>
+      <GroupRand></GroupRand>
+      <ResourceUsage></ResourceUsage>
+      <PresentOnAllValidPlots></PresentOnAllValidPlots>
+      <!-- Area: Possible format: [000000] -->
+      <Area></Area> 
+      
+      <Hills>1</Hills>
+      <Flatlands>1</Flatlands>
+      <NoRiverSide></NoRiverSide>
+      
+      <!-- OnlyMinorCivs: Probably only used for luxury resources -->
+      <OnlyMinorCivs></OnlyMinorCivs>
+      
+      <IconString>[ICON_RES_BERRIES]</IconString>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </InsertOrAbort>
+
+  </Resources>
+
+
+  <!-- YIELDS -->
+
+  <Resource_YieldChanges>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Resource_YieldChanges>
+
+
+  <!-- FLAVORS -->
+
+  <Resource_Flavors>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Resource_Flavors>
+
+
+  <!-- BOOLEANS -->
+
+  <Resource_TerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+  </Resource_TerrainBooleans>
+
+  <Resource_FeatureBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <FeatureType>FEATURE__FOREST</FeatureType>
+    </Row>
+  </Resource_FeatureBooleans>  
+
+  <Resource_FeatureTerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__TUNDRA</TerrainType>
+    </Row>    
+  </Resource_FeatureTerrainBooleans>
+
+  
+  <!-- Art -->
+  
+  <ArtDefine_Landmarks>
+
+    <Row>
+      <Era>Any</Era>
+      <State>Any</State>
+      <Scale>0.5</Scale>
+      <ImprovementType>ART_DEF_IMPROVEMENT_NONE</ImprovementType>
+      <LayoutHandler>SNAPSHOT</LayoutHandler>
+      <ResourceType>ART_DEF_RESOURCE_BERRIES</ResourceType>
+      <Model>resource_berries.fxsxml</Model>
+      <TerrainContour>1</TerrainContour>
+    </Row>
+
+  </ArtDefine_Landmarks>
+
+  
+  <!-- Text -->
+  
+  <Language_en_US>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_TITLE">
+      <Text>Berries</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_PEDIA">
+      <Text>The botanical definition of a berry is a fleshy fruit produced from a single ovary. Grapes are an example. The berry is the most common type of fleshy fruit in which the entire ovary wall ripens into an edible pericarp. They may have one or more carpels with a thin covering and fleshy interiors. The seeds are usually embedded in the flesh of the ovary.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_HELP">
+      <Text>+1 [ICON_FOOD] Food from [COLOR_POSITIVE]Foraging Sites[ENDCOLOR].</Text>
+    </Row>
+  </Language_en_US>
+
+</GameData>

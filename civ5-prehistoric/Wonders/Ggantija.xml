@@ -136,8 +136,7 @@
     </Row>
     <Row Tag="TXT_KEY_WONDER_GGANTIJA_HELP">
       <Text>
-        All Land Military Units receive the Giant God's Blessing, which grants additional 
-        Healing outside friendly territory.
+        All Land Military Units receive the Giant God's Blessing, which grants additional [COLOR_POSITIVE_TEXT]Healing[ENDCOLOR] outside friendly territory.
       </Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_GGANTIJA_QUOTE">

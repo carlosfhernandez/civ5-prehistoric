@@ -1,0 +1,1 @@
+-- ALTER TABLE Resources ADD QuantityLeft integer DEFAULT 0;

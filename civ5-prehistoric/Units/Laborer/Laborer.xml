@@ -64,5 +64,18 @@
 			<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
+
+
+  <Unit_Builds>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_REMOVE_FOREST</BuildType>
+    </Row>
+  </Unit_Builds>  
 	
+  
 </GameData>

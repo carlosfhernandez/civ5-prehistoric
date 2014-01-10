@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <Resources>
+    <InsertOrAbort>
+
+      <Type>RESOURCE_FLINT</Type>
+      <Description>TXT_KEY_RESOURCE_FLINT_TITLE</Description>
+      <Civilopedia>TXT_KEY_RESOURCE_FLINT_PEDIA</Civilopedia>
+      <Help>TXT_KEY_RESOURCE_FLINT_HELP</Help>
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      <ArtDefineTag>ART_DEF_RESOURCE_FLINT</ArtDefineTag>
+      <TechReveal>TECH_COMPLEX_TOOLS</TechReveal>
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>1</MinLatitude>
+      <MaxLatitude>90</MaxLatitude>
+      <RandApp1>25</RandApp1>
+      <RandApp2>25</RandApp2>
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <Hills>1</Hills>
+      <Flatlands>1</Flatlands>
+      <IconString>[ICON_RES_FLINT]</IconString>
+      <PortraitIndex>2</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </InsertOrAbort>
+
+  </Resources>
+
+
+  <!-- YIELDS -->
+
+  <!-- No default yields for Flint -->
+
+  
+  <!-- FLAVORS -->
+
+  <Resource_Flavors>
+    <Row>
+      <ResourceType>RESOURCE_FLINT</ResourceType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Resource_Flavors>
+
+
+  <!-- BOOLEANS -->
+
+  <Resource_TerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_FLINT</ResourceType>
+      <TerrainType>TERRAIN_DESERT</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_FLINT</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_FLINT</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>
+  </Resource_TerrainBooleans>
+
+  <ArtDefine_Landmarks>
+
+    <Row>
+      <Era>Any</Era>
+      <State>Any</State>
+      <Scale>0.66</Scale>
+      <ImprovementType>ART_DEF_IMPROVEMENT_NONE</ImprovementType>
+      <LayoutHandler>SNAPSHOT</LayoutHandler>
+      <ResourceType>ART_DEF_RESOURCE_FLINT</ResourceType>
+      <Model>resource_flint.fxsxml</Model>
+      <TerrainContour>1</TerrainContour>
+    </Row>
+
+  </ArtDefine_Landmarks>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_RESOURCE_FLINT_TITLE">
+      <Text>Flint</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_FLINT_PEDIA">
+      <Text>Flint Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_FLINT_HELP">
+      <Text>+1 [ICON_PRODUCTION] Production from [COLOR_POSITIVE]Outpost[ENDCOLOR].</Text>
+    </Row>
+  </Language_en_US>
+
+</GameData>

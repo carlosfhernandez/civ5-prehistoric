@@ -107,8 +107,10 @@
 			<Text>Provides +1 [ICON_FOOD] Food in the city in which it is built. Each source of [ICON_FISH] Fish and [ICON_SHEEP] Sheep worked by this city produce +1 [ICON_FOOD] Food.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDER_SKARABRAE_QUOTE">
-			<Text>"Governing a great nation is like cooking a small fish - too much handling will spoil it."
-            [NEWLINE] - Lao Tzu[NEWLINE]
+			<Text>
+        [NEWLINE]"Governing a great nation is like cooking a small fish - too much handling will spoil it."
+        [NEWLINE] - Lao Tzu
+        [NEWLINE]
       </Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDER_SKARABRAE_PEDIA">

@@ -6,8 +6,7 @@
     <Row>
       <Type>BUILDINGCLASS_SHELTER</Type>
       <DefaultBuilding>BUILDING_SHELTER</DefaultBuilding>
-      <Description>Lean-to Shelter</Description>
-      <MaxPlayerInstances>1</MaxPlayerInstances>
+      <Description>TXT_KEY_BUILDING_SHELTER_TITLE</Description>
     </Row>
   </BuildingClasses>
   
@@ -15,56 +14,68 @@
     <Row>
       <Type>BUILDING_SHELTER</Type>
       <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
-      <PrereqTech>SIMPLE_TOOLS</PrereqTech>
-      <Cost>6</Cost>
-      <Help>
-        THe simple stick shelter is one of the most primitive of shelters.
-        It is portable, quick to set up, and protects from very basic elements.
-        [NEWLINE]
-        Provides [ICON_HAPPINESS_1] Happiness to you community.
-        Becomes obsolete with the discovery of Masonry.
-      </Help>
-      <Description>Lean-to Shelter</Description>
-      <Strategy>
-        The basic stick shelter is one of the most primitive of shelters, still in use today.
-        Its great advantage was the portable nature of the core components. It could
-        also be built almost anywhere. Simple to set up, it protects only against the
-        basic elements.
-        [NEWLINE]
-        Provides [ICON_HAPPINESS_1] Happiness to you community.
-        Becomes obsolete with the discovery of Masonry.
-      </Strategy>
+      <Cost>14</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <Description>TXT_KEY_BUILDING_SHELTER_DESC</Description>
+      <Help>TXT_KEY_BUILDING_SHELTER_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_STATEGY</Strategy>
+      <Quote>TXT_KEY_BUILDING_SHELTER_QUOTE</Quote>
+      <Civilopedia>TXT_KEY_BUILDING_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
-      <NukeImmune>true</NukeImmune>
       <MinAreaSize>-1</MinAreaSize>
-      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
-      <DisplayPosition>32</DisplayPosition>
       <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>10</PortraitIndex>
     </Row>
   </Buildings>
-  
-  <Building_FreeUnits>
+
+  <Building_ClassesNeededInCity>
     <Row>
-      <BuildingType>BUILDING_SHELTER</BuildingType>
-      <UnitType>UNIT_PRE_ELDER</UnitType>
-      <NumUnits>0</NumUnits>
+      <BuildingType>BUILDING_TREE_LIFE</BuildingType>
+      <BuildingClassType>BUILDINGCLASS_TREE_LIFE</BuildingClassType>
     </Row>
-  </Building_FreeUnits>
+  </Building_ClassesNeededInCity>  
   
   <Building_Flavors>
     <Row>
       <BuildingType>BUILDING_SHELTER</BuildingType>
-      <FlavorType>FLAVOR_EXPANSION</FlavorType>
-      <Flavor>30</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_SHELTER</BuildingType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>15</Flavor>
+      <Flavor>10</Flavor>
     </Row>
   </Building_Flavors>
-  
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_TITLE">
+      <Text>Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_DESC">
+      <Text>Lean-to Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_HELP">
+      <Text>
+        Provides a crude form of shelter for your tribe, increasing [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] in your community.
+        [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_QUOTE">
+      <Text>
+        "Some like it hot."
+        [NEWLINE] - movie[NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_STATEGY">
+      <Text>
+        The basic stick shelter is one of the most primitive of shelters, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.
+        [NEWLINE]
+        [NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to shelter themselves from some environmental elements.
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_PEDIA">
+      <Text>Campfire Pedia.</Text>
+    </Row>
+  </Language_en_US>
+
 </GameData>

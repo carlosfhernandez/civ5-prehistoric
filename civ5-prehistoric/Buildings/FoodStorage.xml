@@ -14,7 +14,7 @@
 		<Row>
 			<Type>BUILDING_FOOD_STORAGE</Type>
 			<BuildingClass>BUILDINGCLASS_FOOD_STORAGE</BuildingClass>
-			<Cost>12</Cost>
+			<Cost>21</Cost>
 			<PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
 			<Help>Grants additional [ICON_FOOD] Food for your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Pottery[ENDCOLOR].</Help>
 			<Description>Food Storage</Description>
@@ -46,6 +46,7 @@
 			<Flavor>5</Flavor>
 		</Row>
 	</Building_Flavors>
+  
 	<Building_YieldChanges>
 		<Row>
 			<BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
@@ -53,4 +54,5 @@
 			<Yield>1</Yield>
 		</Row>
 	</Building_YieldChanges>
+  
 </GameData>

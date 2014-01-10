@@ -35,9 +35,15 @@ alter game speed due to addition of eras if and only if the player starts in pre
     </Row>
 
     <Update>
-      <Set Value="60" />
+      <Set Value="150" />
       <Where Name="BARBARIAN_MAX_XP_VALUE" />
-    </Update>    
+    </Update>
+
+    <Update>
+      <Set Value="0.833" />
+      <Where Name="UNHAPPINESS_PER_POPULATION" />
+    </Update>
+    
     
   </Defines>
 	

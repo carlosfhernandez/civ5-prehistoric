@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+
+  <!-- Desert -->
+  
+  <Terrain_Yields>
+    
+    <Row>
+      <TerrainType>TERRAIN_OCEAN</TerrainType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    
+    <Row>
+      <TerrainType>TERRAIN_OCEAN</TerrainType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    
+    <Delete TerrainType="TERRAIN_OCEAN" YieldType="YIELD_FOOD"/>
+
+  </Terrain_Yields>
+
+  <Feature_YieldChanges>
+    <Row>
+      <FeatureType>FEATURE_LAKE</FeatureType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Feature_YieldChanges>
+  
+  <Terrain_HillsYieldChanges>
+    <!--
+    <Update>
+      <Where TerrainType="TERRAIN_DESERT" YieldType="YIELD_PRODUCTION"/>
+      <Set Yield="1"/>
+    </Update>
+    -->
+  </Terrain_HillsYieldChanges>
+  
+</GameData>
