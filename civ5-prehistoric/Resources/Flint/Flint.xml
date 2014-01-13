@@ -3,8 +3,8 @@
 <GameData>
 
   <Resources>
+    
     <InsertOrAbort>
-
       <Type>RESOURCE_FLINT</Type>
       <Description>TXT_KEY_RESOURCE_FLINT_TITLE</Description>
       <Civilopedia>TXT_KEY_RESOURCE_FLINT_PEDIA</Civilopedia>
@@ -23,7 +23,7 @@
       <TilesPer>5</TilesPer>
       <Hills>1</Hills>
       <Flatlands>1</Flatlands>
-      <IconString>[ICON_RES_FLINT]</IconString>
+      <IconString>[ICON_RES_BERRIES]</IconString>
       <PortraitIndex>2</PortraitIndex>
       <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
     </InsertOrAbort>

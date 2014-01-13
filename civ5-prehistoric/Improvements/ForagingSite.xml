@@ -97,7 +97,7 @@ Improvement: Foraging Site
     <Row>
       <Type>BUILD_FORAGING_SITE</Type>
       <PrereqTech>TECH_GATHERING</PrereqTech>
-      <Time>600</Time>
+      <Time>700</Time>
       <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
       <Description>Build Foraging Site</Description>
       <Help>Increases the tile's [ICON_FOOD] [COLOR_POSITIVE_TEXT]Food[ENDCOLOR] output +1.</Help>

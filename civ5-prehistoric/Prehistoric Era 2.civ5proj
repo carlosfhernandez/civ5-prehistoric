@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW)</Name>
+    <Name>!Prehistoric Era (BNW) v12b001</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>11</ModVersion>
+    <ModVersion>12</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>[COLOR_POSITIVE_TEXT](v0.2.8a)[ENDCOLOR] [COLOR_PROJECT_TEXT]Adds a new era, The Prehistoric Era, before the Ancient Era.</Teaser>
     <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
@@ -135,6 +135,11 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Buildings/FirePit.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Buildings/Causeway.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>

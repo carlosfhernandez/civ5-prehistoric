@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-Causeway: +1 Production per marsh tile worked by city.
+Causeway: +1 Production for settlement if marsh within borders
+Marshland resources provide +1 Food
 -->
 
 <GameData>
@@ -31,7 +32,7 @@ Causeway: +1 Production per marsh tile worked by city.
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>10</PortraitIndex>
+      <PortraitIndex>14</PortraitIndex>
     </Row>
   </Buildings>
 
@@ -52,7 +53,7 @@ Causeway: +1 Production per marsh tile worked by city.
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
       <Text>
-        Provides a crude form of CAUSEWAY for your tribe, increasing [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] in your community.
+        Settlements in marsh or river regions benefit from causeways by increasing +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR]. Marshland resources also provide +1 Food.
         [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
       </Text>
     </Row>
@@ -64,9 +65,7 @@ Causeway: +1 Production per marsh tile worked by city.
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
       <Text>
-        The basic stick CAUSEWAY is one of the most primitive of CAUSEWAYs, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.
-        [NEWLINE]
-        [NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to CAUSEWAY themselves from some environmental elements.
+        Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">

@@ -139,12 +139,13 @@ Prehistoric Mod BNW v1.1.0a:
                                                                                          |                         |
                                                                                          | A G H P S C F Z T X I R | W
                                                                                     Base | . . * 1 1 . . . . . . . |
+                                                                                         |                         |
 Simple Tools:         u-Settler, u-@Laborer, u-!Autochthon,                              | . . . . . . . . . . . . | GPF
                       b-@Tree of Life (Capitol), [Stone], *Theopetra Cave                | 2 2 . . . . . . . . . 1 |
                       b-!Shelter (+1H)                                                   | . . 1 . . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
 ::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 2 1 1 1 . . . . . . 1 | 
-                                                                                         | . . . . . . . . . . . . |
+                                                                                         |                         |
 Complex Tools:        u-!Primitive Archer                                                | . . . . . . . . . . . . |
 Fire:                 u-@Caveman, u-~@Shaman (Fire Eater), b-@Campfire (+1G)             | . 1 . . . . . . . . . . |
 Gathering:            *@Wonderwerk Cave, $Banana, $!Berries, #!Foraging Site             | . . . . . . . . . . 1 2 | GPM
@@ -152,9 +153,9 @@ Gathering:            *@Wonderwerk Cave, $Banana, $!Berries, #!Foraging Site    
                       {? -Gatherer: pre-Laborer}                                         | . . . . . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
 ::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 . 1 1 . 1 . . . 1 3 |
-                                                                                         | . . . . . . . . . . . . |
+                                                                                         |                         |
 Hunting:              $Deer {-Hunter}                                                    | . . . . . . . . . . . 1 | 
-Cooking:              *******************************************                        | . . . . . . . . . . . . | 
+Cooking:              b-@FirePit                                                         | . . . . . . * . . . . . | 
 Social Structure:     b-@Chieftain's Hut (+1G,+1P)                                       | . . 1 1 . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
 ::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 2 1 . 1 . . . 1 4 |

@@ -11,11 +11,7 @@
       <Help>TXT_KEY_RESOURCE_OBSIDIAN_HELP</Help>
       <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
       <ArtDefineTag>ART_DEF_RESOURCE_OBSIDIAN</ArtDefineTag>
-      <!-- AltArtDefineTag, ArtDefineTagHeavy, AltArtDefineTagHeavy -->
       <TechReveal>TECH_COMPLEX_TOOLS</TechReveal>
-      <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
-      <!-- <Happiness>1</Happiness> -->
-      <!-- WonderProductionMod, WonderProductionModObsoleteEra, StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
       <PlacementOrder>4</PlacementOrder>
       <ConstAppearance>50</ConstAppearance>
       <MinAreaSize>3</MinAreaSize>
@@ -23,14 +19,11 @@
       <MaxLatitude>90</MaxLatitude>
       <RandApp1>25</RandApp1>
       <RandApp2>25</RandApp2>
-      <!-- RandApp3, RandApp4 -->
       <Player>0</Player>
       <TilesPer>5</TilesPer>
-      <!-- MinLandPercent, GroupRange, GroupRand, ResourceUsage, PresentOnAllValidPlots, Area [000000] -->
       <Hills>1</Hills>
       <Flatlands>1</Flatlands>
-      <!-- NoRiverSide, OnlyMinorCivs -->
-      <IconString>[ICON_RES_OBSIDIAN]</IconString>
+      <IconString>[ICON_RES_BERRIES]</IconString>
       <PortraitIndex>1</PortraitIndex>
       <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
     </InsertOrAbort>

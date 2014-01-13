@@ -42,7 +42,7 @@ building: FirePit
       <HurryCostModifier>25</HurryCostModifier>
       
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>6</PortraitIndex>
+      <PortraitIndex>13</PortraitIndex>
       
     </Row>
     
