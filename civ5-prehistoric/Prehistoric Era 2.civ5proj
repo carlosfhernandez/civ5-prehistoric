@@ -94,6 +94,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Buildings/Dummies/CausewayPrereq.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Buildings/Campfire.xml</FileName>
       </Action>
       <Action>
@@ -300,6 +305,12 @@
         <Description>Generate extra resources</Description>
         <FileName>Lua/AddResources_Prehistory.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>PE_Main</Name>
+        <Description>Main init</Description>
+        <FileName>Lua/Main_Prehistory.lua</FileName>
+      </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -351,6 +362,7 @@
     <Folder Include="Assets\UI" />
     <Folder Include="Barbarians\Wolf\" />
     <Folder Include="Buildings\" />
+    <Folder Include="Buildings\Dummies" />
     <Folder Include="Civilizations\" />
     <Folder Include="Core\" />
     <Folder Include="Core\Mod" />
@@ -1190,6 +1202,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Buildings\Dummies\CausewayPrereq.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Buildings\FoodStorage.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1219,6 +1235,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Buildings\TreeOfLife.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Buildings\__Buildings.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1259,10 +1279,6 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Core\Resources.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core\PF_Setup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1334,7 +1350,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Buildings.lua">
+    <Content Include="Lua\Buildings_Prehistory.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Main_Prehistory.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\PF_Setup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

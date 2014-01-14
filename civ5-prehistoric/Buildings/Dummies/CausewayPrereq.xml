@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <BuildingClasses>
+    <Row>
+      <Type>BUILDINGCLASS_CAUSEWAY_PREREQ</Type>
+      <DefaultBuilding>BUILDING_CAUSEWAY_PREREQ</DefaultBuilding>
+      <Description>none</Description>
+    </Row>
+  </BuildingClasses>
+
+  <Buildings>
+    <Row>
+      <Type>BUILDING_CAUSEWAY_PREREQ</Type>
+      <BuildingClass>BUILDINGCLASS_CAUSEWAY_PREREQ</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>BONUS</Description>
+      <Help>NONE</Help>
+      <Strategy>NONE</Strategy>
+      <Civilopedia>NONE</Civilopedia>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>RESOURCE_ATLAS</IconAtlas>
+      <PortraitIndex>6</PortraitIndex>
+    </Row>
+  </Buildings>
+
+</GameData>
