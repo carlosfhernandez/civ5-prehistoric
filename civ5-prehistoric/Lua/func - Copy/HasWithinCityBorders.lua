@@ -6,7 +6,7 @@
 --[[
 
 --------------------------------------------------------------------------------
-float error keeps giving me 41.99999999999999999
+float error kept giving me 41.99999999999999999
 --------------------------------------------------------------------------------
 
 HasXXXWithinCityBorders -- Explanation, Reasonings, Thoughts, Questions
@@ -119,18 +119,24 @@ Thanks!
 
 end]]--
 
-include( "utils" )
-include( "logger" )
-
-print("")
-print("")
-print("__FILE__   HasWithinCityBorders")
+print("\n\n--------------------------------------------------");
+print("  __FILE__   Buildings_Prehistory                 ");
+print("--------------------------------------------------\n");
 
 
+
+include "util/logging"
+
+
+local logger = logging.new(function(self, level, message)
+                             print(level, message)
+                             return true
+                           end)
+
+logger:info("testing...")
+
+local bldgCausewayPrereq = GameInfoTypes.BUILDING_CAUSEWAY_PREREQ;
 local bDebug = true
-
-
-local logger = Logger:new(Logger.LEVEL.DEBUG)
 
 
 
@@ -166,130 +172,116 @@ function GetNumResourcesInRange( player, types )
 
 end
 
+--
+-- HasResourceWithinCity
+--
+function HasResourceWithinCity( iPlayer, p_resource )
 
---
--- HasWithinCity
---
--- @param {Array} things - for now it's just a simple object instead of array
--- @param {Function} f_success - success function to be called if check ok
--- @param {Function} f_test - test function to be called whether to proceed 
---                   checking or not. should be generalized, but is not now.
---
-function HasWithinCity( player, things, f_success, f_pretest )
-
+  local player = Players[iPlayer]; -- we're all players in the end
+  
   local playerHuman = player:IsHuman();
+  local playerPlotImproved = player:IsAnyPlotImproved();
+  local playerBldgFree_CausewayPrereq = player:IsBuildingFree( bldgCausewayPrereq );
 
-  -- if playerHuman then -- temporary debug
+  if playerHuman then -- temporary debug
+
   for city in player:Cities() do
 
-    logger:debug("[Buildings] "); 
-    logger:debug("[Buildings] ");
-    logger:debug("[Buildings] ----------------------------------");
-    logger:debug("[Buildings] HasWithinCity");
-    logger:debug("[Buildings] ----------------------------------");
-    logger:debug("[Buildings] Player: " .. player:GetName() .. " " .. player:GetID() );
-    logger:debug("[Buildings] Player: IsHuman: " .. b2s( playerHuman ) );
-    logger:debug("[Buildings] ----");
-    logger:debug("[Buildings] Name: " .. city:GetName());
-    logger:debug("[Buildings] NumPlots: " .. city:GetNumCityPlots());
-    logger:debug("[Buildings] GetX: " .. city:GetX());
-    logger:debug("[Buildings] GetY: " .. city:GetY());
+    print("[Buildings] "); 
+    print("[Buildings] ");
+    print("[Buildings] ----------------------------------");
+    print("[Buildings] HasFeatureWithinCity");
+    print("[Buildings] ----------------------------------");
+    print("[Buildings] Player: " .. player:GetName() .. " " .. player:GetID() );
+    print("[Buildings] Player: IsHuman: " .. b2s( playerHuman ) );
+    print("[Buildings] Player: IsAnyPlotImproved: " .. b2s( playerPlotImproved ) );
+    print("[Buildings] Player: IsBuildingFree(bldgCausewayPrereq): " .. b2s( playerBldgFree_CausewayPrereq ) );
+    print("[Buildings] ----");
+    print("[Buildings] Name: " .. city:GetName());
+    print("[Buildings] NumPlots: " .. city:GetNumCityPlots());
+    print("[Buildings] IsCapital: " .. b2s( city:IsCapital() ) );
+    print("[Buildings] GetX: " .. city:GetX());
+    print("[Buildings] GetY: " .. city:GetY());
+    print("[Buildings] GameInfoTypes.RESOURCE_STONE: " .. GameInfoTypes.RESOURCE_STONE);
+    print("[Buildings] IsHasResourceLocal(-stone-): " .. b2s( city:IsHasResourceLocal( GameInfoTypes.RESOURCE_STONE ) ) );
+    print("[Buildings] IsHasResourceLocal(-gold-): " .. b2s( city:IsHasResourceLocal( GameInfoTypes.RESOURCE_GOLD ) ) );
+    print("[Buildings] GetCitySizeType: " .. city:GetCitySizeType());
 
-    logger:debug("\n\n[Plot] Scanning Plots...");
+    print("\n\n[Plot] Scanning Plots...");
 
-    if f_pretest(city, nil) then
+    local plot = city:Plot()
+    local x = plot:GetX()
+    local y = plot:GetY()
+    local r = 3
+    local t = null
 
-      local plot = city:Plot()
-      local x = plot:GetX()
-      local y = plot:GetY()
-      local r = 3
-      local t = null
+    for dx = -r, r do
+      for dy = -r, r do
+        plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, r)
+        if plot then
+          local s1 = "[" .. dx .. " x " .. dy .. "]"
 
-      for dx = -r, r do
-        for dy = -r, r do
-          plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, r)
-          if plot then
-
-            local plot_location_debug = "[ " .. x .. " x " .. y .. "   " .. dx .. " x " .. dy .. "]"
-
-
-            -- HERE IS WHERE NEED TO SWITCH BASED ON TYPE- ASSUME FEATURE NOW
-
-            --[[
-            t = plot:GetResourceType()
-            if t and t>0 then
-              
-              local city_valid = plot:IsPlayerCityRadius(player) and plot:IsOwned()
-              print("[Plot] Found resource " .. t .. " at " .. s1)
-              if city_valid then
-                print "[Plot]    within city boundary"
-                return true
-              end
-
-            else
-
-            end
-            --]]
-
+          t = plot:GetResourceType()
+          if t and t>0 then
             
-
-            featureID = plot:GetFeatureType()
-            logger:debug ("[Plot] Found Feature: " .. featureID .. " at " .. plot_location_debug)
-            if featureID and featureID > 0 and things == featureID then
-
-              local plot_in_city = plot:IsPlayerCityRadius(player) and plot:IsOwned()
-              logger:debug("[Plot] Found City Feature: " .. featureID .. " at " .. plot_location_debug)
-
-              if plot_in_city then
-                logger:debug( "[Plot]    within city boundary" )
-                f_success( city, nil )
-                return true
-              end
-
+            local city_valid = plot:IsPlayerCityRadius(player) and plot:IsOwned()
+            print("[Plot] Found resource " .. t .. " at " .. s1)
+            if city_valid then
+              print "[Plot]    within city boundary"
+              return true
             end
 
+          else
+
+          end
+        end
+      end
+    end
 
 
-          end -- plot
-        end -- for y
-      end -- for x
+    local bplots = city:GetBuyablePlotList();
 
-    else
 
-    end -- f_pretest
+    -- int Plot:GetCityRadiusCount()
+    -- int Plot:GetNumResource()
+    -- PlayerID Plot:GetOwner()
+    -- int Plot:GetPlayerCityRadiusCount(PlayerID index)
+    -- int Plot:GetPlotCity()
+    -- PlotType Plot:GetPlotType()
+    -- TerrainType Plot:GetTerrainType()
+    -- City Plot:GetWorkingCity()
 
-  end -- cities loop
+    -- bool Plot:IsCityRadius()
+    -- void Plot:UpdateFog()
+    -- void Ploy:UpddateVisibility()
 
-  -- end -- player debug
 
+    -- local x, y = 
+
+    -- city:
+      -- boolean city:IsForcedWorkingPlot(<Plot> pPlot);
+      -- IsForcedAvoidGrowth / int city:GetForcedAvoidGrowth();
+      -- IsHasBuilding / with city:getNumBuildings();
+      -- boolean city:IsHasResourceLocal(ResourceTypes iResource);
+      -- void city:setNumRealBuilding(BuildingTypes iIndex, int iNewValue);
+      -- int city:getNumRealBuilding(BuildingTypes iIndex);
+
+      -- check for 
+    print("[Buildings] Num bldgCausewayPrereq: " .. city:GetNumRealBuilding( bldgCausewayPrereq ));
+    if not city:IsHasBuilding( bldgCausewayPrereq ) then
+      print("[Buildings] No CausewayPrereq detected");
+      city:SetNumRealBuilding(bldgCausewayPrereq, 1);
+      print("[Buildings] NEW Num bldgCausewayPrereq: " .. city:GetNumRealBuilding( bldgCausewayPrereq ));
+    end
+    
+    -- set food
+    -- city:SetNumRealBuilding(bonusFoodID, newBonus);
+  end
+  end
 
   return false
 
 end
 
-
-
--- Buildings.lua BELOW
--- -----------------------------------------------------------------------------
-
--- all of these functions should be put together and sent to be checked all
--- at once so we don't have to repeatedly keep checking plots 
-function CanBuild_Causeway ( iPlayer )
-
-  local player = Players[iPlayer]; -- we're all players in the end
-
-  local f_succ = function ( city, plot )
-    city:SetNumRealBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ, 1 );
-  end
-
-  local f_pretest = function ( city, plot )
-    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY ))
-  end
-
-  HasWithinCity ( player, GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
-
-end
-
-
-GameEvents.PlayerDoTurn.Add( CanBuild_Causeway );
-logger:info("PlayerDoTurn.Add( CanBuild_Causeway )");
+GameEvents.PlayerDoTurn.Add( HasResourceWithinCity );
+print("subscribed to PlayerDoTurn: HasResourceWithinCity");

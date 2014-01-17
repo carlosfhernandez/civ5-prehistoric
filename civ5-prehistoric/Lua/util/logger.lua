@@ -1,7 +1,84 @@
--- logger
--- Author: carlos
--- DateCreated: 1/16/2014 5:52:45 AM
---------------------------------------------------------------
+--[[
+
+Logger [pseudo-class]
+
+@desc:    Standard logging utilies using typical log levels. 
+@author:  apshai(steam), carloscodex(civfanatics), carlosfhernandez(github)
+@date:    2014-01-05
+
+
+USAGE
+--------------------------------------------------------------------------------
+
+Create a new logger.
+
+Use your favorite  :o)  log level: DEBUG, INFO, WARN, ERROR, FATAL:
+> local logger = Logger:new(Logger.LEVEL.DEBUG)
+
+Or, use the default log level (in Logger.DEFAULT)
+> local logger = Logger:new() 
+
+
+Change your mind? Update log level.
+
+> logger.level = Logger.LEVEL.WARN
+
+
+Log a message.
+
+> logger:log( "like codex?" ) -- will use current log level, Logger.level
+> logger:log( "override level", Logger.LEVEL.FATAL)
+> logger:log( "custom format", nil, "%date %level %message\n")
+  -- nil will use current log level
+
+> logger:debug( "just output at debug level" )
+> logger:info( "same for all others" )
+
+
+SAMPLE LOG
+--------------------------------------------------------------------------------
+
+Main_Pre: 14-01-17 12:01:14  INFO PlayerDoTurn.Add( CanBuild_Causeway )
+
+
+FUTURE
+--------------------------------------------------------------------------------
+
+Better inline comments. (Don't we always say that?)
+
+Logger:convert (obj)
+If supplied message is not a string then Logger will attemp to serialize or 
+convert to string format. Tables, Arrays, etc, will be converted for 
+wonderful debugging opportunities! :P
+
+Logger:hook (x) --- eh, maybe
+
+Logger.add_output (io, file, net?)
+I don't even know if it's possible within the Civ sandbox, but it would be nice
+to send log info to a designated URL. Of course, this would probably pose a 
+security issue, so we'll see how this goes. 
+
+
+ANOTHER LOGGER?
+--------------------------------------------------------------------------------
+
+Yes. This was my first day learning Lua so I decided to try something somewhat
+familiar to get my hands dirty. Now I need to go read some reference books and 
+manuals and get a decent foundation. 
+
+
+CONTACT
+--------------------------------------------------------------------------------
+
+Please contact me for questions and suggestions. 
+
+apshai(steam), carloscodex(civfanatics), carlosfhernandez(github),
+carloscipher(twitter)
+
+
+--]]
+
+
 
 
 -- module "util"
@@ -9,7 +86,6 @@
 print( "" )
 print( "" )
 print( "__FILE__ util/logger" )
-
 
 
 
@@ -134,7 +210,7 @@ end
 --
 -- convert
 --
-function Logger:convert (value)
+function Logger:convert (obj)
   return "[SYSTEM] String conversion function not supported, yet..."
 end
 

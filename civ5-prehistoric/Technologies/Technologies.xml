@@ -146,19 +146,19 @@ Simple Tools:         u-Settler, u-@Laborer, u-!Autochthon,                     
                                                                                          | A G H P S C F Z T X I R | W
 ::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 2 1 1 1 . . . . . . 1 | 
                                                                                          |                         |
-Complex Tools:        u-!Primitive Archer                                                | . . . . . . . . . . . . |
-Fire:                 u-@Caveman, u-~@Shaman (Fire Eater), b-@Campfire (+1G)             | . 1 . . . . . . . . . . |
+Complex Tools:        u-!Primitive Archer, b-!Causeway                                   | . . . . . . . . . . . . |
+Fire:                 u-@Caveman, u-~@Shaman (Fire Eater), b-@Campfire (+1G)             | . 1 . 1 . . . . . . . . |
 Gathering:            *@Wonderwerk Cave, $Banana, $!Berries, #!Foraging Site             | . . . . . . . . . . 1 2 | GPM
                       b-!Midden (+1F), {? +Pit +1F },                                    | . . . . . . 1 . . . . . |
                       {? -Gatherer: pre-Laborer}                                         | . . . . . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 . 1 1 . 1 . . . 1 3 |
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 . 2 1 . 1 . . . 1 3 |
                                                                                          |                         |
 Hunting:              $Deer {-Hunter}                                                    | . . . . . . . . . . . 1 | 
 Cooking:              b-@FirePit                                                         | . . . . . . * . . . . . | 
 Social Structure:     b-@Chieftain's Hut (+1G,+1P)                                       | . . 1 1 . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 2 1 . 1 . . . 1 4 |
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 3 1 . 1 . . . 1 4 |
                                                                                          | . . . . . . . . . . . . |
 Scouting:             -Scout, #@Outpost, /-Pathfinder/                                   | . . . . . . . . . . 1 . |
 Tool Specialization:  b-@Food Storage (+1F) {Must have Hunter or Gatherer unit},         | . . . . . . 1 . . . . . |
@@ -168,7 +168,7 @@ Language:             &Embasies                                                 
 Warfare:              -@Savage, b-@Palisade                                              | . . . . . . . . . . . . |
 Leadership:           -%Galley {Buildable with limits}, b-Palace                         | . . . . . . . . . . . . |
                                                                                          | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 2 1 . 2 . . . 2 7 | 
+::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 3 1 . 2 . . . 2 7 | 
                                                                                          | . . . . . . . . . . . . |
 Archery:              -Archer, *Temple of Artemis, /-Slinger/, /-Bowman/                 | . . . . . . . . . . . . |
 Idols:                +Shrine (+1R), *@Ggantija Temples, /+Pyramid/                      | . . . . . . . . . . . . |

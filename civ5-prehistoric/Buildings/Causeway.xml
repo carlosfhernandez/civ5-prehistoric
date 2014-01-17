@@ -20,7 +20,7 @@ Marshland resources provide +1 Food
       <Type>BUILDING_CAUSEWAY</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY</BuildingClass>
       <Cost>14</Cost>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_CAUSEWAY_DESC</Description>
       <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
@@ -40,8 +40,13 @@ Marshland resources provide +1 Food
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>10</Flavor>
+      <Flavor>8</Flavor>
     </Row>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>    
   </Building_Flavors>
 
   <Building_ClassesNeededInCity>
@@ -51,6 +56,14 @@ Marshland resources provide +1 Food
     </Row>
   </Building_ClassesNeededInCity>
 
+  <Building_YieldChanges>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Building_YieldChanges>
+  
   <Building_ResourceYieldChanges>
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
@@ -76,14 +89,14 @@ Marshland resources provide +1 Food
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
       <Text>
-        Settlements in marsh or river regions benefit from causeways by increasing +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR]. Marshland resources also provide +1 Food.
+        Settlements in marsh or river regions benefit from causeways by increasing +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR]. Marshland resources also provide extra bonsues. +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[/ENDCOLOR] from [COLOR_POSITIVE_TEXT]Sugar[/ENDCOLOR] and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[/ENDCOLOR] from [COLOR_POSITIVE_TEXT]Truffles[/ENDCOLOR].
         [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_QUOTE">
       <Text>
-        "Because it's that way."
-        [NEWLINE] - author[NEWLINE]
+        "The Dead Marshes, yes, yes: that is their name."
+        [NEWLINE] - Little Green Guy[NEWLINE]
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
@@ -92,7 +105,7 @@ Marshland resources provide +1 Food
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
-      <Text>Causeway Pedia.</Text>
+      <Text>Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].</Text>
     </Row>
   </Language_en_US>
 
