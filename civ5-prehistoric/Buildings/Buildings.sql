@@ -32,3 +32,10 @@ INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
 INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
 	VALUES	("BUILDING_PALACE", "FLAVOR_EXPANSION", "150");
 
+
+
+ALTER TABLE Buildings
+ADD IsVisibleCityList boolean DEFAULT 1;
+
+ALTER TABLE Buildings
+ADD IsVisiblePedia boolean DEFAULT 1;

@@ -301,15 +301,15 @@
     <ModContent>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>PE_ResourceGen</Name>
+        <Name>ResourceGen_PRE</Name>
         <Description>Generate extra resources</Description>
         <FileName>Lua/AddResources_Prehistory.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>PE_Main</Name>
+        <Name>Main_PRE</Name>
         <Description>Main init</Description>
-        <FileName>Lua/Main_Prehistory.lua</FileName>
+        <FileName>Lua/Main_Pre.lua</FileName>
       </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -374,6 +374,8 @@
     <Folder Include="Barbarians" />
     <Folder Include="Assets" />
     <Folder Include="Lua\" />
+    <Folder Include="Lua\func\" />
+    <Folder Include="Lua\util" />
     <Folder Include="Resources\Lumber\" />
     <Folder Include="Resources\Berries" />
     <Folder Include="Resources\Cactus" />
@@ -1350,23 +1352,23 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Buildings_Prehistory.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Lua\Main_Prehistory.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Lua\PF_Setup.lua">
+    <Content Include="Lua\Buildings.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\func\HasWithinCityBorders.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Main_Pre.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ResourceGenFunc_Prehistory.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\ResourceGenMain_Prehistory.lua">
+    <Content Include="Lua\ResourceGenMain_Pre.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1379,6 +1381,14 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ShareData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\util\logger.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\util\utils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

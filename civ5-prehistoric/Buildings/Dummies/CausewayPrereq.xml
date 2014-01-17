@@ -15,14 +15,15 @@
       <Type>BUILDING_CAUSEWAY_PREREQ</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY_PREREQ</BuildingClass>
       <Cost>-1</Cost>
-      <Description>BONUS</Description>
-      <Help>NONE</Help>
+      <Description>Marshland</Description>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[/ENDCOLOR] to improve your city.</Help>
       <Strategy>NONE</Strategy>
       <Civilopedia>NONE</Civilopedia>
       <MinAreaSize>-1</MinAreaSize>
       <NeverCapture>true</NeverCapture>
-      <IconAtlas>RESOURCE_ATLAS</IconAtlas>
-      <PortraitIndex>6</PortraitIndex>
+      <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+      <PortraitIndex>8</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
     </Row>
   </Buildings>
 
