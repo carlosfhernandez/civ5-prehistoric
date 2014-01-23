@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 building: FirePit
-  requires: animal resource
+  requires: animal resource (not worked) nearby
   bonus: +1 food
-  food kept
+  todo: food kept
   
 -->
 
@@ -36,7 +36,8 @@ building: FirePit
       <Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
-      
+      <Quote>TXT_KEY_BUILDING_FIRE_PIT_QUOTE</Quote>
+
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
       <HurryCostModifier>25</HurryCostModifier>
@@ -61,6 +62,13 @@ building: FirePit
     </Row>
   </Building_Flavors>
 
+  <Building_ClassesNeededInCity>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <BuildingClassType>BUILDINGCLASS_FIRE_PIT_PREREQ</BuildingClassType>
+    </Row>
+  </Building_ClassesNeededInCity>
+
   <Building_YieldChanges>
     <Row>
       <BuildingType>BUILDING_FIRE_PIT</BuildingType>
@@ -69,6 +77,7 @@ building: FirePit
     </Row>
   </Building_YieldChanges>
 
+  <!--
   <Building_LocalResourceOrs>
     <Row>
       <BuildingType>BUILDING_FIRE_PIT</BuildingType>
@@ -99,7 +108,7 @@ building: FirePit
       <ResourceType>RESOURCE_IVORY</ResourceType>
     </Row>    
   </Building_LocalResourceOrs>
-
+  -->
 
 
   <Language_en_US>
@@ -110,7 +119,14 @@ building: FirePit
       <Text>Fire Pit</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_HELP">
-      <Text>Grants +1 [ICON_FOOD] Food but requires worked animal resources.[NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Metal Casting[ENDCOLOR].</Text>
+      <Text>Grants +1 [ICON_FOOD] Food but requires animal resources close to your settlement.[NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Metal Casting[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_QUOTE">
+      <Text>
+        [NEWLINE]"It is better to have burnt and lost, then never to have barbecued at all."
+        [NEWLINE]- Will
+        [NEWLINE]
+      </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_STRATEGY">
       <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time. Grants additional +1 [ICON_FOOD] Food for your community.</Text>

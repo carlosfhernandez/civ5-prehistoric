@@ -14,7 +14,6 @@ INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandl
 	('Industrial','UnderConstruction',1,'ART_DEF_IMPROVEMENT_PLANTATION','SNAPSHOT','ART_DEF_RESOURCE_BERRIES','Additions/Art/Resources/Berries/HB_Plantation_IND_Berries.fxsxml',1),
 	('Industrial','Constructed',1,'ART_DEF_IMPROVEMENT_PLANTATION','SNAPSHOT','ART_DEF_RESOURCE_BERRIES','Additions/Art/Resources/Berries/Plantation_IND_Berries.fxsxml',1),
 	('Industrial','Pillaged',1,'ART_DEF_IMPROVEMENT_PLANTATION','SNAPSHOT','ART_DEF_RESOURCE_BERRIES','Additions/Art/Resources/Berries/PL_Plantation_IND_Berries.fxsxml',1);
-  -- Assets/Buildings/Barbarians and Goody Huts/Goody_Huts/Ruins1.fxsxml
 
 -- FORAGING SITE BANANA
 INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour) VALUES	

@@ -61,7 +61,7 @@
       <Text>Midden</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_MIDDEN_HELP">
-      <Text>Increases sanitation and provides +1 [ICON_FOOD] Food for your community. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Architecture[ENDCOLOR] or [COLOR_WARNING_TEXT]Sanitation[ENDCOLOR]. Costs 0 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR].</Text>
+      <Text>Increases sanitation and provides +1 [ICON_FOOD] Food for your community. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Architecture[ENDCOLOR] or [COLOR_WARNING_TEXT]Sanitation[ENDCOLOR]. Requires no[ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] maintenance.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_MIDDEN_QUOTE">
       <Text>

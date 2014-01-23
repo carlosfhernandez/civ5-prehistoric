@@ -34,8 +34,9 @@ INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
 
 
 
-ALTER TABLE Buildings
-ADD IsVisibleCityList boolean DEFAULT 1;
+-- ALTER TABLE Buildings
+-- ADD IsVisibleCityList boolean DEFAULT 1;
 
-ALTER TABLE Buildings
-ADD IsVisiblePedia boolean DEFAULT 1;
+-- ALTER TABLE Buildings
+-- ADD IsVisiblePedia boolean DEFAULT 1;
+

@@ -2,7 +2,7 @@ This mod adds a new era, the Prehistoric Era, with 2000 years of human history.
 
 *** Important Compatibility Section below. Avoid conflicts! ***
 
-[[ v0.2.7a / Steam v10 / 2014-01-05 ]]
+[[ v0.2.8a / Steam v11 / 2014-01-23 ]]
 
 - New Era: Prehistoric Era.
 - 17 new Technologies: Fire, Gathering, Tools, Numbers, and more.
@@ -24,8 +24,7 @@ This is still in Alpha. I will fix problems as soon as I can. Let me know.
 - Timed Game: I need to determine the appropriate turn addition to each timed setting. Recommendations and feedback welcomed (always).
 - AI improved but still falls short in some places.
 - Start date (6000 BC) has comptability issues with other mods (to be fixed or possibly player controlled).
-- Cooking Tech is a Placeholder and does nothing except annoy you. 
-- Art/Gfx. This one was the killer for me and the reason it took me a lot longer to release the mod. I would love artist help :)
+- Lighthouse crash
 
 
 __ UPGRADE __
@@ -45,7 +44,7 @@ New Units:
 - Explorer (Classical Era mounted Scout [danrell's Mongol Horseman model]) 
 
 New Buildings:
-- Food Storage, Chieftain's Hut, Palisades, Campfire, Rock Paintings, Shelter, Midden. 
+- Food Storage, Chieftain's Hut, Palisades, Campfire, Rock Paintings, Shelter, Midden, FirePit.
 
 New Wonders: 
 - Wonderwerk Cave, Ggantija Temple, Skara Brae, Theopetra Cave.
@@ -54,7 +53,7 @@ New Improvement:
 - Foraging Site
 
 New Resource:
-- Berries
+- Berries, Flint, Obsidian
 
 
 __ COMPATIBILITY __

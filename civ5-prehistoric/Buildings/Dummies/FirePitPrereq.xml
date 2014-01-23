@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <BuildingClasses>
+    <Row>
+      <Type>BUILDINGCLASS_FIRE_PIT_PREREQ</Type>
+      <DefaultBuilding>BUILDING_CAUSEWAY_PREREQ</DefaultBuilding>
+      <Description>none</Description>
+    </Row>
+  </BuildingClasses>
+
+  <Buildings>
+    <Row>
+      <Type>BUILDING_FIRE_PIT_PREREQ</Type>
+      <BuildingClass>BUILDINGCLASS_FIRE_PIT_PREREQ</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>Nearby Food</Description>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[/ENDCOLOR] to improve your city.</Help>
+      <Strategy>NONE</Strategy>
+      <Civilopedia>NONE</Civilopedia>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
+    </Row>
+  </Buildings>
+
+</GameData>

@@ -7,7 +7,7 @@
 
 ORIGINAL G&K:
 
-						          ANCIENT                          CLASSICAL               MEDIEVAL                              RENAISSANCE                                        INDUSTRIAL                                          MODERN                                               FUTURE
+                      ANCIENT                          CLASSICAL               MEDIEVAL                              RENAISSANCE                                        INDUSTRIAL                                          MODERN                                               FUTURE
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 |                                                  ┊                   |                           |                                                 |                                                 |                                                      |                                                 |
 |                                 ┌─Sailing········┊─ Optics───────────|                 Compass   |                                                 |                                                 | Penicillin                                           |                                                 |
@@ -31,7 +31,7 @@ ________________________________________________________________________________
 
 ORIGINAL BNW:
 
-						          ANCIENT                                        CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
+                      ANCIENT                                        CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 |                                                  ┊                                          ┊                                   ┊                                       ┊                                         ┊                                                      |                                                 |
 |                                 ┌─Sailing────────┊──Optics──────────────────────────────────┊─────────────────┬──Compass─────┐  ┊                                       ┊                                         ┊                                                                                       |                                                 |
@@ -77,9 +77,9 @@ ________________________________________________________________________________
 
 
 │││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││
-Prehistoric Mod BNW v1.1.0a:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+Prehistoric Mod BNW v1.7.0a:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-																		                PREHISTORIC										                                                             ANCIENT                                                       CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
+                                                    PREHISTORIC                                                                                ANCIENT                                                       CLASSICAL                               MEDIEVAL                              RENAISSANCE                                  INDUSTRIAL                                          MODERN                                               FUTURE
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     0                 1                  2                        3                        4                       5               6             7                         8                   9
   ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -96,25 +96,22 @@ Prehistoric Mod BNW v1.1.0a:
 9 │                                                                                                             ░                                                       └──Bronze Working───░─────────────────────Iron Working──────┘   ░                 └──Steel───────────░──Gunpowder──────────Chemistry──────────|──Fertilizer──────────┼                   |                                                                  Nuclear Fusion    |                                                 |
   └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
     0                 1                  2                        3                        4                       5               6             7                         8                   9
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-                 
-                 
                  
    LEGEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
    < Moved Left from Previous                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
    > Moved Right                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
    * New in BNW                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-   @ New in Original Prehistoric v1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-   ! New in next version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+   @ New in original Prehistoric v1.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   ! New in v1.x                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
    ~ Name change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 
    %  Barbarian Only
    u- Unit
    b- Building
-   *  Wonder
-   #  Improvement
-   $  Resource
+   w- Wonder
+   i- Improvement
+   r- Resource
    &  Ability
    (abc) Bonus
    /abc/ Unique
@@ -126,97 +123,117 @@ Prehistoric Mod BNW v1.1.0a:
 
 
 
-=========================================================================================|=========================|
-                      STATS ->                                                           | A G H P S C F Z T X I R | W
-                                                                                         | u o a r c u o f o t m e | 
-                                                                                         | B l p o i l o a u r p s |
-                                                                                         | a d p d e t d i r a r o |
-                                                                                         | s   i u n u   t i d o u |
-                                                                                         | e   n c c r   h s e v r |
-                                                                                         |     e t e e     m   e c |
-                                                                                         |                         |
-                                                                                         |                         |
-                                                                                         |                         |
-                                                                                         | A G H P S C F Z T X I R | W
-                                                                                    Base | . . * 1 1 . . . . . . . |
-                                                                                         |                         |
-Simple Tools:         u-Settler, u-@Laborer, u-!Autochthon,                              | . . . . . . . . . . . . | GPF
-                      b-@Tree of Life (Capitol), [Stone], *Theopetra Cave                | 2 2 . . . . . . . . . 1 |
-                      b-!Shelter (+1H)                                                   | . . 1 . . . . . . . . . |
-                                                                                         | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 2 1 1 1 . . . . . . 1 | 
-                                                                                         |                         |
-Complex Tools:        u-!Primitive Archer, b-!Causeway                                   | . . . . . . . . . . . . |
-Fire:                 u-@Caveman, u-~@Shaman (Fire Eater), b-@Campfire (+1G)             | . 1 . 1 . . . . . . . . |
-Gathering:            *@Wonderwerk Cave, $Banana, $!Berries, #!Foraging Site             | . . . . . . . . . . 1 2 | GPM
-                      b-!Midden (+1F), {? +Pit +1F },                                    | . . . . . . 1 . . . . . |
-                      {? -Gatherer: pre-Laborer}                                         | . . . . . . . . . . . . |
-                                                                                         | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 . 2 1 . 1 . . . 1 3 |
-                                                                                         |                         |
-Hunting:              $Deer {-Hunter}                                                    | . . . . . . . . . . . 1 | 
-Cooking:              b-@FirePit                                                         | . . . . . . * . . . . . | 
-Social Structure:     b-@Chieftain's Hut (+1G,+1P)                                       | . . 1 1 . . . . . . . . |
-                                                                                         | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 3 1 . 1 . . . 1 4 |
-                                                                                         | . . . . . . . . . . . . |
-Scouting:             -Scout, #@Outpost, /-Pathfinder/                                   | . . . . . . . . . . 1 . |
-Tool Specialization:  b-@Food Storage (+1F) {Must have Hunter or Gatherer unit},         | . . . . . . 1 . . . . . |
-                      {? -Raft}                                                          | . . . . . . . . . . . . |
-Harpooning:           $Pearls, $Crab, $Fish, *!Skara Brae                                | . . . . . . . . . . . 3 | ?
-Language:             &Embasies                                                          | . . . . . . . . . . . . |
-Warfare:              -@Savage, b-@Palisade                                              | . . . . . . . . . . . . |
-Leadership:           -%Galley {Buildable with limits}, b-Palace                         | . . . . . . . . . . . . |
-                                                                                         | A G H P S C F Z T X I R | W
-::::::::::::::::::::::::::::::::::::::::::::                                           = | 2 3 2 3 1 . 2 . . . 2 7 | 
-                                                                                         | . . . . . . . . . . . . |
-Archery:              -Archer, *Temple of Artemis, /-Slinger/, /-Bowman/                 | . . . . . . . . . . . . |
-Idols:                +Shrine (+1R), *@Ggantija Temples, /+Pyramid/                      | . . . . . . . . . . . . |
-Art:                  b-@Rock Paintings (+1C), [Dyes]                                    | . . . . . . . . . . . . |
-Cooperation:          -Warrior, %Brute, /-Jaguar/, /-Maori/                              | . . . . . . . . . . . . |
-                                                                                         |                         |
-============================================                                             |                         |
-                                                                                         | A G H P S C F Z T X I R | W
-Agriculture:          -Worker, #Farms, $Wheat, $Sugar, $Citrus, /Atlatlist/              |                         | 
-                                                                                         |                         |
-::::::::::::::::::::::::::::::::::::::::::::                                             |                         |
-
-Pottery:              +Granary, $Porcelein
-Trapping:             +Circus, #Camp, $Furs
-Trading:              $Ivory, $Incense, $Truffles
-Mining:               #Mine, $Gold, $Silver, $Salt, &Chop Down Forest
-Numbers:              $Spices, $Silk
-Animal Domestication: $Cattle, $Sheep
-The Wheel:            -Chariot Archer, +Water Mill, $Cotton, #Road
-Mineralogy:           $Gems, $Marble, $Jewelry
-
-::::::::::::::::::::::::::::::::::::::::::::
-
-Sailing:              -Work Boat, -Trireme, -Cargo Ship, /-Dromon/, /-Quinquereme/, 
-                      #Fishing Boats, $Whales
-Calendar:             +Stone Works, #Plantation, *Stonehenge
-Writing:              +Library, /+Royal Library/, /+Paper Maker/, *Great Library
-Husbandry:            $Horses, #Pasture
-Caravaning:           &Caravans!!!!!!, $Wine
-Masonry:              +Monument, +Walls, /+Pyramids/, /+Walls of Babylon/, /+Stele/,
-                      *Mausoleum of Hali, #Qaurry, #Marsh
-Bronze Working:       -Hoplite, /-Immortal/, /-Pict/, /-Battering Ram/, 
-                      +Barracks, /+Krepost/, /+Ikanda/,
-                      *Statue of Zeus, [Iron, Copper]
-                      
-::::::::::::::::::::::::::::::::::::::::::::
-
-Optics:               +Lighthouse, *Great Lighthouse, &Embark
-Horseback Riding:     -Companion Cavalry, -@Explorer /-Cataphraft/, 
-                      /-African Forest Elephant/, +Stable, /+Ducal Stable/, 
-                      +Carvansary, *Circus Maximus
-Mathematics:          -Catapult, /-Ballista/, /-Siege Tower/, +Courthouse, 
-                      *Hanging Gardens
-Construction:         -Composite Bowman, +Colosseum, *Terracota Army, 
-                      #Lumber Mill, /#Terrace Farm/, /#Moai/
-
-=========================================================================================|=========================|
-
+======================================================================|=========================|
+                      STATS ->                                        | A G H P S C F Z T X I R | W
+                                                                      | u o a r c u o f o t m e | 
+                                                                      | B l p o i l o a u r p s |
+                                                                      | a d p d e t d i r a r o |
+                                                                      | s   i u n u   t i d o u |
+                                                                      | e   n c c r   h s e v r |
+                                                                      |     e t e e     m   e c |
+                                                                      |                         |
+                                                                      |                         |
+                                                                      |                         |
+                                                                      | A G H P S C F Z T X I R | W
+                                                                 Base | . . * 1 1 . . . . . . . |
+                                                                      |                         |
+Simple Tools:         u-Settler, u-@Laborer, u-!Autochthon,           | . . . . . . . . . . . . | 
+                      b-@Tree of Life (Capitol), b-!Shelter (+1H),    | 2 2 1 . . . . . . . . . |
+                      [Stone],                                        | . . . . . . . . . . . 1 |
+                      w-Theopetra Cave                                | . . . . . . . . . . . . | GPF
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                        = | 2 2 1 1 1 . . . . . . 1 | 
+                                                                      |                         |
+Complex Tools:        u-!Primitive Archer, b-!Causeway,               | . . . * . . . . . . . . |
+                      [Obsidian], [Flint]                             | . . . . . . . . . . . 2 |
+Fire:                 u-@Caveman, u-~@Shaman (Fire Eater),            | . . . . . . . . . . . . |
+                      b-@Campfire (+1G,H)                             | . 1 1 . . . . . . . . . |
+Gathering:            w-@Wonderwerk Cave, r-Banana, r-!Berries,       | . . . . . . . . . . . 2 | GPM
+                      i-!Foraging Site                                | . . . . . . . . . . 1 . |
+                      b-!Midden (+1F), {? +Pit +1F },                 | . . . . . . 1 . . . . . |
+                      {? -Gatherer: pre-Laborer}                      | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                        = | 2 3 1 1 1 . 1 . . . 1 5 |
+                                                                      |                         |
+Hunting:              r-Deer {-Hunter}, i-Outpost                     | . . . . . . . . . . 1 1 | 
+Cooking:              b-@FirePit                                      | . . . . . . * . . . . . | 
+Social Structure:     b-@Chieftain's Hut (+1G,+1P)                    | . . 1 1 . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                        = | 2 3 3 2 1 . 1 . . . 2 6 |
+                                                                      | . . . . . . . . . . . . |
+Scouting:             -Scout, /-Pathfinder/                           | . . . . . . . . . . . . |
+Tool Specialization:  b-@Food Storage (+1F)                           | . . . . . . 1 . . . . . |
+                      {Must have Hunter or Gatherer unit}, {b-Raft}   | . . . . . . . . . . . . |
+Harpooning:           r-Pearls, r-Crab, r-Fish, w-!Skara Brae         | . . . . . . . . . . . 3 | FF+
+Language:             &Embasies                                       | . . . . . . . . . . . . |
+Warfare:              -@Savage, b-@Palisade                           | . . . . . . . . . . . . |
+Leadership:           -%Galley {Buildable with limits}, b-Palace      | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                        = | 2 3 3 2 1 . 2 . . . 2 9 | 
+                                                                      | . . . . . . . . . . . . |
+Archery:              -Archer, w-Temple of Artemis,                   | . . . . . . . . . . . . |
+                      /-Slinger/, /-Bowman/                           | . . . . . . . . . . . . |
+Idols:                b-Shrine (+1R), /b-Pyramid/,                    | . . . . . . . . . . . . |
+                      w-@Ggantija Temples                             | . . . . . . . . . . . . | ZU
+Art:                  b-@Rock Paintings (+1C), [Dyes]                 | . . . . . . . . . . . . |
+Cooperation:          -Warrior, -%Brute, /-Jaguar/, /-Maori/          | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+                                                                      | . . . . . . . . . . . . |
+======================================================================|=========================|
+                                                                      | . . . . . . . . . . . . |
+                                                                      | . . 3 2 . . . . . . . . |
+Agriculture:          -Worker, i-Farms,                               | . . . . . . . . . . 1 . |
+                      r-Wheat, r-Sugar, r-Citrus,                     | . . . . . . . . . . . . |
+                      /Atlatlist/                                     | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                          |                         |
+                                                                      | . . . . . . . . . . . . |
+Pottery:              +Granary, $Porcelein                            | . . . . . . . . . . . . |
+Trapping:             +Circus, #Camp, $Furs                           | . . . . . . . . . . . . |
+Trading:              $Ivory, $Incense, $Truffles                     | . . . . . . . . . . . . |
+Mining:               #Mine, $Gold, $Silver, $Salt,                   | . . . . . . . . . . . . |
+                      &Chop Down Forest                               | . . . . . . . . . . . . |
+Numbers:              $Spices, $Silk                                  | . . . . . . . . . . . . |
+Animal Domestication: $Cattle, $Sheep                                 | . . . . . . . . . . . . |
+The Wheel:            -Chariot Archer, +Water Mill, $Cotton, #Road    | . . . . . . . . . . . . |
+Mineralogy:           $Gems, $Marble, $Jewelry                        | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                          | . . . . . . . . . . . . |
+                                                                      | . . . . . . . . . . . . |
+Sailing:              -Work Boat, -Trireme, -Cargo Ship,              | . . . . . . . . . . . . |
+                      /-Dromon/, /-Quinquereme/,                      | . . . . . . . . . . . . |
+                      #Fishing Boats, $Whales                         | . . . . . . . . . . . . |
+Calendar:             +Stone Works, #Plantation, *Stonehenge          | . . . . . . . . . . . . |
+Writing:              +Library, /+Royal Library/, /+Paper Maker/,     | . . . . . . . . . . . . |
+                      *Great Library                                  | . . . . . . . . . . . . |
+Husbandry:            $Horses, #Pasture                               | . . . . . . . . . . . . |
+Caravaning:           &Caravans!!!!!!, $Wine                          | . . . . . . . . . . . . |
+Masonry:              +Monument, +Walls,                              | . . . . . . . . . . . . |
+                      /+Pyramids/, /+Walls of Babylon/, /+Stele/,     | . . . . . . . . . . . . |
+                      *Mausoleum of Hali, #Qaurry, #Marsh             | . . . . . . . . . . . . |
+Bronze Working:       -Hoplite,                                       | . . . . . . . . . . . . |
+                      /-Immortal/, /-Pict/, /-Battering Ram/,         | . . . . . . . . . . . . |
+                      +Barracks, /+Krepost/, /+Ikanda/,               | . . . . . . . . . . . . |
+                      *Statue of Zeus, [Iron, Copper]                 | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+::::::::::::::::::::::::::::::::::::::::::::                          | . . . . . . . . . . . . |
+                                                                      | . . . . . . . . . . . . |
+Optics:               +Lighthouse, *Great Lighthouse, &Embark         | . . . . . . . . . . . . |
+Horseback Riding:     -Companion Cavalry, -@Explorer                  | . . . . . . . . . . . . |
+                      /-Cataphraft/, /-African Forest Elephant/,      | . . . . . . . . . . . . |
+                      +Stable, /+Ducal Stable/,                       | . . . . . . . . . . . . |
+                      +Carvansary, *Circus Maximus                    | . . . . . . . . . . . . |
+Mathematics:          -Catapult, /-Ballista/, /-Siege Tower/,         | . . . . . . . . . . . . |
+                      +Courthouse,                                    | . . . . . . . . . . . . |
+                      *Hanging Gardens                                | . . . . . . . . . . . . |
+Construction:         -Composite Bowman, b-Colosseum,                 | . . . . . . . . . . . . |
+                      *Terracota Army,                                | . . . . . . . . . . . . |
+                      i-Lumber Mill, /b-Terrace Farm/, /#Moai/        | . . . . . . . . . . . . |
+                                                                      | A G H P S C F Z T X I R | W
+                                                                      | . . . . . . . . . . . . |
+======================================================================|=========================|
+                                                                      | . . . . . . . . . . . . |
+                                                                      | . . . . . . . . . . . . |
 
 8x8
 256:2048
@@ -337,10 +354,10 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
     <Row>
       <Type>TECH_HUNTING_GATHERING</Type>
       <Cost>12</Cost>
-      <Description>Hunting</Description>
-      <Civilopedia></Civilopedia>
-      <Help>With [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth. Your citizens may now go out and [COLOR_POSITIVE_TEXT]Forage[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_HUNTING_GATHERING_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_HUNTING_GATHERING_PEDIA</Civilopedia>
+      <Help>TXT_KEY_TECH_HUNTING_GATHERING_HELP</Help>
+      <Quote>TXT_KEY_TECH_HUNTING_GATHERING_QUOTE</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>
       <GoodyTech>1</GoodyTech>
@@ -353,8 +370,8 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Type>TECH_COOKING</Type>
       <Cost>6</Cost>
       <Description>Cooking</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Cooking increases the size of your units' brains. Food just tasted better over wood burning pits and even increased morale.</Help>
+      <Civilopedia>Cooking Entry</Civilopedia>
+      <Help>Cooking increases the size of your villager's brains. With simple tools, a [COLOR_POSITIVE_TEXT]Laborer[ENDCOLOR] can now build a [COLOR_POSITIVE_TEXT]Fire Pit[ENDCOLOR]. Food just tasted better over wood burning pits and even increased morale. Strange [COLOR_POSITIVE_TEXT]Evolutionary Benefits[ENDCOLOR] start to arise.</Help>
       <Quote>[NEWLINE][TAB][TAB]"Humanity is mind-controlled and only slightly more conscious than your average zombie."[NEWLINE][TAB][TAB]  - David Icke.[NEWLINE][TAB]</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>
@@ -368,7 +385,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Type>TECH_SOCIAL_STRUCTURE</Type>
       <Cost>12</Cost>
       <Description>Social Structure</Description>
-      <Civilopedia></Civilopedia>
+      <Civilopedia>Social Structure Entry</Civilopedia>
       <Help>Makes your community more organized, under your firm and benevolent leadership. Allows you to build the [COLOR_POSITIVE_TEXT]Chieftain's Hut[ENDCOLOR].</Help>
       <Quote>[NEWLINE][TAB][TAB]"The problem of social organization is how to set up an arrangement under which greed will do the least harm."[NEWLINE][TAB][TAB]  - Milton Friedman.[NEWLINE][TAB]</Quote>
       <Era>ERA_PREHISTORIC</Era>
@@ -389,8 +406,8 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Type>TECH_SCOUTING</Type>
       <Cost>16</Cost>
       <Description>Scouting</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Enables you to train [COLOR_POSITIVE_TEXT]Scouts[ENDCOLOR] and build the [COLOR_POSITIVE_TEXT]Outpost[ENDCOLOR] improvement in [COLOR_SELECTED_TEXT]Forests[ENDCOLOR] and [COLOR_SELECTED_TEXT]Jungles[ENDCOLOR].</Help>
+      <!--<Civilopedia></Civilopedia>-->
+      <Help>Enables you to train [COLOR_POSITIVE_TEXT]Scouts[ENDCOLOR].</Help>
       <Quote>[NEWLINE][TAB][TAB]"A Scout is never taken by surprise; he knows exactly what to do when anything unexpected happens."[NEWLINE][TAB][TAB]  - Robert Baden-Powell.[NEWLINE][TAB]</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>
@@ -405,7 +422,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Cost>16</Cost>
       <Description>Tool Specialization</Description>
       <Civilopedia></Civilopedia>
-      <Help>Enables you to build the [COLOR_POSITIVE_TEXT]Food Storage[ENDCOLOR] building for your city.</Help>
+      <Help>Enables you to construct a [COLOR_POSITIVE_TEXT]Food Storage[ENDCOLOR] for your city.</Help>
       <Quote>[NEWLINE][TAB][TAB]"The human body is the magazine of inventions, the patent-office, where are the models from which every hint was taken. All the tools and engines on earth are only extensions of its limbs and senses."[NEWLINE][TAB][TAB]  - R. W. Emerson.[NEWLINE][TAB]</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>
@@ -1625,7 +1642,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_HELP">
-      <Text>Your citizens can now build more complex tools than chipped rock. Allows you to build the [COLOR_POSITIVE_TEXT]Primitve Archer[ENDCOLOR], a very weak ranged unit.</Text>
+      <Text>Your citizens can now build more complex tools than just chipped rock. Allows you to build the [COLOR_POSITIVE_TEXT]Primitve Archer[ENDCOLOR], a very weak ranged unit. Opens up the building of a [COLOR_POSITIVE_TEXT]Causeway[ENDCOLOR] for settlements near marshes. Reveals [COLOR_YELLOW]Flint[ENDCOLOR] and [COLOR_YELLOW]Obsidian[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Man is a tool-using animal. Without tools he is nothing, with tools he is all."[NEWLINE][TAB][TAB]  - Thomas Carlyle.[NEWLINE][TAB]</Text>
@@ -1638,7 +1655,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FIRE_HELP">
-      <Text>Your citizens will now have control of [COLOR_]Fire[ENDCOLOR]. Enables you to train [COLOR_POSITIVE_TEXT]Cavemen[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Shaman[ENDCOLOR] (a ranged unit with limited range), and to build a [COLOR_POSITIVE_TEXT]Campfire[ENDCOLOR] in Cities.</Text>
+      <Text>Your citizens will now have control of [COLOR_]Fire[ENDCOLOR]. Enables you to train [COLOR_POSITIVE_TEXT]Cavemen[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Shaman[ENDCOLOR] (a ranged unit with limited range), and to build a [COLOR_POSITIVE_TEXT]Campfire[ENDCOLOR] in Cities. The [COLOR_POSITIVE_TEXT]Campfire[ENDCOLOR] is a key early building, giveing you a double bonus.</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FIRE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Out of the frying pan, into the fire."[NEWLINE][TAB][TAB]  - Tertullian.[NEWLINE][TAB]</Text>
@@ -1651,7 +1668,7 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_GATHERING_HELP">
-      <Text>Takes your gathering culture to an new level. Reveals [ICON_RES_BANANA] [COLOR_YELLOW]Bananas[ENDCOLOR] and [ICON_RES_BERRIES] [COLOR_YELLOW]Berries[ENDCOLOR] on the map and allows you to build a [COLOR_POSITIVE_TEXT]Midden[ENDCOLOR] for your settlement and [COLOR_CYAN]Wonderwerk Cave[ENDCOLOR] which will help in resource production.</Text>
+      <Text>Takes your gathering culture to an new level. Reveals [ICON_RES_BANANA] [COLOR_YELLOW]Bananas[ENDCOLOR] and [ICON_RES_BERRIES] [COLOR_YELLOW]Berries[ENDCOLOR] on the map. Your citizens may now go out and [COLOR_POSITIVE_TEXT]Forage[ENDCOLOR] which gives you small boosts to resource locations. Enables you to build a [COLOR_POSITIVE_TEXT]Midden[ENDCOLOR] for your settlement and [COLOR_CYAN]Wonderwerk Cave[ENDCOLOR] which will help in resource production.</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_GATHERING_QUOTE">
       <Text>
@@ -1659,20 +1676,26 @@ Construction:         -Composite Bowman, +Colosseum, *Terracota Army,
     </Row>
 
 
+
+
+
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_TITLE">
+      <Text>Hunting</Text>
+    </Row>
     <!--
-    <Row Tag="TXT_KEY_TECH__TITLE">
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_PEDIA">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__DESC">
-      <Text></Text>
+    -->
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_HELP">
+      <Text>After [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Enables you to build [COLOR_POSITIVE_TEXT]Outposts[ENDCOLOR] to protect and benefit from certain resources. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth.</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__HELP">
-      <Text></Text>
-    </Row>
-    <Row Tag="TXT_KEY_TECH__QUOTE">
-      <Text></Text>
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]</Text>
     </Row>
 
+
+    <!--s
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>

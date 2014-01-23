@@ -129,8 +129,47 @@ print("__FILE__   HasWithinCityBorders")
 
 local bDebug = true
 
-
 local logger = Logger:new(Logger.LEVEL.DEBUG)
+
+
+local TYPE_TYPES = {
+  'resources'   = 1,
+  'buildings'   = 2,
+  'terrain'     = 3,
+  'features'    = 4
+}
+
+--[[
+  
+  TODO: set new column in RESOURCES table to specify resource groupings:
+        - animal
+        - animal-like
+        - food
+        - mineral
+  
+  _OR_
+
+  In the meantime, separate out these CONSTANTS into their own module.
+
+]]--
+local ANIMAL_RESOURCES = {
+  'RESOURCE_HORSE',
+  'RESOURCE_COW',
+  'RESOURCE_SHEEP',
+  'RESOURCE_DEER',
+  'RESOURCE_FISH',
+  'RESOURCE_WHALE',
+  'RESOURCE_PEARLS',
+  'RESOURCE_FUR',
+  'RESOURCE_IVORY',
+  'RESOURCE_CRAB'
+}
+
+local FOOD_RESOURCES = ANIMAL_RESOURCES + {
+  'RESOURCE_WHEAT',
+  'RESOURCE_BANANA',
+  'RESOURCE_BERRIES'
+}
 
 
 
@@ -147,24 +186,6 @@ end
 -- END UTILITIES
 
 
---
--- GetNumResourcesInRange
--- 
-function GetNumResourcesInRange( player, types )
-  
-  local n = 0;
-  
-  for i, id in pairs(types) do
-  
-    if player:GetNumResourceAvailable(id, true) > 0 then
-      n = n + 1;
-    end
-  
-  end
-  
-  return n > 0
-
-end
 
 
 --
@@ -175,7 +196,7 @@ end
 -- @param {Function} f_test - test function to be called whether to proceed 
 --                   checking or not. should be generalized, but is not now.
 --
-function HasWithinCity( player, things, f_success, f_pretest )
+function HasWithinCity( player, ttype, things, f_success, f_pretest )
 
   local playerHuman = player:IsHuman();
 
@@ -213,37 +234,54 @@ function HasWithinCity( player, things, f_success, f_pretest )
             local plot_location_debug = "[ " .. x .. " x " .. y .. "   " .. dx .. " x " .. dy .. "]"
 
 
-            -- HERE IS WHERE NEED TO SWITCH BASED ON TYPE- ASSUME FEATURE NOW
-
             --[[
-            t = plot:GetResourceType()
-            if t and t>0 then
-              
-              local city_valid = plot:IsPlayerCityRadius(player) and plot:IsOwned()
-              print("[Plot] Found resource " .. t .. " at " .. s1)
-              if city_valid then
-                print "[Plot]    within city boundary"
-                return true
+              Following section is some unweildy code. I'd like to have a more 
+              general function with smaller cases within the function and not
+              need to have (eventually) one giant switch. 
+
+              Also ...
+
+              There will be the possibilty of searching for multiple types as
+              AND or OR and need to take that into consideration.
+            ]]
+
+
+            if ttype == TYPE_TYPES['resources'] then
+            
+              resourceID = plot:GetResourceType()
+              if resourceID and resourceID > 0 then
+                local animalResourceFound = false
+                for _, v in pairs(things) do
+                  if resourceID == v then
+                    animalResourceFound = true
+                  end
+                end
+
+                -- do not check for city real borders
+
+                f_success( city, nil )
+
               end
 
-            else
-
             end
-            --]]
 
-            
 
-            featureID = plot:GetFeatureType()
-            logger:debug ("[Plot] Found Feature: " .. featureID .. " at " .. plot_location_debug)
-            if featureID and featureID > 0 and things == featureID then
 
-              local plot_in_city = plot:IsPlayerCityRadius(player) and plot:IsOwned()
-              logger:debug("[Plot] Found City Feature: " .. featureID .. " at " .. plot_location_debug)
+            if ttype == TYPE_TYPES['features'] then
 
-              if plot_in_city then
-                logger:debug( "[Plot]    within city boundary" )
-                f_success( city, nil )
-                return true
+              featureID = plot:GetFeatureType()
+              logger:debug ("[Plot] Found Feature: " .. featureID .. " at " .. plot_location_debug)
+              if featureID and featureID > 0 and things == featureID then
+
+                local plot_in_city = plot:IsPlayerCityRadius(player) and plot:IsOwned()
+                logger:debug("[Plot] Found City Feature: " .. featureID .. " at " .. plot_location_debug)
+
+                if plot_in_city then
+                  logger:debug( "[Plot]    within city boundary" )
+                  f_success( city, nil )
+                  return true
+                end
+
               end
 
             end
@@ -274,6 +312,7 @@ end
 
 -- all of these functions should be put together and sent to be checked all
 -- at once so we don't have to repeatedly keep checking plots 
+
 function CanBuild_Causeway ( iPlayer )
 
   local player = Players[iPlayer]; -- we're all players in the end
@@ -286,9 +325,27 @@ function CanBuild_Causeway ( iPlayer )
     return not (city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY ))
   end
 
-  HasWithinCity ( player, GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
+  HasWithinCity ( player, TYPE_TYPES['features'], GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
 
 end
+
+function CanBuild_FirePit ( iPlayer )
+
+  local player = Players[iPlayer]; -- we're still players playing at the game
+
+  local f_succ = function ( city, plot )
+    city:SetNumRealBuilding( GameInfoTypes.BUILDING_FIREPIT_PREREQ, 1 );
+  end
+
+  local f_pretest = function ( city, plot )
+    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT ))
+  end
+
+  HasWithinCity ( player, TYPE_TYPES['resources'], ANIMAL_RESOURCES, f_succ, f_pretest )
+
+end
+
+
 
 
 GameEvents.PlayerDoTurn.Add( CanBuild_Causeway );

@@ -20,7 +20,7 @@ Improvement: Foraging Site
       <Type>IMPROVEMENT_FORAGING_SITE</Type>
       <Description>Foraging Site</Description>
       <Civilopedia>Early man would forage in prolific areas by establishing the necessary tools and supplies in the area for greater efficiency. Baskets and other containers, sharpened sticks, and other primitive tools were kept in the area while foragers collected food.</Civilopedia>
-      <Help>Foraging Site Help</Help>
+      <Help>Build a Foraging Site on certain food resources to gain extra food.</Help>
       <ArtDefineTag>ART_DEF_IMPROVEMENT_FORAGING_SITE</ArtDefineTag>
       <DestroyedWhenPillaged>true</DestroyedWhenPillaged>
       <PortraitIndex>1</PortraitIndex>
@@ -100,7 +100,7 @@ Improvement: Foraging Site
       <Time>700</Time>
       <ImprovementType>IMPROVEMENT_FORAGING_SITE</ImprovementType>
       <Description>Build Foraging Site</Description>
-      <Help>Increases the tile's [ICON_FOOD] [COLOR_POSITIVE_TEXT]Food[ENDCOLOR] output +1.</Help>
+      <Help>Build a [COLOR_POSITIVE_TEXT]Foraging Site[ENDCOLOR] and increase the tile's [ICON_FOOD] [COLOR_POSITIVE_TEXT]Food[ENDCOLOR] output +1.</Help>
       <Recommendation>It will increase the tile's [ICON_FOOD] Food output, granting increased Growth for your City.</Recommendation>
       <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
       <OrderPriority>98</OrderPriority>

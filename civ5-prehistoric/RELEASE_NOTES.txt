@@ -3,6 +3,30 @@
 ==========================
 
 
+__ RELEASE NOTES v0.2.8a __
+
+Additions
+
++ Buildings: FirePit
++ Resources: Flint, Obsidian
+
+
+Fixes 
+
+= Outpost adds bonus to resources
+
+
+Modification
+
+/ More gold production in early game. 
+
+
+Removals
+
+-
+
+
+
 
 __ RELEASE NOTES v0.2.7a __
 

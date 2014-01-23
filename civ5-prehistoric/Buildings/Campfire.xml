@@ -2,7 +2,9 @@
 <!--
 
 Building: Campfire
-
+  +1 Gold
+  +1 Happiness
+  
 !NO 3D MAP ART
 
 -->
@@ -27,7 +29,9 @@ Building: Campfire
       <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
 			<Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
 			<ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
       <NeverCapture>true</NeverCapture>
@@ -41,8 +45,13 @@ Building: Campfire
 		<Row>
 			<BuildingType>BUILDING_CAMPFIRE</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>40</Flavor>
+			<Flavor>25</Flavor>
 		</Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>    
 	</Building_Flavors>
 
   <Building_YieldChanges>
@@ -54,10 +63,6 @@ Building: Campfire
   </Building_YieldChanges>
 
   
-  
-  
-  
-  
   <Language_en_US>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_TITLE">
       <Text>Campfire</Text>
@@ -67,8 +72,8 @@ Building: Campfire
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_HELP">
       <Text>
-        Increases the [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] of your community.
-        [NEWLINE]A campfire never becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR].
+        Increases the [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] of your community.
+        [NEWLINE][NEWLINE]A campfire never becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR].
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_QUOTE">
@@ -79,13 +84,12 @@ Building: Campfire
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_STATEGY">
       <Text>
-        A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.
-        [NEWLINE]
+        A campfire plays a central role in your early settlement. Build it to increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR]. This double bonus and relative cost makes this building a great asset.
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
       <Text>
-        (Pedia) A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.
+        A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.
         [NEWLINE]
       </Text>
     </Row>    

@@ -66,16 +66,6 @@ alter game speed due to addition of eras if and only if the player starts in pre
       <Set ResearchPercent="200"/>
     </Update>
 
-    <Update>
-      <Where Type="ERA_PREHISTORIC"/>
-      <Set ConstructPercent="120"/>
-    </Update>
-
-    <Update>
-      <Where Type="ERA_PREHISTORIC"/>
-      <Set BuildPercent="120"/>
-    </Update>
-
 
     <Update>
 			<Where Type="ERA_ANCIENT"/>

@@ -17,18 +17,19 @@ Improvement: Outpost
   <Improvements>
 		<Row>
 			<Type>IMPROVEMENT_OUTPOST</Type>
-			<Description>Outpost</Description>
-			<Civilopedia>Outposts have always played a vital role for the growth of civilizations. They are versatile improvements that can be used for various purposes. Usually, Outposts have some kind of Palisade protection and are well hidden inside Forests or Jungles. They provide additional defense and offer a Food storage for military or civilians who are stationed outside of Cities.[NEWLINE][NEWLINE]The Outpost provides 10% extra defense for military units stationed inside it, and increases the Food output of the tile it is constructed on. After the discovery of Archaeology, the Outpost may also be used for research purposes[NEWLINE]The need of nearby building material requires the Outpost to be constructed in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] or Jungle. You can construct an Outpost within your territory, or directly adjacent to your territory.</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+			<Description>TXT_KEY_BUILDING_OUTPOST_DESC</Description>
+			<Civilopedia>TXT_KEY_BUILDING_OUTPOST_PEDIA</Civilopedia>
+      <Help>TXT_KEY_BUILDING_OUTPOST_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_OUTPOST</ArtDefineTag>
       <DestroyedWhenPillaged>true</DestroyedWhenPillaged>
       <DefenseModifier>15</DefenseModifier>
-      <OutsideBorders>true</OutsideBorders>
-			<RequiresFeature>true</RequiresFeature>
+      <!-- <OutsideBorders>true</OutsideBorders> -->
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>TERRAIN_ATLAS_PRE</IconAtlas>
 		</Row>
 	</Improvements>
   
+
 	<Improvement_Yields>
 		<Row>
 			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
@@ -37,6 +38,7 @@ Improvement: Outpost
 		</Row>
 	</Improvement_Yields>
   
+
   <!--
   <Improvement_ValidTerrains>
     <Row>
@@ -109,13 +111,12 @@ Improvement: Outpost
 	<Builds>
 		<Row>
 			<Type>BUILD_OUTPOST</Type>
-			<PrereqTech>TECH_HUNTING</PrereqTech>
+			<PrereqTech>TECH_HUNTING_GATHERING</PrereqTech>
 			<Time>800</Time>
 			<ImprovementType>IMPROVEMENT_OUTPOST</ImprovementType>
-			<Description>Construct an Outpost</Description>
-      <Help>Help Build Outpost</Help>
+			<Description>TXT_KEY_BUILD_OUTPOST_DESC</Description>
+      <Help>TXT_KEY_BUILD_OUTPOST_HELP</Help>
 			<Recommendation>It will increase the tile's [ICON_PRODUCTION] Production output as you protect its valuable resource. It also provides a lsight increased defense for units stationed inside. Takes a long time to build.</Recommendation>
-      <Strategy>Outpost Strategy</Strategy>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<OrderPriority>98</OrderPriority>
 			<IconIndex>0</IconIndex>
@@ -139,7 +140,7 @@ Improvement: Outpost
       <Remove>false</Remove>
     </Row>
   </BuildFeatures>
-  
+
   
 
   <!-- UNIT -->
@@ -154,5 +155,55 @@ Improvement: Outpost
 			<BuildType>BUILD_OUTPOST</BuildType>
 		</Row>
 	</Unit_Builds>
+
+
+
+
+
+  <!-- TEXT -->
+
+  <Language_en_US>
+
+    <!-- Outpost Improvement -->
+
+    <Row Tag="TXT_KEY_BUILDING_OUTPOST_DESC">
+      <Text>Outpost</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OUTPOST_HELP">
+      <Text>
+        BUild and outpost to secure resources and gain an extra boost.
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OUTPOST_PEDIA">
+      <Text>
+        Outposts have always played a vital role for the growth of civilizations. They are versatile improvements that can be used for various purposes. Usually, Outposts have some kind of Palisade protection and are well hidden inside Forests or Jungles. They provide additional defense and offer a Food storage for military or civilians who are stationed outside of Cities.[NEWLINE][NEWLINE]The Outpost provides 10% extra defense for military units stationed inside it, and increases the Food output of the tile it is constructed on. After the discovery of Archaeology, the Outpost may also be used for research purposes[NEWLINE]The need of nearby building material requires the Outpost to be constructed in [COLOR_POSITIVE_TEXT]Forest[ENDCOLOR] or Jungle. You can construct an Outpost within your territory, or directly adjacent to your territory.
+      </Text>
+    </Row>
+
+    <!-- Outpost Build -->
+
+    <Row Tag="TXT_KEY_BUILD_OUTPOST_DESC">
+      <Text>Construct an Outpost</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILD_OUTPOST_HELP">
+      <Text>
+        Construct an Outpost here to secure the resource and increase its [ICON_PRODUCTION] Production by +1.
+      </Text>
+    </Row>
+
+
+  </Language_en_US>
+
+
+
+
+
+
+
+
+
+
+
+
   
 </GameData>

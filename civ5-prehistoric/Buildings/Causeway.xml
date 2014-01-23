@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-Causeway: +1 Production for settlement if marsh within borders
-Marshland resources provide +1 Food
+Causeway: must have marsh within city borders
++1 Production for settlement 
+Marshland resources provide +1 bonuses
 -->
 
 <GameData>
@@ -26,8 +27,8 @@ Marshland resources provide +1 Food
       <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CAUSEWAY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_CAUSEWAY_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
@@ -89,7 +90,7 @@ Marshland resources provide +1 Food
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
       <Text>
-        Settlements in marsh or river regions benefit from causeways by increasing +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR]. Marshland resources also provide extra bonsues. +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[/ENDCOLOR] from [COLOR_POSITIVE_TEXT]Sugar[/ENDCOLOR] and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[/ENDCOLOR] from [COLOR_POSITIVE_TEXT]Truffles[/ENDCOLOR].
+        Settlements near marsh regions gain +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] by building [COLOR_POSITIVE_TEXT]Causeways[ENDCOLOR]. Marshland resources also provide extra bonsues. +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Sugar[ENDCOLOR] and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Truffles[ENDCOLOR].
         [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
       </Text>
     </Row>
@@ -105,7 +106,10 @@ Marshland resources provide +1 Food
       </Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
-      <Text>Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].</Text>
+      <Text>
+        Causeways have been build since the prehistoric times. They are a simple structure, requiring only manpower.
+        [NEWLINE][NEWLINE]A Causeway is needed to ease transportation across swampy and marsh areas or small areas of pooled water or rivers. The basic principle is to stack rocks and earth and raise the level above the marsh or swamp. This provides easier transortation across these areas and access to resources in the bogged down area. 
+      </Text>
     </Row>
   </Language_en_US>
 

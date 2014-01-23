@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW) v12b001</Name>
+    <Name>Prehistoric Era (BNW)</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>12</ModVersion>
+    <ModVersion>11</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.2.8a)[ENDCOLOR] [COLOR_PROJECT_TEXT]Adds a new era, The Prehistoric Era, before the Ancient Era.</Teaser>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.2.8a)[ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years. New techs, units, buildings, wonders, and more!</Teaser>
     <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
-    <Authors>Apshai (Carlos Codex)</Authors>
+    <Authors>Apshai (CarlosCodex)</Authors>
     <SpecialThanks>Muppets and CivFanatics</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>11</MinCompatibleSaveVersion>
@@ -1189,6 +1189,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Buildings\Causeway.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Buildings\Cemetery.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
