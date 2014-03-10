@@ -1,0 +1,32 @@
+<Asset>
+	<Mesh file="Settlers_AFRI_Camel01.gr2"/>
+	<Animation file="Settlers_AFRI_Camel01_IdleA.gr2" ec="1000"/>
+	<Animation file="Settlers_AFRI_Camel01_FidgetA.gr2" ec="1040"/>
+	<Animation file="Settlers_AFRI_Camel01_IdleA_Trans_IdleB.gr2" ec="1020"/>
+	<Animation file="Settlers_AFRI_Camel01_IdleB.gr2" ec="2000"/>
+	<Animation file="Settlers_AFRI_Camel01_FidgetB.gr2" ec="2040"/>
+	<Animation file="Settlers_AFRI_Camel01_IdleB_Trans_IdleA.gr2" ec="2020"/>
+	<Animation file="Settlers_AFRI_Camel01_Fortify.gr2" ec="1500"/>
+	<Animation file="Settlers_AFRI_Camel01_Fortify_Idle.gr2" ec="1520"/>
+	<Animation file="Settlers_AFRI_Camel01_Fortify_Idle_Trans_IdleA.gr2" ec="1580"/>
+	<Animation file="Settlers_AFRI_Camel01_Start_Run.gr2" ec="1420"/>
+	<Animation file="Settlers_AFRI_Camel01_Run.gr2" ec="1400"/>
+	<Animation file="Settlers_AFRI_Camel01_Stop_Run.gr2" ec="1440"/>
+	<Animation file="Settlers_AFRI_Camel01_Build.gr2" ec="1990"/>
+	<Animation file="Settlers_AFRI_Camel01_Build_Activate.gr2" ec="1995"/>
+	<Animation file="Settlers_AFRI_Camel01_Bombard_Defense.gr2" ec="1280"/>
+	<Animation file="Settlers_AFRI_Camel01_Bombard_Defense_Idle.gr2" ec="1285"/>
+	<Animation file="Settlers_AFRI_Camel01_Bombard_Defense_Trans_IdleA.gr2" ec="1290"/>
+	<Animation file="Settlers_AFRI_Camel01_DeathA.gr2" ec="1200"/>
+	<Animation file="Settlers_AFRI_Camel01_DeathA_Idle.gr2" ec="1220"/>
+	<Texture file="SettlerAfrican_Camel_DIFF.dds"/>
+	<Texture file="SettlerAfrican_Camel_SREF.dds"/>
+	<Texture file="Unit_Environment_Dull.dds"/>
+	<Texture file="Unit_Environment_Sharp.dds"/>
+	<Texture file="Unit_Irradiance.dds"/>
+	<TimedTrigger file="FX_Triggers_Settles_AFRI_Camel01.ftsxml"/>
+	<BoneUsage>
+		<Bone name="Horse"/>
+	</BoneUsage>
+</Asset>
+

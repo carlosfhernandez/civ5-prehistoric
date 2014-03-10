@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<VisEffectModelArtInfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+  <!-- DLC 02 Model effects  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ROCK_SLINGER</Name>
+    <File>Units\Projectiles\Proj_Slinger_rock.fxsxml</File>    
+    <fScale>5.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_FIRE_ROCK_SLINGER</Name>
+    <File>Units\Projectiles\Proj_Slinger_fieryrock.fxsxml</File>    
+    <fScale>3.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>  
+</VisEffectModelArtInfos>

@@ -1,0 +1,16 @@
+<Asset>
+  <Mesh file="Barbarian_Village2.gr2" source="Max" />
+  <Texture file="Barbarian_Camp2_Decal_D.dds" source="Max" />
+  <Texture file="Barbarian_Camp2_Decal_H.dds" source="Max" />
+  <Texture file="Barbarian_Huts_DIFF.dds" source="Max" />
+  <Texture file="Barbarian_Huts_SREF.dds" source="Max" />
+  <Texture file="Generic_Grey_8.dds" source="Max" />
+  <DecisionTree file="StaticLandmarkDecisionTree.ddtxml" source="Tool" />
+  <TimedTrigger file="FX_Triggers_Barbarian_Village2_01.ftsxml" source="Tool" model="BarbVillage2_08" state="0,1,2,3" />
+  <BoneUsage>
+    <Bone name="" />
+    <Bone name="FX_firepit_center" />
+    <Bone name="FX_firepit_Left" />
+  </BoneUsage>
+  <TimedTrigger file="FX_Triggers_Barbarian_Village2_02.ftsxml" source="Tool" model="BarbVillage2_06" state="0,1,2,3" />
+</Asset>

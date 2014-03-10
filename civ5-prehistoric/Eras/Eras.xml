@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+	<Eras>
+
+
+
+    <Update>
+      <Where Type="ERA_CLASSICAL"/>
+      <Set ResearchPercent="120"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_MEDIEVAL"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_RENAISSANCE"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+    
+    
+
+	</Eras>
+
+
+
 <GameData>
 
 	<Eras>
@@ -20,7 +48,7 @@
 			<ResearchAgreementCost>100</ResearchAgreementCost>
 			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
 			<StartingUnitMultiplier>1</StartingUnitMultiplier>
-			<StartingDefenseUnits>1</StartingDefenseUnits>
+			<StartingDefenseUnits>0</StartingDefenseUnits>
 			<StartingWorkerUnits>0</StartingWorkerUnits>
 			<StartingExploreUnits>0</StartingExploreUnits>
 			<StartingGold>0</StartingGold>
@@ -29,11 +57,11 @@
 			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
 			<StartPercent>0</StartPercent>
 			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
+			<GrowthPercent>1000</GrowthPercent>
 			<TrainPercent>100</TrainPercent>
 			<ConstructPercent>100</ConstructPercent>
 			<CreatePercent>100</CreatePercent>
-			<ResearchPercent>100</ResearchPercent>
+			<ResearchPercent>200</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
 			<ImprovementPercent>100</ImprovementPercent>
 			<GreatPeoplePercent>100</GreatPeoplePercent>
@@ -55,10 +83,59 @@
 		</Row>
 
 		<Row>
-			<Type>ERA_ANCIENT</Type>
+			<ID>1</ID>
+			<Type>ERA_LOWER_PALEOLITHIC</Type>
 			<Description>TXT_KEY_ERA_1</Description>
 			<ShortDescription>TXT_KEY_ERA_1_SHORT</ShortDescription>
 			<Abbreviation>TXT_KEY_ERA_1_ABBREV</Abbreviation>
+			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
+			<ArtPrefix>ANCIENT </ArtPrefix>
+			<NoGoodies>false</NoGoodies>
+			<NoBarbUnits>false</NoBarbUnits>
+			<NoReligion>false</NoReligion>
+			<ResearchAgreementCost>100</ResearchAgreementCost>
+			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
+			<StartingUnitMultiplier>1</StartingUnitMultiplier>
+			<StartingDefenseUnits>0</StartingDefenseUnits>
+			<StartingWorkerUnits>0</StartingWorkerUnits>
+			<StartingExploreUnits>0</StartingExploreUnits>
+			<StartingGold>0</StartingGold>
+			<StartingCulture>0</StartingCulture>
+			<FreePopulation>0</FreePopulation>
+			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
+			<StartPercent>0</StartPercent>
+			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
+			<GrowthPercent>1000</GrowthPercent>
+			<TrainPercent>100</TrainPercent>
+			<ConstructPercent>100</ConstructPercent>
+			<CreatePercent>100</CreatePercent>
+			<ResearchPercent>200</ResearchPercent>
+			<BuildPercent>100</BuildPercent>
+			<ImprovementPercent>100</ImprovementPercent>
+			<GreatPeoplePercent>100</GreatPeoplePercent>
+			<CulturePercent>100</CulturePercent>
+			<TradeRouteFoodBonusTimes100>0</TradeRouteFoodBonusTimes100>
+			<TradeRouteProductionBonusTimes100>0</TradeRouteProductionBonusTimes100>
+			<EventChancePerTurn>1</EventChancePerTurn>
+			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
+			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
+			<FaithCostMultiplier>100</FaithCostMultiplier>
+			<DiploEmphasisReligion>0</DiploEmphasisReligion>
+			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
+			<LeaguePercent>300</LeaguePercent>
+			<SoundtrackSpace>0</SoundtrackSpace>
+			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
+			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
+			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
+			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
+		</Row>
+
+		<Row>
+			<ID>2</ID>
+			<Type>ERA_PALEOLITHIC</Type>
+			<Description>TXT_KEY_ERA_2</Description>
+			<ShortDescription>TXT_KEY_ERA_2_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_2_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
 			<ArtPrefix>ANCIENT </ArtPrefix>
 			<NoGoodies>false</NoGoodies>
@@ -76,11 +153,107 @@
 			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
 			<StartPercent>0</StartPercent>
 			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
+			<GrowthPercent>300</GrowthPercent>
 			<TrainPercent>100</TrainPercent>
 			<ConstructPercent>100</ConstructPercent>
 			<CreatePercent>100</CreatePercent>
-			<ResearchPercent>100</ResearchPercent>
+			<ResearchPercent>180</ResearchPercent>
+			<BuildPercent>100</BuildPercent>
+			<ImprovementPercent>100</ImprovementPercent>
+			<GreatPeoplePercent>100</GreatPeoplePercent>
+			<CulturePercent>100</CulturePercent>
+			<TradeRouteFoodBonusTimes100>0</TradeRouteFoodBonusTimes100>
+			<TradeRouteProductionBonusTimes100>0</TradeRouteProductionBonusTimes100>
+			<EventChancePerTurn>1</EventChancePerTurn>
+			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
+			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
+			<FaithCostMultiplier>100</FaithCostMultiplier>
+			<DiploEmphasisReligion>0</DiploEmphasisReligion>
+			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
+			<LeaguePercent>300</LeaguePercent>
+			<SoundtrackSpace>0</SoundtrackSpace>
+			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
+			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
+			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
+			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
+		</Row>
+
+		<Row>
+			<ID>3</ID>
+			<Type>ERA_NEOLITHIC</Type>
+			<Description>TXT_KEY_ERA_3</Description>
+			<ShortDescription>TXT_KEY_ERA_3_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_3_ABBREV</Abbreviation>
+			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
+			<ArtPrefix>ANCIENT </ArtPrefix>
+			<NoGoodies>false</NoGoodies>
+			<NoBarbUnits>false</NoBarbUnits>
+			<NoReligion>false</NoReligion>
+			<ResearchAgreementCost>100</ResearchAgreementCost>
+			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
+			<StartingUnitMultiplier>1</StartingUnitMultiplier>
+			<StartingDefenseUnits>1</StartingDefenseUnits>
+			<StartingWorkerUnits>0</StartingWorkerUnits>
+			<StartingExploreUnits>0</StartingExploreUnits>
+			<StartingGold>0</StartingGold>
+			<StartingCulture>0</StartingCulture>
+			<FreePopulation>0</FreePopulation>
+			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
+			<StartPercent>0</StartPercent>
+			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
+			<GrowthPercent>500</GrowthPercent>
+			<TrainPercent>100</TrainPercent>
+			<ConstructPercent>100</ConstructPercent>
+			<CreatePercent>100</CreatePercent>
+			<ResearchPercent>160</ResearchPercent>
+			<BuildPercent>100</BuildPercent>
+			<ImprovementPercent>100</ImprovementPercent>
+			<GreatPeoplePercent>100</GreatPeoplePercent>
+			<CulturePercent>100</CulturePercent>
+			<TradeRouteFoodBonusTimes100>0</TradeRouteFoodBonusTimes100>
+			<TradeRouteProductionBonusTimes100>0</TradeRouteProductionBonusTimes100>
+			<EventChancePerTurn>1</EventChancePerTurn>
+			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
+			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
+			<FaithCostMultiplier>100</FaithCostMultiplier>
+			<DiploEmphasisReligion>0</DiploEmphasisReligion>
+			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
+			<LeaguePercent>300</LeaguePercent>
+			<SoundtrackSpace>0</SoundtrackSpace>
+			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
+			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
+			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
+			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
+		</Row>
+
+		<Row>
+			<ID>4</ID>
+			<Type>ERA_ANCIENT</Type>
+			<Description>TXT_KEY_ERA_4</Description>
+			<ShortDescription>TXT_KEY_ERA_4_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_4_ABBREV</Abbreviation>
+			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
+			<ArtPrefix>ANCIENT </ArtPrefix>
+			<NoGoodies>false</NoGoodies>
+			<NoBarbUnits>false</NoBarbUnits>
+			<NoReligion>false</NoReligion>
+			<ResearchAgreementCost>100</ResearchAgreementCost>
+			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
+			<StartingUnitMultiplier>1</StartingUnitMultiplier>
+			<StartingDefenseUnits>1</StartingDefenseUnits>
+			<StartingWorkerUnits>0</StartingWorkerUnits>
+			<StartingExploreUnits>0</StartingExploreUnits>
+			<StartingGold>0</StartingGold>
+			<StartingCulture>0</StartingCulture>
+			<FreePopulation>0</FreePopulation>
+			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
+			<StartPercent>0</StartPercent>
+			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
+			<GrowthPercent>140</GrowthPercent>
+			<TrainPercent>100</TrainPercent>
+			<ConstructPercent>100</ConstructPercent>
+			<CreatePercent>100</CreatePercent>
+			<ResearchPercent>140</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
 			<ImprovementPercent>100</ImprovementPercent>
 			<GreatPeoplePercent>100</GreatPeoplePercent>
@@ -102,10 +275,11 @@
 		</Row>	
 
 		<Row>
+			<ID>5</ID>
 			<Type>ERA_CLASSICAL</Type>
-			<Description>TXT_KEY_ERA_2</Description>
-			<ShortDescription>TXT_KEY_ERA_2_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_2_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_5</Description>
+			<ShortDescription>TXT_KEY_ERA_5_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_5_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_CLASSICAL_STRATEGY</Strategy>
 			<ArtPrefix>CLASSICAL </ArtPrefix>
 			<NoGoodies>false</NoGoodies>
@@ -127,7 +301,7 @@
 			<TrainPercent>80</TrainPercent>
 			<ConstructPercent>85</ConstructPercent>
 			<CreatePercent>85</CreatePercent>
-			<ResearchPercent>67</ResearchPercent>
+			<ResearchPercent>100</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
 			<ImprovementPercent>100</ImprovementPercent>
 			<GreatPeoplePercent>100</GreatPeoplePercent>
@@ -149,10 +323,11 @@
 		</Row>
 	
 		<Row>
+			<ID>6</ID>
 			<Type>ERA_MEDIEVAL</Type>
-			<Description>TXT_KEY_ERA_3</Description>
-			<ShortDescription>TXT_KEY_ERA_3_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_3_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_6</Description>
+			<ShortDescription>TXT_KEY_ERA_6_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_6_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_MEDIEVAL_STRATEGY</Strategy>
 			<ArtPrefix>MEDIEVAL </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -174,7 +349,7 @@
 			<TrainPercent>67</TrainPercent>
 			<ConstructPercent>75</ConstructPercent>
 			<CreatePercent>75</CreatePercent>
-			<ResearchPercent>50</ResearchPercent>
+			<ResearchPercent>70</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
 			<ImprovementPercent>100</ImprovementPercent>
 			<GreatPeoplePercent>100</GreatPeoplePercent>
@@ -196,10 +371,11 @@
 		</Row>
 	
 		<Row>
+			<ID>7</ID>
 			<Type>ERA_RENAISSANCE</Type>
-			<Description>TXT_KEY_ERA_4</Description>
-			<ShortDescription>TXT_KEY_ERA_4_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_4_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_7</Description>
+			<ShortDescription>TXT_KEY_ERA_7_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_7_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_RENAISSANCE_STRATEGY</Strategy>
 			<ArtPrefix>RENAISSANCE </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -221,7 +397,7 @@
 			<TrainPercent>50</TrainPercent>
 			<ConstructPercent>55</ConstructPercent>
 			<CreatePercent>55</CreatePercent>
-			<ResearchPercent>33</ResearchPercent>
+			<ResearchPercent>50</ResearchPercent>
 			<BuildPercent>90</BuildPercent>
 			<ImprovementPercent>90</ImprovementPercent>
 			<GreatPeoplePercent>90</GreatPeoplePercent>
@@ -243,10 +419,11 @@
 		</Row>
 	
 		<Row>
+			<ID>8</ID>
 			<Type>ERA_INDUSTRIAL</Type>
-			<Description>TXT_KEY_ERA_5</Description>
-			<ShortDescription>TXT_KEY_ERA_5_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_5_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_8</Description>
+			<ShortDescription>TXT_KEY_ERA_8_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_8_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_INDUSTRIAL_STRATEGY</Strategy>
 			<ArtPrefix>INDUSTRIAL </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -268,7 +445,7 @@
 			<TrainPercent>33</TrainPercent>
 			<ConstructPercent>37</ConstructPercent>
 			<CreatePercent>37</CreatePercent>
-			<ResearchPercent>20</ResearchPercent>
+			<ResearchPercent>33</ResearchPercent>
 			<BuildPercent>80</BuildPercent>
 			<ImprovementPercent>80</ImprovementPercent>
 			<GreatPeoplePercent>80</GreatPeoplePercent>
@@ -290,10 +467,11 @@
 		</Row>
 	
 		<Row>
+			<ID>9</ID>
 			<Type>ERA_MODERN</Type>
-			<Description>TXT_KEY_ERA_6</Description>
-			<ShortDescription>TXT_KEY_ERA_6_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_6_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_9</Description>
+			<ShortDescription>TXT_KEY_ERA_9_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_9_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_MODERN_STRATEGY</Strategy>
 			<ArtPrefix>MODERN </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -315,7 +493,7 @@
 			<TrainPercent>25</TrainPercent>
 			<ConstructPercent>30</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
-			<ResearchPercent>12</ResearchPercent>
+			<ResearchPercent>25</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
 			<ImprovementPercent>70</ImprovementPercent>
 			<GreatPeoplePercent>70</GreatPeoplePercent>
@@ -337,10 +515,11 @@
 		</Row>
 	
 		<Row>
+			<ID>10</ID>
 			<Type>ERA_POSTMODERN</Type>
-			<Description>TXT_KEY_ERA_7</Description>
-			<ShortDescription>TXT_KEY_ERA_7_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_7_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_11</Description>
+			<ShortDescription>TXT_KEY_ERA_11_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_11_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_POSTMODERN_STRATEGY</Strategy>
 			<ArtPrefix>POSTMODERN </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -362,7 +541,7 @@
 			<TrainPercent>25</TrainPercent>
 			<ConstructPercent>30</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
-			<ResearchPercent>12</ResearchPercent>
+			<ResearchPercent>15</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
 			<ImprovementPercent>70</ImprovementPercent>
 			<GreatPeoplePercent>70</GreatPeoplePercent>
@@ -384,10 +563,11 @@
 		</Row>
 	
 		<Row>
+			<ID>11</ID>
 			<Type>ERA_FUTURE</Type>
-			<Description>TXT_KEY_ERA_8</Description>
-			<ShortDescription>TXT_KEY_ERA_8_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_8_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_11</Description>
+			<ShortDescription>TXT_KEY_ERA_11_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_11_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_FUTURE_STRATEGY</Strategy>
 			<ArtPrefix>FUTURE </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -409,7 +589,7 @@
 			<TrainPercent>18</TrainPercent>
 			<ConstructPercent>21</ConstructPercent>
 			<CreatePercent>21</CreatePercent>
-			<ResearchPercent>5</ResearchPercent>
+			<ResearchPercent>10</ResearchPercent>
 			<BuildPercent>60</BuildPercent>
 			<ImprovementPercent>60</ImprovementPercent>
 			<GreatPeoplePercent>60</GreatPeoplePercent>
@@ -432,441 +612,7 @@
 
 
 	</Eras>
-	<!--
-	<Eras>
 
-		<Row>
-			<ID>0</ID>
-			<Type>ERA_PREHISTORIC</Type>
-			<Description>TXT_KEY_ERA_0</Description>
-			<ShortDescription>TXT_KEY_ERA_0_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_0_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
-			<ArtPrefix>ANCIENT</ArtPrefix>
-			<NoGoodies>false</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>100</ResearchAgreementCost>
-			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>1</StartingUnitMultiplier>
-			<StartingDefenseUnits>1</StartingDefenseUnits>
-			<StartingWorkerUnits>0</StartingWorkerUnits>
-			<StartingExploreUnits>0</StartingExploreUnits>
-			<StartingGold>0</StartingGold>
-			<StartingCulture>0</StartingCulture>
-			<FreePopulation>0</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>0</StartPercent>
-			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>100</TrainPercent>
-			<ConstructPercent>100</ConstructPercent>
-			<CreatePercent>100</CreatePercent>
-			<ResearchPercent>100</ResearchPercent>
-			<BuildPercent>100</BuildPercent>
-			<ImprovementPercent>100</ImprovementPercent>
-			<GreatPeoplePercent>100</GreatPeoplePercent>
-			<CulturePercent>100</CulturePercent>
-			<TradeRouteFoodBonusTimes100>0</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>0</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>1</EventChancePerTurn>
-			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>100</FaithCostMultiplier>
-			<DiploEmphasisReligion>0</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<SoundtrackSpace>0</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
-		</Row>		
-		
-		<Row>
-			<Type>ERA_ANCIENT</Type>
-			<Description>TXT_KEY_ERA_1</Description>
-			<ShortDescription>TXT_KEY_ERA_1_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_1_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
-			<ArtPrefix>ANCIENT </ArtPrefix>
-			<NoGoodies>false</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>100</ResearchAgreementCost>
-			<EmbarkedUnitDefense>3</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>1</StartingUnitMultiplier>
-			<StartingDefenseUnits>1</StartingDefenseUnits>
-			<StartingWorkerUnits>0</StartingWorkerUnits>
-			<StartingExploreUnits>0</StartingExploreUnits>
-			<StartingGold>0</StartingGold>
-			<StartingCulture>0</StartingCulture>
-			<FreePopulation>0</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>0</StartPercent>
-			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>100</TrainPercent>
-			<ConstructPercent>100</ConstructPercent>
-			<CreatePercent>100</CreatePercent>
-			<ResearchPercent>100</ResearchPercent>
-			<BuildPercent>100</BuildPercent>
-			<ImprovementPercent>100</ImprovementPercent>
-			<GreatPeoplePercent>100</GreatPeoplePercent>
-			<CulturePercent>100</CulturePercent>
-			<TradeRouteFoodBonusTimes100>0</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>0</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>1</EventChancePerTurn>
-			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>100</FaithCostMultiplier>
-			<DiploEmphasisReligion>0</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<SoundtrackSpace>0</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_CLASSICAL</Type>
-			<Description>TXT_KEY_ERA_2</Description>
-			<ShortDescription>TXT_KEY_ERA_2_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_2_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_CLASSICAL_STRATEGY</Strategy>
-			<ArtPrefix>CLASSICAL </ArtPrefix>
-			<NoGoodies>false</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>150</ResearchAgreementCost>
-			<EmbarkedUnitDefense>4</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>1</StartingUnitMultiplier>
-			<StartingDefenseUnits>1</StartingDefenseUnits>
-			<StartingWorkerUnits>1</StartingWorkerUnits>
-			<StartingExploreUnits>1</StartingExploreUnits>
-			<StartingGold>10</StartingGold>
-			<StartingCulture>100</StartingCulture>
-			<FreePopulation>0</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>10</StartPercent>
-			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>80</TrainPercent>
-			<ConstructPercent>85</ConstructPercent>
-			<CreatePercent>85</CreatePercent>
-			<ResearchPercent>67</ResearchPercent>
-			<BuildPercent>100</BuildPercent>
-			<ImprovementPercent>100</ImprovementPercent>
-			<GreatPeoplePercent>100</GreatPeoplePercent>
-			<CulturePercent>100</CulturePercent>
-			<TradeRouteFoodBonusTimes100>50</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>50</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>2</EventChancePerTurn>
-			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>100</FaithCostMultiplier>
-			<DiploEmphasisReligion>2</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<SoundtrackSpace>400</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_EARLY</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_EARLY</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_MEDIEVAL</Type>
-			<Description>TXT_KEY_ERA_3</Description>
-			<ShortDescription>TXT_KEY_ERA_3_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_3_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_MEDIEVAL_STRATEGY</Strategy>
-			<ArtPrefix>MEDIEVAL </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>200</ResearchAgreementCost>
-			<EmbarkedUnitDefense>6</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>2</StartingUnitMultiplier>
-			<StartingDefenseUnits>2</StartingDefenseUnits>
-			<StartingWorkerUnits>1</StartingWorkerUnits>
-			<StartingExploreUnits>1</StartingExploreUnits>
-			<StartingGold>25</StartingGold>
-			<StartingCulture>200</StartingCulture>
-			<FreePopulation>0</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>25</StartPercent>
-			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
-			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>67</TrainPercent>
-			<ConstructPercent>75</ConstructPercent>
-			<CreatePercent>75</CreatePercent>
-			<ResearchPercent>50</ResearchPercent>
-			<BuildPercent>100</BuildPercent>
-			<ImprovementPercent>100</ImprovementPercent>
-			<GreatPeoplePercent>100</GreatPeoplePercent>
-			<CulturePercent>100</CulturePercent>
-			<TradeRouteFoodBonusTimes100>100</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>100</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>4</EventChancePerTurn>
-			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>100</FaithCostMultiplier>
-			<DiploEmphasisReligion>5</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<SoundtrackSpace>200</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_MID</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_RENAISSANCE</Type>
-			<Description>TXT_KEY_ERA_4</Description>
-			<ShortDescription>TXT_KEY_ERA_4_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_4_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_RENAISSANCE_STRATEGY</Strategy>
-			<ArtPrefix>RENAISSANCE </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>250</ResearchAgreementCost>
-			<EmbarkedUnitDefense>8</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>2</StartingUnitMultiplier>
-			<StartingDefenseUnits>2</StartingDefenseUnits>
-			<StartingWorkerUnits>1</StartingWorkerUnits>
-			<StartingExploreUnits>1</StartingExploreUnits>
-			<StartingGold>50</StartingGold>
-			<StartingCulture>300</StartingCulture>
-			<FreePopulation>1</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>37</StartPercent>
-			<BuildingMaintenancePercent>75</BuildingMaintenancePercent>
-			<GrowthPercent>90</GrowthPercent>
-			<TrainPercent>50</TrainPercent>
-			<ConstructPercent>55</ConstructPercent>
-			<CreatePercent>55</CreatePercent>
-			<ResearchPercent>33</ResearchPercent>
-			<BuildPercent>90</BuildPercent>
-			<ImprovementPercent>90</ImprovementPercent>
-			<GreatPeoplePercent>90</GreatPeoplePercent>
-			<CulturePercent>90</CulturePercent>
-			<TradeRouteFoodBonusTimes100>150</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>150</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>4</EventChancePerTurn>
-			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>1</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>150</FaithCostMultiplier>
-			<DiploEmphasisReligion>5</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<SoundtrackSpace>160</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_MID</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_INDUSTRIAL</Type>
-			<Description>TXT_KEY_ERA_5</Description>
-			<ShortDescription>TXT_KEY_ERA_5_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_5_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_INDUSTRIAL_STRATEGY</Strategy>
-			<ArtPrefix>INDUSTRIAL </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>true</NoBarbUnits>
-			<NoReligion>true</NoReligion>
-			<ResearchAgreementCost>300</ResearchAgreementCost>
-			<EmbarkedUnitDefense>10</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>3</StartingUnitMultiplier>
-			<StartingDefenseUnits>3</StartingDefenseUnits>
-			<StartingWorkerUnits>2</StartingWorkerUnits>
-			<StartingExploreUnits>2</StartingExploreUnits>
-			<StartingGold>100</StartingGold>
-			<StartingCulture>400</StartingCulture>
-			<FreePopulation>2</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>50</StartPercent>
-			<BuildingMaintenancePercent>60</BuildingMaintenancePercent>
-			<GrowthPercent>75</GrowthPercent>
-			<TrainPercent>33</TrainPercent>
-			<ConstructPercent>37</ConstructPercent>
-			<CreatePercent>37</CreatePercent>
-			<ResearchPercent>20</ResearchPercent>
-			<BuildPercent>80</BuildPercent>
-			<ImprovementPercent>80</ImprovementPercent>
-			<GreatPeoplePercent>80</GreatPeoplePercent>
-			<CulturePercent>80</CulturePercent>
-			<TradeRouteFoodBonusTimes100>200</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>200</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>6</EventChancePerTurn>
-			<SpiesGrantedForPlayer>1</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>200</FaithCostMultiplier>
-			<DiploEmphasisReligion>2</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>7</DiploEmphasisLatePolicies>
-			<LeaguePercent>200</LeaguePercent>
-			<SoundtrackSpace>120</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_MID</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_MODERN</Type>
-			<Description>TXT_KEY_ERA_6</Description>
-			<ShortDescription>TXT_KEY_ERA_6_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_6_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_MODERN_STRATEGY</Strategy>
-			<ArtPrefix>MODERN </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>true</NoBarbUnits>
-			<NoReligion>true</NoReligion>
-			<ResearchAgreementCost>350</ResearchAgreementCost>
-			<EmbarkedUnitDefense>13</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>3</StartingUnitMultiplier>
-			<StartingDefenseUnits>3</StartingDefenseUnits>
-			<StartingWorkerUnits>2</StartingWorkerUnits>
-			<StartingExploreUnits>2</StartingExploreUnits>
-			<StartingGold>200</StartingGold>
-			<StartingCulture>500</StartingCulture>
-			<FreePopulation>3</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>65</StartPercent>
-			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
-			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
-			<CreatePercent>30</CreatePercent>
-			<ResearchPercent>12</ResearchPercent>
-			<BuildPercent>70</BuildPercent>
-			<ImprovementPercent>70</ImprovementPercent>
-			<GreatPeoplePercent>70</GreatPeoplePercent>
-			<CulturePercent>70</CulturePercent>
-			<TradeRouteFoodBonusTimes100>250</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>250</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>8</EventChancePerTurn>
-			<SpiesGrantedForPlayer>1</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>300</FaithCostMultiplier>
-			<DiploEmphasisReligion>0</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>9</DiploEmphasisLatePolicies>
-			<LeaguePercent>200</LeaguePercent>
-			<SoundtrackSpace>80</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_LATE</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_LATE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_POSTMODERN</Type>
-			<Description>TXT_KEY_ERA_7</Description>
-			<ShortDescription>TXT_KEY_ERA_7_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_7_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_POSTMODERN_STRATEGY</Strategy>
-			<ArtPrefix>POSTMODERN </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>true</NoBarbUnits>
-			<NoReligion>true</NoReligion>
-			<ResearchAgreementCost>400</ResearchAgreementCost>
-			<EmbarkedUnitDefense>16</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>3</StartingUnitMultiplier>
-			<StartingDefenseUnits>3</StartingDefenseUnits>
-			<StartingWorkerUnits>2</StartingWorkerUnits>
-			<StartingExploreUnits>2</StartingExploreUnits>
-			<StartingGold>200</StartingGold>
-			<StartingCulture>500</StartingCulture>
-			<FreePopulation>3</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>65</StartPercent>
-			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
-			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
-			<CreatePercent>30</CreatePercent>
-			<ResearchPercent>12</ResearchPercent>
-			<BuildPercent>70</BuildPercent>
-			<ImprovementPercent>70</ImprovementPercent>
-			<GreatPeoplePercent>70</GreatPeoplePercent>
-			<CulturePercent>70</CulturePercent>
-			<TradeRouteFoodBonusTimes100>300</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>300</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>8</EventChancePerTurn>
-			<SpiesGrantedForPlayer>1</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>400</FaithCostMultiplier>
-			<DiploEmphasisReligion>0</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>9</DiploEmphasisLatePolicies>
-			<LeaguePercent>100</LeaguePercent>
-			<SoundtrackSpace>80</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_LATE</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_LATE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
-		</Row>
-		
-		<Row>
-			<Type>ERA_FUTURE</Type>
-			<Description>TXT_KEY_ERA_8</Description>
-			<ShortDescription>TXT_KEY_ERA_8_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_8_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_FUTURE_STRATEGY</Strategy>
-			<ArtPrefix>FUTURE </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>true</NoBarbUnits>
-			<NoReligion>true</NoReligion>
-			<ResearchAgreementCost>450</ResearchAgreementCost>
-			<EmbarkedUnitDefense>20</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>3</StartingUnitMultiplier>
-			<StartingDefenseUnits>3</StartingDefenseUnits>
-			<StartingWorkerUnits>3</StartingWorkerUnits>
-			<StartingExploreUnits>2</StartingExploreUnits>
-			<StartingGold>400</StartingGold>
-			<StartingCulture>600</StartingCulture>
-			<FreePopulation>4</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>80</StartPercent>
-			<BuildingMaintenancePercent>40</BuildingMaintenancePercent>
-			<GrowthPercent>50</GrowthPercent>
-			<TrainPercent>18</TrainPercent>
-			<ConstructPercent>21</ConstructPercent>
-			<CreatePercent>21</CreatePercent>
-			<ResearchPercent>5</ResearchPercent>
-			<BuildPercent>60</BuildPercent>
-			<ImprovementPercent>60</ImprovementPercent>
-			<GreatPeoplePercent>60</GreatPeoplePercent>
-			<CulturePercent>60</CulturePercent>
-			<TradeRouteFoodBonusTimes100>350</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>350</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>10</EventChancePerTurn>
-			<SpiesGrantedForPlayer>1</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>500</FaithCostMultiplier>
-			<DiploEmphasisReligion>0</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>7</DiploEmphasisLatePolicies>
-			<LeaguePercent>100</LeaguePercent>
-			<SoundtrackSpace>40</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_LATE</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_LATE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
-		</Row>
-
-		<Update>
-			<Where Type="ERA_PREHISTORIC"/>
-			<Set>
-				<FreePopulation>3</FreePopulation>
-			</Set>			
-		</Update>
-		
-	</Eras>
 
 	<Era_CitySoundscapes>
 		<Row>
@@ -886,6 +632,7 @@
 		</Row>
 	</Era_CitySoundscapes>
 
+
 	<Era_Soundtracks>
 		<Row>
 			<EraType>ERA_PREHISTORIC</EraType>
@@ -904,7 +651,7 @@
 			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_4</Soundtrack>
 		</Row>
 	</Era_Soundtracks>
-	-->
+	
 	
 	
 </GameData>

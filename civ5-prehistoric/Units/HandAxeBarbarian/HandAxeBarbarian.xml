@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <Row>
+    <Class>UNITCLASS_CHARIOT_ARCHER</Class>
+    <Type>UNIT_BARBARIAN_AXMAN</Type>
+    <PrereqTech>TECH_THE_WHEEL</PrereqTech>
+    <Combat>9</Combat>
+    <RangedCombat>9</RangedCombat>
+    <Cost>56</Cost>
+    <Moves>2</Moves>
+    <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+    <Range>1</Range>
+    <Domain>DOMAIN_LAND</Domain>
+    <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+    <Description>TXT_KEY_UNIT_AXMAN</Description>
+    <Civilopedia>TXT_KEY_CIV5_AXMAN_TEXT</Civilopedia>
+    <Strategy>TXT_KEY_UNIT_AXMAN_STRATEGY</Strategy>
+    <Help>TXT_KEY_UNIT_HELP_AXMAN</Help>
+    <MilitarySupport>true</MilitarySupport>
+    <MilitaryProduction>true</MilitaryProduction>
+    <Pillage>true</Pillage>
+    <ObsoleteTech>TECH_CHIVALRY</ObsoleteTech>
+    <GoodyHutUpgradeUnitClass>UNITCLASS_KNIGHT</GoodyHutUpgradeUnitClass>
+    <AdvancedStartCost>15</AdvancedStartCost>
+    <XPValueAttack>3</XPValueAttack>
+    <XPValueDefense>3</XPValueDefense>
+    <UnitArtInfo>ART_DEF_UNIT_HAND_AXE_BARBARIAN</UnitArtInfo>
+    <UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+    <UnitFlagIconOffset>9</UnitFlagIconOffset>
+    <IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
+    <PortraitIndex>9</PortraitIndex>
+  </Row>
+
+  <!-- DLC\Expansion2\StrategicView\Civ5ArtDefines_SV_Expansion2_Inherited_Units.xml -->
+  <ArtDefine_StrategicView>
+    <InsertOrAbort>
+      <StrategicViewType>ART_DEF_UNIT_HAND_AXE_BARBARIAN</StrategicViewType>
+      <TileType>Unit</TileType>
+      <Asset>SV_HandAxeBarbarian.dds</Asset>
+    </InsertOrAbort>
+  </ArtDefine_StrategicView>
+
+  <!-- DLC\Expansion2\Units\Civ5ArtDefines_Expansion2_UnitMembers.xml -->
+  <UnitMemberArtInfos>
+    <UnitMemberArtInfo>
+      <Type>ART_DEF_UNIT_MEMBER_HAND_AXE_BARBARIAN</Type>
+      <fScale>0.14</fScale>
+      <Granny>Hand_Axe_Barbarian.fxsxml</Granny>
+      <MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+      <Combat>
+        <Defaults>ART_DEF_TEMPLATE_ARCHER</Defaults>
+      <Weapon>
+          <WeaponTypeTag>ARROW</WeaponTypeTag>
+          <WeaponTypeSoundOverrideTag>ARROW</WeaponTypeSoundOverrideTag>
+      <fProjectileSpeed>3.0</fProjectileSpeed>
+      <fMissTargetSlopRadius>5.0</fMissTargetSlopRadius>
+        </Weapon>
+      </Combat>
+      <MaterialTypeTag>CLOTH</MaterialTypeTag>
+      <MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+    </UnitMemberArtInfo>    
+  </UnitMemberArtInfos>
+
+  <!-- DLC\Expansion2\Units\Civ5ArtDefines_Expansion2_Units.xml -->
+  <UnitArtInfos>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_HAND_AXE_BARBARIAN</Type>
+      <Formation>Archer</Formation>
+      <DamageStates>1</DamageStates>
+      <UnitMemberArt>
+        <MemberType>ART_DEF_UNIT_MEMBER_HAND_AXE_BARBARIAN</MemberType>
+        <MemberCount>10</MemberCount>
+      </UnitMemberArt>
+    </UnitArtInfo>
+  </UnitArtInfos>
+
+
+</GameData>
+
+<!-- DLC\Expansion2\Effects\Civ5ArtDefines_VisEffectModels_Expansion2.xml -->
+<VisEffectModelArtInfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Expansion 2 Model effects  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_HAND_AXE</Name>
+    <File>Hand_Axe.fxsxml</File>    
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+
+  <!-- Rotating hand axe -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ROTATING_AXE</Name>
+    <File>Rotating_Hand_Axe.fxsxml</File>    
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+
+</VisEffectModelArtInfos>
+
+<!-- DLC\Expansion2\Expansion2.Civ5Pkg -->
+<Civ5Package>
+  <AudioScripts3D>Hand_Axe_Barbarian3DScripts.xml</AudioScripts3D>
+</Civ5Package>

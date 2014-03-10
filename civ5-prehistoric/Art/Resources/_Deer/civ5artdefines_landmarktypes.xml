@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LandmarkTypes>
+	<ImprovementTypes>
+		<Type friendly="None">ART_DEF_IMPROVEMENT_NONE</Type>
+		<Type friendly="Barbarian Camp">ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</Type>
+		<Type friendly="Camp">ART_DEF_IMPROVEMENT_CAMP</Type>
+		<Type friendly="City Ruins">ART_DEF_IMPROVEMENT_CITY_RUINS</Type>
+		<Type friendly="Farm">ART_DEF_IMPROVEMENT_FARM</Type>
+		<Type friendly="Fishing Boats">ART_DEF_IMPROVEMENT_FISHING_BOATS</Type>
+		<Type friendly="Fort">ART_DEF_IMPROVEMENT_FORT</Type>
+		<Type friendly="Goody Hut">ART_DEF_IMPROVEMENT_GOODY_HUT</Type>
+		<Type friendly="Lumbermill">ART_DEF_IMPROVEMENT_LUMBERMILL</Type>
+		<Type friendly="Mine">ART_DEF_IMPROVEMENT_MINE</Type>
+		<Type friendly="Quarry">ART_DEF_IMPROVEMENT_QUARRY</Type>
+		<Type friendly="Offshore Platform">ART_DEF_IMPROVEMENT_OFFSHORE_PLATFORM</Type>
+		<Type friendly="Pasture">ART_DEF_IMPROVEMENT_PASTURE</Type>
+		<Type friendly="Plantation">ART_DEF_IMPROVEMENT_PLANTATION</Type>
+		<Type friendly="School">ART_DEF_IMPROVEMENT_SCHOOL</Type>
+		<Type friendly="Trading Post 1">ART_DEF_IMPROVEMENT_TRADING_POST1</Type>
+		<Type friendly="Trading Post 2">ART_DEF_IMPROVEMENT_TRADING_POST2</Type>
+		<Type friendly="Trading Post 3">ART_DEF_IMPROVEMENT_TRADING_POST3</Type>
+		<Type friendly="Trading Post 4">ART_DEF_IMPROVEMENT_TRADING_POST4</Type>
+		<Type friendly="Well">ART_DEF_IMPROVEMENT_WELL</Type>
+		<Type friendly="Monolith Asia">ART_DEF_IMPROVEMENT_MONOLITH_ASIA</Type>
+		<Type friendly="Monolith America">ART_DEF_IMPROVEMENT_MONOLITH_AMER</Type>
+		<Type friendly="Monolith Africa">ART_DEF_IMPROVEMENT_MONOLITH_AFRI</Type>
+		<Type friendly="Monolith Europe">ART_DEF_IMPROVEMENT_MONOLITH_EURO</Type>
+		<Type friendly="Academy">ART_DEF_IMPROVEMENT_ACADEMY</Type>
+		<Type friendly="Citadel">ART_DEF_IMPROVEMENT_CITADEL</Type>
+		<Type friendly="Manufactory">ART_DEF_IMPROVEMENT_MANUFACTORY</Type>
+		<Type friendly="Customs House">ART_DEF_IMPROVEMENT_CUSTOMS_HOUSE</Type>
+	</ImprovementTypes>
+	<ResourceTypes>
+		<Type friendly="None">ART_DEF_RESOURCE_NONE</Type>
+		<Type friendly="All">ART_DEF_RESOURCE_ALL</Type>
+		<Type friendly="Aluminum">ART_DEF_RESOURCE_ALUMINUM</Type>
+		<Type friendly="Aluminum Heavy">ART_DEF_RESOURCE_ALUMINUM_HEAVY</Type>
+		<Type friendly="Banana">ART_DEF_RESOURCE_BANANA</Type>
+		<Type friendly="Coal">ART_DEF_RESOURCE_COAL</Type>
+		<Type friendly="Coal Heavy">ART_DEF_RESOURCE_COAL_HEAVY</Type>
+		<Type friendly="Coal Marsh">ART_DEF_RESOURCE_COAL_MARSH</Type>
+		<Type friendly="Coal Heavy Marsh">ART_DEF_RESOURCE_COAL_HEAVY_MARSH</Type>
+		<Type friendly="Cotton">ART_DEF_RESOURCE_COTTON</Type>
+		<Type friendly="Cow">ART_DEF_RESOURCE_COW</Type>
+		<Type friendly="Sheep">ART_DEF_RESOURCE_SHEEP</Type>
+		<Type friendly="Deer">ART_DEF_RESOURCE_DEER</Type>
+		<Type friendly="Dye">ART_DEF_RESOURCE_DYE</Type>
+		<Type friendly="Fish">ART_DEF_RESOURCE_FISH</Type>
+		<Type friendly="Furs">ART_DEF_RESOURCE_FURS</Type>
+		<Type friendly="Furs Hill">ART_DEF_RESOURCE_FURS_HILL</Type>
+		<Type friendly="Gems">ART_DEF_RESOURCE_GEMS</Type>
+		<Type friendly="Gold">ART_DEF_RESOURCE_GOLD</Type>
+		<Type friendly="Silver">ART_DEF_RESOURCE_SILVER</Type>
+		<Type friendly="Horse">ART_DEF_RESOURCE_HORSE</Type>
+		<Type friendly="Super Horse">ART_DEF_RESOURCE_SUPERHORSE</Type>
+		<Type friendly="Iron">ART_DEF_RESOURCE_IRON</Type>
+		<Type friendly="Iron Heavy">ART_DEF_RESOURCE_IRON_HEAVY</Type>
+		<Type friendly="Iron Marsh">ART_DEF_RESOURCE_IRON_MARSH</Type>
+		<Type friendly="Iron Heavy Marsh">ART_DEF_RESOURCE_IRON_HEAVY_MARSH</Type>
+		<Type friendly="Incense">ART_DEF_RESOURCE_INCENSE</Type>
+		<Type friendly="Ivory">ART_DEF_RESOURCE_IVORY</Type>
+		<Type friendly="Marble">ART_DEF_RESOURCE_MARBLE</Type>
+		<Type friendly="Oil">ART_DEF_RESOURCE_OIL</Type>
+		<Type friendly="Oil Heavy">ART_DEF_RESOURCE_OIL_HEAVY</Type>
+		<Type friendly="Oil Water">ART_DEF_RESOURCE_OIL_WATER</Type>
+		<Type friendly="Oil Heavy Water">ART_DEF_RESOURCE_OIL_HEAVY_WATER</Type>
+		<Type friendly="Pearls">ART_DEF_RESOURCE_PEARLS</Type>
+		<Type friendly="Silk">ART_DEF_RESOURCE_SILK</Type>
+		<Type friendly="Spice">ART_DEF_RESOURCE_SPICE</Type>
+		<Type friendly="Sugar">ART_DEF_RESOURCE_SUGAR</Type>
+		<Type friendly="Uranium">ART_DEF_RESOURCE_URANIUM</Type>
+		<Type friendly="Uranium Heavy">ART_DEF_RESOURCE_URANIUM_HEAVY</Type>
+		<Type friendly="Uranium Marsh">ART_DEF_RESOURCE_URANIUM_MARSH</Type>
+		<Type friendly="Uranium Heavy Marsh">ART_DEF_RESOURCE_URANIUM_HEAVY_MARSH</Type>
+		<Type friendly="Whale">ART_DEF_RESOURCE_WHALE</Type>
+		<Type friendly="Wheat">ART_DEF_RESOURCE_WHEAT</Type>
+		<Type friendly="Wine">ART_DEF_RESOURCE_WINE</Type>
+		
+		<!-- The following are FEATUREs, not RESOURCEs. Making them an ART_DEF_RESOURCE breaks them in game! -->
+		<Type friendly="Crater">ART_DEF_FEATURE_CRATER</Type>
+		<Type friendly="Everest">ART_DEF_FEATURE_EVEREST</Type>
+		<Type friendly="Fallout">ART_DEF_FEATURE_FALLOUT</Type>
+		<Type friendly="Fuji">ART_DEF_FEATURE_FUJI</Type>
+		<Type friendly="Fuji">ART_DEF_FEATURE_GEYSER</Type>
+		<Type friendly="Ice">ART_DEF_FEATURE_ICE</Type>
+		<Type friendly="Mesa">ART_DEF_FEATURE_MESA</Type>
+		<Type friendly="Oasis">ART_DEF_FEATURE_OASIS</Type>
+		<Type friendly="Reef">ART_DEF_FEATURE_REEF</Type>
+		<Type friendly="Titicaca">ART_DEF_FEATURE_TITICACA</Type>
+		<Type friendly="Volcano">ART_DEF_FEATURE_VOLCANO</Type>
+	</ResourceTypes>
+	<LayoutHandlerTypes>
+		<Type friendly="Snapshot">SNAPSHOT</Type>
+		<Type friendly="Farm">FARM</Type>
+		<Type friendly="Pasture">PASTURE</Type>
+		<Type friendly="Spring">SPRING</Type>
+		<Type friendly="Animated">ANIMATED</Type>
+		<Type friendly="Animated-Random">ANIMATED_ROTATED</Type>
+		<Type friendly="Random">RANDOM</Type>
+	</LayoutHandlerTypes>
+</LandmarkTypes>

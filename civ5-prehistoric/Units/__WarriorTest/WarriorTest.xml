@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <UnitClasses>
+
+    <Row>
+      <Type>UNITCLASS_WARRIOR_TEST001</Type>
+      <Description>Warrior Test Class 001</Description>
+      <DefaultUnit>UNIT_WARRIOR_TEST001</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_WARRIOR_TEST002</Type>
+      <Description>Warrior Test Class 002</Description>
+      <DefaultUnit>UNIT_WARRIOR_TEST002</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_WARRIOR_TEST003</Type>
+      <Description>Warrior Test Class 003</Description>
+      <DefaultUnit>UNIT_WARRIOR_TEST003</DefaultUnit>
+    </Row>    
+
+  </UnitClasses>
+
+  <Units>
+
+    <Row>
+      <Class>UNITCLASS_WARRIOR_TEST001</Class>
+      <Type>UNIT_WARRIOR_TEST001</Type>
+      <Combat>8</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Warrior Test 001</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_WARRIOR_TEST001</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_WARRIOR_TEST002</Class>
+      <Type>UNIT_WARRIOR_TEST002</Type>
+      <Combat>8</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Warrior Test 002</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_WARRIOR_TEST002</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_WARRIOR_TEST003</Class>
+      <Type>UNIT_WARRIOR_TEST003</Type>
+      <Combat>8</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Warrior Test 003</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_WARRIOR_TEST003</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+  </Units>
+
+</GameData>

@@ -34,7 +34,7 @@
 	<Texture file="Unit_Environment_Dull.dds"/>
 	<Texture file="Unit_Environment_Sharp.dds"/>
 	<Texture file="Unit_Irradiance.dds"/>
-	<Texture file="Savage.dds"/>
+	<Texture file="Savage_diff.dds"/>
 	<Texture file="Savage_sref.dds"/>
 	<TimedTrigger file="FX_Triggers_Warrior.ftsxml"/>
 	<BoneUsage>

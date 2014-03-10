@@ -1,0 +1,5 @@
+<Asset>
+  <Mesh file="Resource_Elephant_Camp.gr2" source="Max" />
+  <Animation file="Resource_Elephant_Camp_NewAnimation1000.gr2" name="NewAnimation1000" ec="1000" source="Max" />
+  <Texture file="Resource_Elephant_DIFF.dds" source="Max" />
+</Asset>

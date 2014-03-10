@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <UnitClasses>
+    <Row>
+      <Type>UNITCLASS_AXEMAN</Type>
+      <Description>TXT_KEY_UNIT_AXEMAN</Description>
+      <DefaultUnit>UNIT_AXEMAN</DefaultUnit>
+    </Row>
+  </UnitClasses>
+  
+  <Units>
+    <Row>
+      <Class>UNITCLASS_AXEMAN</Class>
+      <Type>UNIT_AXEMAN</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>12</Combat>
+      <Cost>90</Cost>
+      <FaithCost>150</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AXEMAN</Description>
+      <!--<Civilopedia>TXT_KEY_CIV5_AXEMAN_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AXEMAN_STRATEGY</Strategy>-->
+      <Help>TXT_KEY_UNIT_AXEMAN_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SWORDSMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <!--<UnitArtInfo>ART_DEF_UNIT_AXEMAN</UnitArtInfo>-->
+      <UnitArtInfo>ART_DEF_UNIT__WARRIOR</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+  </Units>
+
+  <Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_AXEMAN</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXEMAN</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+  </Unit_AITypes>
+
+  <Unit_Flavors>
+    <Row>
+      <UnitType>UNIT_AXEMAN</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXEMAN</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+  </Unit_Flavors>
+
+  <!--
+  <Unit_ResourceQuantityRequirements>
+    <Row>
+      <UnitType>UNIT_AXEMAN</UnitType>
+      <ResourceType>RESOURCE_IRON</ResourceType>
+    </Row>
+  </Unit_ResourceQuantityRequirements>
+  -->
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_AXEMAN">
+      <Text>Axeman Wotba</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXEMAN_HELP">
+      <Text>Strong, front-line land Unit armed with copper axes.</Text>
+    </Row>
+  </Language_en_US>
+
+</GameData>

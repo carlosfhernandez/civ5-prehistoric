@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c3e8a887-66a4-4d51-8f5a-823f49d0550f" version="20">
+  <Properties>
+    <Name>Wars of the Bronze Age</Name>
+    <Teaser>[ICON_WAR] Historical mod about wars at the Bronze Age.</Teaser>
+    <Description>Total conversion:[NEWLINE]
+* No Medieval and later age.[NEWLINE]
+* New game pace: long researh, average construction, fast training.[NEWLINE]
+* New unit system:
+[NEWLINE]
+* Some other minor changes. [NEWLINE][NEWLINE]
+
+* Choose a Wars of the Bronze Age game pace in Game Pace menu or Advanced Setup menu.[NEWLINE][NEWLINE]
+
+[ICON_WAR] Version 20 (Stable for Civ.: 1.0.1.705) [NEWLINE]
+* Fixed ship bug.
+[NEWLINE]
+[NEWLINE]
+
+Note: Don't forget remove old version![NEWLINE]
+[NEWLINE]
+
+Site: http://forums.civfanatics.com/showthread.php?t=407535[NEWLINE]
+[NEWLINE]
+
+The Bronze Age lasted from about 35 to 11 century BC. These were times of birth of the first civilizations, religions and appearance of the first wonders of the world. There was no great empires, the world was huge and dangerous: islands of civilization surrounded by barbarian tribes and wandering around wild animals. The main materials are metal and wood, and copper and its alloys,
+known as the bronze, was the top technological progress. People's lives at that time was short: hunger, disease, natural disasters - they hardly survive more than forty years, but during this short period of time, they hoarded and passed each other knowledge, create a culture, built temples and composed the poems. Every people held each other, armed with spears and copper axes, they often went to war to its neighbors that would capture prey or to resolve long-standing conflict. Strong rulers to create the first state and built huge megalithic structures, which even through the ages and remind us of the events of those ancient times.
+[NEWLINE][NEWLINE]
+Remain in this era, become one of the great rulers of those times and, having gained cultural or military victory, go into the history of the ancient world. Enjoy the battles and assaults into these long ancient times!</Description>
+    <Authors>Liaa</Authors>
+    <SpecialThanks>Firaxis, Modders Community.</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=407535</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="279E1E4442270337AB8AA4AB4DC6B398" import="1">ART/Atlases/fonticons.dds</File>
+    <File md5="9534ECD61CC2E72E316B5DFD7E92445D" import="1">ART/Atlases/WoBA_ResAtlas256.dds</File>
+    <File md5="5F0A73E1B524142B1DF7AC0DFF925111" import="1">ART/Atlases/WoBA_ResAtlas45.dds</File>
+    <File md5="4103346B740166DBED8A39FBAE8340B3" import="1">ART/Atlases/WoBA_ResAtlas64.dds</File>
+    <File md5="EDCCAEB1A5CEE5B6C4A8D675C014A769" import="1">ART/Atlases/WoBA_ResAtlas80.dds</File>
+    <File md5="7056DEDFC6BB24CEACCEC228E8CAAAA2" import="1">ART/Atlases/WotBA_GameSpeedIcon128.dds</File>
+    <File md5="C57A93F65F652B4A1443CDFC29DAAAB9" import="1">ART/Atlases/WotBA_GameSpeedIcon32.dds</File>
+    <File md5="CFFB6BE5A1FE93312DFC4DED05CA5ED0" import="1">ART/Atlases/WotBA_GameSpeedIcon64.dds</File>
+    <File md5="893DF4412975E3EBAA306D5D5A2301E4" import="1">ART/Atlases/WoBA_ReligAtlas128.dds</File>
+    <File md5="F14534E4664A95F669265CE3C2543787" import="1">ART/Atlases/WoBA_ReligAtlas256.dds</File>
+    <File md5="8C42008C5B51CA3E0B83DE1FEDCCC0B1" import="1">ART/Atlases/WoBA_ReligAtlas45.dds</File>
+    <File md5="F6AF405D751C34E8C16E1BEE43192646" import="1">ART/Atlases/WoBA_ReligAtlas64.dds</File>
+    <File md5="85F1F3DE9E83EBC4ABAEF827A7D0A4B6" import="1">ART/Atlases/WotBA_UnitsAtlas32.dds</File>
+    <File md5="6A3732A5F46E0AD703DBEDC2532F9DF8" import="1">ART/Atlases/WotBA_UnitsPortraitsAtlas128.dds</File>
+    <File md5="90B5C2447950A703C6DA30BE637DBC7B" import="1">ART/Atlases/WotBA_UnitsPortraitsAtlas256.dds</File>
+    <File md5="ACD3A85AA4451C16627FC810D9CF5252" import="1">ART/Atlases/WotBA_UnitsPortraitsAtlas45.dds</File>
+    <File md5="5E3A6B75FE78970C6D107E1A78D24D72" import="1">ART/Atlases/WotBA_UnitsPortraitsAtlas64.dds</File>
+    <File md5="D9E127447D3BBD4FD96E29415E786CE6" import="1">ART/Atlases/WotBA_UnitsPortraitsAtlas80.dds</File>
+    <File md5="D5E16AA43E34FCE17CF50DF0146C415A" import="1">ART/Units/Slave/slave_euro.fxsxml</File>
+    <File md5="4CC2318FAE8C6B6451B4FCB1640EC948" import="1">ART/Units/Slave/slave_euro_diff.dds</File>
+    <File md5="93A0D84BEE80A3464A28279A38CBC265" import="1">ART/Units/Slave/slave_euro_sref.dds</File>
+    <File md5="442B5ADCCDAC9CB877EA5F7DB4066806" import="1">ART/Units/Slave/slave_euro.gr2</File>
+    <File md5="7820459BFC39CD245CB1FBBC8D4ED897" import="1">Civ5ArtDefines_UnitMembers.xml</File>
+    <File md5="697F72B58B2BFACA23C2D037F3EFDA8D" import="1">Civ5ArtDefines_Units.xml</File>
+    <File md5="B2F5BB9716CECB1BAA51D5147F2DDD86" import="0">XML/WotBa_Barbarians.xml</File>
+    <File md5="EA98F5832F23F2F3C57A131C4A16C9BF" import="0">XML/WotBA_Wonders.xml</File>
+    <File md5="C34AA7F542A61F6481D3388AF6AA7ED5" import="0">XML/WotBA_AI_Setting.xml</File>
+    <File md5="5FE9E0FB2C8CFEAFB1B24F813CEDB5DA" import="0">XML/WotBA_Ages.xml</File>
+    <File md5="46E3336B92473ED03E4B0641D136F215" import="0">XML/WotBA_GP_Namelist.xml</File>
+    <File md5="2F73B96F21178ABA2D7D056DBC1176CE" import="0">XML/WotBA_Difficulty_Setting.xml</File>
+    <File md5="12B5F09B0CA99290DF19748470069E28" import="0">XML/WotBA_Religions.xml</File>
+    <File md5="75CB9C4910E7EFB3ABC868EE4AE38918" import="0">XML/WotBA_for_tests.xml</File>
+    <File md5="B86A755760E09C0F3F9B8F560910C4D3" import="0">XML/WotBA.sql</File>
+    <File md5="3D4DC01BAA1896991D03A64EE18D536B" import="0">XML/WotBA_Buildings.xml</File>
+    <File md5="33C507BEA95417A580550B7042DA814A" import="0">XML/WotBA_Civ.xml</File>
+    <File md5="B5F04B2254F5FB4B6825A4E3AEFD8CF6" import="0">XML/WotBA_Defines.xml</File>
+    <File md5="EFDC38F3E57B8EC5DD7DD8C68AF958D7" import="0">XML/WotBA_Res.xml</File>
+    <File md5="438C6C2DEDF5007DFEC85DFD8F5E1958" import="0">XML/WotBA_Tech.xml</File>
+    <File md5="198A14CF9BAF3A40469E8A00A638B84F" import="0">XML/WotBA_Texts.xml</File>
+    <File md5="87EDE30A05A724F5C8AE664770D17F68" import="0">XML/WotBA_Texts_Add.xml</File>
+    <File md5="4F947A6AB9897542304A21879799A1FC" import="0">XML/WotBA_Units.xml</File>
+    <File md5="50B05E75838311F4962C94D52E49465F" import="0">XML/WotBA_Units_Remove.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/WotBA.sql</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Tech.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Wonders.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Units_Remove.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Units.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Civ.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Ages.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Defines.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBA_Res.xml</UpdateDatabase>
+      <UpdateDatabase>XML/WotBa_Barbarians.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,10 @@
+
+
+Dummy Buildings:
+-----------------------------------
+These are buildings that cannot be directly build or viewed in the build
+list for any player. They can be used for a variety of reasons such
+as adding extra resources or yields or even as a repreq to other
+buildings. 
+
+

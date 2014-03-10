@@ -5,8 +5,8 @@
   <BuildingClasses>
     <Row>
       <Type>BUILDINGCLASS_FIRE_PIT_PREREQ</Type>
-      <DefaultBuilding>BUILDING_CAUSEWAY_PREREQ</DefaultBuilding>
-      <Description>none</Description>
+      <DefaultBuilding>BUILDING_FIRE_PIT_PREREQ</DefaultBuilding>
+      <Description>Nearby Food</Description>
     </Row>
   </BuildingClasses>
 

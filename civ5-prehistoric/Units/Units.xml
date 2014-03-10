@@ -1,270 +1,3310 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+╔═══════════════════════════════════════════════════════════════════════════════
+║
+║  UNITS & THEIR DEPENDENCIES - SELF-CONTAINED FILE
+║  
+╠═══════════════════════════════════════════════════════════════════════════════
+║
+║   Units
+║   UnitClasses
+║   Unit_AITypes
+║   Unit_Flavors
+║   Unit_FreePromotions
+║   Unit_ClassUpgrades
+║   Unit_ResourceQuantityRequirements
+║   Unit_Builds
+║
+║   *Language_en_US
+║
+╚═══════════════════════════════════════════════════════════════════════════════
+-->
+
 <GameData>
-	
-  <!-- Atlas info here for now -->
+
   
   <!--
-  5,6,7 - Wulfgar
-  
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║  CIVILIZATION FREE UNITS
+  ║
+  ║  Prehistoric civilizations do not start with a settler. 
+  ║  TODO: several staged approach where first, you start with a 'leader', 
+  ║        then you receive and settler-type unit that can only build small
+  ║        settlements up to population 2-3.
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
   -->
-  
-  
-  
-  <!-- Change PrereqTechs (Warriors are in sql) -->
 
-	<Units>
-	
-		<Update>
-			<Set PrereqTech ="TECH_AGRICULTURE"/>
-			<Where Type ="UNIT_WORKER"/>
-		</Update>
-		<Update>
-			<Set PrereqTech ="TECH_SIMPLE_TOOLS"/>
-			<Where Type ="UNIT_SETTLER"/>
-		</Update>
-		<Update>
-			<Set PrereqTech ="TECH_SCOUTING"/>
-			<Where Type ="UNIT_SCOUT"/>
-		</Update>
-		<Update>
-			<Set PrereqTech ="TECH_SCOUTING"/>
-			<Where Type ="UNIT_SHOSHONE_PATHFINDER"/>
-		</Update>
-		<Update>
-			<Set PrereqTech ="TECH_LEADERSHIP"/>
-			<Where Type ="UNIT_GALLEY"/>
-		</Update>
-		
-	  <!-- Change Scout -->
-		
-		<Update>
+  <Civilization_FreeUnits>
+
+    <Update>
+      <Set UnitClassType="UNITCLASS_AUSTRALOPITHECUS" UnitAIType="UNITAI_EXPLORE" />
+      <Where UnitClassType="UNITCLASS_SETTLER"/>
+    </Update>
+
+  </Civilization_FreeUnits>
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║  UNIT UPDATES - OLD UNITS
+  ║
+  ║  Compatbility changes and other tweaks to make prehistoric eras work. 
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  -->
+
+  <!-- Change PrereqTechs for the units we will not redefine 
+       (Warriors are in sql) 
+  -->
+  <Units>
+  
+    <Update>
+      <Set PrereqTech ="TECH_AGRICULTURE"/>
+      <Where Type ="UNIT_WORKER"/>
+    </Update>
+    <Update>
+      <Set PrereqTech ="TECH_SIMPLE_TOOLS"/>
+      <Where Type ="UNIT_SETTLER"/>
+    </Update>
+    <Update>
+      <Set PrereqTech ="TECH_SCOUTING"/>
+      <Where Type ="UNIT_SCOUT"/>
+    </Update>
+    <Update>
+      <Set PrereqTech ="TECH_SCOUTING"/>
+      <Where Type ="UNIT_SHOSHONE_PATHFINDER"/>
+    </Update>
+    <Update>
+      <Set PrereqTech ="TECH_LEADERSHIP"/>
+      <Where Type ="UNIT_GALLEY"/>
+    </Update>
+    
+
+    <!-- Change regular Settler for later in game -->
+    <Update>
+      <Set PrereqTech ="TECH_SOCIAL_STRUCTURE"/>
+      <Where Type ="UNIT__SETTLER"/>
+    </Update>
+
+
+    <!-- Change Scout -->
+    <Update>
       <!-- TODO: riding -->
-			<Set Combat="3" Cost="18" FaithCost="36" ObsoleteTech="TECH_HORSEBACK_RIDING" />
-			<Where Type="UNIT_SCOUT"/>
-		</Update>
-		
-	</Units>
-	
-	<Unit_ClassUpgrades>
-		
-		<Row>
-			<UnitType>UNIT_SCOUT</UnitType>
-			<UnitClassType>UNITCLASS_EXPLORER</UnitClassType>
-		</Row>
-		
-	</Unit_ClassUpgrades>
+      <Set Combat="3" Cost="18" FaithCost="36" ObsoleteTech="TECH_HORSEBACK_RIDING" />
+      <Where Type="UNIT_SCOUT"/>
+    </Update>
 
+    <!-- Change Barbarian Brute model to normal Warrior model -->
+    <!-- TODO: We really want a unique brutish model -->
+    <Update>
+      <Set UnitArtInfo ="ART_DEF_UNIT__WARRIOR"/>
+      <Where Type ="UNIT_BARBARIAN_WARRIOR"/>
+    </Update>    
+    
+  </Units>
   
-	<!-- Change Barbarian Brute model to normal Warrior model -->
 
-	<Units>
-		<Update>
-			<Set UnitArtInfo ="ART_DEF_UNIT__WARRIOR"/>
-			<Where Type ="UNIT_BARBARIAN_WARRIOR"/>
-		</Update>
-	</Units>
-  
+
+
   <!--
-  Formations
-  LooseCivilian, OffsetPikeman, Phalanx, Pikeman, Samurai, Scout, 
-  TheeInLineStag (Caravan), ThreeInLine (Caravan), Unformed, Warrior
-  
-  Combats, Ranged
-  ART_DEF_UNIT_MEMBER_ANTIAIRCRAFTGUN
-  ART_DEF_UNIT_MEMBER_ANTITANKGUN
-  ART_DEF_UNIT_MEMBER_ARCHER
-  ART_DEF_UNIT_MEMBER_ARCHER_V2
-  ART_DEF_UNIT_MEMBER_ARCHER_V3
-  ART_DEF_UNIT_MEMBER_ARTILLERY
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_01
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V2
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V3
-  ART_DEF_UNIT_MEMBER_BARBARIAN_GALLEY
-  ART_DEF_UNIT_MEMBER_BAZOOKA_INFANTRY
-  ART_DEF_UNIT_MEMBER_CANNON
-  ART_DEF_UNIT_MEMBER_CATAPULT
-  ART_DEF_UNIT_MEMBER_CHARIOTARCHER
-  ART_DEF_UNIT_MEMBER_COMPOSITE_BOWMAN
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_ARTILLERY_NAPOLEON
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_ARTILLERY_PARROTT
-  ART_DEF_UNIT_MEMBER_CROSSBOWMAN
-  ART_DEF_UNIT_MEMBER_GATLINGGUN
-  ART_DEF_UNIT_MEMBER_HAND_AXE_BARBARIAN
-  ART_DEF_UNIT_MEMBER_MACHINEGUN
-  ART_DEF_UNIT_MEMBER_MOBILESAM
-  ART_DEF_UNIT_MEMBER_NUCLEARMISSILE
-  ART_DEF_UNIT_MEMBER_NUCLEARSUBMARINE
-  ART_DEF_UNIT_MEMBER_ROCKETARTILLERY
-  ART_DEF_UNIT_MEMBER_SUBMARINE
-  ART_DEF_UNIT_MEMBER_TREBUCHET
-  ART_DEF_UNIT_MEMBER_TRIREME
-  ART_DEF_UNIT_MEMBER_U_ARABIAN_CAMELARCHER
-  ART_DEF_UNIT_MEMBER_U_BABYLONIAN_BOWMAN
-  ART_DEF_UNIT_MEMBER_U_BYZANTIUM_DROMON
-  ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT
-  ART_DEF_UNIT_MEMBER_U_CARTHAGE_QUINQUEREME
-  ART_DEF_UNIT_MEMBER_U_CHINESE_CHUKONU
-  ART_DEF_UNIT_MEMBER_U_DANISH_LONGBOAT
-  ART_DEF_UNIT_MEMBER_U_EGYPTIAN_WARCHARIOT
-  ART_DEF_UNIT_MEMBER_U_ENGLISH_LONGBOWMAN
-  ART_DEF_UNIT_MEMBER_U_HUNS_HORSE_ARCHER
-  ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER
-  ART_DEF_UNIT_MEMBER_U_INDIAN_WARELEPHANT
-  ART_DEF_UNIT_MEMBER_U_KOREAN_HWACHA
-  ART_DEF_UNIT_MEMBER_U_MAYAN_ATLALIST
-  ART_DEF_UNIT_MEMBER_U_MONGOLIAN_KESHIK
-  ART_DEF_UNIT_MEMBER_U_POLYNESIAN_WAR_CANOE
-  ART_DEF_UNIT_MEMBER_U_ROMAN_BALLISTA
-  ART_DEF_UNIT_MEMBER_UNION_ARTILLERY_NAPOLEON
-  ART_DEF_UNIT_MEMBER_UNION_ARTILLERY_PARROTT
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT CLASS UPGRADES - OLD UNITS
+  ║
+  ║   Change upgrades for units we will not redefine
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  -->  
+  <Unit_ClassUpgrades>
+    
+    <Row>
+      <UnitType>UNIT_SCOUT</UnitType>
+      <UnitClassType>UNITCLASS_EXPLORER</UnitClassType>
+    </Row>
+    
+  </Unit_ClassUpgrades>
 
-  Combats, Ranged, Short
-  ART_DEF_UNIT_MEMBER_BATTLESHIP
-  ART_DEF_UNIT_MEMBER_CARAVEL
-  ART_DEF_UNIT_MEMBER_CARGO_SHIP
-  ART_DEF_UNIT_MEMBER_CARGO_SHIP_LATE
-  ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID
-  ART_DEF_UNIT_MEMBER_CARRIER
-  ART_DEF_UNIT_MEMBER_CAVALRY
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_CAVALRY_CARBINE
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_CAVALRY_PISTOL
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_IRONCLAD
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN_V1
-  ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN_V2
-  ART_DEF_UNIT_MEMBER_DESTROYER
-  ART_DEF_UNIT_MEMBER_FRIGATE
-  ART_DEF_UNIT_MEMBER_GALLEASS
-  ART_DEF_UNIT_MEMBER_GALLEON
-  ART_DEF_UNIT_MEMBER_GALLEY
-  ART_DEF_UNIT_MEMBER_GREAT_EXPLORER
-  ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F1
-  ART_DEF_UNIT_MEMBER_HELICOPTERGUNSHIP
-  ART_DEF_UNIT_MEMBER_INFANTRY
-  ART_DEF_UNIT_MEMBER_IRONCLAD
-  ART_DEF_UNIT_MEMBER_MARINE
-  ART_DEF_UNIT_MEMBER_MECH
-  ART_DEF_UNIT_MEMBER_MECHANIZEDINFANTRY
-  ART_DEF_UNIT_MEMBER_MISSILECRUISER
-  ART_DEF_UNIT_MEMBER_MODERNARMOR
-  ART_DEF_UNIT_MEMBER_MUSKETMAN
-  ART_DEF_UNIT_MEMBER_PARATROOPER
-  ART_DEF_UNIT_MEMBER_PRIVATEER
-  ART_DEF_UNIT_MEMBER_RIFLEMAN
-  ART_DEF_UNIT_MEMBER_SCRAMBLE_FORCE_PUBLIQUE
-  ART_DEF_UNIT_MEMBER_SCRAMBLE_FOREIGN_VOLUNTEERS
-  ART_DEF_UNIT_MEMBER_SMOKEY_AIRSHIP_LEVEL_1
-  ART_DEF_UNIT_MEMBER_SMOKEY_BLIMP
-  ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_1
-  ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_2
-  ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_3
-  ART_DEF_UNIT_MEMBER_TANK
-  ART_DEF_UNIT_MEMBER_TRANSPORT
-  ART_DEF_UNIT_MEMBER_U_AMERICAN_MINUTEMAN
-  ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER
-  ART_DEF_UNIT_MEMBER_U_AUSTRIAN_HUSSAR
-  ART_DEF_UNIT_MEMBER_U_BRAZILIAN_PRACINHAS
-  ART_DEF_UNIT_MEMBER_U_DUTCH_SEA_BEGGARS
-  ART_DEF_UNIT_MEMBER_U_ENGLISH_SHIPOFTHELINE
-  ART_DEF_UNIT_MEMBER_U_ETHIOPIA_MEHAL_SEFARI
-  ART_DEF_UNIT_MEMBER_U_FRENCH_FOREIGNLEGION
-  ART_DEF_UNIT_MEMBER_U_FRENCH_MUSKETEER
-  ART_DEF_UNIT_MEMBER_U_GERMAN_PANZER
-  ART_DEF_UNIT_MEMBER_U_HUNS_BATTERING_RAM
-  ART_DEF_UNIT_MEMBER_U_KOREAN_TURTLESHIP
-  ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY
-  ART_DEF_UNIT_MEMBER_U_OTTOMAN_JANISSARY
-  ART_DEF_UNIT_MEMBER_U_PORTUGUESE_CARRACK
-  ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK
-  ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK_V2
-  ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK_V3
-  ART_DEF_UNIT_MEMBER_U_SHOSHONE_COMANCHE_RIDERS
-  ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON
-  ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_ARCABUCERO
-  ART_DEF_UNIT_MEMBER_U_SWEDISH_CAROLEAN
-  ART_DEF_UNIT_MEMBER_U_VENETIAN_GALLEASS
-  ART_DEF_UNIT_MEMBER_UNION_CAVALRY_CARBINE
-  ART_DEF_UNIT_MEMBER_UNION_CAVALRY_PISTOL
-  ART_DEF_UNIT_MEMBER_UNION_IRONCLAD
-  ART_DEF_UNIT_MEMBER_UNION_RIFLEMAN
-  ART_DEF_UNIT_MEMBER_WW1_INFANTRY
-  ART_DEF_UNIT_MEMBER_WW1_TANK
-  ART_DEF_UNIT_MEMBER_WW2_INFANTRY
-  ART_DEF_UNIT_MEMBER_XCOM_SQUAD
-  ART_DEF_UNIT_MEMBER_XP_PRIVATEER
-  
-  Units
-  UNIT_BARBARIAN_AXMAN
-  
-  UnitInfoType
-  ART_DEF_UNIT_BARBARIAN_ARCHER
-  ART_DEF_UNIT_BARBARIAN_EURO
-  ART_DEF_UNIT_HAND_AXE_BARBARIAN, EXPANSION2_UNIT_ATLAS, 9
-  ART_DEF_UNIT__SETTLER
-  ART_DEF_UNIT__SETTLER_AFRI
-  ART_DEF_UNIT__SETTLER_AMER
-  ART_DEF_UNIT__SETTLER_ASIA
-  ART_DEF_UNIT__WARRIOR
-  ART_DEF_UNIT__WORKER
-  
-  UnitMemberInfoType
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_01 (3)
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V2 (6)
-  ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V3 (3)
-  ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_ALPHA (2)
-  ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_BRAVO (4)
-  ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_CHARLIE (4)
-  ART_DEF_UNIT_SPEARMAN[,_V2,_V3]
-  ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK[,_V2,_V3]
-  ART_DEF_UNIT_MEMBER_U_ZULU_IMPI_WARRIOR[,_V2,_V3]
 
-  ART_DEF_UNIT_MEMBER_[EURODONKEY,AFRICAMEL,AMERLLAMA,SETTLERS_ASIAN_OX]
 
-  ART_DEF_UNIT_MEMBER_EUROFEMALE[20,25,35,40]
-  ART_DEF_UNIT_MEMBER_EUROMALE[20,25,35,40]
 
-  ART_DEF_UNIT_MEMBER_[AFRI,AMER]FEMALE[1-4]
-  ART_DEF_UNIT_MEMBER_[AFRI,AMER]MALE[1-4]
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT CLASSES
+  ║
+  ║     
+  ║   Greats:
+  ║   - UNITCLASS_GREAT_LEADER
+  ║
+  ║
+  ║
+  ║
+  ║   Leaders:
+  ║   - UNITCLASS_LEADER_ALPHA
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║   New:
+  ║
+  ║   - Civilian:
+  ║     - UNITCLASS_LABORER
+  ║
+  ║   - Melee:
+  ║     - UNITCLASS_AUSTRALOPITHECUS
+  ║   
+  ║     - UNITCLASS_EXPLORER
+  ║     
+  ║     - UNITCLASS_RUNNER
+  ║     - UNITCLASS_AXE_THROWER
+  ║     - UNITCLASS_AUTOCHTHON
+  ║     - UNITCLASS_NEANDERTHAL
+  ║     - UNITCLASS_CAVEMAN
+  ║     - UNITCLASS_BARB_ALPHA
+  ║     - UNITCLASS_BEAR_WARRIOR
+  ║     - UNITCLASS_PRIMITIVE_ARCHER
+  ║     - UNITCLASS_SAVAGE
+  ║
+  ║   - Explore:
+  ║     - UNITCLASS_WANDERER
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║   Modified:
+  ║   - 
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  -->   
+  <UnitClasses>
+    
+    <Delete Type="UNITCLASS_SETTLER"/>
+    <Delete Type="UNITCLASS_WORKER"/>
 
-  ART_DEF_UNIT_MEMBER_SETTLERS_ASIAN_F[1-4]
-  ART_DEF_UNIT_MEMBER_SETTLERS_ASIAN_M[1-4]
-  
-  ART_DEF_UNIT_MEMBER_WORKER_EURO
-  ART_DEF_UNIT_MEMBER_WORKER_LATE
+    <Row>
+      <Type>UNITCLASS_GREAT_LEADER</Type>
+      <Description>TXT_KEY_UNIT_GREAT_LEADER_TITLE</Description>
+      <DefaultUnit>UNIT_GREAT_LEADER</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_LEADER_ALPHA</Type>
+      <Description>TXT_KEY_UNIT_LEADER_ALPHA_TITLE</Description>
+      <DefaultUnit>UNIT_LEADER_ALPHA</DefaultUnit>
+    </Row>    
+    <Row>
+      <Type>UNITCLASS_AUSTRALOPITHECUS</Type>
+      <Description>TXT_KEY_UNIT_AUSTRALOPITHECUS_TITLE</Description>
+      <DefaultUnit>UNIT_AUSTRALOPITHECUS</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_AUTOCHTHON</Type>
+      <Description>TXT_KEY_UNIT_AUTOCHTHON_TITLE</Description>
+      <DefaultUnit>UNIT_AUTOCHTHON</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_PRIMITIVE_ARCHER</Type>
+      <Description>TXT_KEY_UNIT_PRIMITIVE_ARCHER_TITLE</Description>
+      <DefaultUnit>UNIT_PRIMITIVE_ARCHER</DefaultUnit>
+    </Row>    
+    <Row>
+      <Type>UNITCLASS_SHAMAN</Type>
+      <Description>TXT_KEY_UNIT_SHAMAN_TITLE</Description>
+      <DefaultUnit>UNIT_SHAMAN</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_AXE_THROWER</Type>
+      <Description>TXT_KEY_UNIT_AXE_THROWER_TITLE</Description>
+      <DefaultUnit>UNIT_AXE_THROWER</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_NEANDERTHAL</Type>
+      <Description>TXT_KEY_UNIT_NEANDERTHAL_TITLE</Description>
+      <DefaultUnit>UNIT_NEANDERTHAL</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_BARB_ALPHA</Type>
+      <Description>TXT_KEY_UNIT_BARB_ALPHA_TITLE</Description>
+      <DefaultUnit>UNIT_BARB_ALPHA</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_BEAR_WARRIOR</Type>
+      <Description>TXT_KEY_UNIT_BEAR_WARRIOR_TITLE</Description>
+      <DefaultUnit>UNIT_BEAR_WARRIOR</DefaultUnit>
+    </Row>  
+    <Row>
+      <Type>UNITCLASS_SAVAGE</Type>
+      <Description>TXT_KEY_UNIT_SAVAGE_TITLE</Description>
+      <DefaultUnit>UNIT_SAVAGE</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_CAVEMAN</Type>
+      <Description>TXT_KEY_UNIT_CAVEMAN_TITLE</Description>
+      <DefaultUnit>UNIT_CAVEMAN</DefaultUnit>
+    </Row> 
+    
 
-  
-  fxsxml
-  archer[,_v2,_v3]
-  barbarian_archer[01,_v2,_v3]
 
+
+    <Row>
+      <Type>UNITCLASS_SCOUTER</Type>
+      <Description>Scouter Class</Description>
+      <DefaultUnit>UNIT_SCOUT_ONE</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_BANGER</Type>
+      <Description>Banger Class</Description>
+      <DefaultUnit>UNIT_BANG_ONE</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_POINTER</Type>
+      <Description>Pointer Class</Description>
+      <DefaultUnit>UNIT_POINTER_ONE</DefaultUnit>
+    </Row>  
+    <Row>
+      <Type>UNITCLASS_BARB_POINTER</Type>
+      <Description>Banger</Description>
+      <DefaultUnit>UNIT_BARB_POINTER_ONE</DefaultUnit>
+    </Row>  
+
+
+
+    <Row>
+      <Type>UNITCLASS_RUNNER</Type>
+      <Description>TXT_KEY_UNIT_RUNNER_TITLE</Description>
+      <DefaultUnit>UNIT_RUNNER</DefaultUnit>
+    </Row> 
+
+
+      
+
+    <Row>
+      <Type>UNITCLASS_WANDERER</Type>
+      <Description>Wanderer Class</Description>
+      <DefaultUnit>UNIT_WANDERER</DefaultUnit>
+    </Row>
+
+
+    <Row>
+      <Type>UNITCLASS_SETTLER</Type>
+      <Description>TXT_KEY_UNIT_SETTLER</Description>
+      <DefaultUnit>UNIT_SETTLER</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_WORKER</Type>
+      <Description>TXT_KEY_UNIT_WORKER</Description>
+      <DefaultUnit>UNIT_WORKER</DefaultUnit>
+    </Row>     
+
+
+    <Row>
+      <Type>UNITCLASS_VILLAGER</Type>
+      <Description>Villager Class</Description>
+      <DefaultUnit>UNIT_VILLAGER_EURO_ZERO</DefaultUnit>
+    </Row> 
+
+
+
+    <Row>
+      <Type>UNITCLASS_EXPLORER</Type>
+      <Description>Explorer Class</Description>
+      <DefaultUnit>UNIT_EXPLORER</DefaultUnit>
+    </Row> 
+
+    <!--
+    <Row>
+      <Type>UNITCLASS_LABORER</Type>
+      <Description>TXT_KEY_UNIT_LABORER_TITLE</Description>
+      <DefaultUnit>UNIT_LABORER</DefaultUnit>
+    </Row>   
+    -->
+
+  </UnitClasses>
+
+
+
+
+
+  <!--
+  ╔═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║   UNITS
+  ║
+  ║
+  ║   Greats:
+  ║   
+  ║
+  ║
+  ║
+  ║   Leaders:
+  ║
+  ║
+  ║   
+  ║ 
+  ║   New:
+  ║
+  ║   - Civilian:
+  ║     - UNITCLASS_LABORER
+  ║       + UNIT_LABORER
+  ║
+  ║   - Explore:
+  ║
+  ║     - UNITCLASS_EXPLORER
+  ║       + UNIT_EXPLORER
+  ║     - UNITCLASS_WANDERER
+  ║       + UNIT_WANDERER
+  ║
+  ║   - Melee:
+  ║     - UNITCLASS_AUSTRALOPITHECUS
+  ║       + UNIT_AUSTRALOPITHECUS
+  ║     - UNITCLASS_AUTOCHTHON
+  ║       + UNIT_AUTOCHTHON
+  ║     - UNITCLASS_NEANDERTHAL
+  ║       + UNIT_NEANDERTHAL
+  ║     - UNITCLASS_CAVEMAN
+  ║       + UNIT_CAVEMAN
+  ║     - UNITCLASS_BARB_ALPHA
+  ║       + UNIT_BARB_ALPHA
+  ║     - UNITCLASS_BEAR_WARRIOR
+  ║       + UNIT_BEAR_WARRIOR
+  ║
+  ║   - Skirmish:
+  ║     - UNITCLASS_RUNNER
+  ║       + UNIT_RUNNER 
+  ║
+  ║   - Ranged:
+  ║     - UNITCLASS_AXE_THROWER
+  ║       + UNIT_AXE_THROWER
+  ║     - UNITCLASS_PRIMITIVE_ARCHER
+  ║       + UNIT_PRIMITIVE_ARCHER
+  ║
+  ║   - Siege:
+  ║     - UNITCLASS_SAVAGE
+  ║       + UNIT_SAVAGE
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║   - Recreated:
+  ║     - UNITCLASS_SETTLER
+  ║       + UNIT_SETTLER
+  ║     - UNITCLASS_WORKER
+  ║       + UNIT_WORKER
+  ║
+  ║   - Modified:
+  ║     - 
+  ║
+  ║
+  ║   - Unused:
+  ║     - UNITCLASS_ROCKSLINGER
+  ║       + UNIT_ROCKSLINGER
+  ║     - UNITCLASS_SPEAR_THROWER
+  ║       + UNIT_SPEAR_THROWER
+  ║     - UNITCLASS_ATATLIST (Real Weapon)
+  ║       + UNIT_ATATLIST
+  ║
+  ║
+  ║   - Testing:
+  ║     - UNIT_SCOUT_ONE
+  ║     - UNIT_SCOUT_TWO
+  ║     - UNIT_SCOUT_THREE
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ╚═════════════════════════════════════════════════════════════════════════════
+  -->    
+  <Units>
+
+
+    <Delete Type="UNIT_SETTLER"/>
+    <Delete Type="UNIT_WORKER"/>
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Greats:
+
+        Great Leaders
+          - provide bonuses similar to Great General
+          - can also battle
+          - some can settle
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- Great Leader -->
+    <Row>
+      <Class>UNITCLASS_GREAT_LEADER</Class>
+      <Type>UNIT_GREAT_LEADER</Type>
+      <Cost>-1</Cost>
+      <Moves>2</Moves>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+      <Special>SPECIALUNIT_PEOPLE</Special>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_GREAT_LEADER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_GREAT_LEADER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_GREAT_LEADER_STRATEGY</Strategy>
+      <AdvancedStartCost>-1</AdvancedStartCost>
+      <WorkRate>1</WorkRate>
+      <CombatLimit>0</CombatLimit>
+      <DontShowYields>true</DontShowYields>
+      <UnitArtInfo>ART_DEF_UNIT_GREAT_LEADER</UnitArtInfo>
+      <UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+      <UnitFlagIconOffset>90</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_2</IconAtlas>
+      <PortraitIndex>48</PortraitIndex>
+      <MoveRate>GREAT_PERSON</MoveRate>
+    </Row>
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Leaders:
+      - provide bonuses to other units
+      - only can be built at one time (TBD)
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- Alpha -->
+    <Row>
+      <Class>UNITCLASS_LEADER_ALPHA</Class>
+      <Type>UNIT_LEADER_ALPHA</Type>
+      <Combat>3</Combat>
+      <Cost>20</Cost>
+      <Moves>1</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_LEADER_ALPHA_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_LEADER_ALPHA_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_LEADER_ALPHA_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_LEADER_ALPHA_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>0</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_LEADER_ALPHA</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SETTLER</Class>
+      <Type>UNIT_TRIBE_LEADER</Type>
+      <Moves>1</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>Tribe Leader</Description>
+      <Civilopedia>TXT_KEY_UNIT_TRIBE_LEADER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_TRIBE_LEADER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_TRIBE_LEADER_HELP</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>true</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row>
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Civilians
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- Laborer -->
+    <Row>
+      <Class>UNITCLASS_WORKER</Class>
+      <Type>UNIT_LABORER</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Cost>20</Cost>
+      <Moves>2</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_LABORER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_LABORER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_LABORER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_LABORER_HELP</Help>
+      <AdvancedStartCost>5</AdvancedStartCost>
+      <WorkRate>50</WorkRate>
+      <CombatLimit>0</CombatLimit>
+      <ObsoleteTech>TECH_MINING</ObsoleteTech>
+      <UnitArtInfo>ART_DEF_UNIT_LABORER</UnitArtInfo>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row> 
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Melee
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- Australopithecus -->
+    <Row>
+      <Class>UNITCLASS_AUSTRALOPITHECUS</Class>
+      <Type>UNIT_AUSTRALOPITHECUS</Type>
+      <Combat>3</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AUSTRALOPITHECUS_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_AUSTRALOPITHECUS_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AUSTRALOPITHECUS_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AUSTRALOPITHECUS_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_AUTOCHTHON</Class>
+      <Type>UNIT_AUTOCHTHON</Type>
+      <PrereqTech>TECH_BIPEDALISM</PrereqTech>
+      <Combat>6</Combat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AUTOCHTHON_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_AUTOCHTHON_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AUTOCHTHON_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AUTOCHTHON_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUTOCHTHON</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_NEANDERTHAL</Class>
+      <Type>UNIT_NEANDERTHAL</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_NEANDERTHAL_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_NEANDERTHAL_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_NEANDERTHAL_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_NEANDERTHAL_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_NEANDERTHAL</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_BARB_ALPHA</Class>
+      <Type>UNIT_BARB_ALPHA</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_BARB_ALPHA_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_BARB_ALPHA_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_BARB_ALPHA_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_BARB_ALPHA_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BARB_ALPHA</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+    </Row> 
+
+    <Row>
+      <Class>UNITCLASS_BEAR_WARRIOR</Class>
+      <Type>UNIT_BEAR_WARRIOR</Type>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_BEAR_WARRIOR_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_BEAR_WARRIOR_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_BEAR_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_BEAR_WARRIOR_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BEAR_WARRIOR</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SAVAGE</Class>
+      <Type>UNIT_SAVAGE</Type>
+      <PrereqTech>TECH_WARFARE</PrereqTech>
+      <Combat>6</Combat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Description>Savage</Description>
+      <Civilopedia>In times when weapons were dull and military strategy was virtually non-existent, muscle power was the main tool of winning a fight. Especially strong and big men made good front-line warriors, who often fought in reckless rage. Nearly unstoppable when attacking, the Berserk fighters often did not watch their backs and were susceptible to strategic attacks.</Civilopedia>
+      <Strategy>The Savage is particularly useful when attacking enemy settlements. Armed with half a tree as weapon, he can easily bring down enemy fortifications.[NEWLINE]Protect it from attacks, as it is weak when defending.</Strategy>
+      <Help>An exceptionally big and strong human specimen with a bad temper.[NEWLINE][NEWLINE]Receives a bonus when attacking Cities, but also a penalty when defending.</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_SAVAGE</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>  
+
+    <Row>
+      <Class>UNITCLASS_CAVEMAN</Class>
+      <Type>UNIT_CAVEMAN</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_CAVEMAN_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_CAVEMAN_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_CAVEMAN_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_CAVEMAN_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_CAVEMAN</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Ranged
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- PRimitive Archer -->
+    <Row>
+      <Class>UNITCLASS_PRIMITIVE_ARCHER</Class>
+      <Type>UNIT_PRIMITIVE_ARCHER</Type>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Combat>2</Combat>
+      <RangedCombat>3</RangedCombat>
+      <Cost>14</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_PRIMITIVE_ARCHER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_PRIMITIVE_ARCHER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_PRIMITIVE_ARCHER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_PRIMITIVE_ARCHER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_PRIMITIVE_ARCHER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>8</PortraitIndex>
+    </Row>  
+
+    <!-- Shaman -->
+    <Row>
+      <Class>UNITCLASS_SHAMAN</Class>
+      <Type>UNIT_SHAMAN</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>1</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>24</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_SHAMAN_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SHAMAN_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SHAMAN_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SHAMAN_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SHAMAN</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>10</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_AXE_THROWER</Class>
+      <Type>UNIT_AXE_THROWER</Type>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <Combat>9</Combat>
+      <RangedCombat>13</RangedCombat>
+      <Cost>75</Cost>
+      <FaithCost>150</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AXE_THROWER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_AXE_THROWER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AXE_THROWER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AXE_THROWER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MACHINERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CROSSBOWMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>20</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_AXE_THROWER</UnitArtInfo>
+      <UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>9</UnitFlagIconOffset>
+      <IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    
+
+
+
+
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Expore
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <Row>
+      <Class>UNITCLASS_WANDERER</Class>
+      <Type>UNIT_WANDERER</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>3</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITAI_EXPLORE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_WANDERER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_WANDERER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WANDERER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_WANDERER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_WANDERER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_WANDERER</Class>
+      <Type>UNIT_NOMAD_WANDERER</Type>
+      <PrereqTech>TECH_LOCOMOTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>10</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITAI_EXPLORE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Nomadic Settler</Description>
+      <Civilopedia>TXT_KEY_UNIT_NOMAD_WANDERER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_NOMAD_WANDERER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_NOMAD_WANDERER_HELP</Help>
+      <Found>true</Found>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>false</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_WANDERER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_EXPLORER</Class>
+      <Type>UNIT_EXPLORER</Type>
+      <PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+      <Combat>8</Combat>
+      <Cost>65</Cost>
+      <FaithCost>130</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>4</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_RECON</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+      <Description>Explorer</Description>
+      <Civilopedia>Scouts form the eyes and ears of early civilizations. These fleet-footed warriors are not supposed to engage with enemy forces - they're supposed to find the lay of the land, discovering any potential threats or treasures. A civilization that doesn't know what's going on in the world around it is blind to both peril and opportunity.</Civilopedia>
+      <Strategy>Just like the Scout, the Explorer can move through difficult terrain without penalty. It is very fast and efficient at exploring, but rather weak as well.</Strategy>
+      <Help>Much faster and stronger than the Scout, the mounted Explorer is the perfect tool to discover the world for your civilization. Receives +2 Sight while embarked.</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_KNIGHT</GoodyHutUpgradeUnitClass>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <AdvancedStartCost>20</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_EXPLORER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+      <MoveRate>QUADRUPED</MoveRate>
+    </Row>
+
+    
+
+
+
+
+
+
+     
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+      
+      Redefined
+
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <!-- SETTLE-LIKE LEADER UNITS AND UNITS ABLE TO SETTLE -->
+
+    <Row>
+      <Class>UNITCLASS_SETTLER</Class>
+      <Type>UNIT_SETTLER</Type>
+      <Moves>2</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_SETTLER</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SETTLER_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>true</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row>
+
+
+    <Row>
+      <Class>UNITCLASS_WORKER</Class>
+      <Type>UNIT_WORKER</Type>
+      <Cost>70</Cost>
+      <Moves>2</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_WORKER</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WORKER_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WORKER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WORKER</Help>
+      <AdvancedStartCost>20</AdvancedStartCost>
+      <WorkRate>100</WorkRate>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <PortraitIndex>1</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TESTING BELOW THIS LINE -->
+
+
+
+
+
+
+    <!-- Villagers -->
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_EURO_ZERO</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_EURO_ZERO_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_EURO_ZERO_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_EURO_ZERO_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_EURO_ZERO</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_EURO_M1</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Euro M1</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_EURO_M1_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_EURO_M1_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_EURO_M1_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_EURO_M1</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_EURO_M2</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Euro M2</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_EURO_M2_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_EURO_M2_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_EURO_M2_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_EURO_M2</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_EURO_M3</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Euro M3</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_EURO_M3_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_EURO_M3_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_EURO_M3_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_EURO_M3</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_EURO_M4</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Euro M4</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_EURO_M4_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_EURO_M4_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_EURO_M4_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_EURO_M4</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AFRI_M1</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Afri M1</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AFRI_M1_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AFRI_M1_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AFRI_M1_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AFRI_M1</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AFRI_M2</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Afri M2</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AFRI_M2_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AFRI_M2_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AFRI_M2_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AFRI_M2</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AFRI_M3</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Afri M3</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AFRI_M3_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AFRI_M3_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AFRI_M3_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AFRI_M3</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AFRI_M4</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Afri M4</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AFRI_M4_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AFRI_M4_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AFRI_M4_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AFRI_M4</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AMER_M1</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Amer M1</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AMER_M1_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AMER_M1_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AMER_M1_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AMER_M1</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AMER_M2</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Amer M2</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AMER_M2_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AMER_M2_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AMER_M2_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AMER_M2</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AMER_M3</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Amer M3</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AMER_M3_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AMER_M3_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AMER_M3_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AMER_M3</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_AMER_M4</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Amer M4</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_AMER_M4_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_AMER_M4_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_AMER_M4_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_AMER_M4</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_ASIA_M1</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Asia M1</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_ASIA_M1_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_ASIA_M1_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_ASIA_M1_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_ASIA_M1</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_ASIA_M2</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Asia M2</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_ASIA_M2_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_ASIA_M2_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_ASIA_M2_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_ASIA_M2</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_ASIA_M3</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Asia M3</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_ASIA_M3_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_ASIA_M3_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_ASIA_M3_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_ASIA_M3</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_VILLAGER</Class>
+      <Type>UNIT_VILLAGER_ASIA_M4</Type>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Combat>1</Combat>
+      <Cost>1</Cost>
+      <Moves>1</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAS_WORKER</DefaultUnitAI>
+      <Description>Villager Asia M4</Description>
+      <Civilopedia>TXT_KEY_UNIT_VILLAGER_ASIA_M4_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_VILLAGER_ASIA_M4_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_VILLAGER_ASIA_M4_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_VILLAGER_ASIA_M4</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Row>
+      <Class>UNITCLASS_SCOUTER</Class>
+      <Type>UNIT_SCOUT_ONE</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>3</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITAI_EXPLORE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Scout One</Description>
+      <Civilopedia>TXT_KEY_UNIT_SCOUT_ONE_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_ONE_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SCOUT_ONE_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_ONE</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTER</Class>
+      <Type>UNIT_SCOUT_TWO</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>3</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITAI_EXPLORE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Scout Two</Description>
+      <Civilopedia>TXT_KEY_UNIT_SCOUT_TWO_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_TWO_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SCOUT_TWO_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_TWO</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTER</Class>
+      <Type>UNIT_SCOUT_THREE</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>3</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITAI_EXPLORE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Scout Three</Description>
+      <Civilopedia>TXT_KEY_UNIT_SCOUT_THREE_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_THREE_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SCOUT_THREE_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_THREE</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>9</PortraitIndex>
+    </Row> 
+
+    <Row>
+      <Class>UNITCLASS_BANGER</Class>
+      <Type>UNIT_BANG_ONE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Bang One</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BANG_ONE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_BANGER</Class>
+      <Type>UNIT_BANG_TWO</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Bang Two</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BANG_TWO</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_BANGER</Class>
+      <Type>UNIT_BANG_THREE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Bang Three</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BANG_THREE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_POINTER</Class>
+      <Type>UNIT_POINT_ONE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Point One</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_POINT_ONE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_POINTER</Class>
+      <Type>UNIT_POINT_TWO</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Point Two</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_POINT_TWO</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_POINTER</Class>
+      <Type>UNIT_POINT_THREE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Point Three</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_POINT_THREE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+          
+
+
+    <Row>
+      <Class>UNITCLASS_BARB_POINTER</Class>
+      <Type>UNIT_BARB_POINT_ONE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Barb Point One</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BARB_POINT_ONE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_BARB_POINTER</Class>
+      <Type>UNIT_BARB_POINT_TWO</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Barb Point Two</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BARB_POINT_TWO</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_BARB_POINTER</Class>
+      <Type>UNIT_BARB_POINT_THREE</Type>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
+      <FaithCost>80</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>Barb Point Three</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WARRIOR_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARRIOR_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_WARRIOR</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BARB_POINT_THREE</UnitArtInfo>
+      <UnitFlagIconOffset>3</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>3</PortraitIndex>
+    </Row> 
+
+
+
+
+  </Units>
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT AI TYPES
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Unit_AITypes>
+
+
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UnitAIType>UNITAI_GENERAL</UnitAIType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitAIType>UNITAI_WORKER</UnitAIType>
+    </Row>
+
+<!--
+    <Row>
+      <UnitType>UNIT_EXPLORER</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <UnitAIType>UNITAI_WORKER</UnitAIType>
+    </Row>   
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+-->
+
+
+
+  </Unit_AITypes>
   
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT FLAVORS
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  -->   
+  <Unit_Flavors>
+
+    <!-- Great Leader-->
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+
+    <!-- Tribe Leader -->
+    <Row>
+      <UnitType>UNIT_TRIBE_LEADER</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>21</Flavor>
+    </Row>
+
+
+    <Row>
+      <UnitType>UNIT_EXPLORER</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>    
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>30</Flavor>
+    </Row>     
+
+  </Unit_Flavors>
   
-  
-  
-  
-  
-  Names
-  ........................
-  Conqueror
-  Vanquisher
-  Armed Villager
-  Brawler
-  Warlord
-  Rock Thrower
-  Clubber
-  Primitive Man - Iroquois
-  Neolithic Wanderer
-  Neolithic Defender
-  Commoner
-  Freeman
-  Pioneer
-  Exile
-  Autochthon (original man) - primitive man
-  Caveman
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT FREE PROMOTIONS
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  -->   
+  <Unit_FreePromotions>
+
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
+    </Row>
+
+
+<!--
+    <Row>
+      <UnitType>UNIT_EXPLORER</UnitType>
+      <PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_EXPLORER</UnitType>
+      <PromotionType>PROMOTION_EMBARKED_SIGHT</PromotionType>
+    </Row>
+
+     <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <PromotionType>NO_REVEAL_MAP</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <PromotionType>PROMOTION_FOREST_DWELLER</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <PromotionType>NO_REVEAL_MAP</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <PromotionType>PROMOTION_FOREST_DWELLER</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>PROMOTION_RECKLESS</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>PROMOTION_CITY_BRUTEFORCE</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <PromotionType>PROMOTION_COVER_1</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <PromotionType>PROMOTION_RECKLESS</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <PromotionType>PROMOTION_CITY_BRUTEFORCE</PromotionType>
+    </Row>  
+    -->
+  </Unit_FreePromotions>
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT CLASS UPGRADE
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Unit_ClassUpgrades>
+    <!--
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitClassType>UNITCLASS_CAVEMAN</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUT_ONE</UnitType>
+      <UnitClassType>UNITCLASS_CAVEMAN</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
+      <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
+      <UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+    </Row>    
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <UnitClassType>UNITCLASS_WORKER</UnitClassType>
+    </Row> 
   -->
+  </Unit_ClassUpgrades>
   
-  
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT RESOURCE QUANTITY REQUIREMENTS
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <!--
+  <Unit_ResourceQuantityRequirements>
+    <Row>
+      <UnitType>UNIT_EXPLORER</UnitType>
+      <ResourceType>RESOURCE_HORSE</ResourceType>
+    </Row>
+  </Unit_ResourceQuantityRequirements>
+-->
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  ║
+  ║   UNIT BUILDS
+  ║
+  ║   
+  ║
+  ║
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+
+  <Unit_Builds>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_FARM</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <BuildType>BUILD_REMOVE_FOREST</BuildType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <BuildType>BUILD_REMOVE_FOREST</BuildType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_ROMAN_LEGION</UnitType>
+      <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+    </Row>
+
+  </Unit_Builds>
+
+
+
+
+
+  <Unit_UniqueNames>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_UFF</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_GABB</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_CHAAH</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_DAAG</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_HAKK</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_OOG</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_JAYO</UniqueName>
+    </Row>        
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ARG</UniqueName>
+    </Row>
+    <Row>
+      <UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_KAI</UniqueName>
+    </Row>
+  </Unit_UniqueNames>
+
+
+    
+
+
+  <Language_en_US>
+
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_TITLE">
+      <Text>Great Leader Class</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_DESC">
+      <Text>Great Leader</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_PEDIA">
+      <Text>Great Leader Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_STRATEGY">
+      <Text>Great Leader Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_HELP">
+      <Text>Great Leader Help</Text>
+    </Row> 
+
+
+
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_TITLE">
+      <Text>Australopithecus</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_DESC">
+      <Text>Australopithecus</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_PEDIA">
+      <Text>Australopithecus</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_STRATEGY">
+      <Text>Australopithecus Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_HELP">
+      <Text>Australopithecus Help</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_TITLE">
+      <Text>Autochthon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_DESC">
+      <Text>Autochthon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_PEDIA">
+      <Text>Autochthons are the ancient ancestors of modern man. They learned to walk upright and this opened a whole new world to them.
+      [NEWLINE][NEWLINE]They were a hunter-gatherer people who used their minds and technology to create simple tools that aided them in their daily activities. Slowly, they achieved the ability to control fire creating a cascading effect that would eventually enlarge their brains, and their intelligence.
+      [NEWLINE][NEWLINE]This paleolithic man evolved over the course of two million years, eventually learning to create more complex tools allowing him to build better bows, more efficient carvings tools, and thus better dwellings. All this lead to an establishment of society and division of responsiblities.
+      [NEWLINE][NEWLINE]With an increase in productivity there was an explosion in population and easier migrations. Man was starting to dominate the world...
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_STRATEGY">
+      <Text>Autochthons aren't much good at anything, but they have no maintenance. They have low offense and defense and will not be much of a match against anyone or anything else. They can be used to explore the nearby area but need to be careful against barbarian units. Taking on settlements is not recommended.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_HELP">
+      <Text>Very weak (but cheap) early unit. Lacking in offense and defense except in forests. +25% [ICON_COMBAT] Offense and +50% [ICON_DEFENSE] defense in forests.</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_WANDERER_TITLE">
+      <Text>Wanderer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WANDERER_DESC">
+      <Text>Wanderer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WANDERER_PEDIA">
+      <Text>Wanderer Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WANDERER_STRATEGY">
+      <Text>Wanderer Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WANDERER_HELP">
+      <Text>Wanderer Help</Text>
+    </Row> 
+
+
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_TITLE">
+      <Text>Primitive Archer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_DESC">
+      <Text>Primitive Archer</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_PEDIA">
+      <Text>When man started walking upright and using the most basic tools he realized that some of these tools were not only helpful for self sustenance, hunting, and bettering his life, but could also be used as weapons that were more effective than simple brawling and biting. 
+      [NEWLINE][NEWLINE]Throwing rocks and hurling them with other tools, like slings, were effective but not as accurate as the first bow.
+      [NEWLINE]The first bows had equivalent range as their sling counterparts, but had more points of lethal contact. It was also easier to establish competency, although it did take longer to make.
+      [NEWLINE][NEWLINE]These first projectile weapons gave man a much greater range of threat both in hunting and in combat. Raids on other groups could now be started and supported with bows from the perimiter. The first bows now gave man the ability to hide in brush without having to expose himself as with the sling. It was also much more lethal throwing rocks.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_STRATEGY">
+      <Text>Primitive Archers are very weak in offense and especially defense. They should be next to another unit to attack since they can easily be overwhelmed in melee. This is still a small advantage since they will typically not receive retaliation damage and therefore should be used a support unit with other melee units.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_HELP">
+      <Text>A weak early ranged unit, using the most primitive of bows. Cheap and self-sufficient.</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_TITLE">
+      <Text>Shaman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_DESC">
+      <Text>Shaman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_PEDIA">
+      <Text>After the discovery of Fire as a beneficial tool for cooking and surviving harsh winters, Man also found out about its destructive power. Fire was - and still is - a powerful element that can burn skin and turn buildings to cinders. For millennia, armies have made use of torches and burning projectiles of all sizes against their enemies.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_STRATEGY">
+      <Text>A useful unit for all purposes, the Shaman is the second ranged unit in the Prehistoric Era. Use it to burn down cities or attack enemies, but protect it from melee attacks.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_HELP">
+      <Text>Prehistoric ranged unit, throws burning torches at the enemy. Has a short range.</Text>
+    </Row>  
+
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_TITLE">
+      <Text>Axe Thrower</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_DESC">
+      <Text>Axe Thrower</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_PEDIA">
+      <Text>Ace Thrower Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_STRATEGY">
+      <Text>The Axe Thrower is a Classical era range unit wich is an alternative to Composite Bowman. It has a better combat strength and have a free promotion that increase his defense against ranged attack, but has only 1 starting range (can increase with promotions). His promotion choices is those of range units.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_HELP">
+      <Text>Axe Thrower Help</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_TITLE">
+      <Text>Neanderthal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_DESC">
+      <Text>Neanderthal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_PEDIA">
+      <Text>Pedia Neanderthal</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_STRATEGY">
+      <Text>Excellent early game unit for Tundra, Hills, and Mountains. Weak in desert.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_HELP">
+      <Text>The Neandertahal receives a 15% [ICON_COMBAT] offensive bonus while in Tundra, Hills, or Mountains. Also suffers a 10% defensive bonus in deserts.</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_TITLE">
+      <Text>Barb Alpha</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_DESC">
+      <Text>Barb Alpha</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_PEDIA">
+      <Text>Pedia Barb Alpha</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_STRATEGY">
+      <Text>Strategy Barb Alpha</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_HELP">
+      <Text>Help Barb Alpha</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_TITLE">
+      <Text>Bear Warrior</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_DESC">
+      <Text>Bear Warrior</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_PEDIA">
+      <Text>Pedia Bear Warrior</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_STRATEGY">
+      <Text>Strategy Bear Warrior</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_HELP">
+      <Text>The Bear Warrior Help</Text>
+    </Row> 
+
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_TITLE">
+      <Text>Caveman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_DESC">
+      <Text>Caveman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_PEDIA">
+      <Text>In the earliest times of humanity, the Homo Sapiens Sapiens often used to live in caves, which provided shelter and protection before the invention of hut and house building. Armed with rudimentary weapons, like clubs or stones, they fought small battles between communities, or amongst themselves.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_STRATEGY">
+      <Text>Take club, use club on enemy's head. All a Caveman needs to know.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_HELP">
+      <Text>A weak military unit.[NEWLINE][NEWLINE]Not very smart, but determined.</Text>
+    </Row>
+
+
+
+
+    <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_TITLE">
+      <Text>Scout One</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_DESC">
+      <Text>Scout One</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_PEDIA">
+      <Text>Scout One Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_STRATEGY">
+      <Text>Scout One Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_HELP">
+      <Text>Scout One Help</Text>
+    </Row> 
+
+    <Row Tag="TXT_KEY_UNIT_SCOUT_TWO_TITLE">
+      <Text>Scout Two</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_TWO_DESC">
+      <Text>Scout Two</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_TWO_PEDIA">
+      <Text>Scout Two Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_TWO_STRATEGY">
+      <Text>Scout Two Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_TWO_HELP">
+      <Text>Scout Two Help</Text>
+    </Row> 
+
+    <Row Tag="TXT_KEY_UNIT_SCOUT_THREE_TITLE">
+      <Text>Scout Three</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_THREE_DESC">
+      <Text>Scout Three</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_THREE_PEDIA">
+      <Text>Scout Three Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_THREE_STRATEGY">
+      <Text>Scout Three Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SCOUT_THREE_HELP">
+      <Text>Scout Three Help</Text>
+    </Row>     
+
+
+    <Row Tag="TXT_KEY_UNIT_LABORER_TITLE">
+      <Text>Laborer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_DESC">
+      <Text>Laborer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_PEDIA">
+      <Text>Laborer Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_LABORER_STRATEGY">
+      <Text>Laborer Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_HELP">
+      <Text>Improves [ICON_FOOD] Food [ICON_PRODUCTION] Production and [ICON_GOLD] Gold by constructing Improvements on map tiles outside of Cities.[NEWLINE][NEWLINE]Cheap to train, but works slower than the Worker. May only construct very basic Improvements.</Text>
+    </Row>
+
+
+    <!--
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_TITLE">
+      <Text>Explorer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_DESC">
+      <Text>Explorer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_PEDIA">
+      <Text>Explorer Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_STRATEGY">
+      <Text>Explorer Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_HELP">
+      <Text>Explorer Help</Text>
+    </Row>
+    -->
+
+    <Row Tag="TXT_KEY_GREAT_LEADER_UFF">
+      <Text>Leader Uff</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_GABB">
+      <Text>Leader Gab'b</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_CHAAH">
+      <Text>Leader Cha'ah</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_DAAG">
+      <Text>Leader Da'ag</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_HAKK">
+      <Text>Leader Hakk</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_OOG">
+      <Text>Leader Oog</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_JAYO">
+      <Text>Leader Jayo</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ARG">
+      <Text>Leader Arg</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_KAI">
+      <Text>Leader Kai</Text>
+    </Row>
+
+
+  </Language_en_US>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+ ╔═════════════════════════════════════════════════════════════════════════════╗
+_║█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█║
+░║█                                                                           █║
+░║█                                 NOTES                                     █║
+░║█                                                                           █║
+░║█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█║
+░╠═════════════════════════════════════════════════════════════════════════════╣
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║ UnitAI                                                                      ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║                                                                             ║
+░║ UNITAI_ATTACK             Warrior, Celt Pictish Warrior, Danish Berserker   ║
+░║ UNITAI_CITY_BOMBARD       Catapult, Trebuchet                               ║
+░║ UNITAI_COUNTER            Spearman, Zulu Impi, Greek Hoplite                ║
+░║ UNITAI_DEFENSE            Aztec Jaguar, Horseman, Shoshone Pathfinder       ║
+░║ UNITAI_EXPLORE            Aztec Jaguar, Scout, Warrior                      ║
+░║ UNITAI_FASTATTACK         Horseman, Shoshone Pathfinder, Arabian CamelArcher║
+░║ UNITAI_RANGED                                                               ║
+░║ UNITAI_SETTLE             Settler                                           ║
+░║ UNITAS_WORKER             Worker, Roman Legion                              ║
+░║                                                                             ║
+░║                                                                             ║
+░║ COMPLETE LIST
+░║ -------------------------
+░║ UNITAI_ADMIRAL
+░║ UNITAI_ARCHAEOLOGIST
+░║ UNITAI_ARTIST
+░║ UNITAI_ASSAULT_SEA
+░║ UNITAI_ATTACK
+░║ UNITAI_ATTACK_AIR
+░║ UNITAI_ATTACK_SEA
+░║ UNITAI_CARRIER_AIR
+░║ UNITAI_CARRIER_SEA
+░║ UNITAI_CITY_BOMBARD
+░║ UNITAI_CITY_SPECIAL
+░║ UNITAI_COUNTER
+░║ UNITAI_DEFENSE
+░║ UNITAI_DEFENSE_AIR
+░║ UNITAI_ENGINEER
+░║ UNITAI_ESCORT_SEA
+░║ UNITAI_EXPLORE
+░║ UNITAI_EXPLORE_SEA
+░║ UNITAI_FAST_ATTACK
+░║ UNITAI_GENERAL
+░║ UNITAI_ICBM
+░║ UNITAI_INQUISITOR
+░║ UNITAI_MERCHANT
+░║ UNITAI_MISSILE_AIR
+░║ UNITAI_MISSILE_CARRIER_SEA
+░║ UNITAI_MISSIONARY
+░║ UNITAI_MUSICIAN
+░║ UNITAI_PARADROP
+░║ UNITAI_PIRATE_SEA
+░║ UNITAI_PROPHET
+░║ UNITAI_RANGED
+░║ UNITAI_RESERVE_SEA
+░║ UNITAI_SCIENTIST
+░║ UNITAI_SETTLE
+░║ UNITAI_SPACESHIP_PART
+░║ UNITAI_WORKER
+░║ UNITAI_WORKER_SEA
+░║ UNITAI_WRITER
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║ Formations                                                                  ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║                                                                             ║
+░║ Archer                                                                      ║
+░║ Barbarian                                                                   ║
+░║ BomberWing                                                                  ║
+░║ ChariotElephant                                                             ║
+░║ DefaultCavalry                                                              ║
+░║ DefaultMelee                                                                ║
+░║ EarlyGreatArtist                                                            ║
+░║ EarlyGreatMerchant                                                          ║
+░║ FighterWing                                                                 ║
+░║ HonorableGunpowder                                                          ║
+░║ LooseCivilian                                                               ║
+░║ OffsetPikeman                                                               ║
+░║ Phalanx                                                                     ║
+░║ Pikeman                                                                     ║
+░║ Samurai                                                                     ║
+░║ Scout                                                                       ║
+░║ TheeInLineStag                                                              ║
+░║ ThreeBigGuns                                                                ║
+░║ ThreeInLine                                                                 ║
+░║ TwoBigGuns                                                                  ║
+░║ UnFormed                                                                    ║
+░║ Vehicle                                                                     ║
+░║ Warrior                                                                     ║
+░║                                                                             ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║ Flavors                                                                     ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║                                                                             ║
+░║ FLAVOR_CITY_DEFENSE                                                         ║
+░║ FLAVOR_CULTURE                                                              ║
+░║ FLAVOR_DEFENSE                                                              ║
+░║ FLAVOR_EXPANSION                                                            ║
+░║ FLAVOR_GOLD                                                                 ║
+░║ FLAVOR_GROWTH                                                               ║
+░║ FLAVOR_HAPPINESS                                                            ║
+░║ FLAVOR_INFRASTRUCTURE                                                       ║
+░║ FLAVOR_MILITARY_TRAINING                                                    ║
+░║ FLAVOR_MOBILE                                                               ║
+░║ FLAVOR_OFFENSE                                                              ║
+░║ FLAVOR_PRODUCTION                                                           ║
+░║ FLAVOR_RANGED                                                               ║
+░║ FLAVOR_RECON                                                                ║
+░║ FLAVOR_RELIGION                                                             ║
+░║ FLAVOR_TILE_IMPROVEMENT                                                     ║
+░║ FLAVOR_WONDER                                                               ║
+░║                                                                             ║
+░║ FLAVOR_ARCHAEOLOGY                                                          ║
+░║ FLAVOR_DIPLOMACY                                                            ║
+░║ FLAVOR_GREAT_PEOPLE                                                         ║
+░║ FLAVOR_NAVAL                                                                ║
+░║ FLAVOR_NAVAL_GROWTH                                                         ║
+░║ FLAVOR_NAVAL_RECON                                                          ║
+░║ FLAVOR_NAVAL_TILE_IMPROVEMENT                                               ║
+░║ FLAVOR_SCIENCE                                                              ║
+░║ FLAVOR_WATER_CONNECTION                                                     ║
+░║                                                                             ║
+░║ FLAVOR_I_LAND_TRADE_ROUTE                                                   ║
+░║ FLAVOR_I_SEA_TRADE_ROUTE                                                    ║
+░║ FLAVOR_I_TRADE_DESTINATION                                                  ║
+░║ FLAVOR_I_TRADE_ORIGIN                                                       ║
+░║                                                                             ║
+░║ FLAVOR_AIR                                                                  ║
+░║ FLAVOR_AIRLIFT                                                              ║
+░║ FLAVOR_AIR_CARRIER                                                          ║
+░║ FLAVOR_ANTIAIR                                                              ║
+░║ FLAVOR_ESPIONAGE                                                            ║
+░║ FLAVOR_NUKE                                                                 ║
+░║ FLAVOR_SPACESHIP                                                            ║
+░║ FLAVOR_USE_NUKE                                                             ║
+░║                                                                             ║
+░╠═════════════════════════════════════════════════════════════════════════════╣
+░║                                                                             ║
+░║ Art Defines                                                                 ║
+░║                                                                             ║
+░╠═════════════════════════════════════════════════════════════════════════════╣
+░║                                                                             ║
+░║                                                                             ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║ UnitMemberInfoType                                                          ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║                                                                             ║
+░║ ART_DEF_UNIT_BARBARIAN_ARCHER                                               ║
+░║ ART_DEF_UNIT_BARBARIAN_EURO                                                 ║
+░║ ART_DEF_UNIT_HAND_AXE_BARBARIAN, EXPANSION2_UNIT_ATLAS, 9                   ║
+░║ ART_DEF_UNIT__SETTLER                                                       ║
+░║ ART_DEF_UNIT__SETTLER_AFRI                                                  ║
+░║ ART_DEF_UNIT__SETTLER_AMER                                                  ║
+░║ ART_DEF_UNIT__SETTLER_ASIA                                                  ║
+░║ ART_DEF_UNIT__WARRIOR                                                       ║
+░║ ART_DEF_UNIT__WORKER                                                        ║
+░║                                                                             ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║ UnitMemberInfoType                                                          ║
+░╟─────────────────────────────────────────────────────────────────────────────╢
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_01 (3)                                 ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V2 (6)                                 ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V3 (3)                                 ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_ALPHA (2)                                ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_BRAVO (4)                                ║
+░║ ART_DEF_UNIT_MEMBER_BARBARIAN_EURO_CHARLIE (4)                              ║
+░║ ART_DEF_UNIT_SPEARMAN[,_V2,_V3]                                             ║
+░║ ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK[,_V2,_V3]                             ║
+░║ ART_DEF_UNIT_MEMBER_U_ZULU_IMPI_WARRIOR[,_V2,_V3]                           ║
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_[EURODONKEY,AFRICAMEL,AMERLLAMA,SETTLERS_ASIAN_OX]      ║
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_EUROFEMALE[20,25,35,40]                                 ║
+░║ ART_DEF_UNIT_MEMBER_EUROMALE[20,25,35,40]                                   ║
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_[AFRI,AMER]FEMALE[1-4]                                  ║
+░║ ART_DEF_UNIT_MEMBER_[AFRI,AMER]MALE[1-4]                                    ║
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_SETTLERS_ASIAN_F[1-4]                                   ║
+░║ ART_DEF_UNIT_MEMBER_SETTLERS_ASIAN_M[1-4]                                   ║
+░║                                                                             ║
+░║ ART_DEF_UNIT_MEMBER_WORKER_EURO                                             ║
+░║ ART_DEF_UNIT_MEMBER_WORKER_LATE                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░║                                                                             ║
+░╚═════════════════════════════════════════════════════════════════════════════╝ 
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░|
+
+
+==============================
+ART_DEF
+==============================
+Combats, Ranged
+ART_DEF_UNIT_MEMBER_ANTIAIRCRAFTGUN
+ART_DEF_UNIT_MEMBER_ANTITANKGUN
+ART_DEF_UNIT_MEMBER_ARCHER
+ART_DEF_UNIT_MEMBER_ARCHER_V2
+ART_DEF_UNIT_MEMBER_ARCHER_V3
+ART_DEF_UNIT_MEMBER_ARTILLERY
+ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_01
+ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V2
+ART_DEF_UNIT_MEMBER_BARBARIAN_ARCHER_V3
+ART_DEF_UNIT_MEMBER_BARBARIAN_GALLEY
+ART_DEF_UNIT_MEMBER_BAZOOKA_INFANTRY
+ART_DEF_UNIT_MEMBER_CANNON
+ART_DEF_UNIT_MEMBER_CATAPULT
+ART_DEF_UNIT_MEMBER_CHARIOTARCHER
+ART_DEF_UNIT_MEMBER_COMPOSITE_BOWMAN
+ART_DEF_UNIT_MEMBER_CONFEDERATE_ARTILLERY_NAPOLEON
+ART_DEF_UNIT_MEMBER_CONFEDERATE_ARTILLERY_PARROTT
+ART_DEF_UNIT_MEMBER_CROSSBOWMAN
+ART_DEF_UNIT_MEMBER_GATLINGGUN
+ART_DEF_UNIT_MEMBER_HAND_AXE_BARBARIAN
+ART_DEF_UNIT_MEMBER_MACHINEGUN
+ART_DEF_UNIT_MEMBER_MOBILESAM
+ART_DEF_UNIT_MEMBER_NUCLEARMISSILE
+ART_DEF_UNIT_MEMBER_NUCLEARSUBMARINE
+ART_DEF_UNIT_MEMBER_ROCKETARTILLERY
+ART_DEF_UNIT_MEMBER_SUBMARINE
+ART_DEF_UNIT_MEMBER_TREBUCHET
+ART_DEF_UNIT_MEMBER_TRIREME
+ART_DEF_UNIT_MEMBER_U_ARABIAN_CAMELARCHER
+ART_DEF_UNIT_MEMBER_U_BABYLONIAN_BOWMAN
+ART_DEF_UNIT_MEMBER_U_BYZANTIUM_DROMON
+ART_DEF_UNIT_MEMBER_U_CARTHAGE_AFRICANFOREST_ELEPHANT
+ART_DEF_UNIT_MEMBER_U_CARTHAGE_QUINQUEREME
+ART_DEF_UNIT_MEMBER_U_CHINESE_CHUKONU
+ART_DEF_UNIT_MEMBER_U_DANISH_LONGBOAT
+ART_DEF_UNIT_MEMBER_U_EGYPTIAN_WARCHARIOT
+ART_DEF_UNIT_MEMBER_U_ENGLISH_LONGBOWMAN
+ART_DEF_UNIT_MEMBER_U_HUNS_HORSE_ARCHER
+ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER
+ART_DEF_UNIT_MEMBER_U_INDIAN_WARELEPHANT
+ART_DEF_UNIT_MEMBER_U_KOREAN_HWACHA
+ART_DEF_UNIT_MEMBER_U_MAYAN_ATLALIST
+ART_DEF_UNIT_MEMBER_U_MONGOLIAN_KESHIK
+ART_DEF_UNIT_MEMBER_U_POLYNESIAN_WAR_CANOE
+ART_DEF_UNIT_MEMBER_U_ROMAN_BALLISTA
+ART_DEF_UNIT_MEMBER_UNION_ARTILLERY_NAPOLEON
+ART_DEF_UNIT_MEMBER_UNION_ARTILLERY_PARROTT
+
+Combats, Ranged, Short
+ART_DEF_UNIT_MEMBER_BATTLESHIP
+ART_DEF_UNIT_MEMBER_CARAVEL
+ART_DEF_UNIT_MEMBER_CARGO_SHIP
+ART_DEF_UNIT_MEMBER_CARGO_SHIP_LATE
+ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID
+ART_DEF_UNIT_MEMBER_CARRIER
+ART_DEF_UNIT_MEMBER_CAVALRY
+ART_DEF_UNIT_MEMBER_CONFEDERATE_CAVALRY_CARBINE
+ART_DEF_UNIT_MEMBER_CONFEDERATE_CAVALRY_PISTOL
+ART_DEF_UNIT_MEMBER_CONFEDERATE_IRONCLAD
+ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN
+ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN_V1
+ART_DEF_UNIT_MEMBER_CONFEDERATE_RIFLEMAN_V2
+ART_DEF_UNIT_MEMBER_DESTROYER
+ART_DEF_UNIT_MEMBER_FRIGATE
+ART_DEF_UNIT_MEMBER_GALLEASS
+ART_DEF_UNIT_MEMBER_GALLEON
+ART_DEF_UNIT_MEMBER_GALLEY
+ART_DEF_UNIT_MEMBER_GREAT_EXPLORER
+ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F1
+ART_DEF_UNIT_MEMBER_HELICOPTERGUNSHIP
+ART_DEF_UNIT_MEMBER_INFANTRY
+ART_DEF_UNIT_MEMBER_IRONCLAD
+ART_DEF_UNIT_MEMBER_MARINE
+ART_DEF_UNIT_MEMBER_MECH
+ART_DEF_UNIT_MEMBER_MECHANIZEDINFANTRY
+ART_DEF_UNIT_MEMBER_MISSILECRUISER
+ART_DEF_UNIT_MEMBER_MODERNARMOR
+ART_DEF_UNIT_MEMBER_MUSKETMAN
+ART_DEF_UNIT_MEMBER_PARATROOPER
+ART_DEF_UNIT_MEMBER_PRIVATEER
+ART_DEF_UNIT_MEMBER_RIFLEMAN
+ART_DEF_UNIT_MEMBER_SCRAMBLE_FORCE_PUBLIQUE
+ART_DEF_UNIT_MEMBER_SCRAMBLE_FOREIGN_VOLUNTEERS
+ART_DEF_UNIT_MEMBER_SMOKEY_AIRSHIP_LEVEL_1
+ART_DEF_UNIT_MEMBER_SMOKEY_BLIMP
+ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_1
+ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_2
+ART_DEF_UNIT_MEMBER_SMOKEY_LANDSHIP_LEVEL_3
+ART_DEF_UNIT_MEMBER_TANK
+ART_DEF_UNIT_MEMBER_TRANSPORT
+ART_DEF_UNIT_MEMBER_U_AMERICAN_MINUTEMAN
+ART_DEF_UNIT_MEMBER_U_ASSYRIAN_SIEGE_TOWER
+ART_DEF_UNIT_MEMBER_U_AUSTRIAN_HUSSAR
+ART_DEF_UNIT_MEMBER_U_BRAZILIAN_PRACINHAS
+ART_DEF_UNIT_MEMBER_U_DUTCH_SEA_BEGGARS
+ART_DEF_UNIT_MEMBER_U_ENGLISH_SHIPOFTHELINE
+ART_DEF_UNIT_MEMBER_U_ETHIOPIA_MEHAL_SEFARI
+ART_DEF_UNIT_MEMBER_U_FRENCH_FOREIGNLEGION
+ART_DEF_UNIT_MEMBER_U_FRENCH_MUSKETEER
+ART_DEF_UNIT_MEMBER_U_GERMAN_PANZER
+ART_DEF_UNIT_MEMBER_U_HUNS_BATTERING_RAM
+ART_DEF_UNIT_MEMBER_U_KOREAN_TURTLESHIP
+ART_DEF_UNIT_MEMBER_U_MORROCAN_BERBER_CAVALRY
+ART_DEF_UNIT_MEMBER_U_OTTOMAN_JANISSARY
+ART_DEF_UNIT_MEMBER_U_PORTUGUESE_CARRACK
+ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK
+ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK_V2
+ART_DEF_UNIT_MEMBER_U_RUSSIAN_COSSACK_V3
+ART_DEF_UNIT_MEMBER_U_SHOSHONE_COMANCHE_RIDERS
+ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON
+ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_ARCABUCERO
+ART_DEF_UNIT_MEMBER_U_SWEDISH_CAROLEAN
+ART_DEF_UNIT_MEMBER_U_VENETIAN_GALLEASS
+ART_DEF_UNIT_MEMBER_UNION_CAVALRY_CARBINE
+ART_DEF_UNIT_MEMBER_UNION_CAVALRY_PISTOL
+ART_DEF_UNIT_MEMBER_UNION_IRONCLAD
+ART_DEF_UNIT_MEMBER_UNION_RIFLEMAN
+ART_DEF_UNIT_MEMBER_WW1_INFANTRY
+ART_DEF_UNIT_MEMBER_WW1_TANK
+ART_DEF_UNIT_MEMBER_WW2_INFANTRY
+ART_DEF_UNIT_MEMBER_XCOM_SQUAD
+ART_DEF_UNIT_MEMBER_XP_PRIVATEER
+
+Units
+UNIT_BARBARIAN_AXMAN
+
+
+
+
+
+
+==============================
+fxsxml
+==============================
+archer[,_v2,_v3]
+barbarian_archer[01,_v2,_v3]
+==============================
+
+
+
+-->
+
+
   
   
   

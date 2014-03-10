@@ -1,0 +1,137 @@
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1040">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1020">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2040">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="2020">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1500">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1520">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1580">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1420">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1400">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1440">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1990">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1195">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1995">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1280">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1285">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1290">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1200">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+    <event_track ec="1220">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerEffect" id="1" time="0.0240746252" duration="2" repeat="0" ec="1990" track="2" tier="0" event="ART_DEF_VEFFECT_CITY_BUILD_DUST_01" bone="WORLD_center" />
+    <trigger type="FTimedTriggerEffect" id="2" time="0" duration="0.534" repeat="0" ec="1400" track="2" tier="0" event="ART_DEF_VEFFECT_DUST_TRAIL_SM" bone="Horse" />
+    <trigger type="FTimedTriggerSound" id="3" time="0.5277778" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_FOOT_$(TERRAIN)" bone="" />
+    <trigger type="FTimedTriggerSound" id="4" time="0.8759259" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_FOOT_$(TERRAIN)" bone="" />
+    <trigger type="FTimedTriggerSound" id="5" time="0.09259259" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SETTLER_LLAMA" bone="" />
+    <trigger type="FTimedTriggerSound" id="6" time="0.0222222228" duration="0" repeat="0" ec="1400" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_RUN_$(TERRAIN)" bone="" />
+    <trigger type="FTimedTriggerSound" id="7" time="0.209259257" duration="0" repeat="0" ec="1400" track="1" tier="-1" event="AS3D_UNIT_SETTLER_COWBELL" bone="" />
+    <trigger type="FTimedTriggerSound" id="8" time="0.0481481478" duration="0" repeat="0" ec="1440" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_RUN_$(TERRAIN)" bone="" />
+    <trigger type="FTimedTriggerSound" id="9" time="0.333333343" duration="0" repeat="0" ec="1440" track="1" tier="-1" event="AS3D_UNIT_SETTLER_COWBELL" bone="" />
+    <trigger type="FTimedTriggerSound" id="10" time="0.76111114" duration="0" repeat="0" ec="1990" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_FOOT_$(TERRAIN)" bone="" />
+    <trigger type="FTimedTriggerSound" id="11" time="1.35" duration="0" repeat="0" ec="1990" track="1" tier="-1" event="AS3D_UNIT_SETTLER_HORSE_FOOT_$(TERRAIN)" bone="" />
+  </triggers>
+</trigger_system>

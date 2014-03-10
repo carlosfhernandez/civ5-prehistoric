@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/20/2014 10:46:07 AM -->
+<GameData>
+
+  <UnitClasses>
+
+    <Row>
+      <Type>UNITCLASS_SCOUT_TEST</Type>
+      <Description>Scout Original Copy Class</Description>
+      <DefaultUnit>UNIT_SCOUT_TEST</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_SCOUTDROMON</Type>
+      <Description>Scout Dromon Class</Description>
+      <DefaultUnit>UNIT_SCOUT_SCOUTDROMON</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_SCOUTCATAPULT</Type>
+      <Description>Scoutapult Class</Description>
+      <DefaultUnit>UNIT_SCOUTCATAPULT</DefaultUnit>
+    </Row>
+    <Row>
+      <Type>UNITCLASS_SCOUTSLINGER</Type>
+      <Description>Scout Slinger Class</Description>
+      <DefaultUnit>UNIT_SCOUTSLINGER</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_SCOUTATLALIST</Type>
+      <Description>Scout Atlalist Class</Description>
+      <DefaultUnit>UNIT_SCOUTATLALIST</DefaultUnit>
+    </Row>
+         <Row>
+      <Type>UNITCLASS_SCOUTTREBUCHET</Type>
+      <Description>Scout Trebuchet Class</Description>
+      <DefaultUnit>UNIT_SCOUTTREBUCHET</DefaultUnit>
+    </Row>
+    <!--
+ 
+    <Row>
+      <Type>UNITCLASS_SCOUT_TEST007</Type>
+      <Description>Scout Test Class 007</Description>
+      <DefaultUnit>UNIT_SCOUT_TEST007</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_SCOUT_TEST008</Type>
+      <Description>Scout Test Class 008</Description>
+      <DefaultUnit>UNIT_SCOUT_TEST008</DefaultUnit>
+    </Row> 
+    <Row>
+      <Type>UNITCLASS_SCOUT_TEST009</Type>
+      <Description>Scout Test Class 009</Description>
+      <DefaultUnit>UNIT_SCOUT_TEST009</DefaultUnit>
+    </Row>   
+
+    <Row>
+      <Type>UNITCLASS_SCOUTFIRE</Type>
+      <Description>Scoutfire Test Class</Description>
+      <DefaultUnit>UNIT_SCOUTFIRE</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_SCOUTAPULT</Type>
+      <Description>Scoutapult Test Class</Description>
+      <DefaultUnit>UNIT_SCOUTAPULT</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_FIRE_EATER</Type>
+      <Description>Fire Eater</Description>
+      <DefaultUnit>UNIT_FIRE_EATER</DefaultUnit>
+    </Row>
+    -->
+  </UnitClasses>
+
+  <Units>
+
+    <!-- Copied from civ assets exp2 -->    
+    <Row>
+      <Class>UNITCLASS_SCOUT_TEST</Class>
+      <Type>UNIT_SCOUT_TEST</Type>
+      <Combat>5</Combat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_RECON</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+      <Description>Scout Original Copy</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_TEST</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTDROMON</Class>
+      <Type>UNIT_SCOUTDROMON</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_RECON</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+      <Description>Scout Dromon</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTDROMON</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTCATAPULT</Class>
+      <Type>UNIT_SCOUTCATAPULT</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Catapult</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTCATAPULT</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>    
+
+    <Row>
+      <Class>UNITCLASS_SCOUTSLINGER</Class>
+      <Type>UNIT_SCOUTSLINGER</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Slinger</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTSLINGER</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTATLALIST</Class>
+      <Type>UNIT_SCOUTATLALIST</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Atlalist</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTATLALIST</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row> 
+
+    <Row>
+      <Class>UNITCLASS_SCOUTTREBUCHET</Class>
+      <Type>UNIT_SCOUTTREBUCHET</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Trebuchet</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTTREBUCHET</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row> 
+
+    <!--
+    <Row>
+      <Class>UNITCLASS_SCOUT_TEST007</Class>
+      <Type>UNIT_SCOUT_TEST007</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Test 007</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_TEST007</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row> 
+
+    <Row>
+      <Class>UNITCLASS_SCOUT_TEST008</Class>
+      <Type>UNIT_SCOUT_TEST008</Type>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Test 008</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_TEST008</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUT_TEST009</Class>
+      <Type>UNIT_SCOUT_TEST009</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Test 009</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUT_TEST009</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+
+    <Row>
+      <Class>UNITCLASS_SCOUTFIRE</Class>
+      <Type>UNIT_SCOUTFIRE</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>25</Cost>
+      <FaithCost>50</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scout Fire</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SCOUT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_SCOUT</Help>
+      <NoBadGoodies>true</NoBadGoodies>
+      <Pillage>true</Pillage>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <ObsoleteTech>TECH_SCIENTIFIC_THEORY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTFIRE</UnitArtInfo>
+      <UnitFlagIconOffset>5</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_SCOUTAPULT</Class>
+      <Type>UNIT_SCOUTAPULT</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>4</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Scoutapult</Description>
+      <Civilopedia>Scoutapult Pedia</Civilopedia>
+      <Strategy>Scoutapult Strategy</Strategy>
+      <Help>Scoutapult Help</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SCOUTAPULT</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>1</PortraitIndex>
+    </Row>    
+
+
+
+
+    <Row>
+      <Class>UNITCLASS_FIRE_EATER</Class>
+      <Type>UNIT_FIRE_EATER</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>4</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>Fire Eater</Description>
+      <Civilopedia>Fire Eater Pedia</Civilopedia>
+      <Strategy>Fire Eater Strategy</Strategy>
+      <Help>Fire Eater Help</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_FIRE_EATER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>1</PortraitIndex>
+    </Row>
+    -->
+
+  </Units>
+
+
+
+  <Unit_FreePromotions>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
+    </Row>   
+  </Unit_FreePromotions>
+
+  <Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_SCOUT_TEST</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>       
+  </Unit_AITypes>
+  
+  <Unit_ClassUpgrades>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+    </Row>    
+  </Unit_ClassUpgrades>
+
+  <Unit_Flavors>
+    <Row>
+      <UnitType>UNIT_SCOUT_TEST</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SCOUTSLINGER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+   
+  </Unit_Flavors>
+
+
+</GameData>

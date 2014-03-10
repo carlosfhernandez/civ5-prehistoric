@@ -5,7 +5,7 @@ GoodyHuts
 
 Copied from Expansion 2 with modifications. Potential problem with updates not 
 reflecting (e.g. new goody huts). At the same time, just modifying existing rows
-(e.g. deleting and/or editing) could pose a different problem with an update (new
+(e.g. deleting and/or edits) could pose a different problem with an update (new
 row) if there is, as an example, an overpowered attribute that doesn't play
 nice with prehistoric assumptions. 
 
@@ -19,12 +19,11 @@ nice with prehistoric assumptions.
 		<Delete/>
 		
 		<!-- 
-		TODO: [CFH] Change Goody Huts after certain era/tech is reached 
-		Goody Huts will eventaully yield different values depending on prehistoric era.
+		TODO: [CFH] Change Goody Huts after certain era/tech is reached Goody Huts 
+		will eventaully yield different values depending on prehistoric era.
 		-->
 		
-    
-		<Row>
+    <Row>
 			<ID>0</ID>
 			<Type>GOODY_WARRIOR</Type>
 			<Description>TXT_KEY_GOODY_WARRIOR</Description>
@@ -33,8 +32,9 @@ nice with prehistoric assumptions.
 		</Row>
 		
     <!-- 
-    TODO: [CFH] Delete was working, but rows were starting count at later numbers (e.g. 19), 
-    so hard-coding row IDs for now. 
+    TODO: [CFH] Delete was working, but rest of rows were starting count at 
+    later numbers (e.g. 19), so hard-coding row IDs for now. 
+		Anyone know?
     -->
     
 		<Row>
@@ -103,7 +103,7 @@ nice with prehistoric assumptions.
 			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<Bad>true</Bad>
-			<BarbarianUnitClass>UNITCLASS_CAVEMAN</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
+			<BarbarianUnitClass>UNITCLASS_AUTOCHTHON</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
 			<MinBarbarians>1</MinBarbarians>
 		</Row>
 		
@@ -113,7 +113,7 @@ nice with prehistoric assumptions.
 			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<Bad>true</Bad>
-			<BarbarianUnitClass>UNITCLASS_BERSERKER</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
+			<BarbarianUnitClass>UNITCLASS_CAVEMAN</BarbarianUnitClass> <!-- orig: UNITCLASS_WARRIOR -->
 			<MinBarbarians>2</MinBarbarians>
 		</Row>
 		

@@ -1,0 +1,16 @@
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1000">
+      <track id="1" name="Sound" />
+      <track id="2" name="Effect" />
+      <track id="3" name="Transfer" />
+      <track id="4" name="Action" />
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerEffect" id="1" time="0" duration="36.68" repeat="0" ec="1000" track="2" tier="0" event="ART_DEF_VEFFECT_PASTURE_PILLAGED_SMOKE_03" bone="FX_PillagedSmoke" />
+	<trigger type="FTimedTriggerSound" id="1" time="1.03125" duration="0" repeat="0" ec="1000" track="1" tier="0" event="AS3D_RESOURCE_ELEPHANT_VOX" bone=""/>
+    <trigger type="FTimedTriggerSound" id="5" time="14.514286" duration="0" repeat="0" ec="1000" track="1" tier="0" event="AS3D_RESOURCE_ELEPHANT_VOX" bone=""/>
+    <trigger type="FTimedTriggerSound" id="9" time="27.45982" duration="0" repeat="0" ec="1000" track="1" tier="0" event="AS3D_RESOURCE_ELEPHANT_VOX" bone=""/>
+  </triggers>
+</trigger_system>

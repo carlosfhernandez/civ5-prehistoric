@@ -1,0 +1,303 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Michael Curran (Firaxis Games) -->
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1000">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1040">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1120">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1160">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1200">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1280">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1400">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1440">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1520">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1560">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1600">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1640">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1800">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2000">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2040">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2200">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1290">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1020">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1100">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1140">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1220">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1420">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1500">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1540">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1580">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1620">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2020">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2100">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2220">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1285">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1110">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1450">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2440">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1180">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerSound" id="8" time="0.309333" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="17" time="0.058667" duration="0" repeat="0" ec="1800" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_VICTORY_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerTransfer" id="58" time="0.5796291" duration="0" repeat="0" ec="1160" track="3" tier="0" refid="57" speed="41.5146" tangent.x="-0.130553931" tangent.y="-0.9846986" tangent.z="0.115430862"/>
+    <trigger type="FTimedTriggerSound" id="3" time="0.624" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="44" time="0.311111" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_BONES_RATTLE_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="53" time="0.327063" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="30" time="0.385185" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="39" time="0.390897" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_ATTACK_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="48" time="0.392949" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_WARRIOR_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerSound" id="25" time="0.103700362" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_IMPACT_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="34" time="0.408889" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_WARRIOR_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="11" time="0" duration="0" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_BLUNT_HIT_MD" bone="Base HumanSpine2"/>
+    <trigger type="FTimedTriggerSound" id="20" time="0.318681" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_BONES_RATTLE" bone=""/>
+    <trigger type="FTimedTriggerSound" id="6" time="0.281482" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="47" time="0.696386" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_DROP" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="56" time="0.340741" duration="0.333333" repeat="0" ec="2100" track="2" tier="0" event="ART_DEF_VEFFECT_UNIT_CLUB_TRAIL_01" bone="bone_CLUB"/>
+    <trigger type="FTimedTriggerSound" id="1" time="0.645783" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_STAFF_DIRT" bone=""/>
+    <trigger type="FTimedTriggerAction" id="65" time="0.474075" duration="0" repeat="0" ec="1140" track="4" tier="0" action="1"/>
+    <trigger type="FTimedTriggerSound" id="42" time="0.437037" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_HAND" bone=""/>
+    <trigger type="FTimedTriggerSound" id="28" time="0.576" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="37" time="0.642667" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="23" time="0.5269464" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_HAND" bone=""/>
+    <trigger type="FTimedTriggerSound" id="9" time="0.104119785" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_DEATH_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="18" time="0.18824622" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="59" time="0.628094852" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH" bone=""/>
+    <trigger type="FTimedTriggerSound" id="4" time="0.12275701" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_IMPACT_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="45" time="0.259259" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_ATTACK_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="54" time="0.414815" duration="0.1" repeat="0" ec="1140" track="2" tier="0" event="ART_DEF_VEFFECT_UNIT_CLUB_TRAIL_01" bone="bone_CLUB"/>
+    <trigger type="FTimedTriggerSound" id="40" time="0.333656" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0.607407" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_BONES_RATTLE_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="26" time="0.419048" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_WARRIOR_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerSound" id="35" time="0.531061232" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_STAFF_DIRT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="12" time="0.6170204" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_BODY_FALL_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="21" time="0.613333" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="7" time="0.018667" duration="0" repeat="0" ec="1800" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="16" time="0.123287484" duration="0" repeat="0" ec="1500" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FORTIFY_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="57" time="0.185185" duration="0.41" repeat="0" ec="1160" track="2" tier="0" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="Base HumanRPalm"/>
+    <trigger type="FTimedTriggerSound" id="2" time="0.645783" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_DROP" bone=""/>
+    <trigger type="FTimedTriggerSound" id="43" time="0.125349641" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_DEATH_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="52" time="0.019277" duration="0" repeat="0" ec="1800" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_HAND" bone=""/>
+    <trigger type="FTimedTriggerSound" id="29" time="0.00740741473" duration="0" repeat="0" ec="1500" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FORTIFY" bone=""/>
+    <trigger type="FTimedTriggerSound" id="38" time="0.681928" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_CLUB_HAND" bone=""/>
+    <trigger type="FTimedTriggerSound" id="15" time="0.277333" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="33" time="0.2518507" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="10" time="0.340741" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="19" time="0.2" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_ATTACK_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="46" time="0.413298" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="55" time="0.407407" duration="0.166667" repeat="0" ec="1100" track="2" tier="0" event="ART_DEF_VEFFECT_UNIT_CLUB_TRAIL_01" bone="bone_CLUB"/>
+    <trigger type="FTimedTriggerAction" id="64" time="0.474074" duration="0" repeat="0" ec="2100" track="4" tier="0" action="1"/>
+    <trigger type="FTimedTriggerSound" id="41" time="0.274074" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="50" time="0.153741121" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="36" time="0.621978" duration="0" repeat="0" ec="1120" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_SHELLS_RATTLE" bone=""/>
+    <trigger type="FTimedTriggerSound" id="13" time="0.437037" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_BODY_FALL_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="22" time="0" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_BLUNT_HIT_MD" bone="Base HumanSpine2"/>
+    <trigger type="FTimedTriggerSound" id="61" time="0" duration="1" repeat="0" ec="2100" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T1_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="61" time="0.00102040812" duration="1" repeat="0" ec="2100" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T2_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="61" time="0" duration="1" repeat="0" ec="2100" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="61" time="0" duration="1" repeat="0" ec="2100" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0" duration="1" repeat="0" ec="1100" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T1_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0.00306122447" duration="1" repeat="0" ec="1100" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T2_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0" duration="1" repeat="0" ec="1100" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0.00102040812" duration="1" repeat="0" ec="1100" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="62" time="0.00102040812" duration="0" repeat="0" ec="1120" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_RUN_CHRG_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="63" time="0" duration="1" repeat="0" ec="1140" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T1_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="63" time="0.00612244848" duration="1" repeat="0" ec="1140" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BAT_AMB_T2_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="63" time="0.00510204071" duration="1" repeat="0" ec="1140" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="63" time="0" duration="1" repeat="0" ec="1140" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_BATTLE_AMB_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="62" time="0.00204081624" duration="0" repeat="0" ec="1120" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_RUN_CHRG_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="44" time="0" duration="0.67" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_T1_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="44" time="0.00102040812" duration="0.67" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_T2_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerAction" id="63" time="0.488889" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1"/>
+    <trigger type="FTimedTriggerEffect" id="27" time="0.185185" duration="0.41" repeat="0" ec="1180" track="2" tier="0" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="Base HumanRPalm"/>
+    <trigger type="FTimedTriggerTransfer" id="70" time="0.577777267" duration="0" repeat="0" ec="1180" track="3" tier="0" refid="27" speed="41.5146" tangent.x="-0.138352275" tangent.y="-0.97794807" tangent.z="0.156448454"/>
+    <trigger type="FTimedTriggerSound" id="75" time="0" duration="0" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_RUN_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="76" time="0" duration="0" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_RUN_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="77" time="0" duration="0.67" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_RUN_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="78" time="0" duration="0.67" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_RUN_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="5" time="0.366666734" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="14" time="0.43888852" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="24" time="0.4388888" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FORTIFY_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="31" time="0.294444472" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="32" time="0.67592597" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="51" time="0.6592593" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_BARBARIAN_EURO_FORTIFY_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="60" time="0.5222221" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_ATTACK_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="60" time="0.5222221" duration="0" repeat="0" ec="1160" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="60" time="0.5222221" duration="0" repeat="0" ec="1160" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="71" time="0.5055555" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_SWORD_SWING_LOW" bone=""/>
+    <trigger type="FTimedTriggerSound" id="72" time="0.6336505" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH" bone=""/>
+    <trigger type="FTimedTriggerSound" id="73" time="0.509259164" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_ATTACK_VOX_BARB" bone=""/>
+    <trigger type="FTimedTriggerSound" id="73" time="0.509259164" duration="0" repeat="0" ec="1180" track="1" tier="1" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="73" time="0.509259164" duration="0" repeat="0" ec="1180" track="1" tier="2" event="AS3D_UNIT_BARBARIAN_EURO_THROW_TORCH_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="74" time="0.525925934" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_BARBARIAN_EURO_SWORD_SWING_LOW" bone=""/>
+  </triggers>
+</trigger_system>

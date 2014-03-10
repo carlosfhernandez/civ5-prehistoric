@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+  <UnitClasses>
+    <Row>
+      <Type>UNITCLASS_PREHISTORIC_ANIMAL</Type>
+      <Description>TXT_KEY_UNIT_PREHISTORIC_ANIMAL_TITLE</Description>
+      <DefaultUnit>UNIT_AUROCH</DefaultUnit>
+    </Row> 
+  </UnitClasses>  
+  
+  <Units>
+    
+    <Row>
+      <Class>UNITCLASS_PREHISTORIC_ANIMAL</Class>
+      <Type>UNIT_AUROCH</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>22</Combat>
+      <Cost>120</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AUROCH_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_AUROCH_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AUROCH_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AUROCH_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVALRY</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_AUROCH</UnitArtInfo>
+      <UnitFlagIconOffset>28</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+      <MoveRate>PHANT</MoveRate>
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_PREHISTORIC_ANIMAL</Class>
+      <Type>UNIT_CAMELEDON</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>22</Combat>
+      <Cost>120</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_CAMELEDON_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_CAMELEDON_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_CAMELEDON_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_CAMELEDON_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVALRY</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_CAMELEDON</UnitArtInfo>
+      <UnitFlagIconOffset>28</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+      <MoveRate>PHANT</MoveRate> <!-- QUADRUPED -->
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_PREHISTORIC_ANIMAL</Class>
+      <Type>UNIT_KONG</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>22</Combat>
+      <Cost>120</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_KONG_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_KONG_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_KONG_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_KONG_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVALRY</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_KONG</UnitArtInfo>
+      <UnitFlagIconOffset>28</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+      <MoveRate>PHANT</MoveRate> <!-- QUADRUPED -->
+    </Row>
+
+    <Row>
+      <Class>UNITCLASS_PREHISTORIC_ANIMAL</Class>
+      <Type>UNIT_LLAMOS</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>22</Combat>
+      <Cost>120</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_LLAMOS_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_LLAMOS_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_LLAMOS_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_LLAMOS_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVALRY</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_LLAMOS</UnitArtInfo>
+      <UnitFlagIconOffset>28</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+      <MoveRate>PHANT</MoveRate> <!-- QUADRUPED -->
+    </Row>  
+
+    <Row>
+      <Class>UNITCLASS_PREHISTORIC_ANIMAL</Class>
+      <Type>UNIT_MAMMOTH</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>22</Combat>
+      <Cost>120</Cost>
+      <Moves>2</Moves>
+      <CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_MAMMOTH_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_MAMMOTH_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_MAMMOTH_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_MAMMOTH_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MILITARY_SCIENCE</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVALRY</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>25</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_MAMMOTH</UnitArtInfo>
+      <UnitFlagIconOffset>28</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+      <MoveRate>PHANT</MoveRate> <!-- QUADRUPED -->
+    </Row>
+
+  </Units>
+
+  <Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+    </Row>
+  </Unit_AITypes>
+
+  <!--
+  <UnitBuilds>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
+    </Row>
+  </UnitBuilds>
+  -->
+
+  <Unit_Flavors>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Unit_Flavors>
+
+  <Unit_FreePromotions>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <PromotionType>PROMOTION_ANTI_MOUNTED_I</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUROCH</UnitType>
+      <PromotionType>PROMOTION_CITY_PENALTY</PromotionType>
+    </Row>    
+  </Unit_FreePromotions>
+
+
+
+  <Language_en_US>
+
+
+    <Row Tag="TXT_KEY_UNIT_PREHISTORIC_ANIMAL_TITLE">
+      <Text>Animal</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_UNIT_AUROCH_DESC">
+      <Text>Auroch</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUROCH_PEDIA">
+      <Text>Auroch Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUROCH_STRATEGY">
+      <Text>Auroch Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AUROCH_HELP">
+      <Text>Auroch Help</Text>
+    </Row>  
+
+
+    <Row Tag="TXT_KEY_UNIT_CAMELEDON_DESC">
+      <Text>Cameledon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAMELEDON_PEDIA">
+      <Text>Cameledon Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAMELEDON_STRATEGY">
+      <Text>Cameledon Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAMELEDON_HELP">
+      <Text>Cameledon Help</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_KONG_DESC">
+      <Text>Kong</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KONG_PEDIA">
+      <Text>Kong Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KONG_STRATEGY">
+      <Text>Kong Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KONG_HELP">
+      <Text>Kong Help</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_LLAMOS_DESC">
+      <Text>Llamos</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LLAMOS_PEDIA">
+      <Text>Llamos Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LLAMOS_STRATEGY">
+      <Text>Llamos Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LLAMOS_HELP">
+      <Text>Llamos Help</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_MAMMOTH_DESC">
+      <Text>Mammoth</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_MAMMOTH_PEDIA">
+      <Text>Mammoth Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_MAMMOTH_STRATEGY">
+      <Text>Mammoth Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_MAMMOTH_HELP">
+      <Text>Mammoth Help</Text>
+    </Row>        
+
+  </Language_en_US> 
+
+
+
+</GameData>

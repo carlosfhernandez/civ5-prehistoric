@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_OAF_ARCHER</Type>
+			<Description>TXT_KEY_UNIT_OAF_ARCHER_TITLE</Description>
+			<DefaultUnit>UNIT_OAF_ARCHER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_OAF_ARCHER</Class>
+			<Type>UNIT_OAF_ARCHER</Type>
+			<PrereqTech>TECH_FIRE</PrereqTech>
+			<Combat>1</Combat>
+			<RangedCombat>5</RangedCombat>
+			<Cost>24</Cost>
+			<Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+			<Range>1</Range>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_OAF_ARCHER_DESC</Description>
+			<Civilopedia>TXT_KEY_UNIT_OAF_ARCHER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_OAF_ARCHER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_OAF_ARCHER_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>15</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_OAF_ARCHER</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+			<UnitFlagIconOffset>1</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>10</PortraitIndex>
+		</Row>
+	</Units>
+  
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+  
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+  
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+  
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_OAF_ARCHER</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+  
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_OAF_ARCHER_TITLE">
+      <Text>Oaf Archer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OAF_ARCHER_DESC">
+      <Text>Oaf Archer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OAF_ARCHER_PEDIA">
+      <Text>Oaf Archer Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OAF_ARCHER_STRATEGY">
+      <Text>Oaf Archer Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OAF_ARCHER_HELP">
+      <Text>Oaf Archer Help</Text>
+    </Row>    
+  </Language_en_US> 
+
+</GameData>

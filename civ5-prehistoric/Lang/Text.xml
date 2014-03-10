@@ -9,9 +9,8 @@
       <Set Text="Husbandry" />
       <Where Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_TITLE" />      
     </Update>
-    
-    
-    
+
+
 		<Update>
 			<Set Text="Prehistoric Era" />
 			<Where Tag="TXT_KEY_ERA_0" />
@@ -19,86 +18,156 @@
 		<Update>
 			<Set Text="Prehistoric" />
 			<Where Tag="TXT_KEY_ERA_0_SHORT" />
-		</Update>		
-		
+		</Update>	
 		<Update>
-			<Set Text="Ancient Era" />
+			<Set Text="Prehistoric" />
+			<Where Tag="TXT_KEY_ERA_0_ABBREV" />
+		</Update>	
+
+		<Update>
+			<Set Text="Lower Paleolithic Era" />
 			<Where Tag="TXT_KEY_ERA_1" />
 		</Update>
 		<Update>
-			<Set Text="Ancient" />
+			<Set Text="Lower Paleolithic" />
 			<Where Tag="TXT_KEY_ERA_1_SHORT" />
-		</Update>
+		</Update>	
+		<Update>
+			<Set Text="Lower Paleolithic" />
+			<Where Tag="TXT_KEY_ERA_1_ABBREV" />
+		</Update>	
 
 		<Update>
-			<Set Text="Classical Era" />
+			<Set Text="Paleolithic Era" />
 			<Where Tag="TXT_KEY_ERA_2" />
 		</Update>
 		<Update>
-			<Set Text="Classical" />
+			<Set Text="Paleolithic" />
 			<Where Tag="TXT_KEY_ERA_2_SHORT" />
-		</Update>		
-		
+		</Update>	
 		<Update>
-			<Set Text="Medieval Era" />
+			<Set Text="Paleolithic" />
+			<Where Tag="TXT_KEY_ERA_2_ABBREV" />
+		</Update>	
+
+		<Update>
+			<Set Text="Neolithic Era" />
 			<Where Tag="TXT_KEY_ERA_3" />
 		</Update>
 		<Update>
-			<Set Text="Medieval" />
+			<Set Text="Neolithic" />
 			<Where Tag="TXT_KEY_ERA_3_SHORT" />
-		</Update>
+		</Update>	
+		<Update>
+			<Set Text="Neolithic" />
+			<Where Tag="TXT_KEY_ERA_3_ABBREV" />
+		</Update>	
 
 		<Update>
-			<Set Text="Renaissance Era" />
+			<Set Text="Ancient Era" />
 			<Where Tag="TXT_KEY_ERA_4" />
 		</Update>
 		<Update>
-			<Set Text="Renaissance" />
+			<Set Text="Ancient" />
 			<Where Tag="TXT_KEY_ERA_4_SHORT" />
-		</Update>		
+		</Update>
+		<Update>
+			<Set Text="Ancient" />
+			<Where Tag="TXT_KEY_ERA_4_ABBREV" />
+		</Update>			
+
+		<Update>
+			<Set Text="Classical Era" />
+			<Where Tag="TXT_KEY_ERA_5" />
+		</Update>
+		<Update>
+			<Set Text="Classical" />
+			<Where Tag="TXT_KEY_ERA_5_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="Classical" />
+			<Where Tag="TXT_KEY_ERA_5_ABBREV" />
+		</Update>			
 		
 		<Update>
-			<Where Tag="TXT_KEY_ERA_5" />
+			<Set Text="Medieval Era" />
+			<Where Tag="TXT_KEY_ERA_6" />
+		</Update>
+		<Update>
+			<Set Text="Medieval" />
+			<Where Tag="TXT_KEY_ERA_6_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="Medieval" />
+			<Where Tag="TXT_KEY_ERA_6_ABBREV" />
+		</Update>		
+
+		<Update>
+			<Set Text="Renaissance Era" />
+			<Where Tag="TXT_KEY_ERA_7" />
+		</Update>
+		<Update>
+			<Set Text="Renaissance" />
+			<Where Tag="TXT_KEY_ERA_7_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="Renaissance" />
+			<Where Tag="TXT_KEY_ERA_7_ABBREV" />
+		</Update>	
+		
+		<Update>
+			<Where Tag="TXT_KEY_ERA_8" />
 			<Set Text="Industrial Era" />
 		</Update>
 		<Update>
-			<Where Tag="TXT_KEY_ERA_5_SHORT" />
+			<Where Tag="TXT_KEY_ERA_8_SHORT" />
 			<Set Text="Industrial" />
 		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_ERA_8_ABBREV" />
+			<Set Text="Industrial" />
+		</Update>		
 
 		<Update>
-			<Where Tag="TXT_KEY_ERA_6" />
+			<Where Tag="TXT_KEY_ERA_9" />
 			<Set Text="Modern Era" />
 		</Update>
 		<Update>
-			<Where Tag="TXT_KEY_ERA_6_SHORT" />
+			<Where Tag="TXT_KEY_ERA_9_SHORT" />
 			<Set Text="Modern" />
 		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_ERA_9_ABBREV" />
+			<Set Text="Modern" />
+		</Update>		
 
 		<Update>
-			<Where Tag="TXT_KEY_ERA_7" />
+			<Where Tag="TXT_KEY_ERA_10" />
 			<Set Text="Atomic Era" />
 		</Update>
 		<Update>
-			<Where Tag="TXT_KEY_ERA_7_SHORT" />
+			<Where Tag="TXT_KEY_ERA_10_SHORT" />
 			<Set Text="Atomic" />
 		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_ERA_10_ABBREV" />
+			<Set Text="Atomic" />
+		</Update>		
 
 		<Row>
-			<Tag>TXT_KEY_ERA_8</Tag>
+			<Tag>TXT_KEY_ERA_11</Tag>
 			<Text>Information Era</Text>
 		</Row>
 
 		<Row>
-			<Tag>TXT_KEY_ERA_8_SHORT</Tag>
-			<Text>Information Era</Text>
+			<Tag>TXT_KEY_ERA_11_SHORT</Tag>
+			<Text>Information</Text>
 		</Row>
 
 		<Row>
-			<Tag>TXT_KEY_ERA_8_ABBREV</Tag>
-			<Text>VIII</Text>
+			<Tag>TXT_KEY_ERA_11_ABBREV</Tag>
+			<Text>Information</Text>
 		</Row>
-
 
 	</Language_en_US>
 	

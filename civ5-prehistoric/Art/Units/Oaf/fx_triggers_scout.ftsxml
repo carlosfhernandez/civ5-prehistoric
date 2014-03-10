@@ -1,0 +1,282 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Michael Curran (Firaxis Games) -->
+<trigger_system type="FGrannyTimedTriggerSystem">
+  <event_tracks>
+    <event_track ec="1000">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1040">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1120">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1200">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1280">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1400">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1440">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1520">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1560">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1600">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1640">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1800">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2000">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2040">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2200">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1290">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1020">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1100">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1140">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1220">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1420">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1500">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1540">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1580">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1620">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2020">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2100">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2220">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1285">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1160">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1450">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="2440">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+    <event_track ec="1180">
+      <track id="1" name="Sound"/>
+      <track id="2" name="Effect"/>
+      <track id="3" name="Transfer"/>
+      <track id="4" name="Action"/>
+    </event_track>
+  </event_tracks>
+  <triggers>
+    <trigger type="FTimedTriggerSound" id="8" time="0.0148146" duration="0" repeat="0" ec="1800" track="1" tier="0" event="AS3D_UNIT_SCOUT_CLUB_HAND2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="3" time="0.125926" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerAction" id="44" time="0.562963" duration="0" repeat="0" ec="2100" track="4" tier="0" action="1"/>
+    <trigger type="FTimedTriggerSound" id="39" time="0.129629314" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_DEATH_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="25" time="0.001" duration="0" repeat="0" ec="1800" track="1" tier="-1" event="AS3D_UNIT_SCOUT_VICTORY_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="11" time="0.288889" duration="0" repeat="0" ec="1500" track="1" tier="0" event="AS3D_UNIT_SCOUT_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="20" time="0.733334" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_SCOUT_WOOD_POLE_DROP" bone=""/>
+    <trigger type="FTimedTriggerSound" id="1" time="0.703704" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_SCOUT_CLUB_DROP" bone=""/>
+    <trigger type="FTimedTriggerSound" id="28" time="0.474074" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="37" time="0.100814454" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_DEATH_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="14" time="0.319407" duration="0" repeat="0" ec="1500" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FORTIFY_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="32" time="0.303704" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_SCOUT_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="18" time="0.725926" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_BODY_FALL_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="40" time="0.225703731" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_SCOUT_STAFF_DIRT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="26" time="0.059259" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_SCOUT_LEATHER_CREAK_SHORT_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="35" time="0.881482" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_SCOUT_WOOD_POLE_DROP" bone=""/>
+    <trigger type="FTimedTriggerSound" id="12" time="0" duration="0" repeat="0" ec="1500" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FORTIFY" bone=""/>
+    <trigger type="FTimedTriggerSound" id="21" time="0.10555511" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_IMPACT_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="7" time="0.124073751" duration="0" repeat="0" ec="1200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_IMPACT_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="16" time="0.481481" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_SCOUT_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="2" time="0" duration="0" repeat="0" ec="2200" track="2" tier="0" event="ART_DEF_VEFFECT_BLUNT_HIT_MD" bone="Base HumanSpine2"/>
+    <trigger type="FTimedTriggerAction" id="43" time="0.548148" duration="0" repeat="0" ec="1100" track="4" tier="0" action="1"/>
+    <trigger type="FTimedTriggerSound" id="29" time="0.22963" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="24" time="0.503704" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_SCOUT_ATTACK_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="10" time="0" duration="0" repeat="0" ec="1200" track="2" tier="0" event="ART_DEF_VEFFECT_BLUNT_HIT_SM" bone="Base HumanSpine2"/>
+    <trigger type="FTimedTriggerSound" id="19" time="0.155554861" duration="0" repeat="0" ec="1200" track="1" tier="0" event="AS3D_UNIT_SCOUT_LEATHER_CREAK_SHORT" bone=""/>
+    <trigger type="FTimedTriggerSound" id="5" time="0.096296" duration="0" repeat="0" ec="1400" track="1" tier="0" event="AS3D_UNIT_SCOUT_CLUB_HAND2_RUN" bone=""/>
+    <trigger type="FTimedTriggerSound" id="41" time="0.466667" duration="0" repeat="0" ec="1100" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="27" time="0.896297" duration="0" repeat="0" ec="2200" track="1" tier="0" event="AS3D_UNIT_SCOUT_CLUB_DROP" bone=""/>
+    <trigger type="FTimedTriggerSound" id="36" time="0.881482" duration="0" repeat="0" ec="2200" track="1" tier="-1" event="AS3D_UNIT_SCOUT_BODY_FALL_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="13" time="0.355556" duration="0" repeat="0" ec="1500" track="1" tier="0" event="AS3D_UNIT_SCOUT_CLUB_HAND" bone=""/>
+    <trigger type="FTimedTriggerSound" id="22" time="0.422222167" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_SCOUT_ATTACK_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="33" time="0.5629633" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_SCOUT_ATTACK_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="44" time="0" duration="0.6666667" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_SCOUT_T1_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="44" time="0" duration="0.6666667" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_SCOUT_T2_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="34" time="0.381481558" duration="0.17" repeat="0" ec="2100" track="2" tier="0" event="ART_DEF_VEFFECT_UNIT_STAFF_TRAIL_01" bone="bone_STAFF_high"/>
+    <trigger type="FTimedTriggerSound" id="42" time="0" duration="0.6666667" repeat="0" ec="1100" track="1" tier="1" event="AS3D_UNIT_SCOUT_RUN_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="45" time="0" duration="0.6666667" repeat="0" ec="1100" track="1" tier="2" event="AS3D_UNIT_SCOUT_RUN_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="46" time="0" duration="0.6666667" repeat="0" ec="1100" track="1" tier="1" event="AS3D_UNIT_SCOUT_T1_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="47" time="0" duration="0.6666667" repeat="0" ec="1100" track="1" tier="2" event="AS3D_UNIT_SCOUT_T2_RUN_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="52" time="0.459259361" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="53" time="0.890740752" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_SCOUT_FOOT_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="54" time="0.5277777" duration="0" repeat="0" ec="1140" track="1" tier="0" event="AS3D_UNIT_SCOUT_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerSound" id="55" time="0" duration="1.00555551" repeat="0" ec="1140" track="1" tier="1" event="AS3D_UNIT_SPEARMAN_BAT_AMB_T1_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="56" time="0.00185184972" duration="1.00555551" repeat="0" ec="1140" track="1" tier="2" event="AS3D_UNIT_SPEARMAN_BAT_AMB_T2_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="57" time="0" duration="0.6666667" repeat="0" ec="1120" track="1" tier="1" event="AS3D_UNIT_SCOUT_RUN_CHRG_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="58" time="0" duration="0.6666667" repeat="0" ec="1120" track="1" tier="2" event="AS3D_UNIT_SCOUT_RUN_CHRG_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="59" time="0" duration="1.00555551" repeat="0" ec="1140" track="1" tier="1" event="AS3D_UNIT_SCOUT_BATTLE_AMB_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="60" time="0" duration="1.00555551" repeat="0" ec="1140" track="1" tier="2" event="AS3D_UNIT_SCOUT_BATTLE_AMB_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="61" time="0" duration="0.6666667" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_SCOUT_RUN_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="62" time="0" duration="0.6666667" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_SCOUT_RUN_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="63" time="0.725926" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="64" time="0.287037015" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="65" time="0.701851964" duration="0" repeat="0" ec="1600" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FORTIFY_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="66" time="0.272222251" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="67" time="0.2722223" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FORTIFY_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="68" time="0.3092592" duration="0" repeat="0" ec="1280" track="1" tier="-1" event="AS3D_UNIT_SCOUT_FOOT_ALWAYS_$(TERRAIN)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="69" time="0" duration="1.00555551" repeat="0" ec="2100" track="1" tier="1" event="AS3D_UNIT_SCOUT_BAT_AMB_T1_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="70" time="0" duration="1.00555551" repeat="0" ec="2100" track="1" tier="2" event="AS3D_UNIT_SCOUT_BAT_AMB_T2_$(WEAPON)" bone=""/>
+    <trigger type="FTimedTriggerSound" id="71" time="0" duration="1.00555551" repeat="0" ec="2100" track="1" tier="1" event="AS3D_UNIT_SCOUT_BATTLE_AMB_VOX_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="78" time="0.562962949" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_SCOUT_ATTACK_VOX_G" bone=""/>
+    <trigger type="FTimedTriggerSound" id="79" time="0.399999946" duration="0" repeat="0" ec="2100" track="1" tier="0" event="AS3D_UNIT_SCOUT_SWORD_SWING" bone=""/>
+    <trigger type="FTimedTriggerSound" id="80" time="0" duration="0" repeat="0" ec="2100" track="1" tier="2" event="AS3D_UNIT_SCOUT_BATTLE_AMB_VOX_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="6" time="0" duration="0" repeat="0" ec="1400" track="1" tier="1" event="AS3D_UNIT_SCOUT_RUN_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="9" time="0" duration="0" repeat="0" ec="1400" track="1" tier="2" event="AS3D_UNIT_SCOUT_RUN_T2" bone=""/>
+    <trigger type="FTimedTriggerEffect" id="17" time="0.08333332" duration="0.56" repeat="0" ec="1180" track="2" tier="0" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="Base HumanRPalm"/>
+    <trigger type="FTimedTriggerEffect" id="23" time="0.08333332" duration="0.56" repeat="0" ec="1160" track="2" tier="0" event="ART_DEF_VEFFECT_MELEE_TORCH_PROJECTILE" bone="Base HumanRPalm"/>
+    <trigger type="FTimedTriggerTransfer" id="30" time="0.6333333" duration="0" repeat="0" ec="1180" track="3" tier="0" refid="17" speed="0" tangent.x="0.256407171" tangent.y="-0.9349204" tangent.z="0.245314345"/>
+    <trigger type="FTimedTriggerTransfer" id="31" time="0.6333333" duration="0" repeat="0" ec="1160" track="3" tier="0" refid="23" speed="0" tangent.x="0.256407171" tangent.y="-0.9349204" tangent.z="0.245314345"/>
+    <trigger type="FTimedTriggerSound" id="4" time="0.562963" duration="0" repeat="0" ec="1160" track="1" tier="1" event="AS3D_UNIT_SCOUT_THROW_TORCH_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="15" time="0.562963" duration="0" repeat="0" ec="1160" track="1" tier="2" event="AS3D_UNIT_SCOUT_THROW_TORCH_T2" bone=""/>
+    <trigger type="FTimedTriggerSound" id="38" time="0.5833335" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_SCOUT_SWORD_SWING_LOW" bone=""/>
+    <trigger type="FTimedTriggerSound" id="48" time="0.8925928" duration="0" repeat="0" ec="1160" track="1" tier="0" event="AS3D_UNIT_SCOUT_THROW_TORCH" bone=""/>
+    <trigger type="FTimedTriggerSound" id="49" time="0.5833335" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_SCOUT_SWORD_SWING_LOW" bone=""/>
+    <trigger type="FTimedTriggerSound" id="50" time="0.8870372" duration="0" repeat="0" ec="1180" track="1" tier="0" event="AS3D_UNIT_SCOUT_THROW_TORCH" bone=""/>
+    <trigger type="FTimedTriggerSound" id="51" time="0.562963" duration="0" repeat="0" ec="1180" track="1" tier="1" event="AS3D_UNIT_SCOUT_THROW_TORCH_T1" bone=""/>
+    <trigger type="FTimedTriggerSound" id="72" time="0.562963" duration="0" repeat="0" ec="1180" track="1" tier="2" event="AS3D_UNIT_SCOUT_THROW_TORCH_T2" bone=""/>
+  </triggers>
+</trigger_system>

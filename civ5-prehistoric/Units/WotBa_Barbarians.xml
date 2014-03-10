@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/15/2012 8:17:08 AM -->
+<GameData>
+
+<!--Barbarians More Strong-->
+
+	<Improvements>
+		<Update>
+			<Where Type="IMPROVEMENT_BARBARIAN_CAMP"/>
+			<Set>
+				<DefenseModifier>50</DefenseModifier>
+			</Set>
+		</Update>
+	</Improvements>
+
+	<Defines>
+		<Update>
+			<Where Name="MAX_BARBARIANS_FROM_CAMP_NEARBY"/>
+			<Set>
+				<Value>3</Value>
+			</Set>
+		</Update>
+		<Update>
+			<Where Name="BARBARIAN_CAMP_ODDS_OF_NEW_CAMP_SPAWNING"/>
+			<Set>
+				<Value>2</Value>	<!--2-->
+			</Set>
+		</Update>
+		<Update>
+			<Where Name="BARBARIAN_EXTRA_RAGING_UNIT_SPAWN_CHANCE"/>
+			<Set>
+				<Value>25</Value>	<!--10-->
+			</Set>
+		</Update>
+		<Update>
+			<Where Name="BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP"/>
+			<Set>
+				<Value>5</Value>	<!--7-->
+			</Set>
+		</Update>
+	</Defines>
+
+	<HandicapInfos>
+		<Update>
+			<Where Type="HANDICAP_PRINCE"/>
+			<Set>
+				<BarbarianBonus>20</BarbarianBonus>
+				<AIBarbarianBonus>40</AIBarbarianBonus>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="HANDICAP_KING"/>
+			<Set>
+				<BarbarianBonus>10</BarbarianBonus>
+				<AIBarbarianBonus>30</AIBarbarianBonus>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="HANDICAP_EMPEROR"/>
+			<Set>
+				<BarbarianBonus>0</BarbarianBonus>
+				<AIBarbarianBonus>20</AIBarbarianBonus>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="HANDICAP_IMMORTAL"/>
+			<Set>
+				<BarbarianBonus>0</BarbarianBonus>
+				<AIBarbarianBonus>20</AIBarbarianBonus>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="HANDICAP_DEITY"/>
+			<Set>
+				<BarbarianBonus>0</BarbarianBonus>
+				<AIBarbarianBonus>20</AIBarbarianBonus>
+			</Set>
+		</Update>
+	</HandicapInfos>
+	
+	
+<!--barbarian units-->
+
+	<!--BARBARIAN Civilization_UnitClassOverrides-->
+
+	<Civilization_UnitClassOverrides>
+		<Delete CivilizationType="CIVILIZATION_BARBARIAN"/>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_WORKBOAT</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_ARTIST</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_SCIENTIST</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_MERCHANT</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_ENGINEER</UnitClassType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<!--BRUTE-->
+
+	<Units>
+		<Delete Type="UNIT_BARBARIAN_WARRIOR" />
+	</Units>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_WARRIOR</Class>
+			<Type>UNIT_BARBARIAN_WARRIOR</Type>
+			<Combat>6</Combat>
+			<Cost>20</Cost>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BRUTE</Description>
+			<Civilopedia>TXT_KEY_CIV5_BARBARIANS_TEXT</Civilopedia>
+			<Help>TXT_KEY_UNIT_HELP_BARBARIAN_WARRIOR</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<Conscription>1</Conscription>
+			<UnitArtInfo>ART_DEF_UNIT_BARBARIAN_EURO</UnitArtInfo>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>25</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+			<UnitFlagAtlas>WotBA_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+		</Row>
+	</Units>
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WARRIOR</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_BARBARIAN_WARRIOR"/>
+			<Set Text="The Barbarian's military Unit."/>
+		</Update>
+	</Language_en_US>
+
+	<!--BARBARIAN_SPEARMAN-->
+
+	<Units>
+		<Delete Type="UNIT_BARBARIAN_SPEARMAN" />
+	</Units>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SPEARMAN</Class>
+			<Type>UNIT_BARBARIAN_SPEARMAN</Type>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+			<Combat>7</Combat>
+			<Cost>30</Cost>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SPEARMAN</Description>
+			<ShowInPedia>false</ShowInPedia>
+			<Help>TXT_KEY_UNIT_HELP_SPEARMAN</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_LONGSWORDSMAN</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>15</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<Conscription>2</Conscription>
+			<UnitArtInfo>ART_DEF_UNIT_BARBARIAN_SPEARMAN</UnitArtInfo>
+			<UnitFlagIconOffset>9</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>9</PortraitIndex>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+			<PromotionType>PROMOTION_ANTI_MOUNTED_I</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
+			<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+
+	<!--BANDIT aka Archer -->
+
+	<Units>
+		<Delete Type="UNIT_BARBARIAN_ARCHER" />
+	</Units>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_ARCHER</Class>
+			<Type>UNIT_BARBARIAN_ARCHER</Type>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+			<Combat>4</Combat>
+			<RangedCombat>7</RangedCombat>
+			<Cost>70</Cost>
+			<Moves>2</Moves>
+			<Range>2</Range>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BANDIT</Description>
+			<ShowInPedia>false</ShowInPedia>
+			<Help>TXT_KEY_UNIT_HELP_ARCHER</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<AdvancedStartCost>15</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_BARBARIAN_ARCHER</UnitArtInfo>
+			<UnitFlagIconOffset>6</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<PromotionType>PROMOTION_SMALL_CITY_PENALTY</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_BANDIT">
+			<Text>Bandit</Text>
+		</Row>
+	</Language_en_US>
+	
+	
+	<!--RAIDER-->
+
+	<Units>
+		<Delete Type="UNIT_BARBARIAN_RAIDER" />
+	</Units>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_BARBARIAN_RAIDER</Type>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<Combat>10</Combat>
+			<Cost>80</Cost>
+			<Moves>5</Moves>
+			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BARBARIAN_RAIDER</Description>
+			<Help>TXT_KEY_UNIT_BARBARIAN_RAIDER_HELP</Help>
+			<!--<Civilopedia>TXT_KEY_CIVILOPEDIA_UNIT_BARBARIAN_RAIDER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_BARBARIAN_RAIDER_STRATEGY</Strategy>-->
+			<ShowInPedia>false</ShowInPedia>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<AdvancedStartCost>30</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_HORSEMAN</UnitArtInfo>
+			<UnitFlagIconOffset>17</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>17</PortraitIndex>
+			<MoveRate>QUADRUPED</MoveRate>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_I</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
+			<UnitType>UNIT_BARBARIAN_RAIDER</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_RAIDER">
+			<Text>Raider</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_RAIDER_HELP">
+			<Text>Strong and elusive barbarian Rider. Most dangerous among the Barbarians</Text>
+		</Row>
+		<!--
+	<Row Tag="TXT_KEY_CIV5_UNIT_BARBARIAN_RAIDER_TEXT">
+		<Text>No text here :(</Text>
+	</Row>
+	<Row Tag="TXT_KEY_UNIT_BARBARIAN_RAIDER_STRATEGY">
+		<Text>No text here :( (str)</Text>
+	</Row>
+	-->
+	</Language_en_US>
+
+
+	<!--Galley-->
+
+	<Units>
+		<Delete Type="UNIT_GALLEY" />
+	</Units>
+
+	<Units>
+		<Row>
+			<Class>UNITCLASS_GALLEY</Class>
+			<Type>UNIT_GALLEY</Type>
+			<Combat>5</Combat>
+			<Cost>50</Cost>
+			<Moves>4</Moves>
+			<CombatClass>UNITCOMBAT_NAVALMELEE</CombatClass>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GALLEY</Description>
+			<Civilopedia>TXT_KEY_UNIT_GALLEY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GALLEY_STRATEGY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<MinAreaSize>20</MinAreaSize>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_BARBARIAN_GALLEY</UnitArtInfo>
+			<UnitFlagIconOffset>23</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>23</PortraitIndex>
+			<MoveRate>WOODEN_BOAT</MoveRate>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_GALLEY</UnitType>
+			<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GALLEY</UnitType>
+			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GALLEY</UnitType>
+			<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GALLEY</UnitType>
+			<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_GALLEY</UnitType>
+			<PromotionType>PROMOTION_OCEAN_IMPASSABLE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
+			<UnitType>UNIT_GALLEY</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+
+</GameData>

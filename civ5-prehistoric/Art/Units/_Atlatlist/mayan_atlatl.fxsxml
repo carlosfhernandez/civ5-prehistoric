@@ -1,0 +1,6 @@
+<Asset>
+	<Mesh file="Mayan_Atlatl.gr2"/>
+	<Texture file="atlatl_DIFF.dds"/>
+	<Texture file="atlatl_SREF.dds"/>
+</Asset>
+

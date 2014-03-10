@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <GameData>
-
+  
   <UnitClasses>
     <Row>
       <Type>UNITCLASS_TAXEMAN</Type>
-      <Description>Throwing Axeman</Description>
+      <Description>TXT_KEY_UNIT_TAXEMAN</Description>
       <DefaultUnit>UNIT_TAXEMAN</DefaultUnit>
     </Row>
   </UnitClasses>
@@ -14,7 +14,7 @@
     <Row>
       <Class>UNITCLASS_TAXEMAN</Class>
       <Type>UNIT_TAXEMAN</Type>
-      <PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <Combat>9</Combat>
       <RangedCombat>13</RangedCombat>
       <Cost>75</Cost>
@@ -25,7 +25,7 @@
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
-      <Description>Throwing Axeman</Description>
+      <Description>TXT_KEY_UNIT_TAXEMAN</Description>
       <Strategy>TXT_KEY_UNIT_TAXEMAN_STRATEGY</Strategy>
       <Help>TXT_KEY_UNIT_HELP_TAXEMAN</Help>
       <MilitarySupport>true</MilitarySupport>
@@ -36,13 +36,12 @@
       <AdvancedStartCost>20</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <UnitArtInfo>ART_DEF_UNIT_HAND_AXE_BARBARIAN</UnitArtInfo>
+      <UnitArtInfo>ART_DEF_UNIT_TAXEMAN</UnitArtInfo>
       <UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
       <UnitFlagIconOffset>9</UnitFlagIconOffset>
       <IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
       <PortraitIndex>9</PortraitIndex>
     </Row>
-    
   </Units>
 
   <Unit_AITypes>
@@ -50,7 +49,6 @@
       <UnitType>UNIT_TAXEMAN</UnitType>
       <UnitAIType>UNITAI_RANGED</UnitAIType>
     </Row>
-    
   </Unit_AITypes>
 
   <Unit_ClassUpgrades>
@@ -58,7 +56,6 @@
       <UnitType>UNIT_TAXEMAN</UnitType>
       <UnitClassType>UNITCLASS_CROSSBOWMAN</UnitClassType>
     </Row>
-    
   </Unit_ClassUpgrades>
 
   <Unit_Flavors>
@@ -77,7 +74,6 @@
       <FlavorType>FLAVOR_RANGED</FlavorType>
       <Flavor>4</Flavor>
     </Row>
-    
   </Unit_Flavors>
 
   <Unit_FreePromotions>
@@ -89,16 +85,11 @@
       <UnitType>UNIT_TAXEMAN</UnitType>
       <PromotionType>PROMOTION_COVER_1</PromotionType>
     </Row>
-    
   </Unit_FreePromotions>
-
-  <Civilization_UnitClassOverrides>
-    
-  </Civilization_UnitClassOverrides>
 
   <Language_en_US>
     <Row Tag="TXT_KEY_UNIT_TAXEMAN">
-      <Text>Throwing Axeman</Text>
+      <Text>Throwing Up Axeman</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_TAXEMAN_STRATEGY">
       <Text>The throwing axeman is a Classical era range unit wich is an alternative to Composite Bowman. It has a better combat strength and have a free promotion that increase his defense against ranged attack, but has only 1 starting range (can increase with promotions). His promotion choices is those of range units.</Text>
@@ -107,5 +98,5 @@
       <Text>Classical Era range unit which is resistant to other ranged unit and more powerful but has less range. It choose its promotion in the range unit promotion list.</Text>
     </Row>
   </Language_en_US>
-
+  
 </GameData>

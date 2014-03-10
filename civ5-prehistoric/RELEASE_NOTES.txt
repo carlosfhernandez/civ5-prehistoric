@@ -3,6 +3,30 @@
 ==========================
 
 
+
+__ RELEASE NOTES v0.2.10a __
+
+Fixes 
+
+= Lighthouse and Harbor issue fixed.
+= Other Era-related issues fixed. 
+
+
+
+
+
+
+__ RELEASE NOTES v0.2.9a __
+
+Fixes 
+
+= Causeway and FirePit properly detected, now
+
+
+
+
+
+
 __ RELEASE NOTES v0.2.8a __
 
 Additions

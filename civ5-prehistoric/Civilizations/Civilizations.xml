@@ -23,6 +23,8 @@
 		
 	</Civilization_FreeBuildingClasses>
 	
+
+
 	<Civilization_FreeUnits>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
@@ -48,11 +50,14 @@
 	  
   <!-- Postpone the free tech 'Animal Husbandry' until the appropriate tech is researched, in this case Gathering. -->
 	<Civilization_FreeTechs>
+
 		<Update>
 			<Set TechType ="TECH_HUNTING"/>
 			<Where TechType ="TECH_ANIMAL_HUSBANDRY"/>
 		</Update>
+		
 	</Civilization_FreeTechs>
+
 
   <Language_en_US>
     <Update>

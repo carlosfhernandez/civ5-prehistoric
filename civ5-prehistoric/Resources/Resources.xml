@@ -11,8 +11,13 @@
     <!--
     Clay
     Limestone
-    
-    
+    Basalt
+    Chert
+    Agate
+    Sandstone
+    Quartz
+    Jasper
+    Silcrete
     -->
     
 
@@ -26,6 +31,14 @@
     <Update>
       <Where Type="RESOURCE_STONE" />
       <Set TechReveal="TECH_SIMPLE_TOOLS" />
+    </Update>
+
+
+    <!-- Tech: Simple Tools -->
+
+    <Update>
+      <Where Type="RESOURCE_AUROCHS" />
+      <Set TechReveal="TECH_SCAVENGING" />
     </Update>
 
 

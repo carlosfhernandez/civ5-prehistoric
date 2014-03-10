@@ -1,0 +1,6 @@
+<Asset>
+	<Mesh file="Hand_Axe.gr2"/>
+	<Texture file="Hand_Axe_Barbarian_DIFF.dds"/>
+	<Texture file="Hand_Axe_Barbarian_SREF.dds"/>
+</Asset>
+

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Dom (Firaxis Games) -->
+<VisEffectArtInfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Civ5ArtDefines_VisEffects.xsd">
+  <!--  _______ Incan slinger effects  _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_UNIT_SLING_TRAIL_01</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="0.0" y="90.0" z="90.0"/>
+      <Scale>0.22</Scale>
+    </Transform>
+    <fMovementSpeed>3.0</fMovementSpeed>
+    <fBaseDuration>0.1</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_STR_BROWN_TRAIL_01</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <ModelEffects>
+      <ModelEffect>
+        <Name>ART_DEF_MEFFECT_ROCK_SLINGER</Name>
+      </ModelEffect>
+    </ModelEffects>
+    <ChildEffects>
+      <ChildEffect trigger="ProjectileEnd">
+        <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_$(TERRAIN)</Name>
+      </ChildEffect>
+    </ChildEffects>
+  </VisEffectArtInfo>
+  <!--  _______ Incan slinger fiery rock  _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_UNIT_SLING_FIRE_TRAIL_01</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="0.0" y="90.0" z="90.0"/>
+      <Scale>0.8</Scale>
+    </Transform>
+    <fMovementSpeed>2.0</fMovementSpeed>
+    <fBaseDuration>0.1</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_FIRE_ARROW_SM</Name>
+      </ParticleEffect>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_STR_ARROW_FIRE_TRAIL_01</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <ModelEffects>
+      <ModelEffect>
+        <Name>ART_DEF_MEFFECT_FIRE_ROCK_SLINGER</Name>
+      </ModelEffect>
+    </ModelEffects>
+    <ChildEffects>
+      <ChildEffect trigger="ProjectileEnd">
+        <Name>ART_DEF_VEFFECT_FIRE_ARROW_IMPACT_$(TERRAIN)</Name>
+      </ChildEffect>
+    </ChildEffects>
+  </VisEffectArtInfo>
+  <!--  _______ SLING Rock Impact on city _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_CITY</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="4.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>1.0</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_FLAMING_BOULDER_CITY</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ SLING Rock Impact on Dirt _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_DIRT</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_DIRT</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ SLING Rock Impact on Snow _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_SNOW</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_SNOW</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ SLING Rock Impact on Sand _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_SAND</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_SAND</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ SLING Rock Impact on Mud _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_MUD</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_MUD</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ Catapult Rock Impact on Leaves _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_LEAVES</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="0.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_LEAVES</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ Catapult Rock Impact on Air _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_AIR</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="20.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_DIRT</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+  <!--  _______ Catapult Rock Impact on Water _______   -->
+  <VisEffectArtInfo>
+    <Name>ART_DEF_VEFFECT_SLING_ROCK_IMPACT_WATER</Name>
+    <Transform>
+      <Translation x="0.0" y="0.0" z="4.0"/>
+      <Rotation x="90.0" y="0.0" z="0.0"/>
+      <Scale>0.4</Scale>
+    </Transform>
+    <fBaseDuration>0.01</fBaseDuration>
+    <fBaseDurationScale>1.0</fBaseDurationScale>
+    <ParticleEffects>
+      <ParticleEffect>
+        <Name>ART_DEF_PEFFECT_BLANK</Name>
+      </ParticleEffect>
+    </ParticleEffects>
+    <SoundEffects>
+      <SoundEffect>
+        <Name>AS3D_IMPACT_BOULDER_WATER</Name>
+      </SoundEffect>
+    </SoundEffects>
+  </VisEffectArtInfo>
+</VisEffectArtInfos>

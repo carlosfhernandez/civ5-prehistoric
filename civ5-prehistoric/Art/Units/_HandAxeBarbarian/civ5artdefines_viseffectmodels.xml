@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<VisEffectModelArtInfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- ============ Projectiles ============  -->
+	<!-- ________ Arrow for Archers ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ARROW_ARCHER</Name>
+    <File>Assets\Units\Projectiles\Proj_Arrow_Archer.fxsxml</File>
+    <!--File>Assets\Effects\FX_Test\FX_Test.fxsxml</File-->
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Atomic Bomb ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_ATOMIC_BOMB</Name>
+    <File>Assets\Units\Projectiles\Proj_AtomBomb.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Atomic Bomb Dome Bones  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ATOMIC_BOMB_DOME_BONES</Name>
+    <File>Assets\Effects\Explosions\FXB_ATOMIC_BOMB_Dome_Bones.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>  
+  <!-- ________ Bolt for Ballista ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_BOLT_BALLISTA</Name>
+    <File>Assets\Units\Projectiles\Proj_U_Roman_Ballista_Bolt_MOD.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Bomb Fighter ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_FIGHTER_BOMB</Name>
+    <File>Assets\Units\Projectiles\Proj_Bomb_Fighter.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+ <!-- ________ City smoke  ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_COLOSSUS_SMOKE_01</Name>
+    <File>Assets\Effects\Dust_n_Smoke\FXM_Colossus_Smoke.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>  
+  <!-- ________ City smoke  ________  -->
+<!--  
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_SMOKE_01</Name>
+    <File>Assets\Effects\Dust_n_Smoke\FXM_City_Smoke_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+-->  
+  <!-- ________ City Damaged State, First 01   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_FIRST_01</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_First_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, First 02   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_FIRST_02</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_First_02.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, First 03   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_FIRST_03</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_First_03.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 01   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_SECOND_01</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Second_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 02   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_SECOND_02</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Second_02.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 03   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_SECOND_03</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Second_03.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 01   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_THIRD_01</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Third_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 02   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_THIRD_02</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Third_02.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ City Damaged State, Second 03   ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CITY_DAMAGED_STATE_THIRD_03</Name>
+    <File>Assets\Effects\CityDamagedStates\FXM_City_Damage_State_Third_03.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Crossbow Bolt for Crossbowman and ChuKoNu ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_CROSSBOW_BOLT</Name>
+    <File>Assets\Units\Projectiles\Proj_Crossbow_Bolt.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Industrial Lighthouse ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_IND_LIGHTHOUSE</Name>
+    <File>Assets\Effects\Fire\FX_Ind_Lighthouse.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Oil Resource ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_OIL_RESOURCE</Name>
+    <File>Assets\Effects\Water\FX_Oil.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Oil Resource Heavy ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_OIL_HEAVY_RESOURCE</Name>
+    <File>Assets\Effects\Water\FX_Oil_Heavy.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Pillaged Improvement Smoke ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PILLAGED_SMOKE_01</Name>
+    <File>Assets\Effects\Dust_n_Smoke\FXM_Pillaged_Smoke_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Pillaged Farm Smoke ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PILLAGED_FARM_SMOKE_01</Name>
+    <File>Assets\Effects\Dust_n_Smoke\FXM_Pillaged_Farm_Smoke_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Fiery Rock for Catapult ________  -->  
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_FIERY_ROCK</Name>
+    <File>Assets\Units\Projectiles\Proj_FieryRock_Catapult.fxsxml</File>
+    <fScale>1.5</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+<!-- ________ Fiery Rock for Trebuchet ________  -->
+<!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_FIERY_ROCK_TREBUCHET</Name>
+    <File>Assets\Units\Projectiles\Proj_FieryRock_Trebuchet.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+-->  
+  <!-- ________ Rocket for Mech ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_ROCKET_MECH</Name>
+    <File>Assets\Units\Projectiles\Proj_Rocket_Mech.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Fire Arrow for Archers ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ARROW_FLAME_ARCHER</Name>
+    <File>Assets\Units\Projectiles\Proj_ArrowFlame_Archer.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Fire pit 01________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_FIRE_PIT_01</Name>
+    <File>Assets\Effects\Fire\FXM_Fire_Pit_01.fxsxml</File>
+    <fScale>0.65</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Hadron Collider Ring ________  -->	
+  <!-- <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_HADRON_COLLIDER_RING</Name>
+    <File>Assets\Effects\Flashes_Sparks\FXM_Hadron_Collider_Ring.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> -->
+  <!-- ________ Jet Engine Fire ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_JET_ENGINE_FIRE</Name>
+    <File>Assets\Units\Projectiles\FXM_Jet_engine_fire.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Improvement glow  ________  -->    
+  <!-- <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_RESOURCE_GLOW</Name>
+    <File>Assets\Effects\FX_Test\FXM_Resource_Glow.fxsxml</File>
+    <fScale>3.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> -->
+  <!-- ________ Idle Water Wake  ________  -->
+<!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_IDLE_WATER_WAKE_01</Name>
+    <File>Assets\Effects\FX_Test\FX_Water_Idle_wake_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+-->
+  <!-- ________ NUKE Dome Bones  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_BONES</Name>
+    <File>Assets\Effects\Explosions\FXB_NUKE_Dome_Bones.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ NUKE Dome 01  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_01</Name>
+    <File>Assets\Effects\Explosions\FXM_NUKE_Dome.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>4.67</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ NUKE Dark Dome  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_02</Name>
+    <File>Assets\Effects\Explosions\FXM_NUKE_DarkDome.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>4.67</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ NUKE Light Dome  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_03</Name>
+    <File>Assets\Effects\Explosions\FXM_NUKE_LightDome.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>4.67</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ NUKE Dome Lightrays  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_RAYS</Name>
+    <File>Assets\Effects\Explosions\FXM_NUKE_Dome_Rays.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>4.67</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ NUKE Dome Ring  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_NUKE_DOME_RING</Name>
+    <File>Assets\Effects\Explosions\FXM_NUKE_Dome_Ring.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>4.67</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ Paradrop animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARADROP</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paradrop_Airplane.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>2.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 01 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_01</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>2.56</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 02 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_02</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_02.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>3.26</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 03 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_03</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_03.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>3.13</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 04 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_04</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_04.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>2.86</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 05 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_05</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_05.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>3.06</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Paratrooper 06 animation  ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PARATROOPER_06</Name>
+    <File>Assets\Units\Paratrooper\FX\FX_Paratrooper_06.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>3.03</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Propeller Blades -5 blades Gunship  ________  -->
+  <!--
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_HELICOPTERGUNSHIP_BLADES_01</Name>
+    <File>Assets\Effects\MiscVehicle\FXM_5Blade_Propellers_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  -->
+  <!-- ________ Reef Caustics ________  -->  
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_REEF_CAUSTICS</Name>
+    <File>Assets\Effects\Water\FXM_Reef_Caustics.fxsxml</File>
+    <fScale>0.48</fScale>
+    <fScrollTime>40.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+	<!-- ________ Rock for Catapult ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_ROCK</Name>
+    <File>Assets\Units\Projectiles\Proj_Rock_Catapult.fxsxml</File>
+    <fScale>1.9</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Rock for Trebuchet ________  -->
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_ROCK_TREBUCHET</Name>
+    <File>Assets\Units\Projectiles\Proj_Rock_Trebuchet.fxsxml</File>
+    <fScale>1.4</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Rocket for Rocket Artillery ________  -->  
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_ROCKET_ARTILLERY</Name>
+    <File>Assets\Units\Projectiles\Proj_Rocket_RocketArtillery.fxsxml</File>
+    <fScale>0.5</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+  <!-- ________ Rocket for Mobile SAM ________  -->  
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_MOBILE_SAM</Name>
+    <File>Assets\Units\Projectiles\Proj_Rocket_MobileSAM.fxsxml</File>
+    <fScale>0.48</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+<!-- ________ Selection Glow ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_SELECTION_GLOW</Name>
+    <File>Assets\Effects\Level_Up\FXM_God_Ray.fxsxml</File>
+    <fScale>3.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+	<!-- ________ Torch Handle in Hand - Mele Units City Attack  ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_PROJ_TORCH_HAND</Name>
+    <File>Assets\Units\Projectiles\Proj_TorchHand.fxsxml</File>
+    <fScale>0.8</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Torpedo for Submarine ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_TORPEDO_SUBMARINE</Name>
+    <File>Assets\Units\Projectiles\Proj_Torpedo_Submarine.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Tracer for Testing ________  -->	
+  <!-- <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_ARTILLERY_TRACER</Name>
+    <File>Assets\Units\Projectiles\Proj_Tracer.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> -->
+  <!-- ________ Uranium Glow ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_URANIUM_GLOW</Name>
+    <File>Assets\Units\Fire\FXM_Uranium_Glow.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Uranium Glow ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_URANIUM_GLOW_01</Name>
+    <File>Assets\Units\Fire\FXM_Uranium_Glow_01.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ Uranium Glow SM ________  -->	
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_URANIUM_GLOW_SM</Name>
+    <File>Assets\Units\Fire\FXM_Uranium_Glow_sm.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> 
+  <!-- ________ Spaceship  ________  -->    
+  <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_SPACESHIP</Name>
+    <File>assets\Buildings\Wonders\Spaceship\Spaceship_FXLaunch.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo>
+  <!-- ________ FX Shader Test Model  ________  -->    
+  <!--VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_FXSHADER_TEST</Name>
+    <File>Assets\Effects\FX_Test\FX_Test.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo-->
+  <!-- ________ Test Box Model  ________  -->    
+  <!-- <VisEffectModelArtInfo>
+    <Name>ART_DEF_MEFFECT_TEST_BOX</Name>
+    <File>assets\Effects\Test_Box\Test_Box_Projectile.fxsxml</File>
+    <fScale>1.0</fScale>
+    <fScrollTime>1.0</fScrollTime>
+  </VisEffectModelArtInfo> -->
+</VisEffectModelArtInfos>

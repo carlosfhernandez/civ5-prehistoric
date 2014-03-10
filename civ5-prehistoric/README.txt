@@ -2,13 +2,13 @@ This mod adds a new era, the Prehistoric Era, with 2000 years of human history.
 
 *** Important Compatibility Section below. Avoid conflicts! ***
 
-[[ v0.2.8a / Steam v11 / 2014-01-23 ]]
+[[ v0.2.10a / Steam v13 / 2014-01-26 ]]
 
 - New Era: Prehistoric Era.
 - 17 new Technologies: Fire, Gathering, Tools, Numbers, and more.
 - 8 new buildings, 4 wonders
 - 1 new resource (berries) and a new improvement (Fraging Site).
-- 8 New Units: Autocthon, Primitive Archer, Shaman, Caveman, Savage (and 2 more below).
+- 8 New Units: Autocthon, Primitive Archer, Shaman, Caveman, Savage
 - Laborer to build early improvements. 
 - Upgrade Scout to Explorer.
 
@@ -21,10 +21,9 @@ __ KNOWN ISSUES __
 This is still in Alpha. I will fix problems as soon as I can. Let me know.
 
 - Strategic View: Some icons don't show up.
-- Timed Game: I need to determine the appropriate turn addition to each timed setting. Recommendations and feedback welcomed (always).
+- Timed Game: I need to determine the appropriate turn addition to each timed setting. 
 - AI improved but still falls short in some places.
-- Start date (6000 BC) has comptability issues with other mods (to be fixed or possibly player controlled).
-- Lighthouse crash
+- Start date (6000 BC) has comptability issues with other mods.
 
 
 __ UPGRADE __
@@ -44,7 +43,7 @@ New Units:
 - Explorer (Classical Era mounted Scout [danrell's Mongol Horseman model]) 
 
 New Buildings:
-- Food Storage, Chieftain's Hut, Palisades, Campfire, Rock Paintings, Shelter, Midden, FirePit.
+- Food Storage, Chieftain's Hut, Palisades, Campfire, Rock Paintings, Shelter, Midden, FirePit, Causeway.
 
 New Wonders: 
 - Wonderwerk Cave, Ggantija Temple, Skara Brae, Theopetra Cave.
@@ -73,13 +72,14 @@ __ BUGS AND SUGGESTIONS __
 
 __ UPCOMING RELEASES __
 
-v0.2.8+
+v0.2.10+
 
 . Fixes, Small Enhancements, and Stabilization
+. Flint and Obisidian fighting bonuses
 
 v0.3.x - Enhancement release 
 
-. Resources: Flint (fighting bonus), Pig, Clay, Chickens (TBD), Tin, Wood
+. Resources: Pig, Clay, Chickens (TBD), Tin, Wood
 . Buildings: Causeway, Dolmen, Gathering Rock, Camp, Causeway
 . Units: (Early exporing unit - name tbd), (Early spear unit - name tbd), Axeman, Slinger
 

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Michael Curran (Firaxis Games) -->
+<!-- Spain and Inca ******************************************************* -->
+<UnitMemberArtInfos>
+  <!-- U_Spanish_Conquistador ********************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_SPANISH_CONQUISTADOR</Type>
+    <fScale>0.13</fScale>
+    <Granny>U_Spanish_Conquistador.fxsxml</Granny>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_MOUNTED_SINGLE</Defaults>
+      <iReformBeforeCombat>2</iReformBeforeCombat>
+      <RushAttackFormation>DefaultCavalry</RushAttackFormation>
+      <bHasStationaryMelee>1</bHasStationaryMelee>
+      <Weapon>
+        <WeaponTypeTag>METAL</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>SWORD</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City ShortRange</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+    <MaterialTypeTag>ARMOR</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>ARMOR</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+  <!-- U_INCAN_SLINGER *************************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER</Type>
+    <fScale>0.14</fScale>
+    <Granny>U_Incan_Slinger.fxsxml</Granny>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_ARCHER</Defaults>
+      <Weapon>
+        <WeaponTypeSoundOverrideTag>BOULDER</WeaponTypeSoundOverrideTag>
+      </Weapon>
+    </Combat>
+    <MaterialTypeTag>CLOTH</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+  <!-- U_SPANISH_GALLEON ********************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON</Type>
+    <fScale>0.15</fScale>
+    <Granny>U_Spanish_Galleon.fxsxml</Granny>
+    <Domain>Sea</Domain>
+    <MaterialTypeSoundOverrideTag>WOODLRG</MaterialTypeSoundOverrideTag>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SHIP</Defaults>
+      <bHasShortRangedAttack>1</bHasShortRangedAttack>
+      <bHasLeftRightAttack>1</bHasLeftRightAttack>
+      <bHasIndependentWeaponFacing>1</bHasIndependentWeaponFacing>
+      <Weapon>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <HitEffect>ART_DEF_VEFFECT_CANNON_IMPACT_$(TERRAIN)</HitEffect>
+        <WeaponTypeTag>EXPLOSIVE</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>EXPLOSION6POUND</WeaponTypeSoundOverrideTag>
+      </Weapon>
+    </Combat>
+  </UnitMemberArtInfo>
+  <!-- U_SPANISH_TERCIO_ARCABUCERO ****************************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_ARCABUCERO</Type>
+    <fScale>0.14</fScale>
+    <Granny>U_Spanish_Terico_Arcabucero.fxsxml</Granny>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <bReformBeforeCombat>1</bReformBeforeCombat>
+      <bHasShortRangedAttack>1</bHasShortRangedAttack>
+      <Weapon>
+        <WeaponTypeTag>BULLET</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>BULLET</WeaponTypeSoundOverrideTag>
+      </Weapon>
+    </Combat>
+    <MaterialTypeTag>ARMOR</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>ARMOR</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+  <!-- U_SPANISH_TERCIO_PIQUERO ****************************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO</Type>
+    <fScale>0.14</fScale>
+    <Granny>U_Spanish_Terico_Piquero.fxsxml</Granny>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <bReformBeforeCombat>1</bReformBeforeCombat>
+      <Weapon>
+        <WeaponTypeTag>METAL</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>SPEAR</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City ShortRange</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+    <MaterialTypeTag>ARMOR</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>ARMOR</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+  <!-- U_SPANISH_TREASURE_CART ****************************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_U_SPANISH_TREASURE_CART</Type>
+    <fScale>0.063</fScale>
+    <Granny>U_Spanish_Treasure_Cart.fxsxml</Granny>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_DEFENSELESS_BASE</Defaults>
+    </Combat>
+    <MaterialTypeTag>CLOTH</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+  <!-- UNIT_PRIVATEER ****************************************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_UNIT_MEMBER_PRIVATEER</Type>
+    <fScale>0.14</fScale>
+    <Granny>Privateer.fxsxml</Granny>
+    <Domain>Sea</Domain>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SHIP</Defaults>
+      <bHasShortRangedAttack>1</bHasShortRangedAttack>
+      <bHasLeftRightAttack>1</bHasLeftRightAttack>
+      <bHasIndependentWeaponFacing>1</bHasIndependentWeaponFacing>
+      <Weapon>
+        <fVisKillStrengthMin>0.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>0.0</fVisKillStrengthMax>
+        <HitEffect>ART_DEF_VEFFECT_CANNON_IMPACT_$(TERRAIN)</HitEffect>
+        <WeaponTypeTag>EXPLOSIVE</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>EXPLOSION6POUND</WeaponTypeSoundOverrideTag>
+      </Weapon>
+    </Combat>
+    <MaterialTypeTag>WOOD</MaterialTypeTag>
+    <MaterialTypeSoundOverrideTag>WOODLRG</MaterialTypeSoundOverrideTag>
+  </UnitMemberArtInfo>
+</UnitMemberArtInfos>

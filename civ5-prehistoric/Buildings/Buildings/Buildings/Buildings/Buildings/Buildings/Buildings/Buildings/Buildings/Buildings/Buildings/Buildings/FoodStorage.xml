@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_FOOD_STORAGE</Type>
+			<DefaultBuilding>BUILDING_FOOD_STORAGE</DefaultBuilding>
+			<Description>Food Storage</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Row>
+			<Type>BUILDING_FOOD_STORAGE</Type>
+			<BuildingClass>BUILDINGCLASS_FOOD_STORAGE</BuildingClass>
+			<Cost>21</Cost>
+			<PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
+			<Help>Grants additional [ICON_FOOD] Food for your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Pottery[ENDCOLOR].</Help>
+			<Description>Food Storage</Description>
+			<Strategy>The Food Storage is usually a cool cave or cavity, where food is kept fresh longer. Build it to increase the Growth of your City.</Strategy>
+			<ArtDefineTag>GRANARY</ArtDefineTag>
+			<ObsoleteTech>TECH_POTTERY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>18</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
+  
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+  
+</GameData>

@@ -1,3 +1,13 @@
+-- Buildings Table Modifications
+--
+
+ALTER TABLE Buildings     ADD IsVisible           boolean DEFAULT 1;
+ALTER TABLE Buildings     ADD PediaVisible        boolean DEFAULT 1;
+ALTER TABLE Buildings     ADD PolicyRequired      text    DEFAULT null;
+ALTER TABLE Buildings     ADD ReligionRequired    text    DEFAULT null;
+
+
+
 
 -- Change free BuildingClass from Palace to Chieftain's Hut
 
@@ -34,9 +44,4 @@ INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
 
 
 
--- ALTER TABLE Buildings
--- ADD IsVisibleCityList boolean DEFAULT 1;
-
--- ALTER TABLE Buildings
--- ADD IsVisiblePedia boolean DEFAULT 1;
 

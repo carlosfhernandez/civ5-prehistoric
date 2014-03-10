@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_ROCK_THROWER</Type>
+			<Description>TXT_KEY_UNIT_ROCK_THROWER_TITLE</Description>
+			<DefaultUnit>UNIT_ROCK_THROWER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+  
+	<Units>
+	  <Row>
+		  <Class>UNITCLASS_ROCK_THROWER</Class>
+		  <Type>UNIT_ROCK_THROWER</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+		  <Combat>2</Combat>
+      <RangedCombat>3</RangedCombat>
+		  <Cost>14</Cost>
+		  <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+		  <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+		  <Domain>DOMAIN_LAND</Domain>
+		  <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+		  <Description>TXT_KEY_UNIT_ROCK_THROWER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_ROCK_THROWER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_ROCK_THROWER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_ROCK_THROWER_HELP</Help>
+		  <MilitarySupport>true</MilitarySupport>
+		  <MilitaryProduction>true</MilitaryProduction>
+		  <Pillage>true</Pillage>
+		  <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+		  <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+		  <AdvancedStartCost>10</AdvancedStartCost>
+		  <XPValueAttack>3</XPValueAttack>
+		  <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_ROCK_THROWER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>8</PortraitIndex>
+    </Row>
+	</Units>
+  
+	<Unit_AITypes>
+    <Row>
+      <UnitType>UNIT_ROCK_THROWER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+	</Unit_AITypes>
+  
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_ROCK_THROWER</UnitType>
+			<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+  
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_ROCK_THROWER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ROCK_THROWER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+    <Row>
+      <UnitType>UNIT_ROCK_THROWER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+  </Unit_Flavors>
+
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_TITLE">
+      <Text>Rock Thrower Title</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_DESC">
+      <Text>Rock Thrower</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_PEDIA">
+      <Text>Rock Thrower Text</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_STRATEGY">
+      <Text>Rock Throwers strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_HELP">
+      <Text>Rock Thrower Help</Text>
+    </Row>
+  </Language_en_US>
+
+
+</GameData>

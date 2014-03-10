@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <UnitClasses>
+    <Row>
+      <Type>UNITCLASS_ROCK_SLINGER_SCOUT</Type>
+      <Description>TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_TITLE</Description>
+      <DefaultUnit>UNIT_ROCK_SLINGER_SCOUT</DefaultUnit>
+    </Row>
+  </UnitClasses>
+
+  <Units>
+
+    <Row>
+      <Class>UNITCLASS_ROCK_SLINGER_SCOUT</Class>
+      <Type>UNIT_ROCK_SLINGER_SCOUT</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>3</Combat>
+      <RangedCombat>6</RangedCombat>
+      <Cost>40</Cost>
+      <Moves>2</Moves>
+      <Range>2</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MACHINERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CROSSBOWMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_ROCK_SLINGER_SCOUT</UnitArtInfo>
+      <IconAtlas>DLC02_UNIT_ATLAS</IconAtlas>
+      <UnitFlagAtlas>DLC02_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
+
+  </Units>
+
+  <Unit_AITypes>
+      <Row>
+        <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+        <UnitAIType>UNITAI_RANGED</UnitAIType>
+      </Row>
+  </Unit_AITypes>
+
+  <Unit_ClassUpgrades>
+    <Row>
+      <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+      <UnitClassType>UNITCLASS_CROSSBOWMAN</UnitClassType>
+    </Row>
+  </Unit_ClassUpgrades>  
+
+  <Unit_Flavors>
+
+    <Row>
+      <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+
+  </Unit_Flavors>
+
+  <Unit_FreePromotions>
+      <Row>
+        <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+        <PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+      </Row>
+      <Row>
+        <UnitType>UNIT_ROCK_SLINGER_SCOUT</UnitType>
+        <PromotionType>PROMOTION_WITHDRAW_BEFORE_MELEE</PromotionType>
+      </Row>
+
+  </Unit_FreePromotions>
+
+  <Language_en_US>
+    <Row Tag="TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_TITLE">
+      <Text>Rock Slinger Scout</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_DESC">
+      <Text>Rock Slinger Scout</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_PEDIA">
+      <Text>Rock Slinger Scout Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_STRATEGY">
+      <Text>Rock Slinger Scout Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ROCK_SLINGER_SCOUT_HELP">
+      <Text>Rock Slinger Scout Help</Text>
+    </Row>    
+  </Language_en_US> 
+
+
+
+</GameData>

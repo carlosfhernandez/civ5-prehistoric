@@ -1,0 +1,29 @@
+<Asset>
+  <Mesh file="Resource_Deer.gr2" source="Max" />
+  <Animation file="Resource_Deer_DeerIdle01.gr2" name="DeerIdle01" ec="1000" source="Max" layer="None" />
+  <Animation file="Resource_Deer_DeerIdle02.gr2" name="DeerIdle02" ec="1001" source="Max" layer="None" />
+  <Animation file="Resource_Deer_DeerIdle03.gr2" name="DeerIdle03" ec="1002" source="Max" layer="None" />
+  <Animation file="Resource_Deer_DeerIdle04.gr2" name="DeerIdle04" ec="1003" source="Max" layer="None" />
+  <Texture file="Camp_MID_Deer_DIFF.dds" source="Max" />
+  <Texture file="Camp_MID_Deer_SREF.dds" source="Max" />
+  <Texture file="Resource_Deer_Diff.dds" source="Max" />
+  <Texture file="Resource_Deer_Doe_Diff.dds" source="Max" />
+  <Texture file="Resource_Deer_Doe_SREF.dds" source="Max" />
+  <Texture file="Resource_Deer_SREF.dds" source="Max" />
+  <Texture file="Camp_HB.dds" source="Max" />
+  <Texture file="Unit_Light.dds" source="Max" />
+  <Texture file="Unit_environment_Dull.dds" source="Max" />
+  <Texture file="Unit_environment_Sharp.dds" source="Max" />
+  <Texture file="PL_Camp_MID_DIFF.dds" source="Max" />
+  <Texture file="Camp_HB_SREF.dds" source="Max" />
+  <Texture file="Camp_MID_Deer_ground_D.dds" source="Max" />
+  <Texture file="Camp_MID_Deer_ground_H.dds" source="Max" />
+  <Texture file="Unit_Environment_Dull.dds" source="Max" />
+  <Texture file="Unit_Environment_Sharp.dds" source="Max" />
+  <Texture file="Unit_Irradiance.dds" source="Max" />
+  <BoneUsage>
+    <Bone name="FX_PillagedSmoke" />
+  </BoneUsage>
+  <DecisionTree file="LandmarkDecisionTree4.ddtxml" source="Tool" />
+  <TimedTrigger file="FX_Triggers_Resource_Deer.ftsxml" source="Tool" model="PL Camp MID Deer" state="3" />
+</Asset>

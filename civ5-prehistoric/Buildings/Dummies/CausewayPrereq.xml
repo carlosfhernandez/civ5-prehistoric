@@ -6,7 +6,7 @@
     <Row>
       <Type>BUILDINGCLASS_CAUSEWAY_PREREQ</Type>
       <DefaultBuilding>BUILDING_CAUSEWAY_PREREQ</DefaultBuilding>
-      <Description>none</Description>
+      <Description>Nearby Marshland</Description>
     </Row>
   </BuildingClasses>
 
@@ -15,7 +15,7 @@
       <Type>BUILDING_CAUSEWAY_PREREQ</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY_PREREQ</BuildingClass>
       <Cost>-1</Cost>
-      <Description>Marshland</Description>
+      <Description>Nearby Marshland</Description>
       <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[/ENDCOLOR] to improve your city.</Help>
       <Strategy>NONE</Strategy>
       <Civilopedia>NONE</Civilopedia>

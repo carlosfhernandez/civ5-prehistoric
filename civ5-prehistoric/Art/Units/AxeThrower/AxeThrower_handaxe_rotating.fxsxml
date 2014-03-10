@@ -1,0 +1,9 @@
+<Asset>
+	<Mesh file="Rotating_Hand_Axe.gr2"/>
+	<Animation file="Rotating_Hand_Axe_IdleA.gr2" ec="1000"/>
+	<Texture file="FX_Blk_Blk4x4.dds"/>
+	<Texture file="Hand_Axe_DIFF.dds"/>
+	<Texture file="FX_WHT.dds"/>
+	<DecisionTree file="AnimatedModelEffect_DecisionTree.ddtxml"/>
+</Asset>
+

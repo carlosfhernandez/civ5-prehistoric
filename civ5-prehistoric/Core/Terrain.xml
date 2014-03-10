@@ -5,8 +5,9 @@
 
   <!-- Desert -->
   
-  
-  
+  <!-- FakeFeatures -->
+
+  <!--  
   <Terrain_Yields>
     
     <Row>
@@ -21,10 +22,12 @@
       <Yield>1</Yield>
     </Row>
     
-    <Delete TerrainType="TERRAIN_OCEAN" YieldType="YIELD_FOOD"/>
+    <Delete TerrainType="TERRAIN_OCEAN" YieldType="YIELD_FOOD" />
 
   </Terrain_Yields>
+  -->
 
+  <!--
   <Feature_YieldChanges>
     <Row>
       <FeatureType>FEATURE_LAKE</FeatureType>
@@ -32,14 +35,15 @@
       <Yield>1</Yield>
     </Row>
   </Feature_YieldChanges>
-  
+  -->
+
+  <!--
   <Terrain_HillsYieldChanges>
-    <!--
     <Update>
-      <Where TerrainType="TERRAIN_DESERT" YieldType="YIELD_PRODUCTION"/>
+      <Where TerrainType="TERRAIN_DESERT" YieldType="YIELD_PRODUCTION" />
       <Set Yield="1"/>
     </Update>
-    -->
   </Terrain_HillsYieldChanges>
-  
+  -->
+
 </GameData>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnitArtInfos>
+<!-- UNIT_U_SPANISH_CONQUISTADOR ************************************************ -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_U_SPANISH_CONQUISTADOR</Type>
+    <Formation>DefaultCavalry</Formation>
+    <DamageStates>1</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_SPANISH_CONQUISTADOR</MemberType>
+      <MemberCount>5</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+  <!-- U_INCAN_SLINGER ***************************************************** -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_U_INCAN_SLINGER</Type>
+    <Formation>Archer</Formation>
+    <DamageStates>1</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_INCAN_SLINGER</MemberType>
+      <MemberCount>12</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+  <!-- U_SPANISH_GALLEON **************************************************** -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_U_SPANISH_GALLEON</Type>
+    <Formation>TwoBigGuns</Formation>
+    <DamageStates>1</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON</MemberType>
+      <MemberCount>2</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+  <!-- U_SPANISH_TERCIO **************************************************** -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_U_SPANISH_TERCIO</Type>
+    <Formation>OffsetPikeman</Formation>
+    <DamageStates>1</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_PIQUERO</MemberType>
+      <MemberCount>6</MemberCount>
+    </UnitMemberArt>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_SPANISH_TERCIO_ARCABUCERO</MemberType>
+      <MemberCount>6</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+  <!-- U_SPANISH_TREASURE_CART ************************************************ -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_U_SPANISH_TREASURE_CART</Type>
+    <DamageStates>1</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_U_SPANISH_TREASURE_CART</MemberType>
+      <MemberCount>1</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+  <!-- UNIT_PRIVATEER ****************************************************** -->
+  <UnitArtInfo>
+    <Type>ART_DEF_UNIT_PRIVATEER</Type>
+    <DamageStates>3</DamageStates>
+    <UnitMemberArt>
+      <MemberType>ART_DEF_UNIT_MEMBER_PRIVATEER</MemberType>
+      <MemberCount>1</MemberCount>
+    </UnitMemberArt>
+  </UnitArtInfo>
+</UnitArtInfos>
+ 

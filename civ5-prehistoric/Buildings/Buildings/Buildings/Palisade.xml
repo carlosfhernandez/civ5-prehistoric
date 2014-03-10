@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/28/2012 12:04:47 PM -->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_PALISADE</Type>
+			<DefaultBuilding>BUILDING_PALISADE</DefaultBuilding>
+			<Description>Palisade</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Row>
+			<Type>BUILDING_PALISADE</Type>
+			<BuildingClass>BUILDINGCLASS_PALISADE</BuildingClass>
+			<Cost>28</Cost>
+			<PrereqTech>TECH_WARFARE</PrereqTech>
+			<Help>Provides additional protection for your City.[NEWLINE]After constructing your Palace, receive a free Palisade in all Cities.</Help>
+			<Description>Palisade</Description>
+			<Strategy>The Palisade is a simple, but effective City fortification. Build it to protect your community from enemy attacks.</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<AllowsRangeStrike>true</AllowsRangeStrike>
+			<Defense>200</Defense>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+
+	<!-- Gain a free Palisade in all Cities after constructing the Palace -->
+
+		<Update>
+			<Set FreeBuilding ="BUILDINGCLASS_PALISADE"/>
+			<Where BuildingClass ="BUILDINGCLASS_PALACE"/>
+		</Update>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_PALISADE</BuildingType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+</GameData>

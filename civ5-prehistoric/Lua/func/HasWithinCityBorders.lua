@@ -129,15 +129,14 @@ print("__FILE__   HasWithinCityBorders")
 
 local bDebug = true
 
-local logger = Logger:new(Logger.LEVEL.DEBUG)
+local logger = Logger:new(Logger.LEVEL.INFO)
 
 
-local TYPE_TYPES = {
-  'resources'   = 1,
-  'buildings'   = 2,
-  'terrain'     = 3,
-  'features'    = 4
-}
+local TYPE_TYPES = {}
+TYPE_TYPES['resources']   = 1
+TYPE_TYPES['buildings']   = 2
+TYPE_TYPES['terrain']     = 3
+TYPE_TYPES['features']    = 4
 
 --[[
   
@@ -152,6 +151,7 @@ local TYPE_TYPES = {
   In the meantime, separate out these CONSTANTS into their own module.
 
 ]]--
+
 local ANIMAL_RESOURCES = {
   'RESOURCE_HORSE',
   'RESOURCE_COW',
@@ -165,17 +165,28 @@ local ANIMAL_RESOURCES = {
   'RESOURCE_CRAB'
 }
 
-local FOOD_RESOURCES = ANIMAL_RESOURCES + {
-  'RESOURCE_WHEAT',
-  'RESOURCE_BANANA',
-  'RESOURCE_BERRIES'
-}
+local FOOD_RESOURCES = {}
+for k,v in pairs(ANIMAL_RESOURCES) do FOOD_RESOURCES[k] = v end
+table.insert(FOOD_RESOURCES, 'RESOURCE_WHEAT')
+table.insert(FOOD_RESOURCES, 'RESOURCE_BANANA')
+table.insert(FOOD_RESOURCES, 'RESOURCE_BERRIES')
+
+
 
 
 
 -- UTILITIES (to go in separatte util file)
 function b2s( p_bool ) 
   return string.format("%s", tostring( p_bool ));
+end
+
+function tbl_reverse(t)
+  local reversedTable = {}
+  local itemCount = #t
+  for k, v in ipairs(t) do
+    reversedTable[itemCount + 1 - k] = v
+  end
+  return reversedTable
 end
 
 function debug( s )
@@ -196,27 +207,30 @@ end
 -- @param {Function} f_test - test function to be called whether to proceed 
 --                   checking or not. should be generalized, but is not now.
 --
-function HasWithinCity( player, ttype, things, f_success, f_pretest )
+function HasWithinCity( player, p_type_type, things, f_success, f_pretest )
 
   local playerHuman = player:IsHuman();
+  local ttype = TYPE_TYPES[p_type_type]
+
+  if playerHuman then
+    logger:info( "[HasWithinCity] Scanning " .. p_type_type )
+  end
 
   -- if playerHuman then -- temporary debug
   for city in player:Cities() do
 
-    logger:debug("[Buildings] "); 
-    logger:debug("[Buildings] ");
-    logger:debug("[Buildings] ----------------------------------");
-    logger:debug("[Buildings] HasWithinCity");
-    logger:debug("[Buildings] ----------------------------------");
-    logger:debug("[Buildings] Player: " .. player:GetName() .. " " .. player:GetID() );
-    logger:debug("[Buildings] Player: IsHuman: " .. b2s( playerHuman ) );
-    logger:debug("[Buildings] ----");
-    logger:debug("[Buildings] Name: " .. city:GetName());
-    logger:debug("[Buildings] NumPlots: " .. city:GetNumCityPlots());
-    logger:debug("[Buildings] GetX: " .. city:GetX());
-    logger:debug("[Buildings] GetY: " .. city:GetY());
+    logger:debug("[HasWithinCity] "); 
+    logger:debug("[HasWithinCity] ");
+    logger:debug("[HasWithinCity] ----------------------------------");
+    logger:debug("[HasWithinCity] HasWithinCity: " .. ttype);
+    logger:debug("[HasWithinCity] ----------------------------------");
+    logger:debug("[HasWithinCity] Player: " .. player:GetName() .. " " .. player:GetID() );
+    logger:debug("[HasWithinCity] Player: IsHuman: " .. b2s( playerHuman ) );
+    logger:debug("[HasWithinCity] Name: " .. city:GetName());
+    logger:debug("[HasWithinCity] GetX: " .. city:GetX());
+    logger:debug("[HasWithinCity] GetY: " .. city:GetY());
 
-    logger:debug("\n\n[Plot] Scanning Plots...");
+    logger:debug("[HasWithinCity] [Plot] Scanning Plots...");
 
     if f_pretest(city, nil) then
 
@@ -247,19 +261,31 @@ function HasWithinCity( player, ttype, things, f_success, f_pretest )
 
 
             if ttype == TYPE_TYPES['resources'] then
-            
-              resourceID = plot:GetResourceType()
-              if resourceID and resourceID > 0 then
+              
+              local resourceID = plot:GetResourceType()
+              if resourceID and resourceID > -1 then
+
+                local resource = GameInfo.Resources[ resourceID ]
+
+                logger:debug ("[HasWithinCity] [Plot] Found Resource: " .. resource.Type .. " at " .. plot_location_debug)
+
                 local animalResourceFound = false
-                for _, v in pairs(things) do
-                  if resourceID == v then
+
+                for _, res in pairs(things) do
+                  if resource.Type == res then
+                    logger:debug( "[HasWithinCity] [Plot]                Matching: " .. res)
+                    -- TODO: check for currently discovered ressources only
                     animalResourceFound = true
                   end
                 end
 
-                -- do not check for city real borders
+                -- do not check for city real borders, just nearby resources
+                -- within the specified range, 'r'
 
-                f_success( city, nil )
+                if animalResourceFound then
+                  f_success( city, nil )
+                  return true
+                end
 
               end
 
@@ -270,14 +296,14 @@ function HasWithinCity( player, ttype, things, f_success, f_pretest )
             if ttype == TYPE_TYPES['features'] then
 
               featureID = plot:GetFeatureType()
-              logger:debug ("[Plot] Found Feature: " .. featureID .. " at " .. plot_location_debug)
+              logger:debug ("[HasWithinCity] [Plot] Found Feature: " .. featureID .. " at " .. plot_location_debug)
               if featureID and featureID > 0 and things == featureID then
 
                 local plot_in_city = plot:IsPlayerCityRadius(player) and plot:IsOwned()
-                logger:debug("[Plot] Found City Feature: " .. featureID .. " at " .. plot_location_debug)
+                logger:debug("[HasWithinCity] [Plot]                in Big Radius")
 
                 if plot_in_city then
-                  logger:debug( "[Plot]    within city boundary" )
+                  logger:debug( "[HasWithinCity] [Plot]                within city boundary" )
                   f_success( city, nil )
                   return true
                 end
@@ -313,11 +339,17 @@ end
 -- all of these functions should be put together and sent to be checked all
 -- at once so we don't have to repeatedly keep checking plots 
 
+--
+-- CanBuild_Causeway
+-- 
+-- @param {iPlayer} iPlayer
+--
 function CanBuild_Causeway ( iPlayer )
 
   local player = Players[iPlayer]; -- we're all players in the end
 
   local f_succ = function ( city, plot )
+    logger:debug( "[CanBuild_Causeway] TRUE" )
     city:SetNumRealBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ, 1 );
   end
 
@@ -325,28 +357,43 @@ function CanBuild_Causeway ( iPlayer )
     return not (city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY ))
   end
 
-  HasWithinCity ( player, TYPE_TYPES['features'], GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
+  HasWithinCity ( player, 'features', GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
 
 end
 
+--
+-- CanBuild_FirePit
+-- 
+-- @param {iPlayer} iPlayer
+--
 function CanBuild_FirePit ( iPlayer )
 
   local player = Players[iPlayer]; -- we're still players playing at the game
 
   local f_succ = function ( city, plot )
-    city:SetNumRealBuilding( GameInfoTypes.BUILDING_FIREPIT_PREREQ, 1 );
+    logger:debug( "[CanBuild_FirePit] TRUE")
+    city:SetNumRealBuilding( GameInfoTypes.BUILDING_FIRE_PIT_PREREQ, 1 );
   end
 
   local f_pretest = function ( city, plot )
     return not (city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT ))
   end
 
-  HasWithinCity ( player, TYPE_TYPES['resources'], ANIMAL_RESOURCES, f_succ, f_pretest )
+  HasWithinCity ( player, 'resources', ANIMAL_RESOURCES, f_succ, f_pretest )
 
 end
 
 
+--
+-- CanBuild
+--
+function CanBuild ( iPlayer )
+
+  CanBuild_FirePit( iPlayer )
+  CanBuild_Causeway( iPlayer )
+  
+end
 
 
-GameEvents.PlayerDoTurn.Add( CanBuild_Causeway );
-logger:info("PlayerDoTurn.Add( CanBuild_Causeway )");
+GameEvents.PlayerDoTurn.Add( CanBuild );
+logger:info("PlayerDoTurn.Add( CanBuild )");
