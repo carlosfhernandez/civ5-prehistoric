@@ -945,7 +945,7 @@
     <Row>
       <Class>UNITCLASS_WANDERER</Class>
       <Type>UNIT_WANDERER</Type>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <PrereqTech>TECH_BIPEDALISM</PrereqTech>
       <Combat>3</Combat>
       <Cost>12</Cost>
       <Moves>2</Moves>

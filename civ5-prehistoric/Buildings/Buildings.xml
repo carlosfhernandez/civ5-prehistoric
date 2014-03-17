@@ -115,6 +115,11 @@ building: FirePit
 
     <!-- Buildings -->
     <Row>
+      <Type>BUILDINGCLASS_SPRING_SOURCE</Type>
+      <DefaultBuilding>BUILDING_SPRING_SOURCE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_SPRING_SOURCE_TITLE</Description>
+    </Row>    
+    <Row>
       <Type>BUILDINGCLASS_CAMPFIRE</Type>
       <DefaultBuilding>BUILDING_CAMPFIRE</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_CAMPFIRE_TITLE</Description>
@@ -212,33 +217,33 @@ building: FirePit
   │   New Buildings:
   │   - BUILDINGCLASS_TREE
   │     + BUILDING_TREE
-  │   - UNITCLASS_EXPLORER
-  │     * UNIT_EXPLORER
-  │   - UNITCLASS_AUSTRALOPITHECUS
-  │     * UNIT_AUSTRALOPITHECUS
-  │   - UNITCLASS_AUTOCHTHON
-  │     * UNIT_AUTOCHTHON
-  │   - UNITCLASS_WANDERER
-  │     - UNIT_WANDERER
-  │     - UNIT_SCOUT_ONE
-  │     - UNIT_SCOUT_TWO
-  │     - UNIT_SCOUT_THREE
-  │   - UNITCLASS_RUNNER
-  │     - UNIT_RUNNER  
-  │   - UNITCLASS_AXE_THROWER
-  │     * UNIT_AXE_THROWER
-  │   - UNITCLASS_NEANDERTHAL
-  │     * UNIT_NEANDERTHAL
-  │   - UNITCLASS_CAVEMAN
-  │     * UNIT_CAVEMAN
-  │   - UNITCLASS_BARB_ALPHA
-  │     - UNIT_BARB_ALPHA
-  │   - UNITCLASS_BEAR_WARRIOR
-  │     - UNIT_BEAR_WARRIOR
-  │   - UNITCLASS_PRIMITIVE_ARCHER
-  │     * UNIT_PRIMITIVE_ARCHER
-  │   - UNITCLASS_SAVAGE
-  │     * UNIT_SAVAGE
+  │   - BUILDINGCLASS_SPRING_SOURCE
+  │     * BUILDING_SPRING_SOURCE
+  │   - BUILDINGCLASS_GOLDEN_PATH
+  │     * BUILDING_GOLDEN_PATH
+  │   - BUILDINGCLASS_STONE_PILE
+  │     * BUILDING_STONE_PILE
+  │   - BUILDINGCLASS_TREE
+  │     - BUILDING_TREE
+  │     - BUILDING_TREE
+  │     - BUILDING_TREE
+  │     - BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     - BUILDING_TREE  
+  │   - BUILDINGCLASS_TREE
+  │     * BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     * BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     * BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     - BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     - BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     * BUILDING_TREE
+  │   - BUILDINGCLASS_TREE
+  │     * BUILDING_TREE
   │
   │
   │
@@ -262,10 +267,31 @@ building: FirePit
   --> 
   <Buildings>
 
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                           PREHISTORIC                                  │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+    
+    <!-- 
+          ◄█▓▒░ ● ADAPTIVE_RADIATION ● ░▒▓█► 
+    -->
+
+
+    <!-- TREE_LIFE -->
     <Row>
       <Type>BUILDING_TREE_LIFE</Type>
       <BuildingClass>BUILDINGCLASS_TREE_LIFE</BuildingClass>
       <Cost>0</Cost>
+      <PrereqTech>TECH_ADAPTIVE_RADIATION</PrereqTech>
       <Description>Tree of Life</Description>
       <Help>A tall, beautiful and fruitful tree, around which your community has been founded.
         [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].
@@ -282,17 +308,18 @@ building: FirePit
       <PortraitIndex>8</PortraitIndex>
     </Row>
 
+    <!-- TREE -->
     <Row>
       <Type>BUILDING_TREE</Type>
       <BuildingClass>BUILDINGCLASS_TREE</BuildingClass>
       <Cost>22</Cost>
       <GoldMaintenance>0</GoldMaintenance>
-      <PrereqTech>TECH_FIRE</PrereqTech>
-      <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
-      <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
-      <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
+      <PrereqTech>TECH_ADAPTIVE_RADIATION</PrereqTech>
+      <Description>TXT_KEY_BUILDING_TREE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_TREE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_TREE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_TREE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_TREE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
@@ -300,13 +327,503 @@ building: FirePit
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>15</PortraitIndex>
     </Row>
 
 
 
 
 
+
+
+    <!-- 
+          ◄█▓▒░ ● BIPEDAL_ADAPTION ● ░▒▓█► 
+    -->
+
+
+    <!-- LOOKOUT_ROCK -->
+    <Row>
+      <Type>BUILDING_LOOKOUT_ROCK</Type>
+      <BuildingClass>BUILDINGCLASS_LOOKOUT_ROCK</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <Description>TXT_KEY_BUILDING_LOOKOUT_ROCK_DESC</Description>
+      <Help>TXT_KEY_BUILDING_LOOKOUT_ROCK_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_LOOKOUT_ROCK_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_LOOKOUT_ROCK_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_LOOKOUT_ROCK_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>23</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                        LOWER PALEOLITHIC                               │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● BIPEDALISM ● ░▒▓█► 
+    -->
+
+
+    <!-- SPRING_SOURCE -->
+    <Row>
+      <Type>BUILDING_SPRING_SOURCE</Type>
+      <BuildingClass>BUILDINGCLASS_SPRING_SOURCE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_BIPEDALISM</PrereqTech>
+      <Description>TXT_KEY_BUILDING_SPRING_SOURCE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_SPRING_SOURCE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_SPRING_SOURCE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_SPRING_SOURCE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_SPRING_SOURCE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>16</PortraitIndex>
+    </Row>
+
+    <!-- GOLDEN_PATH -->
+    <Row>
+      <Type>BUILDING_GOLDEN_PATH</Type>
+      <BuildingClass>BUILDINGCLASS_GOLDEN_PATH</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_BIPEDALISM</PrereqTech>
+      <Description>TXT_KEY_BUILDING_GOLDEN_PATH_DESC</Description>
+      <Help>TXT_KEY_BUILDING_GOLDEN_PATH_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_GOLDEN_PATH_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_GOLDEN_PATH_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_GOLDEN_PATH_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>22</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ADVANCED_PERCEPTION ● ░▒▓█► 
+    -->
+
+
+    <!-- STONE_PILE -->
+    <Row>
+      <Type>BUILDING_STONE_PILE</Type>
+      <BuildingClass>BUILDINGCLASS_STONE_PILE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
+      <Description>TXT_KEY_BUILDING_STONE_PILE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_STONE_PILE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_STONE_PILE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_STONE_PILE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_STONE_PILE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>19</PortraitIndex>
+    </Row>
+
+    <!-- PALACE -->
+    <!-- OVERLOOK -->
+    <Row>
+      <Type>BUILDING_OVERLOOK</Type>
+      <BuildingClass>BUILDINGCLASS_OVERLOOK</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
+      <Description>TXT_KEY_BUILDING_OVERLOOK_DESC</Description>
+      <Help>TXT_KEY_BUILDING_OVERLOOK_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_OVERLOOK_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_OVERLOOK_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_OVERLOOK_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>20</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● GRUNTS_AND_GROWLS ● ░▒▓█► 
+    -->
+
+
+    <!-- GATHERING_CIRCLE -->
+    <Row>
+      <Type>BUILDING_GATHERING_CIRCLE</Type>
+      <BuildingClass>BUILDINGCLASS_GATHERING_CIRCLE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_GRUNTS_AND_GROWLS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_GATHERING_CIRCLE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_GATHERING_CIRCLE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_GATHERING_CIRCLE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_GATHERING_CIRCLE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_GATHERING_CIRCLE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>18</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SCAVENGING ● ░▒▓█► 
+    -->
+
+
+    <!-- BONE_PILE -->
+    <Row>
+      <Type>BUILDING_BONE_PILE</Type>
+      <BuildingClass>BUILDINGCLASS_BONE_PILE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_SCAVENGING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_BONE_PILE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_BONE_PILE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_BONE_PILE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_BONE_PILE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_BONE_PILE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>29</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SIMPLE_TOOLS ● ░▒▓█► 
+    -->
+
+
+    <!-- SHELTER_LEANTO -->
+    <Row>
+      <Type>BUILDING_SHELTER_LEANTO</Type>
+      <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
+      <Cost>14</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <Description>TXT_KEY_BUILDING_SHELTER_LEANTO_DESC</Description>
+      <Help>TXT_KEY_BUILDING_SHELTER_LEANTO_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_LEANTO_STATEGY</Strategy>
+      <Quote>TXT_KEY_BUILDING_SHELTER_LEANTO_QUOTE</Quote>
+      <Civilopedia>TXT_KEY_BUILDING_SHELTER_LEANTO_PEDIA</Civilopedia>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+    <!-- CHIEF_SHELTER -->
+    <Row>
+      <Type>BUILDING_PORABLE_TENTS</Type>
+      <BuildingClass>BUILDINGCLASS_PORABLE_TENTS</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_PORABLE_TENTS_DESC</Description>
+      <Help>TXT_KEY_BUILDING_PORABLE_TENTS_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_PORABLE_TENTS_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_PORABLE_TENTS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_PORABLE_TENTS_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             PALEOLITHIC                                │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COMPLEX_TOOLS ● ░▒▓█► 
+    -->
+
+
+    <!-- CAUSEWAY -->
+    <Row>
+      <Type>BUILDING_CAUSEWAY</Type>
+      <BuildingClass>BUILDINGCLASS_CAUSEWAY</BuildingClass>
+      <Cost>14</Cost>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <Description>TXT_KEY_BUILDING_CAUSEWAY_DESC</Description>
+      <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_CAUSEWAY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_CAUSEWAY_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>14</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ADHESIVES ● ░▒▓█► 
+    -->
+
+
+    <!-- HUT -->
+    <Row>
+      <Type>BUILDING_HUT</Type>
+      <BuildingClass>BUILDINGCLASS_HUT</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_ADHESIVES</PrereqTech>
+      <Description>TXT_KEY_BUILDING_HUT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_HUT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_HUT_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_HUT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_HUT_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● CONTAINERS ● ░▒▓█► 
+    -->
+
+
+    <!-- RUBBLE_WALL -->
+    <Row>
+      <Type>BUILDING_RUBBLE_WALL</Type>
+      <BuildingClass>BUILDINGCLASS_RUBBLE_WALL</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_CONTAINERS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_RUBBLE_WALL_DESC</Description>
+      <Help>TXT_KEY_BUILDING_RUBBLE_WALL_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_RUBBLE_WALL_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_RUBBLE_WALL_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_RUBBLE_WALL_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+    </Row>
+
+    <!-- TODO: Water Store -->
+
+
+
+    <!-- 
+          ◄█▓▒░ ● FAMILY_TIES ● ░▒▓█► 
+    -->
+
+
+    <!-- CHIEF_UPGRADE -->
+    <Row>
+      <Type>BUILDING_CHIEF_UPGRADE</Type>
+      <BuildingClass>BUILDINGCLASS_CHIEF_UPGRADE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_CONTAINERS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_CHIEF_UPGRADE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_CHIEF_UPGRADE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_CHIEF_UPGRADE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_CHIEF_UPGRADE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_CHIEF_UPGRADE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+  
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● HUNTING ● ░▒▓█► 
+    -->
+
+
+    <!-- HUNTING_TRAILS -->
+    <Row>
+      <Type>BUILDING_HUNTING_TRAILS</Type>
+      <BuildingClass>BUILDINGCLASS_HUNTING_TRAILS</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_HUNTING_TRAILS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_HUNTING_TRAILS_DESC</Description>
+      <Help>TXT_KEY_BUILDING_HUNTING_TRAILS_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_HUNTING_TRAILS_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_HUNTING_TRAILS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_HUNTING_TRAILS_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● FIRE ● ░▒▓█► 
+    -->
+
+
+    <!-- CAMPFIRE -->
     <Row>
       <Type>BUILDING_CAMPFIRE</Type>
       <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
@@ -328,67 +845,48 @@ building: FirePit
       <PortraitIndex>2</PortraitIndex>
     </Row>
 
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● FORAGING ● ░▒▓█► 
+    -->
+
+
+    <!-- HIDEOUT -->
     <Row>
-      <Type>BUILDING_CAUSEWAY</Type>
-      <BuildingClass>BUILDINGCLASS_CAUSEWAY</BuildingClass>
-      <Cost>14</Cost>
-      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
-      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
-      <Description>TXT_KEY_BUILDING_CAUSEWAY_DESC</Description>
-      <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STATEGY</Strategy>
-      <Civilopedia>TXT_KEY_BUILDING_CAUSEWAY_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_CAUSEWAY_QUOTE</Quote>
+      <Type>BUILDING_HIDEOUT</Type>
+      <BuildingClass>BUILDINGCLASS_HIDEOUT</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_FORAGING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_HIDEOUT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_HIDEOUT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_HIDEOUT_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_HIDEOUT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_HIDEOUT_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>14</PortraitIndex>
+      <PortraitIndex>26</PortraitIndex>
     </Row>
 
-    <Row>
-      <Type>BUILDING_CHIEF_HUT</Type>
-      <BuildingClass>BUILDINGCLASS_CHIEF_HUT</BuildingClass>
-      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
-      <Cost>36</Cost>
-      <Description>Chieftain's Hut</Description>
-      <Help>
-        Your personal luxurious, glorious and magnificent hut. Comes with a comfortable bed made of a big flat rock.
-        [NEWLINE]May only be built once in a Civilization. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
-      </Help>
-      <Strategy>The Chieftain's Hut is the center of early human politics. Here you act as leader, judge and counsellor to your people.</Strategy>
-      <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <Happiness>1</Happiness>
-      <Gold>1</Gold>
-      <NukeImmune>true</NukeImmune>
-      <MinAreaSize>-1</MinAreaSize>
-      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
-      <DisplayPosition>32</DisplayPosition>
-      <NeverCapture>true</NeverCapture>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>4</PortraitIndex>
-    </Row>
 
-    <Row>
-      <Type>BUILDING_FIRE_PIT</Type>
-      <BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
-      <Cost>21</Cost>
-      <GoldMaintenance>1</GoldMaintenance>
-      <PrereqTech>TECH_COOKING</PrereqTech>
-      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
-      <Description>TXT_KEY_BUILDING_FIRE_PIT_DESC</Description>
-      <Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STRATEGY</Strategy>
-      <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_FIRE_PIT_QUOTE</Quote>
-      <MinAreaSize>-1</MinAreaSize>
-      <ConquestProb>66</ConquestProb>
-      <HurryCostModifier>25</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>13</PortraitIndex>
-    </Row>
 
+
+
+
+    <!-- 
+          ◄█▓▒░ ● GATHERING ● ░▒▓█► 
+    -->
+
+
+    <!-- MIDDEN -->
     <Row>
       <Type>BUILDING_MIDDEN</Type>
       <BuildingClass>BUILDINGCLASS_MIDDEN</BuildingClass>
@@ -405,19 +903,430 @@ building: FirePit
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>12</PortraitIndex>
-    </Row>  
+    </Row> 
 
-    <Row><!-- TODO -->
-      <Type>BUILDING_CAVE</Type>
-      <BuildingClass>BUILDINGCLASS_CAVE</BuildingClass>
+    <!-- STORAGE_PIT -->
+    <Row>
+      <Type>BUILDING_STORAGE_PIT</Type>
+      <BuildingClass>BUILDINGCLASS_STORAGE_PIT</BuildingClass>
+      <Cost>21</Cost>
+      <GoldMaintenance>1</GoldMaintenance>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+      <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
+      <Description>TXT_KEY_BUILDING_STORAGE_PIT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_STORAGE_PIT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_STORAGE_PIT_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_STORAGE_PIT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_STORAGE_PIT_QUOTE</Quote>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <HurryCostModifier>25</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+    <!-- PORTABLE_HUTS -->
+    <Row>
+      <Type>BUILDING_PORTABLE_HUTS</Type>
+      <BuildingClass>BUILDINGCLASS_PORTABLE_HUTS</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_PORTABLE_HUTS_DESC</Description>
+      <Help>TXT_KEY_BUILDING_PORTABLE_HUTS_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_PORTABLE_HUTS_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_PORTABLE_HUTS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_PORTABLE_HUTS_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>21</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SYMBOLISM ● ░▒▓█► 
+    -->
+
+
+    <!-- GREAT_ROCK -->
+    <Row>
+      <Type>BUILDING_GREAT_ROCK</Type>
+      <BuildingClass>BUILDINGCLASS_GREAT_ROCK</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_SYMBOLISM</PrereqTech>
+      <Description>TXT_KEY_BUILDING_GREAT_ROCK_DESC</Description>
+      <Help>TXT_KEY_BUILDING_GREAT_ROCK_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_GREAT_ROCK_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_GREAT_ROCK_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_GREAT_ROCK_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row> 
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SOCIAL_STRUCTURE ● ░▒▓█► 
+    -->
+
+
+    <!-- CHIEF_HUT -->
+    <Row>
+      <Type>BUILDING_CHIEF_HUT</Type>
+      <BuildingClass>BUILDINGCLASS_CHIEF_HUT</BuildingClass>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+      <Cost>36</Cost>
+      <!-- TODO: inline text remove -->
+      <Description>Chieftain's Hut</Description>
+      <Help>Your personal luxurious, glorious and magnificent hut. Comes with a comfortable bed made of a big flat rock.[NEWLINE]May only be built once in a Civilization. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].</Help>
+      <Strategy>The Chieftain's Hut is the center of early human politics. Here you act as leader, judge and counsellor to your people.</Strategy>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <Gold>1</Gold>
+      <NukeImmune>true</NukeImmune>
+      <MinAreaSize>-1</MinAreaSize>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <DisplayPosition>32</DisplayPosition>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>4</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                           NEOLITHIC                                    │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COORDINATED HUNTING ● ░▒▓█► 
+    -->
+
+    <!-- Meat Rack -->
+
+    <!-- TODO -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ORIENTEERING ● ░▒▓█► 
+    -->
+
+    <!-- Hide Rack -->
+
+    <!-- TODO -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SCOUTING ● ░▒▓█► 
+    -->
+
+    <!-- Tree Stand -->
+
+    <!-- TODO -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COOKING ● ░▒▓█► 
+    -->
+
+
+    <!-- FIRE_PIT -->
+    <Row>
+      <Type>BUILDING_FIRE_PIT</Type>
+      <BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_FIRE_PIT_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>13</PortraitIndex>
+    </Row> 
+
+    <!-- PALACE -->
+    <!-- LUXURY_HUT -->
+    <Row>
+      <Type>BUILDING_LUXURY_HUT</Type>
+      <BuildingClass>BUILDINGCLASS_LUXURY_HUT</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_LUXURY_HUT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_LUXURY_HUT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_LUXURY_HUT_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_LUXURY_HUT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_LUXURY_HUT_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row> 
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● TOOL_SPECIALIZATION ● ░▒▓█► 
+    -->
+
+
+    <!-- FOOD_STORAGE -->
+    <Row>
+      <Type>BUILDING_FOOD_STORAGE</Type>
+      <BuildingClass>BUILDINGCLASS_FOOD_STORAGE</BuildingClass>
+      <Cost>21</Cost>
+      <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
+      <!-- TODO -->
+      <Help>Grants additional [ICON_FOOD] Food for your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Pottery[ENDCOLOR].</Help>
+      <Description>Food Storage</Description>
+      <Strategy>The Food Storage is usually a cool cave or cavity, where food is kept fresh longer. Build it to increase the Growth of your City.</Strategy>
+      <ArtDefineTag>GRANARY</ArtDefineTag>
+      <ObsoleteTech>TECH_POTTERY</ObsoleteTech>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <HurryCostModifier>25</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>6</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● LEADERSHIP ● ░▒▓█► 
+    -->
+
+
+    <!-- PALACE -->
+    <!-- PALACE -->
+    <!-- TODO: something else -->
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● PAINTING ● ░▒▓█► 
+    -->
+
+    <!-- SHRINE -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● PAINTING ● ░▒▓█► 
+    -->
+
+
+    <!-- ROCK_PAINTINGS -->
+    <Row>
+      <Type>BUILDING_ROCK_PAINTINGS</Type>
+      <BuildingClass>BUILDINGCLASS_ROCK_PAINTINGS</BuildingClass>
+      <PrereqTech>TECH_PAINTING</PrereqTech>
+      <Cost>32</Cost>
+      <Help>The Rock Paintings grant your community +1 [ICON_CULTURE] Culture.</Help>
+      <Description>Rock Paintings</Description>
+      <Strategy>Rock Paintings increase your Civilization's [ICON_CULTURE] Culture. Millennia later, archaeologists will be in awe of your amazing work.</Strategy>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <MinAreaSize>-1</MinAreaSize>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <NeverCapture>true</NeverCapture>
+      <PortraitIndex>5</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● WARFARE ● ░▒▓█► 
+    -->
+
+    <!-- PALISADE -->
+    <Row>
+      <Type>BUILDING_PALISADE</Type>
+      <BuildingClass>BUILDINGCLASS_PALISADE</BuildingClass>
+      <Cost>28</Cost>
+      <PrereqTech>TECH_WARFARE</PrereqTech>
+      <Help>Provides additional protection for your City.[NEWLINE]After constructing your Palace, receive a free Palisade in all Cities.</Help>
+      <Description>Palisade</Description>
+      <Strategy>The Palisade is a simple, but effective City fortification. Build it to protect your community from enemy attacks.</Strategy>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <MinAreaSize>-1</MinAreaSize>
+      <AllowsRangeStrike>true</AllowsRangeStrike>
+      <Defense>200</Defense>
+      <HurryCostModifier>25</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <NeverCapture>true</NeverCapture>
+      <PortraitIndex>3</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+    <!-- CAMPFIRE -->
+    <Row>
+      <Type>BUILDING_CAMPFIRE</Type>
+      <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+    </Row>    
+
+
+
+
+
+
+
+
+ 
+    <!-- TODO: shelters and sub-shelters types
+    <Row>
+      <Type>BUILDING_SHELTER_CAVE</Type>
+      <BuildingClass>BUILDINGCLASS_SHELTER_CAVE</BuildingClass>
       <Cost>14</Cost>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
-      <Description>TXT_KEY_BUILDING_SHELTER_DESC</Description>
-      <Help>TXT_KEY_BUILDING_SHELTER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_STATEGY</Strategy>
-      <Quote>TXT_KEY_BUILDING_SHELTER_QUOTE</Quote>
-      <Civilopedia>TXT_KEY_BUILDING_SHELTER_PEDIA</Civilopedia>
+      <Description>TXT_KEY_BUILDING_SHELTER_CAVE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_SHELTER_CAVE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_CAVE_STATEGY</Strategy>
+      <Quote>TXT_KEY_BUILDING_SHELTER_CAVE_QUOTE</Quote>
+      <Civilopedia>TXT_KEY_BUILDING_SHELTER_CAVE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
@@ -427,31 +1336,7 @@ building: FirePit
       <PortraitIndex>10</PortraitIndex>
     </Row>
 
-
-
-
-
-    <Row><!-- TODO -->
-      <Type>BUILDING_SHELTER_LEANTO</Type>
-      <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
-      <Cost>14</Cost>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
-      <Description>TXT_KEY_BUILDING_SHELTER_LEANTO_DESC</Description>
-      <Help>TXT_KEY_BUILDING_SHELTER_LEANTO_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_LEANTO_STATEGY</Strategy>
-      <Quote>TXT_KEY_BUILDING_SHELTER_LEANTO_QUOTE</Quote>
-      <Civilopedia>TXT_KEY_BUILDING_SHELTER_LEANTO_PEDIA</Civilopedia>
-      <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <Happiness>1</Happiness>
-      <MinAreaSize>-1</MinAreaSize>
-      <NeverCapture>true</NeverCapture>
-      <HurryCostModifier>40</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>10</PortraitIndex>
-    </Row>
-
-    <Row><!-- TODO -->
+    <Row>
       <Type>BUILDING_SHELTER_HIDE</Type>
       <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
       <Cost>14</Cost>
@@ -471,7 +1356,7 @@ building: FirePit
       <PortraitIndex>10</PortraitIndex>
     </Row>
 
-    <Row><!-- TODO -->
+    <Row>
       <Type>BUILDING_SHELTER_GRASS</Type>
       <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
       <Cost>14</Cost>
@@ -491,7 +1376,7 @@ building: FirePit
       <PortraitIndex>10</PortraitIndex>
     </Row>
 
-    <Row><!-- TODO -->
+    <Row>
       <Type>BUILDING_SHELTER_STICK</Type>
       <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
       <Cost>14</Cost>
@@ -511,7 +1396,7 @@ building: FirePit
       <PortraitIndex>10</PortraitIndex>
     </Row>
 
-    <Row><!-- TODO -->
+    <Row>
       <Type>BUILDING_SHELTER_OVERHANG</Type>
       <BuildingClass>BUILDINGCLASS_SHELTER</BuildingClass>
       <Cost>14</Cost>
@@ -530,61 +1415,14 @@ building: FirePit
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>10</PortraitIndex>
     </Row>    
+    -->
 
 
 
 
-    <Row>
-      <Type>BUILDING_FOOD_STORAGE</Type>
-      <BuildingClass>BUILDINGCLASS_FOOD_STORAGE</BuildingClass>
-      <Cost>21</Cost>
-      <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
-      <Help>Grants additional [ICON_FOOD] Food for your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Pottery[ENDCOLOR].</Help>
-      <Description>Food Storage</Description>
-      <Strategy>The Food Storage is usually a cool cave or cavity, where food is kept fresh longer. Build it to increase the Growth of your City.</Strategy>
-      <ArtDefineTag>GRANARY</ArtDefineTag>
-      <ObsoleteTech>TECH_POTTERY</ObsoleteTech>
-      <MinAreaSize>-1</MinAreaSize>
-      <ConquestProb>66</ConquestProb>
-      <HurryCostModifier>25</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>6</PortraitIndex>
-    </Row>
 
-    <Row>
-      <Type>BUILDING_ROCK_PAINTINGS</Type>
-      <BuildingClass>BUILDINGCLASS_ROCK_PAINTINGS</BuildingClass>
-      <PrereqTech>TECH_ART</PrereqTech>
-      <Cost>32</Cost>
-      <Help>The Rock Paintings grant your community +1 [ICON_CULTURE] Culture.</Help>
-      <Description>Rock Paintings</Description>
-      <Strategy>Rock Paintings increase your Civilization's [ICON_CULTURE] Culture. Millennia later, archaeologists will be in awe of your amazing work.</Strategy>
-      <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <MinAreaSize>-1</MinAreaSize>
-      <HurryCostModifier>40</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <NeverCapture>true</NeverCapture>
-      <PortraitIndex>5</PortraitIndex>
-    </Row>
-
-    <Row>
-      <Type>BUILDING_PALISADE</Type>
-      <BuildingClass>BUILDINGCLASS_PALISADE</BuildingClass>
-      <Cost>28</Cost>
-      <PrereqTech>TECH_WARFARE</PrereqTech>
-      <Help>Provides additional protection for your City.[NEWLINE]After constructing your Palace, receive a free Palisade in all Cities.</Help>
-      <Description>Palisade</Description>
-      <Strategy>The Palisade is a simple, but effective City fortification. Build it to protect your community from enemy attacks.</Strategy>
-      <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <MinAreaSize>-1</MinAreaSize>
-      <AllowsRangeStrike>true</AllowsRangeStrike>
-      <Defense>200</Defense>
-      <HurryCostModifier>25</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <NeverCapture>true</NeverCapture>
-      <PortraitIndex>3</PortraitIndex>
-    </Row>
-
+    <!-- TODO -->
+    <!-- GATHERING_ROCK -->
     <Row>
       <Type>BUILDING_GATHERING_ROCK</Type>
       <BuildingClass>BUILDINGCLASS_GATHERING_ROCK</BuildingClass>
@@ -601,8 +1439,9 @@ building: FirePit
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <NeverCapture>true</NeverCapture>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>56</PortraitIndex>
     </Row>
+
 
   </Buildings>
 
