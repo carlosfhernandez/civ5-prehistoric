@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-	<Eras>
-
-
-
-    <Update>
-      <Where Type="ERA_CLASSICAL"/>
-      <Set ResearchPercent="120"/>
-    </Update>
-
-
-    <Update>
-      <Where Type="ERA_MEDIEVAL"/>
-      <Set ResearchPercent="110"/>
-    </Update>
-
-
-    <Update>
-      <Where Type="ERA_RENAISSANCE"/>
-      <Set ResearchPercent="110"/>
-    </Update>
-    
-    
-
-	</Eras>
-
-
-
 <GameData>
 
 	<Eras>
@@ -609,6 +582,27 @@
 			<AudioUnitVictoryScript>AS2D_VICTORY_LATE</AudioUnitVictoryScript>
 			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
 		</Row>
+
+
+
+
+    <Update>
+      <Where Type="ERA_CLASSICAL"/>
+      <Set ResearchPercent="120"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_MEDIEVAL"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+
+
+    <Update>
+      <Where Type="ERA_RENAISSANCE"/>
+      <Set ResearchPercent="110"/>
+    </Update>
+
 
 
 	</Eras>

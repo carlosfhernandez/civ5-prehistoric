@@ -1286,6 +1286,7 @@ building: FirePit
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
     <!-- CAMPFIRE -->
+    <!--
     <Row>
       <Type>BUILDING_CAMPFIRE</Type>
       <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
@@ -1306,7 +1307,7 @@ building: FirePit
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>2</PortraitIndex>
     </Row>    
-
+    -->
 
 
 
