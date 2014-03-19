@@ -194,6 +194,8 @@ Sewing
 Reasoning
 Introspection
 Problem Solving
+Oral Tradition
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
  LEGEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -234,7 +236,10 @@ UNITS
 ? Laborer Useless until first improvement is enabled
 
 WONDERS
+* city must {be on terrain} {have improved resource} {have other building}
 - Laetoli 3.5M oldest bipedal record
+
+
 
 BUILDINGS
 
@@ -449,7 +454,7 @@ BUILDINGS
 │ Containers                                                          │   │  │  │  │  │  │  │  │  │  │  │  │          
 │                     u-Slinger (t:ranged)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rubble Wall                                   │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Water Store                                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Water Storage                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Bhimbetka Rock Shelters                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -494,7 +499,7 @@ BUILDINGS
 │                     r-Berries,                                      │   │  │  │  │  │  │  │  │  │  │  │  │                         
 │                     b-Midden (+1F)                                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Fire Pit (+1F)                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Lookout Tree                                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Lookout Tree  TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Portable Huts                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Gatherer (pre-Laborer)                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Neanderthal                                   │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -533,20 +538,20 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Coordinated Hunting                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Axe Thrower                                   │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Meat Rack                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Meat Rack TODO                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Orienteering                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Lookout                                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Hide Rack                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Hide Rack TODO                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Bear Warrior                                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Scouting                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Scout, u-#Pathfinder                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Tree Stand                                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Tree Stand TODO                               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -557,9 +562,9 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Symbolic Communicatn                                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Warning Signs                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Warning Signs TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-                                              │   │  │  │  │  │  │  │  │  │  │  │  │
-w-Gobekli Tepe
+│                     w-Gobekli Tepe                                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -567,8 +572,8 @@ w-Gobekli Tepe
 │                     u-Thinker (t:support)                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Raider (t:skirmisher)                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Luxury Hut                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Noise Perimiter                               │   │  │  │  │  │  │  │  │  │  │  │  │
-w-Gulf of Khambhat
+│                     b-Noise Perimiter TODO                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gulf of Khambhat                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -603,21 +608,21 @@ w-Gulf of Khambhat
 │                     b-Food Storage (+1F)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     {Must have Hunter or Gatherer unit}             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     n-Raft                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-w-Carnac Stones
+│                     w-Carnac Stones                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Language                                                            │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     a-Embasies                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Harbinger                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-w-The Unfinished Obelisk of Aswan
+│                     w-The Unfinished Obelisk of Aswan               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Leadership                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-%Galley {Buildable with limits}               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Palace???                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-w-The Cairn of Barnenez
+│                     w-The Cairn of Barnenez                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -656,7 +661,7 @@ w-The Cairn of Barnenez
 │                     u-Brute                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Woomerist                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Palisade                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-w-Ugarit
+│                     w-Ugarit                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │

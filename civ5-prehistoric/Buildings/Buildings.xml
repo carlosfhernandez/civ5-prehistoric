@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+
 <!--
 ╔═══════════════════════════════════════════════════════════════════════════════
 ║
@@ -8,7 +9,7 @@
 ║  
 ╠═══════════════════════════════════════════════════════════════════════════════
 ║
-║   Units
+║   BuildingClasses
 ║   UnitClasses
 ║   Unit_AITypes
 ║   Unit_Flavors
@@ -23,24 +24,6 @@
 -->
 <GameData>
 
-  <!--
-building: FirePit
-  requires: animal resource (not worked) nearby
-  bonus: +1 food
-  todo: food kept
-  
--->
-
-  <!--
-
-  Building: Campfire
-    +1 Gold
-    +1 Happiness
-  
-  !NO 3D MAP ART
-
-  -->
-
 
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
@@ -51,8 +34,11 @@ building: FirePit
   │   Capitol Class:
   │   - BUILDINGCLASS_TREE_LIFE
   │   - BUILDINGCLASS_GRAND_OVERLOOK
-  │   - BUILDINGCLASS_PORTABLE_CAMP
+  │   - BUILDINGCLASS_CHIEF_UPGRADE
+  │   - BUILDINGCLASS_PORTABLE_CAMP*
   │   - BUILDINGCLASS_CHIEF_HUT
+  │   - BUILDINGCLASS_LUXURY_HUT
+  │
   │
   │   Prereq Classes:
   │   - BUILDINGCLASS_CAUSEWAY
@@ -61,19 +47,38 @@ building: FirePit
   │
   │   New Classes:
   │   - BUILDINGCLASS_TREE
-  │   - BUILDINGCLASS_CAMPFIRE
+  │   - BUILDINGCLASS_LOOKOUT_ROCK
+  │   - BUILDINGCLASS_SPRING_SOURCE
+  │   - BUILDINGCLASS_GOLDEN_PATH
+  │   - BUILDINGCLASS_STONE_PILE
+  │   - BUILDINGCLASS_OVERLOOK
+  │   - BUILDINGCLASS_GATHERING_CIRCLE
+  │   - BUILDINGCLASS_BONE_PILE
+  │   - BUILDINGCLASS_SHELTER_LEANTO
+  │   - BUILDINGCLASS_PORTABLE_BASIC_SHELTER
   │   - BUILDINGCLASS_CAUSEWAY
-  │   - BUILDINGCLASS_FIRE_PIT
+  │   - BUILDINGCLASS_HUT
+  │   - BUILDINGCLASS_RUBBLE_WALL  
+  │   - BUILDINGCLASS_WATER_STORAGE  
+  │   - BUILDINGCLASS_HUNTING_TRAILS
+  │   - BUILDINGCLASS_CAMPFIRE
+  │   - BUILDINGCLASS_HIDEOUT
   │   - BUILDINGCLASS_MIDDEN
-  │   - BUILDINGCLASS_SHELTER
+  │   - BUILDINGCLASS_STORAGE_PIT
+  │   - BUILDINGCLASS_PORTABLE_HUTS
+  │   - BUILDINGCLASS_GREAT_ROCK
+  │   - BUILDINGCLASS_FIRE_PIT
   │   - BUILDINGCLASS_FOOD_STORAGE
   │   - BUILDINGCLASS_ROCK_PAINTINGS
   │   - BUILDINGCLASS_PALISADE
   │   - BUILDINGCLASS_GATHERING_ROCK
+  │
+  │
+  │   TBD:
+  │   - BUILDINGCLASS_SHELTER
   │   - BUILDINGCLASS_STONE_CIRCLE
   │   - BUILDINGCLASS_DOLMEN
   │   - BUILDINGCLASS_MEGALITH
-  │   - BUILDINGCLASS_HIDEOUT
   │   - BUILDINGCLASS_DESERT_HOLES
   │
   │
@@ -90,39 +95,94 @@ building: FirePit
     <Row>
       <Type>BUILDINGCLASS_TREE_LIFE</Type>
       <DefaultBuilding>BUILDING_TREE_LIFE</DefaultBuilding>
-      <Description>Tree of Life</Description>
+      <Description>TXT_KEY_BUILDING_TREE_LIFE_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
     <Row>
+      <Type>BUILDINGCLASS_CHIEF_UPGRADE</Type>
+      <DefaultBuilding>BUILDING_CHIEF_UPGRADE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_CHIEF_UPGRADE_TITLE</Description>
+      <MaxPlayerInstances>1</MaxPlayerInstances>
+    </Row>    
+    <Row>
       <Type>BUILDINGCLASS_GRAND_OVERLOOK</Type>
       <DefaultBuilding>BUILDING_GRAND_OVERLOOK</DefaultBuilding>
-      <Description>Grand Overlook</Description>
+      <Description>TXT_KEY_BUILDING_GRAND_OVERLOOK_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_PORTABLE_CAMP</Type>
       <DefaultBuilding>BUILDING_PORTABLE_CAMP</DefaultBuilding>
-      <Description>Portable Camp</Description>
+      <Description>TXT_KEY_BUILDING_PORTABLE_CAMP_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_CHIEF_HUT</Type>
       <DefaultBuilding>BUILDING_CHIEF_HUT</DefaultBuilding>
-      <Description>Chieftain's Hut</Description>
+      <Description>TXT_KEY_BUILDING_CHIEF_HUT_TITLE</Description>
+      <MaxPlayerInstances>1</MaxPlayerInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_LUXURY_HUT</Type>
+      <DefaultBuilding>BUILDING_LUXURY_HUT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_LUXURY_HUT_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
 
 
+
+
+
     <!-- Buildings -->
+    <Row>
+      <Type>BUILDINGCLASS_TREE</Type>
+      <DefaultBuilding>BUILDING_TREE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_TREE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_LOOKOUT_ROCK</Type>
+      <DefaultBuilding>BUILDING_LOOKOUT_ROCK</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_LOOKOUT_ROCK_TITLE</Description>
+    </Row>
     <Row>
       <Type>BUILDINGCLASS_SPRING_SOURCE</Type>
       <DefaultBuilding>BUILDING_SPRING_SOURCE</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_SPRING_SOURCE_TITLE</Description>
-    </Row>    
+    </Row>
     <Row>
-      <Type>BUILDINGCLASS_CAMPFIRE</Type>
-      <DefaultBuilding>BUILDING_CAMPFIRE</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_CAMPFIRE_TITLE</Description>
+      <Type>BUILDINGCLASS_GOLDEN_PATH</Type>
+      <DefaultBuilding>BUILDING_GOLDEN_PATH</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_GOLDEN_PATH_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_STONE_PILE</Type>
+      <DefaultBuilding>BUILDING_STONE_PILE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_STONE_PILE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_OVERLOOK</Type>
+      <DefaultBuilding>BUILDING_OVERLOOK</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_OVERLOOK_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GATHERING_CIRCLE</Type>
+      <DefaultBuilding>BUILDING_GATHERING_CIRCLE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_GATHERING_CIRCLE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_BONE_PILE</Type>
+      <DefaultBuilding>BUILDING_BONE_PILE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_BONE_PILE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_SHELTER_LEANTO</Type>
+      <DefaultBuilding>BUILDING_SHELTER_LEANTO</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_SHELTER_LEANTO_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_PORTABLE_BASIC_SHELTER</Type>
+      <DefaultBuilding>BUILDING_PORTABLE_BASIC_SHELTER</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_TITLE</Description>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_CAUSEWAY</Type>
@@ -130,15 +190,85 @@ building: FirePit
       <Description>TXT_KEY_BUILDING_CAUSEWAY_TITLE</Description>
     </Row>
     <Row>
-      <Type>BUILDINGCLASS_FIRE_PIT</Type>
-      <DefaultBuilding>BUILDING_FIRE_PIT</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_FIRE_PIT_TITLE</Description>
+      <Type>BUILDINGCLASS_HUT</Type>
+      <DefaultBuilding>BUILDING_HUT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_HUT_TITLE</Description>
+    </Row>    
+    <Row>
+      <Type>BUILDINGCLASS_RUBBLE_WALL</Type>
+      <DefaultBuilding>BUILDING_RUBBLE_WALL</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_RUBBLE_WALL_TITLE</Description>
     </Row>
+    <Row>
+      <Type>BUILDINGCLASS_WATER_STORAGE</Type>
+      <DefaultBuilding>BUILDING_WATER_STORAGE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_WATER_STORAGE_TITLE</Description>
+    </Row>     
+    <Row>
+      <Type>BUILDINGCLASS_HUNTING_TRAILS</Type>
+      <DefaultBuilding>BUILDING_HUNTING_TRAILS</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_HUNTING_TRAILS_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_CAMPFIRE</Type>
+      <DefaultBuilding>BUILDING_CAMPFIRE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_CAMPFIRE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_HIDEOUT</Type>
+      <DefaultBuilding>BUILDING_HIDEOUT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_HIDEOUT_TITLE</Description>
+    </Row> 
     <Row>
       <Type>BUILDINGCLASS_MIDDEN</Type>
       <DefaultBuilding>BUILDING_MIDDEN</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_MIDDEN_TITLE</Description>
     </Row>
+    <Row>
+      <Type>BUILDINGCLASS_STORAGE_PIT</Type>
+      <DefaultBuilding>BUILDING_STORAGE_PIT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_STORAGE_PIT_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_PORTABLE_HUTS</Type>
+      <DefaultBuilding>BUILDING_PORTABLE_HUTS</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_PORTABLE_HUTS_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GREAT_ROCK</Type>
+      <DefaultBuilding>BUILDING_GREAT_ROCK</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_GREAT_ROCK_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_FIRE_PIT</Type>
+      <DefaultBuilding>BUILDING_FIRE_PIT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_FOOD_STORAGE</Type>
+      <DefaultBuilding>BUILDING_FOOD_STORAGE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_FOOD_STORAGE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_ROCK_PAINTINGS</Type>
+      <DefaultBuilding>BUILDING_ROCK_PAINTINGS</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_ROCK_PAINTINGS_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_PALISADE</Type>
+      <DefaultBuilding>BUILDING_PALISADE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_PALISADE_TITLE</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GATHERING_ROCK</Type>
+      <DefaultBuilding>BUILDING_GATHERING_ROCK</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_GATHERING_ROCK_TITLE</Description>
+    </Row>
+
+
+
+
+
     <Row>
       <Type>BUILDINGCLASS_CAVE</Type>
       <DefaultBuilding>BUILDING_CAVE</DefaultBuilding>
@@ -150,63 +280,42 @@ building: FirePit
       <Description>TXT_KEY_BUILDING_SHELTER_TITLE</Description>
     </Row>    
     <Row>
-      <Type>BUILDINGCLASS_FOOD_STORAGE</Type>
-      <DefaultBuilding>BUILDING_FOOD_STORAGE</DefaultBuilding>
-      <Description>Food Storage</Description>
-    </Row>
-    <Row>
-      <Type>BUILDINGCLASS_ROCK_PAINTINGS</Type>
-      <DefaultBuilding>BUILDING_ROCK_PAINTINGS</DefaultBuilding>
-      <Description>Rock Paintings</Description>
-    </Row>
-    <Row>
-      <Type>BUILDINGCLASS_PALISADE</Type>
-      <DefaultBuilding>BUILDING_PALISADE</DefaultBuilding>
-      <Description>Palisade</Description>
-    </Row>
-    <Row>
-      <Type>BUILDINGCLASS_GATHERING_ROCK</Type>
-      <DefaultBuilding>BUILDING_GATHERING_ROCK</DefaultBuilding>
-      <Description>Gathering Rock</Description>
-    </Row>
-    <Row>
       <Type>BUILDINGCLASS_STONE_CIRCLE</Type>
       <DefaultBuilding>BUILDING_STONE_CIRCLE</DefaultBuilding>
-      <Description>Stone Circle</Description>
+      <Description>TXT_KEY_BUILDING_STONE_CIRCLE_TITLE</Description>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_DOLMEN</Type>
       <DefaultBuilding>BUILDING_DOLMEN</DefaultBuilding>
-      <Description>Dolmen</Description>
+      <Description>TXT_KEY_BUILDING_DOLMEN_TITLE</Description>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_DESERT_HOLES</Type>
       <DefaultBuilding>BUILDING_DESERT_HOLES</DefaultBuilding>
-      <Description>Desert Holes</Description>
+      <Description>TXT_KEY_BUILDING_DESSERT_HOLES_TITLE</Description>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_MEGALITH</Type>
       <DefaultBuilding>BUILDING_MEGALITH</DefaultBuilding>
-      <Description>Megalith</Description>
+      <Description>TXT_KEY_BUILDING_MEGALITH_TITLE</Description>
     </Row>
-    <Row>
-      <Type>BUILDINGCLASS_HIDEOUT</Type>
-      <DefaultBuilding>BUILDING_HIDEOUT</DefaultBuilding>
-      <Description>Megalith</Description>
-    </Row> 
+
 
   </BuildingClasses>
 
 
 
-  <!--
+
+
+
+<!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
   │   BUILDINGS
   │
   │   Capitol Buildings:
   │   - BUILDINGCLASS_TREE_LIFE
-  │     - BUILDING_TREE_LIFE
+  │     + BUILDING_TREE_LIFE
   │
   │
   │
@@ -217,36 +326,77 @@ building: FirePit
   │   New Buildings:
   │   - BUILDINGCLASS_TREE
   │     + BUILDING_TREE
+  │     o BUILDING_TREE_FRUIT
+  │     o BUILDING_TREE_NUT
+  │     o BUILDING_TREE_LEAVES   
+  │   - BUILDINGCLASS_LOOKOUT_ROCK
+  │     + BUILDING_LOOKOUT_ROCK
   │   - BUILDINGCLASS_SPRING_SOURCE
-  │     * BUILDING_SPRING_SOURCE
+  │     + BUILDING_SPRING_SOURCE
   │   - BUILDINGCLASS_GOLDEN_PATH
-  │     * BUILDING_GOLDEN_PATH
+  │     + BUILDING_GOLDEN_PATH
   │   - BUILDINGCLASS_STONE_PILE
-  │     * BUILDING_STONE_PILE
-  │   - BUILDINGCLASS_TREE
-  │     - BUILDING_TREE
-  │     - BUILDING_TREE
-  │     - BUILDING_TREE
-  │     - BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     - BUILDING_TREE  
-  │   - BUILDINGCLASS_TREE
-  │     * BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     * BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     * BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     - BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     - BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     * BUILDING_TREE
-  │   - BUILDINGCLASS_TREE
-  │     * BUILDING_TREE
+  │     + BUILDING_STONE_PILE
+  │   - BUILDINGCLASS_OVERLOOK
+  │     + BUILDING_OVERLOOK
+  │   - BUILDINGCLASS_GATHERING_CIRCLE
+  │     + BUILDING_GATHERING_CIRCLE
+  │   - BUILDINGCLASS_BONE_PILE
+  │     + BUILDING_BONE_PILE
+  │   - BUILDINGCLASS_SHELTER_LEANTO
+  │     + BUILDING_SHELTER_LEANTO
+  │   - BUILDINGCLASS_PORTABLE_BASIC_SHELTER
+  │     + BUILDING_PORTABLE_BASIC_SHELTER
+  │   - BUILDINGCLASS_CAUSEWAY
+  │     + BUILDING_CAUSEWAY
+  │   - BUILDINGCLASS_HUT
+  │     + BUILDING_HUT
+  │   - BUILDINGCLASS_RUBBLE_WALL  
+  │     + BUILDING_RUBBLE_WALL
+  │   - BUILDINGCLASS_WATER_STORAGE
+  │     + BUILDING_WATER_STORAGE
+  │   - BUILDINGCLASS_HUNTING_TRAILS
+  │     + BUILDING_HUNTING_TRAILS
+  │   - BUILDINGCLASS_CAMPFIRE
+  │     + BUILDING_CAMPFIRE
+  │   - BUILDINGCLASS_HIDEOUT
+  │     + BUILDING_HIDEOUT
+  │   - BUILDINGCLASS_MIDDEN
+  │     + BUILDING_MIDDEN
+  │   - BUILDINGCLASS_STORAGE_PIT
+  │     + BUILDING_STORAGE_PIT
+  │   - BUILDINGCLASS_PORTABLE_HUTS
+  │     + BUILDING_PORTABLE_HUTS
+  │   - BUILDINGCLASS_GREAT_ROCK
+  │     + BUILDING_GREAT_ROCK
+  │   - BUILDINGCLASS_FIRE_PIT
+  │     + BUILDING_FIRE_PIT
+  │   - BUILDINGCLASS_FOOD_STORAGE
+  │     + BUILDING_FOOD_STORAGE
+  │   - BUILDINGCLASS_ROCK_PAINTINGS
+  │     + BUILDING_ROCK_PAINTINGS
+  │   - BUILDINGCLASS_PALISADE
+  │     + BUILDING_PALISADE
+  │   - BUILDINGCLASS_GATHERING_ROCK
+  │     + BUILDING_GATHERING_ROCK
   │
   │
-  │
+  │   TBD:
+  │   - BUILDINGCLASS_SHELTER
+  │     + BUILDING_SHELTER_LEANTO
+  │     + BUILDING_SHELTER_CAVE
+  │     + BUILDING_SHELTER_HIDE
+  │     + BUILDING_SHELTER_GRASS
+  │     + BUILDING_SHELTER_STICK
+  │     + BUILDING_SHELTER_OVERHANG
+  │   - BUILDINGCLASS_STONE_CIRCLE
+  │     + BUILDING_STONE_CIRCLE
+  │   - BUILDINGCLASS_DOLMEN
+  │     + BUILDING_DOLMEN
+  │   - BUILDINGCLASS_MEGALITH
+  │     + BUILDING_MEGALITH
+  │   - BUILDINGCLASS_DESERT_HOLES
+  │     + BUILDING_DESERT_HOLES
   │
   │
   │
@@ -266,6 +416,23 @@ building: FirePit
   └─────────────────────────────────────────────────────────────────────────────
   --> 
   <Buildings>
+
+
+  <!--
+    Big Todo List
+    =============
+      FirePit
+        - requires: animal resource (not worked) nearby
+        - bonus: +1 food
+        - food kept
+
+
+  -->
+
+
+
+
+
 
 
     <!--
@@ -292,11 +459,10 @@ building: FirePit
       <BuildingClass>BUILDINGCLASS_TREE_LIFE</BuildingClass>
       <Cost>0</Cost>
       <PrereqTech>TECH_ADAPTIVE_RADIATION</PrereqTech>
-      <Description>Tree of Life</Description>
-      <Help>A tall, beautiful and fruitful tree, around which your community has been founded.
-        [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].
-      </Help>
-      <Strategy>The concept of a tree of life has been used in science, religion, philosophy, mythology, and other areas. A tree of life is a common motif in various world theologies, mythologies, and philosophies. A mystical concept alluding to the interconnection of all life on our planet; and a metaphor for common descent in the evolutionary sense. The term tree of life may also be used as a synonym for 'sacred tree'.[NEWLINE](Quoted from en.wikipedia.org/wiki/Tree_of_life)</Strategy>
+      <Description>TXT_KEY_BUILDING_TREE_LIFE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_TREE_LIFE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_TREE_LIFE_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_TREE_LIFE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Gold>2</Gold>
       <Capital>true</Capital>
@@ -362,7 +528,6 @@ building: FirePit
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>23</PortraitIndex>
     </Row>
-
 
 
 
@@ -609,16 +774,16 @@ building: FirePit
 
     <!-- CHIEF_SHELTER -->
     <Row>
-      <Type>BUILDING_PORABLE_TENTS</Type>
-      <BuildingClass>BUILDINGCLASS_PORABLE_TENTS</BuildingClass>
+      <Type>BUILDING_PORTABLE_BASIC_SHELTER</Type>
+      <BuildingClass>BUILDINGCLASS_PORTABLE_BASIC_SHELTER</BuildingClass>
       <Cost>22</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Description>TXT_KEY_BUILDING_PORABLE_TENTS_DESC</Description>
-      <Help>TXT_KEY_BUILDING_PORABLE_TENTS_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_PORABLE_TENTS_STATEGY</Strategy>
-      <Civilopedia>TXT_KEY_BUILDING_PORABLE_TENTS_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_PORABLE_TENTS_QUOTE</Quote>
+      <Description>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_DESC</Description>
+      <Help>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
@@ -628,7 +793,6 @@ building: FirePit
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
-
 
 
 
@@ -736,8 +900,27 @@ building: FirePit
       <PortraitIndex>24</PortraitIndex>
     </Row>
 
-    <!-- TODO: Water Store -->
-
+    <!-- Water Storage -->
+    <Row>
+      <Type>BUILDING_WATER_STORAGE</Type>
+      <BuildingClass>BUILDINGCLASS_WATER_STORAGE</BuildingClass>
+      <Cost>22</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_CONTAINERS</PrereqTech>
+      <Description>TXT_KEY_BUILDING_WATER_STORAGE_DESC</Description>
+      <Help>TXT_KEY_BUILDING_WATER_STORAGE_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_WATER_STORAGE_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_WATER_STORAGE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_WATER_STORAGE_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <Happiness>1</Happiness>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>66</ConquestProb>
+      <NeverCapture>true</NeverCapture>
+      <HurryCostModifier>40</HurryCostModifier>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
 
 
     <!-- 
@@ -1450,6 +1633,15 @@ building: FirePit
 
 
 
+
+
+
+
+
+
+
+
+
   <Buildings>
 
 
@@ -1459,13 +1651,34 @@ building: FirePit
       <Set FreeBuilding ="BUILDINGCLASS_PALISADE"/>
       <Where BuildingClass ="BUILDINGCLASS_PALACE"/>
     </Update>
+
   </Buildings>
 
 
+  
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FLAVORS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_Flavors>
 
     <Row>
@@ -1572,6 +1785,30 @@ building: FirePit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_YieldChanges>
 
     <Row>
@@ -1622,6 +1859,31 @@ building: FirePit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING CLASSES NEEDED IN CITY
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_ClassesNeededInCity>
     <Row>
       <BuildingType>BUILDING_TREE_LIFE</BuildingType>
@@ -1640,6 +1902,32 @@ building: FirePit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_ResourceYieldChanges>
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
@@ -1658,12 +1946,34 @@ building: FirePit
 
 
 
-  <!--
-  Causeway: must have marsh within city borders
-  +1 Production for settlement 
-  Marshland resources provide +1 bonuses
-  -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FREE UNITS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  -->
+  <Building_FreeUnits>
+
+  </Building_FreeUnits>
   <!--
   #TODO: [CFH] Find out why this was in here
 	<Building_FreeUnits>
@@ -1675,6 +1985,38 @@ building: FirePit
 	</Building_FreeUnits>
   -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING LOCAL RESOURCE ORS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_LocalResourceOrs>
+
+  </Building_LocalResourceOrs>
   <!--
   <Building_LocalResourceOrs>
     <Row>
@@ -1711,7 +2053,303 @@ building: FirePit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ╔═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║  BUILDING TEXTS
+  ║  
+  ╠═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║
+  ║ 
+  ║
+  ╚═════════════════════════════════════════════════════════════════════════════
+  -->
   <Language_en_US>
+
+
+
+
+    <!-- Building Templates -->
+
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_TITLE">
+      <Text>title</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_DESC">
+      <Text>desc</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_HELP">
+      <Text>help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_STATEGY">
+      <Text>strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_PEDIA">
+      <Text>pedia</Text>
+    </Row>
+
+
+
+
+    <!-- Capitol Buildings -->
+
+
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_TITLE">
+      <Text>Tree of Life</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_DESC">
+      <Text>Tree of Life</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_HELP">
+      <Text>A tall, beautiful and fruitful tree, around which your community has been founded. [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_STATEGY">
+      <Text>The concept of a tree of life has been used in science, religion, philosophy, mythology, and other areas. A tree of life is a common motif in various world theologies, mythologies, and philosophies. A mystical concept alluding to the interconnection of all life on our planet; and a metaphor for common descent in the evolutionary sense. The term tree of life may also be used as a synonym for 'sacred tree'.[NEWLINE](Quoted from en.wikipedia.org/wiki/Tree_of_life)</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_PEDIA">
+      <Text>Tree of Life</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_TITLE">
+      <Text>Grand Overlook</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_DESC">
+      <Text>Grand Overlook</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_TITLE">
+      <Text>Chief Upgrade</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_DESC">
+      <Text>Chief Upgrade</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_TITLE">
+      <Text>Portable Camp</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_DESC">
+      <Text>Portable Camp</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_TITLE">
+      <Text>Chieftain's Hut</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_DESC">
+      <Text>Chieftain's Hut</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_TITLE">
+      <Text>Luxury Hut</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_DESC">
+      <Text>Luxury Hut</Text>
+    </Row>    
+
+
+
+
+
+
+
+    <!-- Buildings -->
+
+
+    <Row Tag="TXT_KEY_BUILDING_TREE_TITLE">
+      <Text>Tree</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_DESC">
+      <Text>Tree</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_TITLE">
+      <Text>Lookout Rock</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_DESC">
+      <Text>Lookout Rock</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_TITLE">
+      <Text>Spring Source</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_DESC">
+      <Text>Spring Source</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_TITLE">
+      <Text>Golden Path</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_DESC">
+      <Text>Golden Path</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_BUILDING_STONE_PILE_TITLE">
+      <Text>Stone Pile</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_STONE_PILE_DESC">
+      <Text>Stone Pile</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_OVERLOOK_TITLE">
+      <Text>Overlook</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OVERLOOK_DESC">
+      <Text>Overlook</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_TITLE">
+      <Text>Gathering Circle</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_DESC">
+      <Text>Gathering Circle</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_BONE_PILE_TITLE">
+      <Text>Bone Pile</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BONE_PILE_DESC">
+      <Text>Bone Pile</Text>
+    </Row>
+    
+
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_TITLE">
+      <Text>Lean-to Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_DESC">
+      <Text>Lean-to Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_HELP">
+      <Text>
+        Provides a crude form of shelter for your tribe, increasing [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] in your community.
+        [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_QUOTE">
+      <Text>
+        "Some like it hot."
+        [NEWLINE] - movie[NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_STATEGY">
+      <Text>
+        The basic stick shelter is one of the most primitive of shelters, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.
+        [NEWLINE]
+        [NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to shelter themselves from some environmental elements.
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_PEDIA">
+      <Text>Campfire Pedia.</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_TITLE">
+      <Text>Basic Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_BASIC_SHELTER_DESC">
+      <Text>Basic Shelter</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_TITLE">
+      <Text>Causeway</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_DESC">
+      <Text>Causeway</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
+      <Text>Settlements near marsh regions gain +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] by building [COLOR_POSITIVE_TEXT]Causeways[ENDCOLOR]. Marshland resources also provide extra bonsues. +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Sugar[ENDCOLOR] and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Truffles[ENDCOLOR].  [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_QUOTE">
+      <Text>"The Dead Marshes, yes, yes: that is their name." [NEWLINE] - Little Green Guy[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
+      <Text>Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
+      <Text>Causeways have been build since the prehistoric times. They are a simple structure, requiring only manpower.[NEWLINE][NEWLINE]A Causeway is needed to ease transportation across swampy and marsh areas or small areas of pooled water or rivers. The basic principle is to stack rocks and earth and raise the level above the marsh or swamp. This provides easier transortation across these areas and access to resources in the bogged down area.</Text>
+    </Row>
+
+
+
+    <Row Tag="TXT_KEY_BUILDING_HUT_TITLE">
+      <Text>Hut</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_HUT_DESC">
+      <Text>Hut</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_TITLE">
+      <Text>Rubble Wall</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_DESC">
+      <Text>Rubble Wall</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_TITLE">
+      <Text>Water Storage</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_DESC">
+      <Text>Water Storage</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_TITLE">
+      <Text>Hunting Trails</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_DESC">
+      <Text>Hunting Trails</Text>
+    </Row>
+
 
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_TITLE">
       <Text>Campfire</Text>
@@ -1743,57 +2381,12 @@ building: FirePit
       </Text>
     </Row>
 
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_TITLE">
-      <Text>Causeway</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_DESC">
-      <Text>Causeway</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_HELP">
-      <Text>
-        Settlements near marsh regions gain +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] by building [COLOR_POSITIVE_TEXT]Causeways[ENDCOLOR]. Marshland resources also provide extra bonsues. +1 [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Sugar[ENDCOLOR] and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] from [COLOR_POSITIVE_TEXT]Truffles[ENDCOLOR].
-        [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_QUOTE">
-      <Text>
-        "The Dead Marshes, yes, yes: that is their name."
-        [NEWLINE] - Little Green Guy[NEWLINE]
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
-      <Text>
-        Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
-      <Text>
-        Causeways have been build since the prehistoric times. They are a simple structure, requiring only manpower.
-        [NEWLINE][NEWLINE]A Causeway is needed to ease transportation across swampy and marsh areas or small areas of pooled water or rivers. The basic principle is to stack rocks and earth and raise the level above the marsh or swamp. This provides easier transortation across these areas and access to resources in the bogged down area.
-      </Text>
-    </Row>
 
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_TITLE">
-      <Text>Fire Pit</Text>
+    <Row Tag="TXT_KEY_BUILDING_HIDEOUT_TITLE">
+      <Text>Hideout</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_DESC">
-      <Text>Fire Pit</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_HELP">
-      <Text>Grants +1 [ICON_FOOD] Food but requires animal resources close to your settlement.[NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Metal Casting[ENDCOLOR].</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_QUOTE">
-      <Text>
-        [NEWLINE]"It is better to have burnt and lost, then never to have barbecued at all."
-        [NEWLINE]- Will
-        [NEWLINE]
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_STRATEGY">
-      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time. Grants additional +1 [ICON_FOOD] Food for your community.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_PEDIA">
-      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time.</Text>
+    <Row Tag="TXT_KEY_BUILDING_HIDEOUT_DESC">
+      <Text>Hideout</Text>
     </Row>
 
 
@@ -1820,38 +2413,108 @@ building: FirePit
         [NEWLINE][NEWLINE]Middens (also called Shell Mounds or Shell Heaps) were composed of: bone; excerement; vermin; unusable domestic items like broken containers, broken arrows and arrowheads; rotten vegetation; and of course, shells.
       </Text>
     </Row>
-    
-    
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_TITLE">
-      <Text>Shelter</Text>
+
+
+    <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_TITLE">
+      <Text>Storage Pit</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_DESC">
-      <Text>Lean-to Shelter</Text>
+    <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_DESC">
+      <Text>Storage Pit</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_HELP">
+
+
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_HUTS_TITLE">
+      <Text>Portable Huts</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_HUTS_DESC">
+      <Text>Portable Huts</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_TITLE">
+      <Text>Great Rock</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_DESC">
+      <Text>Great Rock</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_TITLE">
+      <Text>Food Storage</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_DESC">
+      <Text>Food Storage</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_ROCK_PAINTINGS_TITLE">
+      <Text>Rock Paintings</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ROCK_PAINTINGS_DESC">
+      <Text>Rock Paintings</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_PALISADE_TITLE">
+      <Text>Palisade</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PALISADE_DESC">
+      <Text>Palisade</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_ROCK_TITLE">
+      <Text>Gathering Rock</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_ROCK_DESC">
+      <Text>Gathering Rock</Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Unused -->
+
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_TITLE">
+      <Text>Fire Pit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_DESC">
+      <Text>Fire Pit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_HELP">
+      <Text>Grants +1 [ICON_FOOD] Food but requires animal resources close to your settlement.[NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Metal Casting[ENDCOLOR].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_QUOTE">
       <Text>
-        Provides a crude form of shelter for your tribe, increasing [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] in your community.
-        [NEWLINE][NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_QUOTE">
-      <Text>
-        "Some like it hot."
-        [NEWLINE] - movie[NEWLINE]
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_STATEGY">
-      <Text>
-        The basic stick shelter is one of the most primitive of shelters, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.
+        [NEWLINE]"It is better to have burnt and lost, then never to have barbecued at all."
+        [NEWLINE]- Will
         [NEWLINE]
-        [NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to shelter themselves from some environmental elements.
       </Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_SHELTER_PEDIA">
-      <Text>Campfire Pedia.</Text>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_STRATEGY">
+      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time. Grants additional +1 [ICON_FOOD] Food for your community.</Text>
     </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_PEDIA">
+      <Text>The fire pit was not only an effecient method of cooking food, but could also be used as a smoke pit to preserve meats for longer periods of time.</Text>
+    </Row>
+
+
+
+
 
 
   </Language_en_US>
+
+
+
 
 </GameData>
