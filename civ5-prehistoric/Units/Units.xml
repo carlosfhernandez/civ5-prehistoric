@@ -157,16 +157,183 @@
   ║
   ║
   ║
-  ║   New:
-  ║
-  ║   - Civilian:
-  ║     - UNITCLASS_LABORER
-  ║
-  ║   - Melee:
-  ║     - UNITCLASS_AUSTRALOPITHECUS
+  ║   Civilian
+  ║   - UNITCLASS_LABORER
   ║   
-  ║     - UNITCLASS_EXPLORER
+  ║
+  ║
+  ║   Combat (Land)
+  ║
+  ║   - Generic     
+  ║     - UNITCLASS_AUSTRALOPITHECUS
+  ║
+  ║
+  ║   - Foot / Infantry - Offensive
+  ║     - Autochthon
+  ║     - Caveman (stick)
+  ║     - Club Pounder
+  ║     - Bone Axe Warrior
+  ║     - ++
+  ║     - Spartan
+  ║     - Conqueror
+  ║     - Rajput
+  ║     - Kern (Gaelic light infantry)
+  ║     - Asthetaoiroi
+  ║     - Pezhetaoiroi
+  ║     - Auxilia
+  ║     - Thureophoroi (light-middle spear)
+  ║     - Thorakites
+  ║     - Pantodapoi
+  ║
+  ║     * Generic
+  ║
+  ║     * Heavy
+  ║
+  ║     * Light
+  ║
+  ║     * Distance
   ║     
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║   - Foot / Infantry - Defensive
+  ║     - Protector
+  ║     - Neanderthal
+  ║     - Village Guard
+  ║     - ++
+  ║     - Shaolin Monk
+  ║     - Trench Soldier
+  ║     - Peltast (light infantry)
+  ║     - Hypaspists
+  ║     - Sparabara
+  ║
+  ║   - Sentinel
+  ║     - Watcher
+  ║     - Lookout
+  ║     - Sentinel
+  ║     - Picket
+  ║
+  ║   - Skirmish
+  ║     - Runner
+  ║     - Raider
+  ║     - Scorcher
+  ║     - ++
+  ║     - Geurilla
+  ║     - Velites (Roman light infantry)
+  ║     - Agrianians
+  ║     - Gymnitai
+  ║     - Ekdromos
+  ║     - Psiloi
+  ║
+  ║   - Vangard
+  ║     - Bushman
+  ║     - ++
+  ║     - Vanguard
+  ║     - Gladiator
+  ║     - Fianna (Irish warrior band)
+  ║
+  ║
+  ║   - Siege
+  ║     - Savage
+  ║     - Bruiser
+  ║     - Brute
+  ║     - Warmonger
+  ║     - ++
+  ║     - Ballista
+  ║     - Scorpion
+  ║     - Torsion Catapult
+  ║     - Siege Canon
+  ║
+  ║
+  ║
+  ║   - Ranged
+  ║     - Rock Thrower
+  ║     - Spear Thrower
+  ║     - Primitve Archer
+  ║     - Slinger
+  ║     - Axe Thrower
+  ║     - Woomerist
+  ║     - Kylist
+  ║     - Atlatlist
+  ║     - ++
+  ║     - Gastraphete (alexander)
+  ║     - Zande (botoo and pima, c. africa)
+  ║     - Cretan Archer
+  ║     - Toxotai
+  ║
+  ║   - Support
+  ║     - Shaman
+  ║     - Thinker
+  ║     - Healer
+  ║     - Shaman2 / Mystic
+  ║     - Sapper
+  ║     - ++
+  ║     - Holy Warrior
+  ║     - Flame Thrower
+  ║     - Bio Warrior
+  ║     - Sniper
+  ║     - Ming Mechanic (mechanical landmine)     
+  ║     - Ming Nester (nest of bees)
+  ║     - Ming Warrior (dao)
+  ║     - Aenator
+  ║
+  ║   - Mounted
+  ║     - Mammoth
+  ║     - ++
+  ║     - Khalsa (initiated sikhs)
+  ║     - Cavalier
+  ║     - Faris (arab knight)
+  ║     - Dragoon
+  ║     - Prodromoi
+  ║     - Paeonian Cavalry
+  ║     - Thracian Cavary
+  ║     - Achaean League
+  ║     - Hetaoroi
+  ║
+  ║   - Carriage
+  ║     - Oxen Cart
+  ║     - 
+  ║
+  ║   - Companioned
+  ║     - War Dogs
+  ║
+  ║   - Stealth
+  ║     - ++
+  ║     - Spetsnaz
+  ║     - Viet Cong (punji sticks)
+  ║
+  ║   - Secret
+  ║     - 
+  ║
+  ║   - /Royal/Noble
+  ║     - Chhetri
+  ║     - Immunes
+  ║
+  ║   - Criminal
+  ║     - ++
+  ║     - Yakuza
+  ║     - Pirate
+  ║
+  ║   - Slave / Conscript
+  ║     - Chilman
+  ║     
+  ║   - Special
+  ║     - Interragotor
+  ║
+  ║   - Militia
+  ║     - Villages
+  ║     - 
+  ║     + --
+  ║     - Militia
+  ║     - Citizen Soldier
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
   ║     - UNITCLASS_RUNNER
   ║     - UNITCLASS_AXE_THROWER
   ║     - UNITCLASS_AUTOCHTHON
@@ -179,7 +346,8 @@
   ║
   ║   - Explore:
   ║     - UNITCLASS_WANDERER
-  ║
+  ║     - *UNITCLASS_SCOUT
+  ║     - UNITCLASS_EXPLORER
   ║
   ║
   ║
@@ -353,11 +521,17 @@
   ║
   ║   
   ║ 
-  ║   New:
   ║
-  ║   - Civilian:
+  ║
+  ║   Civilian:
+  ║   - Settle
+  ║
+  ║
+  ║   - Work
   ║     - UNITCLASS_LABORER
   ║       + UNIT_LABORER
+  ║
+  ║
   ║
   ║   - Explore:
   ║
@@ -366,9 +540,19 @@
   ║     - UNITCLASS_WANDERER
   ║       + UNIT_WANDERER
   ║
-  ║   - Melee:
+  ║
+  ║
+  ║
+  ║
+  ║   Military (Land)
+  ║
+  ║   - Generic
   ║     - UNITCLASS_AUSTRALOPITHECUS
   ║       + UNIT_AUSTRALOPITHECUS
+  ║
+  ║
+  ║   - Offense
+
   ║     - UNITCLASS_AUTOCHTHON
   ║       + UNIT_AUTOCHTHON
   ║     - UNITCLASS_NEANDERTHAL
@@ -445,7 +629,10 @@
       Bola
       Blowgun
       Dart
-      
+      Battle-Hammer
+      Ball-Club
+      Hatchet Axe
+      Jawbone Club
 
 
 
@@ -461,16 +648,23 @@
     <Delete Type="UNIT_WORKER"/>
 
 
+
+
+
+
+
+
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Greats:
-
-        Great Leaders
-          - provide bonuses similar to Great General
-          - can also battle
-          - some can settle
-
+    │ 
+    │ Greats:
+    │
+    │   Great Leaders
+    │     - provide bonuses similar to Great General
+    │     - can also battle
+    │     - some can settle
+    │
+    │
     └───────────────────────────────────────────────────────────────────────────
     -->
 
@@ -500,15 +694,28 @@
     </Row>
 
 
+
+
+
+
+
+
+
+
+
+
+
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Leaders:
-      - provide bonuses to other units
-      - only can be built at one time (TBD)
-
+    │ 
+    │ Leaders:
+    │
+    │ - provide bonuses to other units
+    │ - only can be built at one time (TBD)
+    │
     └───────────────────────────────────────────────────────────────────────────
     -->
+
 
     <!-- Alpha -->
     <Row>
@@ -541,6 +748,7 @@
       <PortraitIndex>9</PortraitIndex>
     </Row>
 
+    <!-- TODO -->
     <Row>
       <Class>UNITCLASS_SETTLER</Class>
       <Type>UNIT_TRIBE_LEADER</Type>
@@ -567,11 +775,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Civilians
-
+    │                                                                           
+    │ Civilians
+    │                                                                           
+    │                                                                           
+    │                                                                           
     └───────────────────────────────────────────────────────────────────────────
     -->
 
@@ -602,13 +834,61 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Melee
-
+    │
+    │ Military: Land
+    │
+    │ - Offense
+    │ - Defense
+    │ - Sentinel
+    │ - Siege
+    │ - Vanguard
+    │ - Skirmish
+    │ - Ranged
+    │ - Support
+    │ - Recon
+    │                                                                           
     └───────────────────────────────────────────────────────────────────────────
     -->
+
+
+
+
+
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Offense
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
 
     <!-- Australopithecus -->
     <Row>
@@ -829,15 +1109,53 @@
     </Row>
 
 
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Defense
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
 
 
     <!--  
-    ┌───────────────────────────────────────────────────────────────────────────
-      
-      Ranged
-
-    └───────────────────────────────────────────────────────────────────────────
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Sentinel
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
     -->
+
+
+
+
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Skirmish
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Vanguard
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Siege
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Ranged
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
 
     <!-- PRimitive Archer -->
     <Row>
@@ -940,6 +1258,35 @@
 
     
 
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Support
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -950,9 +1297,12 @@
 
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Expore
-
+    │
+    │ Expore
+    │
+    │
+    │
+    │
     └───────────────────────────────────────────────────────────────────────────
     -->
 
@@ -1057,7 +1407,13 @@
 
 
 
-     
+
+
+
+
+
+
+
 
 
 
@@ -1065,9 +1421,68 @@
 
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
-      
-      Redefined
+    │
+    │ Settle
+    │
+    │
+    │
+    │
+    └───────────────────────────────────────────────────────────────────────────
+    -->
 
+    <!-- Tribe Split -->
+    <Row>
+      <Class>UNITCLASS_TRIBE_SPLIT</Class>
+      <Type>UNIT_TRIBE_SPLIT</Type>
+      <Moves>2</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_TRIBE_SPLIT</Description>
+      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_TRIBE_SPLIT_TEXT</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_TRIBE_SPLIT</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>true</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>0</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row>    
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+    │
+    │ Redefined
+    │
+    │
+    │
+    │
     └───────────────────────────────────────────────────────────────────────────
     -->
 
@@ -1129,6 +1544,21 @@
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,11 +1,926 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+
+
+<!--
+╔═══════════════════════════════════════════════════════════════════════════════
+║
+║  WONDERS & THEIR DEPENDENCIES - SELF-CONTAINED FILE
+║  
+╠═══════════════════════════════════════════════════════════════════════════════
+║
+║   BuildingClasses
+║   Buildings
+║   Building_Flavors
+║   Building_ResourceYieldChanges
+║   Civilization_BuildingClassOverrides
+║
+║   *Language_en_US
+║
+║   --
+║   
+║   Building_BuildingClassHappiness
+║   Building_BuildingClassYieldChanges
+║   Building_GlobalYieldModifiers
+║   Building_HurryModifiers
+║   Building_
+║   Building_
+║   Building_
+║   Building_
+║
+╚═══════════════════════════════════════════════════════════════════════════════
+-->
 <GameData>
   <!-- 
+  
+
   972 x 568
   
   
   -->
- 
+  
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   WONDERS BUILDING CLASSES
+  │
+  │
+  │   World Wonders:
+  │   - BUILDINGCLASS_THEOPETRACAVE
+  │   - BUILDINGCLASS_SKARABRAE
+  │   - BUILDINGCLASS_WONDERWERK
+  │   - BUILDINGCLASS_GGANTIJA
+  │   - BUILDINGCLASS_NEWGRANGE
+  │   - BUILDINGCLASS_BARNENEZ
+  │
+  │
+  │
+  │   National Wonders:
+  │   - BUILDINGCLASS_NATIONAL_WONDER
+  │
+  │
+  │
+  │   Prereq Classes:
+  │   - BUILDINGCLASS_PREREQ_FOR_WONDER
+  │
+  │
+  │
+  │   Special Wonders:
+  │   - BUILDINGCLASS_SPECIAL_WONDER
+  │
+  │
+  │
+  │   Used Existing Classes:
+  │   - 
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <BuildingClasses>
+
+    <Row>
+      <Type>BUILDINGCLASS_THEOPETRACAVE</Type>
+      <DefaultBuilding>BUILDING_THEOPETRACAVE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_DESC</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_SKARABRAE</Type>
+      <DefaultBuilding>BUILDING_SKARABRAE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>    
+    <Row>
+      <Type>BUILDINGCLASS_WONDERWERK</Type>
+      <DefaultBuilding>BUILDING_WONDERWERK</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_WONDERWERK_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GGANTIJA</Type>
+      <DefaultBuilding>BUILDING_GGANTIJA</DefaultBuilding>
+      <Description>Ggantija</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_NEWGRANGE</Type>
+      <DefaultBuilding>BUILDING_NEWGRANGE</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>   
+    <Row>
+      <Type>BUILDINGCLASS_BARNENEZ</Type>
+      <DefaultBuilding>BUILDING_BARNENEZ</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_BARNENEZ</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+
+  </BuildingClasses>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   WONDERS BUILDINGS
+  │
+  │
+  │   World Wonders:
+  │   - BUILDINGCLASS_THEOPETRACAVE
+  │     + BUILDING_THEOPETRACAVE
+  │   - BUILDINGCLASS_SKARABRAE
+  │     + BUILDING_SKARABRAE
+  │   - BUILDINGCLASS_WONDERWERK
+  │     + BUILDING_WONDERWERK
+  │   - BUILDINGCLASS_GGANTIJA
+  │     + BUILDING_GGANTIJA
+  │   - BUILDINGCLASS_NEWGRANGE
+  │     + BUILDING_NEWGRANGE
+  │   - BUILDINGCLASS_BARNENEZ
+  │     + BUILDING_BARNENEZ
+  │
+  │
+  │
+  │   National Wonders:
+  │   - BUILDINGCLASS_NATIONAL_WONDER
+  │     + BUILDING_NATIONAL_WONDER_DEFAULT
+  │     o BUILDING_NATIONAL_WONDER_1
+  │     o BUILDING_NATIONAL_WONDER_2
+  │     o BUILDING_NATIONAL_WONDER_3
+  │
+  │
+  │
+  │   Prereqs:
+  │   - BUILDINGCLASS_PREREQ_FOR_WONDER
+  │
+  │
+  │
+  │   Special Wonders:
+  │   - BUILDINGCLASS_SPECIAL_WONDER
+  │     + BUILDING_SPECIAL_WONDER
+  │
+  │
+  │
+  │   Used Existing Buildings:
+  │   - 
+  │
+  │
+  │   Unused:
+  │   - 
+  │
+  │
+  │
+  │
+  │
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Buildings>
+
+
+    <Row>
+      <Type>BUILDING_THEOPETRACAVE</Type>
+      <BuildingClass>BUILDINGCLASS_THEOPETRACAVE</BuildingClass>
+      <Cost>48</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Help>TXT_KEY_WONDER_THEOPETRACAVE_HELP</Help>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_TITLE</Description>
+      <Strategy>TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_WONDER_THEOPETRACAVE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_THEOPETRACAVE_QUOTE</Quote>
+      <ArtDefineTag>PETRA</ArtDefineTag> <!-- TODO -->
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <!--<FreePromotion>PROMOTION_WONDERWERK</FreePromotion>-->
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <DisplayPosition>2</DisplayPosition>
+      <PortraitIndex>9</PortraitIndex>
+      <WonderSplashImage>WonderSplash_TheopetraCave.dds</WonderSplashImage>
+    </Row>
+    <Row>
+      <Type>BUILDING_NEWGRANGE</Type>
+      <BuildingClass>BUILDINGCLASS_NEWGRANGE</BuildingClass>
+      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
+      <Civilopedia>TXT_KEY_WONDER_NEWGRANGE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_NEWGRANGE_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_NEWGRANGE_HELP</Help>
+      <Cost>185</Cost>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>NW_ICONS</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Newgrange.dds</WonderSplashImage>
+    </Row>
+    <Row>
+      <Type>BUILDING_BARNENEZ</Type>
+      <BuildingClass>BUILDINGCLASS_BARNENEZ</BuildingClass>
+      <Description>TXT_KEY_BUILDING_BARNENEZ</Description>
+      <Civilopedia>TXT_KEY_WONDER_BARNENEZ_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_BARNENEZ_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_BARNENEZ_HELP</Help>
+      <Cost>185</Cost>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>NW_ICONS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+      <WonderSplashImage>Barnenez_splash.dds</WonderSplashImage>
+      <WonderSplashAnchor>R,B</WonderSplashAnchor>
+    </Row>
+    <Row>
+      <Type>BUILDING_WONDERWERK</Type>
+      <BuildingClass>BUILDINGCLASS_WONDERWERK</BuildingClass>
+      <Cost>65</Cost>
+      <PrereqTech>TECH_GATHERING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_WONDERWERK_DESC</Description>
+      <Help>TXT_KEY_BUILDING_WONDERWERK_HELP</Help>
+      <Civilopedia>TXT_KEY_BUILDING_WONDERWERK_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_WONDERWERK_QUOTE</Quote>
+      <ArtDefineTag>PETRA</ArtDefineTag>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <FreePromotion>PROMOTION_WONDERWERK</FreePromotion>
+      <DisplayPosition>2</DisplayPosition>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Wonderwerk.dds</WonderSplashImage>
+      <WonderSplashAnchor>R,B</WonderSplashAnchor>
+    </Row>
+    <Row>
+      <Type>BUILDING_GGANTIJA</Type>
+      <BuildingClass>BUILDINGCLASS_GGANTIJA</BuildingClass>
+      <Cost>75</Cost>
+      <PrereqTech>TECH_IDOLS</PrereqTech>
+      <Help>TXT_KEY_WONDER_GGANTIJA_HELP</Help>
+      <Description>TXT_KEY_BUILDING_GGANTIJA</Description>
+      <Civilopedia>TXT_KEY_WONDER_GGANTIJA_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_GGANTIJA_QUOTE</Quote>
+      <ArtDefineTag>GREAT MOSQUE DEJENNE</ArtDefineTag>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <FreePromotion>PROMOTION_GGANTIJA</FreePromotion>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <DisplayPosition>2</DisplayPosition>
+      <PortraitIndex>1</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Ggantija.dds</WonderSplashImage>
+      <WonderSplashAnchor>R,B</WonderSplashAnchor>
+    </Row>
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+
+
+
+
+  </Buildings>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FLAVORS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  -->   
+  <Building_Flavors>
+    
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    
+    <Row>
+      <BuildingType>BUILDING_NEWGRANGE</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_NEWGRANGE</BuildingType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>40</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>40</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_GGANTIJA</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_GGANTIJA</BuildingType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_SKARABRAE</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_SKARABRAE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>    
+
+
+  </Building_Flavors>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_YieldChanges>
+
+    <Row>
+      <BuildingType>BUILDING_NEWGRANGE</BuildingType>
+      <YieldType>YIELD_FAITH</YieldType>
+      <Yield>3</Yield>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <YieldType>YIELD_CULTURE</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>2</Yield>
+    </Row> 
+    
+    <Row>
+      <BuildingType>BUILDING_GGANTIJA</BuildingType>
+      <YieldType>YIELD_FAITH</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_SKARABRAE</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>    
+
+  </Building_YieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  -->
+  <Building_ResourceYieldChanges>
+    
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>    
+
+    <Row>
+      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+<Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_IRON</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_IRON</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_STONE</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_COPPER</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_COPPER</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_SALT</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WONDERWERK</BuildingType>
+      <ResourceType>RESOURCE_SALT</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>   
+    
+    <Row>
+      <BuildingType>BUILDING_SKARABRAE</BuildingType>
+      <ResourceType>RESOURCE_FISH</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_SKARABRAE</BuildingType>
+      <ResourceType>RESOURCE_SHEEP</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>         
+    
+  </Building_ResourceYieldChanges>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   CIVILIZATION BUILDING CLASS OVERRIDES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  -->
+  <Civilization_BuildingClassOverrides>
+
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_NEWGRANGE</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_NEWGRANGE</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_BARNENEZ</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_BARNENEZ</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_WONDERWERK</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_GGANTIJA</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_GGANTIJA</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_SKARABRAE</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_SKARABRAE</BuildingClassType>
+      <BuildingType/>
+    </Row>        
+
+
+  </Civilization_BuildingClassOverrides>
+
+  
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FREE UNITS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  -->
+  <Building_FreeUnits>
+
+
+
+  </Building_FreeUnits>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING LOCAL RESOURCE ORS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_LocalResourceOrs>
+
+
+
+
+
+
+  </Building_LocalResourceOrs>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ╔═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║  WONDER TEXTS
+  ║  
+  ╠═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║   
+  ║
+  ║ 
+  ║
+  ╚═════════════════════════════════════════════════════════════════════════════
+  -->
+  <Language_en_US>
+
+
+
+
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_TITLE">
+      <Text>Theopetra Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_DESC">
+      <Text>Theopetra Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_HELP">
+      <Text>+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from Stone Resource worked by the City it is built in. Also provides +1 Food [ICON_FOOD].</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY">
+      <Text>
+        A huge advantage if you can build it early in the game. 
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_QUOTE">
+      <Text>[NEWLINE]When one has finished building one's house, one suddenly realizes that in the process one has learned something that one really needed to know in the worst way -- before one began.[NEWLINE]  - Friedrich Nietzsche</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_PEDIA">
+      <Text>
+        The Cave of Theopetra is unique amongst archeological sites, having taught us many of the early secrets on how man survived, lived, and died.
+        [NEWLINE][NEWLINE]It is considered to be the oldest man-made structure found so far. It was inhabited for over 100,000 years due its prime location, great access to water, and a safe and protectable position.
+        [NEWLINE][NEWLINE]It is here where we find many of the clues as to how Neanderthals were replaced by modern man. It is also here where we see the transition of a hunting and gathering lifestyle to eventually one of farming.
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_NEWGRANGE">
+      <Text>Newgrange</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_HELP">
+      <Text>Provides +3 [ICON_PEACE] Faith.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_QUOTE">
+      <Text>[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_PEDIA">
+      <Text>
+        Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_BARNENEZ">
+      <Text>Barnenez</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_BARNENEZ_HELP">
+      <Text>Provides +2 [ICON_PRODUCTION] Production in the city in which it is built. +1 [ICON_PRODUCTION] Production from every source of Stone worked by this city.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_BARNENEZ_QUOTE">
+      <Text>[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_BARNENEZ_PEDIA">
+      <Text>
+        The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_WONDERWERK_TITLE">
+      <Text>Wonderwerk Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WONDERWERK_DESC">
+      <Text>Wonderwerk Cave</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_HELP">
+      <Text>+1 [ICON_MOVES] Movement for Workers.[NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from mineral and mined Resources ([ICON_COPPER] Copper, Iron, Stone, and Salt) worked by the City in which it was built.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_QUOTE">
+      <Text>[NEWLINE]"If there hadn't been women we'd still be squatting in a cave eating raw meat, because we made civilization in order to impress our girlfriends."[NEWLINE]- Orson Welles.[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_PEDIA">
+      <Text>Wonderwerk Cave is an archaeological site, formed originally as an ancient solution cavity in Dolomite rocks of the Kuruman Hills, situated between Danielskuil and Kuruman in the Northern Cape Province, South Africa. It is a National Heritage Site within a servitude ceded to and managed as a satellite of the McGregor Museum in Kimberley. Geologically, hillside erosion exposed the northern end of the cavity, which extends horizontally for about 140 m into the base of a hill. Accumulted deposits inside the cave, up to 7 m in depth, reflect natural sedimentation processes such as water and wind deposition as well as the activities of animals, birds and human ancestors over a period of some 2 million years. The site has been studied and excavated by archaeologists since the 1940s and research here generates important insights into human history in the subcontinent of Southern Africa. Evidence within Wonderwerk cave has been called the oldest controlled fire. Wonderwerk means "miracle" in the Afrikaans language.[NEWLINE]- Quoted from en.wikipedia.org/wiki/Wonderwerk_Cave</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_GGANTIJA">
+      <Text>Ggantija Temples</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_HELP">
+      <Text>
+        All Land Military Units receive the Giant God's Blessing, which grants additional [COLOR_POSITIVE_TEXT]Healing[ENDCOLOR] outside friendly territory.
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_QUOTE">
+      <Text>
+        [NEWLINE]"It is only when men begin to worship that they begin to grow."
+        [NEWLINE]- Calvin Coolidge.
+        [NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_PEDIA">
+      <Text>
+        Ggantija (Maltese: "Giants' Tower") is a Neolithic, megalithic temple complex on the Mediterranean island of Gozo. The Ggantija temples are the earliest of a series of megalithic temples in Malta. The Ggantija temples are older than the pyramids of Egypt. Their makers erected the two Ġgantija temples during the Neolithic Age (c. 3600-2500 BC), which makes these temples more than 5500 years old and the world's second oldest manmade religious structures, after Gobekli Tepe. Together with other similar structures, these have been designated a UNESCO World Heritage Site, the Megalithic Temples of Malta.
+          [NEWLINE][NEWLINE]The temples were possibly the site of a Fertility cult; archeologists believe that the numerous figurines and statues found on site are connected with that cult. According to local Gozitan folklore, a giantess built these temples and used them as places of worship.
+          [NEWLINE]- Quoted from en.wikipedia.org/wiki/Ggantija
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_SKARABRAE">
+      <Text>Skara Brae</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_HELP">
+      <Text>Provides +1 [ICON_FOOD] Food in the city in which it is built. Each source of [ICON_FISH] Fish and [ICON_SHEEP] Sheep worked by this city produce +1 [ICON_FOOD] Food.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_QUOTE">
+      <Text>
+        [NEWLINE]"Governing a great nation is like cooking a small fish - too much handling will spoil it."
+        [NEWLINE] - Lao Tzu
+        [NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_PEDIA">
+      <Text>
+        Skara Brae is a stone-built settlement built and inhabitant by early man, long ago abondoned. It is located on the largest of an archipelego of islands. It consists of eight clustered houses, each containing several pieces of stone built furniture such us cupboards, dressers, seats, and storage boxes.
+        [NEWLINE][NEWLINE]Given the number of homes, it seems likely that no more than fifty people lived in Skara Brae at any given time. They became pastorialists who raised cattle and sheep having first sustained themselves with an ocean-based diet of fish and other sea foods.
+      </Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+  </Language_en_US>  
+  
+  
 
 </GameData>

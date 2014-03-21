@@ -305,7 +305,7 @@ BUILDINGS
 │ 3                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Great Divergence                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Ardi                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Ardi TODO                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -315,10 +315,10 @@ BUILDINGS
 │ 4                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Bipedal Adaption                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Australopithecus (t:general)                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Australopithecus (t:offense)                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Lookout Rock                                  │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Laetoli Footprints                            │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Lucy                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Laetoli Footprints TODO                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Lucy TODO                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b:1 u:1 c:0 w:2: r:0 p:                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -436,12 +436,12 @@ BUILDINGS
 │                     b-Causeway                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Obsidian                                      │   │  │  │  │  │  │  │  │  │  │  │  │                          
 │                     r-Flint                                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Schoningen Spears                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Schoningen Spears TODO                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Migration                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Tribe Branch                                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Tribe Branch (t:settle) TODO                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Savage (t:siege)                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -475,8 +475,8 @@ BUILDINGS
 │ 9                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Hunting             r-Deer                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     r-Reindeer                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Hunter                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Reindeer TODO                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Hunter (t:special) TODO                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Outpost                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hunting Trails                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Afontora Gora                                 │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -503,7 +503,7 @@ BUILDINGS
 │                     b-Lookout Tree  TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Portable Huts                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Gatherer (pre-Laborer)                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Neanderthal                                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Neanderthal (t:unk)                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -591,7 +591,7 @@ BUILDINGS
 │ 11                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Collaborative Hunting                                               │   │  │  │  │  │  │  │  │  │  │  │  │ 
-│                     u-Sentinel (t:sentinel)                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Sentinel (t:sentinel) TODO                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Le Mas d'Azil                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │

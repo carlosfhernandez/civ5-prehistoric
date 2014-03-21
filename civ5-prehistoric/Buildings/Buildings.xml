@@ -10,15 +10,73 @@
 ╠═══════════════════════════════════════════════════════════════════════════════
 ║
 ║   BuildingClasses
-║   UnitClasses
-║   Unit_AITypes
-║   Unit_Flavors
-║   Unit_FreePromotions
-║   Unit_ClassUpgrades
-║   Unit_ResourceQuantityRequirements
-║   Unit_Builds
+║   Buildings
+║   Building_Flavors
+║
+║   Building_YieldChanges+
+║   Building_ResourceYieldChanges+
+║   Building_FeatureYieldChanges
+║   Building_RiverPlotYieldChanges
+║   Building_SeaPlotYieldChanges
+║   Building_SeaResourceYieldChanges
+║   Building_SpecialistYieldChanges
+║   Building_TechEnhancedYieldChanges
+║   Building_TerrainYieldChanges
+║   Building_LakePlotYieldChanges
+║   Building_YieldChangesPerPop
+║   Building_YieldChangesPerReligion
+║   Building_YieldModifers                    | %
+║
+║   Building_ClassesNeededInCity
+║   Building_PrereqBuildingClasses
+║   Building_LocalResourceOrs
+║   Building_LocalResourceAnds
+║
+║   Civilization_BuildingClassOverrides
+║
+║   Building_ResourceCultureChanges
+║   Building_ResourceFaithChanges
+║   Building_ResourceYieldModifiers
+║   Building_ResourceQuantity
+║
+║   Building_FreeUnits
+║   Building_DomainFreeExperiences
+║   Building_UnitCombatFreeExperience
+║   Building_UnitCombatProductionModifers     | CombatType
+║
+║
+║   Building_DomainProductionModifiers
+║   Building_FreeSpecialistCounts
+║   Building_ThemingBonuses
+║
+║
+║   Unknown:
+║
+║   Building_LockedBuildingClasses
+║   Building_TechAndPrereqs
+║   Building_
+║
+║
 ║
 ║   *Language_en_US
+║
+║ 
+╠═══════════════════════════════════════════════════════════════════════════════
+║
+║   Unlock Improvements or Modified Improvements
+║   Give Promotions
+║   Acquire Land
+║
+║
+║
+║
+║
+║
+║
+║
+║
+║
+║
 ║
 ╚═══════════════════════════════════════════════════════════════════════════════
 -->
@@ -90,8 +148,23 @@
   --> 
   <BuildingClasses>
 
+
+
+
+
+
   
-    <!-- Capitol -->
+    <!-- 
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+     
+    │ Capitol 
+     
+    │ Capitols can be "upgraded" or take different paths (TODO). 
+     
+    │ Each capitol will have its own unique enhancements.
+     
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
     <Row>
       <Type>BUILDINGCLASS_TREE_LIFE</Type>
       <DefaultBuilding>BUILDING_TREE_LIFE</DefaultBuilding>
@@ -133,7 +206,37 @@
 
 
 
-    <!-- Buildings -->
+
+
+
+
+
+    <!-- 
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+     
+    │ Capitol Enhancements (TODO)
+     
+    │ Capitoal Enhacements are dependent on the type of capitol.
+     
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+     
+    │ Buildings
+     
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
     <Row>
       <Type>BUILDINGCLASS_TREE</Type>
       <DefaultBuilding>BUILDING_TREE</DefaultBuilding>
@@ -308,7 +411,7 @@
 
 
 
-<!--
+  <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
   │   BUILDINGS
@@ -318,6 +421,8 @@
   │     + BUILDING_TREE_LIFE
   │
   │
+  │
+  │   Capitol Enhancements:
   │
   │
   │
@@ -381,7 +486,7 @@
   │     + BUILDING_GATHERING_ROCK
   │
   │
-  │   TBD:
+  │   TODO:
   │   - BUILDINGCLASS_SHELTER
   │     + BUILDING_SHELTER_LEANTO
   │     + BUILDING_SHELTER_CAVE
@@ -419,15 +524,33 @@
 
 
   <!--
-    Big Todo List
-    =============
-      FirePit
-        - requires: animal resource (not worked) nearby
-        - bonus: +1 food
-        - food kept
-
-
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  ░
+  ░ THE TODO LIST
+  ░
+  ░ FirePit
+  ░ - requires: animal resource (not worked or worked) nearby
+  ░ - bonus +1 food
+  ░ - food kept
+  ░
+  ░
+  ░
+  ░
+  ░
+  ░
+  ░
+  ░
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   -->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -443,6 +566,16 @@
      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
     -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1874,6 +2007,47 @@
 
 
 
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_ResourceYieldChanges>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <ResourceType>RESOURCE_SUGAR</ResourceType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <ResourceType>RESOURCE_TRUFFLES</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Building_ResourceYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!--
@@ -1920,29 +2094,34 @@
 
 
 
+
+  
+
+
+
+
+
+
+
+
+
+
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
-  │   BUILDING RESOURCE YIELD CHANGES
+  │   CIVILIZATION BUILDING CLASS OVERRIDES
   │
   │
   └─────────────────────────────────────────────────────────────────────────────
-  --> 
-  <Building_ResourceYieldChanges>
-    <Row>
-      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <ResourceType>RESOURCE_SUGAR</ResourceType>
-      <YieldType>YIELD_PRODUCTION</YieldType>
-      <Yield>1</Yield>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <ResourceType>RESOURCE_TRUFFLES</ResourceType>
-      <YieldType>YIELD_GOLD</YieldType>
-      <Yield>1</Yield>
-    </Row>
-  </Building_ResourceYieldChanges>
-  
+  -->
+  <Civilization_BuildingClassOverrides>
+
+
+
+  </Civilization_BuildingClassOverrides>
+
+
+
 
 
 
@@ -2064,6 +2243,21 @@
 
 
 
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING LOCAL RESOURCE ANDS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_LocalResourceAnds>
+
+  </Building_LocalResourceAnds>
 
 
 
