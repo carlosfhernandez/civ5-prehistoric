@@ -1,6 +1,8 @@
 civ5-prehistoric
 ================
 
+[[wiki]](https://github.com/carlosfhernandez/civ5-prehistoric/wiki/Civilization-V---Prehistoric-Era-Mod)
+
 Extending the game back millions years requires the modification of several aspects, such as:
 
 * adding unites
