@@ -305,7 +305,7 @@ BUILDINGS
 │ 3                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Great Divergence                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Ardi TODO                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Ardi                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -317,8 +317,8 @@ BUILDINGS
 │ Bipedal Adaption                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Australopithecus (t:offense)                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Lookout Rock                                  │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Laetoli Footprints TODO                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Lucy TODO                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Laetoli Footprints                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Lucy                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b:1 u:1 c:0 w:2: r:0 p:                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -353,25 +353,25 @@ BUILDINGS
 │                     b-Stone Pile                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Watcher (t:sentinel)                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Overlook                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-First Chopper                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-First Chopper TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Adapted Tools                                                       │   │  │  │  │  │  │  │  │  │  │  │  │    
 │                     r-Stone                                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Rock Thrower (t:ranged)                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Olduvai Gorge Tools                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Rock Thrower (t:ranged) TODO                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Olduvai Gorge Tools TODO                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Locomotion                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Runner (t:skirmish)                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Runner (t:skirmish) TODO                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Grunts & Growls                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Gathering Circle                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Bushman (t:vanguard)                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Bushman (t:vanguard) TODO                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -386,19 +386,19 @@ BUILDINGS
 │ Scavenging                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Autochthon                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Laborer                                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Twiggy (Homo Habilis)                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Twiggy (Homo Habilis) TODO                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Bone Pile                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Curiousity                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Torralba and Ambrona                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Adventurer (t:scout)                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Torralba and Ambrona TODO                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Adventurer (t:scout) TODO                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Simple Tools                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Protector (t:defense)                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Protector (t:defense) TODO                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Spear Hunter (t:ranged)                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Shelter                   (+1H)               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-ShelterTypes                                  │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -408,7 +408,7 @@ BUILDINGS
 │                       - SubShelter: Grass                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                       - SubShelter: Cave                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Chief Shelter                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Terra Amata Shelter                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Terra Amata Shelter TODO                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -436,12 +436,12 @@ BUILDINGS
 │                     b-Causeway                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Obsidian                                      │   │  │  │  │  │  │  │  │  │  │  │  │                          
 │                     r-Flint                                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Schoningen Spears TODO                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Schoningen Spears                        TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Migration                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Tribe Branch (t:settle) TODO                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Tribe Branch (t:settle)                  TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Savage (t:siege)                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -455,14 +455,14 @@ BUILDINGS
 │                     u-Slinger (t:ranged)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rubble Wall                                   │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Water Storage                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Bhimbetka Rock Shelters                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Bhimbetka Rock Shelters                  TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Family Ties                                                         │   │  │  │  │  │  │  │  │  │  │  │  │         
-│                     u-Lookout (t:sentinel)                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Patriarch (t:leader)                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     c-Chief Upgrade                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Lookout (t:sentinel)                     TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Patriarch (t:leader)                     TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Chief Upgrade                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -475,8 +475,8 @@ BUILDINGS
 │ 9                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Hunting             r-Deer                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     r-Reindeer TODO                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Hunter (t:special) TODO                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Reindeer                                 TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Hunter (t:special)                       TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Outpost                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hunting Trails                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Afontora Gora                                 │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -486,7 +486,7 @@ BUILDINGS
 │ Fire                u-Shaman                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Campfire                  (+1G,H)             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Keeper                                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gesher Benot Ya’aqov                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gesher Benot Ya’aqov                    TODO  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -500,25 +500,25 @@ BUILDINGS
 │                     r-Berries,                                      │   │  │  │  │  │  │  │  │  │  │  │  │                         
 │                     b-Midden (+1F)                                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Fire Pit (+1F)                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Lookout Tree  TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Lookout Tree                             TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Portable Huts                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Gatherer (pre-Laborer)                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Neanderthal (t:unk)                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Symbolism           b-Great Rock (+F1)                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Kebara Cave                                   │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Cougnac Caves                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Chauvet Caves                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Covalanas Cave                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Coliboaia Cave                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Symbolism           b-Great Rock (+F1)                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Kebara Cave                              TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Cougnac Caves                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Chauvet Caves                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Covalanas Cave                           TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Coliboaia Cave                           TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Social Structure    c-Chieftain's Hut           (+1G,+1P)           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Chief (t:leader)                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Sibudu Cave                                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Sibudu Cave                              TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -543,20 +543,20 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Coordinated Hunting                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Axe Thrower                                   │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Meat Rack TODO                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Meat Rack                                TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Orienteering                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Lookout                                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Hide Rack TODO                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Hide Rack                                TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Bear Warrior                                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Scouting                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Scout, u-#Pathfinder                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Tree Stand TODO                               │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Tree Stand                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -567,18 +567,18 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Symbolic Communicatn                                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Warning Signs TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Warning Signs                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-                                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gobekli Tepe                                  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gobekli Tepe                             TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Planning                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Thinker (t:support)                           │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     u-Raider (t:skirmisher)                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     c-Luxury Hut                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     b-Noise Perimiter TODO                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gulf of Khambhat                              │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Thinker (t:support)                      TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Raider (t:skirmisher)                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Luxury Hut                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Noise Perimiter                          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gulf of Khambhat                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -591,8 +591,8 @@ BUILDINGS
 │ 11                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Collaborative Hunting                                               │   │  │  │  │  │  │  │  │  │  │  │  │ 
-│                     u-Sentinel (t:sentinel) TODO                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Le Mas d'Azil                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Sentinel (t:sentinel)                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Le Mas d'Azil                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -614,21 +614,21 @@ BUILDINGS
 │                     b-Food Storage (+1F)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     {Must have Hunter or Gatherer unit}             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     n-Raft                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Carnac Stones                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Carnac Stones                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Language                                                            │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     a-Embasies                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Harbinger                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-The Unfinished Obelisk of Aswan               │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-The Unfinished Obelisk of Aswan          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Leadership                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-%Galley {Buildable with limits}               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Palace???                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-The Cairn of Barnenez                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-The Cairn of Barnenez                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -780,35 +780,60 @@ BUILDINGS
 ├─────────────────────────────────────────────────────────────────────┼───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
 │ 15                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Sailing:            u-Work Boat
-                      u-Trireme
-                      u-Cargo Ship             
-│                     u-#Dromon, u-#Quinquereme
-│                     i- Fishing Boats
-                      r-Whales
-│ Calendar:           ?-Stone Works
-                      i-Plantation
-                      w-Stonehenge
-│ Writing:            b-Library, b-#Royal Library, b-#Paper Maker
-│                     w-Great Library
-│ Husbandry:          r-Horses
-                      i-Pasture
-│ Caravaning:         x-Caravans!!!!!!
-                      r-Wine
-│ Masonry:            b-Monument
-                      b-Walls, b-#Walls of Babylon
-│                     b-#Pyramids, b-#Stele
-│                     w-Mausoleum of Hali
-                      i-Qaurry
-                      x-Clear Marsh
-│ Bronze Working:     u-#Hoplite,                      
-│                     u-#Immortal,
-                      u-#Pict
-                      u-#Battering Ram
-│                     b-Barracks, b-#Krepost, b-#Ikanda
-│                     w-Statue of Zeus
-                      r-Iron
-                      r-Copper
+│ Sailing                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Work Boat                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Trireme                                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Cargo Ship                                    │   │  │  │  │  │  │  │  │  │  │  │  │        
+│                     u-#Dromon, u-#Quinquereme                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     i- Fishing Boats                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Whales                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Calendar                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ?-Stone Works                                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     i-Plantation                                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Stonehenge                                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Writing                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Library, b-#Royal Library, b-#Paper Maker     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Great Library                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Husbandry                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Horses                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     i-Pasture                                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Caravaning                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     x-Caravans!!!!!!                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Wine                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Masonry                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Monument                                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Walls, b-#Walls of Babylon                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-#Pyramids, b-#Stele                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Mausoleum of Hali                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     i-Qaurry                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     x-Clear Marsh                                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │   
+│ Bronze Working                                                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-#Hoplite                                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-#Immortal                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-#Pict                                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-#Battering Ram                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Barracks, b-#Krepost, b-#Ikanda               │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Statue of Zeus                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Iron                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Copper                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │

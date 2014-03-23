@@ -134,6 +134,39 @@
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
 
+
+    <!-- Wonders -->
+    
+    <Row>
+      <Atlas>WONDER_ATLAS_PRE</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>WONDERAtlas256_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>WONDER_ATLAS_PRE</Atlas>
+      <IconSize>128</IconSize>
+      <Filename>WONDERAtlas128_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>WONDER_ATLAS_PRE</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>WONDERAtlas64_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>WONDER_ATLAS_PRE</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>WONDERAtlas45_PRE.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+
+
 		<!-- Techs -->
 
 		<Row>

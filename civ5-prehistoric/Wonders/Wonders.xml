@@ -32,15 +32,8 @@
 ╚═══════════════════════════════════════════════════════════════════════════════
 -->
 <GameData>
-  <!-- 
+  <!-- 972 x 568 -->
   
-
-  972 x 568
-  
-  
-  -->
-  
-
 
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
@@ -80,6 +73,39 @@
   └─────────────────────────────────────────────────────────────────────────────
   --> 
   <BuildingClasses>
+
+    <Row>
+      <Type>BUILDINGCLASS_ARDI</Type>
+      <DefaultBuilding>BUILDING_ARDI</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_ARDI_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_LUCY</Type>
+      <DefaultBuilding>BUILDING_LUCY</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_LUCY_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_LAETOLI_FOOTPRINTS</Type>
+      <DefaultBuilding>BUILDING_LAETOLI_FOOTPRINTS</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+
+
+
+
+    <Row>
+      <Type>BUILDINGCLASS_FIRST_CHOPPER</Type>
+      <DefaultBuilding>BUILDING_FIRST_CHOPPER</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_FIRST_CHOPPER_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+
+
+
+
 
     <Row>
       <Type>BUILDINGCLASS_THEOPETRACAVE</Type>
@@ -197,65 +223,774 @@
   <Buildings>
 
 
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                           PREHISTORIC                                  │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● GREAT_DIVERGENCE ● ░▒▓█► 
+    -->
+
+    <!-- Ardi -->
     <Row>
-      <Type>BUILDING_THEOPETRACAVE</Type>
-      <BuildingClass>BUILDINGCLASS_THEOPETRACAVE</BuildingClass>
-      <Cost>48</Cost>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Help>TXT_KEY_WONDER_THEOPETRACAVE_HELP</Help>
-      <Description>TXT_KEY_WONDER_THEOPETRACAVE_TITLE</Description>
-      <Strategy>TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY</Strategy>
-      <Civilopedia>TXT_KEY_WONDER_THEOPETRACAVE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_THEOPETRACAVE_QUOTE</Quote>
-      <ArtDefineTag>PETRA</ArtDefineTag> <!-- TODO -->
-      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
-      <NukeImmune>true</NukeImmune>
-      <!--<FreePromotion>PROMOTION_WONDERWERK</FreePromotion>-->
-      <HurryCostModifier>-1</HurryCostModifier>
-      <MinAreaSize>-1</MinAreaSize>
-      <ConquestProb>100</ConquestProb>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <DisplayPosition>2</DisplayPosition>
-      <PortraitIndex>9</PortraitIndex>
-      <WonderSplashImage>WonderSplash_TheopetraCave.dds</WonderSplashImage>
-    </Row>
-    <Row>
-      <Type>BUILDING_NEWGRANGE</Type>
-      <BuildingClass>BUILDINGCLASS_NEWGRANGE</BuildingClass>
-      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
-      <Civilopedia>TXT_KEY_WONDER_NEWGRANGE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_NEWGRANGE_QUOTE</Quote>
-      <Help>TXT_KEY_WONDER_NEWGRANGE_HELP</Help>
-      <Cost>185</Cost>
-      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <Type>BUILDING_ARDI</Type>
+      <BuildingClass>BUILDINGCLASS_ARDI</BuildingClass>
+      <Description>TXT_KEY_BUILDING_ARDI_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_ARDI_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_ARDI_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_ARDI_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
-      <IconAtlas>NW_ICONS</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
-      <WonderSplashImage>WonderSplash_Newgrange.dds</WonderSplashImage>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Ardi.dds</WonderSplashImage>
     </Row>
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● BIPEDAL_ADAPTION ● ░▒▓█► 
+    -->
+
+    <!-- Lucy -->
     <Row>
-      <Type>BUILDING_BARNENEZ</Type>
-      <BuildingClass>BUILDINGCLASS_BARNENEZ</BuildingClass>
-      <Description>TXT_KEY_BUILDING_BARNENEZ</Description>
-      <Civilopedia>TXT_KEY_WONDER_BARNENEZ_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_BARNENEZ_QUOTE</Quote>
-      <Help>TXT_KEY_WONDER_BARNENEZ_HELP</Help>
-      <Cost>185</Cost>
-      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
-      <IconAtlas>NW_ICONS</IconAtlas>
-      <PortraitIndex>0</PortraitIndex>
-      <WonderSplashImage>Barnenez_splash.dds</WonderSplashImage>
-      <WonderSplashAnchor>R,B</WonderSplashAnchor>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
     </Row>
+
+    <!-- Laetoli Footprints -->
+    <Row>
+      <Type>BUILDING_LAETOLI_FOOTPRINTS</Type>
+      <BuildingClass>BUILDINGCLASS_LAETOLI_FOOTPRINTS</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LAETOLI_FOOTPRINTS_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_LaetoliFootprints.dds</WonderSplashImage>
+    </Row>
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                          LOWER PALEOLITHIC                             │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ADVANCED_PERCEPTION ● ░▒▓█► 
+    -->
+
+
+    <!-- First Chopper -->
+    <Row>
+      <Type>BUILDING_FIRST_CHOPPER</Type>
+      <BuildingClass>BUILDINGCLASS_FIRST_CHOPPER</BuildingClass>
+      <Description>TXT_KEY_BUILDING_FIRST_CHOPPER_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_FIRST_CHOPPER_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_FIRST_CHOPPER_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_FIRST_CHOPPER_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_FirstChopper.dds</WonderSplashImage>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ADAPTED_TOOLS ● ░▒▓█► 
+    -->
+
+    <!-- Olduvai Gorge -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SCAVENGING ● ░▒▓█► 
+    -->
+
+    <!-- Twiggy -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● CURIOUSITY ● ░▒▓█► 
+    -->
+
+    <!-- Torralba and Ambrona -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SIMPLE_TOOLS ● ░▒▓█► 
+    -->
+
+    <!-- Terra Amata -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             PALEOLITHIC                                │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COMPLEX_TOOLS ● ░▒▓█► 
+    -->
+
+    <!-- Schoningen Spears -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● CONTAINERS ● ░▒▓█► 
+    -->
+
+    <!-- Bhimbetka Rock Shelters -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● HUNTING ● ░▒▓█► 
+    -->
+
+    <!-- Afontora Gora -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● FIRE ● ░▒▓█► 
+    -->
+
+    <!-- Gesher Benot Ya’aqov -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SYMBOLISM ● ░▒▓█► 
+    -->
+
+    <!-- Kebara Cave -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+    <!-- Cougnac Caves -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+    <!-- Chauvet Caves -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+    <!-- Covalanas Cave -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+    <!-- Coliboaia Cave -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SOCIAL_STRUCTURE ● ░▒▓█► 
+    -->
+
+    <!-- Sibudu Cave -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             NEOLITHIC                                  │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● SYMBOLIC_COMMUNICATION ● ░▒▓█► 
+    -->
+
+    <!-- Gobekli Tepe -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● PLANNING ● ░▒▓█► 
+    -->
+
+    <!-- Gulf of Khambhat -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COLLABORATIVE_HUNTING ● ░▒▓█► 
+    -->
+
+    <!-- Le Mas d'Azil -->
+    <!--
+    <Row>
+      <Type>BUILDING_LUCY</Type>
+      <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
+      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
+      <Cost>100</Cost>
+      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Lucy.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● EXPRESSION ● ░▒▓█► 
+    -->
+
+    <!-- Wonderwerk Cave -->
     <Row>
       <Type>BUILDING_WONDERWERK</Type>
       <BuildingClass>BUILDINGCLASS_WONDERWERK</BuildingClass>
@@ -278,6 +1013,161 @@
       <WonderSplashImage>WonderSplash_Wonderwerk.dds</WonderSplashImage>
       <WonderSplashAnchor>R,B</WonderSplashAnchor>
     </Row>
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● HARPOONING ● ░▒▓█► 
+    -->
+
+    <!-- Skara Brae -->
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● TOOL_SPECIALIZATION ● ░▒▓█► 
+    -->
+
+    <!-- Carnac Stones -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● LANGUAGE ● ░▒▓█► 
+    -->
+
+    <!-- The Unfinished Obelisk of Aswan -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● LEADERSHIP ● ░▒▓█► 
+    -->
+
+    <!-- The Cairn of Barnenez -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● ARCHERY ● ░▒▓█► 
+    -->
+
+    <!-- Temple of Artemis -->
+  
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● IDOLS ● ░▒▓█► 
+    -->
+
+    <!-- Ggantija Temples -->
     <Row>
       <Type>BUILDING_GGANTIJA</Type>
       <BuildingClass>BUILDINGCLASS_GGANTIJA</BuildingClass>
@@ -300,6 +1190,52 @@
       <WonderSplashImage>WonderSplash_Ggantija.dds</WonderSplashImage>
       <WonderSplashAnchor>R,B</WonderSplashAnchor>
     </Row>
+
+    <!-- Newgrange -->
+    <!-- TODO: Should be in  religious tech, like CEREMONY -->
+    <Row>
+      <Type>BUILDING_NEWGRANGE</Type>
+      <BuildingClass>BUILDINGCLASS_NEWGRANGE</BuildingClass>
+      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
+      <Civilopedia>TXT_KEY_WONDER_NEWGRANGE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_NEWGRANGE_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_NEWGRANGE_HELP</Help>
+      <Cost>185</Cost>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>NW_ICONS</IconAtlas>
+      <PortraitIndex>2</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Newgrange.dds</WonderSplashImage>
+    </Row>    
+
+    <!-- The Cairn of Barnenez -->
+    <!-- TODO: Should be in  religious tech, like CEREMONY -->
+    <Row>
+      <Type>BUILDING_BARNENEZ</Type>
+      <BuildingClass>BUILDINGCLASS_BARNENEZ</BuildingClass>
+      <Description>TXT_KEY_BUILDING_BARNENEZ</Description>
+      <Civilopedia>TXT_KEY_WONDER_BARNENEZ_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_BARNENEZ_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_BARNENEZ_HELP</Help>
+      <Cost>185</Cost>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
+      <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>NW_ICONS</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+      <WonderSplashImage>Barnenez_splash.dds</WonderSplashImage>
+      <WonderSplashAnchor>R,B</WonderSplashAnchor>
+    </Row>
+
+    <!-- The Grotes du Pape -->
+    <!--
     <Row>
       <Type>BUILDING_SKARABRAE</Type>
       <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
@@ -318,6 +1254,231 @@
       <PortraitIndex>11</PortraitIndex>
       <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
     </Row>
+    -->
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● PAINTING ● ░▒▓█► 
+    -->
+
+    <!-- Spotted Horses -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● BEADING ● ░▒▓█► 
+    -->
+
+    <!-- Gonnersdorf and Andernach -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● WARFARE ● ░▒▓█► 
+    -->
+
+    <!-- Ugarit -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● COOPERATION ● ░▒▓█► 
+    -->
+
+    <!-- Theopetra Cave -->
+    <Row>
+      <Type>BUILDING_THEOPETRACAVE</Type>
+      <BuildingClass>BUILDINGCLASS_THEOPETRACAVE</BuildingClass>
+      <Cost>48</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Help>TXT_KEY_WONDER_THEOPETRACAVE_HELP</Help>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_TITLE</Description>
+      <Strategy>TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_WONDER_THEOPETRACAVE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_THEOPETRACAVE_QUOTE</Quote>
+      <ArtDefineTag>PETRA</ArtDefineTag> <!-- TODO -->
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <!--<FreePromotion>PROMOTION_WONDERWERK</FreePromotion>-->
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <DisplayPosition>2</DisplayPosition>
+      <PortraitIndex>9</PortraitIndex>
+      <WonderSplashImage>WonderSplash_TheopetraCave.dds</WonderSplashImage>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             ANCIENT                                    │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● AGRICULTURE ● ░▒▓█► 
+    -->
+
+    <!-- TODO -->
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
+    <!-- 
+          ◄█▓▒░ ● TRAPPING ● ░▒▓█► 
+    -->
+
+    <!-- Otzi's Shoes -->
+    <!--
+    <Row>
+      <Type>BUILDING_SKARABRAE</Type>
+      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Cost>72</Cost>
+      <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
+      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <NukeImmune>true</NukeImmune>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <MinAreaSize>-1</MinAreaSize>
+      <ConquestProb>100</ConquestProb>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>11</PortraitIndex>
+      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+    </Row>
+    -->
+
+
+
+
+
+
+
+
 
 
 
@@ -354,6 +1515,32 @@
   -->   
   <Building_Flavors>
     
+
+
+
+    <Row>
+      <BuildingType>BUILDING_ARDI</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_LUCY</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_LAETOLI_FOOTPRINTS</BuildingType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+
+
+
+
+
+
     <Row>
       <BuildingType>BUILDING_THEOPETRACAVE</BuildingType>
       <FlavorType>FLAVOR_WONDER</FlavorType>
@@ -534,7 +1721,7 @@
       <Yield>1</Yield>
     </Row>
 
-<Row>
+    <Row>
       <BuildingType>BUILDING_WONDERWERK</BuildingType>
       <ResourceType>RESOURCE_IRON</ResourceType>
       <YieldType>YIELD_PRODUCTION</YieldType>
@@ -623,6 +1810,46 @@
   └─────────────────────────────────────────────────────────────────────────────
   -->
   <Civilization_BuildingClassOverrides>
+
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_ARDI</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_ARDI</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_LUCY</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>BUILDINGCLASS_LUCY</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_ARDI</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+    <Row>
+      <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_LAETOLI_FOOTPRINTS</BuildingClassType>
+      <BuildingType/>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+      <BuildingClassType>BUILDINGCLASS_LAETOLI_FOOTPRINTS</BuildingClassType>
+      <BuildingType/>
+    </Row>
+
+
+
+
+
+
 
 
     <Row>
@@ -788,6 +2015,32 @@
   ╚═════════════════════════════════════════════════════════════════════════════
   -->
   <Language_en_US>
+
+
+
+
+    <Row Tag="TXT_KEY_WONDER_ARDI_TITLE">
+      <Text>Ardi's Tree</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_ARDI_DESC">
+      <Text>Ardi's Tree</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_LUCY_TITLE">
+      <Text>Lucy's Path</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LUCY_DESC">
+      <Text>Lucy's Path</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_TITLE">
+      <Text>Laetoli Footprints</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_DESC">
+      <Text>Laetoli Footprints</Text>
+    </Row>
 
 
 
