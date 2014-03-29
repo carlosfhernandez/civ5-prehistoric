@@ -305,7 +305,7 @@ BUILDINGS
 │ 3                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Great Divergence                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Ardi                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Ardi TODO-TXT                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -317,8 +317,8 @@ BUILDINGS
 │ Bipedal Adaption                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Australopithecus (t:offense)                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Lookout Rock                                  │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Laetoli Footprints                            │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Lucy                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Laetoli Footprints TODO-TXT                   │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Lucy TODO-TXT                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b:1 u:1 c:0 w:2: r:0 p:                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -353,14 +353,14 @@ BUILDINGS
 │                     b-Stone Pile                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Watcher (t:sentinel)                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Overlook                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-First Chopper TODO                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-First Chopper TODO-TXT                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Adapted Tools                                                       │   │  │  │  │  │  │  │  │  │  │  │  │    
 │                     r-Stone                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Rock Thrower (t:ranged) TODO                  │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Olduvai Gorge Tools TODO                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Olduvai Gorge Tools TODO-TXT                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -386,13 +386,13 @@ BUILDINGS
 │ Scavenging                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Autochthon                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Laborer                                       │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Twiggy (Homo Habilis) TODO                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Twiggy (Homo Habilis) TODO-TXT                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Bone Pile                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Curiousity                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Torralba and Ambrona TODO                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Torralba and Ambrona TODO-TXT                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Adventurer (t:scout) TODO                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -408,7 +408,7 @@ BUILDINGS
 │                       - SubShelter: Grass                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                       - SubShelter: Cave                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Chief Shelter                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Terra Amata Shelter TODO                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Terra Amata Shelter TODO-TXT                  │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -436,7 +436,7 @@ BUILDINGS
 │                     b-Causeway                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Obsidian                                      │   │  │  │  │  │  │  │  │  │  │  │  │                          
 │                     r-Flint                                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Schoningen Spears                        TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Schoningen Spears                    TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -455,7 +455,7 @@ BUILDINGS
 │                     u-Slinger (t:ranged)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rubble Wall                                   │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Water Storage                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Bhimbetka Rock Shelters                  TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Bhimbetka Rock Shelters              TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -479,14 +479,14 @@ BUILDINGS
 │                     u-Hunter (t:special)                       TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Outpost                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hunting Trails                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Afontora Gora                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Afontora Gora                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Fire                u-Shaman                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Campfire                  (+1G,H)             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Keeper                                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gesher Benot Ya’aqov                    TODO  │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gesher Benot Ya’aqov                 TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -518,7 +518,7 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Social Structure    c-Chieftain's Hut           (+1G,+1P)           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Chief (t:leader)                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Sibudu Cave                              TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Sibudu Cave                          TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -569,7 +569,7 @@ BUILDINGS
 │ Symbolic Communicatn                                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Warning Signs                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-                                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gobekli Tepe                             TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gobekli Tepe                         TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -578,7 +578,7 @@ BUILDINGS
 │                     u-Raider (t:skirmisher)                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Luxury Hut                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Noise Perimiter                          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gulf of Khambhat                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gulf of Khambhat                     TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -592,12 +592,12 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Collaborative Hunting                                               │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-Sentinel (t:sentinel)                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Le Mas d'Azil                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Le Mas d'Azil                        TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Expression                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
-│                     w-Wonderwerk Cave                               │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Wonderwerk Cave                          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -605,7 +605,7 @@ BUILDINGS
 │                     r-Pearls                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Crab                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Fish                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Skara Brae                                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Skara Brae                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Atlaltlist                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -614,21 +614,21 @@ BUILDINGS
 │                     b-Food Storage (+1F)                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     {Must have Hunter or Gatherer unit}             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     n-Raft                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Carnac Stones                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Carnac Stones                        TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Language                                                            │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     a-Embasies                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Harbinger                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-The Unfinished Obelisk of Aswan          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-The Unfinished Obelisk of Aswan      TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Leadership                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-%Galley {Buildable with limits}               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Palace???                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-The Cairn of Barnenez                    TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-The Cairn of Barnenez                TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -642,26 +642,27 @@ BUILDINGS
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Archery:                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Archer, u-#Slinger, u-#Bowman                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Temple of Artemis                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Temple of Artemis                  ALTER-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Idols:                                                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Shrine (+1R), b-#Pyramid                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Ggantija Temples                              │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Grotes du Pape                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Ggantija Temples                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Grotes du Pape                       TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Newgrange                            TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Painting                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rock Paintings (+1C)                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Dyes                                          │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Spotted Horses, Pech Merle                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Spotted Horses, Pech Merle           TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Beading                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Gonnersdorf and Andernach                     │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Gonnersdorf and Andernach            TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -669,12 +670,12 @@ BUILDINGS
 │                     u-Brute                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Woomerist                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Palisade                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Ugarit                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Ugarit                                   TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Cooperation                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Theopetra Cave                                │   │  │  │  │  │  │  │  │  │  │  │  │                     
+│                     w-Theopetra Cave                           TODO │   │  │  │  │  │  │  │  │  │  │  │  │                     
 │                     u-Settler                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Warrior, u-%Brute, u-#Jaguar, u-#Maori        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │

@@ -20,3 +20,11 @@
 ◠ ◡ ◢ ◣ ◤ ◥ ◦ ◧ ◨ ◩ ◪ ◫ ◬ ◭ ◮ ◯ 
 ◰ ◱ ◲ ◳ ◴ ◵ ◶ ◷ ◸ ◹ ◺ ◻ ◼ ◽ ◾ ◿
 
+
+← 8592  2190  &larr;  leftwards arrow
+↑ 8593  2191  &uarr;  upwards arrow
+→ 8594  2192  &rarr;  rightwards arrow
+↓ 8595  2193  &darr;  downwards arrow
+↔ 8596  2194  &harr;  left right arrow
+↕ 8597  2195  - up down arrow
+↨ 8616  21A8  - up down arrow with base
