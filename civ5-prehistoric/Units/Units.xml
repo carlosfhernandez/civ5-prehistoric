@@ -463,6 +463,11 @@
       <Description>Wanderer Class</Description>
       <DefaultUnit>UNIT_WANDERER</DefaultUnit>
     </Row>
+    <Row>
+      <Type>UNITCLASS_NOMAD_WANDERER</Type>
+      <Description>Nomad Wanderer Class</Description>
+      <DefaultUnit>UNIT_NOMAD_WANDERER</DefaultUnit>
+    </Row>    
 
 
     <Row>
@@ -768,7 +773,7 @@
       <CombatLimit>0</CombatLimit>
       <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
       <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>56</PortraitIndex>
       <IconAtlas>UNIT_ATLAS_1</IconAtlas>
     </Row>
 
@@ -1105,7 +1110,7 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>0</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>56</PortraitIndex>
     </Row>
 
 
@@ -1339,7 +1344,7 @@
     </Row>
 
     <Row>
-      <Class>UNITCLASS_WANDERER</Class>
+      <Class>UNITCLASS_NOMAD_WANDERER</Class>
       <Type>UNIT_NOMAD_WANDERER</Type>
       <PrereqTech>TECH_LOCOMOTION</PrereqTech>
       <Combat>1</Combat>

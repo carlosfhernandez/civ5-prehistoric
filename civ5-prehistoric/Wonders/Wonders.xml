@@ -81,9 +81,9 @@
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
-      <Type>BUILDINGCLASS_SCHONINGEN_SPEARS</Type>
-      <DefaultBuilding>BUILDING_SCHONINGEN_SPEARS</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_TITLE</Description>
+      <Type>BUILDINGCLASS_LUCY</Type>
+      <DefaultBuilding>BUILDING_LUCY</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_LUCY_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
@@ -92,37 +92,154 @@
       <Description>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
-
-
-
-
     <Row>
       <Type>BUILDINGCLASS_FIRST_CHOPPER</Type>
       <DefaultBuilding>BUILDING_FIRST_CHOPPER</DefaultBuilding>
       <Description>TXT_KEY_WONDER_FIRST_CHOPPER_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
+    <Row>
+      <Type>BUILDINGCLASS_OLDUVAI_GORGE</Type>
+      <DefaultBuilding>BUILDING_OLDUVAI_GORGE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_OLDUVAI_GORGE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_TWIGGY</Type>
+      <DefaultBuilding>BUILDING_TWIGGY</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_TWIGGY_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_TORRALBA_AND_AMBRONA</Type>
+      <DefaultBuilding>BUILDING_TORRALBA_AND_AMBRONA</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_TERRA_AMATA</Type>
+      <DefaultBuilding>BUILDING_TERRA_AMATA</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_TERRA_AMATA_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_SCHONINGEN_SPEARS</Type>
+      <DefaultBuilding>BUILDING_SCHONINGEN_SPEARS</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_BHIMBETKA_ROCK_SHELTERS</Type>
+      <DefaultBuilding>BUILDING_BHIMBETKA_ROCK_SHELTERS</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    
+    <!-- TODO -->
+    <Row>
+      <Type>BUILDINGCLASS_AFONTORA_AND_GORA</Type>
+      <DefaultBuilding>BUILDING_AFONTORA_AND_GORA</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_AFONTORA_AND_GORA_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+
+    <Row>
+      <Type>BUILDINGCLASS_GESHER_BENOT_YA_AQOV</Type>
+      <DefaultBuilding>BUILDING_GESHER_BENOT_YA_AQOV</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
 
 
+
+
+    <!-- TODO: POSSIBLE SINGLE CLASS WITH MANY SUB BUILDINGS -->
+    <Row>
+      <Type>BUILDINGCLASS_KEBARA_CAVE</Type>
+      <DefaultBuilding>BUILDING_KEBARA_CAVE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_KEBARA_CAVE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_COUGNAC_CAVES</Type>
+      <DefaultBuilding>BUILDING_COUGNAC_CAVES</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_COUGNAC_CAVES_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_CHAUVET_CAVES</Type>
+      <DefaultBuilding>BUILDING_CHAUVET_CAVES</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_CHAUVET_CAVES_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_COVALANAS_CAVE</Type>
+      <DefaultBuilding>BUILDING_COVALANAS_CAVE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_COVALANAS_CAVE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_COLIBOAIA_CAVE</Type>
+      <DefaultBuilding>BUILDING_COLIBOAIA_CAVEUCY</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_COLIBOAIA_CAVE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <!-- END -->
 
 
 
     <Row>
-      <Type>BUILDINGCLASS_THEOPETRACAVE</Type>
-      <DefaultBuilding>BUILDING_THEOPETRACAVE</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_THEOPETRACAVE_DESC</Description>
+      <Type>BUILDINGCLASS_SIBUDU_CAVE</Type>
+      <DefaultBuilding>BUILDING_SIBUDU_CAVE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_SIBUDU_CAVE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GOBEKLI_TEPE</Type>
+      <DefaultBuilding>BUILDING_GOBEKLI_TEPE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GOBEKLI_TEPE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GULF_OF_KHAMBHAT</Type>
+      <DefaultBuilding>BUILDING_GULF_OF_KHAMBHAT</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_MAS_D_AZIL</Type>
+      <DefaultBuilding>BUILDING_MAS_D_AZIL</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_MAS_D_AZIL_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_WONDERWERK</Type>
+      <DefaultBuilding>BUILDING_WONDERWERK</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_WONDERWERK_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_SKARABRAE</Type>
       <DefaultBuilding>BUILDING_SKARABRAE</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Description>TXT_KEY_WONDER_SKARABRAE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
-    </Row>    
+    </Row> 
     <Row>
-      <Type>BUILDINGCLASS_WONDERWERK</Type>
-      <DefaultBuilding>BUILDING_WONDERWERK</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_WONDERWERK_TITLE</Description>
+      <Type>BUILDINGCLASS_CARNAC_STONES</Type>
+      <DefaultBuilding>BUILDING_CARNAC_STONES</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_CARNAC_STONES_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_UNFINISHED_OBELISK_ASWAN</Type>
+      <DefaultBuilding>BUILDING_UNFINISHED_OBELISK_ASWAN</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_CAIRN_OF_BARNENEZ</Type>
+      <DefaultBuilding>BUILDING_BARNENEZ</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_BARNENEZ</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
@@ -132,17 +249,44 @@
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
-      <Type>BUILDINGCLASS_NEWGRANGE</Type>
-      <DefaultBuilding>BUILDING_NEWGRANGE</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
-      <MaxGlobalInstances>1</MaxGlobalInstances>
-    </Row>   
-    <Row>
-      <Type>BUILDINGCLASS_CAIRN_OF_BARNENEZ</Type>
-      <DefaultBuilding>BUILDING_BARNENEZ</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_BARNENEZ</Description>
+      <Type>BUILDINGCLASS_GROTTE_DU_PAPE</Type>
+      <DefaultBuilding>BUILDING_GROTTE_DU_PAPE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
+    <Row>
+      <Type>BUILDINGCLASS_NEWGRANGE</Type>
+      <DefaultBuilding>BUILDING_NEWGRANGE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_NEWGRANGE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row> 
+    <Row>
+      <Type>BUILDINGCLASS_PECHE_MERLE</Type>
+      <DefaultBuilding>BUILDING_PECHE_MERLE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_PECHE_MERLE_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_GONNERSDORF_ANDERNACH</Type>
+      <DefaultBuilding>BUILDING_GONNERSDORF_ANDERNACH</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_UGARIT</Type>
+      <DefaultBuilding>BUILDING_UGARIT</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_UGARIT_TITLE</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>
+   <Row>
+      <Type>BUILDINGCLASS_THEOPETRACAVE</Type>
+      <DefaultBuilding>BUILDING_THEOPETRACAVE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_THEOPETRACAVE_DESC</Description>
+      <MaxGlobalInstances>1</MaxGlobalInstances>
+    </Row>    
+
+  
+
 
   </BuildingClasses>
   
@@ -251,13 +395,13 @@
     <Row>
       <Type>BUILDING_ARDI</Type>
       <BuildingClass>BUILDINGCLASS_ARDI</BuildingClass>
-      <Description>TXT_KEY_BUILDING_ARDI_DESC</Description>
+      <Description>TXT_KEY_WONDER_ARDI_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_ARDI_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_ARDI_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_ARDI_HELP</Help>
       <Cost>100</Cost>
       <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
-      <MaxStartEra>ERA_PREHISTORIC</MaxStartEra>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
@@ -285,13 +429,13 @@
     <Row>
       <Type>BUILDING_LUCY</Type>
       <BuildingClass>BUILDINGCLASS_LUCY</BuildingClass>
-      <Description>TXT_KEY_BUILDING_LUCY_DESC</Description>
+      <Description>TXT_KEY_WONDER_LUCY_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
       <Cost>100</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
-      <MaxStartEra>ERA_PREHISTORIC</MaxStartEra>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
@@ -305,13 +449,13 @@
     <Row>
       <Type>BUILDING_LAETOLI_FOOTPRINTS</Type>
       <BuildingClass>BUILDINGCLASS_LAETOLI_FOOTPRINTS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_LAETOLI_FOOTPRINTS_DESC</Description>
+      <Description>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_HELP</Help>
       <Cost>100</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
-      <MaxStartEra>ERA_PREHISTORIC</MaxStartEra>
+      <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
@@ -361,7 +505,7 @@
     <Row>
       <Type>BUILDING_FIRST_CHOPPER</Type>
       <BuildingClass>BUILDINGCLASS_FIRST_CHOPPER</BuildingClass>
-      <Description>TXT_KEY_BUILDING_FIRST_CHOPPER_DESC</Description>
+      <Description>TXT_KEY_WONDER_FIRST_CHOPPER_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_FIRST_CHOPPER_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_FIRST_CHOPPER_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_FIRST_CHOPPER_HELP</Help>
@@ -390,7 +534,7 @@
     <Row>
       <Type>BUILDING_OLDUVAI_GORGE</Type>
       <BuildingClass>BUILDINGCLASS_OLDUVAI_GORGE</BuildingClass>
-      <Description>TXT_KEY_BUILDING_OLDUVAI_GORGE_DESC</Description>
+      <Description>TXT_KEY_WONDER_OLDUVAI_GORGE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_OLDUVAI_GORGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_OLDUVAI_GORGE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_OLDUVAI_GORGE_HELP</Help>
@@ -430,7 +574,7 @@
     <Row>
       <Type>BUILDING_TWIGGY</Type>
       <BuildingClass>BUILDINGCLASS_TWIGGY</BuildingClass>
-      <Description>TXT_KEY_BUILDING_TWIGGY_DESC</Description>
+      <Description>TXT_KEY_WONDER_TWIGGY_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_TWIGGY_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TWIGGY_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TWIGGY_HELP</Help>
@@ -458,7 +602,7 @@
     <Row>
       <Type>BUILDING_TORRALBA_AND_AMBRONA</Type>
       <BuildingClass>BUILDINGCLASS_TORRALBA_AND_AMBRONA</BuildingClass>
-      <Description>TXT_KEY_BUILDING_TORRALBA_AND_AMBRONA_DESC</Description>
+      <Description>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_HELP</Help>
@@ -488,7 +632,7 @@
     <Row>
       <Type>BUILDING_TERRA_AMATA</Type>
       <BuildingClass>BUILDINGCLASS_TERRA_AMATA</BuildingClass>
-      <Description>TXT_KEY_BUILDING_TERRA_AMATA_DESC</Description>
+      <Description>TXT_KEY_WONDER_TERRA_AMATA_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_TERRA_AMATA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TERRA_AMATA_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TERRA_AMATA_HELP</Help>
@@ -551,11 +695,11 @@
           ◄█▓▒░ ● COMPLEX_TOOLS ● ░▒▓█► 
     -->
 
-    <!-- Schoningen Spears -->
+    <!-- Schoningen Spears / SCHONINGEN_SPEARS -->
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -580,14 +724,14 @@
           ◄█▓▒░ ● CONTAINERS ● ░▒▓█► 
     -->
 
-    <!-- Bhimbetka Rock Shelters -->
+    <!-- Bhimbetka Rock Shelters / BHIMBETKA_ROCK_SHELTERS -->
     <Row>
-      <Type>BUILDING_SCHONINGEN_SPEARS</Type>
-      <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
-      <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
-      <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
+      <Type>BUILDING_BHIMBETKA_ROCK_SHELTERS</Type>
+      <BuildingClass>BUILDINGCLASS_BHIMBETKA_ROCK_SHELTERS</BuildingClass>
+      <Description>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_HELP</Help>
       <Cost>100</Cost>
       <PrereqTech>TECH_CONTAINERS</PrereqTech>
       <MaxStartEra>ERA_PALEOLITHIC</MaxStartEra>
@@ -627,7 +771,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -657,7 +801,7 @@
     <Row>
       <Type>BUILDING_GESHER_BENOT_YA_AQOV</Type>
       <BuildingClass>BUILDINGCLASS_GESHER_BENOT_YA_AQOV</BuildingClass>
-      <Description>TXT_KEY_BUILDING_GESHER_BENOT_YA_AQOV_DESC</Description>
+      <Description>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_HELP</Help>
@@ -689,7 +833,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -711,7 +855,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -733,7 +877,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -755,7 +899,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -777,7 +921,7 @@
     <Row>
       <Type>BUILDING_SCHONINGEN_SPEARS</Type>
       <BuildingClass>BUILDINGCLASS_SCHONINGEN_SPEARS</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SCHONINGEN_SPEARS_DESC</Description>
+      <Description>TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
@@ -809,7 +953,7 @@
     <Row>
       <Type>BUILDING_SIBUDU_CAVE</Type>
       <BuildingClass>BUILDINGCLASS_SIBUDU_CAVE</BuildingClass>
-      <Description>TXT_KEY_BUILDING_SIBUDU_CAVE_DESC</Description>
+      <Description>TXT_KEY_WONDER_SIBUDU_CAVE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_SIBUDU_CAVE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SIBUDU_CAVE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SIBUDU_CAVE_HELP</Help>
@@ -875,7 +1019,7 @@
     <Row>
       <Type>BUILDING_GOBEKLI_TEPE</Type>
       <BuildingClass>BUILDINGCLASS_GOBEKLI_TEPE</BuildingClass>
-      <Description>TXT_KEY_BUILDING_GOBEKLI_TEPE_DESC</Description>
+      <Description>TXT_KEY_WONDER_GOBEKLI_TEPE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GOBEKLI_TEPE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GOBEKLI_TEPE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GOBEKLI_TEPE_HELP</Help>
@@ -905,7 +1049,7 @@
     <Row>
       <Type>BUILDING_GULF_OF_KHAMBHAT</Type>
       <BuildingClass>BUILDINGCLASS_GULF_OF_KHAMBHAT</BuildingClass>
-      <Description>TXT_KEY_BUILDING_GULF_OF_KHAMBHAT_DESC</Description>
+      <Description>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_HELP</Help>
@@ -946,7 +1090,7 @@
     <Row>
       <Type>BUILDING_MAS_D_AZIL</Type>
       <BuildingClass>BUILDINGCLASS_MAS_D_AZIL</BuildingClass>
-      <Description>TXT_KEY_BUILDING_MAS_D_AZIL_DESC</Description>
+      <Description>TXT_KEY_WONDER_MAS_D_AZIL_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_MAS_D_AZIL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_MAS_D_AZIL_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_MAS_D_AZIL_HELP</Help>
@@ -974,10 +1118,10 @@
     <Row>
       <Type>BUILDING_WONDERWERK</Type>
       <BuildingClass>BUILDINGCLASS_WONDERWERK</BuildingClass>
-      <Description>TXT_KEY_BUILDING_WONDERWERK_DESC</Description>
-      <Civilopedia>TXT_KEY_BUILDING_WONDERWERK_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_WONDERWERK_QUOTE</Quote>
-      <Help>TXT_KEY_BUILDING_WONDERWERK_HELP</Help>
+      <Description>TXT_KEY_WONDER_WONDERWERK_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_WONDERWERK_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_WONDERWERK_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_WONDERWERK_HELP</Help>
       <Cost>65</Cost>
       <PrereqTech>TECH_EXPRESSION</PrereqTech>      
       <ArtDefineTag>PETRA</ArtDefineTag>
@@ -1009,7 +1153,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_HARPOONING</PrereqTech>
       <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Description>TXT_KEY_WONDER_SKARABRAE</Description>
       <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1038,7 +1182,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
       <Help>TXT_KEY_WONDER_CARNAC_STONES_HELP</Help>
-      <Description>TXT_KEY_BUILDING_CARNAC_STONES</Description>
+      <Description>TXT_KEY_WONDER_CARNAC_STONES</Description>
       <Civilopedia>TXT_KEY_WONDER_CARNAC_STONES_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_CARNAC_STONES_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1067,7 +1211,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_LANGUAGE</PrereqTech>
       <Help>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_HELP</Help>
-      <Description>TXT_KEY_BUILDING_UNFINISHED_OBELISK_ASWAN</Description>
+      <Description>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN</Description>
       <Civilopedia>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1096,7 +1240,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_LEADERSHIP</PrereqTech>
       <Help>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_HELP</Help>
-      <Description>TXT_KEY_BUILDING_CAIRN_OF_BARNENEZ</Description>
+      <Description>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ</Description>
       <Civilopedia>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1149,7 +1293,7 @@
       <Cost>75</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>
       <Help>TXT_KEY_WONDER_GGANTIJA_HELP</Help>
-      <Description>TXT_KEY_BUILDING_GGANTIJA</Description>
+      <Description>TXT_KEY_WONDER_GGANTIJA</Description>
       <Civilopedia>TXT_KEY_WONDER_GGANTIJA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GGANTIJA_QUOTE</Quote>
       <ArtDefineTag>GREAT MOSQUE DEJENNE</ArtDefineTag>
@@ -1173,7 +1317,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>
       <Help>TXT_KEY_WONDER_GROTTE_DU_PAPE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_GROTTE_DU_PAPE</Description>
+      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE</Description>
       <Civilopedia>TXT_KEY_WONDER_GROTTE_DU_PAPE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GROTTE_DU_PAPE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1193,7 +1337,7 @@
       <BuildingClass>BUILDINGCLASS_NEWGRANGE</BuildingClass>
       <Cost>185</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>      
-      <Description>TXT_KEY_BUILDING_NEWGRANGE</Description>
+      <Description>TXT_KEY_WONDER_NEWGRANGE</Description>
       <Civilopedia>TXT_KEY_WONDER_NEWGRANGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_NEWGRANGE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_NEWGRANGE_HELP</Help>
@@ -1228,7 +1372,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_PAINTING</PrereqTech>
       <Help>TXT_KEY_WONDER_PECHE_MERLE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_PECHE_MERLE</Description>
+      <Description>TXT_KEY_WONDER_PECHE_MERLE</Description>
       <Civilopedia>TXT_KEY_WONDER_PECHE_MERLE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_PECHE_MERLE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1237,7 +1381,7 @@
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
       <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>11</PortraitIndex>
+      <PortraitIndex>23</PortraitIndex>
       <WonderSplashImage>WonderSplash_PecheMerle.dds</WonderSplashImage>
     </Row>
 
@@ -1258,7 +1402,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_BEADING</PrereqTech>
       <Help>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_HELP</Help>
-      <Description>TXT_KEY_BUILDING_GONNERSDORF_ANDERNACH</Description>
+      <Description>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH</Description>
       <Civilopedia>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1266,8 +1410,8 @@
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>11</PortraitIndex>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>26</PortraitIndex>
       <WonderSplashImage>WonderSplash_GonnersdorfAndAndernach.dds</WonderSplashImage>
     </Row>
 
@@ -1282,26 +1426,24 @@
     -->
 
     <!-- Ugarit -->
-    <!--
     <Row>
-      <Type>BUILDING_SKARABRAE</Type>
-      <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
+      <Type>BUILDING_UGARIT</Type>
+      <BuildingClass>BUILDINGCLASS_UGARIT</BuildingClass>
       <Cost>72</Cost>
-      <PrereqTech>TECH_HARPOONING</PrereqTech>
-      <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
-      <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
+      <PrereqTech>TECH_WARFARE</PrereqTech>
+      <Help>TXT_KEY_WONDER_UGARIT_HELP</Help>
+      <Description>TXT_KEY_WONDER_UGARIT</Description>
+      <Civilopedia>TXT_KEY_WONDER_UGARIT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_UGARIT_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>11</PortraitIndex>
-      <WonderSplashImage>WonderSplash_SkaraBrae.dds</WonderSplashImage>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+      <WonderSplashImage>WonderSplash_Ugarit.dds</WonderSplashImage>
     </Row>
-    -->
 
 
 
@@ -1319,7 +1461,7 @@
       <Type>BUILDING_THEOPETRACAVE</Type>
       <BuildingClass>BUILDINGCLASS_THEOPETRACAVE</BuildingClass>
       <Cost>48</Cost>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <PrereqTech>TECH_COOPERATION</PrereqTech>
       <Help>TXT_KEY_WONDER_THEOPETRACAVE_HELP</Help>
       <Description>TXT_KEY_WONDER_THEOPETRACAVE_TITLE</Description>
       <Strategy>TXT_KEY_WONDER_THEOPETRACAVE_STRATEGY</Strategy>
@@ -1332,9 +1474,9 @@
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>100</ConquestProb>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <IconAtlas>WONDER_ATLAS_PRE</IconAtlas>
       <DisplayPosition>2</DisplayPosition>
-      <PortraitIndex>9</PortraitIndex>
+      <PortraitIndex>25</PortraitIndex>
       <WonderSplashImage>WonderSplash_TheopetraCave.dds</WonderSplashImage>
     </Row>
 
@@ -1410,7 +1552,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_HARPOONING</PrereqTech>
       <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
-      <Description>TXT_KEY_BUILDING_SKARABRAE</Description>
+      <Description>TXT_KEY_WONDER_SKARABRAE</Description>
       <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
@@ -2023,7 +2165,7 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_BUILDING_NEWGRANGE">
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE">
       <Text>Newgrange</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_NEWGRANGE_HELP">
@@ -2039,7 +2181,7 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_BUILDING_BARNENEZ">
+    <Row Tag="TXT_KEY_WONDER_BARNENEZ">
       <Text>Barnenez</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_BARNENEZ_HELP">
@@ -2055,10 +2197,10 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_BUILDING_WONDERWERK_TITLE">
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_TITLE">
       <Text>Wonderwerk Cave</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_WONDERWERK_DESC">
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_DESC">
       <Text>Wonderwerk Cave</Text>
     </Row>    
     <Row Tag="TXT_KEY_WONDER_WONDERWERK_HELP">
@@ -2072,7 +2214,7 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_BUILDING_GGANTIJA">
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA">
       <Text>Ggantija Temples</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_GGANTIJA_HELP">
@@ -2096,7 +2238,7 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_BUILDING_SKARABRAE">
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE">
       <Text>Skara Brae</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_SKARABRAE_HELP">

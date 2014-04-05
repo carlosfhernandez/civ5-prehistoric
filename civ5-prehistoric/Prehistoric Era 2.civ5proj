@@ -124,22 +124,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Wonders/Ggantija.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Wonders/WonderwerkCave.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Wonders/TheopetraCave.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Wonders/SkaraBrae.xml</FileName>
+        <FileName>Wonders/Wonders.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -238,11 +223,13 @@
     <Folder Include="Art\Atlas\Buildings\" />
     <Folder Include="Art\Atlas\Flag\" />
     <Folder Include="Art\Atlas\Icon\" />
+    <Folder Include="Art\Atlas\Beliefs" />
     <Folder Include="Art\Atlas\Resources" />
     <Folder Include="Art\Atlas\Terrain" />
     <Folder Include="Art\Atlas\Promotions\" />
     <Folder Include="Art\Atlas\Tech\" />
     <Folder Include="Art\Atlas\Units\" />
+    <Folder Include="Art\Atlas\Wonders\" />
     <Folder Include="Art\Improvements" />
     <Folder Include="Art\Improvements\ForagingSite" />
     <Folder Include="Art\Improvements\BarbVillage1" />
@@ -318,6 +305,7 @@
     <Folder Include="Lua\func\" />
     <Folder Include="Lua\util" />
     <Folder Include="Greats" />
+    <Folder Include="Beliefs" />
     <Folder Include="Resources\Lumber\" />
     <Folder Include="Resources\Berries" />
     <Folder Include="Resources\Cactus" />
@@ -342,7 +330,6 @@
     <Folder Include="Resources" />
     <Folder Include="Technologies\" />
     <Folder Include="Units\" />
-    <Folder Include="Wonders\Temp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Art\Atlases.xml">
@@ -500,6 +487,22 @@
     <Content Include="Art\AtlasFont_PRE.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Wonders\WonderAtlas128_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Wonders\WonderAtlas256_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Wonders\WonderAtlas45_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Wonders\WonderAtlas64_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Improvements\ForagingSite\foraging_berries_diff.dds">
       <SubType>Lua</SubType>
@@ -1673,11 +1676,103 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\Wonders\WonderSplash_Ardi.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_BhimetkaRockShelters.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_CairnOfBarnenez.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_CarnacStones.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_FirstChopper.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_GesherBenotYaAqov.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Art\Wonders\WonderSplash_Ggantija.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\Wonders\WonderSplash_GobekliTepe.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_GonnersdorfAndAndernach.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_GrotteDuPape.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_GulfOfKhambhat.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_LaetoliFootprints.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_Lucy.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_MasDAzilCave.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_Newgrange.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_OlduvaiGorgeTools.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_PecheMerle.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_SchoningenSpears.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_SibuduCave.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Art\Wonders\WonderSplash_SkaraBrae.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_TerraAmata.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_TorralbaAmbrona.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_Twiggy.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_Ugarit.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Wonders\WonderSplash_UnfinishedObeliskOfAswan.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2373,35 +2468,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Wonders\Ggantija.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\SkaraBrae.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\Temp\Barnenez.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\Temp\Ggantija.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\Temp\Newgrange.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\TheopetraCave.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Wonders\Wonders.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Wonders\WonderwerkCave.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
