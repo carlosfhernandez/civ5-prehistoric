@@ -221,7 +221,7 @@
     <Row>
       <Type>BUILDINGCLASS_SKARABRAE</Type>
       <DefaultBuilding>BUILDING_SKARABRAE</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_SKARABRAE</Description>
+      <Description>TXT_KEY_WONDER_SKARABRAE_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row> 
     <Row>
@@ -239,13 +239,13 @@
     <Row>
       <Type>BUILDINGCLASS_CAIRN_OF_BARNENEZ</Type>
       <DefaultBuilding>BUILDING_BARNENEZ</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_BARNENEZ</Description>
+      <Description>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
       <Type>BUILDINGCLASS_GGANTIJA</Type>
       <DefaultBuilding>BUILDING_GGANTIJA</DefaultBuilding>
-      <Description>Ggantija</Description>
+      <Description>TXT_KEY_WONDER_GGANTIJA</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
@@ -257,7 +257,7 @@
     <Row>
       <Type>BUILDINGCLASS_NEWGRANGE</Type>
       <DefaultBuilding>BUILDING_NEWGRANGE</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_NEWGRANGE</Description>
+      <Description>TXT_KEY_WONDER_NEWGRANGE_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row> 
     <Row>
@@ -1152,8 +1152,8 @@
       <BuildingClass>BUILDINGCLASS_SKARABRAE</BuildingClass>
       <Cost>72</Cost>
       <PrereqTech>TECH_HARPOONING</PrereqTech>
+      <Description>TXT_KEY_WONDER_SKARABRAE_DESC</Description>
       <Help>TXT_KEY_WONDER_SKARABRAE_HELP</Help>
-      <Description>TXT_KEY_WONDER_SKARABRAE</Description>
       <Civilopedia>TXT_KEY_WONDER_SKARABRAE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SKARABRAE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1293,7 +1293,7 @@
       <Cost>75</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>
       <Help>TXT_KEY_WONDER_GGANTIJA_HELP</Help>
-      <Description>TXT_KEY_WONDER_GGANTIJA</Description>
+      <Description>TXT_KEY_WONDER_GGANTIJA_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GGANTIJA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GGANTIJA_QUOTE</Quote>
       <ArtDefineTag>GREAT MOSQUE DEJENNE</ArtDefineTag>
@@ -1317,7 +1317,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>
       <Help>TXT_KEY_WONDER_GROTTE_DU_PAPE_HELP</Help>
-      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE</Description>
+      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GROTTE_DU_PAPE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GROTTE_DU_PAPE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1337,7 +1337,7 @@
       <BuildingClass>BUILDINGCLASS_NEWGRANGE</BuildingClass>
       <Cost>185</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>      
-      <Description>TXT_KEY_WONDER_NEWGRANGE</Description>
+      <Description>TXT_KEY_WONDER_NEWGRANGE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_NEWGRANGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_NEWGRANGE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_NEWGRANGE_HELP</Help>
@@ -1372,7 +1372,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_PAINTING</PrereqTech>
       <Help>TXT_KEY_WONDER_PECHE_MERLE_HELP</Help>
-      <Description>TXT_KEY_WONDER_PECHE_MERLE</Description>
+      <Description>TXT_KEY_WONDER_PECHE_MERLE_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_PECHE_MERLE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_PECHE_MERLE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1402,7 +1402,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_BEADING</PrereqTech>
       <Help>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_HELP</Help>
-      <Description>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH</Description>
+      <Description>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -2121,10 +2121,10 @@
     </Row>
 
 
-    <Row Tag="TXT_KEY_WONDER_SCHONINGEN_SPEARS_TITLE">
+    <Row Tag="TXT_KEY_WONDER_LUCY_TITLE">
       <Text>Lucy's Path</Text>
     </Row>
-    <Row Tag="TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC">
+    <Row Tag="TXT_KEY_WONDER_LUCY_DESC">
       <Text>Lucy's Path</Text>
     </Row>
 
@@ -2137,6 +2137,279 @@
     </Row>
 
 
+    <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_TITLE">
+      <Text>First Chopper</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_DESC">
+      <Text>First Chopper</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_TITLE">
+      <Text>Olduvai Gorge Tools</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_DESC">
+      <Text>Olduvai Gorge Tools</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_WONDER_TWIGGY_TITLE">
+      <Text>Twiggy's Rest</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_TWIGGY_DESC">
+      <Text>Twiggy's Rest</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_TITLE">
+      <Text>Torralba and Ambrona</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_DESC">
+      <Text>Torralba and Ambrona</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_WONDER_TERRA_AMATA_TITLE">
+      <Text>Terra Amata</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_TERRA_AMATA_DESC">
+      <Text>Terra Amata</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_SCHONINGEN_SPEARS_TITLE">
+      <Text>Schoningen Spears</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SCHONINGEN_SPEARS_DESC">
+      <Text>Schoningen Spears</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_TITLE">
+      <Text>Bhimbetka Rock Shelters</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_DESC">
+      <Text>Bhimbetka Rock Shelters</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_AFONTORA_GORA_TITLE">
+      <Text>Afontora Gora</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_AFONTORA_GORA_DESC">
+      <Text>Afontora Gora</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_TITLE">
+      <Text>Gesher Benot Ya’aqov</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_DESC">
+      <Text>Gesher Benot Ya’aqov</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_KEBARA_CAVE_TITLE">
+      <Text>Kebara Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_KEBARA_CAVE_DESC">
+      <Text>Kebara Cave</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_COUGNAC_CAVE_TITLE">
+      <Text>Cougnac Caves</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_COUGNAC_CAVE_DESC">
+      <Text>Cougnac Caves</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_CHAUVET_CAVE_TITLE">
+      <Text>Chauvet Caves</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_CHAUVET_CAVE_DESC">
+      <Text>Chauvet Caves</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_COVALANAS_CAVE_TITLE">
+      <Text>Covalanas Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_COVALANAS_CAVE_DESC">
+      <Text>Covalanas Cave</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_COLIBOAIA_CAVE_TITLE">
+      <Text>Coliboaia Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_COLIBOAIA_CAVE_DESC">
+      <Text>Coliboaia Cave</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_GULF_OF_KHAMBHAT_TITLE">
+      <Text>Gulf of Khambhat</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GULF_OF_KHAMBHAT_DESC">
+      <Text>Gulf of Khambhat</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_MAS_D_AZIL_TITLE">
+      <Text>Le Mas d'Azil</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_MAS_D_AZIL_DESC">
+      <Text>Le Mas d'Azil</Text>
+    </Row>
+
+
+
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_TITLE">
+      <Text>Wonderwerk Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_DESC">
+      <Text>Wonderwerk Cave</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_HELP">
+      <Text>+1 [ICON_MOVES] Movement for Workers.[NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from mineral and mined Resources ([ICON_COPPER] Copper, Iron, Stone, and Salt) worked by the City in which it was built.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_QUOTE">
+      <Text>[NEWLINE]"If there hadn't been women we'd still be squatting in a cave eating raw meat, because we made civilization in order to impress our girlfriends."[NEWLINE]- Orson Welles.[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_WONDERWERK_PEDIA">
+      <Text>Wonderwerk Cave is an archaeological site, formed originally as an ancient solution cavity in Dolomite rocks of the Kuruman Hills, situated between Danielskuil and Kuruman in the Northern Cape Province, South Africa. It is a National Heritage Site within a servitude ceded to and managed as a satellite of the McGregor Museum in Kimberley. Geologically, hillside erosion exposed the northern end of the cavity, which extends horizontally for about 140 m into the base of a hill. Accumulted deposits inside the cave, up to 7 m in depth, reflect natural sedimentation processes such as water and wind deposition as well as the activities of animals, birds and human ancestors over a period of some 2 million years. The site has been studied and excavated by archaeologists since the 1940s and research here generates important insights into human history in the subcontinent of Southern Africa. Evidence within Wonderwerk cave has been called the oldest controlled fire. Wonderwerk means "miracle" in the Afrikaans language.[NEWLINE]- Quoted from en.wikipedia.org/wiki/Wonderwerk_Cave</Text>
+    </Row>
+
+
+
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_TITLE">
+      <Text>Skara Brae</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_DESC">
+      <Text>Skara Brae</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_HELP">
+      <Text>Provides +1 [ICON_FOOD] Food in the city in which it is built. Each source of [ICON_FISH] Fish and [ICON_SHEEP] Sheep worked by this city produce +1 [ICON_FOOD] Food.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_QUOTE">
+      <Text>
+        [NEWLINE]"Governing a great nation is like cooking a small fish - too much handling will spoil it."
+        [NEWLINE] - Lao Tzu
+        [NEWLINE]
+      </Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SKARABRAE_PEDIA">
+      <Text>
+        Skara Brae is a stone-built settlement built and inhabitant by early man, long ago abondoned. It is located on the largest of an archipelego of islands. It consists of eight clustered houses, each containing several pieces of stone built furniture such us cupboards, dressers, seats, and storage boxes.
+        [NEWLINE][NEWLINE]Given the number of homes, it seems likely that no more than fifty people lived in Skara Brae at any given time. They became pastorialists who raised cattle and sheep having first sustained themselves with an ocean-based diet of fish and other sea foods.
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_CARNAC_STONES_TITLE">
+      <Text>Lucy's Path</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_CARNAC_STONES_DESC">
+      <Text>Lucy's Path</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_TITLE">
+      <Text>The Unfinished Obelisk of Aswan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_DESC">
+      <Text>The Unfinished Obelisk of Aswan</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_TITLE">
+      <Text>Cairn of Barnenez</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_DESC">
+      <Text>Cairn of Barnenez</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_HELP">
+      <Text>Provides +2 [ICON_PRODUCTION] Production in the city in which it is built. +1 [ICON_PRODUCTION] Production from every source of Stone worked by this city.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_QUOTE">
+      <Text>[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_CAIRN_OF_BARNENEZ_PEDIA">
+      <Text>The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.</Text>
+    </Row>
+
+
+
+    <!-- TEMPLE_OF_ARTEMIS -->
+
+
+
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_TITLE">
+      <Text>Ggantija Temples</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_DESC">
+      <Text>Ggantija Temples</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_HELP">
+      <Text>All Land Military Units receive the Giant God's Blessing, which grants additional [COLOR_POSITIVE_TEXT]Healing[ENDCOLOR] outside friendly territory.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_QUOTE">
+      <Text>[NEWLINE]"It is only when men begin to worship that they begin to grow."[NEWLINE]- Calvin Coolidge.[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GGANTIJA_PEDIA">
+      <Text>Ggantija (Maltese: "Giants' Tower") is a Neolithic, megalithic temple complex on the Mediterranean island of Gozo. The Ggantija temples are the earliest of a series of megalithic temples in Malta. The Ggantija temples are older than the pyramids of Egypt. Their makers erected the two Ġgantija temples during the Neolithic Age (c. 3600-2500 BC), which makes these temples more than 5500 years old and the world's second oldest manmade religious structures, after Gobekli Tepe. Together with other similar structures, these have been designated a UNESCO World Heritage Site, the Megalithic Temples of Malta.[NEWLINE][NEWLINE]The temples were possibly the site of a Fertility cult; archeologists believe that the numerous figurines and statues found on site are connected with that cult. According to local Gozitan folklore, a giantess built these temples and used them as places of worship.[NEWLINE]- Quoted from en.wikipedia.org/wiki/Ggantija</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_GROTTES_DU_PAPE_TITLE">
+      <Text>Grottes du Pape</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GROTTES_DU_PAPE_DESC">
+      <Text>Grottes du Pape</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_TITLE">
+      <Text>Newgrange</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_DESC">
+      <Text>Newgrange</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_HELP">
+      <Text>Provides +3 [ICON_PEACE] Faith.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_QUOTE">
+      <Text>[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_PEDIA">
+      <Text>Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_PECHE_MERLE_TITLE">
+      <Text>Peche Merle SPotted Horses</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_PECHE_MERLE_DESC">
+      <Text>Peche Merle SPotted Horses</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_TITLE">
+      <Text>Gonnersdorf and Andernach</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GONNERSDORF_ANDERNACH_DESC">
+      <Text>Gonnersdorf and Andernach</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_UGARIT_TITLE">
+      <Text>Ugarit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_UGARIT_DESC">
+      <Text>Ugarit</Text>
+    </Row>
 
 
     <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_TITLE">
@@ -2157,106 +2430,16 @@
       <Text>[NEWLINE]When one has finished building one's house, one suddenly realizes that in the process one has learned something that one really needed to know in the worst way -- before one began.[NEWLINE]  - Friedrich Nietzsche</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_THEOPETRACAVE_PEDIA">
-      <Text>
-        The Cave of Theopetra is unique amongst archeological sites, having taught us many of the early secrets on how man survived, lived, and died.
-        [NEWLINE][NEWLINE]It is considered to be the oldest man-made structure found so far. It was inhabited for over 100,000 years due its prime location, great access to water, and a safe and protectable position.
-        [NEWLINE][NEWLINE]It is here where we find many of the clues as to how Neanderthals were replaced by modern man. It is also here where we see the transition of a hunting and gathering lifestyle to eventually one of farming.
-      </Text>
+      <Text>The Cave of Theopetra is unique amongst archeological sites, having taught us many of the early secrets on how man survived, lived, and died.[NEWLINE][NEWLINE]It is considered to be the oldest man-made structure found so far. It was inhabited for over 100,000 years due its prime location, great access to water, and a safe and protectable position.[NEWLINE][NEWLINE]It is here where we find many of the clues as to how Neanderthals were replaced by modern man. It is also here where we see the transition of a hunting and gathering lifestyle to eventually one of farming.</Text>
     </Row>
 
 
-    <Row Tag="TXT_KEY_WONDER_NEWGRANGE">
-      <Text>Newgrange</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_HELP">
-      <Text>Provides +3 [ICON_PEACE] Faith.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_QUOTE">
-      <Text>[NEWLINE]"It is often said because of visions in dreams that the dead truly live."[NEWLINE] - Nicander of Colophon[NEWLINE]</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_NEWGRANGE_PEDIA">
-      <Text>
-        Newgrange is a prehistoric monument in County Meath, Ireland. It was built about 3200 BC during the Neolithic period. The structure is a large circular mound with a stone passageway and chambers inside. The mound has a retaining wall at the front and is ringed by stones engraved with artwork.[NEWLINE][NEWLINE]There have been various debates as to its original purpose. Many archaeologists believed that the monument had religious significance of some sort or another, either as a place of worship for a "cult of the dead" or for an astronomically-based faith, as it is aligned with the rising sun which light floods the chamber on the winter solstice.
-      </Text>
-    </Row>
 
 
-    <Row Tag="TXT_KEY_WONDER_BARNENEZ">
-      <Text>Barnenez</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_BARNENEZ_HELP">
-      <Text>Provides +2 [ICON_PRODUCTION] Production in the city in which it is built. +1 [ICON_PRODUCTION] Production from every source of Stone worked by this city.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_BARNENEZ_QUOTE">
-      <Text>[NEWLINE]"Appearances are a glimpse of the unseen."[NEWLINE] - Anaxagoras[NEWLINE]</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_BARNENEZ_PEDIA">
-      <Text>
-        The Cairn of Barnenez is a Neolithic monument located in northern Finistere, Brittany (France). It dates to the early Neolithic, about 4800 BC and is beeing considered as one of the earliest megalithic monuments in Europe. It is also remarkable for the presence of megalithic art. Engraved symbols occur in several of the chambers and passages. They depict bows, axes, wave symbols or snakes and a repeated U-shaped sign.
-      </Text>
-    </Row>
 
 
-    <Row Tag="TXT_KEY_WONDER_WONDERWERK_TITLE">
-      <Text>Wonderwerk Cave</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_WONDERWERK_DESC">
-      <Text>Wonderwerk Cave</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_WONDER_WONDERWERK_HELP">
-      <Text>+1 [ICON_MOVES] Movement for Workers.[NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from mineral and mined Resources ([ICON_COPPER] Copper, Iron, Stone, and Salt) worked by the City in which it was built.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_WONDERWERK_QUOTE">
-      <Text>[NEWLINE]"If there hadn't been women we'd still be squatting in a cave eating raw meat, because we made civilization in order to impress our girlfriends."[NEWLINE]- Orson Welles.[NEWLINE]</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_WONDERWERK_PEDIA">
-      <Text>Wonderwerk Cave is an archaeological site, formed originally as an ancient solution cavity in Dolomite rocks of the Kuruman Hills, situated between Danielskuil and Kuruman in the Northern Cape Province, South Africa. It is a National Heritage Site within a servitude ceded to and managed as a satellite of the McGregor Museum in Kimberley. Geologically, hillside erosion exposed the northern end of the cavity, which extends horizontally for about 140 m into the base of a hill. Accumulted deposits inside the cave, up to 7 m in depth, reflect natural sedimentation processes such as water and wind deposition as well as the activities of animals, birds and human ancestors over a period of some 2 million years. The site has been studied and excavated by archaeologists since the 1940s and research here generates important insights into human history in the subcontinent of Southern Africa. Evidence within Wonderwerk cave has been called the oldest controlled fire. Wonderwerk means "miracle" in the Afrikaans language.[NEWLINE]- Quoted from en.wikipedia.org/wiki/Wonderwerk_Cave</Text>
-    </Row>
 
 
-    <Row Tag="TXT_KEY_WONDER_GGANTIJA">
-      <Text>Ggantija Temples</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_GGANTIJA_HELP">
-      <Text>
-        All Land Military Units receive the Giant God's Blessing, which grants additional [COLOR_POSITIVE_TEXT]Healing[ENDCOLOR] outside friendly territory.
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_GGANTIJA_QUOTE">
-      <Text>
-        [NEWLINE]"It is only when men begin to worship that they begin to grow."
-        [NEWLINE]- Calvin Coolidge.
-        [NEWLINE]
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_GGANTIJA_PEDIA">
-      <Text>
-        Ggantija (Maltese: "Giants' Tower") is a Neolithic, megalithic temple complex on the Mediterranean island of Gozo. The Ggantija temples are the earliest of a series of megalithic temples in Malta. The Ggantija temples are older than the pyramids of Egypt. Their makers erected the two Ġgantija temples during the Neolithic Age (c. 3600-2500 BC), which makes these temples more than 5500 years old and the world's second oldest manmade religious structures, after Gobekli Tepe. Together with other similar structures, these have been designated a UNESCO World Heritage Site, the Megalithic Temples of Malta.
-          [NEWLINE][NEWLINE]The temples were possibly the site of a Fertility cult; archeologists believe that the numerous figurines and statues found on site are connected with that cult. According to local Gozitan folklore, a giantess built these temples and used them as places of worship.
-          [NEWLINE]- Quoted from en.wikipedia.org/wiki/Ggantija
-      </Text>
-    </Row>
-
-
-    <Row Tag="TXT_KEY_WONDER_SKARABRAE">
-      <Text>Skara Brae</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_SKARABRAE_HELP">
-      <Text>Provides +1 [ICON_FOOD] Food in the city in which it is built. Each source of [ICON_FISH] Fish and [ICON_SHEEP] Sheep worked by this city produce +1 [ICON_FOOD] Food.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_SKARABRAE_QUOTE">
-      <Text>
-        [NEWLINE]"Governing a great nation is like cooking a small fish - too much handling will spoil it."
-        [NEWLINE] - Lao Tzu
-        [NEWLINE]
-      </Text>
-    </Row>
-    <Row Tag="TXT_KEY_WONDER_SKARABRAE_PEDIA">
-      <Text>
-        Skara Brae is a stone-built settlement built and inhabitant by early man, long ago abondoned. It is located on the largest of an archipelego of islands. It consists of eight clustered houses, each containing several pieces of stone built furniture such us cupboards, dressers, seats, and storage boxes.
-        [NEWLINE][NEWLINE]Given the number of homes, it seems likely that no more than fifty people lived in Skara Brae at any given time. They became pastorialists who raised cattle and sheep having first sustained themselves with an ocean-based diet of fish and other sea foods.
-      </Text>
-    </Row>
 
 
 

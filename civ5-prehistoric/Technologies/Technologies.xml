@@ -287,9 +287,9 @@ LEGEND
 │                                            [H]appiness              │ B │l  p  o  i  l  o  a  u  r  p  s │
 │                                            [P]roduction             │ a │d  p  d  e  t  d  i  r  a  r  o │
 │                                            [S]cience                │ s │   i  u  n  u     t  i  d  o  u │
-│                                            [C]ulture                │ e │   n  c  c  r     h  s  e  v  r │
-│                                            [F]ood                   │   │   e  t  e  e        m     e  c │
-│                                            [Z]Faith                 │   │                                │
+│                                            [C]ulture                │ e │  │n │c │c │r │  │h │s │e │v │r │
+│                                            [F]ood                   │   │  │e │t │e │e │  │  │m │  │e │c │
+│                                            [Z]Faith                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                            [T]ourism                ├───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
 │                                            [X]Trade                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                            [I]mprovements           │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -418,7 +418,7 @@ LEGEND
 ├─────────────────────────────────────────────────────────────────────┼───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
 │ 7                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Scavenging                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Scavenging-I                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Autochthon                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Laborer                              FIX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Twiggy (Homo Habilis)                TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -426,13 +426,13 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Curiousity                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Curiousity-I                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Torralba and Ambrona                 TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Adventurer (t:scout)                     TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Simple Tools                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Simple Tools-I                                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Protector (t:defense)                  *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Spear Hunter (t:ranged)                *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Open Shelter                          TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -468,7 +468,7 @@ LEGEND
 ├─────────────────────────────────────────────────────────────────────┼───┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┤
 │ 8                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Complex Tools                                                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Complex Tools-I*                                                    │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Primitive Archer                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Causeway                              TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Obsidian                                      │   │  │  │  │  │  │  │  │  │  │  │  │                          
@@ -477,18 +477,18 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Migration                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Migration-I                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Tribe Branch (t:settle)                *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Savage (t:siege)                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Adhesives                                                           │   │  │  │  │  │  │  │  │  │  │  │  │          
+│ Adhesives-I                                                         │   │  │  │  │  │  │  │  │  │  │  │  │          
 │                     b-Waterprrof Hut                        TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Containers                                                          │   │  │  │  │  │  │  │  │  │  │  │  │          
+│ Containers-I                                                        │   │  │  │  │  │  │  │  │  │  │  │  │          
 │                     u-Slinger (t:ranged)                     *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rubble Wall                           TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Water Storage                         TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -496,7 +496,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Family Ties                                                         │   │  │  │  │  │  │  │  │  │  │  │  │         
+│ Family Ties-I                                                       │   │  │  │  │  │  │  │  │  │  │  │  │         
 │                     u-Lookout (t:sentinel)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Patriarch (t:leader)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Chief Upgrade                        ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -512,29 +512,33 @@ LEGEND
 ├─────────────────────────────────────────────────────────────────────┼───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
 │ 9                                                                   │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Hunting             r-Deer                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Hunting                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Deer                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Reindeer                                 TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Hunter (t:special)                     *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Outpost                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hunting Trails                        TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Afontora Gora                   WONDER *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Afontora Gora              WONDER ******-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Fire                u-Shaman                               MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Fire                                                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Shaman                               MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Campfire                  (+1G,H)      M-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Keeper                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Gesher Benot Ya’aqov                 TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Foraging            u-Caveman                              MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Foraging-I                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     u-Caveman                              MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Foraging Site                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hideout                               TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Gathering           r-Banana                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Gathering-I                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     r-Banana                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Berries,                             MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │                         
 │                     b-Midden (+1F)                           M-TOOD │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Storage Pit (+1F)                     TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -544,7 +548,8 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Symbolism           b-Great Rock (+F1)                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Symbolism-I                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Great Rock (+F1)                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Kebara Cave                              TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Cougnac Caves                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Chauvet Caves                            TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -553,7 +558,8 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Social Structure    c-Chieftain's Hut           (+1G,+1P)      TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Social Structure-I?                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Chieftain's Hut           (+1G,+1P)      TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Chief (t:leader)                       *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Sibudu Cave                          TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Nomadic Camp                             TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -579,13 +585,13 @@ LEGEND
 ├─────────────────────────────────────────────────────────────────────┼───┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┤
 │ 10                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Coordinated Hunting                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Coordinated Hunting-I                                               │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Axe Thrower                          MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Meat Rack                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Orienteering                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Orienteering-I                                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Lookout                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hide Rack                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Bear Warrior                         MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -598,20 +604,20 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Cooking:                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Cooking:-I*                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-FirePit (Hearth)                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Neanderthal                          MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Symbolic Communicatn                                                │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Symbolic Communication-I                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Wards                                 TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-                                     ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Gobekli Tepe                         TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Planning                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Planning-I                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Thinker (t:support)                    *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Raider (t:skirmisher)                  *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Luxury Hut                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -630,13 +636,13 @@ LEGEND
 ├─────────────────────────────────────────────────────────────────────┼───┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
 │ 11                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Collaborative Hunting                                               │   │  │  │  │  │  │  │  │  │  │  │  │ 
+│ Collaborative Hunting-I                                             │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-Sentinel (t:sentinel)                  *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Le Mas d'Azil                        TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Expression                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
+│ Expression-I                                                        │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     w-Wonderwerk Cave                          TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Bead Maker                            TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -652,7 +658,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Tool Specialization                                                 │   │  │  │  │  │  │  │  │  │  │  │  │ 
+│ Tool Specialization-I*                                              │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     b-Food Storage (+1F)                   MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     {Must have Hunter or Gatherer unit}             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     n-Raft                                          │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -668,7 +674,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Leadership                                                          │   │  │  │  │  │  │  │  │  │  │  │  │ 
+│ Leadership-IX                                                       │   │  │  │  │  │  │  │  │  │  │  │  │ 
 │                     u-%Galley {Buildable with limits}        *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Palace???                                TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-The Cairn of Barnenez                TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -692,19 +698,19 @@ LEGEND
 │ Idols:                                                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Shrine (+1R), b-#Pyramid                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Ggantija Temples                         TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     w-Grotes du Pape                       TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     w-Grottes du Pape                      TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Newgrange                            TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Painting                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Painting-IX                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Rock Paintings (+1C)                 MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Dyes                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Spotted Horses, Pech Merle           TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Beading                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Beading-I                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Gonnersdorf and Andernach            TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -719,7 +725,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Cooperation                                                         │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Cooperation-I*                                                      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Theopetra Cave                           TODO │   │  │  │  │  │  │  │  │  │  │  │  │                     
 │                     u-Settler                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     u-Warrior, u-%Brute, u-#Jaguar, u-#Maori        │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -793,7 +799,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Numbers                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Numbers-I*                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Spices                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Silk                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -812,7 +818,7 @@ LEGEND
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │                                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│ Mineralogy          r-Gems                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│ Mineralogy-I*       r-Gems                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Marble                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Jewelry                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -1047,9 +1053,27 @@ LEGEND
     
 
 
-    <!-- ERA_PREHISTORIC -->
 
-    <!-- col -->
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                           PREHISTORIC                                  │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+
+
     <Row>
       <ID>0</ID>
       <Type>TECH_EXTINCTION_EVENT</Type>
@@ -1062,13 +1086,25 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>0</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>0</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
 
 
-    <!-- col -->
+    
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_ADAPTIVE_RADIATION</Type>
       <Cost>4</Cost>
@@ -1086,7 +1122,18 @@ LEGEND
 
 
 
-    <!-- col -->
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+    
     <Row>
       <Type>TECH_PRIMATE_COGNITION</Type>
       <Cost>4</Cost>
@@ -1098,13 +1145,26 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>2</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>2</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
 
 
-    <!-- col -->
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+    
     <Row>
       <Type>TECH_GREAT_DIVERGENCE</Type>
       <Cost>4</Cost>
@@ -1116,13 +1176,26 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>3</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>3</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
 
 
-    <!-- col -->
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+    
     <Row>
       <Type>TECH_BIPEDAL_ADAPTION</Type>
       <Cost>4</Cost>
@@ -1134,7 +1207,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>4</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>4</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
@@ -1142,10 +1215,24 @@ LEGEND
 
 
 
-    <!-- ERA_LOWER_PALEOLITHIC -->
 
 
-    <!-- col -->
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                        LOWER PALEOLITHIC                               │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_BIPEDALISM</Type>
       <Cost>4</Cost>
@@ -1157,14 +1244,23 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>5</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>5</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>    
 
 
 
 
-    <!-- col -->
+    
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_ADVANCED_PERCEPTION</Type>
       <Cost>4</Cost>
@@ -1176,7 +1272,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>6</GridX>
       <GridY>1</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>6</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row> 
     <Row>
@@ -1190,7 +1286,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>6</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>7</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
     <Row>
@@ -1204,7 +1300,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>6</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>8</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
     <Row>
@@ -1218,7 +1314,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>6</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>9</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
@@ -1238,7 +1334,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>7</GridX>
       <GridY>0</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>10</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
     <Row>
@@ -1252,7 +1348,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>7</GridX>
       <GridY>1</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>11</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>        
     <Row>
@@ -1266,16 +1362,34 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>7</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>12</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
 
 
 
-    <!-- ERA_PALEOLITHIC -->
 
-    <!-- col -->
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             PALEOLITHIC                                │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_COMPLEX_TOOLS</Type>
       <Cost>7</Cost>
@@ -1288,7 +1402,7 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>8</GridX>
       <GridY>0</GridY>
-      <PortraitIndex>12</PortraitIndex>
+      <PortraitIndex>13</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>  
     <Row>
@@ -1302,7 +1416,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>8</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>14</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
     <Row>
@@ -1316,7 +1430,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>8</GridX>
       <GridY>5</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>15</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
     <Row>
@@ -1330,7 +1444,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>8</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>16</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row> 
     <Row>
@@ -1344,7 +1458,7 @@ LEGEND
       <Trade>true</Trade>      
       <GridX>8</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>1</PortraitIndex>
+      <PortraitIndex>17</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>            
 
@@ -1353,7 +1467,13 @@ LEGEND
 
 
 
-    <!-- col -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
     <Row>
       <Type>TECH_HUNTING_GATHERING</Type>
       <Cost>12</Cost>
@@ -1366,9 +1486,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>9</GridX>
       <GridY>0</GridY>
-      <PortraitIndex>6</PortraitIndex>
+      <PortraitIndex>18</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_FIRE</Type>
       <Cost>11</Cost>
@@ -1381,9 +1502,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>9</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>5</PortraitIndex>
+      <PortraitIndex>19</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_FORAGING</Type>
       <Cost>11</Cost>
@@ -1396,9 +1518,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>9</GridX>
       <GridY>5</GridY>
-      <PortraitIndex>5</PortraitIndex>
+      <PortraitIndex>20</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>    
+    </Row>   
+
     <Row>
       <Type>TECH_GATHERING</Type>
       <Cost>8</Cost>
@@ -1408,12 +1531,13 @@ LEGEND
       <Quote>TXT_KEY_TECH_GATHERING_QUOTE</Quote>
       <Era>ERA_PALEOLITHIC</Era>
       <Trade>true</Trade>
-      <GoodyTech>1</GoodyTech>
+      <GoodyTech>21</GoodyTech>
       <GridX>9</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>13</PortraitIndex>
+      <PortraitIndex>21</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_SYMBOLISM</Type>
       <Cost>12</Cost>
@@ -1426,9 +1550,10 @@ LEGEND
       <GoodyTech>true</GoodyTech>
       <GridX>9</GridX>
       <GridY>7</GridY>
-      <PortraitIndex>3</PortraitIndex>
+      <PortraitIndex>22</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>    
+    </Row>   
+
     <Row>
       <Type>TECH_SOCIAL_STRUCTURE</Type>
       <Cost>12</Cost>
@@ -1441,7 +1566,7 @@ LEGEND
       <GoodyTech>true</GoodyTech>
       <GridX>9</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>3</PortraitIndex>
+      <PortraitIndex>23</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
@@ -1449,9 +1574,31 @@ LEGEND
 
 
 
-    <!-- ERA_NEOLITHIC -->
 
-    <!-- col -->
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                           NEOLITHIC                                    │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_COORDINATED_HUNTING</Type>
       <Cost>12</Cost>
@@ -1464,9 +1611,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>0</GridY>
-      <PortraitIndex>6</PortraitIndex>
+      <PortraitIndex>24</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>      
+    </Row>  
+
     <Row>
       <Type>TECH_ORIENTEERING</Type>
       <Cost>6</Cost>
@@ -1479,9 +1627,11 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>1</GridY>
-      <PortraitIndex>14</PortraitIndex>
+      <PortraitIndex>25</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
+    <!-- * -->
     <Row>
       <Type>TECH_SCOUTING</Type>
       <Cost>16</Cost>
@@ -1494,9 +1644,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>2</GridY>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>26</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>    
+    </Row>   
+
     <Row>
       <Type>TECH_COOKING</Type>
       <Cost>6</Cost>
@@ -1509,9 +1660,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>14</PortraitIndex>
+      <PortraitIndex>27</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_SYMBOLIC_COMMUNICATION</Type>
       <Cost>6</Cost>
@@ -1524,9 +1676,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>7</GridY>
-      <PortraitIndex>14</PortraitIndex>
+      <PortraitIndex>28</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_PLANNING</Type>
       <Cost>6</Cost>
@@ -1539,14 +1692,25 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>10</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>14</PortraitIndex>
+      <PortraitIndex>29</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>    
 
 
 
 
-    <!-- col -->
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_COLLABORATIVE_HUNTING</Type>
       <Cost>12</Cost>
@@ -1559,9 +1723,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>0</GridY>
-      <PortraitIndex>6</PortraitIndex>
+      <PortraitIndex>30</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_EXPRESSION</Type>
       <Cost>15</Cost>
@@ -1574,9 +1739,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>15</PortraitIndex>
+      <PortraitIndex>31</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_HARPOONING</Type>
       <Cost>15</Cost>
@@ -1589,9 +1755,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>5</GridY>
-      <PortraitIndex>15</PortraitIndex>
+      <PortraitIndex>32</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>        
+    </Row>   
+
     <Row>
       <Type>TECH_TOOL_SPECIALIZATION</Type>
       <Cost>16</Cost>
@@ -1604,9 +1771,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>20</PortraitIndex>
+      <PortraitIndex>33</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_LANGUAGE</Type>
       <Cost>20</Cost>
@@ -1620,9 +1788,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>7</GridY>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>34</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_LEADERSHIP</Type>
       <Cost>18</Cost>
@@ -1635,7 +1804,7 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>10</PortraitIndex>
+      <PortraitIndex>35</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
@@ -1643,7 +1812,18 @@ LEGEND
 
 
 
-    <!-- col -->
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
+    <!-- * -->
     <Row>
       <Type>TECH_ARCHERY</Type>
       <Cost>28</Cost>
@@ -1661,6 +1841,7 @@ LEGEND
       <AudioIntro>AS2D_TECH_ARCHERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_ARCHERY</AudioIntroHeader>
     </Row>
+
     <Row>
       <Type>TECH_IDOLS</Type>
       <Cost>22</Cost>
@@ -1673,11 +1854,12 @@ LEGEND
       <GoodyTech>false</GoodyTech>
       <GridX>12</GridX>
       <GridY>3</GridY>
-      <PortraitIndex>9</PortraitIndex>
+      <PortraitIndex>36</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
-      <Type>TECH_ART</Type>
+      <Type>TECH_PAINTING</Type>
       <Cost>24</Cost>
       <Description>Art</Description>
       <Civilopedia></Civilopedia>
@@ -1688,9 +1870,10 @@ LEGEND
       <GoodyTech>false</GoodyTech>
       <GridX>12</GridX>
       <GridY>4</GridY>      
-      <PortraitIndex>4</PortraitIndex>
+      <PortraitIndex>37</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
     <Row>
       <Type>TECH_WARFARE</Type>
       <Cost>16</Cost>
@@ -1703,9 +1886,10 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>12</GridX>
       <GridY>5</GridY>
-      <PortraitIndex>8</PortraitIndex>
+      <PortraitIndex>38</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
-    </Row>    
+    </Row>  
+
     <Row>
       <Type>TECH_COOPERATION</Type>
       <Cost>26</Cost>
@@ -1717,7 +1901,7 @@ LEGEND
       <GoodyTech>false</GoodyTech>
       <GridX>12</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>9</PortraitIndex>
+      <PortraitIndex>39</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
 
@@ -1726,9 +1910,25 @@ LEGEND
 
 
     
-    <!-- ANCIENT ERA -->
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                            ANCIENT                                     │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+
+
     
-    <!-- col -->
+
+    
+    <!-- * -->
     <Row>
       <Type>TECH_AGRICULTURE</Type>
       <Cost>30</Cost>
@@ -1751,7 +1951,16 @@ LEGEND
 
 
 
-    <!-- col -->
+    
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+    <!-- * -->
     <Row>
       <Type>TECH_POTTERY</Type>
       <Cost>36</Cost>
@@ -1769,6 +1978,8 @@ LEGEND
       <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
     </Row>
+
+    <!-- * -->
     <Row>
       <Type>TECH_TRAPPING</Type>
       <Cost>33</Cost>
@@ -1786,6 +1997,7 @@ LEGEND
       <AudioIntro>AS2D_TECH_TRAPPING</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_TRAPPING</AudioIntroHeader>
     </Row>
+
     <Row>
       <Type>TECH_TRADING</Type>
       <Cost>38</Cost>
@@ -1797,9 +2009,11 @@ LEGEND
       <GoodyTech>1</GoodyTech>
       <GridX>14</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>7</PortraitIndex>
+      <PortraitIndex>40</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
+
+    <!-- * -->
     <Row>
       <Type>TECH_MINING</Type>
       <Cost>40</Cost>
@@ -1822,7 +2036,17 @@ LEGEND
 
 
 
-    <!-- col -->
+    
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
     <Row>
       <Type>TECH_NUMBERS</Type>
       <Cost>35</Cost>
@@ -1835,11 +2059,12 @@ LEGEND
       <GoodyTech>0</GoodyTech>
       <GridX>15</GridX>
       <GridY>1</GridY>
-      <PortraitIndex>19</PortraitIndex>
+      <PortraitIndex>41</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
       <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
     </Row>
+
     <Row>
       <Type>TECH_ANIMAL_DOMESTICATION</Type>
       <Cost>35</Cost>
@@ -1852,11 +2077,12 @@ LEGEND
       <GoodyTech>0</GoodyTech>
       <GridX>15</GridX>
       <GridY>4</GridY>
-      <PortraitIndex>16</PortraitIndex>
+      <PortraitIndex>43</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
       <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
     </Row>
+
     <!-- Wheel: +Reveal Cotton -->
     <Row>
       <Type>TECH_THE_WHEEL</Type>
@@ -1875,6 +2101,7 @@ LEGEND
       <AudioIntro>AS2D_TECH_THE_WHEEL</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_THE_WHEEL</AudioIntroHeader>
     </Row>
+
     <Row>
       <Type>TECH_MINERALOGY</Type>
       <Cost>35</Cost>
@@ -1887,7 +2114,7 @@ LEGEND
       <GoodyTech>0</GoodyTech>
       <GridX>15</GridX>
       <GridY>8</GridY>
-      <PortraitIndex>17</PortraitIndex>
+      <PortraitIndex>44</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
       <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
@@ -1897,29 +2124,42 @@ LEGEND
 
 
 
-    <!-- col -->
+    
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
 
     <Update>
       <Where Type="TECH_SAILING"/>
       <Set GoodyTech="0"/>
     </Update>
+
     <Update>
       <Where Type="TECH_SAILING"/>
       <Set Help="Allows you to build the [COLOR_POSITIVE_TEXT]Cargo Ship[ENDCOLOR], used to establish lucrative sea-based [COLOR_POSITIVE_TEXT]Trade Routes[ENDCOLOR]. Also allows you to build military and economic ships, useful for exploration and harvesting resources in the water like [ICON_FISH] [COLOR_POSITIVE_TEXT]Fish[ENDCOLOR] and [ICON_PEARLS] [COLOR_POSITIVE_TEXT]Pearl[ENDCOLOR]. Also reveals [ICON_WHALE] [COLOR_YELLOW]Whales[ENDCOLOR] on the map." />
-    </Update>    
+    </Update> 
+
     <Update>
       <Where Type="TECH_CALENDAR"/>
       <Set GoodyTech="0"/>
     </Update>
-    <Update>
 
+    <Update>
     <Where Type="TECH_WRITING"/>
       <Set GoodyTech="0"/>
     </Update>
+
     <Update>
       <Where Type="TECH_WRITING"/>
       <Set AllowEmbassyTradingAllowed="0"/>
     </Update>
+
     <Update>
       <Where Type="TECH_WRITING"/>
       <Set InternationalTradeRoutesChange="0"/>
@@ -1927,8 +2167,14 @@ LEGEND
 
 
     <!-- Sailing -->
+
+
     <!-- Calendar -->
+
+
     <!-- Writing -->
+
+
     <Row>
       <Type>TECH_ANIMAL_HUSBANDRY</Type>
       <Cost>35</Cost>
@@ -1946,6 +2192,7 @@ LEGEND
       <AudioIntro>AS2D_TECH_ANIMAL_HUSBANDRY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_ANIMAL_HUSBANDRY</AudioIntroHeader>
     </Row>
+
     <Row>
       <Type>TECH_CARAVANING</Type>
       <Cost>35</Cost>
@@ -1959,15 +2206,22 @@ LEGEND
       <GoodyTech>0</GoodyTech>
       <GridX>16</GridX>
       <GridY>6</GridY>
-      <PortraitIndex>18</PortraitIndex>
+      <PortraitIndex>45</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
       <AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
     </Row>
+
+
+
+
+
     <Update>
       <Where Type="TECH_MASONRY"/>
       <Set GoodyTech="0"/>
     </Update>
+
+
     <!-- Bronze Working: +Reveal Copper -->
     <Update>
       <Where Type="TECH_BRONZE_WORKING"/>
@@ -2901,12 +3155,12 @@ LEGEND
     </Row>
 
     <Row>
-      <TechType>TECH_ART</TechType>
+      <TechType>TECH_PAINTING</TechType>
       <FlavorType>FLAVOR_CULTURE</FlavorType>
       <Flavor>15</Flavor>
     </Row>
     <Row>
-      <TechType>TECH_ART</TechType>
+      <TechType>TECH_PAINTING</TechType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
       <Flavor>5</Flavor>
     </Row>

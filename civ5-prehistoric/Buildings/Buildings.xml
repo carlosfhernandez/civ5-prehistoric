@@ -1165,7 +1165,6 @@
       <Help>TXT_KEY_BUILDING_BONE_PILE_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_BONE_PILE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_BONE_PILE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_BONE_PILE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
@@ -1173,13 +1172,13 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>29</PortraitIndex>
+      <PortraitIndex>15</PortraitIndex>
     </Row>
 
 
 
 
-<![CDATA[
+
 
     <!-- 
           ◄█▓▒░ ● SIMPLE_TOOLS ● ░▒▓█► 
@@ -1197,7 +1196,6 @@
       <Description>TXT_KEY_BUILDING_CHIEF_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_CHIEF_SHELTER_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_CHIEF_SHELTER_STATEGY</Strategy>
-      <Quote>TXT_KEY_BUILDING_CHIEF_SHELTER_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_CHIEF_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -1217,7 +1215,6 @@
       <Description>TXT_KEY_BUILDING_OPEN_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_OPEN_SHELTER_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_OPEN_SHELTER_STATEGY</Strategy>
-      <Quote>TXT_KEY_BUILDING_OPEN_SHELTER_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_OPEN_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -1238,7 +1235,6 @@
       <Description>TXT_KEY_BUILDING_ADVANCED_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_ADVANCED_SHELTER_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_ADVANCED_SHELTER_STATEGY</Strategy>
-      <Quote>TXT_KEY_BUILDING_ADVANCED_SHELTER_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_ADVANCED_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -1259,7 +1255,6 @@
       <Help>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -1268,7 +1263,6 @@
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>18</PortraitIndex>
     </Row>
-
 
 
 
@@ -1315,6 +1309,7 @@
 
 
 
+<![CDATA[
 
 
 
@@ -3006,6 +3001,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     <!-- Buildings -->
 
 
@@ -3079,6 +3084,14 @@
     <Row Tag="TXT_KEY_BUILDING_SHELTER_DESC">
       <Text>Shelter</Text>
     </Row>       
+
+
+    <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_TITLE">
+      <Text>Open Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_DESC">
+      <Text>Open Shelter</Text>
+    </Row> 
 
 
     <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_TITLE">
