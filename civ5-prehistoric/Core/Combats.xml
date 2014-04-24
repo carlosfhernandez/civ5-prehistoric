@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+  <!--
+  ╔═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║ UNIT COMBAT CLASS (UnitCombatInfos)
+  ║
+  ║
+  ║ TODO: Right now, new unit combat classes will be simply simulated by 
+  ║       applying a BASE promotion per type.
+  ║ 
+  ║ Example: Any skirmish unit will start with, as an example, the FREE
+  ║          promotion, PROMOTION_CC_SKIRMISH.
+  ║
+  ║
+  ║ By using the Combat Class system we will be able to have unique 
+  ║ advancement trees for each combat class. The drawback is that the existing
+  ║ system will need to be overhauled and all reference tables will need to 
+  ║ be modified as well. Furthermore, new unit additions could break the 
+  ║ system unless they adhere to this new COMBAT CLASS system.
+  ║
+  ║
+  ║
+  ║
+  ║ References:
+  ║
+  ║ - Building_UnitCombatFreeExperiences
+  ║   - Building provides XP for a certain UCC
+  ║   - e.g. Ducal Stable +15 xp for UNITCOMBAT_MOUNTED
+  ║   
+  ║ - BUilding_UnitCombatProductionModifiers
+  ║   - Building provides accelerated production for certain UCC
+  ║   
+  ║ - Policy_UnitCombatFreeExperiences
+  ║ - Policy_UnitCombatProductionModifiers
+  ║   
+  ║ - Trait_FreePromotionUnitCombats
+  ║   - TRAIT + UCC provides certain PROMOTION
+  ║ 
+  ║ - Trait_MaintenanceModifierUnitCombats
+  ║   - Trait increases or decreases maintenance on certain UCC
+  ║ 
+  ║ - Trait_MovesChangeUnitCombats
+  ║   - Trait changes Moves(?) based on UCC
+  ║   - e.g. TRAIT_TERROR UNITCOMBAT_MOUNTED = MovesChange:1
+  ║   
+  ║ - UnitPromotions_UnitCombats
+  ║   - All promotions associated with a Unit's UCC
+  ║   
+  ║ - UnitPromotions_UnitCombatMods
+  ║   - Modifier associated with Promotion and UCC -- a pomotion could have 
+  ║     different bonuses depending on UCC
+  ║
+  ║ - Units
+  ║   - e.g. <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+  ║
+  ║
+  ║
+  ║
+  ╚═════════════════════════════════════════════════════════════════════════════
+  -->   
+  <UnitCombatInfos>
+    
+    <Row>
+      <Type>UNITCOMBAT_HEAVY_FOOT</Type>
+      <Description>TXT_KEY_UNITCOMBAT_HEAVY_FOOT</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_LIGHT_FOOT</Type>
+      <Description>TXT_KEY_UNITCOMBAT_LIGHT_FOOT</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_DISTANCE_FOOT</Type>
+      <Description>TXT_KEY_UNITCOMBAT_DISTANCE_FOOT</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_DEFENSIVE_FOOT</Type>
+      <Description>TXT_KEY_UNITCOMBAT_DEFENSIVE_FOOT</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_SENTINEL</Type>
+      <Description>TXT_KEY_UNITCOMBAT_SENTINEL</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_SKIRMISH</Type>
+      <Description>TXT_KEY_UNITCOMBAT_SKIRMISH</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_VANGUARD</Type>
+      <Description>TXT_KEY_UNITCOMBAT_VANGUARD</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_RANGED</Type>
+      <Description>TXT_KEY_UNITCOMBAT_RANGED</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_SUPPORT</Type>
+      <Description>TXT_KEY_UNITCOMBAT_SUPPORT</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_STEALTH</Type>
+      <Description>TXT_KEY_UNITCOMBAT_STEALTH</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_CARRIAGE</Type>
+      <Description>TXT_KEY_UNITCOMBAT_CARRIAGE</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_COMPANIONED</Type>
+      <Description>TXT_KEY_UNITCOMBAT_COMPANIONED</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_ROYAL</Type>
+      <Description>TXT_KEY_UNITCOMBAT_ROYAL</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_SPECIAL</Type>
+      <Description>TXT_KEY_UNITCOMBAT_SPECIAL</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_MILITIA</Type>
+      <Description>TXT_KEY_UNITCOMBAT_MILITIA</Description>
+    </Row>
+    <Row>
+      <Type>UNITCOMBAT_CRIMINAL</Type>
+      <Description>TXT_KEY_UNITCOMBAT_CRIMINAL</Description>
+    </Row>
+
+  </UnitCombatInfos>
+
+
+  <Language_en_US>
+
+    <Row Tag="TXT_KEY_UNITCOMBAT_HEAVY_FOOT">
+      <Text>Heavy Foot</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_Light_FOOT">
+      <Text>Light Foot</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_DISTANCE_FOOT">
+      <Text>Distance Foot</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_DEFENSIVE_FOOT">
+      <Text>Defensive Foot</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_SKIRMISH">
+      <Text>Skirmish</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_VANGUARD">
+      <Text>Vanguard</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_RANGED">
+      <Text>Ranged</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNITCOMBAT_SUPPORT">
+      <Text>Support</Text>
+    </Row>
+    
+  </Language_en_US>
+  
+  
+  
+</GameData>

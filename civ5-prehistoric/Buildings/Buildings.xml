@@ -549,6 +549,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
@@ -575,7 +596,11 @@
   │
   │
   │   Capitol Enhancements:
-  │   - 
+  │   - BUILDING_TREE_LIFE
+  │     - BRANCH_OF_MANA
+  │     - TOUMAIS_CANOPY
+  │
+  │
   │
   │
   │
@@ -3059,6 +3084,14 @@
     </Row>
     <Row Tag="TXT_KEY_BUILDING_OVERLOOK_DESC">
       <Text>Overlook</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_TITLE">
+      <Text>Chert Deposit</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_DESC">
+      <Text>Chert Deposit</Text>
     </Row>
 
 

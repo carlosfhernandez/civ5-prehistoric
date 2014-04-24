@@ -11,8 +11,84 @@
   ║ UNIT PROMOTIONS
   ║
   ║
+  ║ CannotBeChosen                          SameTileHealChange                    
+  ║ LostWithUpgrade                         AdjacentTileHealChange                
+  ║ NotWithUpgrade                          EnemyDamageChance                     
+  ║ InstaHeal                               NeutralDamageChance                   
+  ║ Leader                                  EnemyDamage                           
+  ║ Blitz                                   NeutralDamage                         
+  ║ Amphib                                  CombatPercent                         
+  ║ River                                   CityAttack                            
+  ║ EnemyRoute                              CityDefense                           
+  ║ RivalTerritory                          RangedDefenseMod                      
+  ║ MustSetUpToRangedAttack                 HillsAttack                           
+  ║ RangedSupportFire                       HillsDefense                          
+  ║ CanMoveAfterAttacking                   OpenAttack                            
+  ║ AlwaysHeal                              OpenRangedAttackMod                   
+  ║ HealOutsideFriendly                     OpenDefense                           
+  ║ HillsDoubleMove                         RoughAttack                           
+  ║ RoughTerrainEndsTurn                    RoughRangedAttackMod                  
+  ║ IgnoreTerrainCost                       RoughDefense                          
+  ║ HoveringUnit                            AttackFortifiedMod                    
+  ║ FlatMovementCost                        AttackWoundedMod                      
+  ║ CanMoveImpassable                       FlankAttackModifier                   
+  ║ NoCapture                               NearbyEnemyCombatMod                  
+  ║ OnlyDefensive                           NearbyEnemyCombatRange                
+  ║ NoDefensiveBonus                        UpgradeDiscount                       
+  ║ NukeImmune                              ExperiencePercent                     
+  ║ HiddenNationality                       AdjacentMod                           
+  ║ AlwaysHostile                           AttackMod                             
+  ║ NoRevealMap                             DefenseMod                            
+  ║ Recon                                   DropRange                             
+  ║ CanMoveAllTerrain                       GreatGeneral                          
+  ║ FreePillageMoves                        GreatAdmiral                          
+  ║ AirSweepCapable                         GreatGeneralModifier                  
+  ║ AllowsEmbarkation                       GreatGeneralReceivesMovement          
+  ║ EmbarkedAllWater                        GreatGeneralCombatModifier            
+  ║ HealIfDestroyExcludesBarbarians         FriendlyLandsModifier                 
+  ║ RangeAttackIgnoreLOS                    FriendlyLandsAttackModifier           
+  ║ CityAttackOnly                          OutsideFriendlyLandsModifier          
+  ║ CaptureDefeatedEnemy                    HPHealedIfDestroyEnemy                
+  ║ HealOnPillage                           ExtraWithdrawal                       
+  ║ IgnoreGreatGeneralBenefit               EmbarkExtraVisibility                 
+  ║ IgnoreZOC                               EmbarkDefenseModifier                 
+  ║ HasPostCombatPromotions                 CapitalDefenseModifier                
+  ║ PostCombatPromotionsExclusive           CapitalDefenseFalloff                 
+  ║ RangedAttackModifier                    CityAttackPlunderModifier             
+  ║ InterceptionCombatModifier              ReligiousStrengthLossRivalTerritory   
+  ║ InterceptionDefenseDamageModifier       TradeMissionInfluenceModifier         
+  ║ AirSweepCombatModifier                  TradeMissionGoldModifier              
+  ║ ExtraAttacks                            GoldenAgeValueFromKills               
+  ║ ExtraNavalMovement                      Sapper                                
+  ║ VisibilityChange                        HeavyCharge                           
+  ║ MovesChange                             LayerAnimationPath                    
+  ║ MoveDiscountChange                      TechPrereq                            
+  ║ RangeChange                             Invisible                             
+  ║ InterceptChanceChange                   SeeInvisible                          
+  ║ NumInterceptionChange                   PromotionPrereq                       
+  ║ EvasionChange                           PromotionPrereqOr1                    
+  ║ CargoChange                                                                   
+  ║ EnemyHealChange                                                               
+  ║ NeutralHealChange                                                             
+  ║ FriendlyHealChange                                                            
   ║
   ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║ PEDIA TYPES:
+  ║ - PEDIA_SHARED  
+  ║ - PEDIA_MELEE
+  ║ - PEDIA_RANGED
+  ║ - PEDIA_HEAL
+  ║ - PEDIA_SCOUTING
+  ║ - PEDIA_NAVAL
+  ║ - PEDIA_AIR
+  ║ - PEDIA_ATTRIBUTES
+  ║
+  ║ - PEDIA_COMBAT_CLASS
   ║
   ║
   ║
@@ -54,10 +130,279 @@
       <PediaEntry>+2 HP healed per turn outside of friendly territory.</PediaEntry>
     </Row>
 
+    <Row>
+      <Type>PROMOTION_WONDERWERK</Type>
+      <Description>Wonderwerk Cave</Description>
+      <Help>+1 [ICON_MOVES] Movement.</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <CannotBeChosen>true</CannotBeChosen>
+      <MovesChange>1</MovesChange>
+      <PortraitIndex>33</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>+1 [ICON_MOVES] Movement.</PediaEntry>
+    </Row>
 
 
 
 
+
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+    │ 
+    │ Base Combat Classes:
+    │
+    │ Each unit belongs to a combat class and receivse a base combat class 
+    │ promotion. Most promotions will provide a bonus with a very small 
+    │ number providing none. Nonetheless, we still classify them with a
+    │ promotion, classifying them in the process. 
+    │
+    │ PROMOTION_CC = Promotion Combat Class
+    │ 
+    │ Combat Class "CC" promotions will go under PEDIA_COMBAT_CLASS PediaType.
+    │
+    │
+    │ NOT TO BE CONFUSED WITH UNITCOMBATTYPE!
+    │
+    │
+    │
+    │
+    │
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+    <Row>
+      <Type>PROMOTION_CC_GENERIC</Type>
+      <Description>TXT_KEY_PROMOTION_CC_GENERIC_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_GENERIC_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_GENERIC_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_FOOT</Type>
+      <Description>TXT_KEY_PROMOTION_CC_FOOT_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_FOOT_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_FOOT_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_OFFENSE</Type>
+      <Description>TXT_KEY_PROMOTION_CC_OFFENSE_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_OFFENSE_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_OFFENSE_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_DEFENSE</Type>
+      <Description>TXT_KEY_PROMOTION_CC_DEFENSE_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_DEFENSE_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_DEFENSE_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>    
+
+    <Row>
+      <Type>PROMOTION_CC_MELEE_DISTANCE</Type>
+      <Description>TXT_KEY_PROMOTION_CC_MELEE_DISTANCE_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_MELEE_DISTANCE_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_MELEE_DISTANCE_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row> 
+
+    <Row>
+      <Type>PROMOTION_CC_LIGHT</Type>
+      <Description>TXT_KEY_PROMOTION_CC_LIGHT_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_FOOT_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_FOOT_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_HEAVY</Type>
+      <Description>TXT_KEY_PROMOTION_CC_HEAVY_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_HEAVY_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_HEAVY_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_SENTINEL</Type>
+      <Description>TXT_KEY_PROMOTION_CC_SENTINEL_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_SENTINEL_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_SENTINEL_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+           
+    <Row>
+      <Type>PROMOTION_CC_SKIRMISH</Type>
+      <Description>TXT_KEY_PROMOTION_CC_SKIRMISH_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_SKIRMISH_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_SKIRMISH_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_VANGUARD</Type>
+      <Description>TXT_KEY_PROMOTION_CC_VANGUARD_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_VANGUARD_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_VANGUARD_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_SIEGE</Type>
+      <Description>TXT_KEY_PROMOTION_CC_SIEGE_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_SIEGE_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_SIEGE_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_SUPPORT</Type>
+      <Description>TXT_KEY_PROMOTION_CC_SUPPORT_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_SUPPORT_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_SUPPORT_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_MOUNTED</Type>
+      <Description>TXT_KEY_PROMOTION_CC_MOUNTED_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_MOUNTED_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_MOUNTED_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_CARRIAGE</Type>
+      <Description>TXT_KEY_PROMOTION_CC_CARRIAGE_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_CARRIAGE_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_CARRIAGE_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_COMPANIONED</Type>
+      <Description>TXT_KEY_PROMOTION_CC_COMPANIONED_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_COMPANIONED_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_COMPANIONED_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_STEALTH</Type>
+      <Description>TXT_KEY_PROMOTION_CC_STEALTH_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_STEALTH_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_STEALTH_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_CC_MILITIA</Type>
+      <Description>TXT_KEY_PROMOTION_CC_MILITIA_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_MILITIA_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_MILITIA_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row>    
+
+    <Row>
+      <Type>PROMOTION_CC_ROYAL</Type>
+      <Description>TXT_KEY_PROMOTION_CC_ROYAL_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_ROYAL_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_ROYAL_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row> 
+
+    <Row>
+      <Type>PROMOTION_CC_SPECIAL</Type>
+      <Description>TXT_KEY_PROMOTION_CC_SPECIAL_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_CC_SPECIAL_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_CC_SPECIAL_PEDIA</PediaEntry>
+      <PediaType>PEDIA_COMBAT_CLASS</PediaType>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <OrderPriority>1</OrderPriority>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+    </Row> 
 
 
 
@@ -128,27 +473,153 @@
 
 
 
-    <Row>
-      <Type>PROMOTION_WONDERWERK</Type>
-      <Description>Wonderwerk Cave</Description>
-      <Help>+1 [ICON_MOVES] Movement.</Help>
-      <Sound>AS2D_IF_LEVELUP</Sound>
-      <CannotBeChosen>true</CannotBeChosen>
-      <MovesChange>1</MovesChange>
-      <PortraitIndex>33</PortraitIndex>
-      <IconAtlas>ABILITY_ATLAS</IconAtlas>
-      <PediaType>PEDIA_ATTRIBUTES</PediaType>
-      <PediaEntry>+1 [ICON_MOVES] Movement.</PediaEntry>
-    </Row>
-
-
-
   </UnitPromotions>
 
   
   
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <UnitPromotions_CivilianUnitType>
+    <Row>
+      <PromotionType>PROMOTION_WONDERWERK</PromotionType>
+      <UnitType>UNIT_WORKER</UnitType>
+    </Row>
+  </UnitPromotions_CivilianUnitType>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <UnitPromotions_Domains>
+    
+
+
+  </UnitPromotions_Domains>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <UnitPromotions_Features>
+    <Row>
+      <PromotionType>PROMOTION_AUTOCHTHON</PromotionType>
+      <FeatureType>FEATURE_FOREST</FeatureType>
+      <Defense>50</Defense>
+      <Attack>25</Attack>
+    </Row>
+    <Row>
+      <PromotionType>PROMOTION_CAUSEWAY</PromotionType>
+      <FeatureType>FEATURE_MARSH</FeatureType>
+      <DoubleMove>1</DoubleMove>
+    </Row>
+  </UnitPromotions_Features>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  <UnitPromotions_Terrains>
+    <Row>
+   
+    </Row>
+  </UnitPromotions_Terrains>
+  --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <UnitPromotions_UnitClasses>
+    
+
+
+  </UnitPromotions_UnitClasses>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <UnitPromotions_UnitCombats>
     <Row>
@@ -191,12 +662,44 @@
 
 
 
-  <UnitPromotions_CivilianUnitType>
-    <Row>
-      <PromotionType>PROMOTION_WONDERWERK</PromotionType>
-      <UnitType>UNIT_WORKER</UnitType>
-    </Row>
-  </UnitPromotions_CivilianUnitType>
+
+
+
+
+
+
+
+  <UnitPromotions_UnitCombatsMods>
+
+
+
+  </UnitPromotions_UnitCombatsMods>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,27 +714,7 @@
 
 
   
-  <UnitPromotions_Features>
-    <Row>
-      <PromotionType>PROMOTION_AUTOCHTHON</PromotionType>
-      <FeatureType>FEATURE_FOREST</FeatureType>
-      <Defense>50</Defense>
-      <Attack>25</Attack>
-    </Row>
-    <Row>
-      <PromotionType>PROMOTION_CAUSEWAY</PromotionType>
-      <FeatureType>FEATURE_MARSH</FeatureType>
-      <DoubleMove>1</DoubleMove>
-    </Row>
-  </UnitPromotions_Features>
-
-<!--
-  <UnitPromotions_Terrains>
-    <Row>
-   
-    </Row>
-  </UnitPromotions_Terrains>
--->  
+ 
   
   
 </GameData>
