@@ -249,9 +249,9 @@
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
-      <Type>BUILDINGCLASS_GROTTE_DU_PAPE</Type>
-      <DefaultBuilding>BUILDING_GROTTE_DU_PAPE</DefaultBuilding>
-      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE_TITLE</Description>
+      <Type>BUILDINGCLASS_GROTTES_DU_PAPE</Type>
+      <DefaultBuilding>BUILDING_GROTTES_DU_PAPE</DefaultBuilding>
+      <Description>TXT_KEY_WONDER_GROTTES_DU_PAPE_TITLE</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
     <Row>
@@ -1182,7 +1182,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
       <Help>TXT_KEY_WONDER_CARNAC_STONES_HELP</Help>
-      <Description>TXT_KEY_WONDER_CARNAC_STONES</Description>
+      <Description>TXT_KEY_WONDER_CARNAC_STONES_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_CARNAC_STONES_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_CARNAC_STONES_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1211,7 +1211,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_LANGUAGE</PrereqTech>
       <Help>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_HELP</Help>
-      <Description>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN</Description>
+      <Description>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_UNFINISHED_OBELISK_ASWAN_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -1312,14 +1312,14 @@
 
     <!-- The Grotes du Pape -->
     <Row>
-      <Type>BUILDING_GROTTE_DU_PAPE</Type>
-      <BuildingClass>BUILDINGCLASS_GROTTE_DU_PAPE</BuildingClass>
+      <Type>BUILDING_GROTTES_DU_PAPE</Type>
+      <BuildingClass>BUILDINGCLASS_GROTTES_DU_PAPE</BuildingClass>
       <Cost>72</Cost>
       <PrereqTech>TECH_IDOLS</PrereqTech>
-      <Help>TXT_KEY_WONDER_GROTTE_DU_PAPE_HELP</Help>
-      <Description>TXT_KEY_WONDER_GROTTE_DU_PAPE_DESC</Description>
-      <Civilopedia>TXT_KEY_WONDER_GROTTE_DU_PAPE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_WONDER_GROTTE_DU_PAPE_QUOTE</Quote>
+      <Help>TXT_KEY_WONDER_GROTTES_DU_PAPE_HELP</Help>
+      <Description>TXT_KEY_WONDER_GROTTES_DU_PAPE_DESC</Description>
+      <Civilopedia>TXT_KEY_WONDER_GROTTES_DU_PAPE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_WONDER_GROTTES_DU_PAPE_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
@@ -1432,7 +1432,7 @@
       <Cost>72</Cost>
       <PrereqTech>TECH_WARFARE</PrereqTech>
       <Help>TXT_KEY_WONDER_UGARIT_HELP</Help>
-      <Description>TXT_KEY_WONDER_UGARIT</Description>
+      <Description>TXT_KEY_WONDER_UGARIT_DESC</Description>
       <Civilopedia>TXT_KEY_WONDER_UGARIT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_UGARIT_QUOTE</Quote>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
@@ -2246,6 +2246,22 @@
     </Row>
     <Row Tag="TXT_KEY_WONDER_COLIBOAIA_CAVE_DESC">
       <Text>Coliboaia Cave</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_WONDER_SIBUDU_CAVE_TITLE">
+      <Text>Sibudu Cave</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_SIBUDU_CAVE_DESC">
+      <Text>Sibudu Cave</Text>
+    </Row>    
+
+
+    <Row Tag="TXT_KEY_WONDER_GOBEKLI_TEPE_TITLE">
+      <Text>Gobekil Tepe</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_GOBEKLI_TEPE_DESC">
+      <Text>Gobekil Tepe</Text>
     </Row>
 
 

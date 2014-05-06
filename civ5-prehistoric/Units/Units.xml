@@ -25,7 +25,7 @@
 
   
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║  CIVILIZATION FREE UNITS
   ║
@@ -34,7 +34,7 @@
   ║        then you receive and settler-type unit that can only build small
   ║        settlements up to population 2-3.
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->
 
   <Civilization_FreeUnits>
@@ -53,14 +53,14 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║  UNIT UPDATES - OLD UNITS
   ║
   ║  Compatbility changes and other tweaks to make prehistoric eras work. 
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->
 
   <!-- Change PrereqTechs for the units we will not redefine 
@@ -71,10 +71,6 @@
     <Update>
       <Set PrereqTech ="TECH_AGRICULTURE"/>
       <Where Type ="UNIT_WORKER"/>
-    </Update>
-    <Update>
-      <Set PrereqTech ="TECH_SIMPLE_TOOLS"/>
-      <Where Type ="UNIT_SETTLER"/>
     </Update>
     <Update>
       <Set PrereqTech ="TECH_SCOUTING"/>
@@ -117,14 +113,14 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║   UNIT CLASS UPGRADES - OLD UNITS
   ║
   ║   Change upgrades for units we will not redefine
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->  
   <Unit_ClassUpgrades>
     
@@ -139,71 +135,88 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║   UNIT CLASSES
   ║
   ║     
-  ║   Greats
+  ╟───Greats
+  ║
   ║   - UNITCLASS_GREAT_LEADER
   ║
   ║
   ║
   ║
-  ║   Leaders
+  ╟───Leaders
+  ║
   ║   - UNITCLASS_ALPHA
+  ║   - UNITCLASS_PATRIARCH
+  ║   - UNITCLASS_CHIEF
   ║
   ║
   ║
+  ╟───Civilian
   ║
+  ║   - Settle
   ║
-  ║   Civilian
-  ║   - UNITCLASS_LABORER
+  ║     - UNITCLASS_TRIBE_SPLIT
+  ║   
+  ║   - Work
+  ║
+  ║     - UNITCLASS_GATHERER
+  ║     - UNITCLASS_LABORER
   ║   
   ║
   ║
-  ║   Combat (Land)
-  ║
-  ║   - Generic     
-  ║     - UNITCLASS_AUSTRALOPITHECUS
   ║
   ║
-  ║   - Foot / Infantry - Offensive
+  ╟ ├┬Combat (Land)
+  ║ ¦│
+  ║ ¦│
+  ║    Foot / Infantry - Generic     
   ║
   ║     - Generic
   ║
-  ║       - UNITCLASS_AUTOCHTHON
+  ║       - UNITCLASS_AUSTRALOPITHECUS
   ║
-  ║     - Unclassified
+  ║     - Offense
   ║
-  ║       - Caveman (stick)
-  ║       - Club Pounder
-  ║       - Bone Axe Warrior
-  ║       - ++
-  ║       - Spartan
-  ║       - Conqueror
-  ║       - Rajput
-  ║       - Kern (Gaelic light infantry)
-  ║       - Asthetaoiroi
-  ║       - Pezhetaoiroi
-  ║       - Auxilia
-  ║       - Thureophoroi (light-middle spear)
-  ║       - Thorakites
-  ║       - Pantodapoi
   ║
-  ║     - Heavy
-  ║
-  ║     - Light
-  ║
-  ║     - Distance
+  ║       - Unclassified
+  ║  
+  ║         - ++
+  ║         - Spartan
+  ║         - Conqueror
+  ║         - Rajput
+  ║         - Kern (Gaelic light infantry)
+  ║         - Asthetaoiroi
+  ║         - Pezhetaoiroi
+  ║         - Auxilia
+  ║         - Thureophoroi (light-middle spear)
+  ║         - Thorakites
+  ║         - Pantodapoi
+  ║  
+  ║       - Light
+  ║  
+  ║         - UNITCLASS_AUTOCHTHON  
+  ║         - UNITCLASS_CAVEMAN (stick)
+  ║         - UNITCLASS_CLUB_POUNDER ***  
+  ║  
+  ║       - Heavy
+  ║   
+  ║         - UNITCLASS_NEANDERTHAL
+  ║         - UNITCLASS_BONE_WARRIOR (axe)
+  ║  
+  ║       - Distance
+  ║         - UNITCLASS_STAFF_WARRIOR *** (name)
   ║     
   ║
   ║   - Foot / Infantry - Defensive
   ║
   ║     - UNITCLASS_PROTECTOR
-  ║     - Neanderthal
-  ║     - Village Guard
+  ║     - UNITCLASS_VILLAGE_GUARD ***
   ║     - ++
+  ║     - Guard  
   ║     - Shaolin Monk
   ║     - Trench Soldier
   ║     - Peltast (light infantry)
@@ -213,15 +226,16 @@
   ║   - Sentinel
   ║
   ║     - UNITCLASS_WATCHER
-  ║     - Lookout
-  ║     - Sentinel
+  ║     - UNITCLASS_LOOKOUT
+  ║     - UNITCLASS_SENTINEL
   ║     - Picket
   ║
   ║   - Skirmish
   ║
   ║     - UNITCLASS_RUNNER
-  ║     - Raider
-  ║     - Scorcher
+  ║     - UNITCLASS_RAIDER
+  ║     - UNITCLASS_OUTRIDER
+  ║     - UNITCLASS_SCORCHER ***
   ║     - ++
   ║     - Geurilla
   ║     - Velites (Roman light infantry)
@@ -230,9 +244,10 @@
   ║     - Ekdromos
   ║     - Psiloi
   ║
-  ║   - Vangard
+  ║   - Vanguard
   ║
   ║     - UNITCLASS_BUSHMAN
+  ║     - UNITCLASS_INITIATE
   ║     - ++
   ║     - Vanguard
   ║     - Gladiator
@@ -241,28 +256,29 @@
   ║
   ║   - Siege
   ║
-  ║     - Savage
-  ║     - Bruiser
-  ║     - Brute
-  ║     - Warmonger
-  ║     - ++
+  ║     - UNITCLASS_SAVAGE
+  ║     - UNITCLASS_BRUISER ***
+  ║     - UNITCLASS_BRUTE
+  ║     - UNITCLASS_WARMONGER ***
+  ║     - UNITCLASS_BATTERING_RAM ***
+  ║     - UNITCLASS_SWINGING_RAM *** 
+  ║     - ++ 
   ║     - Ballista
   ║     - Scorpion
   ║     - Torsion Catapult
   ║     - Siege Canon
   ║
   ║
-  ║
   ║   - Ranged
   ║
   ║     - UNITCLASS_ROCK_THROWER
-  ║     - Spear Thrower
-  ║     - Primitve Archer
-  ║     - Slinger
-  ║     - Axe Thrower
-  ║     - Woomerist
+  ║     - UNITCLASS_SPEAR_HUNTER
+  ║     - UNITCLASS_PRIMITIVE_ARCHER
+  ║     - UNITCLASS_SLINGER
+  ║     - UNITCLASS_AXE_THROWER
+  ║     - UNITCLASS_WOOMERIST ***
   ║     - Kylist
-  ║     - Atlatlist
+  ║     - Atlatlist *** [The REAL unit]
   ║     - ++
   ║     - Gastraphete (alexander)
   ║     - Zande (botoo and pima, c. africa)
@@ -271,8 +287,8 @@
   ║
   ║   - Support
   ║
-  ║     - Shaman
-  ║     - Thinker
+  ║     - UNITCLASS_SHAMAN
+  ║     - UNITCLASS_THINKER
   ║     - Healer
   ║     - Shaman2 / Mystic
   ║     - Sapper
@@ -305,9 +321,11 @@
   ║     - Oxen Cart
   ║     - 
   ║
+  ║
   ║   - Companioned
   ║
   ║     - War Dogs
+  ║
   ║
   ║   - Stealth
   ║
@@ -315,14 +333,17 @@
   ║     - Spetsnaz
   ║     - Viet Cong (punji sticks)
   ║
+  ║
   ║   - Secret
   ║
   ║     - 
+  ║
   ║
   ║   - Royal/Noble
   ║
   ║     - Chhetri
   ║     - Immunes
+  ║
   ║
   ║   - Criminal
   ║
@@ -330,13 +351,19 @@
   ║     - Yakuza
   ║     - Pirate
   ║
+  ║
   ║   - Slave / Conscript
   ║
   ║     - Chilman
   ║     
+  ║
   ║   - Special
   ║
+  ║     - UNITCLASS_HUNTER
+  ║     - UNITCLASS_KEEPER
+  ║     - UNITCLASS_HARBINGER  
   ║     - Interragotor
+  ║
   ║
   ║   - Militia
   ║
@@ -346,37 +373,70 @@
   ║     - Militia
   ║     - Citizen Soldier
   ║
+  ║
   ║   - Recon
   ║
   ║     - UNITCLASS_WANDERER
   ║     - UNITCLASS_NOMAD_WANDERER *
   ║     - UNITCLASS_ADVENTURER
-  ║     - *UNITCLASS_SCOUT
+  ║     - UNITCLASS_SCOUT
   ║     - UNITCLASS_EXPLORER
   ║
   ║
+  ║   - Modified
+  ║     - 
   ║
-  ║   - Testing
+  ║
+  ║   - Recreated
+  ║     - 
+  ║
+  ║
+  ║
+  ║
+  ║
+  ╟───Combat (Sea)
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ╟───Testing
   ║
   ║     - UNITCLASS_AXE_THROWER
-  ║     - UNITCLASS_AUTOCHTHON
-  ║     - UNITCLASS_NEANDERTHAL
-  ║     - UNITCLASS_CAVEMAN
   ║     - UNITCLASS_BARB_ALPHA
   ║     - UNITCLASS_BEAR_WARRIOR
-  ║     - UNITCLASS_PRIMITIVE_ARCHER
-  ║     - UNITCLASS_SAVAGE
   ║
   ║
   ║
   ║
   ║
-  ║   Modified:
-  ║   - 
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->   
   <UnitClasses>
+    
+    <!--
+
+    8x8
+    
+    256   2048
+    128   1024
+    80     640
+    64     512
+    45     360
+
+    -->
     
     <Delete Type="UNITCLASS_SETTLER"/>
     <Delete Type="UNITCLASS_WORKER"/>
@@ -410,6 +470,81 @@
       <DefaultUnit>UNIT_ALPHA</DefaultUnit>
     </Row>    
 
+    <Row>
+      <Type>UNITCLASS_PATRIARCH</Type>
+      <Description>TXT_KEY_UNIT_PATRIARCH_TITLE</Description>
+      <DefaultUnit>UNIT_PATRIARCH</DefaultUnit>
+    </Row>  
+
+    <Row>
+      <Type>UNITCLASS_CHIEF</Type>
+      <Description>TXT_KEY_UNIT_CHIEF_TITLE</Description>
+      <DefaultUnit>UNIT_CHIEF</DefaultUnit>
+    </Row> 
+
+
+
+
+
+
+
+
+
+    <!-- || Civilian || -->
+
+
+    <!-- | Work | -->
+
+    <Row>
+      <Type>UNITCLASS_GATHERER</Type>
+      <Description>TXT_KEY_UNIT_GATHERER_TITLE</Description>
+      <DefaultUnit>UNIT_GATHERER</DefaultUnit>
+    </Row>   
+
+    <Row>
+      <Type>UNITCLASS_LABORER</Type>
+      <Description>TXT_KEY_UNIT_LABORER_TITLE</Description>
+      <DefaultUnit>UNIT_LABORER</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_WORKER</Type>
+      <Description>TXT_KEY_UNIT_WORKER</Description>
+      <DefaultUnit>UNIT_WORKER</DefaultUnit>
+    </Row>    
+
+
+
+    <!-- | Settle | -->
+
+    <Row>
+      <Type>UNITCLASS_TRIBE_SPLIT</Type>
+      <Description>TXT_KEY_UNIT_TRIBE_SPLIT_TITLE</Description>
+      <DefaultUnit>UNIT_TRIBE_SPLIT</DefaultUnit>
+    </Row>   
+
+    <Row>
+      <Type>UNITCLASS_SETTLER</Type>
+      <Description>TXT_KEY_UNIT_SETTLER</Description>
+      <DefaultUnit>UNIT_SETTLER</DefaultUnit>
+    </Row>
+
+
+
+
+
+
+
+
+
+    <!-- || Foot Generic || -->
+
+
+    <Row>
+      <Type>UNITCLASS_AUSTRALOPITHECUS</Type>
+      <Description>TXT_KEY_UNIT_AUSTRALOPITHECUS_TITLE</Description>
+      <DefaultUnit>UNIT_AUSTRALOPITHECUS</DefaultUnit>
+    </Row>
 
 
 
@@ -421,17 +556,39 @@
     <!-- || Foot Offense || -->
 
 
-    <Row>
-      <Type>UNITCLASS_AUSTRALOPITHECUS</Type>
-      <Description>TXT_KEY_UNIT_AUSTRALOPITHECUS_TITLE</Description>
-      <DefaultUnit>UNIT_AUSTRALOPITHECUS</DefaultUnit>
-    </Row> 
+    <!-- | Foot Offense Light | -->
+
     <Row>
       <Type>UNITCLASS_AUTOCHTHON</Type>
       <Description>TXT_KEY_UNIT_AUTOCHTHON_TITLE</Description>
       <DefaultUnit>UNIT_AUTOCHTHON</DefaultUnit>
     </Row> 
   
+    <Row>
+      <Type>UNITCLASS_CAVEMAN</Type>
+      <Description>TXT_KEY_UNIT_CAVEMAN_TITLE</Description>
+      <DefaultUnit>UNIT_CAVEMAN</DefaultUnit>
+    </Row> 
+
+
+    <!-- | Foot Offense Heavy | -->
+
+    <Row>
+      <Type>UNITCLASS_NEANDERTHAL</Type>
+      <Description>TXT_KEY_UNIT_NEANDERTHAL_TITLE</Description>
+      <DefaultUnit>UNIT_NEANDERTHAL</DefaultUnit>
+    </Row>
+
+
+
+    <!-- | Foot Offense Distance | -->
+
+
+
+
+
+
+
 
 
 
@@ -465,7 +622,17 @@
       <DefaultUnit>UNIT_WATCHER</DefaultUnit>
     </Row> 
 
+    <Row>
+      <Type>UNITCLASS_LOOKOUT</Type>
+      <Description>TXT_KEY_UNIT_LOOKOUT_TITLE</Description>
+      <DefaultUnit>UNIT_LOOKOUT</DefaultUnit>
+    </Row>
 
+    <Row>
+      <Type>UNITCLASS_SENTINEL</Type>
+      <Description>TXT_KEY_UNIT_SENTINEL_TITLE</Description>
+      <DefaultUnit>UNIT_SENTINEL</DefaultUnit>
+    </Row>      
 
 
 
@@ -482,6 +649,17 @@
       <DefaultUnit>UNIT_RUNNER</DefaultUnit>
     </Row> 
 
+    <Row>
+      <Type>UNITCLASS_RAIDER</Type>
+      <Description>TXT_KEY_UNIT_RAIDER_TITLE</Description>
+      <DefaultUnit>UNIT_RAIDER</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_OUTRIDER</Type>
+      <Description>TXT_KEY_UNIT_OUTRIDER_TITLE</Description>
+      <DefaultUnit>UNIT_OUTRIDER</DefaultUnit>
+    </Row>
 
 
 
@@ -497,6 +675,33 @@
       <Description>TXT_KEY_UNIT_BUSHMAN_TITLE</Description>
       <DefaultUnit>UNIT_BUSHMAN</DefaultUnit>
     </Row> 
+
+    <Row>
+      <Type>UNITCLASS_INITIATE</Type>
+      <Description>TXT_KEY_UNIT_INITIATE_TITLE</Description>
+      <DefaultUnit>UNIT_INITIATE</DefaultUnit>
+    </Row> 
+
+
+
+
+
+
+
+
+
+
+    <!-- || Siege || -->
+
+    <Row>
+      <Type>UNITCLASS_SAVAGE</Type>
+      <Description>TXT_KEY_UNIT_SAVAGE_TITLE</Description>
+      <DefaultUnit>UNIT_SAVAGE</DefaultUnit>
+    </Row> 
+
+
+
+
 
 
 
@@ -516,10 +721,49 @@
     </Row>
 
     <Row>
+      <Type>UNITCLASS_SPEAR_HUNTER</Type>
+      <Description>TXT_KEY_UNIT_SPEAR_HUNTER_TITLE</Description>
+      <DefaultUnit>UNIT_SPEAR_HUNTER</DefaultUnit>
+    </Row>    
+
+    <Row>
       <Type>UNITCLASS_PRIMITIVE_ARCHER</Type>
       <Description>TXT_KEY_UNIT_PRIMITIVE_ARCHER_TITLE</Description>
       <DefaultUnit>UNIT_PRIMITIVE_ARCHER</DefaultUnit>
     </Row>  
+
+    <Row>
+      <Type>UNITCLASS_SLINGER</Type>
+      <Description>TXT_KEY_UNIT_SLINGER_TITLE</Description>
+      <DefaultUnit>UNIT_SLINGER</DefaultUnit>
+    </Row> 
+
+    <Row>
+      <Type>UNITCLASS_AXE_THROWER</Type>
+      <Description>TXT_KEY_UNIT_AXE_THROWER_TITLE</Description>
+      <DefaultUnit>UNIT_AXE_THROWER</DefaultUnit>
+    </Row>
+
+
+
+
+
+
+
+
+    <!-- || Support || -->
+
+    <Row>
+      <Type>UNITCLASS_SHAMAN</Type>
+      <Description>TXT_KEY_UNIT_SHAMAN_TITLE</Description>
+      <DefaultUnit>UNIT_SHAMAN</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_THINKER</Type>
+      <Description>TXT_KEY_UNIT_THINKER_TITLE</Description>
+      <DefaultUnit>UNIT_THINKER</DefaultUnit>
+    </Row>
 
 
 
@@ -565,44 +809,60 @@
 
 
 
+
+
+
+
+    <!-- || Special || -->
+
+
+    <Row>
+      <Type>UNITCLASS_HUNTER</Type>
+      <Description>TXT_KEY_UNIT_HUNTER_TITLE</Description>
+      <DefaultUnit>UNIT_HUNTER</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_KEEPER</Type>
+      <Description>TXT_KEY_UNIT_KEEPER_TITLE</Description>
+      <DefaultUnit>UNIT_KEEPER</DefaultUnit>
+    </Row>
+
+    <Row>
+      <Type>UNITCLASS_HARBINGER</Type>
+      <Description>TXT_KEY_UNIT_HARBINGER_TITLE</Description>
+      <DefaultUnit>UNIT_HARBINGER</DefaultUnit>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
-    <Row>
-      <Type>UNITCLASS_SHAMAN</Type>
-      <Description>TXT_KEY_UNIT_SHAMAN_TITLE</Description>
-      <DefaultUnit>UNIT_SHAMAN</DefaultUnit>
-    </Row>
-    <Row>
-      <Type>UNITCLASS_AXE_THROWER</Type>
-      <Description>TXT_KEY_UNIT_AXE_THROWER_TITLE</Description>
-      <DefaultUnit>UNIT_AXE_THROWER</DefaultUnit>
-    </Row>
-    <Row>
-      <Type>UNITCLASS_NEANDERTHAL</Type>
-      <Description>TXT_KEY_UNIT_NEANDERTHAL_TITLE</Description>
-      <DefaultUnit>UNIT_NEANDERTHAL</DefaultUnit>
-    </Row>
+
+
+
     <Row>
       <Type>UNITCLASS_BARB_ALPHA</Type>
       <Description>TXT_KEY_UNIT_BARB_ALPHA_TITLE</Description>
       <DefaultUnit>UNIT_BARB_ALPHA</DefaultUnit>
     </Row>
-    <Row>
-      <Type>UNITCLASS_BEAR_WARRIOR</Type>
-      <Description>TXT_KEY_UNIT_BEAR_WARRIOR_TITLE</Description>
-      <DefaultUnit>UNIT_BEAR_WARRIOR</DefaultUnit>
-    </Row>  
-    <Row>
-      <Type>UNITCLASS_SAVAGE</Type>
-      <Description>TXT_KEY_UNIT_SAVAGE_TITLE</Description>
-      <DefaultUnit>UNIT_SAVAGE</DefaultUnit>
-    </Row> 
-    <Row>
-      <Type>UNITCLASS_CAVEMAN</Type>
-      <Description>TXT_KEY_UNIT_CAVEMAN_TITLE</Description>
-      <DefaultUnit>UNIT_CAVEMAN</DefaultUnit>
-    </Row> 
+
+
+
     
 
 
@@ -618,33 +878,6 @@
 
 
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
-
-
-    <Row>
-      <Type>UNITCLASS_SETTLER</Type>
-      <Description>TXT_KEY_UNIT_SETTLER</Description>
-      <DefaultUnit>UNIT_SETTLER</DefaultUnit>
-    </Row>
-    <Row>
-      <Type>UNITCLASS_WORKER</Type>
-      <Description>TXT_KEY_UNIT_WORKER</Description>
-      <DefaultUnit>UNIT_WORKER</DefaultUnit>
-    </Row>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
-
 
     <Row>
       <Type>UNITCLASS_SCOUTER</Type>
@@ -671,22 +904,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-      
-
    
 
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
    
-
     <Row>
       <Type>UNITCLASS_VILLAGER</Type>
       <Description>TXT_KEY_UNIT_VILLAGER_TITLE</Description>
@@ -696,13 +917,7 @@
 
 
 
-    <!--
-    <Row>
-      <Type>UNITCLASS_LABORER</Type>
-      <Description>TXT_KEY_UNIT_LABORER_TITLE</Description>
-      <DefaultUnit>UNIT_LABORER</DefaultUnit>
-    </Row>   
-    -->
+
 
   </UnitClasses>
 
@@ -738,6 +953,10 @@
   ║
   ║   - UNITCLASS_ALPHA
   ║     + UNIT_ALPHA
+  ║   - UNITCLASS_PATRIARCH
+  ║     + UNIT_PATRIARCH
+  ║   - UNITCLASS_CHIEF
+  ║     + UNIT_CHIEF
   ║   
   ║ 
   ║
@@ -746,11 +965,14 @@
   ║
   ║ 
   ║   - Settle
-  ║
+  ║     - UNITCLASS_TRIBE_SPLIT
+  ║       + UNIT_TRIBE_SPLIT
   ║
   ║   - Work
+  ║     - UNITCLASS_GATHERER
+  ║       + UNIT_GATHERER
   ║     - UNITCLASS_LABORER
-  ║       + UNIT_LABORER
+  ║       + UNIT_LABORER  
   ║
   ║
   ║
@@ -770,19 +992,27 @@
   ║   - Foot / Infantry - Offensive
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║
-  ║     - Generic
+  ║     - Light
   ║
-  ║     - UNITCLASS_AUTOCHTHON
-  ║       + UNIT_AUTOCHTHON
+  ║       - UNITCLASS_AUTOCHTHON
+  ║         + UNIT_AUTOCHTHON
+  ║       - UNITCLASS_CAVEMAN
+  ║         + UNIT_CAVEMAN
+  ║
+  ║
+  ║     - Heavy
+  ║
+  ║       - UNITCLASS_NEANDERTHAL
+  ║         + UNIT_NEANDERTHAL
+  ║
+  ║
+  ║
+  ║     - Distance
   ║
   ║
   ║
   ║     - Unclassified
   ║
-  ║       - UNITCLASS_NEANDERTHAL
-  ║         + UNIT_NEANDERTHAL
-  ║       - UNITCLASS_CAVEMAN
-  ║         + UNIT_CAVEMAN
   ║       - UNITCLASS_BARB_ALPHA
   ║         + UNIT_BARB_ALPHA
   ║       - UNITCLASS_BEAR_WARRIOR
@@ -793,7 +1023,8 @@
   ║
   ║   - Foot / Infantry - Defensive
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  ║
+  ║     - UNITCLASS_PROTECTOR
+  ║       + UNIT_PROTECTOR
   ║
   ║
   ║
@@ -802,6 +1033,10 @@
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNITCLASS_WATCHER
   ║       + UNIT_WATCHER
+  ║     - UNITCLASS_LOOKOUT
+  ║       + UNIT_LOOKOUT
+  ║     - UNITCLASS_SENTINEL
+  ║       + UNIT_SENTINEL
   ║
   ║
   ║
@@ -810,6 +1045,10 @@
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNITCLASS_RUNNER
   ║       + UNIT_RUNNER 
+  ║     - UNITCLASS_RAIDER
+  ║       + UNIT_RAIDER
+  ║     - UNITCLASS_OUTRIDER
+  ║       + UNIT_OUTRIDER  
   ║
   ║
   ║
@@ -818,6 +1057,8 @@
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNITCLASS_BUSHMAN
   ║       + UNIT_BUSHMAN
+  ║     - UNITCLASS_INITIATE
+  ║       + UNIT_INITIATE
   ║
   ║
   ║
@@ -834,6 +1075,10 @@
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNITCLASS_ROCK_THROWER
   ║       + UNIT_ROCK_THROWER
+  ║     - UNITCLASS_SPEAR_HUNTER
+  ║       + UNIT_SPEAR_HUNTER
+  ║     - UNITCLASS_SLINGER
+  ║       + UNIT_SLINGER
   ║     - UNITCLASS_PRIMITIVE_ARCHER
   ║       + UNIT_PRIMITIVE_ARCHER  
   ║     - UNITCLASS_AXE_THROWER
@@ -844,7 +1089,10 @@
   ║
   ║   - Support
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  ║
+  ║     - UNITCLASS_SHAMAN
+  ║       + UNIT_SHAMAN
+  ║     - UNITCLASS_THINKER
+  ║       + UNIT_THINKER
   ║
   ║
   ║
@@ -889,8 +1137,12 @@
   ║
   ║
   ║   - Special 
-  ║
-  ║
+  ║     - UNITCLASS_HUNTER
+  ║       + UNIT_HUNTER
+  ║     - UNITCLASS_KEEPER
+  ║       + UNIT_KEEPER
+  ║     - UNITCLASS_HARBINGER
+  ║       + UNIT_HARBINGER  
   ║
   ║
   ║
@@ -939,10 +1191,6 @@
   ║
   ║   - Unused:
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  ║     - UNITCLASS_ROCKSLINGER
-  ║       + UNIT_ROCKSLINGER
-  ║     - UNITCLASS_SPEAR_THROWER
-  ║       + UNIT_SPEAR_THROWER
   ║     - UNITCLASS_ATATLIST (Real Weapon)
   ║       + UNIT_ATATLIST
   ║
@@ -1081,7 +1329,7 @@
       <WorkRate>1</WorkRate>
       <CombatLimit>0</CombatLimit>
       <DontShowYields>true</DontShowYields>
-      <UnitArtInfo>ART_DEF_UNIT_GREAT_LEADER</UnitArtInfo>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
       <UnitFlagIconOffset>90</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_2</IconAtlas>
@@ -1113,7 +1361,7 @@
     -->
 
 
-    <!-- Alpha -->
+    <!-- UNIT_ALPHA -->
     <Row>
       <Class>UNITCLASS_ALPHA</Class>
       <Type>UNIT_ALPHA</Type>
@@ -1138,14 +1386,89 @@
       <XPValueDefense>3</XPValueDefense>
       <NoMaintenance>1</NoMaintenance>
       <Conscription>1</Conscription>
-      <UnitArtInfo>ART_DEF_UNIT_ALPHA</UnitArtInfo>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>33</PortraitIndex>
+    </Row>
+
+    <!-- UNIT_PATRIARCH -->
+    <Row>
+      <Class>UNITCLASS_PATRIARCH</Class>
+      <Type>UNIT_PATRIARCH</Type>
+      <PrereqTech>TECH_PRIMATE_COGNITION</PrereqTech>
+      <Combat>7</Combat>
+      <Cost>24</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_PATRIARCH_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_PATRIARCH_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_PATRIARCH_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_PATRIARCH_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>31</PortraitIndex>
+    </Row>
+
+    <!-- UNIT_CHIEF -->
+    <Row>
+      <Class>UNITCLASS_CHIEF</Class>
+      <Type>UNIT_CHIEF</Type>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+      <Combat>7</Combat>
+      <Cost>24</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_CHIEF_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_CHIEF_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_CHIEF_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_CHIEF_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
 
+
+
+
+
+
+
+
+
+
+
     <!-- TODO -->
+    <!--
     <Row>
       <Class>UNITCLASS_SETTLER</Class>
       <Type>UNIT_TRIBE_LEADER</Type>
@@ -1168,7 +1491,7 @@
       <PortraitIndex>56</PortraitIndex>
       <IconAtlas>UNIT_ATLAS_1</IconAtlas>
     </Row>
-
+    -->
 
 
 
@@ -1213,6 +1536,37 @@
     -->
 
 
+    <!-- UNIT_TRIBE_SPLIT -->
+    <Row>
+      <Class>UNITCLASS_TRIBE_SPLIT</Class>
+      <Type>UNIT_TRIBE_SPLIT</Type>
+      <PrereqTech>TECH_MIGRATION</PrereqTech>
+      <Moves>2</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_TRIBE_SPLIT_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_TRIBE_SPLIT_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_TRIBE_SPLIT_HELP</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>true</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>34</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+    </Row>  
+
+
+    <!-- UNIT_SETTLER -->
+    <!-- in section REDEFINED -->
+
+
+
 
 
 
@@ -1227,12 +1581,37 @@
     -->
 
 
-
-    <!-- Laborer -->
+    <!-- UNIT_GATHERER -->
     <Row>
-      <Class>UNITCLASS_WORKER</Class>
+      <Class>UNITCLASS_GATHERER</Class>
+      <Type>UNIT_GATHERER</Type>
+      <PrereqTech>TECH_TOOL_GATHERING</PrereqTech>
+      <Cost>20</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>25</HurryCostModifier>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_GATHERER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_GATHERER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_GATHERER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_GATHERER_HELP</Help>
+      <AdvancedStartCost>5</AdvancedStartCost>
+      <WorkRate>50</WorkRate>
+      <CombatLimit>0</CombatLimit>
+      <ObsoleteTech>TECH_MINING</ObsoleteTech>
+      <UnitArtInfo>ART_DEF_UNIT_LABORER</UnitArtInfo>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <PortraitIndex>56</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+    </Row> 
+
+    <!-- UNIT_LABORER -->
+    <Row>
+      <Class>UNITCLASS_LABORER</Class>
       <Type>UNIT_LABORER</Type>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
       <Cost>20</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>25</HurryCostModifier>
@@ -1254,8 +1633,8 @@
       <IconAtlas>UNIT_ATLAS_1</IconAtlas>
     </Row> 
 
-
-
+    
+    <!-- UNIT_WORKER -->
 
 
 
@@ -1331,6 +1710,16 @@
     -->
 
 
+
+
+
+    <!--  
+      Generic
+      ..........................................................................
+    -->    
+
+
+
     <!-- UNIT_AUSTRALOPITHECUS -->
     <Row>
       <Class>UNITCLASS_AUSTRALOPITHECUS</Class>
@@ -1361,8 +1750,16 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>9</PortraitIndex>
+      <PortraitIndex>11</PortraitIndex>
     </Row>
+
+
+
+    <!--  
+      Light
+      ..........................................................................
+    -->   
+
 
     <!-- UNIT_AUTOCHTHON -->
     <Row>
@@ -1370,7 +1767,7 @@
       <Type>UNIT_AUTOCHTHON</Type>
       <PrereqTech>TECH_SCAVENGING</PrereqTech>
       <Combat>6</Combat>
-      <Cost>30</Cost>
+      <Cost>15</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -1393,7 +1790,39 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>2</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>14</PortraitIndex>
+    </Row>
+
+    <!-- UNIT_CAVEMAN -->
+    <Row>
+      <Class>UNITCLASS_CAVEMAN</Class>
+      <Type>UNIT_CAVEMAN</Type>
+      <PrereqTech>TECH_FORAGING</PrereqTech>
+      <Combat>7</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_CAVEMAN_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_CAVEMAN_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_CAVEMAN_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_CAVEMAN_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_CAVEMAN</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>26</PortraitIndex>
     </Row>
 
 
@@ -1403,15 +1832,50 @@
 
 
 
+    <!--  
+      Heavy
+      ..........................................................................
+    -->   
+
+    <Row>
+      <Class>UNITCLASS_NEANDERTHAL</Class>
+      <Type>UNIT_NEANDERTHAL</Type>
+      <PrereqTech>TECH_COOKING</PrereqTech>
+      <Combat>8</Combat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_NEANDERTHAL_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_NEANDERTHAL_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_NEANDERTHAL_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_NEANDERTHAL_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_NEANDERTHAL</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
 
 
 
 
 
-
-
-
-
+    <!--  
+      Distance
+      ..........................................................................
+    -->   
 
 
 
@@ -1463,7 +1927,7 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>2</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>12</PortraitIndex>
     </Row>
 
 
@@ -1524,9 +1988,74 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
+      <PortraitIndex>17</PortraitIndex>
     </Row>
 
+    <!-- UNIT_LOOKOUT -->
+    <Row>
+      <Class>UNITCLASS_LOOKOUT</Class>
+      <Type>UNIT_LOOKOUT</Type>
+      <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
+      <Combat>4</Combat>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_LOOKOUT_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_LOOKOUT_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_LOOKOUT_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_LOOKOUT_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>27</PortraitIndex>
+    </Row>
+
+    <!-- UNIT_SENTINEL -->
+    <Row>
+      <Class>UNITCLASS_SENTINEL</Class>
+      <Type>UNIT_SENTINEL</Type>
+      <PrereqTech>TECH_COLLABORATIVE_HUNTING</PrereqTech>
+      <Combat>9</Combat>
+      <Cost>22</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_SENTINEL_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SENTINEL_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SENTINEL_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SENTINEL_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>23</PortraitIndex>
+    </Row>
 
 
 
@@ -1585,13 +2114,72 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>2</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>14</PortraitIndex>
     </Row>
 
+    <!-- UNIT_RAIDER -->
+    <Row>
+      <Class>UNITCLASS_RAIDER</Class>
+      <Type>UNIT_RAIDER</Type>
+      <PrereqTech>TECH_ORIENTEERING</PrereqTech>
+      <Combat>8</Combat>
+      <Cost>22</Cost>
+      <Moves>3</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_RAIDER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_RAIDER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_RAIDER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_RAIDER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>25</PortraitIndex>
+    </Row>
 
-
-
-
+    <!-- UNIT_OUTRIDER -->
+    <Row>
+      <Class>UNITCLASS_OUTRIDER</Class>
+      <Type>UNIT_OUTRIDER</Type>
+      <PrereqTech>TECH_SYMBOLIC_COMMUNICATION</PrereqTech>
+      <Combat>8</Combat>
+      <Cost>22</Cost>
+      <Moves>3</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_OUTRIDER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_OUTRIDER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_OUTRIDER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_OUTRIDER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>0</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
 
 
 
@@ -1650,10 +2238,40 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>2</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
+      <PortraitIndex>24</PortraitIndex>
     </Row>
 
-
+    <!-- UNIT_INITIATE -->
+    <Row>
+      <Class>UNITCLASS_INITIATE</Class>
+      <Type>UNIT_INITIATE</Type>
+      <PrereqTech>TECH_PLANNING</PrereqTech>
+      <Combat>6</Combat>
+      <Cost>15</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_INITIATE_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_INITIATE_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_INITIATE_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_INITIATE_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>0</PortraitIndex>
+    </Row>
 
 
 
@@ -1686,6 +2304,37 @@
     -->
 
 
+    <!-- UNIT_SAVAGE -->
+    <Row>
+      <Class>UNITCLASS_SAVAGE</Class>
+      <Type>UNIT_SAVAGE</Type>
+      <PrereqTech>TECH_MIGRATION</PrereqTech>
+      <Combat>6</Combat>
+      <Cost>30</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_SAVAGE_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SAVAGE_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SAVAGE_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SAVAGE_HELP</Help>      
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_SAVAGE</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>20</PortraitIndex>
+    </Row> 
 
 
 
@@ -1724,7 +2373,7 @@
     <Row>
       <Class>UNITCLASS_ROCK_THROWER</Class>
       <Type>UNIT_ROCK_THROWER</Type>
-      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <PrereqTech>TECH_ADAPTED_TOOLS</PrereqTech>
       <Combat>2</Combat>
       <RangedCombat>3</RangedCombat>
       <Cost>14</Cost>
@@ -1750,8 +2399,76 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>6</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>19</PortraitIndex>
+    </Row> 
+
+
+    <!-- UNIT_SPEAR_HUNTER -->
+    <Row>
+      <Class>UNITCLASS_SPEAR_HUNTER</Class>
+      <Type>UNIT_SPEAR_HUNTER</Type>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <Combat>2</Combat>
+      <RangedCombat>4</RangedCombat>
+      <Cost>16</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_SPEAR_HUNTER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SPEAR_HUNTER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SPEAR_HUNTER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SPEAR_HUNTER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_PRIMITIVE_ARCHER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>28</PortraitIndex>
+    </Row> 
+
+
+    <!-- UNIT_SLINGER -->
+    <Row>
+      <Class>UNITCLASS_SLINGER</Class>
+      <Type>UNIT_SLINGER</Type>
+      <PrereqTech>TECH_CONTAINERS</PrereqTech>
+      <Combat>2</Combat>
+      <RangedCombat>3</RangedCombat>
+      <Cost>14</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_SLINGER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SLINGER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SLINGER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SLINGER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_PRIMITIVE_ARCHER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
-    </Row>  
+    </Row>     
 
 
     <!-- UNIT_PRIMITIVE_ARCHER -->
@@ -1787,9 +2504,39 @@
       <PortraitIndex>8</PortraitIndex>
     </Row>  
 
-
-
-
+    <!-- UNIT_AXE_THROWER -->
+    <Row>
+      <Class>UNITCLASS_AXE_THROWER</Class>
+      <Type>UNIT_AXE_THROWER</Type>
+      <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
+      <Combat>9</Combat>
+      <RangedCombat>13</RangedCombat>
+      <Cost>75</Cost>
+      <FaithCost>150</FaithCost>
+      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+      <Moves>2</Moves>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_AXE_THROWER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_AXE_THROWER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_AXE_THROWER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_AXE_THROWER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MACHINERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CROSSBOWMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>20</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_AXE_THROWER</UnitArtInfo>
+      <UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+      <UnitFlagIconOffset>9</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>35</PortraitIndex>
+    </Row>
 
 
 
@@ -1812,6 +2559,70 @@
     └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
     -->
 
+    <!-- UNIT_SHAMAN -->
+    <Row>
+      <Class>UNITCLASS_SHAMAN</Class>
+      <Type>UNIT_SHAMAN</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>1</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>24</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_SHAMAN_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_SHAMAN_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_SHAMAN_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_SHAMAN_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SHAMAN</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>10</PortraitIndex>
+    </Row>
+
+    <!-- UNIT_THINKER -->
+    <Row>
+      <Class>UNITCLASS_THINKER</Class>
+      <Type>UNIT_THINKER</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>4</Combat>
+      <Cost>24</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Range>1</Range>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_THINKER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_THINKER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_THINKER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_THINKER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>15</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <UnitArtInfo>ART_DEF_UNIT_SHAMAN</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>1</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>15</PortraitIndex>
+    </Row>
 
 
 
@@ -1829,6 +2640,109 @@
 
 
 
+    <!--  
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    │ Special
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+
+
+    <!-- UNIT_HUNTER -->
+    <Row>
+      <Class>UNITCLASS_HUNTER</Class>
+      <Type>UNIT_HUNTER</Type>
+      <PrereqTech>TECH_HUNTING</PrereqTech>
+      <Combat>5</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>21</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_HUNTER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_HUNTER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_HUNTER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HUNTER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>18</PortraitIndex>
+    </Row> 
+
+    <!-- UNIT_KEEPER -->
+    <Row>
+      <Class>UNITCLASS_KEEPER</Class>
+      <Type>UNIT_KEEPER</Type>
+      <PrereqTech>TECH_FIRE</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>24</Cost>
+      <Moves>1</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_KEEPER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_KEEPER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_KEEPER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_KEEPER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row> 
+
+    <!-- UNIT_HARBINGER -->
+    <Row>
+      <Class>UNITCLASS_HARBINGER</Class>
+      <Type>UNIT_HARBINGER</Type>
+      <PrereqTech>TECH_LANGUAGE</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>29</Cost>
+      <Moves>1</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_HARBINGER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_HARBINGER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_HARBINGER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HARBINGER_HELP</Help>
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <NoMaintenance>1</NoMaintenance>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>6</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row> 
 
 
 
@@ -1921,7 +2835,7 @@
     <Row>
       <Class>UNITCLASS_ADVENTURER</Class>
       <Type>UNIT_ADVENTURER</Type>
-      <PrereqTech>TECH_BIPEDALISM</PrereqTech>
+      <PrereqTech>TECH_CURIOUSITY</PrereqTech>
       <Combat>2</Combat>
       <Cost>12</Cost>
       <Moves>2</Moves>
@@ -1947,13 +2861,15 @@
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
+      <PortraitIndex>22</PortraitIndex>
     </Row>
 
 
-
     <!-- UNIT_SCOUT: See xxxxxxxxxxxxx -->
+    <!-- #UNIT_PATHFINDER: See xxxxxxxxxxxxx -->
 
+
+    <!-- UNIT_EXPLORER -->
     <Row>
       <Class>UNITCLASS_EXPLORER</Class>
       <Type>UNIT_EXPLORER</Type>
@@ -1967,10 +2883,10 @@
       <CombatClass>UNITCOMBAT_RECON</CombatClass>
       <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
       <Domain>DOMAIN_LAND</Domain>
-      <Description>Explorer</Description>
-      <Civilopedia>Scouts form the eyes and ears of early civilizations. These fleet-footed warriors are not supposed to engage with enemy forces - they're supposed to find the lay of the land, discovering any potential threats or treasures. A civilization that doesn't know what's going on in the world around it is blind to both peril and opportunity.</Civilopedia>
-      <Strategy>Just like the Scout, the Explorer can move through difficult terrain without penalty. It is very fast and efficient at exploring, but rather weak as well.</Strategy>
-      <Help>Much faster and stronger than the Scout, the mounted Explorer is the perfect tool to discover the world for your civilization. Receives +2 Sight while embarked.</Help>
+      <Description>TXT_KEY_UNIT_EXPLORER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_EXPLORER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_EXPLORER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_EXPLORER_HELP</Help>      
       <MilitarySupport>true</MilitarySupport>
       <MilitaryProduction>true</MilitaryProduction>
       <Pillage>true</Pillage>
@@ -2006,78 +2922,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <!--  
-    ┌───────────────────────────────────────────────────────────────────────────
-    │
-    │ Settle
-    │
-    │
-    │
-    │
-    └───────────────────────────────────────────────────────────────────────────
-    -->
-
-    <!-- Tribe Split -->
-    <Row>
-      <Class>UNITCLASS_TRIBE_SPLIT</Class>
-      <Type>UNIT_TRIBE_SPLIT</Type>
-      <Moves>2</Moves>
-      <Capture>UNITCLASS_WORKER</Capture>
-      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
-      <HurryCostModifier>20</HurryCostModifier>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_TRIBE_SPLIT</Description>
-      <Civilopedia>TXT_KEY_CIV5_ANTIQUITY_TRIBE_SPLIT_TEXT</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_HELP_TRIBE_SPLIT</Help>
-      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
-      <Food>true</Food>
-      <Found>true</Found>
-      <CombatLimit>0</CombatLimit>
-      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
-      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
-      <PortraitIndex>56</PortraitIndex>
-      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
-    </Row>    
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--  
     ┌───────────────────────────────────────────────────────────────────────────
     │
@@ -2089,11 +2933,11 @@
     └───────────────────────────────────────────────────────────────────────────
     -->
 
-    <!-- SETTLE-LIKE LEADER UNITS AND UNITS ABLE TO SETTLE -->
-
+    
     <Row>
       <Class>UNITCLASS_SETTLER</Class>
       <Type>UNIT_SETTLER</Type>
+      <!-- <PrereqTech>TECH_AGRICULTURE</PrereqTech> -->
       <Moves>2</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
@@ -2118,6 +2962,7 @@
     <Row>
       <Class>UNITCLASS_WORKER</Class>
       <Type>UNIT_WORKER</Type>
+      <!-- <PrereqTech>TECH_AGRICULTURE</PrereqTech> -->
       <Cost>70</Cost>
       <Moves>2</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
@@ -2191,102 +3036,6 @@
 
 
 
-    <!-- UNIT_SAVAGE -->
-    <Row>
-      <Class>UNITCLASS_SAVAGE</Class>
-      <Type>UNIT_SAVAGE</Type>
-      <PrereqTech>TECH_WARFARE</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>30</Cost>
-      <Moves>2</Moves>
-      <HurryCostModifier>20</HurryCostModifier>
-      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
-      <Description>Savage</Description>
-      <Civilopedia>In times when weapons were dull and military strategy was virtually non-existent, muscle power was the main tool of winning a fight. Especially strong and big men made good front-line warriors, who often fought in reckless rage. Nearly unstoppable when attacking, the Berserk fighters often did not watch their backs and were susceptible to strategic attacks.</Civilopedia>
-      <Strategy>The Savage is particularly useful when attacking enemy settlements. Armed with half a tree as weapon, he can easily bring down enemy fortifications.[NEWLINE]Protect it from attacks, as it is weak when defending.</Strategy>
-      <Help>An exceptionally big and strong human specimen with a bad temper.[NEWLINE][NEWLINE]Receives a bonus when attacking Cities, but also a penalty when defending.</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>10</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <Conscription>1</Conscription>
-      <UnitArtInfo>ART_DEF_UNIT_SAVAGE</UnitArtInfo>
-      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
-      <UnitFlagIconOffset>2</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
-    </Row> 
-
-    <!-- UNIT_CAVEMAN -->
-    <Row>
-      <Class>UNITCLASS_CAVEMAN</Class>
-      <Type>UNIT_CAVEMAN</Type>
-      <PrereqTech>TECH_FIRE</PrereqTech>
-      <Combat>5</Combat>
-      <Cost>22</Cost>
-      <Moves>2</Moves>
-      <HurryCostModifier>20</HurryCostModifier>
-      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_CAVEMAN_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_CAVEMAN_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_CAVEMAN_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_CAVEMAN_HELP</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>10</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <Conscription>1</Conscription>
-      <UnitArtInfo>ART_DEF_UNIT_CAVEMAN</UnitArtInfo>
-      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
-      <UnitFlagIconOffset>0</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
-    </Row>
-
-    <!-- UNIT_SHAMAN -->
-    <Row>
-      <Class>UNITCLASS_SHAMAN</Class>
-      <Type>UNIT_SHAMAN</Type>
-      <PrereqTech>TECH_FIRE</PrereqTech>
-      <Combat>1</Combat>
-      <RangedCombat>5</RangedCombat>
-      <Cost>24</Cost>
-      <Moves>2</Moves>
-      <HurryCostModifier>20</HurryCostModifier>
-      <Range>1</Range>
-      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_SHAMAN_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_SHAMAN_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_SHAMAN_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_SHAMAN_HELP</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_ARCHERY</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_ARCHER</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>15</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <UnitArtInfo>ART_DEF_UNIT_SHAMAN</UnitArtInfo>
-      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
-      <UnitFlagIconOffset>1</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>10</PortraitIndex>
-    </Row>
 
 
 
@@ -2301,41 +3050,27 @@
 
 
 
-    <Row>
-      <Class>UNITCLASS_NEANDERTHAL</Class>
-      <Type>UNIT_NEANDERTHAL</Type>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Combat>5</Combat>
-      <Cost>22</Cost>
-      <Moves>2</Moves>
-      <HurryCostModifier>20</HurryCostModifier>
-      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_NEANDERTHAL_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_NEANDERTHAL_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_NEANDERTHAL_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_NEANDERTHAL_HELP</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>10</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <Conscription>1</Conscription>
-      <UnitArtInfo>ART_DEF_UNIT_NEANDERTHAL</UnitArtInfo>
-      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
-      <UnitFlagIconOffset>0</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
-    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+    <!-- TEST UNITS BELOW THIS LINE (ACTIVE) -->
 
     <Row>
       <Class>UNITCLASS_BARB_ALPHA</Class>
       <Type>UNIT_BARB_ALPHA</Type>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
       <Combat>5</Combat>
       <Cost>22</Cost>
       <Moves>2</Moves>
@@ -2363,69 +3098,6 @@
       <PortraitIndex>56</PortraitIndex>
     </Row> 
 
-    <Row>
-      <Class>UNITCLASS_BEAR_WARRIOR</Class>
-      <Type>UNIT_BEAR_WARRIOR</Type>
-      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
-      <Combat>5</Combat>
-      <Cost>22</Cost>
-      <Moves>2</Moves>
-      <HurryCostModifier>20</HurryCostModifier>
-      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_BEAR_WARRIOR_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_BEAR_WARRIOR_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_BEAR_WARRIOR_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_BEAR_WARRIOR_HELP</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_SAVAGE</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>10</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <Conscription>1</Conscription>
-      <UnitArtInfo>ART_DEF_UNIT_BEAR_WARRIOR</UnitArtInfo>
-      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
-      <UnitFlagIconOffset>0</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
-    </Row>
-
-    <Row>
-      <Class>UNITCLASS_AXE_THROWER</Class>
-      <Type>UNIT_AXE_THROWER</Type>
-      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
-      <Combat>9</Combat>
-      <RangedCombat>13</RangedCombat>
-      <Cost>75</Cost>
-      <FaithCost>150</FaithCost>
-      <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
-      <Moves>2</Moves>
-      <Range>1</Range>
-      <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
-      <Domain>DOMAIN_LAND</Domain>
-      <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_AXE_THROWER_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_AXE_THROWER_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_UNIT_AXE_THROWER_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_AXE_THROWER_HELP</Help>
-      <MilitarySupport>true</MilitarySupport>
-      <MilitaryProduction>true</MilitaryProduction>
-      <Pillage>true</Pillage>
-      <ObsoleteTech>TECH_MACHINERY</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_CROSSBOWMAN</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>20</AdvancedStartCost>
-      <XPValueAttack>3</XPValueAttack>
-      <XPValueDefense>3</XPValueDefense>
-      <UnitArtInfo>ART_DEF_UNIT_AXE_THROWER</UnitArtInfo>
-      <UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
-      <UnitFlagIconOffset>9</UnitFlagIconOffset>
-      <IconAtlas>EXPANSION2_UNIT_ATLAS</IconAtlas>
-      <PortraitIndex>9</PortraitIndex>
-    </Row>
 
 
 
@@ -2454,12 +3126,9 @@
 
 
 
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
-
-
-    <!-- TESTING BELOW THIS LINE -->
-
-
+    <!-- TEST UNITS BELOW THIS LINE -->
 
 
 
@@ -2960,25 +3629,6 @@
       <PortraitIndex>2</PortraitIndex>
     </Row>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <Row>
       <Class>UNITCLASS_SCOUTER</Class>
       <Type>UNIT_SCOUT_ONE</Type>
@@ -3367,8 +4017,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_AITypes
   ║
@@ -3396,7 +4094,7 @@
   ║ ICBM                    WRITER
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   --> 
   <Unit_AITypes>
 
@@ -3433,6 +4131,63 @@
       <UnitAIType>UNITAI_DEFENSE</UnitAIType>
     </Row>
 
+    <!-- UNIT_PATRIARCH -->
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+    <!-- UNIT_CHIEF -->
+    <Row>
+      <UnitType>UNIT_CHIEF</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CHIEF</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Civilian || -->
+
+
+
+    <!-- | Settle | -->
+
+    <!-- UNIT_TRIBE_SPLIT -->
+    <Row>
+      <UnitType>UNIT_TRIBE_SPLIT</UnitType>
+      <UnitAIType>UNITAI_SETTLE</UnitAIType>
+    </Row> 
+
+
+
+    <!-- | Work | -->
+
+    <!-- UNIT_GATHERER -->
+    <Row>
+      <UnitType>UNIT_GATHERER</UnitType>
+      <UnitAIType>UNITAI_WORKER</UnitAIType>
+    </Row> 
+
+    <!-- UNIT_LABORER -->
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <UnitAIType>UNITAI_WORKER</UnitAIType>
+    </Row> 
 
 
 
@@ -3470,6 +4225,11 @@
     <!-- || Foot Offense || -->
 
 
+
+
+    <!-- | Foot Offense Light | -->
+
+
     <!-- UNIT_AUTOCHTHON -->
     <Row>
       <UnitType>UNIT_AUTOCHTHON</UnitType>
@@ -3483,6 +4243,45 @@
       <UnitType>UNIT_AUTOCHTHON</UnitType>
       <UnitAIType>UNITAI_WORKER</UnitAIType>
     </Row>
+
+    <!-- UNIT_CAVEMAN -->    
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+
+
+    <!-- | Foot Offense Heavy | -->
+
+
+    <!-- UNIT_NEANDERTHAL -->
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+
+
+
+    <!-- | Foot Offense Distance | -->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3518,6 +4317,19 @@
       <UnitAIType>UNITAI_DEFENSE</UnitAIType>
     </Row>
 
+    <!-- UNIT_LOOKOUT -->
+    <Row>
+      <UnitType>UNIT_LOOKOUT</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+    <!-- UNIT_SENTINEL -->
+    <Row>
+      <UnitType>UNIT_SENTINEL</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+
 
 
 
@@ -3540,6 +4352,25 @@
       <UnitAIType>UNITAI_RANGED</UnitAIType>
     </Row>
 
+    <!-- UNIT_RAIDER -->
+    <Row>
+      <UnitType>UNIT_RAIDER</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_RAIDER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+    <!-- UNIT_OUTRIDER -->
+    <Row>
+      <UnitType>UNIT_OUTRIDER</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_OUTRIDER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
 
 
 
@@ -3556,6 +4387,36 @@
       <UnitType>UNIT_BUSHMAN</UnitType>
       <UnitAIType>UNITAI_ATTACK</UnitAIType>
     </Row>
+
+    <!-- UNIT_INITIATE -->
+    <Row>
+      <UnitType>UNIT_INITIATE</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+    <!-- || Siege || -->
+
+
+    <!-- UNIT_SAVAGE -->
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitAIType>CITY_BOMBARD</UnitAIType>
+    </Row>
+
+
 
 
 
@@ -3575,10 +4436,98 @@
       <UnitAIType>UNITAI_RANGED</UnitAIType>
     </Row>
 
+    <!-- UNIT_SPEAR_HUNTER -->
+    <Row>
+      <UnitType>UNIT_SPEAR_HUNTER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+    <!-- UNIT_SLINGER -->
+    <Row>
+      <UnitType>UNIT_SLINGER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+    <!-- UNIT_PRIMITIVE_ARCHER -->
     <Row>
       <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
       <UnitAIType>UNITAI_RANGED</UnitAIType>
     </Row>
+
+    <!-- UNIT_AXE_THROWER -->
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Support || -->
+
+
+    <!-- UNIT_SHAMAN -->
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+    <!-- UNIT_THINKER -->
+    <Row>
+      <UnitType>UNIT_THINKER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Special || -->
+
+
+    <!-- UNIT_HUNTER -->
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <UnitAIType>UNITAI_RANGED</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+
+    <!-- UNIT_KEEPER -->
+    <Row>
+      <UnitType>UNIT_KEEPER</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
+    <!-- UNIT_HARBINGER -->
+    <Row>
+      <UnitType>UNIT_HARBINGER</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+
 
 
 
@@ -3619,11 +4568,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+    <!-- TEST UNITS BELOW THIS LINE -->
+
+
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BARB_ALPHA</UnitType>
+      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+    </Row>
+
+
+
     <!--
 
-
-
-
     <Row>
       <UnitType>UNIT_SCOUT_ONE</UnitType>
       <UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -3637,78 +4623,8 @@
       <UnitAIType>UNITAI_EXPLORE</UnitAIType>
     </Row>
 
-    <Row>
-      <UnitType>UNIT_AXE_THROWER</UnitType>
-      <UnitAIType>UNITAI_RANGED</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <UnitAIType>UNITAI_ATTACK</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <UnitAIType>UNITAI_ATTACK</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BARB_ALPHA</UnitType>
-      <UnitAIType>UNITAI_ATTACK</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BARB_ALPHA</UnitType>
-      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BARB_ALPHA</UnitType>
-      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <UnitAIType>UNITAI_ATTACK</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <UnitAIType>UNITAI_DEFENSE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <UnitAIType>UNITAI_EXPLORE</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
-      <UnitAIType>UNITAI_RANGED</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_SAVAGE</UnitType>
-      <UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_SAVAGE</UnitType>
-      <UnitAIType>UNITAI_ATTACK</UnitAIType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_LABORER</UnitType>
-      <UnitAIType>UNITAI_WORKER</UnitAIType>
-    </Row>   
-    <Row>
-      <UnitType>UNIT_SHAMAN</UnitType>
-      <UnitAIType>UNITAI_RANGED</UnitAIType>
-    </Row>
+
+
     -->
 
 
@@ -3737,7 +4653,7 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║                                                                             ║
   ║ Unit_Flavors                                                                ║
   ║                                                                             ║
@@ -3770,7 +4686,7 @@
   ║                                                                             ║
   ║                                                                             ║
   ║                                                                             ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->   
   <Unit_Flavors>
 
@@ -3817,6 +4733,84 @@
       <Flavor>2</Flavor>
     </Row>
 
+    <!-- UNIT_PATRIARCH -->
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_PATRIARCH</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+
+    <!-- UNIT_CHIEF -->
+    <Row>
+      <UnitType>UNIT_CHIEF</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CHIEF</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CHIEF</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Civilian || -->
+
+
+    <!-- | Settle | -->
+
+    <!-- UNIT_TRIBE_SPLIT -->
+    <Row>
+      <UnitType>UNIT_TRIBE_SPLIT</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>12</Flavor>
+    </Row> 
+
+
+
+    <!-- | Work | -->
+
+    <!-- UNIT_GATHERER -->
+    <Row>
+      <UnitType>UNIT_GATHERER</UnitType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>10</Flavor>
+    </Row> 
+
+    <!-- UNIT_LABORER -->
+    <Row>
+      <UnitType>UNIT_LABORER</UnitType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>20</Flavor>
+    </Row> 
 
 
 
@@ -3860,12 +4854,61 @@
     <!-- || Foot Offense || -->
 
 
+
+    <!-- | Foot Offense Light | -->
+
+
     <!-- UNIT_AUTOCHTHON -->
     <Row>
       <UnitType>UNIT_AUTOCHTHON</UnitType>
       <FlavorType>FLAVOR_OFFENSE</FlavorType>
       <Flavor>8</Flavor>
     </Row>
+
+    <!-- UNIT_CAVEMAN -->
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+
+
+    <!-- | Foot Offense Heavy | -->
+
+
+    <!-- UNIT_NEANDERTHAL -->
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+
+
+    <!-- | Foot Offense Distance | -->
+
+
 
 
 
@@ -3907,6 +4950,19 @@
       <Flavor>1</Flavor>
     </Row>
 
+    <!-- UNIT_LOOKOUT -->
+    <Row>
+      <UnitType>UNIT_LOOKOUT</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+
+    <!-- UNIT_SENTINEL -->
+    <Row>
+      <UnitType>UNIT_SENTINEL</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
 
 
 
@@ -3930,7 +4986,29 @@
       <Flavor>1</Flavor>
     </Row>
 
+    <!-- UNIT_RAIDER -->
+    <Row>
+      <UnitType>UNIT_RAIDER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>9</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_RAIDER</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
 
+    <!-- UNIT_OUTRIDER -->
+    <Row>
+      <UnitType>UNIT_OUTRIDER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>11</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_OUTRIDER</UnitType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
 
 
 
@@ -3951,7 +5029,30 @@
       <Flavor>8</Flavor>
     </Row>
 
+    <!-- UNIT_INITIATE -->
+    <Row>
+      <UnitType>UNIT_INITIATE</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>11</Flavor>
+    </Row>
 
+
+
+
+
+
+
+
+
+    <!-- || Siege || -->
+
+
+    <!-- UNIT_SAVAGE -->
+    <Row>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
 
 
 
@@ -3983,6 +5084,40 @@
       <Flavor>3</Flavor>
     </Row>
 
+    <!-- UNIT_SPEAR_HUNTER -->
+    <Row>
+      <UnitType>UNIT_SPEAR_HUNTER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SPEAR_HUNTER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SPEAR_HUNTER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>  
+
+    <!-- UNIT_SLINGER -->
+    <Row>
+      <UnitType>UNIT_SLINGER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SLINGER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SLINGER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
     <!-- UNIT_PRIMITIVE_ARCHER -->
     <Row>
       <UnitType>UNIT_PRIMITIVE_ARCHER</UnitType>
@@ -3999,6 +5134,131 @@
       <FlavorType>FLAVOR_RANGED</FlavorType>
       <Flavor>5</Flavor>
     </Row>
+
+    <!-- UNIT_AXE_THROWER -->
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AXE_THROWER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Support || -->
+
+
+    <!-- UNIT_SHAMAN -->
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_SHAMAN</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>5</Flavor>
+    </Row> 
+
+    <!-- UNIT_THINKER -->
+    <Row>
+      <UnitType>UNIT_THINKER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_THINKER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- || Special || -->
+
+
+    <!-- UNIT_HUNTER -->
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>    
+
+    <!-- UNIT_KEEPER -->
+    <Row>
+      <UnitType>UNIT_KEEPER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_KEEPER</UnitType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_KEEPER</UnitType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    <!-- UNIT_HARBINGER -->
+    <Row>
+      <UnitType>UNIT_HARBINGER</UnitType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <UnitType>UNIT_HARBINGER</UnitType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row> 
 
 
 
@@ -4089,23 +5349,6 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
-
-
-    <!-- Tribe Leader -->
-    <Row>
-      <UnitType>UNIT_TRIBE_LEADER</UnitType>
-      <FlavorType>FLAVOR_EXPANSION</FlavorType>
-      <Flavor>21</Flavor>
-    </Row>
-
-
-
-
-
-
-
-
 
 
 
@@ -4134,38 +5377,6 @@
       <Flavor>2</Flavor>
     </Row>
 
-
-
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <FlavorType>FLAVOR_RECON</FlavorType>
-      <Flavor>1</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_NEANDERTHAL</UnitType>
-      <FlavorType>FLAVOR_DEFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <FlavorType>FLAVOR_RECON</FlavorType>
-      <Flavor>1</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
-      <FlavorType>FLAVOR_DEFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
     <Row>
       <UnitType>UNIT_BARB_ALPHA</UnitType>
       <FlavorType>FLAVOR_RECON</FlavorType>
@@ -4181,47 +5392,9 @@
       <FlavorType>FLAVOR_DEFENSE</FlavorType>
       <Flavor>2</Flavor>
     </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <FlavorType>FLAVOR_RECON</FlavorType>
-      <Flavor>1</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
-      <FlavorType>FLAVOR_DEFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
 
-    <Row>
-      <UnitType>UNIT_SHAMAN</UnitType>
-      <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>1</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_SHAMAN</UnitType>
-      <FlavorType>FLAVOR_DEFENSE</FlavorType>
-      <Flavor>2</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_SHAMAN</UnitType>
-      <FlavorType>FLAVOR_RANGED</FlavorType>
-      <Flavor>5</Flavor>
-    </Row>    
-    <Row>
-      <UnitType>UNIT_SAVAGE</UnitType>
-      <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>20</Flavor>
-    </Row>
-    <Row>
-      <UnitType>UNIT_LABORER</UnitType>
-      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-      <Flavor>30</Flavor>
-    </Row>     
+
+    
 
   </Unit_Flavors>
   
@@ -4247,14 +5420,14 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_FreePromotions
   ║
   ║   
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   -->   
   <Unit_FreePromotions>
 
@@ -4264,7 +5437,7 @@
     </Row>
 
 
-<!--
+    <!--
     <Row>
       <UnitType>UNIT_EXPLORER</UnitType>
       <PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
@@ -4348,7 +5521,7 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_ClassUpgrades
   ║
@@ -4361,9 +5534,6 @@
 
 
     <!-- NoUpgrade: Alpha -->
-
-
-
 
 
 
@@ -4394,10 +5564,6 @@
     </Row>
     <Row>
       <UnitType>UNIT_BARB_ALPHA</UnitType>
-      <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
-    </Row>
-    <Row>
-      <UnitType>UNIT_BEAR_WARRIOR</UnitType>
       <UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
     </Row>
     <Row>
@@ -4438,14 +5604,14 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_ResourceQuantityRequirements
   ║ 
   ║ TODO: This will be a major new game concept, requiring resource usage for   
   ║       a good portion of units. Primitive units will require much less.
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   --> 
   
   <!--
@@ -4478,18 +5644,34 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_Builds
   ║
   ║   
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   --> 
 
   <Unit_Builds>
 
+
+    <!-- UNIT_AUTOCHTHON -->
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <BuildType>BUILD_REMOVE_FOREST</BuildType>
+    </Row>
+
+
+    <!-- UNIT_GATHERER -->
+    <Row>
+      <UnitType>UNIT_GATHERER</UnitType>
+      <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+    </Row>
+
+
+    <!-- UNIT_LABORER -->
     <Row>
       <UnitType>UNIT_LABORER</UnitType>
       <BuildType>BUILD_FARM</BuildType>
@@ -4503,14 +5685,13 @@
       <BuildType>BUILD_REMOVE_FOREST</BuildType>
     </Row>
 
-    <Row>
-      <UnitType>UNIT_AUTOCHTHON</UnitType>
-      <BuildType>BUILD_REMOVE_FOREST</BuildType>
-    </Row>
+
+    <!-- UNIT_ROMAN_LEGION -->
     <Row>
       <UnitType>UNIT_ROMAN_LEGION</UnitType>
       <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
     </Row>
+
 
   </Unit_Builds>
 
@@ -4531,14 +5712,14 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Unit_UniqueNames
   ║
   ║   
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   --> 
 
   <Unit_UniqueNames>
@@ -4614,19 +5795,28 @@
 
 
   <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
+  ╔═════════════════════════════════════════════════════════════════════════════
   ║
   ║ Texts
   ║
   ║   
   ║
   ║
-  └─────────────────────────────────────────────────────────────────────────────
+  ╚═════════════════════════════════════════════════════════════════════════════
   --> 
 
   <Language_en_US>
 
 
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    │ Greats                                                                    
+    └───────────────────────────────────────────────────────────────────────────
+    -->
 
 
     <!-- UNIT_GREAT_LEADER -->
@@ -4653,6 +5843,15 @@
 
 
 
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    │ Leaders                                                                    
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+
     <!-- UNIT_ALPHA -->
     <Row Tag="TXT_KEY_UNIT_ALPHA_TITLE">
       <Text>Alpha Leader</Text>
@@ -4670,6 +5869,39 @@
       <Text>An Alpha Leader is slightly stronger and better than the typical unit it represents. It also provides to other units around them.</Text>
     </Row>
 
+    <!-- UNIT_PATRIARCH -->
+    <Row Tag="TXT_KEY_UNIT_PATRIARCH_TITLE">
+      <Text>Patriarch</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PATRIARCH_DESC">
+      <Text>Patriarch</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PATRIARCH_PEDIA">
+      <Text>Patriarch Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_PATRIARCH_STRATEGY">
+      <Text>Use your primate Patriarch to support other units or strike hard and early.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_PATRIARCH_HELP">
+      <Text>An Patriarch is slightly stronger and better than the typical unit it represents. It also provides to other units around them.</Text>
+    </Row>
+
+    <!-- UNIT_CHIEF -->
+    <Row Tag="TXT_KEY_UNIT_CHIEF_TITLE">
+      <Text>Chief</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CHIEF_DESC">
+      <Text>Chief</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CHIEF_PEDIA">
+      <Text>Chief Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_CHIEF_STRATEGY">
+      <Text>Chief Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CHIEF_HELP">
+      <Text>Chief Help</Text>
+    </Row>
 
 
 
@@ -4677,6 +5909,110 @@
 
 
 
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    │ Civilians                                                                    
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Settle
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+    <!-- UNIT_TRIBE_SPLIT -->
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_TITLE">
+      <Text>Tribe Split</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_DESC">
+      <Text>Tribe Split</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_PEDIA">
+      <Text>Tribe Split Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY">
+      <Text>Tribe Split Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_HELP">
+      <Text>Tribe Split Help</Text>
+    </Row>
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Work
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+    <!-- UNIT_GATHERER -->
+    <Row Tag="TXT_KEY_UNIT_GATHERER_TITLE">
+      <Text>Gatherer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GATHERER_DESC">
+      <Text>Gatherer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GATHERER_PEDIA">
+      <Text>Gatherer Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_GATHERER_STRATEGY">
+      <Text>Use the Gatherer to gain early game bonuses on flora resources. It is not always worth it to build and use the Gatherer. Weigh your options!</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GATHERER_HELP">
+      <Text>A Gatherer performs basic improvements in and around flora resources.</Text>
+    </Row>
+
+    <!-- UNIT_LABORER -->
+    <Row Tag="TXT_KEY_UNIT_LABORER_TITLE">
+      <Text>Laborer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_DESC">
+      <Text>Laborer</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_PEDIA">
+      <Text>Laborer Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_LABORER_STRATEGY">
+      <Text>Laborer Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LABORER_HELP">
+      <Text>Improves [ICON_FOOD] Food [ICON_PRODUCTION] Production and [ICON_GOLD] Gold by constructing Improvements on map tiles outside of Cities.[NEWLINE][NEWLINE]Cheap to train, but works slower than the Worker. May only construct very basic Improvements.</Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    │ Combat                                                                    
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Generic
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
     <!-- UNIT_AUSTRALOPITHECUS -->
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_TITLE">
@@ -4694,6 +6030,19 @@
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_HELP">
       <Text>Australopithecus Help</Text>
     </Row>
+
+
+
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Foot - Offense
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
 
     <!-- UNIT_AUTOCHTHON -->
     <Row Tag="TXT_KEY_UNIT_AUTOCHTHON_TITLE">
@@ -4716,6 +6065,37 @@
       <Text>Very weak (but cheap) early unit. Lacking in offense and defense except in forests. +25% [ICON_COMBAT] Offense and +50% [ICON_DEFENSE] defense in forests.</Text>
     </Row>
 
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_TITLE">
+      <Text>Caveman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_DESC">
+      <Text>Caveman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_PEDIA">
+      <Text>In the earliest times of humanity, the Homo Sapiens Sapiens often used to live in caves, which provided shelter and protection before the invention of hut and house building. Armed with rudimentary weapons, like clubs or stones, they fought small battles between communities, or amongst themselves.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_STRATEGY">
+      <Text>Take club, use club on enemy's head. All a Caveman needs to know.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_CAVEMAN_HELP">
+      <Text>A weak military unit.[NEWLINE][NEWLINE]Not very smart, but determined.</Text>
+    </Row>
+
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_TITLE">
+      <Text>Neanderthal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_DESC">
+      <Text>Neanderthal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_PEDIA">
+      <Text>Pedia Neanderthal</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_STRATEGY">
+      <Text>Excellent early game unit for Tundra, Hills, and Mountains. Weak in desert.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_HELP">
+      <Text>The Neandertahal receives a 15% [ICON_COMBAT] offensive bonus while in Tundra, Hills, or Mountains. Also suffers a 10% defensive bonus in deserts.</Text>
+    </Row>
 
 
 
@@ -4724,6 +6104,14 @@
 
 
 
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Foot - Defense
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
     <!-- UNIT_PROTECTOR -->
     <Row Tag="TXT_KEY_UNIT_PROTECTOR_TITLE">
@@ -4751,7 +6139,11 @@
 
 
 
-
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Sentinel
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
     <!-- UNIT_WATCHER -->
     <Row Tag="TXT_KEY_UNIT_WATCHER_TITLE">
@@ -4770,6 +6162,39 @@
       <Text>A Watcher is a sentinal unit, providing you with the typical sentinel bonsues. A watcher will have the advantage of great visiion but is weak in combat and slow in movement.</Text>
     </Row>
 
+    <!-- UNIT_LOOKOUT -->
+    <Row Tag="TXT_KEY_UNIT_LOOKOUT_TITLE">
+      <Text>Lookout</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LOOKOUT_DESC">
+      <Text>Lookout</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_LOOKOUT_PEDIA">
+      <Text>Lookout Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LOOKOUT_STRATEGY">
+      <Text>A Lookout is a dedicate unit assigned to be vigiliant and protect settlement. With its extra abilities, use this unit for early wanrinings.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_LOOKOUT_HELP">
+      <Text>The tribe assigns units to be Lookouts. A Lookout will provide bonsues to monitor your settlemnent border along with the standard sentinel bonsues.</Text>
+    </Row>
+
+    <!-- UNIT_SENTINEL -->
+    <Row Tag="TXT_KEY_UNIT_SENTINEL_TITLE">
+      <Text>Sentinal</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SENTINEL_DESC">
+      <Text>Sentinal</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_SENTINEL_PEDIA">
+      <Text>Sentinal Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SENTINEL_STRATEGY">
+      <Text>Sentinal Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SENTINEL_HELP">
+      <Text>Sentinal Help</Text>
+    </Row>
 
 
 
@@ -4780,6 +6205,14 @@
 
 
 
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Skirmish
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
 
     <!-- UNIT_RUNNER -->
@@ -4799,6 +6232,39 @@
       <Text>A Runner is used to perform hit-and-run attacks. Due to it's weak combat, a single Runner may not be an effective combatant, but a group of runners could quickly take out dangerous oponents.</Text>
     </Row>
 
+    <!-- UNIT_RAIDER -->
+    <Row Tag="TXT_KEY_UNIT_RAIDER_TITLE">
+      <Text>Raider</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_RAIDER_DESC">
+      <Text>Raider</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_RAIDER_PEDIA">
+      <Text>Raider Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_RAIDER_STRATEGY">
+      <Text>Raider Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_RAIDER_HELP">
+      <Text>Raider Help</Text>
+    </Row>
+
+    <!-- UNIT_OUTRIDER -->
+    <Row Tag="TXT_KEY_UNIT_OUTRIDER_TITLE">
+      <Text>Outrider</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OUTRIDER_DESC">
+      <Text>Outrider</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_OUTRIDER_PEDIA">
+      <Text>Outrider Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OUTRIDER_STRATEGY">
+      <Text>Outrider Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_OUTRIDER_HELP">
+      <Text>Outrider Help</Text>
+    </Row>
 
 
 
@@ -4808,6 +6274,14 @@
 
 
 
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Vanguard
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
 
     <!-- UNIT_BUSHMAN -->
@@ -4827,6 +6301,54 @@
       <Text>The early and primitive bushman takes advantage of the environment and is a powerful foe as an avanced guard. Mutli-talented, he can do well on his own.</Text>
     </Row>
 
+    <!-- UNIT_INITIATE -->
+    <Row Tag="TXT_KEY_UNIT_INITIATE_TITLE">
+      <Text>Initiate</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_INITIATE_DESC">
+      <Text>Initiate</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_INITIATE_PEDIA">
+      <Text>Initiate Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_INITIATE_STRATEGY">
+      <Text>Initiate Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_INITIATE_HELP">
+      <Text>Initiate Help</Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Siege
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+    <!-- UNIT_SAVAGE -->
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_TITLE">
+      <Text>Savage</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_DESC">
+      <Text>Savage</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_PEDIA">
+      <Text>In times when weapons were dull and military strategy was virtually non-existent, muscle power was the main tool of winning a fight. Especially strong and big men made good front-line warriors, who often fought in reckless rage. Nearly unstoppable when attacking, the Berserk fighters often did not watch their backs and were susceptible to strategic attacks.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_STRATEGY">
+      <Text>The Savage is particularly useful when attacking enemy settlements. Armed with half a tree as weapon, he can easily bring down enemy fortifications.[NEWLINE]Protect it from attacks, as it is weak when defending.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_HELP">
+      <Text>An exceptionally big and strong human specimen with a bad temper.[NEWLINE][NEWLINE]Receives a bonus when attacking Cities, but also a penalty when defending.</Text>
+    </Row>
 
 
 
@@ -4839,6 +6361,15 @@
 
 
 
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Ranged
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
 
     <!-- UNIT_ROCK_THROWER -->
@@ -4857,6 +6388,40 @@
     <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_HELP">
       <Text>The Rock Thrower is the earliest ranged unit with only a one-tile range. This means getting up close, but at least there is no instant retaliation.</Text>
     </Row>
+
+    <!-- UNIT_SPEAR_HUNTER -->
+    <Row Tag="TXT_KEY_UNIT_SPEAR_HUNTER_TITLE">
+      <Text>Spear Hunter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SPEAR_HUNTER_DESC">
+      <Text>Spear Hunter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SPEAR_HUNTER_PEDIA">
+      <Text>Spear Hunter Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SPEAR_HUNTER_STRATEGY">
+      <Text>Use the Spear Hunter in close proximity to your settlement to provide both a good defensive ranged unit and a resource acquiring unit.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SPEAR_HUNTER_HELP">
+      <Text>The multi-skilled Spear Hunter can take advantage of his spear throwing skills in combat or to hunt animals and provide for the settlement.</Text>
+    </Row>  
+
+    <!-- UNIT_SLINGER -->
+    <Row Tag="TXT_KEY_UNIT_SLINGER_TITLE">
+      <Text>Slinger</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SLINGER_DESC">
+      <Text>Slinger</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SLINGER_PEDIA">
+      <Text>Slinger Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SLINGER_STRATEGY">
+      <Text>Slinger Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SLINGER_HELP">
+      <Text>Slinger Help</Text>
+    </Row>       
 
     <!-- UNIT_PRIMITIVE_ARCHER -->
     <Row Tag="TXT_KEY_UNIT_PRIMITIVE_ARCHER_TITLE">
@@ -4878,6 +6443,22 @@
       <Text>A weak early ranged unit, using the most primitive of bows. Cheap and self-sufficient.</Text>
     </Row>
 
+    <!-- UNIT_AXE_THROWER -->
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_TITLE">
+      <Text>Axe Thrower</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_DESC">
+      <Text>Axe Thrower</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_PEDIA">
+      <Text>Ace Thrower Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_STRATEGY">
+      <Text>The Axe Thrower is a Classical era range unit wich is an alternative to Composite Bowman. It has a better combat strength and have a free promotion that increase his defense against ranged attack, but has only 1 starting range (can increase with promotions). His promotion choices is those of range units.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_HELP">
+      <Text>Axe Thrower Help</Text>
+    </Row>
 
 
 
@@ -4890,6 +6471,137 @@
 
 
 
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Support
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+    <!-- UNIT_SHAMAN -->
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_TITLE">
+      <Text>Shaman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_DESC">
+      <Text>Shaman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_PEDIA">
+      <Text>After the discovery of Fire as a beneficial tool for cooking and surviving harsh winters, Man also found out about its destructive power. Fire was - and still is - a powerful element that can burn skin and turn buildings to cinders. For millennia, armies have made use of torches and burning projectiles of all sizes against their enemies.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_STRATEGY">
+      <Text>A useful unit for all purposes, the Shaman is the second ranged unit in the Prehistoric Era. Use it to burn down cities or attack enemies, but protect it from melee attacks.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_SHAMAN_HELP">
+      <Text>Prehistoric ranged unit, throws burning torches at the enemy. Has a short range.</Text>
+    </Row> 
+
+    <!-- UNIT_THINKER -->
+    <Row Tag="TXT_KEY_UNIT_THINKER_TITLE">
+      <Text>Thinker</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_THINKER_DESC">
+      <Text>Thinker</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_THINKER_PEDIA">
+      <Text>Thinker Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_THINKER_STRATEGY">
+      <Text>Thinker Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_THINKER_HELP">
+      <Text>Thinker Help</Text>
+    </Row> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Special
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+    <!-- UNIT_HUNTER -->
+    <Row Tag="TXT_KEY_UNIT_HUNTER_TITLE">
+      <Text>HUnter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HUNTER_DESC">
+      <Text>HUnter</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_HUNTER_PEDIA">
+      <Text>HUnter Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HUNTER_STRATEGY">
+      <Text>Use your Hunter to improve local resources but also to attach enemies as they come near your settlements.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HUNTER_HELP">
+      <Text>A Hunter is a multi-purpose unit with the ability to improve resources and attack enemies at range.</Text>
+    </Row>
+
+    <!-- UNIT_KEEPER -->
+    <Row Tag="TXT_KEY_UNIT_KEEPER_TITLE">
+      <Text>Keeper</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KEEPER_DESC">
+      <Text>Keeper</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_KEEPER_PEDIA">
+      <Text>Keeper Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KEEPER_STRATEGY">
+      <Text>The Keeper of the fire is essential to give other units bonuses and protect your settlement.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_KEEPER_HELP">
+      <Text>The Keeper of the fire will give bonuses to the Shaman and other Ranged units. Keepers also give bonuses to your village.</Text>
+    </Row>
+
+    <!-- UNIT_HARBINGER -->
+    <Row Tag="TXT_KEY_UNIT_HARBINGER_TITLE">
+      <Text>Harbinger</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HARBINGER_DESC">
+      <Text>Harbinger</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_HARBINGER_PEDIA">
+      <Text>Harbinger Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HARBINGER_STRATEGY">
+      <Text>Harbinger Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_HARBINGER_HELP">
+      <Text>Harbinger Help</Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Recon
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
 
 
     <!-- UNIT_WANDERER -->
@@ -4909,71 +6621,140 @@
       <Text>A wanderer unit has better movement that his early counterparts. He is very weak, so be careful.</Text>
     </Row> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Row Tag="TXT_KEY_UNIT_SHAMAN_TITLE">
-      <Text>Shaman</Text>
+    <!-- UNIT_NOMAD_WANDERER -->
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_TITLE">
+      <Text>Nomad Wanderer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_SHAMAN_DESC">
-      <Text>Shaman</Text>
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_DESC">
+      <Text>Nomad Wanderer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_SHAMAN_PEDIA">
-      <Text>After the discovery of Fire as a beneficial tool for cooking and surviving harsh winters, Man also found out about its destructive power. Fire was - and still is - a powerful element that can burn skin and turn buildings to cinders. For millennia, armies have made use of torches and burning projectiles of all sizes against their enemies.</Text>
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_PEDIA">
+      <Text>Nomad Wanderer Pedia</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_SHAMAN_STRATEGY">
-      <Text>A useful unit for all purposes, the Shaman is the second ranged unit in the Prehistoric Era. Use it to burn down cities or attack enemies, but protect it from melee attacks.</Text>
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_STRATEGY">
+      <Text>Nomad Wanderer Strategy</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_SHAMAN_HELP">
-      <Text>Prehistoric ranged unit, throws burning torches at the enemy. Has a short range.</Text>
-    </Row>  
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_HELP">
+      <Text>Nomad  WAnderer Help</Text>
+    </Row> 
 
-    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_TITLE">
-      <Text>Axe Thrower</Text>
+    <!-- UNIT_ADVENTURER -->
+    <Row Tag="TXT_KEY_UNIT_ADVENTURER_TITLE">
+      <Text>Adventurer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_DESC">
-      <Text>Axe Thrower</Text>
+    <Row Tag="TXT_KEY_UNIT_ADVENTURER_DESC">
+      <Text>Adventurer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_PEDIA">
-      <Text>Ace Thrower Pedia</Text>
+    <Row Tag="TXT_KEY_UNIT_ADVENTURER_PEDIA">
+      <Text>Adventurer Pedia</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_STRATEGY">
-      <Text>The Axe Thrower is a Classical era range unit wich is an alternative to Composite Bowman. It has a better combat strength and have a free promotion that increase his defense against ranged attack, but has only 1 starting range (can increase with promotions). His promotion choices is those of range units.</Text>
+    <Row Tag="TXT_KEY_UNIT_ADVENTURER_STRATEGY">
+      <Text>Adventurer Strategy</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_AXE_THROWER_HELP">
-      <Text>Axe Thrower Help</Text>
-    </Row>
+    <Row Tag="TXT_KEY_UNIT_ADVENTURER_HELP">
+      <Text>Adventurer Help</Text>
+    </Row> 
 
-    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_TITLE">
-      <Text>Neanderthal</Text>
+
+    <!-- UNIT_SCOUT -->
+    <!-- TODO: Keep old text for now -->
+
+
+    <!-- 
+    WARN:
+    This unit seems to already exist in DB: Localization-Expansion Brave New World.db 
+    But only:
+    - TXT_KEY_UNIT_EXPLORER
+    - TXT_KEY_UNIT_EXPLORER_STRATEGY
+    -->
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_TITLE">
+      <Text>Explorer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_DESC">
-      <Text>Neanderthal</Text>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_DESC">
+      <Text>Explorer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_PEDIA">
-      <Text>Pedia Neanderthal</Text>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_PEDIA">
+      <Text>Scouts form the eyes and ears of early civilizations. These fleet-footed warriors are not supposed to engage with enemy forces - they're supposed to find the lay of the land, discovering any potential threats or treasures. A civilization that doesn't know what's going on in the world around it is blind to both peril and opportunity.</Text>
     </Row>    
-    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_STRATEGY">
-      <Text>Excellent early game unit for Tundra, Hills, and Mountains. Weak in desert.</Text>
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_HELP">
+      <Text>Much faster and stronger than the Scout, the mounted Explorer is the perfect tool to discover the world for your civilization. Receives +2 Sight while embarked.</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_NEANDERTHAL_HELP">
-      <Text>The Neandertahal receives a 15% [ICON_COMBAT] offensive bonus while in Tundra, Hills, or Mountains. Also suffers a 10% defensive bonus in deserts.</Text>
-    </Row>
+
+    <!--
+    <Row Tag="TXT_KEY_UNIT_EXPLORER_STRATEGY">
+      <Text>Just like the Scout, the Explorer can move through difficult terrain without penalty. It is very fast and efficient at exploring, but rather weak as well.</Text>
+    </Row>    
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
 
     <Row Tag="TXT_KEY_UNIT_BARB_ALPHA_TITLE">
       <Text>Barb Alpha</Text>
@@ -4991,7 +6772,6 @@
       <Text>Help Barb Alpha</Text>
     </Row>
 
-
     <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_TITLE">
       <Text>Bear Warrior</Text>
     </Row>
@@ -4999,33 +6779,14 @@
       <Text>Bear Warrior</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_PEDIA">
-      <Text>Pedia Bear Warrior</Text>
+      <Text>Bear Warrior Pedia</Text>
     </Row>    
     <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_STRATEGY">
-      <Text>Strategy Bear Warrior</Text>
+      <Text>Bear Warrior Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_BEAR_WARRIOR_HELP">
-      <Text>The Bear Warrior Help</Text>
+      <Text>Bear Warrior Help</Text>
     </Row> 
-
-    <Row Tag="TXT_KEY_UNIT_CAVEMAN_TITLE">
-      <Text>Caveman</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_CAVEMAN_DESC">
-      <Text>Caveman</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_CAVEMAN_PEDIA">
-      <Text>In the earliest times of humanity, the Homo Sapiens Sapiens often used to live in caves, which provided shelter and protection before the invention of hut and house building. Armed with rudimentary weapons, like clubs or stones, they fought small battles between communities, or amongst themselves.</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_UNIT_CAVEMAN_STRATEGY">
-      <Text>Take club, use club on enemy's head. All a Caveman needs to know.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_CAVEMAN_HELP">
-      <Text>A weak military unit.[NEWLINE][NEWLINE]Not very smart, but determined.</Text>
-    </Row>
-
-
-
 
     <Row Tag="TXT_KEY_UNIT_SCOUT_ONE_TITLE">
       <Text>Scout One</Text>
@@ -5076,40 +6837,20 @@
     </Row>     
 
 
-    <Row Tag="TXT_KEY_UNIT_LABORER_TITLE">
-      <Text>Laborer</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_LABORER_DESC">
-      <Text>Laborer</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_LABORER_PEDIA">
-      <Text>Laborer Pedia</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_UNIT_LABORER_STRATEGY">
-      <Text>Laborer Strategy</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_LABORER_HELP">
-      <Text>Improves [ICON_FOOD] Food [ICON_PRODUCTION] Production and [ICON_GOLD] Gold by constructing Improvements on map tiles outside of Cities.[NEWLINE][NEWLINE]Cheap to train, but works slower than the Worker. May only construct very basic Improvements.</Text>
-    </Row>
 
 
-    <!--
-    <Row Tag="TXT_KEY_UNIT_EXPLORER_TITLE">
-      <Text>Explorer</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_EXPLORER_DESC">
-      <Text>Explorer</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_EXPLORER_PEDIA">
-      <Text>Explorer Pedia</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_UNIT_EXPLORER_STRATEGY">
-      <Text>Explorer Strategy</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_EXPLORER_HELP">
-      <Text>Explorer Help</Text>
-    </Row>
-    -->
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
     <Row Tag="TXT_KEY_GREAT_LEADER_UFF">
       <Text>Leader Uff</Text>
@@ -5196,44 +6937,44 @@ _║█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀�
 ░║                                                                             ║
 ░║ COMPLETE LIST                                                               ║
 ░║                                                                             ║
-░║ UNITAI_ADMIRAL
-░║ UNITAI_ARCHAEOLOGIST
-░║ UNITAI_ARTIST
-░║ UNITAI_ASSAULT_SEA
-░║ UNITAI_ATTACK
-░║ UNITAI_ATTACK_AIR
-░║ UNITAI_ATTACK_SEA
-░║ UNITAI_CARRIER_AIR
-░║ UNITAI_CARRIER_SEA
-░║ UNITAI_CITY_BOMBARD
-░║ UNITAI_CITY_SPECIAL
-░║ UNITAI_COUNTER
-░║ UNITAI_DEFENSE
-░║ UNITAI_DEFENSE_AIR
-░║ UNITAI_ENGINEER
-░║ UNITAI_ESCORT_SEA
-░║ UNITAI_EXPLORE
-░║ UNITAI_EXPLORE_SEA
-░║ UNITAI_FAST_ATTACK
-░║ UNITAI_GENERAL
-░║ UNITAI_ICBM
-░║ UNITAI_INQUISITOR
-░║ UNITAI_MERCHANT
-░║ UNITAI_MISSILE_AIR
-░║ UNITAI_MISSILE_CARRIER_SEA
-░║ UNITAI_MISSIONARY
-░║ UNITAI_MUSICIAN
-░║ UNITAI_PARADROP
-░║ UNITAI_PIRATE_SEA
-░║ UNITAI_PROPHET
-░║ UNITAI_RANGED
-░║ UNITAI_RESERVE_SEA
-░║ UNITAI_SCIENTIST
-░║ UNITAI_SETTLE
-░║ UNITAI_SPACESHIP_PART
-░║ UNITAI_WORKER
-░║ UNITAI_WORKER_SEA
-░║ UNITAI_WRITER
+░║ UNITAI_ADMIRAL                                                              
+░║ UNITAI_ARCHAEOLOGIST                                                        
+░║ UNITAI_ARTIST                                                               
+░║ UNITAI_ASSAULT_SEA                                                          
+░║ UNITAI_ATTACK                                                               
+░║ UNITAI_ATTACK_AIR                                                           
+░║ UNITAI_ATTACK_SEA                                                           
+░║ UNITAI_CARRIER_AIR                                                          
+░║ UNITAI_CARRIER_SEA                                                          
+░║ UNITAI_CITY_BOMBARD                                                         
+░║ UNITAI_CITY_SPECIAL                                                         
+░║ UNITAI_COUNTER                                                              
+░║ UNITAI_DEFENSE                                                              
+░║ UNITAI_DEFENSE_AIR                                                          
+░║ UNITAI_ENGINEER                                                             
+░║ UNITAI_ESCORT_SEA                                                           
+░║ UNITAI_EXPLORE                                                              
+░║ UNITAI_EXPLORE_SEA                                                          
+░║ UNITAI_FAST_ATTACK                                                          
+░║ UNITAI_GENERAL                                                              
+░║ UNITAI_ICBM                                                                 
+░║ UNITAI_INQUISITOR                                                           
+░║ UNITAI_MERCHANT                                                             
+░║ UNITAI_MISSILE_AIR                                                          
+░║ UNITAI_MISSILE_CARRIER_SEA                                                  
+░║ UNITAI_MISSIONARY                                                           
+░║ UNITAI_MUSICIAN                                                             
+░║ UNITAI_PARADROP                                                             
+░║ UNITAI_PIRATE_SEA                                                           
+░║ UNITAI_PROPHET                                                              
+░║ UNITAI_RANGED                                                               
+░║ UNITAI_RESERVE_SEA                                                          
+░║ UNITAI_SCIENTIST                                                            
+░║ UNITAI_SETTLE                                                               
+░║ UNITAI_SPACESHIP_PART                                                       
+░║ UNITAI_WORKER                                                               
+░║ UNITAI_WORKER_SEA                                                           
+░║ UNITAI_WRITER                                                               
 ░║                                                                             ║
 ░║                                                                             ║
 ░║                                                                             ║
@@ -5372,7 +7113,7 @@ _║█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀�
 ░║                                                                             ║
 ░║                                                                             ║
 ░╚═════════════════════════════════════════════════════════════════════════════╝ 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░|
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 
 ==============================

@@ -1,0 +1,11 @@
+<Asset>
+  <Mesh file="Marble.gr2" source="Max" />
+  <Texture file="Generic_Grey_8.dds" source="Max" />
+  <Texture file="Marble_ore_Decal_H.dds" source="Max" />
+  <Texture file="Resource_Irradiance.dds" source="Max" />
+  <Texture file="resource_Environment_Sharp.dds" source="Max" />
+  <Texture file="resources_Environment_Dull.dds" source="Max" />
+  <Texture file="Marble_Decal_DIFF.dds" source="Max" />
+  <Texture file="Marble_ore_DIFF.dds" source="Max" />
+  <Texture file="Marble_ore_SREF.dds" source="Max" />
+</Asset>

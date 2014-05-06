@@ -25,12 +25,14 @@
     
     <!-- TECH REVEALS -->
 
+
+
     
-    <!-- Tech: Simple Tools -->
+    <!-- TECH_ADAPTED_TOOLS -->
 
     <Update>
       <Where Type="RESOURCE_STONE" />
-      <Set TechReveal="TECH_SIMPLE_TOOLS" />
+      <Set TechReveal="TECH_ADAPTED_TOOLS" />
     </Update>
 
 

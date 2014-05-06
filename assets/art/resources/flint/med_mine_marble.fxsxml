@@ -1,0 +1,4 @@
+<Asset>
+  <Mesh file="MED_Mine_Marble.gr2" source="Max" />
+  <Texture file="MID_Quarry_Hill_DIFF.dds" source="Max" />
+</Asset>

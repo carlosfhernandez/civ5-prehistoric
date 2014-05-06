@@ -552,7 +552,6 @@ LEGEND
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Scavenging                                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   @ u-Autochthon                                    │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Laborer                              FIX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Twiggy (Homo Habilis)                TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Bone Pile                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -610,8 +609,8 @@ LEGEND
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Migration                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   * u-Tribe Branch (t:settle)                *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Savage (t:siege)                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Tribe Split (t:settle)                 *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   @ u-Savage (t:siege)                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -631,6 +630,7 @@ LEGEND
 │ Family Ties                                                         │   │  │  │  │  │  │  │  │  │  │  │  │         
 │                   * u-Lookout (t:sentinel)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   * u-Patriarch (t:leader)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Matriarch (t:leader)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Chief Upgrade                        ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Burial Site                           TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -655,9 +655,9 @@ LEGEND
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Fire                                                                │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Shaman                               MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Shaman                               MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Campfire                  (+1G,H)      M-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   * u-Keeper                                        │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Keeper (Special)                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Gesher Benot Ya’aqov                 TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -676,7 +676,6 @@ LEGEND
 │                     b-Storage Pit (+1F)                     TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Lookout Tree                          TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   * u-Gatherer (pre-Laborer)                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   * u-Neanderthal (t:unk)                  MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -718,7 +717,7 @@ LEGEND
 │ 10                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Coordinated Hunting                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Axe Thrower                          MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Axe Thrower (:ranged)                MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Meat Rack                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -726,7 +725,7 @@ LEGEND
 │ Orienteering                                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Lookout                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Hide Rack                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Bear Warrior                         MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Raider[Bear] (:skirmish)             MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -739,20 +738,20 @@ LEGEND
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Cooking:                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-FirePit (Hearth)                     MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ? u-Neanderthal                          MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Neanderthal (t:foot-off-heavy)       MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Symbolic Communication                                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Wards                                 TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ! u-                                     ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Outrider (t:skirmish)                ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Gobekli Tepe                         TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Planning                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   * u-Thinker (t:support)                    *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   * u-Raider (t:skirmisher)                  *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Initiate (:vanguard)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     c-Luxury Hut                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Village Alert                         TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Picket                                TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -770,7 +769,7 @@ LEGEND
 │ 11                                                                  │ A │G │H │P │S │C │F │Z │T │X │I │R │ W
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Collaborative Hunting                                               │   │  │  │  │  │  │  │  │  │  │  │  │ 
-│                   * u-Sentinel (t:sentinel)                  *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Sentinel (:sentinel)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Le Mas d'Azil                        TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -786,7 +785,7 @@ LEGEND
 │                     r-Crab                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Fish                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Skara Brae                               TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   * u-Atlaltlist                             *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Atlatlist                              *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Blubber Worker                        TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -795,6 +794,7 @@ LEGEND
 │                     b-Food Storage (+1F)                   MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     {Must have Hunter or Gatherer unit}             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     n-Raft                                          │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   * u-Laborer                              FIX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Carnac Stones                        TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Defensive Ditches                        TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -824,8 +824,8 @@ LEGEND
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Archery:                                                            │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   ` u-Archer                                        │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ` u-#Slinger                                      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                   ` u-#Bowman                                       │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   @ u-#Slinger                                      │   │  │  │  │  │  │  │  │  │  │  │  │
+│                   @ u-#Bowman                                       │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Temple of Artemis                  ALTER-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -1603,7 +1603,7 @@ LEGEND
     <Row>
       <Type>TECH_HUNTING_GATHERING</Type>
       <Cost>12</Cost>
-      <Description>TXT_KEY_TECH_HUNTING_GATHERING_TITLE</Description>
+      <Description>TXT_KEY_TECH_HUNTING_GATHERING_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_HUNTING_GATHERING_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_HUNTING_GATHERING_HELP</Help>
       <Quote>TXT_KEY_TECH_HUNTING_GATHERING_QUOTE</Quote>
@@ -3701,8 +3701,9 @@ LEGEND
 
 
 
-
-
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_DESC">
+      <Text>Hunting</Text>
+    </Row>
     <!--
     <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_TITLE">
       <Text>Hunting</Text>

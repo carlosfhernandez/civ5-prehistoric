@@ -11,6 +11,48 @@
   ║ UNIT PROMOTIONS
   ║
   ║
+  ║
+  ║ 
+  ╟───Combat Type Unit
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ╟───Upgrades
+  ║
+  ║
+  ║
+  ║   - Weapons
+  ║
+  ║
+  ║
+  ║   - Armor
+  ║
+  ║
+  ║
+  ║   - Other
+  ║
+  ║
+  ║
+  ║
+  ╟───Wonders
+  ║
+  ║
+  ║
+  ║
+  ╟───Buildings
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
   ║ CannotBeChosen                          SameTileHealChange                    
   ║ LostWithUpgrade                         AdjacentTileHealChange                
   ║ NotWithUpgrade                          EnemyDamageChance                     
@@ -89,6 +131,36 @@
   ║ - PEDIA_ATTRIBUTES
   ║
   ║ - PEDIA_COMBAT_CLASS
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
   ║
   ║
   ║
