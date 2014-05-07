@@ -47,6 +47,36 @@ Table of Contents
 # Prehistoric Mod
 
 
+## Eras
+
+```
+7.2.4. Paleocene [66M - 56M]
+7.2.5. Eocene [56M - 34M]
+7.2.6. Oligocene [34M - 23M BC]
+7.2.6.1. Old World Monkeys, New World Monkeys and the First Apes
+7.2.7. Miocene "Age of Primates" [23M - 5.3M BC]
+7.2.8. Pliocene [5.3M - 2.6M]
+7.2.8.1 Climate
+7.2.8.2 Paleogeography
+7.2.8.3 Flora
+7.2.8.4 Fauna
+7.2.9. Paleolithic: "Old Stone Age" [2.6M - 20K BC]
+7.2.9.1. Lower Paleolithic [2.6M - 300K BC]
+7.2.9.2. Middle Paleolithic [300K - 50K BC]
+7.2.9.3. Upper Paleolithic [50K - 20K BC]
+7.2.9.3.1. Tech Details
+7.2.9.3.1.1. Idols / Venus Figurines  - Notable
+7.2.9.3.1.2. Other
+7.2.10. Mesolithic: "Middle Stone Age" [20K - 10K BC]
+7.2.11. Neolithic "New Stone Age" [10,000 BC - 3600 BC]
+Unassigned Stone Age
+7.2.12. Copper Age (Chalcolithic) [3600 - 2600 BC]
+7.2.13. Bronze Age [2600 - 1200 BC]
+7.2.14. Iron Age or Classical Era [1200 BC - 600 AD]
+```
+
+
+
 ## Units
 
 
