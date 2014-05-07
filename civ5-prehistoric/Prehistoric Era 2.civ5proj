@@ -5,7 +5,7 @@
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
     <Name>!Prehistoric Era (BNW)</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>63</ModVersion>
+    <ModVersion>14</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>[COLOR_POSITIVE_TEXT](v0.2.10a)[ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years. New techs, units, buildings, wonders, and more ...</Teaser>
     <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
@@ -94,7 +94,17 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Core/Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Core/GoodyHuts.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Core/Combats.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -224,6 +234,8 @@
     <Folder Include="Art\Atlas\Flag\" />
     <Folder Include="Art\Atlas\Icon\" />
     <Folder Include="Art\Atlas\Beliefs" />
+    <Folder Include="Art\Atlas\Features" />
+    <Folder Include="Art\Atlas\Policies" />
     <Folder Include="Art\Atlas\Resources" />
     <Folder Include="Art\Atlas\Terrain" />
     <Folder Include="Art\Atlas\Promotions\" />
@@ -236,6 +248,9 @@
     <Folder Include="Art\Improvements\BarbVillage2" />
     <Folder Include="Art\Improvements\BarbVillage3" />
     <Folder Include="Art\Improvements\Outpost" />
+    <Folder Include="Art\Buildings" />
+    <Folder Include="Art\Features" />
+    <Folder Include="Art\Terrain" />
     <Folder Include="Art\Resources\" />
     <Folder Include="Art\Resources\Berries\" />
     <Folder Include="Art\Resources\Lumber\" />
@@ -2073,6 +2088,14 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Core\Terrain.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Core\Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Core\Combats.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
