@@ -1267,6 +1267,33 @@
   ║                                                                             ║
   ║                                                                             ║
   ╚═════════════════════════════════════════════════════════════════════════════╝
+  
+
+
+
+
+  Combat, RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, 
+  PurchaseOnly, MoveAfterPurchase, Moves, Immobile, Range, BaseSightRange, Food, 
+  NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, 
+  PillagePrereqTech, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, 
+  FreePolicies, OneShotTourism, OneShotTourismPercentOthers, 
+  IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, 
+  CaptureWhileEmbarked, "PrereqTech TECH_*", "ObsoleteTech TECH_*", 
+  GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, 
+  AirInterceptRange, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, 
+  BaseBeakersTurnsToCount, BaseCultureTurnsToCount, RushBuilding, BaseHurry, 
+  HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, RemoveHeresy, 
+  ReligionSpreads, ReligiousStrength, FoundReligion, RequiresEnhancedReligion, 
+  ProhibitsSpread, CanBuyCityState, CombatLimit, RangeAttackOnlyInDomain, 
+  RangeAttackIgnoreLOS, Trade, NumExoticGoods, PolicyType, RangedCombatLimit, 
+  XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, 
+  ExtraMaintenanceCost, NoMaintenance, Unhappiness, 
+  "UnitArtInfo ART_DEF_UNIT_*", UnitArtInfoCulturalVariation, 
+  UnitArtInfoEraVariation, "ProjectPrereq PROJECT_*", 
+  "SpaceshipProject PROJECT_*", LeaderPromotion, LeaderExperience, 
+  DontShowYields, ShowInPedia, MoveRate
+
+
   -->    
   <Units>
     <!--

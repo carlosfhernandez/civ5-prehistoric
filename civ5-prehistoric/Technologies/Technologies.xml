@@ -1761,7 +1761,7 @@ LEGEND
     <Row>
       <Type>TECH_SCOUTING</Type>
       <Cost>16</Cost>
-      <Description>TXT_KEY_TECH_SCOUTING_TITLE</Description>
+      <Description>TXT_KEY_TECH_SCOUTING_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_SCOUTING_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_SCOUTING_HELP</Help>
       <Quote>TXT_KEY_TECH_SCOUTING_QUOTE</Quote>
@@ -3703,7 +3703,7 @@ LEGEND
 
     <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_DESC">
       <Text>Hunting</Text>
-    </Row>
+    </Row> 
     <!--
     <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_TITLE">
       <Text>Hunting</Text>
@@ -3816,6 +3816,11 @@ LEGEND
       <Text>Orienteering quote</Text>
     </Row>
 
+
+
+    <Row Tag="TXT_KEY_TECH_SCOUTING_DESC">
+      <Text>Scouting</Text>
+    </Row>
     <!--
     <Row Tag="TXT_KEY_TECH_SCOUTING_TITLE">
       <Text>Scouting</Text>

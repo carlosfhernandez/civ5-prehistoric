@@ -911,7 +911,7 @@
     <Row>
       <Type>BUILDING_TREE</Type>
       <BuildingClass>BUILDINGCLASS_TREE</BuildingClass>
-      <Cost>22</Cost>
+      <Cost>8</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_ADAPTIVE_RADIATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_TREE_DESC</Description>
@@ -2935,7 +2935,20 @@
 
 
 
-    <!-- Building Templates -->
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                        Building Templates                              │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
 
     <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_TITLE">
       <Text>title</Text>
@@ -2956,7 +2969,20 @@
 
 
 
-    <!-- Capitol Buildings -->
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                         Capitol Buildings                              │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
 
 
     <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_TITLE">
@@ -3033,6 +3059,14 @@
 
 
 
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                Capitol and Palace Upgrade Buildings                    │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
 
 
 
@@ -3041,17 +3075,44 @@
 
 
 
-    <!-- Buildings -->
 
 
+
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                               uildings                                 │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+    <!-- BUILDING_TREE -->
     <Row Tag="TXT_KEY_BUILDING_TREE_TITLE">
       <Text>Tree</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_DESC">
       <Text>Tree</Text>
     </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_HELP">
+      <Text>Tree Help</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_BUILDING_TREE_STRATEGY">
+      <Text>Tree Strategy</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_BUILDING_TREE_PEDIA">
+      <Text>Tree Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_LOOKOUT_ROCK -->
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_TITLE">
       <Text>Lookout Rock</Text>
     </Row>
@@ -3060,6 +3121,7 @@
     </Row>
 
 
+    <!-- BUILDING_SPRING_SOURCE -->
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_TITLE">
       <Text>Spring Source</Text>
     </Row>
@@ -3068,6 +3130,7 @@
     </Row>
 
 
+    <!-- BUILDING_GOLDEN_PATH -->
     <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_TITLE">
       <Text>Golden Path</Text>
     </Row>
@@ -3076,6 +3139,7 @@
     </Row>    
 
 
+    <!-- BUILDING_STONE_PILE -->
     <Row Tag="TXT_KEY_BUILDING_STONE_PILE_TITLE">
       <Text>Stone Pile</Text>
     </Row>
