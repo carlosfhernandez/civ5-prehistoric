@@ -44,62 +44,15 @@ alter game speed due to addition of eras if and only if the player starts in pre
       <Where Name="UNHAPPINESS_PER_POPULATION" />
     </Update>
     
+
+
+
+
+
     
 
-    <!-- Cities -->
-    <!--
-      BASE_CITY_GROWTH_THRESHOLD = 15 (base amount of food required for a city to grow)
-      CITY_GROWTH_MULTIPLIER
-      CITY_GROWTH_EXPONENT
-      FOOD_CONSUMPTION_PER_POPULATION
-      INITIAL_CITY_POPULATION = 1 
-      CITY_MIN_SIZE_FOR_SETTLERS
-      CITY_RING_1_MULTIPLIER
-      CITY_RING_2_MULTIPLIER
-      CITY_RING_3_MULTIPLIER
-      CITY_RING_4_MULTIPLIER
-      CITY_RING_5_MULTIPLIER
-      CITY_STRENGTH_DEFAULT
-      CITY_STRENGTH_POPULATION_CHANGE
-      CITY_STRENGTH_UNIT_DIVISOR
-      CITY_STRENGTH_TECH_BASE
-      CITY_STRENGTH_TECH_EXPONENT
-      CITY_STRENGTH_TECH_MULTIPLIER
-      CITY_STRENGTH_HILL_CHANGE
-      CITY_ATTACKING_DAMAGE_MOD
-      ATTACKING_CITY_MELEE_DAMAGE_MOD
-      CITY_ATTACK_RANGE
-      CAN_CITY_USE_INDIRECT_FIRE
-      CITY_RANGED_ATTACK_STRENGTH_MULTIPLIER
-      MIN_CITY_STRIKE_DAMAGE
-      CITY_CAPTURE_DAMAGE_PERCENT
-      CRAMPED_RANGE_FROM_CITY
-      CRAMPED_USABLE_PLOT_PERCENT
-      NUM_CITY_PLOTS 37
-      CITY_HOME_PLOT = 0
-      CITY_PLOTS_RADIUS = 3
-      CITY_PLOTS_DIAMETER = 7
-    -->
-    <Update>
-      <Set Value="0"/>
-      <Where Name="INITIAL_CITY_POPULATION"/>
-    </Update>
 
-    <Update>
-      <Set Value="0"/>
-      <Where Name="CITY_PLOTS_RADIUS"/>
-    </Update>
 
-    <Update>
-      <Set Value="0"/>
-      <Where Name="CITY_PLOTS_DIAMETER"/>
-    </Update>
-
-    <Update>
-      <Set Value="2"/>
-      <Where Name="NUM_CITY_PLOTS"/>
-    </Update>        
-    
 
 
   </Defines>

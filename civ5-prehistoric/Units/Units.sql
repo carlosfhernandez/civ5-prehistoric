@@ -6,12 +6,16 @@ ALTER TABLE Units       ADD GroupType           text DEFAULT null;
 
 
 
+-- 
+--
+-- Prerequisites
+--
+
 -- Add PrereqTechs for Warrior UnitClasses (other units are in xml).
 -- Some existing units have been redefined in xml.
-
-UPDATE Units
-SET PrereqTech='TECH_COOPERATION'
-WHERE Class='UNITCLASS_WARRIOR';
+--
+UPDATE Units    SET PrereqTech='TECH_COOPERATION'
+  WHERE Class='UNITCLASS_WARRIOR';
 
 --UPDATE Units
 --SET PrereqTech='TECH_SOCIAL_STRUCTURE'
@@ -19,10 +23,33 @@ WHERE Class='UNITCLASS_WARRIOR';
 
 
 
-UPDATE ArtDefine_StrategicView
-SET Asset='Caveman_sv.dds'
-WHERE StrategicViewType='ART_DEF_UNIT_BARBARIAN_EURO';
 
+-- 
+--
+-- Combat
+--
+
+UPDATE Units    SET Combat =      Combat * 2;
+UPDATE Units    SET CombatLimit = CombatLimit * 2;
+UPDATE Units    Set Cost =        Cost * 1.5;
+
+
+
+
+
+
+
+
+
+--
+--
+-- Art 
+-- 
+-- 
+
+
+UPDATE ArtDefine_StrategicView SET Asset='Caveman_sv.dds'
+  WHERE StrategicViewType='ART_DEF_UNIT_BARBARIAN_EURO';
 
 
 
@@ -31,6 +58,8 @@ ALTER TABLE ArtDefine_StrategicView         ADD isNew       boolean DEFAULT 1;
 ALTER TABLE ArtDefine_UnitInfos             ADD isNew       boolean DEFAULT 1;
 ALTER TABLE ArtDefine_UnitInfoMemberInfos   ADD isNew       boolean DEFAULT 1;
 ALTER TABLE ArtDefine_UnitMemberInfos       ADD isNew       boolean DEFAULT 1;
+
+
 
 /*
 

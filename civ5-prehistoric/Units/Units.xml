@@ -248,6 +248,7 @@
   ║
   ║     - UNITCLASS_BUSHMAN
   ║     - UNITCLASS_INITIATE
+  ║     - Rhino Riders
   ║     - ++
   ║     - Vanguard
   ║     - Gladiator
@@ -277,7 +278,9 @@
   ║     - UNITCLASS_SLINGER
   ║     - UNITCLASS_AXE_THROWER
   ║     - UNITCLASS_WOOMERIST ***
+  ║     - Ox Cart Archer
   ║     - Kylist
+  ¦     - scythed chariots
   ║     - Atlatlist *** [The REAL unit]
   ║     - ++
   ║     - Gastraphete (alexander)
@@ -397,15 +400,42 @@
   ╟───Combat (Sea)
   ║
   ║
-  ║
-  ║
-  ║
-  ║
-  ║
-  ║
-  ║
-  ║
-  ║
+  ║   - Log
+  ║   - Raft
+  ║   - Papyrus Raft
+  ║   - Reed Raft
+  ║   - Bamboo Raft
+  ║   - Sickle Boat
+  ║   - Skin Boat
+  ║   - Log Boat  
+  ║   - Dhow  
+  ║   - Coracle
+  ║   - Kayak
+  ║   - Junk  
+  ║   - Outrigger  
+  ║   - Orinico  
+  ║   - Dugout Canoe  
+  ║   - Clinker Boat
+  ║   - Bitumen (Asphalt) Boat
+  ║   - GableBoat
+  ║   - Yoal (Ness Yoal)
+  ║   - Oselvar
+  ║   - River Barge
+  ║   - Reed Boat
+  ║   - Khufu's Solar Boat
+  ║   - Philistine man of war
+  ║   - Liburnian
+  ║   - Unireme
+  ║   - Bireme
+  ║   - Trireme
+  ║   - Abydos Boats
+  ║   - Galley (oared warship)
+  ║     - Berlinn
+  ║     - Balinger
+  ║     - Lantern Galley, Half-Galley, Galiot, Fustas, Brigantines, Fregatas
+  ║   - Cog
+  ║   - Nef
+  ║   
   ║
   ║
   ║
@@ -926,40 +956,44 @@
 
 
   <!--
-  ╔═════════════════════════════════════════════════════════════════════════════╗
-  ║                                                                             ║
-  ║ Units                                                                       ║
-  ║                                                                             ║
-  ║                                                                             ║
-  ║                                                                             ║
-  ║                                                                             ║
-  ║                                                                             ║
-  ╟─────────────────────────────────────────────────────────────────────────────╢
-  ║ UnitClasses                                                                 ║
-  ╟─────────────────────────────────────────────────────────────────────────────╢
-  ║
-  ║
-  ║
-  ║
-  ╟──────────────────────────────────── 
-  ║   Greats
-  ║
-  ║   - UNITCLASS_GREAT_LEADER
-  ║     + UNIT_GREAT_LEADER
-  ║
-  ║
-  ╟────────────────────────────────────
-  ║   Leaders
-  ║
-  ║   - UNITCLASS_ALPHA
-  ║     + UNIT_ALPHA
-  ║   - UNITCLASS_PATRIARCH
-  ║     + UNIT_PATRIARCH
-  ║   - UNITCLASS_CHIEF
-  ║     + UNIT_CHIEF
-  ║   
-  ║ 
-  ║
+  ╔════════════════════════════════════════════════════════════════════════════╗
+  ║█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█║
+  ║▌                                                                          ▐║
+  ║▌ Units                                                                    ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║ Units + UnitClasses                                                        ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ╟────────────────────────────────────                                        ║
+  ║   Greats                                                                   ║
+  ║                                                                            ║
+  ║   - UNITCLASS_GREAT_LEADER                                                 ║
+  ║     + UNIT_GREAT_LEADER                                                    ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ╟────────────────────────────────────                                        ║
+  ║   Leaders                                                                  ║
+  ║                                                                            ║
+  ║   - UNITCLASS_ALPHA                                                        ║
+  ║     + UNIT_ALPHA                                                           ║
+  ║   - UNITCLASS_PATRIARCH                                                    ║
+  ║     + UNIT_PATRIARCH                                                       ║
+  ║   - UNITCLASS_CHIEF                                                        ║
+  ║     + UNIT_CHIEF                                                           ║
+  ║                                                                            ║   
+  ║                                                                            ║
+  ║                                                                            ║
   ╟────────────────────────────────────
   ║   Civilian
   ║
@@ -1202,6 +1236,115 @@
   ║     - UNIT_SCOUT_ONE
   ║     - UNIT_SCOUT_TWO
   ║     - UNIT_SCOUT_THREE
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║ Combat Progression                                                         ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║ UNIT          CMBT RCBT RNG COST MOVE             OCBT OCST
+  ║ TRIBE_SPLIT 
+  ║ SETTLER 
+  ║ 
+  ║ 
+  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ GATHERER
+  ║ LABORER
+  ║ WORKER           0         110    2
+  ║  
+  ║  
+  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ ALPHA  
+  ║ PATRIARCH 
+  ║ MATRIARCH
+  ║ CHIEF
+  ║ 
+  ║ 
+  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ¦ WANDERER         2           4    1  0
+  ¦ AUSTRALOPITH     3           4    1  0
+  ¦ WATCHER          2           5
+  ¦ ROCK_THROWER     2   3       6
+  ¦ RUNNER           2           7    2
+  ¦ BUSHMAN          3           8    2
+  ¦ AUTOCHTHON       4           7    2
+  ¦ ADVENTURER       3           7    2
+  ¦ PROTECTOR        5           9    2
+  ¦ SPEAR_HUNTER     4   4      12    2
+  ¦ PRIMITIVE_ARCHER 3   5      10    2
+  ¦ SAVAGE           5          14    2
+  ¦ SLINGER          2   6      13    2
+  ¦ LOOKOUT          4          15    2
+  ¦ HUNTER           6          18    2
+  ¦ SHAMAN           1   5      16    2
+  ¦ KEEPER           5          20    2
+  ¦ CAVEMAN          7          21    2
+  ¦ AXE_THROWER      6   6      25    2
+  ¦ CRO-MAGNON*      8          24    2
+  ¦ RAIDER           6          26    2
+  ¦ SCOUT            7*          
+  ¦ -PATHFINDER       *
+  ¦ NEANDERTHAL      9          32    2
+  ¦ OUTRIDER         8          36    2
+  ¦ THINKER          5          35    2
+  ¦ INITIATE         8          40    2
+  ¦ HARBINGER        7          42    2
+  ¦ SENTINEL        10          55    2
+  ║ 
+  ║ 
+  ║
+  ¦ EXPLORER        08          65
+  ¦
+  ¦
+  ¦ 
+  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ LOG
+  ║ RAFT
+  ║ GALLEY
+  ║ 
+  ║ 
+  ║                                                                   ORIGINAL
+  ║ UNIT           COMBATS RG COST MOVE MT                         COMBATS COST
+  ║ ______________ _______ __ ____ ____ __                         _______ ____
+  ║ SCOUT           10|       $ 38  2*                                |     025
+  ║ -PATHFINDER       |       $                                       |         
+  ║ WARRIOR        016|       $ 60  2                              008|     040
+  ║ -JAGUAR        016|       $ 60  2                              008|     040
+  ║ ARCHER         010|014  2 $ 60  2                              005|002  040
+  ║ -BOWMAN        014|018  2 $ 60  2                              007|009
+  ║ SPEARMAN       022|       $ 84  2                              011|     056
+  ║ -HOPLITE       026|       $ 84  2                              013|     056
+  ║ -IMMORTAL      024|       $ 84  2                              012|     056
+  ║ CHARIOT        012|020  2 $ 84  4                              006|020  056
+  ║ -WAR_CHARIOT   012|020  2 $ 84  5                              006|020  056
+  ║ -WAR_ELEPHANT  018|022  2 $105  3                              009|022  070
+  ║ HORSEMAN       024|       $113  4                              012|     075
+  ║ CATAPULT       024|
+  ║ -SIEGE_TOWER   024|     2 $113  2                               12|     075
+  ║ SWORDSMAN      028|       $113  2                               14|     075
+  ║ -MOHAWK        028|       $113  2                                 |     075
+  ║ -LEGION        034|       $113  2                               17|     075
+  ║ LONGSWORDSMAN  042|       $180  2                               21|     120
+  ║ -SAMURAI       042|       $180  2                               21|     120
+  ║ PIKEMAN        032|       $135  2                               16|     070
+  ║
   ║
   ║
   ║
@@ -1270,7 +1413,7 @@
   
 
 
-
+  
 
   Combat, RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, 
   PurchaseOnly, MoveAfterPurchase, Moves, Immobile, Range, BaseSightRange, Food, 
@@ -1292,6 +1435,121 @@
   UnitArtInfoEraVariation, "ProjectPrereq PROJECT_*", 
   "SpaceshipProject PROJECT_*", LeaderPromotion, LeaderExperience, 
   DontShowYields, ShowInPedia, MoveRate
+
+
+
+ID
+Type
+Class
+
+CombatClass
+
+Domain
+
+DefaultUnitAI
+
+Requirements
+Special
+
+Capture
+CivilianAttackPriority
+
+Combat
+RangedCombat
+
+
+Cost
+FaithCost
+RequiresFaithPurchaseEnabled
+PurchaseOnly
+MoveAfterPurchase
+
+Moves
+Immobile
+Range
+
+
+BaseSightRange
+
+
+Food
+NoBadGoodies
+RivalTerritory
+MilitarySupport
+MilitaryProduction
+Pillage
+PillagePrereqTech
+Found
+FoundAbroad
+CultureBombRadius
+GoldenAgeTurns
+FreePolicies
+OneShotTourism
+OneShotTourismPercentOthers
+IgnoreBuildingDefense
+PrereqResources
+Mechanized
+Suicide
+CaptureWhileEmbarked
+PrereqTech
+ObsoleteTech
+GoodyHutUpgradeUnitClass
+HurryCostModifier
+AdvancedStartCost
+MinAreaSize
+AirInterceptRange
+AirUnitCap
+NukeDamageLevel
+WorkRate
+NumFreeTechs
+BaseBeakersTurnsToCount
+BaseCultureTurnsToCount
+RushBuilding
+BaseHurry
+HurryMultiplier
+BaseGold
+NumGoldPerEra
+SpreadReligion
+RemoveHeresy
+ReligionSpreads
+ReligiousStrength
+FoundReligion
+RequiresEnhancedReligion
+ProhibitsSpread
+CanBuyCityState
+CombatLimit
+RangeAttackOnlyInDomain
+RangeAttackIgnoreLOS
+Trade
+NumExoticGoods
+PolicyType
+RangedCombatLimit
+XPValueAttack
+XPValueDefense
+SpecialCargo
+DomainCargo
+Conscription
+ExtraMaintenanceCost
+NoMaintenance
+Unhappiness
+UnitArtInfo
+UnitArtInfoCulturalVariation
+UnitArtInfoEraVariation
+ProjectPrereq
+SpaceshipProject
+LeaderPromotion
+LeaderExperience
+DontShowYields
+ShowInPedia
+MoveRate
+UnitFlagIconOffset
+PortraitIndex
+IconAtlas
+Civilopedia
+Strategy
+Help
+UnitFlagAtlas
+
 
 
   -->    
@@ -1351,9 +1609,10 @@
     <Row>
       <Class>UNITCLASS_GREAT_LEADER</Class>
       <Type>UNIT_GREAT_LEADER</Type>
-      <PrereqTech>PRIMATE_COGNITION</PrereqTech>
+      <PrereqTech>TECH_PRIMATE_COGNITION</PrereqTech>
       <Cost>-1</Cost>
       <Moves>2</Moves>
+      <MoveRate>GREAT_PERSON</MoveRate>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
       <Special>SPECIALUNIT_PEOPLE</Special>
       <HurryCostModifier>-1</HurryCostModifier>
@@ -1362,18 +1621,16 @@
       <Description>TXT_KEY_UNIT_GREAT_LEADER_DESC</Description>
       <Civilopedia>TXT_KEY_UNIT_GREAT_LEADER_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_UNIT_GREAT_LEADER_STRATEGY</Strategy>
-      <MilitarySupport>0</MilitarySupport>
-      <MilitaryProduction>0</MilitaryProduction>      
       <AdvancedStartCost>-1</AdvancedStartCost>
       <WorkRate>1</WorkRate>
       <CombatLimit>0</CombatLimit>
       <DontShowYields>true</DontShowYields>
       <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
-      <UnitFlagIconOffset>90</UnitFlagIconOffset>
-      <IconAtlas>UNIT_ATLAS_2</IconAtlas>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
-      <MoveRate>GREAT_PERSON</MoveRate>
     </Row>
 
 
@@ -1406,8 +1663,9 @@
       <Type>UNIT_ALPHA</Type>
       <PrereqTech>TECH_PRIMATE_COGNITION</PrereqTech>
       <Combat>4</Combat>
-      <Cost>8</Cost>
-      <Moves>1</Moves>
+      <Cost>12</Cost>
+      <Moves>2</Moves>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>-1</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <Domain>DOMAIN_LAND</Domain>
@@ -1423,8 +1681,6 @@
       <AdvancedStartCost>10</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <NoMaintenance>1</NoMaintenance>
-      <Conscription>1</Conscription>
       <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
@@ -1437,7 +1693,7 @@
       <Class>UNITCLASS_PATRIARCH</Class>
       <Type>UNIT_PATRIARCH</Type>
       <PrereqTech>TECH_PRIMATE_COGNITION</PrereqTech>
-      <Combat>7</Combat>
+      <Combat>8</Combat>
       <Cost>24</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>-1</HurryCostModifier>
@@ -1455,8 +1711,6 @@
       <AdvancedStartCost>10</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <NoMaintenance>1</NoMaintenance>
-      <Conscription>1</Conscription>
       <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
@@ -1469,8 +1723,8 @@
       <Class>UNITCLASS_CHIEF</Class>
       <Type>UNIT_CHIEF</Type>
       <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
-      <Combat>7</Combat>
-      <Cost>24</Cost>
+      <Combat>15</Combat>
+      <Cost>36</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>-1</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -1487,7 +1741,6 @@
       <AdvancedStartCost>10</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <NoMaintenance>1</NoMaintenance>
       <Conscription>1</Conscription>
       <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
@@ -1624,11 +1877,11 @@
     <Row>
       <Class>UNITCLASS_GATHERER</Class>
       <Type>UNIT_GATHERER</Type>
-      <PrereqTech>TECH_TOOL_GATHERING</PrereqTech>
-      <Cost>20</Cost>
+      <PrereqTech>TECH_GATHERING</PrereqTech>
+      <Cost>40</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>25</HurryCostModifier>
-      <Capture>UNITCLASS_WORKER</Capture>
+      <Capture>UNITCLASS_GATHERER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
@@ -1651,10 +1904,10 @@
       <Class>UNITCLASS_LABORER</Class>
       <Type>UNIT_LABORER</Type>
       <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
-      <Cost>20</Cost>
+      <Cost>68</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>25</HurryCostModifier>
-      <Capture>UNITCLASS_WORKER</Capture>
+      <Capture>UNITCLASS_LABORER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
@@ -1764,9 +2017,11 @@
       <Class>UNITCLASS_AUSTRALOPITHECUS</Class>
       <Type>UNIT_AUSTRALOPITHECUS</Type>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
-      <Combat>3</Combat>
+      <Combat>2</Combat>
       <Cost>4</Cost>
       <Moves>1</Moves>
+      <NoMaintenance>1</NoMaintenance>
+      <BaseSightRange>0</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -1779,12 +2034,10 @@
       <MilitaryProduction>true</MilitaryProduction>
       <Pillage>true</Pillage>
       <ObsoleteTech>TECH_COOPERATION</ObsoleteTech>
-      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
-      <AdvancedStartCost>10</AdvancedStartCost>
+      <GoodyHutUpgradeUnitClass>UNIT_AUTOCHTHON</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>6</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <NoMaintenance>1</NoMaintenance>
-      <Conscription>1</Conscription>
       <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>10</UnitFlagIconOffset>
@@ -1805,9 +2058,11 @@
       <Class>UNITCLASS_AUTOCHTHON</Class>
       <Type>UNIT_AUTOCHTHON</Type>
       <PrereqTech>TECH_SCAVENGING</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>15</Cost>
-      <Moves>2</Moves>
+      <Combat>3</Combat>
+      <Cost>7</Cost>
+      <Moves>1</Moves>
+      <NoMaintenance>1</NoMaintenance>
+      <BaseSightRange>1</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -1824,7 +2079,6 @@
       <AdvancedStartCost>10</AdvancedStartCost>
       <XPValueAttack>3</XPValueAttack>
       <XPValueDefense>3</XPValueDefense>
-      <Conscription>1</Conscription>
       <UnitArtInfo>ART_DEF_UNIT_AUTOCHTHON</UnitArtInfo>
       <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
       <UnitFlagIconOffset>2</UnitFlagIconOffset>
@@ -1838,7 +2092,7 @@
       <Type>UNIT_CAVEMAN</Type>
       <PrereqTech>TECH_FORAGING</PrereqTech>
       <Combat>7</Combat>
-      <Cost>22</Cost>
+      <Cost>21</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -1880,8 +2134,8 @@
       <Class>UNITCLASS_NEANDERTHAL</Class>
       <Type>UNIT_NEANDERTHAL</Type>
       <PrereqTech>TECH_COOKING</PrereqTech>
-      <Combat>8</Combat>
-      <Cost>30</Cost>
+      <Combat>9</Combat>
+      <Cost>32</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -1942,8 +2196,8 @@
       <Class>UNITCLASS_PROTECTOR</Class>
       <Type>UNIT_PROTECTOR</Type>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Combat>7</Combat>
-      <Cost>16</Cost>
+      <Combat>5</Combat>
+      <Cost>9</Cost>
       <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2002,8 +2256,8 @@
       <Class>UNITCLASS_WATCHER</Class>
       <Type>UNIT_WATCHER</Type>
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
-      <Combat>3</Combat>
-      <Cost>4</Cost>
+      <Combat>2</Combat>
+      <Cost>5</Cost>
       <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2036,7 +2290,7 @@
       <Type>UNIT_LOOKOUT</Type>
       <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Combat>4</Combat>
-      <Cost>12</Cost>
+      <Cost>15</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2068,8 +2322,8 @@
       <Class>UNITCLASS_SENTINEL</Class>
       <Type>UNIT_SENTINEL</Type>
       <PrereqTech>TECH_COLLABORATIVE_HUNTING</PrereqTech>
-      <Combat>9</Combat>
-      <Cost>22</Cost>
+      <Combat>10</Combat>
+      <Cost>55</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2129,8 +2383,8 @@
       <Class>UNITCLASS_RUNNER</Class>
       <Type>UNIT_RUNNER</Type>
       <PrereqTech>TECH_LOCOMOTION</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>15</Cost>
+      <Combat>2</Combat>
+      <Cost>7</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2161,8 +2415,8 @@
       <Class>UNITCLASS_RAIDER</Class>
       <Type>UNIT_RAIDER</Type>
       <PrereqTech>TECH_ORIENTEERING</PrereqTech>
-      <Combat>8</Combat>
-      <Cost>22</Cost>
+      <Combat>6</Combat>
+      <Cost>26</Cost>
       <Moves>3</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2194,7 +2448,7 @@
       <Type>UNIT_OUTRIDER</Type>
       <PrereqTech>TECH_SYMBOLIC_COMMUNICATION</PrereqTech>
       <Combat>8</Combat>
-      <Cost>22</Cost>
+      <Cost>36</Cost>
       <Moves>3</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2253,8 +2507,8 @@
       <Class>UNITCLASS_BUSHMAN</Class>
       <Type>UNIT_BUSHMAN</Type>
       <PrereqTech>TECH_GRUNTS_AND_GROWLS</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>15</Cost>
+      <Combat>3</Combat>
+      <Cost>8</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2285,8 +2539,8 @@
       <Class>UNITCLASS_INITIATE</Class>
       <Type>UNIT_INITIATE</Type>
       <PrereqTech>TECH_PLANNING</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>15</Cost>
+      <Combat>8</Combat>
+      <Cost>40</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2348,8 +2602,8 @@
       <Class>UNITCLASS_SAVAGE</Class>
       <Type>UNIT_SAVAGE</Type>
       <PrereqTech>TECH_MIGRATION</PrereqTech>
-      <Combat>6</Combat>
-      <Cost>30</Cost>
+      <Combat>5</Combat>
+      <Cost>14</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2415,7 +2669,7 @@
       <PrereqTech>TECH_ADAPTED_TOOLS</PrereqTech>
       <Combat>2</Combat>
       <RangedCombat>3</RangedCombat>
-      <Cost>14</Cost>
+      <Cost>6</Cost>
       <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -2447,9 +2701,9 @@
       <Class>UNITCLASS_SPEAR_HUNTER</Class>
       <Type>UNIT_SPEAR_HUNTER</Type>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
-      <Combat>2</Combat>
+      <Combat>4</Combat>
       <RangedCombat>4</RangedCombat>
-      <Cost>16</Cost>
+      <Cost>12</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -2482,8 +2736,8 @@
       <Type>UNIT_SLINGER</Type>
       <PrereqTech>TECH_CONTAINERS</PrereqTech>
       <Combat>2</Combat>
-      <RangedCombat>3</RangedCombat>
-      <Cost>14</Cost>
+      <RangedCombat>6</RangedCombat>
+      <Cost>13</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -2515,9 +2769,9 @@
       <Class>UNITCLASS_PRIMITIVE_ARCHER</Class>
       <Type>UNIT_PRIMITIVE_ARCHER</Type>
       <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
-      <Combat>2</Combat>
-      <RangedCombat>3</RangedCombat>
-      <Cost>14</Cost>
+      <Combat>3</Combat>
+      <RangedCombat>5</RangedCombat>
+      <Cost>10</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -2548,9 +2802,9 @@
       <Class>UNITCLASS_AXE_THROWER</Class>
       <Type>UNIT_AXE_THROWER</Type>
       <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
-      <Combat>9</Combat>
-      <RangedCombat>13</RangedCombat>
-      <Cost>75</Cost>
+      <Combat>6</Combat>
+      <RangedCombat>6</RangedCombat>
+      <Cost>25</Cost>
       <FaithCost>150</FaithCost>
       <RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
       <Moves>2</Moves>
@@ -2605,7 +2859,7 @@
       <PrereqTech>TECH_FIRE</PrereqTech>
       <Combat>1</Combat>
       <RangedCombat>5</RangedCombat>
-      <Cost>24</Cost>
+      <Cost>16</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <Range>1</Range>
@@ -2636,8 +2890,8 @@
       <Class>UNITCLASS_THINKER</Class>
       <Type>UNIT_THINKER</Type>
       <PrereqTech>TECH_FIRE</PrereqTech>
-      <Combat>4</Combat>
-      <Cost>24</Cost>
+      <Combat>5</Combat>
+      <Cost>35</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <Range>1</Range>
@@ -2690,10 +2944,9 @@
     <Row>
       <Class>UNITCLASS_HUNTER</Class>
       <Type>UNIT_HUNTER</Type>
-      <PrereqTech>TECH_HUNTING</PrereqTech>
-      <Combat>5</Combat>
-      <RangedCombat>5</RangedCombat>
-      <Cost>21</Cost>
+      <PrereqTech>TECH_HUNTING_GATHERING</PrereqTech>
+      <Combat>6</Combat>
+      <Cost>18</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -2725,7 +2978,7 @@
       <Type>UNIT_KEEPER</Type>
       <PrereqTech>TECH_FIRE</PrereqTech>
       <Combat>5</Combat>
-      <Cost>24</Cost>
+      <Cost>20</Cost>
       <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2756,8 +3009,8 @@
       <Class>UNITCLASS_HARBINGER</Class>
       <Type>UNIT_HARBINGER</Type>
       <PrereqTech>TECH_LANGUAGE</PrereqTech>
-      <Combat>5</Combat>
-      <Cost>29</Cost>
+      <Combat>7</Combat>
+      <Cost>42</Cost>
       <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -2813,8 +3066,8 @@
       <Type>UNIT_WANDERER</Type>
       <PrereqTech>TECH_BIPEDALISM</PrereqTech>
       <Combat>2</Combat>
-      <Cost>12</Cost>
-      <Moves>2</Moves>
+      <Cost>4</Cost>
+      <Moves>1</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_RECON</CombatClass>
       <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
@@ -2846,8 +3099,8 @@
       <Type>UNIT_NOMAD_WANDERER</Type>
       <PrereqTech>TECH_BIPEDALISM</PrereqTech>
       <Combat>2</Combat>
-      <Cost>10</Cost>
-      <Moves>2</Moves>
+      <Cost>4</Cost>
+      <Moves>1</Moves>
       <CombatClass>UNITCOMBAT_RECON</CombatClass>
       <DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
       <Domain>DOMAIN_LAND</Domain>
@@ -2875,8 +3128,8 @@
       <Class>UNITCLASS_ADVENTURER</Class>
       <Type>UNIT_ADVENTURER</Type>
       <PrereqTech>TECH_CURIOUSITY</PrereqTech>
-      <Combat>2</Combat>
-      <Cost>12</Cost>
+      <Combat>3</Combat>
+      <Cost>7</Cost>
       <Moves>2</Moves>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_RECON</CombatClass>
@@ -3002,7 +3255,7 @@
       <Class>UNITCLASS_WORKER</Class>
       <Type>UNIT_WORKER</Type>
       <!-- <PrereqTech>TECH_AGRICULTURE</PrereqTech> -->
-      <Cost>70</Cost>
+      <Cost>110</Cost>
       <Moves>2</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
@@ -5458,6 +5711,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ╔═════════════════════════════════════════════════════════════════════════════
   ║
@@ -5474,6 +5741,31 @@
       <UnitType>UNIT_GREAT_LEADER</UnitType>
       <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
     </Row>
+
+
+    <!--
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_MAPPING</PromotionType>
+    </Row>
+    -->
+
+    <!--
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
+    </Row>
+    -->
+
+
+
+
+
+
 
 
     <!--
@@ -5536,6 +5828,17 @@
     </Row>  
     -->
   </Unit_FreePromotions>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5642,6 +5945,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ╔═════════════════════════════════════════════════════════════════════════════
   ║
@@ -5661,6 +5977,17 @@
     </Row>
   </Unit_ResourceQuantityRequirements>
   -->
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5750,6 +6077,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ╔═════════════════════════════════════════════════════════════════════════════
   ║
@@ -5762,42 +6101,117 @@
   --> 
 
   <Unit_UniqueNames>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_UFF</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_GABB</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_CHAAH</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_DAAG</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_HAKK</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_OOG</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_JAYO</UniqueName>
-    </Row>        
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_ARG</UniqueName>
-    </Row>
-    <Row>
-      <UnitType>UNIT_GREAT_LEADER</UnitType>
-      <UniqueName>TXT_KEY_GREAT_LEADER_KAI</UniqueName>
-    </Row>
+
+
+
+
+
+
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UFF</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_GABB</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_CHAAH</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_DAAG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_HAKK</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_OOG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_JAYO</UniqueName></Row>        
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_ARG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_KAI</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_PA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_MA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_JA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_XAN</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_PY</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_BUHBA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_PEK</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_GAA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_KEHI</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_KAY</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_BBOK</UniqueName></Row>
+    
+
+
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ASOKA</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_MAO</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_CAESARIUS</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_MANDELA</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_KALAM</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BURR</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_WADE</UniqueName></Row>        
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BADAWI</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ADLAI_STEVENSON</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_AGNES_MACPHAIL</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_AL_FRANKEN</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ALEXANDER_AUGUSTE_LEDRU_ROLLIN</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ALEXEI_KOSYGIN</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ALIJA_IZETBEGOVIC</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_AUNG_SAN_SUU_KYI</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ATAL_BIHARI_VAJPAYEE</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BARRY_GOLDWATER</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BENJAMIN_RUSH</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BETTY_WILLIAMS</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_BOOKER_T_WASHINGTON</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_CHIEF_SEATTLE</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_DAVY_CROCKET</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_DAVID_BEN_GURION</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_ELDRIGE_CLEAVER</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_HO_CHI_MINH</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_CHARLEMAGNE</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_JOAN_OF_ARC</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_WILLIAM_THE_CONQUEROR</UniqueName></Row>
+
+
+    
+
+
+
   </Unit_UniqueNames>
 
 
@@ -6891,33 +7305,145 @@
 
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
-    <Row Tag="TXT_KEY_GREAT_LEADER_UFF">
-      <Text>Leader Uff</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_GABB">
-      <Text>Leader Gab'b</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_CHAAH">
-      <Text>Leader Cha'ah</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_DAAG">
-      <Text>Leader Da'ag</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_HAKK">
-      <Text>Leader Hakk</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_OOG">
-      <Text>Leader Oog</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_JAYO">
-      <Text>Leader Jayo</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_ARG">
-      <Text>Leader Arg</Text>
-    </Row>
-    <Row Tag="TXT_KEY_GREAT_LEADER_KAI">
-      <Text>Leader Kai</Text>
-    </Row>
+
+
+
+
+
+
+
+
+    <Row Tag="TXT_KEY_GREAT_LEADER_ASOKA"><Text>Asoka</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_MAO"><Text>Mao</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_CAESARIUS"><Text>Leader Caesarius</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_MANDELA"><Text>Mandela</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_KALAM"><Text>Kalam</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BURR"><Text>Burr</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_WADE"><Text>Wade</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BADAWI"><Text>Badawi</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ADLAI_STEVENSON"><Text>Adlai Stevenson</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_AGNES_MACPHAIL"><Text>Agnes Macphail</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_AL_FRANKEN"><Text>Al Franken</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ALEXANDER_AUGUSTE_LEDRU_ROLLIN"><Text>Alexandre Auguste Ledru-Rollin</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ALEXEI_KOSYGIN"><Text>Alexei Kosygin</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ALIJA_IZETBEGOVIC"><Text>Alija Izetbegovic</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_AUNG_SAN_SUU_KYI"><Text>Aung San Suu Kyi </Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ATAL_BIHARI_VAJPAYEE"><Text>Atal Bihari Vajpayee </Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BARRY_GOLDWATER"><Text>Barry Goldwater</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BENJAMIN_RUSH"><Text>Benjamin Rush</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BETTY_WILLIAMS"><Text>Betty Williams</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_BOOKER_T_WASHINGTON"><Text>Booker T Washington</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_CHIEF_SEATTLE"><Text>Chief Seattle</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_DAVY_CROCKET"><Text>Davy Crocket</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_DAVID_BEN_GURION"><Text>David Ben-Gurion</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_ELDRIGE_CLEAVER"><Text>Eldridge Cleaver </Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_HO_CHI_MINH"><Text>Ho Chi Minh</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_CHARLEMAGNE"><Text>Charlemagne</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_JOAN_OF_ARC"><Text>Joan of Arc</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_WILLIAM_THE_CONQUEROR"><Text>William the Conqueror</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_APSHAI"><Text>Apshai</Text></Row>
+    <!--
+    Arminius
+    Leif Ericson
+    Salah al-Din
+    Siddhartha Gautama Buddha
+    Moses
+    Constantine
+    Alfred the Great
+    Sultan Mehmed II
+    Eric the Red
+    T. E. Lawrence of Arabia
+    Phillip II of Macedonia
+    Pericles
+    Hannibal
+    Augustus II the Strong
+    Maximilian I, Holy Roman Emperor
+    Otto I, Holy Roman Emperor
+    Peter the Great
+    Dmitry Donskoy
+    Hammurabi
+    Theoderic the Great
+    Selim I
+    Vladimir Putin
+    Widukind
+    Umar Ibn Al Khattab
+    Quaid-e-Azam Muhammad Ali Jinnah
+    Nikola Jurisic
+    Gerold, Prefect of Bavaria
+    Baldwin I
+    Mother Teresa
+    Marcus Aurelius
+    Karl Marx
+    Justinian I
+    John Adams
+    Niccolo MMachiavelli
+    Sargon the Great
+    Charles de Gaulle
+    Crazy Horse
+    Pepin the Short
+    Kubla Khan
+    Fidel Castro
+    James Monroe
+    Toyotomi Hideyoshi
+    Sultan II Abdulhamid Khan
+    Empress Jingu
+    Abraham
+    Tupac Yupanqui
+    Oprah Winfrey
+    Simon Bolivar Buckner
+    Emperor Meiji
+    Che Guevara
+    Moctezuma I
+    Pontiac
+    Josip Broz Tito
+    Martin Luther King Jr
+    Bill Gates
+    Nelson Mandela
+    John Lennon
+    Lucky Luciano
+    Benito Juarez
+
+    
+
+    Carlos Santana
+    Juan Carlos I
+    
+    Carlos I el Cesar, Carlos V Holy Roman Emperor
+    Carlos II the Bwitched
+    Carlos III of Spain, Archduke of Austria
+    Carlos III of Spain, the Enlightened King-Mayor
+    Carlos IV of Spain, the Hunter
+    -->
+
+
+
+
+
+
+    <Row Tag="TXT_KEY_ALPHA_UFF"><Text>Uk Uff</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_GABB"><Text>Uk Gab'b</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_CHAAH"><Text>Uk Cha'ah</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_DAAG"><Text>Uk Da'ag</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_HAKK"><Text>Uk Hakk</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_OOG"><Text>Uk Oog</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_JAYO"><Text>Uk Jayo</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_ARG"><Text>Uk Arg</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kai</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Pa</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Ma</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Ja</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Xan</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Py</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Buh'ba</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Pek</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Gaa</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kehi</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kay</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk B'bok</Text></Row>
+
+
+
+
 
 
   </Language_en_US>  

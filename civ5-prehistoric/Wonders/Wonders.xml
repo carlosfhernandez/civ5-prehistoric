@@ -238,7 +238,7 @@
     </Row>
     <Row>
       <Type>BUILDINGCLASS_CAIRN_OF_BARNENEZ</Type>
-      <DefaultBuilding>BUILDING_BARNENEZ</DefaultBuilding>
+      <DefaultBuilding>BUILDING_CAIRN_OF_BARNENEZ</DefaultBuilding>
       <Description>TXT_KEY_WONDER_CAIRN_OF_BARNENEZ</Description>
       <MaxGlobalInstances>1</MaxGlobalInstances>
     </Row>
@@ -1663,12 +1663,12 @@
     </Row>
 
     <Row>
-      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <BuildingType>BUILDING_CAIRN_OF_BARNENEZ</BuildingType>
       <FlavorType>FLAVOR_WONDER</FlavorType>
       <Flavor>20</Flavor>
     </Row>
     <Row>
-      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <BuildingType>BUILDING_CAIRN_OF_BARNENEZ</BuildingType>
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
       <Flavor>40</Flavor>
     </Row>
@@ -1744,12 +1744,12 @@
     </Row>
 
     <Row>
-      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <BuildingType>BUILDING_CAIRN_OF_BARNENEZ</BuildingType>
       <YieldType>YIELD_CULTURE</YieldType>
       <Yield>1</Yield>
     </Row>
     <Row>
-      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <BuildingType>BUILDING_CAIRN_OF_BARNENEZ</BuildingType>
       <YieldType>YIELD_PRODUCTION</YieldType>
       <Yield>2</Yield>
     </Row> 
@@ -1809,7 +1809,7 @@
     </Row>    
 
     <Row>
-      <BuildingType>BUILDING_BARNENEZ</BuildingType>
+      <BuildingType>BUILDING_CAIRN_OF_BARNENEZ</BuildingType>
       <ResourceType>RESOURCE_STONE</ResourceType>
       <YieldType>YIELD_PRODUCTION</YieldType>
       <Yield>1</Yield>
@@ -1970,12 +1970,12 @@
 
     <Row>
       <CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-      <BuildingClassType>BUILDINGCLASS_BARNENEZ</BuildingClassType>
+      <BuildingClassType>BUILDINGCLASS_CAIRN_OF_BARNENEZ</BuildingClassType>
       <BuildingType/>
     </Row>
     <Row>
       <CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-      <BuildingClassType>BUILDINGCLASS_BARNENEZ</BuildingClassType>
+      <BuildingClassType>BUILDINGCLASS_CAIRN_OF_BARNENEZ</BuildingClassType>
       <BuildingType/>
     </Row>
 

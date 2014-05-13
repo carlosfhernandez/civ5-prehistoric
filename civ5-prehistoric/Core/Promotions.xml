@@ -197,7 +197,7 @@
       <EnemyHealChange>2</EnemyHealChange>
       <NeutralHealChange>2</NeutralHealChange>
       <PortraitIndex>32</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
       <PediaType>PEDIA_SHARED</PediaType>
       <PediaEntry>+2 HP healed per turn outside of friendly territory.</PediaEntry>
     </Row>
@@ -257,7 +257,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -269,7 +269,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -281,7 +281,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -293,7 +293,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>    
 
     <Row>
@@ -305,7 +305,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row> 
 
     <Row>
@@ -317,7 +317,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -329,7 +329,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -341,7 +341,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
            
     <Row>
@@ -353,7 +353,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -365,7 +365,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -377,7 +377,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -389,7 +389,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -401,7 +401,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -413,7 +413,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -425,7 +425,7 @@
       <Sound>AS2D_IF_LEVELUP</Sound>
       <OrderPriority>1</OrderPriority>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS_PRE</IconAtlas>
     </Row>
 
     <Row>
@@ -475,6 +475,12 @@
       <PortraitIndex>59</PortraitIndex>
       <IconAtlas>PROMOTION_ATLAS</IconAtlas>
     </Row> 
+
+
+
+
+
+
 
 
 
@@ -532,6 +538,43 @@
       <PediaEntry>City Burner</PediaEntry>
     </Row>
 
+
+
+
+
+
+
+
+    <Row>
+      <Type>PROMOTION_PREHISTORIC_SIGHT</Type>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT</Description>
+      <Help>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_PEDIA</PediaEntry>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <VisibilityChange>-1</VisibilityChange>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>      
+    </Row> 
+
+    <Row>
+      <Type>PROMOTION_PREHISTORIC_MAPPING</Type>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_PEDIA</PediaEntry>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <NoRevealMap>1</NoRevealMap>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>      
+    </Row>     
+
+
+
+
+
+
+
     <Row>
       <Type>PROMOTION_CAUSEWAY</Type>
       <Description>Marsh Walker</Description>
@@ -542,6 +585,28 @@
       <PediaType>PEDIA_ATTRIBUTES</PediaType>
       <PediaEntry>Marsh Walker</PediaEntry>
     </Row>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -779,14 +844,274 @@
 
 
 
-
-
-
-
-
+  <Language_en_US>
 
   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABILITIES -->
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHT">
+      <Text>Prehistoric Limited Sight</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_DESC">
+      <Text>Prehistoric Limited Mapping</Text>
+    </Row>    
+
+
+  </Language_en_US>
  
-  
-  
+
+
+
+
+
+
+
+
+<!--
+REFERENCE
+
+
+ATTRIBUTES
+
+
+Visibility, Sight, and Map
+
+NoRevealMap - Unit can only go in areas that have already been revealed and cannot reveal new areas.
+
+
+
+
+
+
+EXISTING PROMOTIONS
+
+P_MEDIC_GENERAL_HELP :		     This unit and all others in adjacent tiles [COLOR_POSITIVE_TEXT]Heal 15 Additional HP[ENDCOLOR] per turn.
+P_NAVAL_TRADITION :		         Exploration
+P_SAPPER :		                 Sapper
+P_SAPPER_HELP :		             When next to an enemy city, other units within 2 tiles get a 50% Bonus when attacking the city.
+P_CITY_SIEGE_II :		           Bonus vs Cities (250)
+P_CITY_SIEGE_II_HELP :		     +250% Bonus vs Cities.
+P_GOLDEN_AGE_POINTS :		       Golden Age from Victories
+P_GOLDEN_AGE_POINTS_HELP :		 Earn points toward a Golden Age for each enemy killed.
+P_FAST_GENERAL_HELP :		       +3 [ICON_MOVES] Movement.
+P_NATIONALISM :		             Patriotic War
+P_BUFFALO_HORNS_HELP :		     +1 Movement. Flank attack bonus increased by 25%. +10% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] against all [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR].
+P_BUFFALO_CHEST_HELP :		     +10% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle). Flank attack bonus increased by 25%. +10% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] against all [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR].
+P_BUFFALO_LOINS_HELP :		     +10% [ICON_STRENGTH] Combat Strength. Flank attack bonus increased by 25%. +10% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] against all [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR].
+P_TRADE_MISSION_BONUS_HELP :	 +100% more [ICON_GOLD] Gold and +100% more city-state influence than a normal Trade Mission.
+P_HEAVY_CHARGE_HELP :		       Forces defender to retreat if it inflicts more damage than it receives. A defender who cannot retreat takes extra damage.
+P_ANTI_GUNPOWDER_HELP :		     Before engaging in melee, this unit has an extra attack.
+P_BUFFALO_CHEST :		           Buffalo Chest
+P_BUFFALO_HORNS :		 Buffalo Horns
+P_BUFFALO_LOINS :		 Buffalo Loins
+P_TRADE_MISSION_BONUS :		 Trade Mission Bonus
+P_HEAVY_CHARGE :		 Heavy Charge
+P_ANTI_GUNPOWDER :		 Spear Throw
+P_HOMELAND_GUARDIAN :		 Homeland Guardian
+P_HOMELAND_GUARDIAN_HELP :		 +25% Bonus in combat in your territory
+P_HOMELAND_GUARDIAN_BOOGALOO :		 Pride of the Ancestors
+P_HOMELAND_GUARDIAN_BOOGALOO_HELP :		 +15% Bonus in combat in your territory
+P_DESERT_WARRIOR :		 Desert Warrior
+P_DESERT_WARRIOR_HELP :		 +50% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR]
+P_MOON_STRIKER :		 Full Moon Striker
+P_MOON_STRIKER_HELP :		 +1 Movement
+P_GOODY_HUT_PICKER :		 Native Tongue
+P_GOODY_HUT_PICKER_HELP :		 May choose benefit when discovering Ancient Ruins.
+P_ALTITUDE_TRAINING :		 Altitude Training
+P_ALTITUDE_TRAINING_HELP :		 Double movement in hill. +10% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Hill[ENDCOLOR].
+P_MYSTIC_BLADE :		 Mystic Blade
+P_MYSTIC_BLADE_HELP :		 Promotion is replaced with a randomly chosen new promotion after the unit completes its first combat
+P_INVULNERABIILITY :		 Invulnerability
+P_INVULNERABIILITY_HELP :		 +30% Combat Bonus when defending. +20 Hit Points when healing
+P_SNEAK_ATTACK :		 Sneak Attack
+P_SNEAK_ATTACK_HELP :		 Flank attack bonus increased by 50%.
+P_HEROISM :		 Heroism
+P_HEROISM_HELP :		 Unit awards combat bonus to nearby units as if it is a Great General
+P_AMBITION :		 Ambition
+P_AMBITION_HELP :		 +50% Combat Bonus when attacking. -20% penalty when defending
+P_RESTLESSNESS :		 Restlessness
+P_RESTLESSNESS_HELP :		 May Attack Twice. 1 Extra Movement
+P_RECRUITMENT :		 Recruitment
+P_RECRUITMENT_HELP :		 Heals All Damage If Kills Non-Barbarian Unit
+P_ENEMY_BLADE :		 Enemy Blade
+P_ENEMY_BLADE_HELP :		 Takes 20 Damage If Ends Turn in Enemy Territory
+P_EVIL_SPIRITS :		 Evil Spirits
+P_EVIL_SPIRITS_HELP :		 -10% penalty when attacking. -30% penalty when defending
+P_EXTENDED_PARADROP :		 Skyranger
+P_EXTENDED_PARADROP_HELP :		 May paradrop with extended range (40 hexes)
+P_LIGHTNING_WARFARE :		 Lightning Warfare
+P_LIGHTNING_WARFARE_HELP :		 +15% Combat Bonus when attacking. +1 [ICON_MOVES] Movement. Ignore enemy Zones of Control.
+P_WOLFPACK_1 :		 Wolfpack I
+P_WOLFPACK_1_HELP :		 +25% Combat Bonus when attacking.
+P_WOLFPACK_2 :		 Wolfpack II
+P_WOLFPACK_2_HELP :		 +25% Combat Bonus when attacking.
+P_WOLFPACK_3 :		 Wolfpack III
+P_WOLFPACK_3_HELP :		 +25% Combat Bonus when attacking.
+P_FLIGHT_DECK_1 :		 Flight Deck I
+P_FLIGHT_DECK_1_HELP :		 Can carry 1 extra air unit.
+P_FLIGHT_DECK_2 :		 Flight Deck II
+P_FLIGHT_DECK_2_HELP :		 Can carry 1 extra air unit.
+P_FLIGHT_DECK_3 :		 Flight Deck III
+P_FLIGHT_DECK_3_HELP :		 Can carry 1 extra air unit.
+P_ARMOR_PLATING_1 :		 Armor Plating I
+P_ARMOR_PLATING_1_HELP :		 +25% Combat Bonus when defending.
+P_ARMOR_PLATING_2 :		 Armor Plating II
+P_ARMOR_PLATING_2_HELP :		 +25% Combat Bonus when defending.
+P_ARMOR_PLATING_3 :		 Armor Plating III
+P_ARMOR_PLATING_3_HELP :		 +25% Combat Bonus when defending.
+P_SELL_EXOTIC_GOODS :		 Exotic Cargo
+P_SELL_EXOTIC_GOODS_HELP :		 May Sell Exotic Goods when adjacent to a foreign tile to gain [ICON_GOLD] Gold and XP based on distance from capital, but only once.
+P_DOUBLE_PLUNDER :		 Double Plunder
+P_DOUBLE_PLUNDER_HELP :		 +100% [ICON_GOLD] Gold received from capturing cities.
+
+P_HEAL_INSTANTLY_HELP :		 [COLOR_POSITIVE_TEXT]Heal this Unit[ENDCOLOR] 50 HP. Doing so will [COLOR_POSITIVE_TEXT]Consume this Opportunity[ENDCOLOR] to choose a Promotion.
+P_SHOCK_1_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_SHOCK_2_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_SHOCK_3_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_DRILL_1_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_DRILL_2_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_DRILL_3_HELP :		 +15% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_ACCURACY_1_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_ACCURACY_2_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_ACCURACY_3_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain. (NO Hills, Forest or Jungle).
+P_BARRAGE_1_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_BARRAGE_2_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_BARRAGE_3_HELP :		 +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength against Units in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain. (Hills, Forest or Jungle).
+P_TARGETING_1_HELP :		 +15% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_TARGETING_2_HELP :		 +15% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_TARGETING_3_HELP :		 +15% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_SIEGE_HELP :		 +50% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
+P_SENTRY_HELP :		 +1 Visibility Range
+P_MEDIC_HELP :		 All units in adjacent tiles [COLOR_POSITIVE_TEXT]Heal 5 Additional HP[ENDCOLOR] per turn.
+P_MEDIC_II_HELP :		 All units in adjacent tiles [COLOR_POSITIVE_TEXT]Heal 5 Additional HP[ENDCOLOR] per turn. This unit [COLOR_POSITIVE_TEXT]Heals 5 Additional HP[ENDCOLOR] per turn when [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR].
+P_CHARGE_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Wounded Units[ENDCOLOR].
+P_VOLLEY_HELP :		 +50% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
+P_COVER_1_HELP :		 +33% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] against all [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR].
+P_COVER_2_HELP :		 +33% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] against all [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR].
+P_FORMATION_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR] units.
+P_FORMATION_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR] units.
+P_AMBUSH_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.
+P_AMBUSH_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.
+P_BLITZ_HELP :		 1 additional attack per turn.
+P_SUPPLY_HELP :		 May heal damage [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR]. 15 HP healed per turn.
+P_INTERCEPTION_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength when intercepting enemy aircraft.
+P_INTERCEPTION_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength when intercepting enemy aircraft.
+P_INTERCEPTION_3_HELP :		 +34% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] enemy aircraft.
+P_DOGFIGHTING_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength when performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR].
+P_DOGFIGHTING_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength when performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR].
+P_DOGFIGHTING_3_HELP :		 +34% [ICON_STRENGTH] Combat Strength when performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR].
+P_AIR_SIEGE_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
+P_AIR_SIEGE_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
+P_AIR_SIEGE_3_HELP :		 +34% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
+P_BOMBARDMENT_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR].
+P_BOMBARDMENT_2_HELP :		 +33% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR].
+P_BOMBARDMENT_3_HELP :		 +34% [ICON_STRENGTH] Combat Strength against [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR].
+P_SCOUTING_2_HELP :		 +1 Visibility Range.
+P_SCOUTING_3_HELP :		 +1 Movement.
+P_SURVIVALISM_1_HELP :		 +5 HP healed per turn outside of friendly territory and +25% Defense.
+P_SURVIVALISM_2_HELP :		 +5 HP healed per turn outside of friendly territory and +25% Defense.
+P_SURVIVALISM_3_HELP :		 Unit will [COLOR_POSITIVE_TEXT]Heal Every Turn[ENDCOLOR], even if it performs an action.  Unit will attempt to withdraw when faced with a melee attack.
+P_DISCIPLINE_HELP :		 +15% [ICON_STRENGTH] Combat Strength when adjacent to a friendly Unit.
+P_NATIONALISM_HELP :		 +15% attack bonus in friendly territory.
+P_CITY_SIEGE_HELP :		 +200% Bonus vs Cities.
+P_CITY_ASSUALT_HELP :		 +300% Bonus vs Cities.
+P_HEAL_IF_DESTROY_ENEMY_HELP :		 Heals 50 Damage If Kills Non-Barbarian Unit.
+P_DEFENSIVE_EMBARKATION_HELP :		 Can embark onto [COLOR_POSITIVE_TEXT]Water Tiles[ENDCOLOR]. Embarked units defend at double strength.
+P_NAVAL_BONUS_HELP :		 Bonus vs Naval (50)
+P_FEARED_ELEPHANT_HELP :		 Enemy units receive -10% [ICON_STRENGTH] Combat Strength when adjacent to any unit with this promotion.
+P_FLANK_ATTACK_BONUS_HELP :		 Flank attack bonus increased by 50%
+P_DEFEND_NEAR_CAPITAL_HELP :		 30% stronger while fighting in the capital; bonus falls off as the unit gets further away.
+P_EMBARKED_SIGHT_HELP :		 See further than a normal embarked unit.
+P_MOVEMENT_TO_GENERAL_HELP :		 Great General moves at rate of this unit if they start the turn stacked.
+P_GENERAL_STACKING_HELP :		 15% combat bonus with Great General in same tile.
+P_ONLY_ATTACKS_CITIES_HELP :		 Unit may not attack units, only cities.
+P_COASTAL_RAIDER_1_HELP :		 +20% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Steal gold equal to 33% of the damage inflicted on a city.
+P_COASTAL_RAIDER_2_HELP :		 +20% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Steal gold equal to 33% of the damage inflicted on a city.
+P_COASTAL_RAIDER_3_HELP :		 +20% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Steal gold equal to 34% of the damage inflicted on a city.
+P_BOARDING_PARTY_1_HELP :		 +15% [ICON_STRENGTH] Combat Strength in melee attacks against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_BOARDING_PARTY_2_HELP :		 +15% [ICON_STRENGTH] Combat Strength in melee attacks against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_BOARDING_PARTY_3_HELP :		 +15% [ICON_STRENGTH] Combat Strength in melee attacks against [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].
+P_WAR_CANOES_HELP :		 Embarked units have double the usual defense strength and see further than a normal embarked unit.
+P_PRIZE_SHIPS_HELP :		 Defeated enemy naval units may join your side.
+P_GREAT_ADMIRAL_HELP :		 Improves combat effectiveness of nearby naval units.
+P_FAST_ADMIRAL_HELP :		 +2 [ICON_MOVES] Movement.
+P_UNWELCOME_EVANGELIST_HELP :		 Can enter rival territory without open borders but loses 25% of original religious strength for each turn they end on such a tile. Unit is eliminated when religious strength is 0.
+TXT_KEY_UNIT_HELP_BATTLESHIP :		 Most powerful ranged Naval unit in the game until the Missile Cruiser
+P_EMBARKATION_HELP :		 Can embark onto [COLOR_POSITIVE_TEXT]Water Tiles[ENDCOLOR].
+P_AIR_TARGETING_1 :		 Air Targetting I
+P_AIR_TARGETING_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Naval[ENDCOLOR] units.
+P_AIR_TARGETING_2 :		 Air Targetting II
+P_AIR_AMBUSH_1 :		 Air Ambush I
+P_AIR_AMBUSH_1_HELP :		 +33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.
+P_AIR_AMBUSH_2 :		 Air Ambush II
+P_HELI_AMBUSH_1 :		 Bonus vs Armored (25)
+P_HELI_AMBUSH_2 :		 Bonus vs Armored (25)
+P_MEDIC_II :		 Medic II
+P_AIR_REPAIR :		 Air Repair
+P_CITY_SIEGE :		 Bonus vs Cities (200)
+P_CITY_ASSUALT :		 Bonus vs Cities (300)
+P_DEFENSE_PENALTY :		 Penalty on Defense (33)
+P_DEFENSE_PENALTY_HELP :		 33% Penalty on Defense.
+P_MOUNTED_PENALTY :		 Penalty vs Mounted (33)
+P_ANTI_AIR :		 Bonus vs Aircraft/Helicopters (150)
+P_ANTI_AIR_II :		 Bonus vs Bombers/Helicopters (150)
+P_ANTI_FIGHTER :		 Bonus vs Fighters (33)
+P_ANTI_SUBMARINE_I :		 Attack vs Submarines (33)
+P_ANTI_SUBMARINE_II :		 Attack vs Submarines (100)
+P_ANTI_TANK :		 Bonus vs Tanks (100)
+P_NAVAL_PENALTY :		 Penalty vs Naval (50)
+P_HEAVY_PAYLOAD :		 Bonus vs Cities (50)
+P_FIRE_SUPPORT :		 Bonus vs Cities (33)
+P_SILENT_HUNTER :		 Bonus when Attacking (75)
+P_STEAM_POWERED :		 Double movement in Coast
+P_HEAL_IF_DESTROY_ENEMY :		 Heal 50 Damage If Kills a Unit
+P_PARTIAL_HEAL_IF_DESTROY_ENEMY :		 Heals 25 Damage If Kills a Unit
+P_MOHAWK :		 Combat Bonus in Forest/Jungle (33)
+P_MOHAWK_HELP :		 +33% Combat Bonus in Forest/Jungle.
+P_JAGUAR :		 Combat Bonus in Forest/Jungle (33)
+P_JAGUAR_HELP :		 +33% Combat Bonus in Forest/Jungle.
+P_STRONGER_VS_DAMAGED :		 Damaged Enemy Bonus (33)
+P_GREAT_GENERAL_HELP :		 Improves combat effectiveness of nearby land units.
+P_NAVAL_BONUS :		 Bonus vs Naval
+P_FEARED_ELEPHANT :		 Feared Elephant
+P_FLANK_ATTACK_BONUS :		 Enhanced Flank Attack
+P_DEFEND_NEAR_CAPITAL :		 Near Capital Bonus
+P_EMBARKED_SIGHT :		 Extra Sight While Embarked
+P_MOVEMENT_TO_GENERAL :		 Transfer Movement to General
+P_GENERAL_STACKING :		 Great General Combat Bonus
+P_ONLY_ATTACKS_CITIES :		 City Attack Only
+P_COASTAL_RAIDER_1 :		 Coastal Raider I
+P_COASTAL_RAIDER_2 :		 Coastal Raider II
+P_COASTAL_RAIDER_3 :		 Coastal Raider III
+P_BOARDING_PARTY_1 :		 Boarding Party I
+P_BOARDING_PARTY_2 :		 Boarding Party II
+P_BOARDING_PARTY_3 :		 Boarding Party III
+P_WAR_CANOES :		 War Canoes
+P_PRIZE_SHIPS :		 Prize Ships
+P_GREAT_ADMIRAL :		 Naval Leadership
+P_FAST_GENERAL :		 Mobile General
+P_FAST_ADMIRAL :		 Mobile Admiral
+P_UNWELCOME_EVANGELIST :		 Unwelcome Evangelist
+P_HOVERING_UNIT_HELP :		 Unit may pass over Mountains, but takes damage if ending its turn on a Mountain.    
+
+TXT_KEY_CONCEPT_ESPIONAGE_PROMOTIONS_TOPIC :		 Spy Experience
+TXT_KEY_CONCEPT_ESPIONAGE_PROMOTIONS_DESCRIPTION :		 {TXT_KEY_CONCEPT_ESPIONAGE_PROMOTIONS_TOPIC}
+TXT_KEY_CONCEPT_ESPIONAGE_PROMOTIONS_SUMMARY :		 With each successful mission, your spies will gain experience and "level-up". With each successive level, your spies will perform their missions more quickly and reliably.
+TXT_KEY_CONCEPT_ESPIONAGE_PROMOTIONS_ADVISOR_QUESTION :		 Do my spies gain experience?
+
+P_WITHDRAW_BEFORE_MELEE :		 Withdraw Before Melee
+P_WITHDRAW_BEFORE_MELEE_HELP :		 Unit will withdraw when faced with melee attack. Chance of withdrawal decreased against fast enemy units or if there are limited open tiles behind the unit.
+
+-->
+
 </GameData>

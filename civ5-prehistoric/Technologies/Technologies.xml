@@ -2001,6 +2001,22 @@ LEGEND
     </Row>
 
     <Row>
+      <Type>TECH_BEADING</Type>
+      <Cost>18</Cost>
+      <Description>TXT_KEY_TECH_BEADING_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_BEADING_PEDIA</Civilopedia>
+      <Help>TXT_KEY_TECH_BEADING_HELP</Help>
+      <Quote>TXT_KEY_TECH_BEADING_QUOTE</Quote>
+      <Era>ERA_NEOLITHIC</Era>
+      <Trade>true</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>11</GridX>
+      <GridY>8</GridY>
+      <PortraitIndex>35</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
+    </Row>
+
+    <Row>
       <Type>TECH_WARFARE</Type>
       <Cost>16</Cost>
       <Description>Warfare</Description>
@@ -3089,22 +3105,6 @@ LEGEND
 
     <!-- Col -->
     <Row>
-      <TechType>TECH_ORGANIZED_HUNTING</TechType>
-      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-      <Flavor>1</Flavor>
-    </Row>
-    <Row>
-      <TechType>TECH_ORGANIZED_HUNTING</TechType>
-      <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>3</Flavor>
-    </Row>
-    <Row>
-      <TechType>TECH_ORGANIZED_HUNTING</TechType>
-      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>3</Flavor>
-    </Row>
-
-    <Row>
       <TechType>TECH_HUNTING_GATHERING</TechType>
       <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
       <Flavor>1</Flavor>
@@ -3291,6 +3291,12 @@ LEGEND
       <TechType>TECH_PAINTING</TechType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
       <Flavor>5</Flavor>
+    </Row>
+
+    <Row>
+      <TechType>TECH_BEADING</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>7</Flavor>
     </Row>
 
     <Row>
@@ -3632,7 +3638,17 @@ LEGEND
 
 
 
+
+    <!-- COL -->
+
+
+
+
     <!-- ERA_PALEOLITHIC -->
+
+
+
+
 
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_TITLE">
       <Text>Complex Tools</Text>
@@ -3698,6 +3714,14 @@ LEGEND
     <Row Tag="TXT_KEY_TECH_FAMILY_TIES_QUOTE">
       <Text>Family Ties quote</Text>
     </Row>
+
+
+
+
+
+    <!-- COL -->
+
+
 
 
 
@@ -3788,7 +3812,15 @@ LEGEND
 
 
 
+    <!-- COL -->
+
+
+
     <!-- ERA_NEOLITHIC -->
+
+
+
+
 
     <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_TITLE">
       <Text>Coordinated Hunting</Text>
@@ -3880,6 +3912,12 @@ LEGEND
 
 
 
+    <!-- COL -->
+
+
+
+
+
 
     <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_TITLE">
       <Text>Collaborative Hunting</Text>
@@ -3963,8 +4001,25 @@ LEGEND
 
 
 
+    <!-- COL -->
 
 
+
+
+
+
+    <Row Tag="TXT_KEY_TECH_BEADING_TITLE">
+      <Text>Beading</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_BEADING_PEDIA">
+      <Text>Beading Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_BEADING_HELP">
+      <Text>Beading Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_BEADING_QUOTE">
+      <Text>Beading QUote</Text>
+    </Row>
 
 
 
@@ -3973,10 +4028,11 @@ LEGEND
 
 
     <!--
+      
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__DESC">
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
@@ -3989,7 +4045,7 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__DESC">
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
@@ -4002,7 +4058,7 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__DESC">
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
@@ -4015,7 +4071,7 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__DESC">
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
@@ -4024,7 +4080,8 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__QUOTE">
       <Text></Text>
     </Row>
--->
+
+    -->
 
 
 
