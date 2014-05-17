@@ -31,6 +31,15 @@ UPDATE Units    SET PrereqTech='TECH_COOPERATION'
 
 UPDATE Units    SET Combat =      Combat * 2;
 UPDATE Units    SET CombatLimit = CombatLimit * 2;
+
+
+
+
+-- 
+--
+-- Cost
+--
+
 UPDATE Units    Set Cost =        Cost * 1.5;
 
 

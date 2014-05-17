@@ -167,6 +167,76 @@ IconAtlas                                 text        default NULL
 ArtInfoCulturalVariation                  boolean     default 0                                       
 ArtInfoEraVariation                       boolean     default 0                                       
 ArtInfoRandomVariation                    boolean     default 0                                       
+
+
+
+
+
+Cost
+FaithCost
+
+Water
+River
+Freshwater
+Mountain
+NearbyMountainRequired
+Hill
+Flat
+!!! NearbyTerrainRequired
+
+
+NumCityCostMod
+
+PrereqTech, CitiesPrereq, LevelPrereq, UnlockedByBelief, ObsoleteTech
+
+CultureRateModifier
+GoldenAgeModifier
+
+Happiness, UnmoddedHappiness, UnhappinessModifier, HappinessPerCity, 
+  CityCountUnhappinessMod, NoOccupiedUnhappiness
+
+MilitaryProductionModifier
+BuildingProductionModifier
+WonderProductionModifier
+CityConnectionTradeRouteModifier
+CapturePlunderModifier
+PolicyCostModifier
+PlotCultureCostModifier
+GlobalPlotBuyCostModifier
+MedianTechPercentChange
+GreatPeopleRateChange
+
+GlobalPopulationChange
+
+FreeTechs, FreePolicies, FreeGreatPeople, FreePromotion, TrainedFreePromotion
+FreeBuilding, FreeBuildingThisCity
+FreePromotionRemoved
+
+SpecialistType, SpecialistCount
+
+Gold
+FoodKept
+Defense, ExtraCityHitPoints, GlobalDefenseMod
+
+AllowsRangeStrike
+
+UnitUpgradeCostMod
+Experience
+GlobalExperience
+HealRateChange
+WorkerSpeedModifier
+
+ArtInfoCulturalVariation, ArtInfoEraVariation, ArtInfoRandomVariation
+
+XBuiltTriggersIdeologyChoice ?
+InstantMilitaryIncrease ?
+BorderObstacle ?
+NumCityCostMod ?
+ReplacementBuildingClass ?
+PolicyBranchType ?
+CityWall ?
+
+
 */
 
 
@@ -248,7 +318,7 @@ ALTER TABLE Buildings     ADD ReligionRequired    text    DEFAULT null;
 
 
 -- TODO
--- Change free BuildingClass from Palace to Chieftain's Hut
+-- Change free BuildingClass from Palace to Tree of Life
 
 UPDATE Civilization_FreeBuildingClasses 
 SET BuildingClassType='BUILDINGCLASS_TREE_LIFE'
@@ -298,6 +368,13 @@ WHERE BuildingType='BUILDING_PALACE';
 
 
 
+
+
+--
+-- Cost Adjustment
+-- 
+
+UPDATE Buildings Set Cost = Cost * 1.25;
 
 
 

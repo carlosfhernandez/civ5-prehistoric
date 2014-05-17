@@ -39,8 +39,8 @@ city range 1 or even none
 			<Description>TXT_KEY_ERA_0</Description>
 			<ShortDescription>TXT_KEY_ERA_0_SHORT</ShortDescription>
 			<Abbreviation>TXT_KEY_ERA_0_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
-			<ArtPrefix>ANCIENT </ArtPrefix>
+			<Strategy>TXT_KEY_ERA_PREHISTORIC_STRATEGY</Strategy>
+			<ArtPrefix>LOWERPALEOLITHIC </ArtPrefix>
 			<NoGoodies>false</NoGoodies>
 			<NoBarbUnits>false</NoBarbUnits>
 			<NoReligion>false</NoReligion>
@@ -87,8 +87,8 @@ city range 1 or even none
 			<Description>TXT_KEY_ERA_1</Description>
 			<ShortDescription>TXT_KEY_ERA_1_SHORT</ShortDescription>
 			<Abbreviation>TXT_KEY_ERA_1_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
-			<ArtPrefix>ANCIENT </ArtPrefix>
+			<Strategy>TXT_KEY_ERA_LOWERPALEOLITHIC_STRATEGY</Strategy>
+			<ArtPrefix>LOWERPALEOLITHIC</ArtPrefix>
 			<NoGoodies>false</NoGoodies>
 			<NoBarbUnits>false</NoBarbUnits>
 			<NoReligion>false</NoReligion>
@@ -135,8 +135,8 @@ city range 1 or even none
 			<Description>TXT_KEY_ERA_2</Description>
 			<ShortDescription>TXT_KEY_ERA_2_SHORT</ShortDescription>
 			<Abbreviation>TXT_KEY_ERA_2_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
-			<ArtPrefix>ANCIENT </ArtPrefix>
+			<Strategy>TXT_KEY_ERA_PALEOLITHIC_STRATEGY</Strategy>
+			<ArtPrefix>LOWERPALEOLITHIC </ArtPrefix>
 			<NoGoodies>false</NoGoodies>
 			<NoBarbUnits>false</NoBarbUnits>
 			<NoReligion>false</NoReligion>
@@ -516,9 +516,9 @@ city range 1 or even none
 		<Row>
 			<ID>10</ID>
 			<Type>ERA_POSTMODERN</Type>
-			<Description>TXT_KEY_ERA_11</Description>
-			<ShortDescription>TXT_KEY_ERA_11_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_11_ABBREV</Abbreviation>
+			<Description>TXT_KEY_ERA_10</Description>
+			<ShortDescription>TXT_KEY_ERA_10_SHORT</ShortDescription>
+			<Abbreviation>TXT_KEY_ERA_10_ABBREV</Abbreviation>
 			<Strategy>TXT_KEY_ERA_POSTMODERN_STRATEGY</Strategy>
 			<ArtPrefix>POSTMODERN </ArtPrefix>
 			<NoGoodies>true</NoGoodies>
@@ -634,7 +634,20 @@ city range 1 or even none
 	</Eras>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 	<Era_CitySoundscapes>
+
 		<Row>
 			<EraType>ERA_PREHISTORIC</EraType>
 			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
@@ -650,28 +663,315 @@ city range 1 or even none
 			<CitySizeType>CITYSIZE_LARGE</CitySizeType>
 			<SoundscapeScript>ASSS_CITY_ANCIENT_LARGE_SELECT_AMB</SoundscapeScript>
 		</Row>
+
+		<Row>
+			<EraType>ERA_LOWER_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_LOWER_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_LOWER_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_LARGE</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_LARGE_SELECT_AMB</SoundscapeScript>
+		</Row>
+
+		<Row>
+			<EraType>ERA_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_PALEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_LARGE</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_LARGE_SELECT_AMB</SoundscapeScript>
+		</Row>
+
+		<Row>
+			<EraType>ERA_NEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_NEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_SMALL_SELECT_AMB</SoundscapeScript>
+		</Row>
+		<Row>
+			<EraType>ERA_NEOLITHIC</EraType>
+			<CitySizeType>CITYSIZE_LARGE</CitySizeType>
+			<SoundscapeScript>ASSS_CITY_ANCIENT_LARGE_SELECT_AMB</SoundscapeScript>
+		</Row>
+
 	</Era_CitySoundscapes>
 
 
+
+
+
+
+
+
+
 	<Era_Soundtracks>
+
 		<Row>
 			<EraType>ERA_PREHISTORIC</EraType>
 			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_1</Soundtrack>
 		</Row>
+
 		<Row>
-			<EraType>ERA_PREHISTORIC</EraType>
+			<EraType>ERA_LOWER_PALEOLITHIC</EraType>
+			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_1</Soundtrack>
+		</Row>
+
+		<Row>
+			<EraType>ERA_PALEOLITHIC</EraType>
 			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_2</Soundtrack>
 		</Row>
+
 		<Row>
-			<EraType>ERA_PREHISTORIC</EraType>
+			<EraType>ERA_NEOLITHIC</EraType>
 			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_3</Soundtrack>
 		</Row>
-		<Row>
-			<EraType>ERA_PREHISTORIC</EraType>
-			<Soundtrack>AS2D_ANCIENT_SOUNDTRACK_4</Soundtrack>
-		</Row>
+
 	</Era_Soundtracks>
 	
 	
+
+
+	<Language_en_US>
+
+
+		<Update>
+			<Set Text="Prehistoric Era" />
+			<Where Tag="TXT_KEY_ERA_0" />
+		</Update>
+		<Update>
+			<Set Text="Prehistoric" />
+			<Where Tag="TXT_KEY_ERA_0_SHORT" />
+		</Update>	
+		<Update>
+			<Set Text="I" />
+			<Where Tag="TXT_KEY_ERA_0_ABBREV" />
+		</Update>	
+		<Row Tag="TXT_KEY_ERA_PREHSTORIC_STRATEGY">
+			<Text>The Prehistoric Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_PREHSTORIC_QUOTE1">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"Ak un ak un. Agalott. Ak un. Da. Doh Di!!"[NEWLINE][TAB][TAB][TAB][TAB]- Uk Manuk[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_PREHSTORIC_QUOTE2">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move."[NEWLINE][TAB][TAB][TAB][TAB]- Douglas Adams[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_PREHSTORIC_QUOTE3">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"There were only two choices you had to make every day: fight or flee."[NEWLINE][TAB][TAB][TAB][TAB]- C[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+
+
+
+		<Update>
+			<Set Text="Lower Paleolithic Era" />
+			<Where Tag="TXT_KEY_ERA_1" />
+		</Update>
+		<Update>
+			<Set Text="Lower Paleolithic" />
+			<Where Tag="TXT_KEY_ERA_1_SHORT" />
+		</Update>	
+		<Update>
+			<Set Text="II" />
+			<Where Tag="TXT_KEY_ERA_1_ABBREV" />
+		</Update>	
+		<Row Tag="TXT_KEY_ERA_LOWERPALEOLITHIC_STRATEGY">
+			<Text>The Lower Paleolithic Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_LOWERPALEOLITHIC_QUOTE1">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"Ak un ak un. Agalott. Ak un. Da. Doh Di."[NEWLINE][TAB][TAB][TAB][TAB]- Uk Uk Manuk (Great Leader of All Greats)[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_LOWERPALEOLITHIC_QUOTE2">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move."[NEWLINE][TAB][TAB][TAB][TAB]- Douglas Adams[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_LOWERPALEOLITHIC_QUOTE3">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"There were only two choices you had to make every day: fight or flee."[NEWLINE][TAB][TAB][TAB][TAB]- C[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+
+
+
+		<Update>
+			<Set Text="Paleolithic Era" />
+			<Where Tag="TXT_KEY_ERA_2" />
+		</Update>
+		<Update>
+			<Set Text="Paleolithic" />
+			<Where Tag="TXT_KEY_ERA_2_SHORT" />
+		</Update>	
+		<Update>
+			<Set Text="III" />
+			<Where Tag="TXT_KEY_ERA_2_ABBREV" />
+		</Update>	
+		<Row Tag="TXT_KEY_ERA_PALEOLITHIC_STRATEGY">
+			<Text>The Paleolithic Era</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_ERA_PALEOLITHIC_QUOTE1">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"We are chronologically illiterate and cannot easily conceive of the very distant past ... the great curtain of ice descends, and the more distant past seems almost nothing to do with us. Very cold, presumably, with mammoths ... And as for before the Ice Age, it seems more inaccessible than Mars."[NEWLINE][TAB][TAB][TAB][TAB]- Adam Nicolson[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_PALEOLITHIC_QUOTE2">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"History followed different courses for different peoples because of differences among peoples' environments, not because of biological differences among peoples themselves."[NEWLINE][TAB][TAB][TAB][TAB]- Jared Diamond[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ERA_PALEOLITHIC_QUOTE3">
+			<Text>[NEWLINE][TAB][TAB][TAB][TAB]"I am convinced that human history has not yet begun, that we find ourselves in the last period of the prehistoric."[NEWLINE][TAB][TAB][TAB][TAB]- Bartolomeo Vanzetti[NEWLINE][TAB][TAB][TAB]</Text>
+		</Row>
+
+
+
+		<Update>
+			<Set Text="Neolithic Era" />
+			<Where Tag="TXT_KEY_ERA_3" />
+		</Update>
+		<Update>
+			<Set Text="IV" />
+			<Where Tag="TXT_KEY_ERA_3_SHORT" />
+		</Update>	
+		<Update>
+			<Set Text="Neolithic" />
+			<Where Tag="TXT_KEY_ERA_3_ABBREV" />
+		</Update>	
+
+
+
+		<Update>
+			<Set Text="Ancient Era" />
+			<Where Tag="TXT_KEY_ERA_4" />
+		</Update>
+		<Update>
+			<Set Text="Ancient" />
+			<Where Tag="TXT_KEY_ERA_4_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="V" />
+			<Where Tag="TXT_KEY_ERA_4_ABBREV" />
+		</Update>			
+
+		<Update>
+			<Set Text="Classical Era" />
+			<Where Tag="TXT_KEY_ERA_5" />
+		</Update>
+		<Update>
+			<Set Text="Classical" />
+			<Where Tag="TXT_KEY_ERA_5_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="VI" />
+			<Where Tag="TXT_KEY_ERA_5_ABBREV" />
+		</Update>			
+
+		<Update>
+			<Set Text="Medieval Era" />
+			<Where Tag="TXT_KEY_ERA_6" />
+		</Update>
+		<Update>
+			<Set Text="Medieval" />
+			<Where Tag="TXT_KEY_ERA_6_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="VII" />
+			<Where Tag="TXT_KEY_ERA_6_ABBREV" />
+		</Update>	
+
+		<Update>
+			<Set Text="Renaissance Era" />
+			<Where Tag="TXT_KEY_ERA_7" />
+		</Update>
+		<Update>
+			<Set Text="Renaissance" />
+			<Where Tag="TXT_KEY_ERA_7_SHORT" />
+		</Update>
+		<Update>
+			<Set Text="VIII" />
+			<Where Tag="TXT_KEY_ERA_7_ABBREV" />
+		</Update>	
+
+		<Row>
+			<Tag>TXT_KEY_ERA_8</Tag>
+			<Text>Industrial Era</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_8_SHORT</Tag>
+			<Text>Industrial</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_8_ABBREV</Tag>
+			<Text>IX</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_8_STRATEGY</Tag>
+			<Text>The Industrial Era</Text>
+		</Row>	
+
+		<Row>
+			<Tag>TXT_KEY_ERA_9</Tag>
+			<Text>Modern Era</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_9_SHORT</Tag>
+			<Text>Modern</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_9_ABBREV</Tag>
+			<Text>X</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_9_STRATEGY</Tag>
+			<Text>Teh Modern Era</Text>
+		</Row>
+
+		<Row>
+			<Tag>TXT_KEY_ERA_10</Tag>
+			<Text>Atomic Era</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_10_SHORT</Tag>
+			<Text>Atomic</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_10_ABBREV</Tag>
+			<Text>XI</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_10_STRATEGY</Tag>
+			<Text>The Atomic Era</Text>
+		</Row>
+
+		<Row>
+			<Tag>TXT_KEY_ERA_11</Tag>
+			<Text>Information Era</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_11_SHORT</Tag>
+			<Text>Information</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_11_ABBREV</Tag>
+			<Text>XII</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_ERA_11_STRATEGY</Tag>
+			<Text>The Information Era</Text>
+		</Row>		
+
+
+	</Language_en_US>
+
+
+
 	
 </GameData>

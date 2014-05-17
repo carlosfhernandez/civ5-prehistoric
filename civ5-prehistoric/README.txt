@@ -1,8 +1,6 @@
 This mod adds a new era, the Prehistoric Era, with 2000 years of human history.
 
-*** Important Compatibility Section below. Avoid conflicts! ***
-
-[[ v0.2.10a / Steam v13 / 2014-01-26 ]]
+[[ v0.3.0a-preview / Steam v100 / 2014-05-13 ]]
 
 - New Era: Prehistoric Era.
 - 17 new Technologies: Fire, Gathering, Tools, Numbers, and more.

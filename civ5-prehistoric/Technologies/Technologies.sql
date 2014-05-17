@@ -11,12 +11,12 @@ WHERE Type='TECH_WRITING';
 
 -- Change Free Tech at start of game for EVERYONE
 UPDATE Civilization_FreeTechs
-SET TechType='TECH_BIPEDAL_ADAPTION';
+SET TechType='TECH_GREAT_DIVERGENCE';
 
 
 -- Add other free techs base on original list of civilizations in the table
-INSERT INTO Civilization_FreeTechs
-SELECT DISTINCT(CivilizationType), 'TECH_GREAT_DIVERGENCE' FROM Civilization_FreeTechs;
+-- INSERT INTO Civilization_FreeTechs
+-- SELECT DISTINCT(CivilizationType), 'TECH_GREAT_DIVERGENCE' FROM Civilization_FreeTechs;
 
 INSERT INTO Civilization_FreeTechs
 SELECT DISTINCT(CivilizationType), 'TECH_PRIMATE_COGNITION' FROM Civilization_FreeTechs;

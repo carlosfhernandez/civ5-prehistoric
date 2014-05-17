@@ -166,14 +166,14 @@ Prehistoric Mod BNW v0.2.15a
   │                                                                                                                                   ░                                                                           ░                                                                           ░                                           ░                                    ░                                        ░                                          ░                                        ░                                         ░                                                            █
 0 │                                                                  ┌──Scavenging─────────┬──Complex Tools─────Hunting───────────┬───░──Coordinated Hunting─────┬──Collaborative Hunting──────────────────┐      ░                                                       ┌──Sailing──────────░──Optics───────────────────────────────────░─────────────────┬──Compass─────┐   ░                                        ░                                          ░                                        ░                                         ░                       ┌──The Internet──────┐               █
 1 │                                          ┌──Advanced Perception──┼──Curiousity─────────┤                                      ├───░──Orienteering────────────┘                                         │      ░               ┌──Pottery───────Numbers────────────────┼──Calendar─────────░─────────────────────Philosophy────────┬───░──Theology───────┤              ├───░──Astronomy──────────Navigation─────┬───░──Archaeology─────────┬──Biology──────┬───░──Refrigeration──────────────────────┬──░──Penicillin──────┬──Ecology──────────┬──░──Telecommunication────┼──Globalization─────┤               █
-2 │                                          │                       │                     ├──???????????????                     └───░──Scouting─────────────────────────────────────────────Archery──────┤      ░               │                                       └──Writing──────────░─────────────────────Drama and Poetry──│   ░                 ├──Education───┤   ░                                    │   ░                      ├──Electricity──┼───░──Radio──────────────┬──Plastics─────┤  ░                  │                   ├──░──Mobile Tactics───────┼──Particle Physics──┤               █
+2 │                                          │                       │                     ├──???????????????                     └───░──Scouting─────────────────────────────────────────────Archery──────┤      ░               │                                       └──Writing──────────░─────────────────────Drama and Poetry──┤   ░                 ├──Education───┤   ░                                    │   ░                      ├──Electricity──┼───░──Radio──────────────┬──Plastics─────┤  ░                  │                   ├──░──Mobile Tactics───────┼──Particle Physics──┤               █
 3 │                                          │                       │                     │                                          ░                                                    ┌──Idols────────┤      ░               │                                                           ░                                       │   ░                 │              ├───░──Acoustics───────┬──Architecture───┼───░──Scientific Theory───┤               ├───░──Replaceable Parts──┤               ├──░──Atomic Theory───┼──Nuclear Fission──┤  ░                       │                    │               █ 
 4 │  Bipedal Adaption─────Bipedalism─────────┼──Adapted Tools────────┴──Simple Tools───────┼──Migration─────────Fire──────────────┬───░──Cooking────────────────────Expression─────────────┴──Painting─────┼──────░──Agriculture──┼──Trapping───┬──Animal Domestication!──┬──Husbandry────────░──Horseback Riding─────────────────────┼───░──Civil Service──┤              │   ░                  │                 │   ░                      │               │   ░                     ├──Electronics──┤  ░                  │                   ├──░──Advanced Ballistics──┤                    ├──Future Tech  █
 5 │                                          │                                             ├──Adhesives─────────Foraging──────────┘   ░                          ┌──Harpooning─────────────┬──Beading──────┤      ░               │             │                         │                   ░                                       │   ░                 ├──Chivlary────┼───░──Banking─────────┼──Economics──────┼───░──Industrialization───┼──Steam Power──┼───░──Flight─────────────┼──Ballistics───┼──░──Radar───────────┼──Rocketry─────────┼──░──Satellites───────────┼──Nuclear Fusion────┤               █
 6 │                                          ├──Locomotion─────────────────────────────────┴──Containers────────Gathering─────────────░──────────────────────────┴──Tool Specialization────┼──Warfare──────┤      ░               ├──Trading────┴──The Wheel──────────────┼──Caravaning───────░──Mathematics──────┬─Currency──────────┴───░──Guilds*────────┤              │   ░                  │                 ├───░──Rifling─────────────┘               │   ░                     │               │  ░                  │                   ├──░──Robotics─────────────┼──Nanotechnology────┤               █
-7 │                                          │                                                               ┌──Symbolism─────────┬───░──Symbolic Communication──┬──Language───────────────┼──Cooperation──┘      ░               │                                       │                   ░                   ├─Engineering───────┬───░                 ├──Machinery───┼───░──Printing Press──┤                 │   ░                                      ├───░──Railroad───────────┴──Combustion───┴──░──Combined Arms*──┴──Computers────────┴──░──Lasers───────────────┴──Stealth───────────┘               █
-8 │                                          └──Grunts & Growls───────────────────────────────Family Ties────┴──Social Structure──┴───░──Planning────────────────┴──Leadership─────────────┘                      ░               └──Mining────────Mineralogy─────────────┼──Masonry──────────░──Construction─────┘                   ├───░──Metal Casting──┼──Physics─────┘   ░                  ├──Metallurgy─────┼───░──Military Science────┬──Dynamite─────┘   ░                                        ░                                         ░                                                            █
-9 │                                                                                                                                   ░                                                                           ░                                                       └──Bronze Working───░─────────────────────Iron Working──────┘   ░                 └──Steel───────────░──Gunpowder───────┴──Chemistry──────┴───░──Fertilizer──────────┘                   ░                                        ░                                         ░                                                            █
+7 │                                          │                                                               ┌──Symbolism─────────┬───░──Symbolic Communication──┬──Language───────────────┼──Cooperation──┘      ░               │                                       │                   ░                   ├─Engineering───────┬───░─────────────────┴──Machinery───┼───░──Printing Press──┤                 │   ░                                      ├───░──Railroad───────────┴──Combustion───┴──░──Combined Arms*──┴──Computers────────┴──░──Lasers───────────────┴──Stealth───────────┘               █
+8 │                                          └──Grunts & Growls───────────────────────────────Family Ties────┴──Social Structure──┴───░──Planning────────────────┴──Leadership─────────────┘                      ░               └──Mining────────Mineralogy─────────────┼──Masonry──────────░──Construction─────┘                   ├───░──Metal Casting──┬──Physics─────┤   ░                  ├──Metallurgy─────┼───░──Military Science────┬──Dynamite─────┘   ░                                        ░                                         ░                                                            █
+9 │                                                                                                                                   ░                                                                           ░                                                       └──Bronze Working───░─────────────────────Iron Working──────┘   ░                 └──Steel───────┴───░──Gunpowder───────┴──Chemistry──────┴───░──Fertilizer──────────┘                   ░                                        ░                                         ░                                                            █
   └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
      4                    5                     6                       7                     8                 9                        10                         11                        12                     13              14            15                        16                  17                 18                       19                20                 21                 22                    23                     24                  25                    36                 27                 28                     29                      30
 
@@ -294,76 +294,90 @@ Prehistoric Mod BNW v0.2.15a
 
     PREHISTORIC              LOWER PALEOLITHIC                                                   PAELOLITHIC                             NEOLITHIC                                                                   ANCIENT (Neolithic)                                                         CLASSICAL                                   MEDIEVAL                             RENAISSANCE                              INDUSTRIAL                                 MODERN                                   ATOMIC                                    INFORMATION                                                  
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-     4                       5                       6                       7                       8                       9                           10                         11                        12                     13              14            15                        16                  17                 18                       19                20                 21                 22                    23                     24                  25                    36                 27                 28                     29                      30
-  ╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-  ║                                                                                                                                                   ░                                                                           ░                                                                            ░                                           ░                                    ░                                        ░                                          ░                                        ░                                         ░                                                            █
-0 ║                                                                       ╔══Scavenging═══════════╦══Complex Tools═══════════Hunting══════════════╦═══░══Coordinated Hunting═════╦══Collaborative Hunting══════════════════╗      ░                                                        ╔══Sailing══════════░══Optics═══════════════════════════════════░═════════════════╦══Compass═════╗   ░                                        ░                                          ░                                        ░                                         ░                       ╔══The Internet══════╗               █
-  ║                                                                       ║ ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║   ░
-  ║                                                                       ║  u-Autochthon         ║                                               ║   ░
-  ║                                                                       ║  u-Laborer            ║                                               ║   ░
-  ║                                                                       ║  w-Twiggy (H.habilis) ║                                               ║   ░
-  ║                                                                       ║  b-Bone Pile          ║                                               ║   ░
-  ║                                                                       ║                       ║                                               ║   ░
-  ║                                                                       ║                       ║                                               ║   ░
-1 ║                                               ╔══Advanced Perception══╬══Curiousity═══════════╣                                               ╠═══░══Orienteering════════════╝                                         ║      ░               ╔══Pottery═══════Numbers════════════════╬══Calendar═════════░═════════════════════Philosophy════════╦═══░══Theology═══════╣              ╠═══░══Astronomy══════════Navigation═════╦═══░══Archaeology═════════╦══Biology══════╦═══░══Refrigeration══════════════════════╦══░══Penicillin══════╦══Ecology══════════╦══░══Telecommunication════╬══Globalization═════╣               █
-  ║                                               ║ ┌───────────────────┐ ║ ┌───────────────────┐ ║                                               ║   ░
-  ║                                               ║  b-Stone Pile         ║                       ║                                               ║   ░
-  ║                                               ║  u-Watcher            ║                       ║                                               ║   ░
-  ║                                               ║    :offense           ║                       ║                                               ║   ░
-  ║                                               ║  c-Overlook           ║                       ║                                               ║   ░
-  ║                                               ║  w-First Chopper      ║                       ║                                               ║   ░
-2 ║                                               ║                       ║                       ╠══???????????????                              ╚═══░══Scouting═════════════════════════════════════════════Archery══════╣      ░               ║                                        ╚══Writing══════════░═════════════════════Drama and Poetry══║   ░                 ╠══Education═══╣   ░                                    ║   ░                      ╠══Electricity══╬═══░══Radio══════════════╦══Plastics═════╣  ░                  ║                   ╠══░══Mobile Tactics═══════╬══Particle Physics══╣               █
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-3 ║                                               ║                       ║                       ║                                                   ░                                                    ╔══Idols════════╣      ░               ║                                                           ░                                       ║   ░                 ║              ╠═══░══Acoustics═══════╦══Architecture═══╬═══░══Scientific Theory═══╣               ╠═══░══Replaceable Parts══╣               ╠══░══Atomic Theory═══╬══Nuclear Fission══╣  ░                       ║                    ║               █ 
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-  ║                                               ║                       ║                       ║                                                   ░                                                    
-4 ║  Bipedal Adaption════════Bipedalism═══════════╬══Adapted Tools════════╩══Simple Tools═════════╬══Migration═══════════════Fire═════════════════╦═══░══Cooking════════════════════Expression═════════════╩══Painting═════╬══════░══Agriculture══╬══Trapping═══╦══Animal Domestication!══╦══Husbandry════════░══Horseback Riding═════════════════════╬═══░══Civil Service══╣              ║   ░                  ║                 ║   ░                      ║               ║   ░                     ╠══Electronics══╣  ░                  ║                   ╠══░══Advanced Ballistics══╣                    ╠══Future Tech  █
-  ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║   ░
-  ║  u-Australopithecus      u-Wanderer           ║  b-Chert Deposit                              ║                                               ║   ░
-  ║    :offense                :scout             ║  r-stone                                      ║                                               ║   ░
-  ║  b-Lookout Rock          u-Nomad Wanderer     ║  u-Rock Thrower                               ║                                               ║   ░
-  ║  w-Laetoli Footprint       :scout             ║    :ranged                                    ║                                               ║   ░
-  ║  w-Lucy                                       ║  w-Olduvai Gorge Too                          ║                                               ║   ░
-  ║                                               ║                                               ║                                               ║   ░
-  ║                                               ║                                               ║                                               ║   ░
-  ║                                               ║                                               ║                                               ║   ░
-  ║                                               ║                                               ║                                               ║   ░
-5 ║                                               ║                                               ╠══Adhesives═══════════════Foraging═════════════╝   ░                          ╔══Harpooning═════════════╦══Beading══════╣      ░               ║             ║                         ║                   ░                                       ║   ░                 ╠══Chivlary════╬═══░══Banking═════════╬══Economics══════╬═══░══Industrialization═══╬══Steam Power══╬═══░══Flight═════════════╬══Ballistics═══╬══░══Radar═══════════╬══Rocketry═════════╬══░══Satellites═══════════╬══Nuclear Fusion════╣               █
-  ║                                               ║                                               ║ ┌───────────────────┐   ┌───────────────────┐     ░
-  ║                                               ║                                               ║                                                   ░
-  ║                                               ║                                               ║                                                   ░
-  ║                                               ║                                               ║                                                   ░
-  ║                                               ║                                               ║                                                   ░
-6 ║                                               ╠══Locomotion═══════════════════════════════════╩══Containers══════════════Gathering════════════════░══════════════════════════╩══Tool Specialization════╬══Warfare══════╣      ░               ╠══Trading════╩══The Wheel══════════════╬══Caravaning═══════░══Mathematics══════╦═Currency══════════╩═══░══Guilds*════════╣              ║   ░                  ║                 ╠═══░══Rifling═════════════╝               ║   ░                     ║               ║  ░                  ║                   ╠══░══Robotics═════════════╬══Nanotechnology════╣               █
-  ║                                               ║ ┌───────────────────┐                           ┌───────────────────┐   ┌───────────────────┐     ░
-  ║                                               ║  u-Runner                                                                                         ░
-  ║                                               ║                                                                                                   ░
-  ║                                               ║                                                                                                   ░
-  ║                                               ║                                                                                                   ░
-7 ║                                               ║                                                                       ╔══Symbolism════════════╦═══░══Symbolic Communication══╦══Language═══════════════╬══Cooperation══╝      ░               ║                                       ║                   ░                   ╠═Engineering═══════╦═══░                 ╠══Machinery═══╬═══░══Printing Press══╣                 ║   ░                                      ╠═══░══Railroad═══════════╩══Combustion═══╩══░══Combined Arms*══╩══Computers════════╩══░══Lasers═══════════════╩══Stealth═══════════╝               █
-  ║                                               ║                                                                       ║ ┌───────────────────┐ ║   ░
-  ║                                               ║                                                                       ║                       ║   ░
-  ║                                               ║                                                                       ║                       ║   ░
-  ║                                               ║                                                                       ║                       ║   ░
-  ║                                               ║                                                                       ║                       ║   ░
-  ║                                               ║                                                                       ║                       ║   ░
-8 ║                                               ╚══Grunts & Growls═════════════════════════════════Family Ties══════════╩══Social Structure═════╩═══░══Planning════════════════╩══Leadership═════════════╝                      ░               ╚══Mining════════Mineralogy═════════════╬══Masonry══════════░══Construction═════╝                   ╠═══░══Metal Casting══╬══Physics═════╝   ░                  ╠══Metallurgy═════╬═══░══Military Science════╦══Dynamite═════╝   ░                                        ░                                         ░                                                            █
-  ║                                                 ┌───────────────────┐                           ┌───────────────────┐   ┌───────────────────┐     ░
-  ║                                                  b-Gathering Circle                                                                               ░
-  ║                                                  u-Bushman                                                                                        ░
-  ║                                                    :vanguard                                                                                      ░
-  ║                                                                                                                                                   ░
-  ║                                                                                                                                                   ░
-9 ║                                                                                                                                                   ░                                                                           ░                                                              ╚══Bronze Working═══░═════════════════════Iron Working══════╝   ░                 ╚══Steel═══════════░══Gunpowder═══════╩══Chemistry══════╩═══░══Fertilizer══════════╝                   ░                                        ░                                         ░                                                            █
+     4                       5                       6                       7                       8                       9                           10                      11                      12                          13                      14                      15                      16                          17                      18                         19                      20                      21                      22                      23                              24                  25                    36                 27                 28                     29                      30
+  ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  ║                                                                                                                                                   ░                                                                           ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                          ░                                        ░                                         ░                                                            █
+0 ║                                                                       ╔══Scavenging═══════════╦══Complex Tools═══════════Hunting══════════════╦═══░══Coordinated Hunting══╦══Collaborative Huntin═════════════════════════╗   ░                                                                       ╔══Sailing══════════════════░══Optics═══════════════════════════════════════════░═══════════════════════╦══Compass══════════════╗   ░                                                   ░                                          ░                                        ░                                         ░                       ╔══The Internet══════╗               █
+  ║                                                                       ║ ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐                         ║   ░                                                                       ║ ┌───────────────────┐     ░ ┌───────────────────┐                             ░                       ║ ┌───────────────────┐ ║   ░                                                   ░                                    
+  ║                                                                       ║  u-Autochthon         ║  u-Primitive Archer      r-Deer               ║   ░  c-Portable Mammoth   ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║  u-Laborer            ║  b-Causeway              r-Reindeer           ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║  w-Twiggy (H.habilis) ║  r-Obsidian              u-Hunter             ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║  b-Bone Pile          ║  r-Flint                   :special           ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║                       ║  w-Schoningen Spears     i-Outpost            ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║                       ║                          b-Hunting Trails     ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║                       ║                          w-Afontora Gora      ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║                       ║                                               ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                                                       ║                       ║                                               ║   ░                       ║                                               ║   ░                                                                       ║                           ░                                                   ░                       ║                       ║   ░                                                   ░                                    
+  ║                                               ╔══Advanced Perception══╬══Curiousity═══════════╣                                               ╠═══░══Orienteering═════════╝                                               ║   ░                       ╔══Pottery═════════════════Numbers══════════════╬══Calendar═════════════════░══════════════════════════Philosophy═══════════╦═══░══Theology═════════════╣                       ╠═══░══Astronomy═══════════════Navigation═══════════╦═══░══Archaeology══════════╦══Biology══════╦═══░══Refrigeration══════════════════════╦══░══Penicillin══════╦══Ecology══════════╦══░══Telecommunication════╬══Globalization═════╣               █
+  ║                                               ║ ┌───────────────────┐ ║ ┌───────────────────┐ ║                                               ║   ░ ┌───────────────────┐                                                 ║   ░                       ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐     ░                         ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║                       ║   ░ ┌───────────────────┐   ┌───────────────────┐ ║   ░                       ║
+  ║                                               ║  b-Stone Pile         ║  w-Torralba and Ambr  ║                                               ║   ░                                                                       ║   ░                       ║                                               ║                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║  u-Watcher            ║  u-Adventurer         ║                                               ║   ░                                                                       ║   ░                       ║                                               ║                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║    :offense           ║    :scout             ║                                               ║   ░                                                                       ║   ░                       ║                                               ║                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║  c-Grand Overlook     ║                       ║                                               ║   ░                                                                       ║   ░                       ║                                               ║                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║  w-First Chopper      ║                       ║                                               ║   ░                                                                       ║   ░                       ║                                               ║                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+2 ║                                               ║  b-Overlook           ║                       ╠══???????????????                              ╚═══░══Scouting════════════════════════════════════════Archery══════════════╣   ░                       ║                                               ╚══Writing══════════════════░══════════════════════════Drama and Poetry═════╣   ░                       ╠══Education════════════╣   ░                                               ║   ░                       ╠══Electricity══╬═══░══Radio══════════════╦══Plastics═════╣  ░                  ║                   ╠══░══Mobile Tactics═══════╬══Particle Physics══╣               █
+  ║                                               ║                       ║                       ║                                                   ░ ┌───────────────────┐                           ┌───────────────────┐ ║   ░                       ║                                                 ┌───────────────────┐     ░                         ┌───────────────────┐ ║   ░                       ║ ┌───────────────────┐ ║   ░                                               ║   ░                       ║                       ║                                                   ░                                                                       ║   ░                       ║                                                                           ░                                       ║   ░
+  ║                                               ║                       ║                       ║                                                   ░                                                                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                                                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                                                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                                                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                                               ║   ░                       ║
+3 ║                                               ║                       ║                       ║                                                   ░                                               ╔══Idols════════════════╣   ░                       ║                                                                           ░                                               ║   ░                       ║                       ╠═══░══Acoustics════════════╦══Architecture═════════╬═══░══Scientific Theory════╣               ╠═══░══Replaceable Parts══╣               ╠══░══Atomic Theory═══╬══Nuclear Fission══╣  ░                       ║                    ║               █ 
+  ║                                               ║                       ║                       ║                                                   ░                                               ║ ┌───────────────────┐ ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║
+  ║                                               ║                       ║                       ║                                                   ░                                               ║                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                               ║                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                               ║                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                               ║                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                       ║                       ║                                                   ░                                               ║                       ║   ░                       ║                                                                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+4 ║  Bipedal Adaption════════Bipedalism═══════════╬══Adapted Tools════════╩══Simple Tools═════════╬══Migration═══════════════Fire═════════════════╦═══░══Cooking═════════════════Expression═══════════╩══Painting═════════════╬═══░══Agriculture══════════╬══Trapping═════════════╦══Animal Domestication═╦══Husbandry════════════════░══Horseback Riding═════════════════════════════╬═══░══Civil Service════════╣                       ║   ░                       ║                       ║   ░                       ║               ║   ░                     ╠══Electronics══╣  ░                  ║                   ╠══░══Advanced Ballistics══╣                    ╠══Future Tech  █
+  ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐   ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║ ┌───────────────────┐ ║ ┌───────────────────┐     ░ ┌───────────────────┐                         ║   ░ ┌───────────────────┐ ║                       ║   ░                       ║                       ║   ░                       ║
+  ║  u-Australopithecus      u-Wanderer           ║  b-Chert Deposit         u-Protector          ║  u-Tribe Split           u-Shaman             ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║    :offense                :scout             ║  r-stone                   :defense           ║    :settle                 :support           ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║  b-Lookout Rock          u-Nomad Wanderer     ║  u-Rock Thrower          u-Spear Hunter       ║  u-Savage                u-Keeper             ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║  w-Laetoli Footprint       :scout             ║    :ranged                 :ranged            ║    :siege                  :special           ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║  w-Lucy                                       ║  w-Olduvai Gorge Too     b-Open Shelter       ║                          b-Campfire           ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                          b-Portable Grass Sh  ║                          w-Gesher Benot Ya’a  ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                          b-Advanced Shelter   ║                                               ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                           +Shelter1           ║                                               ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                           +Shelter2           ║                                               ║   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+5 ║                                               ║                          c-Alpha's Cave       ╠══Adhesives═══════════════Foraging═════════════╝   ░                       ╔══Harpooning═══════════╦══Beading══════════════╣   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ╠══Chivlary═════════════╬═══░══Banking══════════════╬══Economics════════════╬═══░══Industrialization════╬══Steam Power══╬═══░══Flight═════════════╬══Ballistics═══╬══░══Radar═══════════╬══Rocketry═════════╬══░══Satellites═══════════╬══Nuclear Fusion════╣               █
+  ║                                               ║                          w-Terra Amata Shelt  ║ ┌───────────────────┐   ┌───────────────────┐     ░                       ║ ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║
+  ║                                               ║                                               ║  b-Waterproof Hut        u-Caveman                ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                               ║                          i-Foraging Site          ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                               ║                          b-Hideout                ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                               ║                                                   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                               ║                                                   ░                       ║                       ║                       ║   ░                       ║                       ║                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+6 ║                                               ╠══Locomotion═══════════════════════════════════╩══Containers══════════════Gathering════════════════░═══════════════════════╩══Tool Specialization══╬══Warfare══════════════╣   ░                       ╠══Trading══════════════╩══The Wheel════════════╬══Caravaning═══════════════░══Mathematics══════════╦══Currency═════════════╩═══░══Guilds*══════════════╣                       ║   ░                       ║                       ╠═══░══Rifling══════════════╝               ║   ░                     ║               ║  ░                  ║                   ╠══░══Robotics═════════════╬══Nanotechnology════╣               █
+  ║                                               ║ ┌───────────────────┐                           ┌───────────────────┐   ┌───────────────────┐     ░                         ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░                       ║ ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐     ░ ┌───────────────────┐ ║ ┌───────────────────┐     ░ ┌───────────────────┐ ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║  u-Runner                                        u-Slinger                                        ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                    :ranged                                        ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                  b-Rubble Wall                                    ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                  b-Water Storage                                  ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                  w-Bhimbetka Rock Sh                              ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                                                   ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                                                   ░                                               ║                       ║   ░                       ║                                               ║                           ░                       ║                           ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+7 ║                                               ║                                                                       ╔══Symbolism════════════╦═══░══Symbolic Communicati═╦══Language═════════════╬══Cooperation══════════╝   ░                       ║                                               ║                           ░                       ╠══Engineering══════════╦═══░═══════════════════════╩══Machinery════════════╬═══░══Printing Press═══════╣                       ║   ░                       ║               ╠═══░══Railroad═══════════╩══Combustion═══╩══░══Combined Arms*══╩══Computers════════╩══░══Lasers═══════════════╩══Stealth═══════════╝               █
+  ║                                               ║                                                                       ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║ ┌───────────────────┐     ░                       ║                                               ║                           ░                       ║ ┌───────────────────┐ ║   ░                         ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+  ║                                               ║                                                                       ║                       ║   ░                       ║                       ║                           ░                       ║                                               ║                           ░                       ║                       ║   ░                                               ║   ░                       ║                       ║   ░                       ║
+8 ║                                               ╚══Grunts & Growls═════════════════════════════════Family Ties══════════╩══Social Structure═════╩═══░══Planning═════════════╩══Leadership═══════════╝                           ░                       ╚══Mining══════════════════Mineralogy═══════════╬══Masonry══════════════════░══Construction═════════╝                       ╠═══░══Metal Casting════════╦══Physics══════════════╣   ░                       ╠══Metallurgy═══════════╬═══░══Military Science═════╦══Dynamite═════╝   ░                                        ░                                         ░                                                            █
+  ║                                                 ┌───────────────────┐                           ┌───────────────────┐   ┌───────────────────┐     ░ ┌───────────────────┐   ┌───────────────────┐                             ░                         ┌───────────────────┐   ┌───────────────────┐ ║ ┌───────────────────┐     ░ ┌───────────────────┐                         ║   ░ ┌───────────────────┐ ║ ┌───────────────────┐ ║   ░                       ║ ┌───────────────────┐ ║   ░ ┌───────────────────┐ ║                  ║
+  ║                                                  b-Gathering Circle                              u-Lookout               c-Chief's Hut            ░  c-Luxury Hut            c-Palace                                         ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                                  u-Bushman                                         :sentinel                                      ░                          u-Galley                                         ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                                    :vanguard                                     u-Patriarch                                      ░                          w-Cairn of Barnenez                              ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                                                                                    :leader                                        ░                                                                           ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                                                                                  u-Matriarch                                      ░                                                                           ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+  ║                                                                                                    :leader                                        ░                                                                           ░                                                                       ║                           ░                                               ║   ░                       ║                       ║   ░                       ║                       ║   ░                       ║
+9 ║                                                                                                                                                   ░                                                                           ░                                                                       ╚══Bronze Working═══════════░══════════════════════════Iron Working═════════╝   ░                       ╚══Steel════════════════╩═══░══Gunpowder════════════╩══Chemistry════════════╩═══░══Fertilizer═══════════╝                   ░                                        ░                                         ░                                                            █
+  ║                                                                                                                                                                                                                               ░                                                                         ┌───────────────────┐     ░                         ┌───────────────────┐     ░                         ┌───────────────────┐     ░ ┌───────────────────┐   ┌───────────────────┐     ░ ┌───────────────────┐                                                                                                                                                                        
+  ║                                                                                                                                                                                                                               ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                                     
+  ║                                                                                                                                                                                                                               ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                                      
+  ║                                                                                                                                                                                                                               ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                                       
+  ║                                                                                                                                                                                                                               ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                                       
+  ║                                                                                                                                                                                                                               ░                                                                                                   ░                                                   ░                                                   ░                                                   ░                                                       
   ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
      4                       5                       6                       7                       8                       9                           10                         11                        12                     13              14            15                        16                  17                 18                       19                20                 21                 22                    23                     24                  25                    36                 27                 28                     29                      30
 
@@ -518,7 +532,8 @@ LEGEND
 │ Advanced Perception                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Stone Pile                            TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   * u-Watcher (t:sentinel)                   *-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     c-Overlook                          NAME ?-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Grand Overlook                    NAME ?-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-Overlook                                 TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-First Chopper                         TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -575,7 +590,7 @@ LEGEND
 │                       - SubShelter: Overhang                 *      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                       - SubShelter: Grass                    *      │   │  │  │  │  │  │  │  │  │  │  │  │
 │                       - SubShelter: Cave                     *      │   │  │  │  │  │  │  │  │  │  │  │  │
-│                     c-Chief Shelter                        ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Alpha's Cave                         ***-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     w-Terra Amata Shelter                  TXT-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -719,6 +734,7 @@ LEGEND
 │ Coordinated Hunting                                                 │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   * u-Axe Thrower (:ranged)                MOD-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Meat Rack                             TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     c-Portable Mammoth Tent                 TX-TODO │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -936,6 +952,9 @@ LEGEND
 │                     x-Chop Down Forest                              │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
+
+
+
 │                                                                     │   │  │  │  │  │  │  │  │  │  │  │  │
 │ Numbers                                                             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Spices                                        │   │  │  │  │  │  │  │  │  │  │  │  │
@@ -952,6 +971,7 @@ LEGEND
 │ The Wheel                                                           │   │  │  │  │  │  │  │  │  │  │  │  │
 │                   ` u-Chariot Archer                                │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     b-Water Mill                                    │   │  │  │  │  │  │  │  │  │  │  │  │
+│                     b-#Floating Gardens                             │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     r-Cotton                                        │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     i-Road                                          │   │  │  │  │  │  │  │  │  │  │  │  │
 │                     ------------------------------------------------┤   │  │  │  │  │  │  │  │  │  │  │  │
@@ -1203,11 +1223,11 @@ LEGEND
     <Row>
       <ID>0</ID>
       <Type>TECH_EXTINCTION_EVENT</Type>
-      <Cost>4</Cost>
-      <Description>TXT_KEY_TECH_EXTINCTION_EVEN_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_EXTINCTION_EVEN_PEDIA</Civilopedia>
-      <Help>TXT_KEY_TECH_EXTINCTION_EVEN_HELP</Help>
-      <Quote>TXT_KEY_TECH_EXTINCTION_EVEN_QUOTE</Quote>
+      <Cost>1</Cost>
+      <Description>TXT_KEY_TECH_EXTINCTION_EVENT_TITLE</Description>
+      <Civilopedia>TXT_KEY_TECH_EXTINCTION_EVENT_PEDIA</Civilopedia>
+      <Help>TXT_KEY_TECH_EXTINCTION_EVENT_HELP</Help>
+      <Quote>TXT_KEY_TECH_EXTINCTION_EVENT_QUOTE</Quote>
       <Era>ERA_PREHISTORIC</Era>
       <Trade>true</Trade>      
       <GridX>0</GridX>
@@ -1222,7 +1242,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1233,7 +1253,7 @@ LEGEND
 
     <Row>
       <Type>TECH_ADAPTIVE_RADIATION</Type>
-      <Cost>4</Cost>
+      <Cost>1</Cost>
       <Description>TXT_KEY_TECH_ADAPTIVE_RADIATION_TITLE</Description>
       <Civilopedia>TXT_KEY_TECH_ADAPTIVE_RADIATION_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_ADAPTIVE_RADIATION_HELP</Help>
@@ -1252,7 +1272,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1262,7 +1282,7 @@ LEGEND
     
     <Row>
       <Type>TECH_PRIMATE_COGNITION</Type>
-      <Cost>4</Cost>
+      <Cost>1</Cost>
       <Description>TXT_KEY_TECH_PRIMATE_COGNITION_TITLE</Description>
       <Civilopedia>TXT_KEY_TECH_PRIMATE_COGNITION_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_PRIMATE_COGNITION_HELP</Help>
@@ -1282,7 +1302,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1293,7 +1313,7 @@ LEGEND
     
     <Row>
       <Type>TECH_GREAT_DIVERGENCE</Type>
-      <Cost>4</Cost>
+      <Cost>1</Cost>
       <Description>TXT_KEY_TECH_GREAT_DIVERGENCE_TITLE</Description>
       <Civilopedia>TXT_KEY_TECH_GREAT_DIVERGENCE_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_GREAT_DIVERGENCE_HELP</Help>
@@ -1313,7 +1333,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1324,7 +1344,7 @@ LEGEND
     
     <Row>
       <Type>TECH_BIPEDAL_ADAPTION</Type>
-      <Cost>4</Cost>
+      <Cost>0</Cost>
       <Description>TXT_KEY_TECH_BIPEDAL_ADAPTION_TITLE</Description>
       <Civilopedia>TXT_KEY_TECH_BIPEDAL_ADAPTION_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_BIPEDAL_ADAPTION_HELP</Help>
@@ -1379,7 +1399,7 @@ LEGEND
 
     
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1593,7 +1613,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1761,9 +1781,9 @@ LEGEND
     <Row>
       <Type>TECH_SCOUTING</Type>
       <Cost>16</Cost>
-      <Description>TXT_KEY_TECH_SCOUTING_DESC</Description>
-      <Civilopedia>TXT_KEY_TECH_SCOUTING_PEDIA</Civilopedia>
+      <Description>TXT_KEY_TECH_SCOUTING_TITLE</Description>
       <Help>TXT_KEY_TECH_SCOUTING_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_SCOUTING_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_SCOUTING_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1829,7 +1849,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1841,8 +1861,8 @@ LEGEND
       <Type>TECH_COLLABORATIVE_HUNTING</Type>
       <Cost>12</Cost>
       <Description>TXT_KEY_TECH_COLLABORATIVE_HUNTING_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_COLLABORATIVE_HUNTING_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_COLLABORATIVE_HUNTING_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_COLLABORATIVE_HUNTING_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_COLLABORATIVE_HUNTING_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1857,8 +1877,8 @@ LEGEND
       <Type>TECH_EXPRESSION</Type>
       <Cost>15</Cost>
       <Description>TXT_KEY_TECH_EXPRESSION_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_EXPRESSION_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_EXPRESSION_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_EXPRESSION_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_EXPRESSION_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1873,8 +1893,8 @@ LEGEND
       <Type>TECH_HARPOONING</Type>
       <Cost>15</Cost>
       <Description>TXT_KEY_TECH_HARPOONING_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_HARPOONING_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_HARPOONING_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_HARPOONING_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_HARPOONING_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1889,8 +1909,8 @@ LEGEND
       <Type>TECH_TOOL_SPECIALIZATION</Type>
       <Cost>16</Cost>
       <Description>TXT_KEY_TECH_TOOL_SPECIALIZATION_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_TOOL_SPECIALIZATION_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_TOOL_SPECIALIZATION_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_TOOL_SPECIALIZATION_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_TOOL_SPECIALIZATION_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1905,8 +1925,8 @@ LEGEND
       <Type>TECH_LANGUAGE</Type>
       <Cost>20</Cost>
       <Description>TXT_KEY_TECH_LANGUAGE_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_LANGUAGE_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_LANGUAGE_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_LANGUAGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_LANGUAGE_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1922,8 +1942,8 @@ LEGEND
       <Type>TECH_LEADERSHIP</Type>
       <Cost>18</Cost>
       <Description>TXT_KEY_TECH_LEADERSHIP_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_LEADERSHIP_PEDIA</Civilopedia>
       <Help>TXT_KEY_TECH_LEADERSHIP_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_LEADERSHIP_PEDIA</Civilopedia>
       <Quote>TXT_KEY_TECH_LEADERSHIP_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1941,7 +1961,7 @@ LEGEND
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1954,8 +1974,8 @@ LEGEND
       <Type>TECH_ARCHERY</Type>
       <Cost>28</Cost>
       <Description>TXT_KEY_TECH_ARCHERY_TITLE</Description>
+      <Help>TXT_KEY_TECH_ARCHERY_HELP</Help>
       <Civilopedia>TXT_KEY_TECH_ARCHERY_DESC</Civilopedia>
-      <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Archer[ENDCOLOR]. Unlocks the wonder, [COLOR_CYAN]Temple of Artemis[ENDCOLOR].</Help>
       <Quote>TXT_KEY_TECH_ARCHERY_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
@@ -1971,10 +1991,10 @@ LEGEND
     <Row>
       <Type>TECH_IDOLS</Type>
       <Cost>22</Cost>
-      <Description>Idols</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR] and [COLOR_CYAN]Ggantija Temples[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"Just as no one can be forced into belief, so no one can be forced into unbelief."[NEWLINE][TAB][TAB]  -  Sigmund Freud.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_IDOLS_TITLE</Description>
+      <Help>TXT_KEY_TECH_IDOLS_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_IDOLS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_IDOLS_HELP</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>1</Trade>
       <GoodyTech>false</GoodyTech>
@@ -1987,10 +2007,10 @@ LEGEND
     <Row>
       <Type>TECH_PAINTING</Type>
       <Cost>24</Cost>
-      <Description>Art</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Your citizens become skilled in rudimentary Art. They are now able to create [COLOR_POSITIVE_TEXT]Cave Paintings[ENDCOLOR]. Reveals [ICON_RES_DYES] [COLOR_YELLOW]Dyes[ENDCOLOR] on the map.</Help>
-      <Quote>[NEWLINE][TAB][TAB]"Drawing is still basically the same as it has been since prehistoric times. It brings together man and the world. It lives through magic."[NEWLINE][TAB][TAB]  - Keith Haring.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_PAINTING_TITLE</Description>
+      <Help>TXT_KEY_TECH_PAINTING_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_PAINTING_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_PAINTING_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>1</Trade>
       <GoodyTech>false</GoodyTech>
@@ -2010,8 +2030,8 @@ LEGEND
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
       <GoodyTech>1</GoodyTech>
-      <GridX>11</GridX>
-      <GridY>8</GridY>
+      <GridX>12</GridX>
+      <GridY>5</GridY>
       <PortraitIndex>35</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
@@ -2019,15 +2039,15 @@ LEGEND
     <Row>
       <Type>TECH_WARFARE</Type>
       <Cost>16</Cost>
-      <Description>Warfare</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Unlocks the powerful [COLOR_POSITIVE_TEXT]Savage[ENDCOLOR], an effective unit against settlements. Enables building the [COLOR_POSITIVE_TEXT]Palisade[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"The best weapon against an enemy is another enemy."[NEWLINE][TAB][TAB]  -  Friedrich Nietzsche.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_WARFARE_TITLE</Description>
+      <Help>TXT_KEY_TECH_WARFARE_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_WARFARE_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_WARFARE_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>true</Trade>
       <GoodyTech>1</GoodyTech>
       <GridX>12</GridX>
-      <GridY>5</GridY>
+      <GridY>6</GridY>
       <PortraitIndex>38</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>  
@@ -2035,14 +2055,15 @@ LEGEND
     <Row>
       <Type>TECH_COOPERATION</Type>
       <Cost>26</Cost>
-      <Description>Cooperation</Description>
-      <Help>Unlocks the [COLOR_POSITIVE_TEXT]Warrior[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"The problem with today's humanity is that people judge everyone else but still don't see their own mistakes."[NEWLINE][TAB][TAB]  -  Unknown.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_COOPERATION_TITLE</Description>
+      <Help>TXT_KEY_TECH_COOPERATION_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_COOPERATION_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_COOPERATION_QUOTE</Quote>
       <Era>ERA_NEOLITHIC</Era>
       <Trade>1</Trade>
       <GoodyTech>false</GoodyTech>
       <GridX>12</GridX>
-      <GridY>6</GridY>
+      <GridY>7</GridY>
       <PortraitIndex>39</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
@@ -2075,8 +2096,8 @@ LEGEND
       <Type>TECH_AGRICULTURE</Type>
       <Cost>30</Cost>
       <Description>TXT_KEY_TECH_AGRICULTURE_TITLE</Description>
+      <Help>TXT_KEY_TECH_AGRICULTURE_HELP</Help>
       <Civilopedia>TXT_KEY_TECH_AGRICULTURE_DESC</Civilopedia>
-      <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Worker[ENDCOLOR] who can contruct [COLOR_POSITIVE_TEXT]Farms[ENDCOLOR]. Reveals [ICON_RES_WHEAT] [COLOR_YELLOW]Wheat[ENDCOLOR], [ICON_RES_SUGAR] [COLOR_YELLOW]Sugar[ENDCOLOR], [ICON_RES_CITRUS] [COLOR_YELLOW]Citrus[ENDCOLOR].</Help>
       <Quote>TXT_KEY_TECH_AGRICULTURE_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2095,7 +2116,7 @@ LEGEND
 
     
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -2108,7 +2129,7 @@ LEGEND
       <Cost>36</Cost>
       <Description>TXT_KEY_TECH_POTTERY_TITLE</Description>
       <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
-      <Help>Allows your cities to build the [COLOR_POSITIVE_TEXT]Granary[ENDCOLOR], which provides [ICON_FOOD] Food, helping your cities grow larger. Reveals [ICON_RES_PORCELAIN] [COLOR_YELLOW]Porcelain[ENDCOLOR] on the map.</Help>
+      <Help>TXT_KEY_TECH_POTTERY_HELP</Help>
       <Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2126,8 +2147,8 @@ LEGEND
       <Type>TECH_TRAPPING</Type>
       <Cost>33</Cost>
       <Description>TXT_KEY_TECH_TRAPPING_TITLE</Description>
+      <Help>TXT_KEY_TECH_TRAPPING_HELP</Help>
       <Civilopedia>TXT_KEY_TECH_TRAPPING_DESC</Civilopedia>
-      <Help>Allows your workers to construct [COLOR_POSITIVE_TEXT]Camps[ENDCOLOR] on sources of [ICON_RES_DEER] [COLOR_POSITIVE_TEXT]Deer[ENDCOLOR], [ICON_RES_IVORY] [COLOR_POSITIVE_TEXT]Ivory[ENDCOLOR], [ICON_RES_FUR] [COLOR_POSITIVE_TEXT]Fur[ENDCOLOR], and [ICON_RES_TRUFFLES] [COLOR_POSITIVE_TEXT]Truffles[ENDCOLOR].</Help>
       <Quote>TXT_KEY_TECH_TRAPPING_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2143,9 +2164,10 @@ LEGEND
     <Row>
       <Type>TECH_TRADING</Type>
       <Cost>38</Cost>
-      <Description>Trading</Description>
-      <Help>Your citizens become effecient traders. Reveals [ICON_RES_IVORY] [COLOR_YELLOW]Ivory[ENDCOLOR], [ICON_RES_INCENSE] [COLOR_YELLOW]Incense[ENDCOLOR], and [ICON_RES_TRUFFLES] [COLOR_YELLOW]Truffles[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"The propensity to truck, barter and exchange one thing for another is common to all men, and to be found in no other race of animals."[NEWLINE][TAB][TAB]  -  Adam Smith.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_TRADING_TITLE</Description>
+      <Help>TXT_KEY_TECH_TRADING_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_TRADING_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_TRADING_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
       <GoodyTech>1</GoodyTech>
@@ -2160,8 +2182,8 @@ LEGEND
       <Type>TECH_MINING</Type>
       <Cost>40</Cost>
       <Description>TXT_KEY_TECH_MINING_TITLE</Description>
+      <Help>TXT_KEY_TECH_MINING_HELP</Help>
       <Civilopedia>TXT_KEY_TECH_MINING_DESC</Civilopedia>
-      <Help>Allows Workers to construct [COLOR_POSITIVE_TEXT]Mines[ENDCOLOR] to increase the [ICON_PRODUCTION] Production of map tiles, and [COLOR_POSITIVE_TEXT]Chop Forests[ENDCOLOR], allowing the construction of other improvements. Reveals [ICON_RES_GOLD] [COLOR_YELLOW]Gold[ENDCOLOR], [ICON_RES_SILVER] [COLOR_YELLOW]Silver[ENDCOLOR], and [ICON_RES_SALT] [COLOR_YELLOW]Salt[ENDCOLOR].</Help>
       <Quote>TXT_KEY_TECH_MINING_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2181,7 +2203,7 @@ LEGEND
     
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -2192,10 +2214,10 @@ LEGEND
     <Row>
       <Type>TECH_NUMBERS</Type>
       <Cost>35</Cost>
-      <Description>Numbers</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Your citizens can now count, aiding in keeping track of inventory, and advancing trade. Reveals [ICON_RES_SPICES] [COLOR_YELLOW]Spices[ENDCOLOR] and [ICON_RES_SILK] [COLOR_YELLOW]Silk[ENDCOLOR] on the map.</Help>
-      <Quote>[NEWLINE][TAB][TAB]"Dave, stop. Stop, will you? Stop, Dave. Will you stop, Dave? Stop, Dave. I'm afraid."[NEWLINE][TAB][TAB]  -  HAL 9000.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_NUMBERS_TITLE</Description>
+      <Help>TXT_KEY_TECH_NUMBERS_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_NUMBERS_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_NUMBERS_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
       <GoodyTech>0</GoodyTech>
@@ -2210,10 +2232,10 @@ LEGEND
     <Row>
       <Type>TECH_ANIMAL_DOMESTICATION</Type>
       <Cost>35</Cost>
-      <Description>Animal Domestication</Description>
-      <Civilopedia></Civilopedia>
-      <Quote>[NEWLINE][TAB][TAB]"Never trust a sheep."[NEWLINE][TAB][TAB]  -  Ryan Stiles.[NEWLINE][TAB]</Quote>
-      <Help>Reveals [ICON_RES_COW] [COLOR_YELLOW]Cattle[ENDCOLOR] and [ICON_RES_SHEEP] [COLOR_YELLOW]Sheep[ENDCOLOR] on the map.</Help>
+      <Description>TXT_KEY_TECH_ANIMAL_DOMESTICATION_TITLE</Description>
+      <Help>TXT_KEY_TECH_ANIMAL_DOMESTICATION_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_ANIMAL_DOMESTICATION_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_ANIMAL_DOMESTICATION_QUOTE</Quote>      
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
       <GoodyTech>0</GoodyTech>
@@ -2230,8 +2252,8 @@ LEGEND
       <Type>TECH_THE_WHEEL</Type>
       <Cost>55</Cost>
       <Description>TXT_KEY_TECH_THE_WHEEL_TITLE</Description>
-      <Civilopedia>TXT_KEY_TECH_THE_WHEEL_DESC</Civilopedia>
       <Help>TXT_KEY_TECH_THE_WHEEL_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_THE_WHEEL_DESC</Civilopedia>
       <Quote>TXT_KEY_TECH_THE_WHEEL_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2247,10 +2269,10 @@ LEGEND
     <Row>
       <Type>TECH_MINERALOGY</Type>
       <Cost>35</Cost>
-      <Description>Mineralogy</Description>
-      <Civilopedia></Civilopedia>
-      <Help>Mineralogy allows further regfinement of natural minerals. Reveals [ICON_RES_GEMS] [COLOR_YELLOW]Gems[ENDCOLOR], [ICON_RES_MARBLE] [COLOR_YELLOW]Marble[ENDCOLOR], and [ICON_RES_JEWELRY] [COLOR_YELLOW]Jewelry[ENDCOLOR].</Help>
-      <Quote>[NEWLINE][TAB][TAB]"Better a diamond with a flaw than a pebble without."[NEWLINE][TAB][TAB]  -  Confucious.[NEWLINE][TAB]</Quote>
+      <Description>TXT_KEY_TECH_MINERALOGY_TITLE</Description>
+      <Help>TXT_KEY_TECH_MINERALOGY_HELP</Help>
+      <Civilopedia>TXT_KEY_TECH_MINERALOGY_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_TECH_MINERALOGY_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
       <GoodyTech>0</GoodyTech>
@@ -2266,10 +2288,12 @@ LEGEND
 
 
 
-    
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -2281,11 +2305,6 @@ LEGEND
       <Where Type="TECH_SAILING"/>
       <Set GoodyTech="0"/>
     </Update>
-
-    <Update>
-      <Where Type="TECH_SAILING"/>
-      <Set Help="Allows you to build the [COLOR_POSITIVE_TEXT]Cargo Ship[ENDCOLOR], used to establish lucrative sea-based [COLOR_POSITIVE_TEXT]Trade Routes[ENDCOLOR]. Also allows you to build military and economic ships, useful for exploration and harvesting resources in the water like [ICON_FISH] [COLOR_POSITIVE_TEXT]Fish[ENDCOLOR] and [ICON_PEARLS] [COLOR_POSITIVE_TEXT]Pearl[ENDCOLOR]. Also reveals [ICON_WHALE] [COLOR_YELLOW]Whales[ENDCOLOR] on the map." />
-    </Update> 
 
     <Update>
       <Where Type="TECH_CALENDAR"/>
@@ -2321,8 +2340,8 @@ LEGEND
       <Type>TECH_ANIMAL_HUSBANDRY</Type>
       <Cost>35</Cost>
       <Description>TXT_KEY_TECH_ANIMAL_HUSBANDRY_TITLE</Description>
+      <Help>TXT_KEY_TECH_ANIMAL_HUSBANDRY_HELP</Help>
       <Civilopedia>TXT_KEY_TECH_ANIMAL_HUSBANDRY_DESC</Civilopedia>
-      <Help>Allows workers to construct [COLOR_POSITIVE_TEXT]Pastures[ENDCOLOR] on [ICON_RES_COW] [COLOR_POSITIVE_TEXT]Cows[ENDCOLOR] and [ICON_RES_SHEEP] [COLOR_POSITIVE_TEXT]Sheep[ENDCOLOR]. Also reveals [ICON_RES_HORSE] [COLOR_YELLOW]Horses[ENDCOLOR] and [ICON_STAR] [COLOR_YELLOW]Camels[ENDCOLOR], which are used to build powerful mounted units.</Help>
       <Quote>TXT_KEY_TECH_ANIMAL_HUSBANDRY_QUOTE</Quote>
       <Era>ERA_ANCIENT</Era>
       <Trade>true</Trade>
@@ -2339,8 +2358,8 @@ LEGEND
       <Type>TECH_CARAVANING</Type>
       <Cost>35</Cost>
       <Description>Caravaning</Description>
-      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
       <Help>Allows you to build the [COLOR_POSITIVE_TEXT]Caravan[ENDCOLOR], used to establish lucrative Trade Routes. With [ICON_RES_SALT] [COLOR_POSITIVE_TEXT]Salt[ENDCOLOR] resources, these Caravans will increase their range. Reveals [ICON_RES_WINE] [COLOR_YELLOW]Wine[ENDCOLOR] on the map.</Help>
+      <Civilopedia>TXT_KEY_TECH_POTTERY_DESC</Civilopedia>
       <Quote>[NEWLINE][TAB][TAB]"I have not told half of what I saw."[NEWLINE][TAB][TAB]  -  Marco Polo.[NEWLINE][TAB]</Quote>
       <Era>ERA_ANCIENT</Era>
       <InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
@@ -2372,6 +2391,37 @@ LEGEND
 
 
   </Technologies>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2535,15 +2585,9 @@ LEGEND
     </Row>
 
     <Row>
-      <TechType>TECH_CONATAINERS</TechType>
+      <TechType>TECH_CONTAINERS</TechType>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
     </Row>
-    <!--
-    <Row>
-      <TechType>TECH_CONATAINERS</TechType>
-      <PrereqTech>TECH_LOCOMOTION</PrereqTech>
-    </Row>    
-    -->
 
     <Row>
       <TechType>TECH_FAMILY_TIES</TechType>
@@ -3516,108 +3560,294 @@ LEGEND
   <Language_en_US>
 
 
-    <!-- ERA_PREHISTORIC -->
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_PREHISTORIC 
+    ───────────────────────────────────────────────────────────────────────────
+    -->
 
-    <Row Tag="TXT_KEY_TECH_EXTINCTION_EVEN_TITLE">
+
+
+
+
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_EXTINCTION_EVENT -->
+    <Row Tag="TXT_KEY_TECH_EXTINCTION_EVENT_TITLE">
       <Text>Extinction Event</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_EXTINCTION_EVENT_DESC">
+      <Text>Extinction Event</Text>
+    </Row>      
+    <Row Tag="TXT_KEY_TECH_EXTINCTION_EVENT_HELP">
+      <Text>Extinction Event Help</Text>
     </Row>  
+    <Row Tag="TXT_KEY_TECH_EXTINCTION_EVENT_PEDIA">
+      <Text>Extinction Event Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH__QUOTE">
+      <Text>Extinction Event Quote</Text>
+    </Row>
 
 
 
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_ADAPTIVE_RADIATION -->
     <Row Tag="TXT_KEY_TECH_ADAPTIVE_RADIATION_TITLE">
       <Text>Adaptive Radiation</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_ADAPTIVE_RADIATION_DESC">
+      <Text>Adaptive Radiation</Text>
+    </Row>      
+    <Row Tag="TXT_KEY_TECH_ADAPTIVE_RADIATION_HELP">
+      <Text>Adaptive Radiation Help</Text>
     </Row>  
+    <Row Tag="TXT_KEY_TECH_ADAPTIVE_RADIATION_PEDIA">
+      <Text>Adaptive Radiation Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ADAPTIVE_RADIATION_QUOTE">
+      <Text>Adaptive Radiation Quote</Text>
+    </Row>
 
 
 
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_PRIMATE_COGNITION -->
     <Row Tag="TXT_KEY_TECH_PRIMATE_COGNITION_TITLE">
       <Text>Primate Cognition</Text>
-    </Row>  
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_PRIMATE_COGNITION_DESC">
+      <Text>Primate Cognition</Text>
+    </Row>     
+    <Row Tag="TXT_KEY_TECH_PRIMATE_COGNITION_HELP">
+      <Text>Primate Cognition Help</Text>
+    </Row>     
+    <Row Tag="TXT_KEY_TECH_PRIMATE_COGNITION_PEDIA">
+      <Text>Primate Cognition Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_PRIMATE_COGNITION_QUOTE">
+      <Text>Primate Cognition Quote</Text>
+    </Row>
 
 
 
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_GREAT_DIVERGENCE -->
     <Row Tag="TXT_KEY_TECH_GREAT_DIVERGENCE_TITLE">
       <Text>Great Divergence</Text>
-    </Row>  
+    </Row>
+    <Row Tag="TXT_KEY_TECH_GREAT_DIVERGENCE_DESC">
+      <Text>Great Divergence</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_GREAT_DIVERGENCE_HELP">
+      <Text>Great Divergence Help</Text>
+    </Row>     
+    <Row Tag="TXT_KEY_TECH_GREAT_DIVERGENCE_PEDIA">
+      <Text>Great Divergence Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_GREAT_DIVERGENCE_QUOTE">
+      <Text>Great Divergence Quote</Text>
+    </Row>
 
 
 
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_BIPEDAL_ADAPTION -->
     <Row Tag="TXT_KEY_TECH_BIPEDAL_ADAPTION_TITLE">
       <Text>Bipedal Adaption</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_BIPEDAL_ADAPTION_DESC">
+      <Text>Bipedal Adaption</Text>
+    </Row>     
+    <Row Tag="TXT_KEY_TECH_BIPEDAL_ADAPTION_HELP">
+      <Text>Bipedal Adaption Help</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_BIPEDAL_ADAPTION_PEDIA">
+      <Text>Bipedal Adaption Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_BIPEDAL_ADAPTION_QUOTE">
+      <Text>Bipedal Adaption Quote</Text>
+    </Row>
+
+
+
+
+
+
+
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_LOWER_PALEOLITHIC 
+    ───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+
+    
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_BIPEDALISM -->
+    <Row Tag="TXT_KEY_TECH_BIPEDALISM_TITLE">
+      <Text>Bipedalism</Text>
+    </Row>          
+    <Row Tag="TXT_KEY_TECH_BIPEDALISM_DESC">
+      <Text>Bipedalism</Text>
+    </Row>   
+    <Row Tag="TXT_KEY_TECH_BIPEDALISM_HELP">
+      <Text>Bipedalism Help</Text>
+    </Row>   
+    <Row Tag="TXT_KEY_TECH_BIPEDALISM_PEDIA">
+      <Text>Bipedalism Pedia</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_BIPEDALISM_QUOTE">
+      <Text>Bipedalism Quote</Text>
     </Row> 
 
 
 
 
 
-    <!-- ERA_LOWER_PALEOLITHIC -->
-
-    <Row Tag="TXT_KEY_TECH_BIPEDALISM_TITLE">
-      <Text>Bipedalism</Text>
-    </Row>          
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 
-
+    <!-- TECH_ADVANCED_PERCEPTION -->
     <Row Tag="TXT_KEY_ADVANCED_PERCEPTION_TITLE">
       <Text>Advanced Perception</Text>
     </Row>
     <Row Tag="TXT_KEY_ADVANCED_PERCEPTION_DESC">
       <Text>Advanced Perception</Text>
-    </Row>     
+    </Row>
+    <Row Tag="TXT_KEY_ADVANCED_PERCEPTION_HELP">
+      <Text>Advanced Perception Help</Text>
+    </Row>       
+    <Row Tag="TXT_KEY_TECH_ADVANCED_PERCEPTION_PEDIA">
+      <Text>Advanced Perception Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ADVANCED_PERCEPTION_QUOTE">
+      <Text>Advanced Perception Quote</Text>
+    </Row>
 
 
+    <!-- TECH_ADAPTED_TOOLS -->
     <Row Tag="TXT_KEY_TECH_ADAPTED_TOOLS_TITLE">
       <Text>Adapted Tools</Text>
     </Row> 
     <Row Tag="TXT_KEY_TECH_ADAPTED_TOOLS_DESC">
       <Text>Adapted Tools</Text>
     </Row> 
+    <Row Tag="TXT_KEY_TECH_ADAPTED_TOOLS_HELP">
+      <Text>Adapted Tools Help</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_TECH_ADAPTED_TOOLS_PEDIA">
+      <Text>Adapted Tools Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ADAPTED_TOOLS_QUOTE">
+      <Text>Adapted Tools Quote</Text>
+    </Row>
 
 
+    <!-- TECH_LOCOMOTION -->
     <Row Tag="TXT_KEY_TECH_LOCOMOTION_TITLE">
       <Text>Locomotion</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_LOCOMOTION_DESC">
       <Text>Locomotion</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_TECH_LOCOMOTION_PEDIA">
-      <Text>Locomotion pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_LOCOMOTION_HELP">
       <Text>Your hominids adapt quickly and learn how to use their newly found ability to walk upright to their advantage.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_LOCOMOTION_PEDIA">
+      <Text>Locomotion Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_LOCOMOTION_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"You cannot propel yourself forward by patting yourself on the back."[NEWLINE][TAB][TAB]  -  Anonymous[NEWLINE][TAB]</Text>
     </Row>
 
 
+    <!-- TECH_GRUNTS_AND_GROWLS -->
     <Row Tag="TXT_KEY_TECH_GRUNTS_AND_GROWLS_TITLE">
       <Text>Grunts and Growls</Text>
     </Row> 
     <Row Tag="TXT_KEY_TECH_GRUNTS_AND_GROWLS_DESC">
       <Text>Grunts and Growls</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_GRUNTS_AND_GROWLS_HELP">
+      <Text>Grunts and Growls Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_GRUNTS_AND_GROWLS_PEDIA">
+      <Text>Grunts and Growls Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_GRUNTS_AND_GROWLS_QUOTE">
+      <Text>Grunts and Growls Quote</Text>
+    </Row>
 
 
 
 
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_SCAVENGING -->
     <Row Tag="TXT_KEY_TECH_SCAVENGING_TITLE">
       <Text>Scavenging</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SCAVENGING_DESC">
       <Text>Scavenging</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_SCAVENGING_HELP">
+      <Text>Scavenging Help</Text>
     </Row> 
+    <Row Tag="TXT_KEY_TECH_SCAVENGING_PEDIA">
+      <Text>Scavenging Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_SCAVENGING_QUOTE">
+      <Text>Scavenging Quote</Text>
+    </Row>
 
 
+    <!-- TECH_CURIOUSITY -->
     <Row Tag="TXT_KEY_TECH_CURIOUSITY_TITLE">
       <Text>Curiousity</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_CURIOUSITY_DESC">
       <Text>Curiousity</Text>
-    </Row>     
+    </Row>  
+    <Row Tag="TXT_KEY_TECH_CURIOUSITY_HELP">
+      <Text>Curiousity Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_CURIOUSITY_PEDIA">
+      <Text>Curiousity Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_CURIOUSITY_QUOTE">
+      <Text>Curiousity Quote</Text>
+    </Row>
 
 
+    <!-- TECH_SIMPLE_TOOLS -->
     <Row Tag="TXT_KEY_TECH_SIMPLE_TOOLS_TITLE">
       <Text>Simple Tools</Text>
     </Row>
@@ -3625,7 +3855,7 @@ LEGEND
       <Text>Simple Tools</Text>
     </Row>    
     <Row Tag="TXT_KEY_TECH_SIMPLE_TOOLS_PEDIA">
-      <Text>Simple Tools pedia</Text>
+      <Text>Simple Tools Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SIMPLE_TOOLS_HELP">
       <Text>Allows the use of basic tools, such as sharpened stones. The [COLOR_POSITIVE_TEXT]Lean-to Shelter[ENDCOLOR] is available for building. Enables you to build [COLOR_POSITIVE_TEXT]Laborers[ENDCOLOR], [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR], and [COLOR_POSITIVE_TEXT]{TXT_KEY_UNIT_AUTOCHTHON}[ENDCOLOR] (a unit with no maintenance cost, able to self-sustain naturally). Reveals [COLOR_YELLOW]Stone[ENDCOLOR]. Unlocks [COLOR_CYAN]Theopetra Cave[ENDCOLOR], the oldest known man-made structure, providing a powerful boost to your economy and production.</Text>
@@ -3639,170 +3869,213 @@ LEGEND
 
 
 
-    <!-- COL -->
+
+
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_PALEOLITHIC 
+    ───────────────────────────────────────────────────────────────────────────
+    -->
 
 
 
 
-    <!-- ERA_PALEOLITHIC -->
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 
-
-
+    <!-- TECH_COMPLEX_TOOLS -->
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_TITLE">
       <Text>Complex Tools</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_PEDIA">
-      <Text>Complex Tools pedia</Text>
+    <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_DESC">
+      <Text>Complex Tools</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_HELP">
       <Text>Your citizens can now build more complex tools than just chipped rock. Allows you to build the [COLOR_POSITIVE_TEXT]Primitve Archer[ENDCOLOR], a very weak ranged unit. Opens up the building of a [COLOR_POSITIVE_TEXT]Causeway[ENDCOLOR] for settlements near marshes. Reveals [COLOR_YELLOW]Flint[ENDCOLOR] and [COLOR_YELLOW]Obsidian[ENDCOLOR].</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_PEDIA">
+      <Text>Complex Tools Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COMPLEX_TOOLS_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Man is a tool-using animal. Without tools he is nothing, with tools he is all."[NEWLINE][TAB][TAB]  - Thomas Carlyle.[NEWLINE][TAB]</Text>
     </Row>
 
+    <!-- TECH_MIGRATION -->
     <Row Tag="TXT_KEY_TECH_MIGRATION_TITLE">
       <Text>Migration</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_MIGRATION_PEDIA">
-      <Text>Migration pedia</Text>
+    <Row Tag="TXT_KEY_TECH_MIGRATION_DESC">
+      <Text>Migration</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_MIGRATION_HELP">
-      <Text>Migration help</Text>
+      <Text>Migration Help</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_MIGRATION_PEDIA">
+      <Text>Migration Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_MIGRATION_QUOTE">
-      <Text>Migration quote</Text>
+      <Text>Migration Quote</Text>
     </Row>
 
+    <!-- TECH_ADHESIVES -->
     <Row Tag="TXT_KEY_TECH_ADHESIVES_TITLE">
       <Text>Adhesives</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_ADHESIVES_PEDIA">
-      <Text>Adhesives pedia</Text>
+    <Row Tag="TXT_KEY_TECH_ADHESIVES_DESC">
+      <Text>Adhesives</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_ADHESIVES_HELP">
-      <Text>Adhesives help</Text>
+      <Text>Adhesives Help</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_ADHESIVES_PEDIA">
+      <Text>Adhesives Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_ADHESIVES_QUOTE">
-      <Text>Adhesives quote</Text>
+      <Text>Adhesives Quote</Text>
     </Row>
 
+    <!-- TECH_CONTAINERS -->
     <Row Tag="TXT_KEY_TECH_CONTAINERS_TITLE">
       <Text>Containers</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_CONTAINERS_PEDIA">
-      <Text>Containers pedia</Text>
+    <Row Tag="TXT_KEY_TECH_CONTAINERS_DESC">
+      <Text>Containers</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_CONTAINERS_HELP">
-      <Text>Containers help</Text>
+      <Text>Containers Help</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_CONTAINERS_PEDIA">
+      <Text>Containers Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_CONTAINERS_QUOTE">
-      <Text>Containers quote</Text>
+      <Text>Containers Quote</Text>
     </Row>
 
+    <!-- TECH_FAMILY_TIES -->
     <Row Tag="TXT_KEY_TECH_FAMILY_TIES_TITLE">
       <Text>Family Ties</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_FAMILY_TIES_PEDIA">
-      <Text>Family Ties pedia</Text>
-    </Row>
+    <Row Tag="TXT_KEY_TECH_FAMILY_TIES_DESC">
+      <Text>Family Ties</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_FAMILY_TIES_HELP">
-      <Text>Family Ties help</Text>
+      <Text>Family Ties Help</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_FAMILY_TIES_PEDIA">
+      <Text>Family Ties Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FAMILY_TIES_QUOTE">
-      <Text>Family Ties quote</Text>
+      <Text>Family Ties Quote</Text>
     </Row>
 
 
 
 
 
-    <!-- COL -->
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 
-
-
+    <!-- TECH_HUNTING_GATHERING -->
     <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_DESC">
       <Text>Hunting</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_HELP">
+      <Text>After [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Enables you to build [COLOR_POSITIVE_TEXT]Outposts[ENDCOLOR] to protect and benefit from certain resources. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth.</Text>
     </Row> 
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_PEDIA">
+      <Text>Hunting Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]</Text>
+    </Row>       
     <!--
     <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_TITLE">
       <Text>Hunting</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_PEDIA">
-      <Text>Hunting pedia</Text>
-    </Row>
-    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_HELP">
-      <Text>After [COLOR_POSITIVE_TEXT]Complex Tools[ENDCOLOR], [COLOR_POSITIVE_TEXT]Hunting[ENDCOLOR] becomes more effecient. Reveals [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR] on the map. Enables you to build [COLOR_POSITIVE_TEXT]Outposts[ENDCOLOR] to protect and benefit from certain resources. Provides access to the [COLOR_POSITIVE_TEXT]Hunter[ENDCOLOR], a unit that helps with settlement growth.</Text>
-    </Row>
-    <Row Tag="TXT_KEY_TECH_HUNTING_GATHERING_QUOTE">
-      <Text>[NEWLINE][TAB][TAB]"The perils of duck hunting are great - especially for the duck."[NEWLINE][TAB][TAB]  - Walter Cronkite.[NEWLINE][TAB]</Text>
-    </Row>
     -->
 
+    <!-- TECH_FIRE -->
     <Row Tag="TXT_KEY_TECH_FIRE_TITLE">
       <Text>Fire</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_FIRE_PEDIA">
-      <Text>Fire pedia</Text>
+    <Row Tag="TXT_KEY_TECH_FIRE_DESC">
+      <Text>Fire</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FIRE_HELP">
       <Text>Your citizens will now have control of [COLOR_]Fire[ENDCOLOR]. Enables you to train [COLOR_POSITIVE_TEXT]Cavemen[ENDCOLOR] and the [COLOR_POSITIVE_TEXT]Shaman[ENDCOLOR] (a ranged unit with limited range), and to build a [COLOR_POSITIVE_TEXT]Campfire[ENDCOLOR] in Cities. The [COLOR_POSITIVE_TEXT]Campfire[ENDCOLOR] is a key early building, giveing you a double bonus.</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_FIRE_PEDIA">
+      <Text>Fire Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FIRE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Out of the frying pan, into the fire."[NEWLINE][TAB][TAB]  - Tertullian.[NEWLINE][TAB]</Text>
     </Row>
 
+    <!-- TECH_FORAGING -->
     <Row Tag="TXT_KEY_TECH_FORAGING_TITLE">
       <Text>Foraging</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_FORAGING_PEDIA">
-      <Text>Foraging pedia</Text>
+    <Row Tag="TXT_KEY_TECH_FORAGING_DESC">
+      <Text>Foraging</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FORAGING_HELP">
-      <Text>Foraging help</Text>
+      <Text>Foraging Help</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_FORAGING_PEDIA">
+      <Text>Foraging Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_FORAGING_QUOTE">
-      <Text>Foraging quote</Text>
+      <Text>Foraging Quote</Text>
     </Row>
 
+    <!-- TECH_GATHERING -->
     <Row Tag="TXT_KEY_TECH_GATHERING_TITLE">
       <Text>Gathering</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_GATHERING_PEDIA">
-      <Text>Gathering pedia</Text>
-    </Row>
+    <Row Tag="TXT_KEY_TECH_GATHERING_DESC">
+      <Text>Gathering</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_GATHERING_HELP">
       <Text>Takes your gathering culture to an new level. Reveals [ICON_RES_BANANA] [COLOR_YELLOW]Bananas[ENDCOLOR] and [ICON_RES_BERRIES] [COLOR_YELLOW]Berries[ENDCOLOR] on the map. Your citizens may now go out and [COLOR_POSITIVE_TEXT]Forage[ENDCOLOR] which gives you small boosts to resource locations. Enables you to build a [COLOR_POSITIVE_TEXT]Midden[ENDCOLOR] for your settlement and [COLOR_CYAN]Wonderwerk Cave[ENDCOLOR] which will help in resource production.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_GATHERING_PEDIA">
+      <Text>Gathering Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_GATHERING_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"Better than any argument is to rise at dawn and pick dew-wet red berries in a cup."[NEWLINE][TAB][TAB]  - Wendell Berry.[NEWLINE][TAB]</Text>
     </Row>
 
+    <!-- TECH_SYMBOLISM -->
     <Row Tag="TXT_KEY_TECH_SYMBOLISM_TITLE">
       <Text>Symbolism</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_SYMBOLISM_PEDIA">
-      <Text>Symbolism pedia</Text>
-    </Row>
+    <Row Tag="TXT_KEY_TECH_SYMBOLISM_DESC">
+      <Text>Symbolism</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_SYMBOLISM_HELP">
-      <Text>Symbolism help</Text>
+      <Text>Symbolism Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_SYMBOLISM_PEDIA">
+      <Text>Symbolism Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SYMBOLISM_QUOTE">
-      <Text>Symbolism quote</Text>
+      <Text>Symbolism Quote</Text>
     </Row>
 
+    <!-- TECH_SOCIAL_STRUCTURE -->
     <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_TITLE">
       <Text>Social Structure</Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_PEDIA">
-      <Text>Social Structure pedia</Text>
+    <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_DESC">
+      <Text>Social Structure</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_HELP">
       <Text>Makes your community more organized, under your firm and benevolent leadership. Allows you to build the [COLOR_POSITIVE_TEXT]Chieftain's Hut[ENDCOLOR].</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_PEDIA">
+      <Text>Social Structure Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SOCIAL_STRUCTURE_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"The problem of social organization is how to set up an arrangement under which greed will do the least harm."[NEWLINE][TAB][TAB]  - Milton Friedman.[NEWLINE][TAB]</Text>
@@ -3812,67 +4085,85 @@ LEGEND
 
 
 
-    <!-- COL -->
 
 
 
-    <!-- ERA_NEOLITHIC -->
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_NEOLITHIC 
+    ───────────────────────────────────────────────────────────────────────────
+    -->
 
 
 
 
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+
+
+    <!-- TECH_COORDINATED_HUNTING -->
     <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_TITLE">
       <Text>Coordinated Hunting</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_DESC">
+      <Text>Coordinated Hunting</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_PEDIA">
-      <Text>Coordinated Hunting pedia</Text>
+      <Text>Coordinated Hunting Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_HELP">
-      <Text>Coordinated Hunting help</Text>
+      <Text>Coordinated Hunting Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COORDINATED_HUNTING_QUOTE">
-      <Text>Coordinated Hunting quote</Text>
+      <Text>Coordinated Hunting Quote</Text>
     </Row>
 
+
+    <!-- TECH_ORIENTEERING -->
     <Row Tag="TXT_KEY_TECH_ORIENTEERING_TITLE">
       <Text>Orienteering</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_ORIENTEERING_DESC">
+      <Text>Orienteering</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_ORIENTEERING_PEDIA">
-      <Text>Orienteering pedia</Text>
+      <Text>Orienteering Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_ORIENTEERING_HELP">
-      <Text>Orienteering help</Text>
+      <Text>Orienteering Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_ORIENTEERING_QUOTE">
-      <Text>Orienteering quote</Text>
+      <Text>Orienteering Quote</Text>
     </Row>
 
 
-
-    <Row Tag="TXT_KEY_TECH_SCOUTING_DESC">
-      <Text>Scouting</Text>
-    </Row>
-    <!--
+    <!-- TECH_SCOUTING -->
     <Row Tag="TXT_KEY_TECH_SCOUTING_TITLE">
       <Text>Scouting</Text>
-    </Row>
-    <Row Tag="TXT_KEY_TECH_SCOUTING_PEDIA">
-      <Text>Scouting pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_SCOUTING_DESC">
+      <Text>Scouting</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SCOUTING_HELP">
       <Text>Enables you to train [COLOR_POSITIVE_TEXT]Scouts[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SCOUTING_QUOTE">
       <Text>[NEWLINE][TAB][TAB]"A Scout is never taken by surprise; he knows exactly what to do when anything unexpected happens."[NEWLINE][TAB][TAB]  - Robert Baden-Powell.[NEWLINE][TAB]</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_SCOUTING_PEDIA">
+      <Text>Scouting Pedia</Text>
     </Row>
-    -->
     
+
+    <!-- TECH_COOKING -->
     <Row Tag="TXT_KEY_TECH_COOKING_TITLE">
       <Text>Cooking</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_COOKING_DESC">
+      <Text>Cooking</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_COOKING_PEDIA">
-      <Text>Cooking pedia</Text>
+      <Text>Cooking Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COOKING_HELP">
       <Text>Cooking increases the size of your villager's brains. With simple tools, a [COLOR_POSITIVE_TEXT]Laborer[ENDCOLOR] can now build a [COLOR_POSITIVE_TEXT]Fire Pit[ENDCOLOR]. Food just tasted better over wood burning pits and even increased morale. Strange [COLOR_POSITIVE_TEXT]Evolutionary Benefits[ENDCOLOR] start to arise.</Text>
@@ -3881,75 +4172,95 @@ LEGEND
       <Text>[NEWLINE][TAB][TAB]"Humanity is mind-controlled and only slightly more conscious than your average zombie."[NEWLINE][TAB][TAB]  - David Icke.[NEWLINE][TAB]</Text>
     </Row>    
 
+
+    <!-- TECH_SYMBOLIC_COMMUNICATION -->
     <Row Tag="TXT_KEY_TECH_SYMBOLIC_COMMUNICATION_TITLE">
       <Text>Symbolic Communication</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_SYMBOLIC_COMMUNICATION_DESC">
+      <Text>Symbolic Communication</Text>
+    </Row>    
     <Row Tag="TXT_KEY_TECH_SYMBOLIC_COMMUNICATION_PEDIA">
-      <Text>Symbolic Communication pedia</Text>
+      <Text>Symbolic Communication Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SYMBOLIC_COMMUNICATION_HELP">
-      <Text>Symbolic Communication help</Text>
+      <Text>Symbolic Communication Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_SYMBOLIC_COMMUNICATION_QUOTE">
-      <Text>Symbolic Communication quote</Text>
+      <Text>Symbolic Communication Quote</Text>
     </Row>
 
+
+    <!-- TECH_PLANNING -->
     <Row Tag="TXT_KEY_TECH_PLANNING_TITLE">
       <Text>Planning</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_PLANNING_DESC">
+      <Text>Planning</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_PLANNING_PEDIA">
-      <Text>Planning pedia</Text>
+      <Text>Planning Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_PLANNING_HELP">
-      <Text>Planning help</Text>
+      <Text>Planning Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_PLANNING_QUOTE">
-      <Text>Planning quote</Text>
+      <Text>Planning Quote</Text>
     </Row>
 
 
 
 
 
-
-    <!-- COL -->
-
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
 
-
-
+    <!-- TECH_COLLABORATIVE_HUNTING -->
     <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_TITLE">
       <Text>Collaborative Hunting</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_DESC">
+      <Text>Collaborative Hunting</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_PEDIA">
-      <Text>Collaborative Hunting pedia</Text>
+      <Text>Collaborative Hunting Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_HELP">
-      <Text>Collaborative Hunting help</Text>
+      <Text>Collaborative Hunting Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_COLLABORATIVE_HUNTING_QUOTE">
-      <Text>Collaborative Hunting quote</Text>
+      <Text>Collaborative Hunting Quote</Text>
     </Row>
 
+
+    <!-- TECH_EXPRESSION -->
     <Row Tag="TXT_KEY_TECH_EXPRESSION_TITLE">
       <Text>Expression</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_EXPRESSION_DESC">
+      <Text>Expression</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_EXPRESSION_PEDIA">
-      <Text>Expression pedia</Text>
+      <Text>Expression Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_EXPRESSION_HELP">
-      <Text>Expression help</Text>
+      <Text>Expression Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_EXPRESSION_QUOTE">
-      <Text>Expression quote</Text>
+      <Text>Expression Quote</Text>
     </Row>
 
+
+    <!-- TECH_HARPOONING -->
     <Row Tag="TXT_KEY_TECH_HARPOONING_TITLE">
       <Text>Harpooning</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_HARPOONING_DESC">
+      <Text>Harpooning</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_HARPOONING_PEDIA">
-      <Text>Harpooning pedia</Text>
+      <Text>Harpooning Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_HARPOONING_HELP">
       <Text>Reveals [ICON_RES_FISH] [COLOR_YELLOW]Fish[ENDCOLOR], [ICON_RES_PEARLS] [COLOR_YELLOW]Pearls[ENDCOLOR], and [ICON_RES_CRAB] [COLOR_YELLOW]Crab[ENDCOLOR] on the map. Allows the building of [COLOR_CYAN]Skara Brae[ENDCOLOR] wonder.</Text>
@@ -3958,11 +4269,16 @@ LEGEND
       <Text>[NEWLINE][TAB][TAB]"He who would search for pearls must dive below."[NEWLINE][TAB][TAB]  - John Dryden.[NEWLINE][TAB]</Text>
     </Row>
 
+
+    <!-- TECH_TOOL_SPECIALIZATION -->
     <Row Tag="TXT_KEY_TECH_TOOL_SPECIALIZATION_TITLE">
       <Text>Tool Specialization</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_TOOL_SPECIALIZATION_DESC">
+      <Text>Tool Specialization</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_TOOL_SPECIALIZATION_PEDIA">
-      <Text>Tool Specialization pedia</Text>
+      <Text>Tool Specialization Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_TOOL_SPECIALIZATION_HELP">
       <Text>Enables you to construct a [COLOR_POSITIVE_TEXT]Food Storage[ENDCOLOR] for your city.</Text>
@@ -3971,11 +4287,16 @@ LEGEND
       <Text>[NEWLINE][TAB][TAB]"The human body is the magazine of inventions, the patent-office, where are the models from which every hint was taken. All the tools and engines on earth are only extensions of its limbs and senses."[NEWLINE][TAB][TAB]  - R. W. Emerson.[NEWLINE][TAB]</Text>
     </Row>
 
+
+    <!-- TECH_LANGUAGE -->
     <Row Tag="TXT_KEY_TECH_LANGUAGE_TITLE">
       <Text>Language</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_LANGUAGE_DESC">
+      <Text>Language</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_LANGUAGE_PEDIA">
-      <Text>Language pedia</Text>
+      <Text>Language Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_LANGUAGE_HELP">
       <Text>Enables your Citizens to communicate. Also allows you to establish [COLOR_POSITIVE_TEXT]Embassies[ENDCOLOR] in other civilizations.</Text>
@@ -3984,11 +4305,16 @@ LEGEND
       <Text>[NEWLINE][TAB][TAB]"By and large, language is a tool for concealing the truth."[NEWLINE][TAB][TAB]  - George Carlin.[NEWLINE][TAB]</Text>
     </Row>
 
+
+    <!-- TECH_LEADERSHIP -->
     <Row Tag="TXT_KEY_TECH_LEADERSHIP_TITLE">
       <Text>Leadership</Text>
     </Row>
+    <Row Tag="TXT_KEY_TECH_LEADERSHIP_DESC">
+      <Text>Leadership</Text>
+    </Row>
     <Row Tag="TXT_KEY_TECH_LEADERSHIP_PEDIA">
-      <Text>Leadership pedia</Text>
+      <Text>Leadership Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_LEADERSHIP_HELP">
       <Text>Ascend the throne of your kingdom and build your [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].</Text>
@@ -4000,26 +4326,357 @@ LEGEND
 
 
 
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <!-- COL -->
+    
+
+    <!-- TECH_ARCHERY -->
+    <Row Tag="TXT_KEY_TECH_ARCHERY_PEDIA">
+      <Text>Archery Pedia</Text>
+    </Row>   
+
+    <Update>
+      <Where Tag="TXT_KEY_TECH_ARCHERY_HELP"/>
+      <Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Archer[ENDCOLOR]. Unlocks the wonder, [COLOR_CYAN]Temple of Artemis[ENDCOLOR]."/>
+    </Update>
 
 
+    <!-- TECH_IDOLS -->
+    <Row Tag="TXT_KEY_TECH_IDOLS_TITLE">
+      <Text>Idols</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_IDOLS_DESC">
+      <Text>Idols</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_IDOLS_HELP">
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR] and [COLOR_CYAN]Ggantija Temples[ENDCOLOR].</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_IDOLS_PEDIA">
+      <Text>Idols Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_IDOLS_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"Just as no one can be forced into belief, so no one can be forced into unbelief."[NEWLINE][TAB][TAB]  -  Sigmund Freud.[NEWLINE][TAB]</Text>
+    </Row>
 
 
+    <!-- TECH_PAINTING -->
+    <Row Tag="TXT_KEY_TECH_PAINTING_TITLE">
+      <Text>Painting</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_PAINTING_DESC">
+      <Text>Painting</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_PAINTING_HELP">
+      <Text>Your citizens become skilled in rudimentary Art. They are now able to create [COLOR_POSITIVE_TEXT]Cave Paintings[ENDCOLOR]. Reveals [ICON_RES_DYES] [COLOR_YELLOW]Dyes[ENDCOLOR] on the map.</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH_PAINTING_PEDIA">
+      <Text>Painting Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_PAINTING_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"Drawing is still basically the same as it has been since prehistoric times. It brings together man and the world. It lives through magic."[NEWLINE][TAB][TAB]  - Keith Haring.[NEWLINE][TAB]</Text>
+    </Row>
 
 
+    <!-- TECH_BEADING -->
     <Row Tag="TXT_KEY_TECH_BEADING_TITLE">
       <Text>Beading</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_BEADING_DESC">
+      <Text>Beading</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_BEADING_HELP">
+      <Text>Beading Help</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH_BEADING_PEDIA">
       <Text>Beading Pedia</Text>
     </Row>    
-    <Row Tag="TXT_KEY_TECH_BEADING_HELP">
-      <Text>Beading Help</Text>
-    </Row>
     <Row Tag="TXT_KEY_TECH_BEADING_QUOTE">
       <Text>Beading QUote</Text>
     </Row>
+
+
+    <!-- TECH_WARFARE -->
+    <Row Tag="TXT_KEY_TECH_WARFARE_TITLE">
+      <Text>Warfare</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_WARFARE_DESC">
+      <Text>Warfare</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_WARFARE_HELP">
+      <Text>Unlocks the powerful [COLOR_POSITIVE_TEXT]Savage[ENDCOLOR], an effective unit against settlements. Enables building the [COLOR_POSITIVE_TEXT]Palisade[ENDCOLOR].</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_WARFARE_PEDIA">
+      <Text>Warfare Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_WARFARE_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"The best weapon against an enemy is another enemy."[NEWLINE][TAB][TAB]  -  Friedrich Nietzsche.[NEWLINE][TAB]</Text>
+    </Row>
+
+
+    <!-- TECH_COOPERATION -->
+    <Row Tag="TXT_KEY_TECH_COOPERATION_TITLE">
+      <Text>Cooperation</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_COOPERATION_DESC">
+      <Text>Cooperation</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_COOPERATION_HELP">
+      <Text>Unlocks the [COLOR_POSITIVE_TEXT]Warrior[ENDCOLOR].</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_COOPERATION_PEDIA">
+      <Text>Cooperation Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_COOPERATION_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"The problem with today's humanity is that people judge everyone else but still don't see their own mistakes."[NEWLINE][TAB][TAB]  -  Unknown.[NEWLINE][TAB]</Text>
+    </Row>
+      
+
+
+
+
+
+
+
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_ANCIENT
+    ───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- TECH_AGRICULTURE -->
+    <Row Tag="TXT_KEY_TECH_AGRICULTURE_PEDIA">
+      <Text>Agriculture Pedia</Text>
+    </Row>
+
+    <Update>
+      <Where Tag="TXT_KEY_TECH_AGRICULTURE_HELP"/>
+      <Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Worker[ENDCOLOR] who can contruct [COLOR_POSITIVE_TEXT]Farms[ENDCOLOR]. Reveals [ICON_RES_WHEAT] [COLOR_YELLOW]Wheat[ENDCOLOR], [ICON_RES_SUGAR] [COLOR_YELLOW]Sugar[ENDCOLOR], [ICON_RES_CITRUS] [COLOR_YELLOW]Citrus[ENDCOLOR]."/>
+    </Update>
+    <!--
+    <Row Tag="TXT_KEY_TECH_AGRICULTURE_TITLE">
+      <Text>Agriculture</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_AGRICULTURE_DESC">
+      <Text>Agriculture</Text>
+    </Row>      
+    <Row Tag="TXT_KEY_TECH_AGRICULTURE_QUOTE">
+      <Text> Quote</Text>
+    </Row>
+    -->
+
+
+
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_POTTERY -->
+    <Update>
+      <Where Tag="TXT_KEY_TECH_POTTERY_HELP"/>
+      <Set Text="Allows your cities to build the [COLOR_POSITIVE_TEXT]Granary[ENDCOLOR], which provides [ICON_FOOD] Food, helping your cities grow larger. Reveals [ICON_RES_PORCELAIN] [COLOR_YELLOW]Porcelain[ENDCOLOR] on the map."/>
+    </Update>
+
+
+    <!-- TECH_TRAPPING -->
+    <Update>
+      <Where Tag="TXT_KEY_TECH_POTTERY_HELP"/>
+      <Set Text="Allows your workers to construct [COLOR_POSITIVE_TEXT]Camps[ENDCOLOR] on sources of [ICON_RES_DEER] [COLOR_POSITIVE_TEXT]Deer[ENDCOLOR], [ICON_RES_IVORY] [COLOR_POSITIVE_TEXT]Ivory[ENDCOLOR], [ICON_RES_FUR] [COLOR_POSITIVE_TEXT]Fur[ENDCOLOR], and [ICON_RES_TRUFFLES] [COLOR_POSITIVE_TEXT]Truffles[ENDCOLOR]."/>
+    </Update>
+
+
+    <!-- TECH_TRADING -->
+    <Row Tag="TXT_KEY_TECH_TRADING_TITLE">
+      <Text>Trading</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_TRADING_DESC">
+      <Text>Trading</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_TRADING_HELP">
+      <Text>Your citizens become effecient traders. Reveals [ICON_RES_IVORY] [COLOR_YELLOW]Ivory[ENDCOLOR], [ICON_RES_INCENSE] [COLOR_YELLOW]Incense[ENDCOLOR], and [ICON_RES_TRUFFLES] [COLOR_YELLOW]Truffles[ENDCOLOR].</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_TRADING_PEDIA">
+      <Text>Trading Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_TRADING_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"The propensity to truck, barter and exchange one thing for another is common to all men, and to be found in no other race of animals."[NEWLINE][TAB][TAB]  -  Adam Smith.[NEWLINE][TAB]</Text>
+    </Row>
+
+
+    <!-- TECH_MINING -->
+    <Update>
+      <Where Tag="TXT_KEY_TECH_MINING_HELP"/>
+      <Set Text="Allows Workers to construct [COLOR_POSITIVE_TEXT]Mines[ENDCOLOR] to increase the [ICON_PRODUCTION] Production of map tiles, and [COLOR_POSITIVE_TEXT]Chop Forests[ENDCOLOR], allowing the construction of other improvements. Reveals [ICON_RES_GOLD] [COLOR_YELLOW]Gold[ENDCOLOR], [ICON_RES_SILVER] [COLOR_YELLOW]Silver[ENDCOLOR], and [ICON_RES_SALT] [COLOR_YELLOW]Salt[ENDCOLOR]."/>
+    </Update>
+
+
+    <!-- TECH_NUMBERS -->
+    <Row Tag="TXT_KEY_TECH_NUMBERS_TITLE">
+      <Text>Numbers</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_NUMBERS_DESC">
+      <Text>Numbers</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_NUMBERS_HELP">
+      <Text>Your citizens can now count, aiding in keeping track of inventory, and advancing trade. Reveals [ICON_RES_SPICES] [COLOR_YELLOW]Spices[ENDCOLOR] and [ICON_RES_SILK] [COLOR_YELLOW]Silk[ENDCOLOR] on the map.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_NUMBERS_PEDIA">
+      <Text>Numbers Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_NUMBERS_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"Dave, stop. Stop, will you? Stop, Dave. Will you stop, Dave? Stop, Dave. I'm afraid."[NEWLINE][TAB][TAB]  -  HAL 9000.[NEWLINE][TAB]</Text>
+    </Row>
+
+
+    <!-- TECH_ANIMAL_DOMESTICATION -->
+    <Row Tag="TXT_KEY_TECH_ANIMAL_DOMESTICATION_TITLE">
+      <Text>Animal Domestication</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ANIMAL_DOMESTICATION_DESC">
+      <Text>Animal Domestication</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ANIMAL_DOMESTICATION_HELP">
+      <Text>Reveals [ICON_RES_COW] [COLOR_YELLOW]Cattle[ENDCOLOR] and [ICON_RES_SHEEP] [COLOR_YELLOW]Sheep[ENDCOLOR] on the map.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_ANIMAL_DOMESTICATION_PEDIA">
+      <Text>Numbers Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_ANIMAL_DOMESTICATION_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"Never trust a sheep."[NEWLINE][TAB][TAB]  -  Ryan Stiles.[NEWLINE][TAB]</Text>
+    </Row>
+
+
+    <!-- TECH_THE_WHEEL -->
+
+
+    <!-- TECH_MINERALOGY -->
+    <Row Tag="TXT_KEY_TECH_MINERALOGY_TITLE">
+      <Text>Mineralogy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_MINERALOGY_DESC">
+      <Text>Mineralogy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_MINERALOGY_HELP">
+      <Text>Mineralogy allows further regfinement of natural minerals. Reveals [ICON_RES_GEMS] [COLOR_YELLOW]Gems[ENDCOLOR], [ICON_RES_MARBLE] [COLOR_YELLOW]Marble[ENDCOLOR], and [ICON_RES_JEWELRY] [COLOR_YELLOW]Jewelry[ENDCOLOR].</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_MINERALOGY_PEDIA">
+      <Text>Mineralogy Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_MINERALOGY_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"Better a diamond with a flaw than a pebble without."[NEWLINE][TAB][TAB]  -  Confucious.[NEWLINE][TAB]</Text>
+    </Row>
+
+
+
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_SAILING -->
+    <Update>
+      <Where Tag="TXT_KEY_TECH_SAILING_HELP"/>
+      <Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Cargo Ship[ENDCOLOR], used to establish lucrative sea-based [COLOR_POSITIVE_TEXT]Trade Routes[ENDCOLOR]. Also allows you to build military and economic ships, useful for exploration and harvesting resources in the water like [ICON_FISH] [COLOR_POSITIVE_TEXT]Fish[ENDCOLOR] and [ICON_PEARLS] [COLOR_POSITIVE_TEXT]Pearl[ENDCOLOR]. Also reveals [ICON_WHALE] [COLOR_YELLOW]Whales[ENDCOLOR] on the map."/>
+    </Update>
+
+
+    <!-- TECH_CALENDAR -->
+
+
+    <!-- TECH_WRITING -->
+
+
+    <!-- TECH_ANIMAL_HUSBANDRY -->
+    <!--
+    <Row Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_TITLE">
+      <Text>Animal Husbandry</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_DESC">
+      <Text>Animal Husbandry</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_HELP">
+      <Text>Allows workers to construct [COLOR_POSITIVE_TEXT]Pastures[ENDCOLOR] on [ICON_RES_COW] [COLOR_POSITIVE_TEXT]Cows[ENDCOLOR] and [ICON_RES_SHEEP] [COLOR_POSITIVE_TEXT]Sheep[ENDCOLOR]. Also reveals [ICON_RES_HORSE] [COLOR_YELLOW]Horses[ENDCOLOR] and [ICON_STAR] [COLOR_YELLOW]Camels[ENDCOLOR], which are used to build powerful mounted units.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_QUOTE">
+      <Text>Animal Husbandry Quote</Text>
+    </Row>
+    -->
+    <Row Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_PEDIA">
+      <Text>Animal Husbandry Pedia</Text>
+    </Row>  
+
+
+    <!-- TECH_CARAVANING -->
+    <Row Tag="TXT_KEY_TECH_CARAVANING_TITLE">
+      <Text>Caravaning</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_CARAVANING_DESC">
+      <Text>Caravaning</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH_CARAVANING_HELP">
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Caravan[ENDCOLOR], used to establish lucrative Trade Routes. With [ICON_RES_SALT] [COLOR_POSITIVE_TEXT]Salt[ENDCOLOR] resources, these Caravans will increase their range. Reveals [ICON_RES_WINE] [COLOR_YELLOW]Wine[ENDCOLOR] on the map.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_CARAVANING_PEDIA">
+      <Text>Caravaning Pedia</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH_CARAVANING_QUOTE">
+      <Text>[NEWLINE][TAB][TAB]"I have not told half of what I saw."[NEWLINE][TAB][TAB]  -  Marco Polo.[NEWLINE][TAB]</Text>
+    </Row>
+     
+
+    <!-- TECH_MASONRY -->
+
+
+    <!-- TECH_BRONZE_WORKING -->
+
+
+
+
+
+
+
+    <!-- 
+    ───────────────────────────────────────────────────────────────────────────
+      ERA_CLASSICAL
+    ───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+
+
+    <!-- COL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- TECH_OPTICS -->
+
+
+    <!-- TECH_HORSEBACK_RIDING -->
+
+
+    <!-- TECH_MATHEMATICS -->
+
+
+    <!-- TECH_CONSTRUCTION -->
+
+
+
+
+
+
+
+
+
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
 
 
 
@@ -4028,14 +4685,14 @@ LEGEND
 
 
     <!--
-      
+
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__PEDIA">
-      <Text></Text>
-    </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
+      <Text></Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__QUOTE">
@@ -4045,10 +4702,13 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__PEDIA">
+    <Row Tag="TXT_KEY_TECH__DESC">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
+      <Text></Text>
+    </Row>    
+    <Row Tag="TXT_KEY_TECH__PEDIA">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__QUOTE">
@@ -4058,31 +4718,45 @@ LEGEND
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__PEDIA">
-      <Text></Text>
-    </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
-      <Text></Text>
+      <Text> Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH__PEDIA">
+      <Text> Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__QUOTE">
-      <Text></Text>
+      <Text> Quote</Text>
     </Row>
 
     <Row Tag="TXT_KEY_TECH__TITLE">
       <Text></Text>
     </Row>
-    <Row Tag="TXT_KEY_TECH__PEDIA">
+    <Row Tag="TXT_KEY_TECH__DESC">
       <Text></Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__HELP">
-      <Text></Text>
+      <Text> Help</Text>
+    </Row>        
+    <Row Tag="TXT_KEY_TECH__PEDIA">
+      <Text> Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_TECH__QUOTE">
-      <Text></Text>
+      <Text> Quote</Text>
     </Row>
+
+
+
+    <Row Tag="TXT_KEY_TECH__PEDIA">
+      <Text> Pedia</Text>
+    </Row>
+    <Row Tag="TXT_KEY_TECH__QUOTE">
+      <Text> Quote</Text>
+    </Row>
+
 
     -->
-
+    
+    <!-- TECH_ -->
 
 
   </Language_en_US>

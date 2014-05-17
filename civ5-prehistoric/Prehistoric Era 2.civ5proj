@@ -3,16 +3,43 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW)</Name>
+    <Name>!Prehistoric Era (BNW) (v0.3.0e-100-preview)</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>14</ModVersion>
-    <Stability>Alpha</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.2.10a)[ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years. New techs, units, buildings, wonders, and more ...</Teaser>
-    <Description>{PLACEHOLDER} -- since modbuddy doesn't allow for big description.</Description>
+    <ModVersion>100</ModVersion>
+    <Stability>Experimental</Stability>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0e-100-preview)[ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]This is a non-(semi)-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
+    <Description>This mod adds millions of years of human history with many new eras going back to the dawn of man.
+
+THIS IS A NON-(SEMI)-FUNCTIONAL PREVIEW (EXPERIMENTAL) RELEASE ONLY! IT IS FOR DEBUGGING PURPOSES AND FOR THOSE THAT WANT TO HELP. 
+
+[[ v0.3.0e-100-preview / Steam v100 / 2014-05-13 ]]
+
+- New Era: Prehistoric Era.
+- 30 new Technologies: Fire, Gathering, Tools, Numbers, and more.
+- 25 new buildings, 4 wonders
+- 2 new resources and a new improvement (Fraging Site).
+- 18 New Units: Autocthon, Primitive Archer, Shaman, Caveman, Savage
+- Laborer to build early improvements
+
+
+__ KNOWN ISSUES __
+
+This is still in Alpha (and Preview). I will fix problems as soon as I can. Let me know.
+
+- Timed Game: I need to determine the appropriate turn addition to each timed setting. 
+- AI improved but still falls short in some places.
+- Start date (6000 BC) has comptability issues with other mods.
+
+
+
+__ UPGRADE __
+
+You may need to delete the mod cache to make this upgrade work. I had to do this once in order to get the new graphics to works.
+</Description>
     <Authors>Apshai (CarlosCodex)</Authors>
     <SpecialThanks>Muppets and CivFanatics</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
-    <MinCompatibleSaveVersion>63</MinCompatibleSaveVersion>
+    <MinCompatibleSaveVersion>100</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
@@ -30,6 +57,16 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Art/AtlasFont_PRE.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Core/Defines.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Core/Defines.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -54,6 +91,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Eras/Eras_post.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Buildings/Buildings.sql</FileName>
       </Action>
       <Action>
@@ -65,16 +107,6 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Technologies/Technologies.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Core/Defines.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Core/Defines.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -134,6 +166,21 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Units/Barbarians.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Units/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Units/Units_post.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Wonders/Wonders.xml</FileName>
       </Action>
       <Action>
@@ -186,16 +233,6 @@
         <Type>UpdateDatabase</Type>
         <FileName>Improvements/Outpost.xml</FileName>
       </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Units/Barbarians.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Units/Barbarians.xml</FileName>
-      </Action>
     </ModActions>
     <ModProperties />
     <ModContent>
@@ -211,10 +248,17 @@
         <Description>Main init</Description>
         <FileName>Lua/Main_Pre.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>NewEraPop_PRE</Name>
+        <Description>splash screen for new eras</Description>
+        <FileName>Lua/ui/eras/new-era-popup.lua</FileName>
+      </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <Homepage>https://github.com/carlosfhernandez/civ5-prehistoric</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -250,6 +294,7 @@
     <Folder Include="Art\Improvements\Outpost" />
     <Folder Include="Art\Buildings" />
     <Folder Include="Art\Features" />
+    <Folder Include="Art\Eras" />
     <Folder Include="Art\Terrain" />
     <Folder Include="Art\Resources\" />
     <Folder Include="Art\Resources\Berries\" />
@@ -318,9 +363,12 @@
     <Folder Include="Assets" />
     <Folder Include="Lua\" />
     <Folder Include="Lua\func\" />
+    <Folder Include="Lua\ui\" />
+    <Folder Include="Lua\ui\eras\" />
     <Folder Include="Lua\util" />
     <Folder Include="Greats" />
     <Folder Include="Beliefs" />
+    <Folder Include="Reference\" />
     <Folder Include="Resources\Lumber\" />
     <Folder Include="Resources\Berries" />
     <Folder Include="Resources\Cactus" />
@@ -379,21 +427,25 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Promotions\art-atlas-promotions-notes.txt">
+    <Content Include="Art\Atlas\Promotions\AbilityAtlas256_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Promotions\PromotionAtlas128_PRE.dds">
+    <Content Include="Art\Atlas\Promotions\AbilityAtlas32_PRE.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Promotions\PromotionAtlas16_PRE.dds">
+    <Content Include="Art\Atlas\Promotions\AbilityAtlas45_PRE.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Art\Atlas\Promotions\PromotionAtlas214_PRE.dds">
+    <Content Include="Art\Atlas\Promotions\AbilityAtlas64_PRE.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Atlas\Promotions\art-atlas-promotions-notes.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Art\Atlas\Promotions\PromotionAtlas256_PRE.dds">
       <SubType>Lua</SubType>
@@ -408,10 +460,6 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Atlas\Promotions\PromotionAtlas64_PRE.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Atlas\Promotions\PromotionAtlas80_PRE.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -516,6 +564,10 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Atlas\Wonders\WonderAtlas64_PRE.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\Eras\era_lowerpaleolithic.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2115,6 +2167,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Eras\Eras_post.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Improvements\BananaCamp.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2167,6 +2223,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Lua\City.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\func\HasWithinCityBorders.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2195,6 +2255,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Lua\ui\eras\new-era-popup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\util\logger.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2203,7 +2267,31 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="MOD_NOTES.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="README.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Reference\colors.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Reference\draw.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Reference\flavors.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Reference\formations.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Reference\icons.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2488,6 +2576,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Units\Units.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Units_post.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

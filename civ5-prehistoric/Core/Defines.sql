@@ -17,10 +17,11 @@
 
 -- Cities
 
-UPDATE Defines SET Value =    0 WHERE Name = 'INITIAL_CITY_POPULATION'; -- works
-UPDATE Defines SET Value =    0 WHERE Name = 'CITY_PLOTS_RADIUS';
-UPDATE Defines SET Value =    0 WHERE Name = 'CITY_PLOTS_DIAMETER';
-UPDATE Defines SET Value =    2 WHERE Name = 'NUM_CITY_PLOTS';
+--UPDATE Defines  SET Value =    0 WHERE Name = 'INITIAL_CITY_POPULATION'; -- works
+UPDATE Defines  SET Value =    0 WHERE Name = 'CITY_PLOTS_RADIUS';
+UPDATE Defines  SET Value =    0 WHERE Name = 'CITY_PLOTS_DIAMETER';
+UPDATE Defines  SET Value =    2 WHERE Name = 'NUM_CITY_PLOTS';
+
 
 
 -- BASE_CITY_GROWTH_THRESHOLD = 15 (base amount of food required for a city to grow)
@@ -106,10 +107,10 @@ UPDATE Defines SET Value =    2 WHERE Name = 'NUM_CITY_PLOTS';
 
 -- Combat
 
-UPDATE Defines SET Value =   200 WHERE Name = 'MAX_HIT_POINTS'; -- 100
-UPDATE Defines SET Value =   300 WHERE Name = 'MAX_CITY_HIT_POINTS'; -- 200
-UPDATE Defines SET Value =    15 WHERE Name = 'COMBAT_DAMAGE'; -- 20
-UPDATE Defines SET Value =    30 WHERE Name = 'NONCOMBAT_UNIT_RANGED_DAMAGE'; -- 40 | The damage dealt to noncombat units from ranged attacks.
+UPDATE Defines  SET Value =   200 WHERE Name = 'MAX_HIT_POINTS'; -- 100
+UPDATE Defines  SET Value =   300 WHERE Name = 'MAX_CITY_HIT_POINTS'; -- 200
+UPDATE Defines  SET Value =    15 WHERE Name = 'COMBAT_DAMAGE'; -- 20
+UPDATE Defines  SET Value =    30 WHERE Name = 'NONCOMBAT_UNIT_RANGED_DAMAGE'; -- 40 | The damage dealt to noncombat units from ranged attacks.
 
 -- NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER
 -- FLAT_LAND_EXTRA_DEFENSE (-10) = bonus for units on flatland (10% penalty)

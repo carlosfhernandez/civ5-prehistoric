@@ -86,10 +86,10 @@
     </Update>
     
 
-    <!-- Change regular Settler for later in game -->
+    <!-- Change Settler to be available later in game -->
     <Update>
       <Set PrereqTech ="TECH_SOCIAL_STRUCTURE"/>
-      <Where Type ="UNIT__SETTLER"/>
+      <Where Type ="UNIT_SETTLER"/>
     </Update>
 
 
@@ -1260,61 +1260,61 @@
   ║ SETTLER 
   ║ 
   ║ 
-  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
-  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ GATHERER
   ║ LABORER
   ║ WORKER           0         110    2
   ║  
   ║  
-  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
-  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ ALPHA  
   ║ PATRIARCH 
   ║ MATRIARCH
   ║ CHIEF
   ║ 
   ║ 
-  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
-  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
-  ¦ WANDERER         2           4    1  0
-  ¦ AUSTRALOPITH     3           4    1  0
-  ¦ WATCHER          2           5
-  ¦ ROCK_THROWER     2   3       6
-  ¦ RUNNER           2           7    2
-  ¦ BUSHMAN          3           8    2
-  ¦ AUTOCHTHON       4           7    2
-  ¦ ADVENTURER       3           7    2
-  ¦ PROTECTOR        5           9    2
-  ¦ SPEAR_HUNTER     4   4      12    2
-  ¦ PRIMITIVE_ARCHER 3   5      10    2
-  ¦ SAVAGE           5          14    2
-  ¦ SLINGER          2   6      13    2
-  ¦ LOOKOUT          4          15    2
-  ¦ HUNTER           6          18    2
-  ¦ SHAMAN           1   5      16    2
-  ¦ KEEPER           5          20    2
-  ¦ CAVEMAN          7          21    2
-  ¦ AXE_THROWER      6   6      25    2
-  ¦ CRO-MAGNON*      8          24    2
-  ¦ RAIDER           6          26    2
-  ¦ SCOUT            7*          
-  ¦ -PATHFINDER       *
-  ¦ NEANDERTHAL      9          32    2
-  ¦ OUTRIDER         8          36    2
-  ¦ THINKER          5          35    2
-  ¦ INITIATE         8          40    2
-  ¦ HARBINGER        7          42    2
-  ¦ SENTINEL        10          55    2
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ WANDERER         2           4    1  0
+  ║ AUSTRALOPITH     3           4    1  0
+  ║ WATCHER          2           5
+  ║ ROCK_THROWER     2   3       6
+  ║ RUNNER           2           7    2
+  ║ BUSHMAN          3           8    2
+  ║ AUTOCHTHON       4           7    2
+  ║ ADVENTURER       3           7    2
+  ║ PROTECTOR        5           9    2
+  ║ SPEAR_HUNTER     4   4      12    2
+  ║ PRIMITIVE_ARCHER 3   5      10    2
+  ║ SAVAGE           5          14    2
+  ║ SLINGER          2   6      13    2
+  ║ LOOKOUT          4          15    2
+  ║ HUNTER           6          18    2
+  ║ SHAMAN           1   5      16    2
+  ║ KEEPER           5          20    2
+  ║ CAVEMAN          7          21    2
+  ║ AXE_THROWER      6   6      25    2
+  ║ CRO-MAGNON*      8          24    2
+  ║ RAIDER           6          26    2
+  ║ SCOUT            7*          
+  ║ -PATHFINDER       *
+  ║ NEANDERTHAL      9          32    2
+  ║ OUTRIDER         8          36    2
+  ║ THINKER          5          35    2
+  ║ INITIATE         8          40    2
+  ║ HARBINGER        7          42    2
+  ║ SENTINEL        10          55    2
   ║ 
   ║ 
   ║
-  ¦ EXPLORER        08          65
-  ¦
-  ¦
-  ¦ 
-  ¦ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
-  ¦ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ EXPLORER        08          65
+  ║
+  ║
+  ║ 
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ LOG
   ║ RAFT
   ║ GALLEY
@@ -1896,7 +1896,7 @@ UnitFlagAtlas
       <UnitArtInfo>ART_DEF_UNIT_LABORER</UnitArtInfo>
       <UnitFlagIconOffset>1</UnitFlagIconOffset>
       <PortraitIndex>56</PortraitIndex>
-      <IconAtlas>UNIT_ATLAS_1</IconAtlas>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
     </Row> 
 
     <!-- UNIT_LABORER -->
@@ -2671,6 +2671,7 @@ UnitFlagAtlas
       <RangedCombat>3</RangedCombat>
       <Cost>6</Cost>
       <Moves>1</Moves>
+      <Range>1</Range>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -2705,6 +2706,7 @@ UnitFlagAtlas
       <RangedCombat>4</RangedCombat>
       <Cost>12</Cost>
       <Moves>2</Moves>
+      <Range>2</Range>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -2739,6 +2741,7 @@ UnitFlagAtlas
       <RangedCombat>6</RangedCombat>
       <Cost>13</Cost>
       <Moves>2</Moves>
+      <Range>2</Range>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -2773,6 +2776,7 @@ UnitFlagAtlas
       <RangedCombat>5</RangedCombat>
       <Cost>10</Cost>
       <Moves>2</Moves>
+      <Range>2</Range>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -6103,50 +6107,46 @@ UnitFlagAtlas
   <Unit_UniqueNames>
 
 
-
-
-
-
     <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_UFF</UniqueName></Row>
+      <UniqueName>TXT_KEY_ALPHA_UK_UFF</UniqueName></Row>
     <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_GABB</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_CHAAH</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_DAAG</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_HAKK</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_OOG</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_JAYO</UniqueName></Row>        
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_ARG</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_KAI</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_PA</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_MA</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_JA</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_XAN</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_PY</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_BUHBA</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_PEK</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_GAA</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_KEHI</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_KAY</UniqueName></Row>
-    <Row><UnitType>UNIT_ALPHA</UnitType>
-      <UniqueName>TXT_KEY_ALPHA_BBOK</UniqueName></Row>
+      <UniqueName>TXT_KEY_ALPHA_UK_UK_GABB</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_CHAAH</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_DAAG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_HAKK</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_OOG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_JAYO</UniqueName></Row>        
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_ARG</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_KAI</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_PA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_MA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_JA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_XAN</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_PY</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_BUHBA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_PEK</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_GAA</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_KEHI</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_KAY</UniqueName></Row>
+    <Row><UnitType>UNIT_ALPHA_UK</UnitType>
+      <UniqueName>TXT_KEY_ALPHA_UK_BBOK</UniqueName></Row>
     
 
 
@@ -6206,9 +6206,10 @@ UnitFlagAtlas
       <UniqueName>TXT_KEY_GREAT_LEADER_JOAN_OF_ARC</UniqueName></Row>
     <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
       <UniqueName>TXT_KEY_GREAT_LEADER_WILLIAM_THE_CONQUEROR</UniqueName></Row>
-
-
-    
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_APSHAI</UniqueName></Row>
+    <Row><UnitType>UNIT_GREAT_LEADER</UnitType>
+      <UniqueName>TXT_KEY_GREAT_LEADER_CARLOS_CODEX</UniqueName></Row>
 
 
 
@@ -6836,7 +6837,7 @@ UnitFlagAtlas
       <Text>Rock Thrower Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_STRATEGY">
-      <Text>With limited range and a very weak attach, the only real benefit is preventing immediate retaliation.</Text>
+      <Text>With limited range and a very weak attack, the only real benefit is preventing immediate retaliation.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ROCK_THROWER_HELP">
       <Text>The Rock Thrower is the earliest ranged unit with only a one-tile range. This means getting up close, but at least there is no instant retaliation.</Text>
@@ -6870,10 +6871,10 @@ UnitFlagAtlas
       <Text>Slinger Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_SLINGER_STRATEGY">
-      <Text>Slinger Strategy</Text>
+      <Text>Use the slinger for a hit-and-run ranged attack.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_SLINGER_HELP">
-      <Text>Slinger Help</Text>
+      <Text>Primitive slingers are fairly weak, although sometimes deadly. They have the range (2 spaces) and the slight ability to withdraw from combat.</Text>
     </Row>       
 
     <!-- UNIT_PRIMITIVE_ARCHER -->
@@ -7342,6 +7343,8 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_GREAT_LEADER_JOAN_OF_ARC"><Text>Joan of Arc</Text></Row>
     <Row Tag="TXT_KEY_GREAT_LEADER_WILLIAM_THE_CONQUEROR"><Text>William the Conqueror</Text></Row>
     <Row Tag="TXT_KEY_GREAT_LEADER_APSHAI"><Text>Apshai</Text></Row>
+    <Row Tag="TXT_KEY_GREAT_LEADER_CARLOS_CODEX"><Text>Carlos Codex</Text></Row>
+
     <!--
     Arminius
     Leif Ericson
@@ -7420,26 +7423,26 @@ UnitFlagAtlas
 
 
 
-    <Row Tag="TXT_KEY_ALPHA_UFF"><Text>Uk Uff</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_GABB"><Text>Uk Gab'b</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_CHAAH"><Text>Uk Cha'ah</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_DAAG"><Text>Uk Da'ag</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_HAKK"><Text>Uk Hakk</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_OOG"><Text>Uk Oog</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_JAYO"><Text>Uk Jayo</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_ARG"><Text>Uk Arg</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kai</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Pa</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Ma</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Ja</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Xan</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Py</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Buh'ba</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Pek</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Gaa</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kehi</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk Kay</Text></Row>
-    <Row Tag="TXT_KEY_ALPHA_KAI"><Text>Uk B'bok</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_UFF"><Text>Uk Uff</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_GABB"><Text>Uk Gab'b</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_CHAAH"><Text>Uk Cha'ah</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_DAAG"><Text>Uk Da'ag</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_HAKK"><Text>Uk Hakk</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_OOG"><Text>Uk Oog</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_JAYO"><Text>Uk Jayo</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_ARG"><Text>Uk Arg</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_KAI"><Text>Uk Kai</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_PA"><Text>Uk Pa</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_MA"><Text>Uk Ma</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_JA"><Text>Uk Ja</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_XAN"><Text>Uk Xan</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_PY"><Text>Uk Py</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_BUH_BA"><Text>Uk Buh'ba</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_PEK"><Text>Uk Pek</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_GAA"><Text>Uk Gaa</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_KEHI"><Text>Uk Kehi</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_KAY"><Text>Uk Kay</Text></Row>
+    <Row Tag="TXT_KEY_ALPHA_UK_B_BOK"><Text>Uk B'bok</Text></Row>
 
 
 
