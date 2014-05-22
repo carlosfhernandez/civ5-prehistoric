@@ -123,13 +123,14 @@
   │
   │
   │
-  │   Prereq Class:
+  │   Dummy Class:
   │
-  │   Also known as 'dummy buildings', they should not appear on the build list.
+  │   They should not appear on the build list and are used to provide bonuses
+  │     or as hidden prereqs for other buildings. 
   │
-  │   - BUILDINGCLASS_CAUSEWAY
-  │   - BUILDINGCLASS_FIRE_PIT
-  │
+  │   - BUILDINGCLASS_CAUSEWAY_DUMMY
+  │   - BUILDINGCLASS_FIRE_PIT_DUMMY
+  │   - BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY
   │
   │
   │
@@ -275,6 +276,41 @@
       <Description>TXT_KEY_BUILDING_CHIEF_UPGRADE_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+     
+    │ Dummy Buildings
+     
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    -->
+    <Row>
+      <Type>BUILDINGCLASS_CAUSEWAY_DUMMY</Type>
+      <DefaultBuilding>BUILDING_CAUSEWAY_DUMMY</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_CAUSEWAY_DUMMY_DESC</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_FIRE_PIT_DUMMY</Type>
+      <DefaultBuilding>BUILDING_FIRE_PIT_DUMMY</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_DUMMY_DESC</Description>
+    </Row>
+    <Row>
+      <Type>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</Type>
+      <DefaultBuilding>BUILDING_PREHISTORIC_TRIBE_DUMMY</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC</Description>
+    </Row>
 
 
 
@@ -1137,6 +1173,22 @@
           ◄█▓▒░ ● ADAPTIVE_RADIATION ● ░▒▓█► 
     -->
 
+    <!-- *** BASE *** -->
+    <!-- PREHISTORIC_TRIBE_DUMMY -->
+    <Row>
+      <Type>BUILDING_PREHISTORIC_TRIBE_DUMMY</Type>
+      <BuildingClass>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>Tribe</Description>
+      <Help>Prehistoric Tribe Base Help</Help>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
+    </Row>
+
+
     <!-- *** CAPITOL *** -->
     <!-- TREE_LIFE -->
     <Row>
@@ -1628,6 +1680,21 @@
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>19</PortraitIndex>
+    </Row>
+
+    <Row>
+      <Type>BUILDING_CAUSEWAY_DUMMY</Type>
+      <BuildingClass>BUILDINGCLASS_CAUSEWAY_DUMMY</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>Nearby Marshland</Description>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[/ENDCOLOR] to improve your city.</Help>
+      <Strategy>NONE</Strategy>
+      <Civilopedia>NONE</Civilopedia>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+      <PortraitIndex>8</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
     </Row>
 
 
@@ -2202,6 +2269,20 @@
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>34</PortraitIndex>
     </Row> 
+    <Row>
+      <Type>BUILDING_FIRE_PIT_DUMMY</Type>
+      <BuildingClass>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>Nearby Food</Description>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[/ENDCOLOR] to improve your city.</Help>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>24</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
+    </Row>
+
+
 
 
 
@@ -3033,11 +3114,11 @@
     </Row>    
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <BuildingClassType>BUILDINGCLASS_CAUSEWAY_PREREQ</BuildingClassType>
+      <BuildingClassType>BUILDINGCLASS_CAUSEWAY_DUMMY</BuildingClassType>
     </Row>
     <Row>
       <BuildingType>BUILDING_FIRE_PIT</BuildingType>
-      <BuildingClassType>BUILDINGCLASS_FIRE_PIT_PREREQ</BuildingClassType>
+      <BuildingClassType>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClassType>
     </Row>
   </Building_ClassesNeededInCity>
 
@@ -3244,6 +3325,51 @@
 
 
 
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE QUANTITY
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_ResourceQuantity>
+
+    <Row>
+      <BuildingType>BUILDING_PREHISTORIC_TRIBE_DUMMY</BuildingType>
+      <ResourceType>RESOURCE_HORSE</ResourceType>
+      <Quantity>10</Quantity>
+    </Row>
+
+
+  </Building_ResourceQuantity>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ╔═════════════════════════════════════════════════════════════════════════════
   ║
@@ -3424,6 +3550,14 @@
 
 
 
+
+
+
+
+
+
+
+
     <!--
 
     ┌────────────────────────────────────────────────────────────────────────┐
@@ -3472,7 +3606,52 @@
     <!--
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │                               uildings                                 │▌ 
+    │                Capitol and Palace Upgrade Buildings                    │▌ 
+    └────────────────────────────────────────────────────────────────────────┘▌ 
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+    -->
+
+
+
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_DUMMY_DESC">
+      <Text>Marshland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_DUMMY_DESC">
+      <Text>Animals</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC">
+      <Text>Tribe</Text>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                              Buildings                                 │▌ 
     └────────────────────────────────────────────────────────────────────────┘▌ 
      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 

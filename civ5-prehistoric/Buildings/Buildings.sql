@@ -324,8 +324,11 @@ UPDATE Civilization_FreeBuildingClasses
 SET BuildingClassType='BUILDINGCLASS_TREE_LIFE'
 WHERE BuildingClassType='BUILDINGCLASS_PALACE';
 
-
-
+-- 
+-- Add base dummy building to provide bonuses (for now - TODO)
+INSERT INTO Civilization_FreeBuildingClasses 
+  SELECT CivilizationType, "BUILDINGCLASS_PREHISTORIC_TRIBE" 
+  FROM Civilization_FreeBuildingClasses;
 
 
 

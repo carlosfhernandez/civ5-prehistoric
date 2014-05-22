@@ -141,16 +141,6 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Buildings/Dummies/CausewayPrereq.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Buildings/Dummies/FirePitPrereq.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Buildings/Buildings.xml</FileName>
       </Action>
       <Action>
@@ -368,8 +358,12 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
     <Folder Include="Lua\util" />
     <Folder Include="Greats" />
     <Folder Include="Beliefs" />
+    <Folder Include="Resources\Peat\" />
+    <Folder Include="Resources\Society\" />
+    <Folder Include="Resources\Tar\" />
+    <Folder Include="UI" />
     <Folder Include="Reference\" />
-    <Folder Include="Resources\Lumber\" />
+    <Folder Include="Resources\Wood" />
     <Folder Include="Resources\Berries" />
     <Folder Include="Resources\Cactus" />
     <Folder Include="Resources\Flint" />
@@ -2115,6 +2109,10 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Core\Events.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Core\GoodyHuts.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2263,6 +2261,10 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Lua\util\serializer.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\util\utils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -2323,11 +2325,19 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Resources\Lumber\Lumber.sql">
+    <Content Include="Resources\Society\Society.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Resources\Lumber\Lumber.xml">
+    <Content Include="Resources\Society\Society.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Wood\Wood.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Wood\Wood.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2360,6 +2370,18 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Thanks.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="UI\TopPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="UI\TopPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="UI\ui.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

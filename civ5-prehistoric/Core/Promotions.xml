@@ -581,9 +581,21 @@
       <Help>Extra [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement[ENDCOLOR] in [COLOR_POSITIVE_TEXT]Marshes[ENDCOLOR]</Help>
       <Sound>AS2D_IF_LEVELUP</Sound>
       <PortraitIndex>59</PortraitIndex>
-      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
       <PediaType>PEDIA_ATTRIBUTES</PediaType>
       <PediaEntry>Marsh Walker</PediaEntry>
+    </Row>    
+
+    <Row>
+      <Type>PROMOTION_FINE_STONE</Type>
+      <Description>Fine Stone Weapons</Description>
+      <Help>Stone weapons increase combat strength.</Help>
+      <AttackMod>10</AttackMod>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Fine Stone Weapons</PediaEntry>
     </Row>    
 
 
@@ -736,6 +748,30 @@
 
   <UnitPromotions_UnitClasses>
     
+    <!--
+    <Row>
+      <PromotionType></PromotionType>
+      <UnitClassType></UnitClassType>
+      <Modifier></Modifier>
+      <Attack></Attack>
+      <Defense></Defense>
+      <PediaType></PediaType>
+    </Row>
+    -->
+    
+    <Row>
+      <PromotionType>PROMOTION_FINE_STONE</PromotionType>
+      <UnitClassType>UNITCLASS_AUTOCHTHON</UnitClassType>
+      <Modifier></Modifier>
+      <Attack></Attack>
+      <Defense></Defense>
+      <PediaType></PediaType>
+    </Row>
+
+
+
+
+
 
 
   </UnitPromotions_UnitClasses>
@@ -778,18 +814,6 @@
     <Row>
       <PromotionType>PROMOTION_GGANTIJA</PromotionType>
       <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-    </Row>
-    <Row>
-      <PromotionType>PROMOTION_GGANTIJA</PromotionType>
-      <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-    </Row>
-    <Row>
-      <PromotionType>PROMOTION_GGANTIJA</PromotionType>
-      <UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-    </Row>
-    <Row>
-      <PromotionType>PROMOTION_GGANTIJA</PromotionType>
-      <UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
     </Row>
   </UnitPromotions_UnitCombats>
 
