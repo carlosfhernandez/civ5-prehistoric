@@ -439,6 +439,16 @@
   ║
   ║
   ║
+  ╟───Dummy
+  ║
+  ║   UNITCLASS_BUILDING_TRIGGER
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
   ║
   ║
   ╟───Testing
@@ -871,6 +881,19 @@
 
 
 
+
+
+
+    <!-- || Dummy || -->
+
+
+    <Row>
+      <Type>UNITCLASS_BUILDING_TRIGGER</Type>
+      <Description>.</Description>
+      <DefaultUnit>UNIT_BUILDING_TRIGGER</DefaultUnit>
+    </Row>
+
+    
 
 
 
@@ -3312,6 +3335,93 @@ UnitFlagAtlas
 
 
 
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────
+    │
+    │ Dummy
+    │
+    │
+    │
+    │
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_TRIGGER</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost>20</AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_LOOKOUT_ROCK</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_SPRING_SOURCE</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4301,6 +4411,15 @@ UnitFlagAtlas
       <IconAtlas>UNIT_ATLAS_1</IconAtlas>
       <PortraitIndex>3</PortraitIndex>
     </Row> 
+
+
+
+
+
+
+
+
+    
 
 
 

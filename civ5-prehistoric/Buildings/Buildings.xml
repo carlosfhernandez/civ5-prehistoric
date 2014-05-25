@@ -1307,6 +1307,7 @@
       <Strategy>TXT_KEY_BUILDING_SPRING_SOURCE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_SPRING_SOURCE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_SPRING_SOURCE_QUOTE</Quote>
+      <FreePromotion>PROMOTION_INVIGORATED</FreePromotion>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -1373,6 +1374,7 @@
       <Strategy>TXT_KEY_BUILDING_STONE_PILE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_STONE_PILE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_STONE_PILE_QUOTE</Quote>
+      <FreePromotion>PROMOTION_FINE_STONE</FreePromotion>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>

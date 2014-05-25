@@ -587,6 +587,18 @@
     </Row>    
 
     <Row>
+      <Type>PROMOTION_CLIMB_AND_LOOK</Type>
+      <Description>Climb and Look</Description>
+      <Help>Allows unit to climg and look. +1 Visibility to certain units.</Help>
+      <VisibilityChange>1</VisibilityChange>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Fine Stone Weapons</PediaEntry>
+    </Row> 
+
+    <Row>
       <Type>PROMOTION_FINE_STONE</Type>
       <Description>Fine Stone Weapons</Description>
       <Help>Stone weapons increase combat strength.</Help>
@@ -598,6 +610,17 @@
       <PediaEntry>Fine Stone Weapons</PediaEntry>
     </Row>    
 
+    <Row>
+      <Type>PROMOTION_INVIGORATED</Type>
+      <Description>Invigorated</Description>
+      <Help>+1 Movement</Help>
+      <MovesChange>1</MovesChange>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Invigorated</PediaEntry>
+    </Row>  
 
 
 
@@ -609,8 +632,17 @@
 
 
 
-
-
+    <Row>
+      <Type>PROMOTION_CREATED</Type>
+      <Description>TXT_KEY_PROMOTION_CREATED</Description>
+      <Help>TXT_KEY_PROMOTION_CREATED_HELP</Help>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <CannotBeChosen>true</CannotBeChosen>
+      <PortraitIndex>26</PortraitIndex>
+      <IconAtlas>PROMOTION_ATLAS</IconAtlas>
+      <PediaType>PEDIA_SHARED</PediaType>
+      <PediaEntry>TXT_KEY_PROMOTION_CREATED</PediaEntry>
+    </Row>
 
 
 
@@ -745,10 +777,12 @@
 
 
 
-
+  
   <UnitPromotions_UnitClasses>
-    
-    <!--
+  <!-- vs. unit classes -->
+
+
+    <!-- UnitPromotions_UnitClasses
     <Row>
       <PromotionType></PromotionType>
       <UnitClassType></UnitClassType>
@@ -758,17 +792,6 @@
       <PediaType></PediaType>
     </Row>
     -->
-    
-    <Row>
-      <PromotionType>PROMOTION_FINE_STONE</PromotionType>
-      <UnitClassType>UNITCLASS_AUTOCHTHON</UnitClassType>
-      <Modifier></Modifier>
-      <Attack></Attack>
-      <Defense></Defense>
-      <PediaType></PediaType>
-    </Row>
-
-
 
 
 
@@ -795,6 +818,7 @@
 
 
   <UnitPromotions_UnitCombats>
+
     <Row>
       <PromotionType>PROMOTION_GGANTIJA</PromotionType>
       <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -815,6 +839,7 @@
       <PromotionType>PROMOTION_GGANTIJA</PromotionType>
       <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
     </Row>
+
   </UnitPromotions_UnitCombats>
 
 
@@ -890,6 +915,25 @@
       <Text>Prehistoric Limited Mapping</Text>
     </Row>    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Row Tag="TXT_KEY_PROMOTION_CREATED">
+      <Text>Created</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_CREATED_HELP">
+      <Text>This promotion is only used internally and has no effect. Ignore it.</Text>
+    </Row>
 
   </Language_en_US>
  

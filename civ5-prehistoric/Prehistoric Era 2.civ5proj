@@ -238,12 +238,6 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
         <Description>Main init</Description>
         <FileName>Lua/Main_Pre.lua</FileName>
       </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
-        <Name>NewEraPop_PRE</Name>
-        <Description>splash screen for new eras</Description>
-        <FileName>Lua/ui/eras/new-era-popup.lua</FileName>
-      </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
@@ -2254,6 +2248,10 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ui\eras\new-era-popup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Units.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
