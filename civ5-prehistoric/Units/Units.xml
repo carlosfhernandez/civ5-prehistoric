@@ -23,6 +23,37 @@
 
 <GameData>
 
+
+
+
+
+
+
+
+
+  <!--
+  ╔═════════════════════════════════════════════════════════════════════════════
+  ║
+  ║  NEW TABLES
+  ║
+  ║
+  ╚═════════════════════════════════════════════════════════════════════════════
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   <!--
   ╔═════════════════════════════════════════════════════════════════════════════
@@ -1642,8 +1673,9 @@ UnitFlagAtlas
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
       <Description>TXT_KEY_UNIT_GREAT_LEADER_DESC</Description>
-      <Civilopedia>TXT_KEY_UNIT_GREAT_LEADER_PEDIA</Civilopedia>
+      <Help>TXT_KEY_UNIT_GREAT_LEADER_STRATEGY</Help>
       <Strategy>TXT_KEY_UNIT_GREAT_LEADER_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_UNIT_GREAT_LEADER_PEDIA</Civilopedia>
       <AdvancedStartCost>-1</AdvancedStartCost>
       <WorkRate>1</WorkRate>
       <CombatLimit>0</CombatLimit>
@@ -6393,6 +6425,7 @@ UnitFlagAtlas
 
 
     <!-- UNIT_GREAT_LEADER -->
+    <!--
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_TITLE">
       <Text>Great Leader Class</Text>
     </Row>
@@ -6408,7 +6441,7 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_HELP">
       <Text>Great Leader Help</Text>
     </Row> 
-
+    -->
 
 
 

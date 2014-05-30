@@ -2211,17 +2211,29 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Buildings.lua">
+    <Content Include="Lua\Buildings_Pre.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\City.lua">
+    <Content Include="Lua\City_Pre.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Events_Pre.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Lua\func\HasWithinCityBorders.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Game_Pre.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Global_Pre.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Lua\Main_Pre.lua">
       <SubType>Lua</SubType>
@@ -2233,7 +2245,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
     </Content>
     <Content Include="Lua\ResourceGenMain_Pre.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ResourceGen_Prehistory.lua">
       <SubType>Lua</SubType>
@@ -2251,9 +2263,9 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Units.lua">
+    <Content Include="Lua\Units_Pre.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\util\logger.lua">
       <SubType>Lua</SubType>

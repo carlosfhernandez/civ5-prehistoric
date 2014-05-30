@@ -88,6 +88,68 @@
 <GameData>
 
 
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   NEW BUILDING TABLES
+  │
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+
+  <Table name="Building_UnitPromotions">
+    <Column name="BUildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="UnitType" type="text" reference="Units(Type)"/>
+    <Column name="UnitPromotionType" type="text" reference="UnitPromotions(Type)"/>
+  </Table>
+
+
+  <Building_UnitPromotions>
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_ROCK</BuildingType>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitPromotionType>PROMOTION_CLIMB_AND_LOOK</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_ROCK</BuildingType>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitPromotionType>PROMOTION_CLIMB_AND_LOOK</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_ROCK</BuildingType>
+      <UnitType>UNIT_WANDERER</UnitType>
+      <UnitPromotionType>PROMOTION_CLIMB_AND_LOOK</UnitPromotionType>
+    </Row>
+    <!--
+    <Row>
+      <BuildingType></BuildingType>
+      <UnitType></UnitType>
+      <UnitPromotionType></UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType></BuildingType>
+      <UnitType></UnitType>
+      <UnitPromotionType></UnitPromotionType>
+    </Row>
+    -->
+  </Building_UnitPromotions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
@@ -3578,10 +3640,10 @@
     <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_HELP">
       <Text>Chief Upgrade Help</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_STATEGY">
       <Text> Strategy</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_PEDIA">
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_PEDIA">
       <Text> Pedia</Text>
     </Row>
 

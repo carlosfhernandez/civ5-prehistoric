@@ -119,17 +119,14 @@ Thanks!
 
 end]]--
 
-include( "utils" )
-include( "logger" )
 
-print("")
-print("")
-print("__FILE__   HasWithinCityBorders")
+logger.PREFIX = "borders"
+
+logger:info( "" )
+logger:info( "__FILE__   HasWithinCityBorders" )
 
 
 local bDebug = true
-
-local logger = Logger:new(Logger.LEVEL.INFO)
 
 
 local TYPE_TYPES = {}
@@ -396,4 +393,4 @@ end
 
 
 GameEvents.PlayerDoTurn.Add( CanBuild );
-logger:info("PlayerDoTurn.Add( CanBuild )");
+logger:info("PlayerDoTurn.Add( CanBuild ); Count:" .. "[TODO]");

@@ -83,10 +83,9 @@ carloscipher(twitter)
 
 -- module "util"
 
-print( "" )
-print( "" )
-print( "__FILE__ util/logger" )
-
+print( "logger    | --------------------------------------------------" );
+print( "logger    | __FILE__ util/logger" )
+print( "logger    | --------------------------------------------------" );
 
 
 
@@ -111,7 +110,11 @@ Logger = {
   }
 }
 
-Logger.DEFAULT = Logger.LEVEL.ERROR
+Logger.DEFAULT        = Logger.LEVEL.ERROR
+Logger.DATE_PATTERN   = "!%y-%m-%d %H:%m:%S "
+Logger.PATTERN        = "%date %level %message\n"
+Logger.PREFIX         = ""
+
 
 --
 -- new
@@ -125,48 +128,22 @@ function Logger:new (level)
   return self
 end
 
---
--- debug 
---
-function Logger:debug ( msg, pattern )
-  self:log ( msg, self.DEBUG, pattern )
-end
 
---
--- info 
---
-function Logger:info ( msg, pattern )
-  self:log ( msg, self.INFO, pattern )
-end
-
---
--- warn 
---
-function Logger:warn ( msg, pattern )
-  self:log ( msg, self.WARN, pattern )
-end
-
---
--- error 
---
-function Logger:error ( msg, pattern )
-  self:log ( msg, self.ERROR, pattern )
-end
-
---
--- fatal 
---
-function Logger:fatal ( msg, pattern )
-  self:log ( msg, self.FATAL, pattern )
-end
 
 --
 -- log
 --
 -- @param {String} msg
 -- @param {String} level 
---
-function Logger:log ( msg, level, pattern )
+-- @param {String} pattern
+-- @param {String} prefix - prefix to be added to message
+-- @param {Boolean} bPersisPrefix - whether to keep this prefix for future msg
+-- 
+function Logger:log ( msg, level, pattern, prefix, bPersisPrefix )
+
+  if (false or bPersisPrefix) then
+    self.PREFIX = prefix or ""
+  end
 
   if level then
     assert(self.LEVEL[level], string.format("undefined level `%s'", tostring(level)))
@@ -180,7 +157,7 @@ function Logger:log ( msg, level, pattern )
       msg = self:convert(msg)
     end
 
-    print( self:messagize(pattern, os.date("!%y-%m-%d %H:%m:%S "), level, msg) )
+    print( self:messagize(pattern, os.date(self.DATE_PATTERN), level, msg) )
 
     return true
 
@@ -192,6 +169,41 @@ function Logger:log ( msg, level, pattern )
 end
 
 --
+-- debug 
+--
+function Logger:debug ( msg, pattern )
+  self:log ( msg, self.DEBUG, pattern, nil, false )
+end
+
+--
+-- info 
+--
+function Logger:info ( msg, pattern )
+  self:log ( msg, self.INFO, pattern, nil, false )
+end
+
+--
+-- warn 
+--
+function Logger:warn ( msg, pattern )
+  self:log ( msg, self.WARN, pattern, nil, false )
+end
+
+--
+-- error 
+--
+function Logger:error ( msg, pattern )
+  self:log ( msg, self.ERROR, pattern, nil, false )
+end
+
+--
+-- fatal 
+--
+function Logger:fatal ( msg, pattern )
+  self:log ( msg, self.FATAL, pattern, nil, false )
+end
+
+--
 -- messagize
 --
 function Logger:messagize (p_pattern, dt, level, message)
@@ -199,9 +211,14 @@ function Logger:messagize (p_pattern, dt, level, message)
     local logline = p_pattern or "%date %level %message\n"
 
     message = string.gsub(message, "%%", "%%%%")
-    logline = string.gsub(logline, "%%date", dt)
-    logline = string.gsub(logline, "%%level", level)
-    logline = string.gsub(logline, "%%message", message)
+
+    --logline = string.gsub(logline, "%%date", dt)
+    --logline = string.gsub(logline, "%%level", level)
+    --logline = string.gsub(logline, "%%message", message)
+
+
+    logline = string.format("%-10s| %s%s %s", self.PREFIX, dt, level, message)
+    --logline = string.format("", ) .. logline
 
     return logline
 
@@ -213,4 +230,3 @@ end
 function Logger:convert (obj)
   return "[SYSTEM] String conversion function not supported, yet..."
 end
-
