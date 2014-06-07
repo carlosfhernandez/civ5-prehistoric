@@ -123,7 +123,7 @@ end]]--
 logger.PREFIX = "borders"
 
 logger:info( "" )
-logger:info( "__FILE__   HasWithinCityBorders" )
+logger:info( "__FILE__ HasWithinCityBorders" )
 
 
 local bDebug = true

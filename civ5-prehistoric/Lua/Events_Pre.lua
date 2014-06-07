@@ -233,39 +233,28 @@ WorldMouseOver(int worldHasMouseOver)
 LUA EVENTS
 ==============================================================================
 
-A
-AdditionalInformationDropdownGatherEntries(table(int => table) additionalEntries)
-AdditionalInformationDropdownSortEntries(table(int => table) entries)
-AdvisorButtonEvent(MouseType button)
-C
-ChatShow(int chatOpen)
-E
-EnemyPanelHide(bool isHide)
-M
-ModBrowserSetDeleteButtonState(..., bool arg1, string arg2 = nil)
-ModBrowserSetDownloadButtonState(bool arg0, bool arg1)
-ModBrowserSetLikeButtonState(bool arg0, bool arg1)
-ModBrowserSetReportButtonState(bool arg0, bool arg1)
-O
-OnModBrowserDeleteButtonClicked()
-OnModBrowserDownloadButtonClicked()
-OnModsBrowserNavigateBack(table args)
-OnRecommendationCheckChanged(bool value)
-P
-PasswordChanged(PlayerID player)
-ProductionPopup(bool isHide)
-R
-ReplayViewer_LoadReplay(unknown replayFile)
-RequestRefreshAdditionalInformationDropdownEntries()
-S
-ScenarioPlayerStatusChanged(table(PlayerID => table(string => table)) tPlayerStatus, PlayerID turn, int year, PlayerID playerAboutToWin, int turnsControlHeld)
-ScenarioUnitTiersChanged(table(string => PlayerID) tUnitTiers)
-SetCivNameEditSlot(PlayerID slot)
-T
-TryDismissTutorial(string tutorialID)
-TryQueueTutorial(string tutorialID, bool highPriority)
-
-
+AdditionalInformationDropdownGatherEntries  (table  (int => table) additionalEntries)
+AdditionalInformationDropdownSortEntries  (table  (int => table) entries)
+AdvisorButtonEvent  (MouseType button)
+ChatShow  (int chatOpen)
+EnemyPanelHide  (bool isHide)
+ModBrowserSetDeleteButtonState  (..., bool arg1, string arg2 = nil)
+ModBrowserSetDownloadButtonState  (bool arg0, bool arg1)
+ModBrowserSetLikeButtonState  (bool arg0, bool arg1)
+ModBrowserSetReportButtonState  (bool arg0, bool arg1)
+OnModBrowserDeleteButtonClicked ()
+OnModBrowserDownloadButtonClicked ()
+OnModsBrowserNavigateBack (table args)
+OnRecommendationCheckChanged  (bool value)
+PasswordChanged (PlayerID player)
+ProductionPopup (bool isHide)
+ReplayViewer_LoadReplay (unknown replayFile)
+RequestRefreshAdditionalInformationDropdownEntries  ()
+ScenarioPlayerStatusChanged (table  (PlayerID => table  (string => table)) tPlayerStatus, PlayerID turn, int year, PlayerID playerAboutToWin, int turnsControlHeld)
+ScenarioUnitTiersChanged  (table  (string => PlayerID) tUnitTiers)
+SetCivNameEditSlot  (PlayerID slot)
+TryDismissTutorial  (string tutorialID)
+TryQueueTutorial  (string tutorialID, bool highPriority)
 
 Static Methods
 ------------------------------------------------------------------------------
@@ -309,23 +298,18 @@ GameEvents.SomeEvent(<args>). This will invoke all subscribers with the
 provided arguments.
 
 
-C
 bool  CanDeclareWar(TeamID myTeam, TeamID theirTeam)
 CityBuildingsIsBuildingSellable(PlayerID player, BuildingType building)
 CityCanBuyAnyPlot(PlayerID player, CityID city)
 CityCanBuyPlot(PlayerID player, CityID city, int x, int y)
-
 CityCanConstruct(PlayerID player, CityID city, BuildingType buildingType)
-
 CityCanCreate(PlayerID player, CityID city, ProjectType projectType)
 CityCanMaintain(PlayerID player, CityID city, ProcessType processType)
 CityCanPrepare(PlayerID player, CityID city, SpecialistType specialistType)
 CityCanTrain(PlayerID player, CityID city, UnitType unitType)
 CityCaptureComplete(PlayerID player, int capital, ResourceType x, ResourceType y, PlayerID newPlayer, int conquest, int conquest)
 CityConvertsReligion(PlayerID owner, ReligionType religion, int x, int y)
-D
 DoResolveVictoryVote(bool preliminaryVote)
-G
 GameCoreTestVictory()
 GameCoreUpdateBegin()
 GameCoreUpdateEnd()
@@ -333,7 +317,6 @@ GetFounderBenefitsReligion(PlayerID player)
 GetReligionToSpread(PlayerID player)
 GetScenarioDiploModifier1(PlayerID player1, PlayerID player2)
 GetScenarioDiploModifier2(PlayerID player1, PlayerID player2)
-P
 PlayerAdoptPolicy(PlayerID player, int policyID)
 PlayerCanConstruct(PlayerID player, BuildingType buildingType)
 PlayerCanCreate(PlayerID player, ProjectType projectType)
@@ -343,25 +326,17 @@ PlayerCanResearch(PlayerID player, TechType techType)
 PlayerCanEverResearch(PlayerID player, TechType techType)
 PlayerCanTrain(PlayerID player, UnitType unitType)
 PlayerCityFounded(PlayerID player, int cityX, int cityY)
-
 PlayerDoTurn(PlayerID player)
-
 PlayerPreAIUnitUpdate(PlayerID player)
 PreGameStart
-S
 SetAlly(PlayerID cSPlayer, PlayerID oldAlly, PlayerID newAlly)
 SetPopulation(int x, int y, unknown oldPopulation, int newPopulation)
-T
 TeamMeet(unknown playeractive, unknown playermet)
 TeamSetHasTech(TeamID team, TechType tech, bool adopted)
 TeamTechResearched(TeamID team, TechType tech, int change)
-U
 UnitGetSpecialExploreTarget(PlayerID player, UnitID unitID)
 UnitKilledInCombat(PlayerID killer, PlayerID killee, UnitType killeeUnitType)
 UnitSetXY(PlayerID player, UnitID unit, int x, int y)
-
-
-
 
 
 
@@ -378,11 +353,6 @@ Remove
 RemoveAll
 TestAll
 TestAny
-
-
-
-
-
 
 
 

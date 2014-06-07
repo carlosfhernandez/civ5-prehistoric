@@ -50,24 +50,21 @@ print( "main      | --------------------------------------------------" );
 print( "main      | __FILE__ Main_Pre" );
 print( "main      | --------------------------------------------------" );
 
-print( "main      | including other files..." );
+include( "SaveUtils" ); MY_MOD_NAME = "PrehistoricEra";
 
-
-
-print( "main      | including logger" );
 include( "logger" );
 logger = Logger:new(Logger.LEVEL.DEBUG)
 logger.PREFIX = "main"
 
 
-print( "main      | including utils" );
 include( "utils" );
 
-print( "main      | including HasWithinCityBorders" );
 include( "HasWithinCityBorders" );
 
-print( "main      | including Units_Pre" );
+include( "Player_Pre.lua" );
 include( "Units_Pre.lua" );
+
+
 
 
 

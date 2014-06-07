@@ -5897,12 +5897,32 @@ UnitFlagAtlas
       <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
     </Row>
 
-
-    <!--
     <Row>
       <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHTLESS</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT/PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT/PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SETTLER</UnitType>
       <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
+
+
+
+
+
+    <!--
+
     <Row>
       <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
       <PromotionType>PROMOTION_PREHISTORIC_MAPPING</PromotionType>

@@ -13,36 +13,15 @@ alter game speed due to addition of eras if and only if the player starts in pre
 			<Where Name="START_YEAR"/>
 			<Set Value="-6000"/>
 		</Update>
-		<Update>
-			<Where Name="CITY_STRENGTH_DEFAULT"/>
-			<Set Value="500"/>
-		</Update>
-		<Update>
-			<Where Name="CITY_STRENGTH_HILL_CHANGE"/>
-			<Set Value="300"/>
-		</Update>
-		<Update>
-			<Where Name="MINOR_CIV_CONTACT_GOLD_FIRST"/>
-			<Set Value="20"/>
-		</Update>
-		<Update>
-			<Where Name="MINOR_CIV_CONTACT_GOLD_OTHER"/>
-			<Set Value="10"/>
-		</Update>
+
 
     <Row Name="UNOWNED_TILES_PER_GAME_ANIMAL">
       <Value>20</Value>
     </Row>
 
-    <Update>
-      <Set Value="150" />
-      <Where Name="BARBARIAN_MAX_XP_VALUE" />
-    </Update>
 
-    <Update>
-      <Set Value="0.833" />
-      <Where Name="UNHAPPINESS_PER_POPULATION" />
-    </Update>
+
+
     
 
 

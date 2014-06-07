@@ -99,14 +99,49 @@
   └─────────────────────────────────────────────────────────────────────────────
   --> 
 
+
+  <!-- buildings give promotions to certain units -->
   <Table name="Building_UnitPromotions">
-    <Column name="BUildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
     <Column name="UnitType" type="text" reference="Units(Type)"/>
     <Column name="UnitPromotionType" type="text" reference="UnitPromotions(Type)"/>
   </Table>
 
 
+  <!-- building expiration in turns -->
+  <Table name="Building_Expiration">
+    <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="Expiration" type="integer" />
+  </Table>
+
+  
+  <!-- building needs certain features within certain distance -->
+  <Table name="Building_LocalFeatures">
+    <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="FeatureType" type="text" reference="Features(Type)"/>
+    <Column name="FeatureDistance" type="integer" />
+    <Column name="FeatureQuantity" type="integer" />
+  </Table>
+
+
+  <!-- building needs certain terains within certain distance -->
+  <Table name="Building_LocalTerrains">
+    <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="TerrainType" type="text" reference="Terrains(Type)"/>
+    <Column name="TerrainDistance" type="integer" />
+    <Column name="TerrainQuantity" type="integer" />
+  </Table>
+
+
+  <!-- Todo, limited features and/or terrains could possibly just limit the 
+       bonus provided by the building . Phase 999 -->
+
+
+
+
+
   <Building_UnitPromotions>
+
     <Row>
       <BuildingType>BUILDING_LOOKOUT_ROCK</BuildingType>
       <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
@@ -122,6 +157,34 @@
       <UnitType>UNIT_WANDERER</UnitType>
       <UnitPromotionType>PROMOTION_CLIMB_AND_LOOK</UnitPromotionType>
     </Row>
+
+    <Row>
+      <BuildingType>BUILDING_SPRING_SOURCE</BuildingType>
+      <UnitType>UNIT_WANDERER</UnitType>
+      <UnitPromotionType>PROMOTION_INVIGORATED</UnitPromotionType>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitPromotionType>PROMOTION_FINE_STONE</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <UnitType>UNIT_ROCK_THROWER</UnitType>
+      <UnitPromotionType>PROMOTION_FINE_STONE</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitPromotionType>PROMOTION_FINE_STONE</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitPromotionType>PROMOTION_FINE_STONE</UnitPromotionType>
+    </Row>
+
     <!--
     <Row>
       <BuildingType></BuildingType>
@@ -140,7 +203,12 @@
 
 
 
-
+  <Building_Expiration>
+    <Row>
+      <BuildingType>BUILDING_TREE</BuildingType>
+      <Expiration>30</Expiration>
+    </Row>
+  </Building_Expiration>
 
 
 
@@ -1196,6 +1264,12 @@
   (pending)
   - chief shelter
 
+
+
+  BIG TODO:
+  BUILDING_GOLDEN_PATH
+
+
   -->
 
 
@@ -1274,7 +1348,9 @@
     </Row>
 
     <!-- TREE -->
-    <!-- TODO: Social Resource (using gold for now). May need happiness. -->
+    <!-- TODO:  Social Resource required (using gold for now)
+         TODO:  Possible spend happiness for other bonus
+         TODO:  Building "dies" after X turns - may need to keep building it -->
     <Row>
       <Type>BUILDING_TREE</Type>
       <BuildingClass>BUILDINGCLASS_TREE</BuildingClass>
@@ -1308,7 +1384,7 @@
 
 
     <!-- LOOKOUT_ROCK -->
-    <!-- TOOD: more visibility? for city? for one unit type? -->
+    <!-- +1 visibility for certain units | TODO: validate -->
     <Row>
       <Type>BUILDING_LOOKOUT_ROCK</Type>
       <BuildingClass>BUILDINGCLASS_LOOKOUT_ROCK</BuildingClass>
@@ -1357,7 +1433,7 @@
 
 
     <!-- SPRING_SOURCE -->
-    <!-- TODO: Movement increase for certain units -->
+    <!-- +1 Movement increase for certain units | TODO: validate -->
     <Row>
       <Type>BUILDING_SPRING_SOURCE</Type>
       <BuildingClass>BUILDINGCLASS_SPRING_SOURCE</BuildingClass>
@@ -1369,7 +1445,10 @@
       <Strategy>TXT_KEY_BUILDING_SPRING_SOURCE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_SPRING_SOURCE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_SPRING_SOURCE_QUOTE</Quote>
-      <FreePromotion>PROMOTION_INVIGORATED</FreePromotion>
+      <!-- test -->
+      <FreePromotion>PROMOTION_TEST_FREE</FreePromotion>
+      <TrainedFreePromotion>PROMOTION_TEST_FREE_TRAINED</TrainedFreePromotion>
+      <!-- end test -->
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -1422,9 +1501,10 @@
 
 
     <!-- STONE_PILE -->
-    <!-- TODO: (if using stone as resource, make storage bigger)
-         TODO: add power to stone-using units
-         TODO: grant stone wall extra defense -->
+    <!--  +10% attach to certain units | TODO: verify 
+          TODO: if using stone as resource, make storage bigger
+          TODO: +1 Production (verify balance)
+          TODO: grant stone wall extra defense -->
     <Row>
       <Type>BUILDING_STONE_PILE</Type>
       <BuildingClass>BUILDINGCLASS_STONE_PILE</BuildingClass>
@@ -1437,6 +1517,7 @@
       <Civilopedia>TXT_KEY_BUILDING_STONE_PILE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_STONE_PILE_QUOTE</Quote>
       <FreePromotion>PROMOTION_FINE_STONE</FreePromotion>
+      <NearbyMountainRequired>1</NearbyMountainRequired>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -1449,6 +1530,7 @@
 
     <!-- *** CAPITOL *** -->
     <!-- GRAND_OVERLOOK -->
+    <!-- TODO:  all --> 
     <Row>
       <Type>BUILDING_GRAND_OVERLOOK</Type>
       <BuildingClass>BUILDINGCLASS_GRAND_OVERLOOK</BuildingClass>
@@ -1457,7 +1539,7 @@
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_GRAND_OVERLOOK_DESC</Description>
       <Help>TXT_KEY_BUILDING_GRAND_OVERLOOK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDINGGRAND__OVERLOOK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDINGGRAND_OVERLOOK_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_GRAND_OVERLOOK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_GRAND_OVERLOOK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1471,6 +1553,8 @@
 
 
     <!-- OVERLOOK -->
+    <!-- TODO: +1 city visibility range if able to reduce initial city viz --> 
+    <!-- TODO: other option -->
     <Row>
       <Type>BUILDING_OVERLOOK</Type>
       <BuildingClass>BUILDINGCLASS_OVERLOOK</BuildingClass>
@@ -1806,7 +1890,8 @@
 
 
     <!-- RUBBLE_WALL -->
-    <!-- TODO: city defense -->
+    <!-- + city defense | TODO: validate -->
+    <!-- TODO: consider effect of declaring this a "CityWall" in XML -->
     <Row>
       <Type>BUILDING_RUBBLE_WALL</Type>
       <BuildingClass>BUILDINGCLASS_RUBBLE_WALL</BuildingClass>
@@ -1818,6 +1903,9 @@
       <Strategy>TXT_KEY_BUILDING_RUBBLE_WALL_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_RUBBLE_WALL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_RUBBLE_WALL_QUOTE</Quote>
+      <!-- <CityWall>1</CityWall> -->
+      <Defense>100</Defense>
+      <ExtraCityHitPoints>10</ExtraCityHitPoints>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>

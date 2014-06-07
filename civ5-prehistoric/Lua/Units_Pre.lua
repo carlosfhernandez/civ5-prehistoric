@@ -16,14 +16,63 @@ logger:info( "__FILE__ Units_Pre" )
 
 
 
+--[[
+                                           
 
---[[                             Units                                     --]]
 
+                  ██╗   ██╗███╗   ██╗██╗████████╗███████╗
+                  ██║   ██║████╗  ██║██║╚══██╔══╝██╔════╝
+                  ██║   ██║██╔██╗ ██║██║   ██║   ███████╗
+                  ██║   ██║██║╚██╗██║██║   ██║   ╚════██║
+                  ╚██████╔╝██║ ╚████║██║   ██║   ███████║
+                   ╚═════╝ ╚═╝  ╚═══╝╚═╝   ╚═╝   ╚══════╝
+
+
+        
+                                  ,dM
+                                 dMMP
+                                dMMM'
+                                \MM/
+                                dMMm.
+                               dMMP'_\---.
+                              _| _  p ;88;`.
+                            ,db; p >  ;8P|  `.
+                           (``T8b,__,'dP |   |
+                           |   `Y8b..dP  ;_  |
+                           |    |`T88P_ /  `\;
+                           :_.-~|d8P'`Y/    /
+                            \_   TP    ;   7`\
+                 ,,__        >   `._  /'  /   `\_
+                 `._ """"~~~~------|`\;' ;     ,'
+                    """~~~-----~~~'\__[|;' _.-'  `\
+                            ;--..._     .-'-._     ;
+                           /      /`~~"'   ,'`\_ ,/
+                          ;_    /'        /    ,/
+                          | `~-l         ;    /
+                          `\    ;       /\.._|
+                            \    \      \     \
+                            /`---';      `----'
+                           (     /            fsc
+                            `---'
+    
+    
+--]]
+
+
+
+
+-- ----------------------------------------------------------------------------
+--
+-- Events
+--
+-- ----------------------------------------------------------------------------
 
 
 
 --
 -- SerialEvenUnitCreated_Pre
+--
+-- @params [[ params from SerialEvenUnitCreated ]]
 --
 -- Attaches event to *SerialEventUnitCreated* to add additional checks for a 
 -- newly created unit. This is used to detected the creation of a NEW UNIT.
@@ -33,10 +82,10 @@ logger:info( "__FILE__ Units_Pre" )
 -- I worked around it by giving a free dummy unit and using the unit creation
 -- trigger. The dummy unit references the building and any other actions.
 --
--- @param [[ see SerialEventUnitCreated ]]
---
---
 function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureType, civID, primaryColor, secondaryColor, unitFlagIndex, fogState, selected, military, notInvisible)
+
+  logger:debug( "[SerialEvenUnitCreated_Pre] " )
+  logger:debug( "[SerialEvenUnitCreated_Pre] " )
 
   -- check to make sure we have a proper unit and not a dead one or one with 
   -- the "newly created flag/promotion" already assigned
@@ -52,11 +101,12 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
 
 
   local unitclass = unit:GetUnitClassType()
-  logger:debug( "found unit: " .. unitType )
-  logger:debug( "unit instance id: " .. unitID )
-  logger:debug( "found unitclass: " .. unitclass )
+  local unittype = GameInfo.Units[ unit:GetUnitType() ].Type
   local plot = unit:GetPlot()
   local city = FindCity(plot, 2)
+
+
+
 
 
   --
@@ -68,7 +118,7 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
   --
   if unitclass == "UNITCLASS_BUILDING_TRIGGER" then
 
-
+    logger:debug( "[SerialEvenUnitCreated_Pre] Unit dummy class" )
 
     -- Determine link to building and other actions
     --
@@ -98,19 +148,8 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
     -- (2)
     -- Find city unit came from and its related building, then delete unit
     
-    
-    
 
-
-
-
-
-      --[[
-      local building_promotion_mapping = { "BUILDING_LOOKOUT_ROCK" = "PROMOTION_CLIMB_AND_LOOK" };
-
-
-      --]]
-    if unitType ==     "UNIT_BUILDING_LOOKOUT_ROCK"     then
+    if unittype ==     "UNIT_BUILDING_LOOKOUT_ROCK"     then
       
       pPromotion = GameInfo.UnitPromotions["PROMOTION_CLIMB_AND_LOOK"].ID;
       
@@ -122,26 +161,30 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
       --     u:SetHasPromotion(pPromotion, true);
       --   end
       -- end
+    
+
+    elseif unittype == "UNIT_BUILDING_TREE"             then
+
+
+
       
-      
+    elseif unittype == "UNIT_BUILDING_SPRING_SOURCE"    then
 
 
 
-    elseif unitType == "UNIT_BUILDING_SPRING_SOURCE"    then
+
+    elseif unittype == "UNIT_BUILDING_GOLDEN_PATH"      then
 
 
 
-    elseif unitType == "UNIT_BUILDING_GOLDEN_PATH"      then
 
-
-
-    elseif unitType == "UNIT_BUILDING_STONE_PILE"       then
-
+    elseif unittype == "UNIT_BUILDING_STONE_PILE"       then
 
 
 
 
     end
+
 
 
     -- because I hate dummy units
@@ -150,41 +193,21 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
 
 
 
-
-
-
   else -- unitclass is not dummy
+  
+    logger:debug( "[SerialEvenUnitCreated_Pre] *NOT* a unit dummy class" )
 
     if city == nil then
-      logger:debug( "city not found" )
+      logger:debug( "[SerialEvenUnitCreated_Pre] exiting since city was not found within radius" )
       return nil
     end
 
-
-    --[[
-    local building_promotion_mapping = { "BUILDING_LOOKOUT_ROCK" = "PROMOTION_CLIMB_AND_LOOK" };
-
-    for k,v in building_promotion_mapping do
-      if city:IsHasBUilding(GameInfo.Buildings[k]) then
-        unit.SetHasPromotion(GameInfo.UnitPromotions[v], true);
-      end        
-    end
-    --]]
-
-    logger:debug( "BUILDING_LOOKOUT_ROCK ID: " .. GameInfo.Buildings["BUILDING_LOOKOUT_ROCK"].ID )
-    logger:debug( "" )
-    logger:debug( "" )
-    logger:debug( "" )
+    logger:debug( "[SerialEvenUnitCreated_Pre] set unit (" .. unittype .. " " .. unitID .. ") home city (" .. city:GetName() .. ")" )
+    SetUnitHomeCity(unit, city)
 
 
-    if city:IsHasBuilding(GameInfo.Buildings["BUILDING_LOOKOUT_ROCK"].ID) then
-      local promo = GameInfo.UnitPromotions["PROMOTION_CLIMB_AND_LOOK"]
-      logger:debug( "promo type: " .. promo.Type )
-      logger:debug( "promo id: " .. promo.ID )
-      logger:debug( "unit name: " .. unit:GetName() )
-      unit:SetHasPromotion(promo.ID, true);
-    end
-
+    -- check for possible promotions
+    UnitBuildingPromotion(unit, unittype, city)
 
 
 
@@ -196,12 +219,87 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
   -- lazy load and create new event
   LuaEvents.SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureType, civID, primaryColor, secondaryColor, unitFlagIndex, fogState, selected, military, false)
 end
-Events.SerialEventUnitCreated.Add(SerialEvenUnitCreated_Pre);
+Events.SerialEventUnitCreated.Add(SerialEvenUnitCreated_Pre)
+
+--
+-- UnitSetXY_Pre
+--
+--
+--
+--
+-- 
+function UnitSetXY_Pre(playerID, unitID, x ,y)
+
+  print( "Player " .. playerID .. " has moved to (" .. x .. ", " .. y .. ")" ) 
+
+end
+GameEvents.UnitSetXY.Add(UnitSetXY_Pre)
 
 
 
+-- ----------------------------------------------------------------------------
+--
+-- Utility Functions
+--
+-- ----------------------------------------------------------------------------
+
+
+
+--
+-- UnitBuildingPromotion
+--
+-- @param {Unit} unit - the unit object instance
+-- @param {UnitType} unittype - this is the type name (e.g. "UNIT_WARRIOR")
+-- @param {City} city - the city object instance
+--
+-- Checks the custom table, Building_UnitPRomotions to see if the unit is 
+-- elligible for a promotion based on the existence of a building and the 
+-- unit type.
+--
+function UnitBuildingPromotion(unit, unittype, city)
+
+  logger:debug( "[ubp] f:UnitBuildingPromotion" )
+
+  logger:debug( "[ubp] unitType:" .. unittype )
+
+  for row in GameInfo.Building_UnitPromotions{UnitType=unittype} do
+    logger:debug( "[ubp] row building:" .. row.BuildingType .. "   row promo:" .. row.UnitPromotionType )
+    local promo = GameInfo.UnitPromotions[row.UnitPromotionType].ID
+    logger:debug( "[ubp] promo id: " .. promo )
+    if not unit:IsHasPromotion(promo) and city:IsHasBuilding(GameInfo.Buildings[row.BuildingType].ID) then
+      logger:debug( "[ubp] setting promotion " .. row.UnitPromotionType .. " for unit " .. unittype .. " with id " .. unit:GetID() )
+      unit:SetHasPromotion(promo, true);
+    end
+  end
+
+end
+
+--
+-- SetUnitHomeCity
+--
+-- @param {Unit} unit
+-- @param {City} city
+--
+-- Remember and save the speciic unit's home city. I am currently finding the
+-- closes city upon creation and passing to this function.
+--
+-- I believe there ia another way to do this and I could not find it. 
+--
+-- * PLEASE LET ME KNOW IF YOU HAPPEN KNOW ANOTHER AND BETTER WAY TO DO THIS. *
+--
+function SetUnitHomeCity(unit, city)
+
+  save( unit, "homecity", city ) 
+
+
+
+
+end
 
 -- FindCity
+--
+-- @param {Plot} plotstart
+-- @param {Int} radius
 --
 -- get home city hack kluge dirty rotten attempt because I can't find the
 -- right way to get this. this won't work 100%, either, because I am only
@@ -218,15 +316,13 @@ Events.SerialEventUnitCreated.Add(SerialEvenUnitCreated_Pre);
 --
 function FindCity(plotStart, radius)
 
-  logger:debug( "f:FindCity" )
-
-
   local x = plotStart:GetX();
   local y = plotStart:GetY();
   local r = radius;
 
 
   local bCity = plotStart:IsCity();
+
   local bCityRadius = plotStart:IsCityRadius();
   local bCityPlayerRadius = plotStart:IsPlayerCityRadius();
   logger:debug( "IsCityRadius: " .. ( bCityRadius and "true" or "false" ) );
@@ -246,10 +342,9 @@ function FindCity(plotStart, radius)
 
         if plot then
           local plot_location_debug = "[ " .. x .. " x " .. y .. "   " .. dx .. " x " .. dy .. "]";
-          logger:debug( "check plot location: " ..  plot_location_debug );
+          -- logger:debug( "check plot location: " ..  plot_location_debug );
           if plot:IsCity() then
             city = plot:GetPlotCity();
-            logger:debug( "found city" );
             break;
           end
         end -- if plot
@@ -264,20 +359,22 @@ function FindCity(plotStart, radius)
   end -- if not city
 
 
-  -- debug
+  -- debug -- lots of debug, some of it to find out what certain function do
   if city then
+    logger:debug( "[FindCity] " )
+    logger:debug( "[FindCity] city found!" );
     local cityID = city:GetID();
     local player = city:GetOwner();
     local cityPlayerRadiusCount = plot:GetPlayerCityRadiusCount(player);
     local cityRadiusCount = plot:GetCityRadiusCount(player);
     local workingCity = plot:GetWorkingCity();
-    logger:debug ( "city id: " .. cityID );
-    logger:debug ( "city owner: " .. player );
-    logger:debug ( "cityRadiusCount: " .. cityRadiusCount );
-    logger:debug ( "cityPlayerRadiusCount: " .. cityPlayerRadiusCount );
-    --logger:info ( "working city: " .. workingCity );
+    logger:debug( "[FindCity] city id: " .. cityID );
+    logger:debug( "[FindCity] city owner: " .. player );
+    logger:debug( "[FindCity] cityRadiusCount: " .. cityRadiusCount );
+    logger:debug( "[FindCity] cityPlayerRadiusCount: " .. cityPlayerRadiusCount );
   else
-    logger:debug ( "CITY NOT FOUND!" )
+    logger:debug( "[FindCity] " )
+    logger:debug( "[FindCity] city *NOT* found!" )
   end
 
 

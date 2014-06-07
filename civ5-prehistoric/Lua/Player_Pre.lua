@@ -19,6 +19,39 @@
 ╚═════════════════════════════════════════════════════════════════════════════
 
 
+player:Cities()
+
+
+
+--]]
+
+
+GameEvents.PlayerDoTurn.Add(function(iPlayer) 
+
+  local pPlayer =     Players[iPlayer];
+  local bIsHuman =    pPlayer:IsHuman();
+  local iHappiness =  pPlayer:GetExcessHappiness();
+  local iTotalGold =  pPlayer:GetGold();
+  local pCapital =    pPlayer:GetCapitalCity();
+
+
+
+
+
+
+
+
+
+end); -- PlayerDoTurn
+
+
+
+
+
+
+-- SAVE DATA
+-- save(pPlayer,{"table key"},"value");
+   -- for k,v in pairs(load(pPlayer)) do
 
 
 
@@ -33,9 +66,7 @@
 
 
 
-
-
-
+--[[
 
 ╔═════════════════════════════════════════════════════════════════════════════
 ║
