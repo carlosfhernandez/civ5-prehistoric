@@ -185,6 +185,26 @@
       <UnitPromotionType>PROMOTION_FINE_STONE</UnitPromotionType>
     </Row>
 
+    <Row>
+      <BuildingType>BUILDING_BONE_PILE</BuildingType>
+      <UnitType>UNIT_CLUB_POUNDER</UnitType>
+      <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BONE_PILE</BuildingType>
+      <UnitType>UNIT_BONE_WARRIOR</UnitType>
+      <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BONE_PILE</BuildingType>
+      <UnitType>UNITCLASS_SHAMAN</UnitType>
+      <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
+    </Row>
+
+
+
+
+
     <!--
     <Row>
       <BuildingType></BuildingType>
@@ -1590,7 +1610,7 @@
     <!-- TODO -->
     <!-- CHERT_DEPOSIT -->
     <!-- TODO: Bonnus for ranged units
-         TODO: GOld? -->
+         TODO: Gold? -->
     <Row>
       <Type>BUILDING_CHERT_DEPOSIT</Type>
       <BuildingClass>BUILDINGCLASS_CHERT_DEPOSIT</BuildingClass>
@@ -1624,7 +1644,7 @@
 
     <!-- GATHERING_CIRCLE -->
     <!-- TODO: (future stage 1 beliefs bonus)
-         TODO: +1 Happy -->
+         TODO: validate +1 Happy -->
     <Row>
       <Type>BUILDING_GATHERING_CIRCLE</Type>
       <BuildingClass>BUILDINGCLASS_GATHERING_CIRCLE</BuildingClass>
@@ -1668,8 +1688,9 @@
 
 
     <!-- BONE_PILE -->
-    <!-- TODO: bonus to melee
-         TODO: ??? -->
+    <!-- TODO: validate bonus to bone using units
+         TODO: ??? 
+    -->
     <Row>
       <Type>BUILDING_BONE_PILE</Type>
       <BuildingClass>BUILDINGCLASS_BONE_PILE</BuildingClass>

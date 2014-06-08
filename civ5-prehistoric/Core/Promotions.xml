@@ -618,6 +618,19 @@
       <IconAtlas>ABILITY_ATLAS</IconAtlas>
       <PediaType>PEDIA_ATTRIBUTES</PediaType>
       <PediaEntry>Fine Stone Weapons</PediaEntry>
+    </Row>
+
+    <Row>
+      <Type>PROMOTION_BONE_WARFARE</Type>
+      <Description>Bone Warfare</Description>
+      <Help>Use old bones to increases attack and defense</Help>
+      <AttackMod>10</AttackMod>
+      <DefenseMod>10</DefenseMod>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Bone Warfare</PediaEntry>
     </Row>    
 
     <Row>

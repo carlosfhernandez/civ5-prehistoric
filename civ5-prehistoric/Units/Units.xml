@@ -5904,12 +5904,12 @@ UnitFlagAtlas
 
     <Row>
       <UnitType>UNIT_AUTOCHTHON</UnitType>
-      <PromotionType>PROMOTION_PREHISTORIC_SIGHT/PromotionType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
 
     <Row>
       <UnitType>UNIT_CAVEMAN</UnitType>
-      <PromotionType>PROMOTION_PREHISTORIC_SIGHT/PromotionType>
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
 
     <Row>
