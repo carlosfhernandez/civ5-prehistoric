@@ -645,7 +645,17 @@
       <PediaEntry>Invigorated</PediaEntry>
     </Row>  
 
-
+    <Row>
+      <Type>PROMOTION_PORTABLE_SHELTER</Type>
+      <Description>Portable Shelter</Description>
+      <Help>+1 Movement</Help>
+      <MovesChange>1</MovesChange>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+      <PediaEntry>Portable Shelter</PediaEntry>
+    </Row> 
 
 
 
@@ -745,6 +755,9 @@
       <PromotionType>PROMOTION_WONDERWERK</PromotionType>
       <UnitType>UNIT_WORKER</UnitType>
     </Row>
+
+
+    
   </UnitPromotions_CivilianUnitType>
 
 

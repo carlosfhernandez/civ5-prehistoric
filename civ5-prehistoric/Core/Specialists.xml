@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GameData>
+  <Specialists>
+    <!--
+
+    Tribe Member - all tribe members know how to sustain themselves and are 
+    able to collect food for the tribe. 
+
+    Villager - as man anvaces and stable settlements emerge, villagers start
+    to specialize a little more in producing for the settlement.
+
+    -->
+    <Row>
+      <Type>SPECIALIST_TRIBE_MEMBER</Type>
+      <Description>Tribe Member</Description>
+      <Strategy>Tribe Member Strategy</Strategy>
+      <PortraitIndex>5</PortraitIndex>
+      <IconAtlas>CITIZEN_ATLAS</IconAtlas>
+      <Visible>1</Visible>
+    </Row>      
+    <Row>
+      <Type>SPECIALIST_VILLAGER</Type>
+      <Description>Villager</Description>
+      <Strategy>Villager Strategy</Strategy>
+      <PortraitIndex>5</PortraitIndex>
+      <IconAtlas>CITIZEN_ATLAS</IconAtlas>
+      <Visible>1</Visible>
+    </Row>
+  </Specialists>
+  <SpecialistYields>
+    <Row>
+      <SpecialistType>SPECIALIST_TRIBE_MEMBER</SpecialistType>
+      <YieldType>FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>    
+    <Row>
+      <SpecialistType>SPECIALIST_VILLAGER</SpecialistType>
+      <YieldType>PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </SpecialistYields>
+</GameData>
+
+
+<!--
+
+------------------------------------------------------------------------------
+SpecialistType (Civ5 Type)
+------------------------------------------------------------------------------
+
+
+XML: the Specialists table
+
+ID  Type
+--- --------------------------
+0   SPECIALIST_CITIZEN
+1   SPECIALIST_ARTIST
+2   SPECIALIST_SCIENTIST
+3   SPECIALIST_MERCHANT
+4   SPECIALIST_ENGINEER
+
+
+
+------------------------------------------------------------------------------
+Examples
+
+
+Here are different ways to query the database to retrieve the ID from the type. Those examples will return and assign the integer value 0. See also GameInfo.
+
+local id = GameInfo.Specialists.SPECIALIST_CITIZEN.ID
+local id = GameInfo["Specialists"].["SPECIALIST_CITIZEN"].ID
+local id = GameInfo.Specialists{Type="SPECIALIST_CITIZEN"}().ID
+
+
+
+Alternatively you could use the ID or the type to retrieve the value of the Description column. Those examples will return and assign the value TXT_KEY_SPECIALIST_CITIZEN.
+
+local description = GameInfo.Specialists[0].Description
+local description = GameInfo["Specialists"][0]["Description"]
+local description = GameInfo.Specialists{ID=0}().Description
+
+-->

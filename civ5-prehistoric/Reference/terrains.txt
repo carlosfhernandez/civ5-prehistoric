@@ -1,0 +1,27 @@
+Terrains
+
+
+
+The TerrainType pseudo-type is actually a regular integer.
+
+
+------------------------------------------------------------------------------
+XML: the Terrains table
+------------------------------------------------------------------------------
+
+Here are the ID and Type columns found in this table.
+
+ID  Type
+--- ---------------------
+0   TERRAIN_GRASS
+1   TERRAIN_PLAINS
+2   TERRAIN_DESERT
+3   TERRAIN_TUNDRA
+4   TERRAIN_SNOW
+5   TERRAIN_COAST
+6   TERRAIN_OCEAN
+7   TERRAIN_MOUNTAIN
+8   TERRAIN_HILL
+
+
+

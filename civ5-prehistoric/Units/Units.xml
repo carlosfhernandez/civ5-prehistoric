@@ -473,7 +473,7 @@
   ╟───Dummy
   ║
   ║   UNITCLASS_BUILDING_TRIGGER
-  ║
+  ║   UNITCLASS_DUMMY
   ║
   ║
   ║
@@ -924,6 +924,11 @@
       <DefaultUnit>UNIT_BUILDING_TRIGGER</DefaultUnit>
     </Row>
 
+    <Row>
+      <Type>UNITCLASS_DUMMY</Type>
+      <Description>.</Description>
+      <DefaultUnit>UNIT_DUMMY_EXTRA_VISIBILTY</DefaultUnit>
+    </Row>
     
 
 
@@ -1290,7 +1295,21 @@
   ║     - UNIT_SCOUT_ONE
   ║     - UNIT_SCOUT_TWO
   ║     - UNIT_SCOUT_THREE
-  ║                                                                            ║
+  ║
+  ║
+  ║
+  ║
+  ║   - Dummy:
+  ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+  ║     - UNIT_DUMMY_EXTRA_VISIBILTY
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║                                                                            
   ║                                                                            ║
   ║                                                                            ║
   ║                                                                            ║
@@ -1655,6 +1674,12 @@ UnitFlagAtlas
     │     - some can settle
     │     - cannot be built, but can be earned [TODO]
     │
+    │   Elder
+    │
+    │
+    │
+    │
+    │
     │
     └───────────────────────────────────────────────────────────────────────────
     -->
@@ -1687,6 +1712,38 @@ UnitFlagAtlas
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
+
+
+    <!-- Elder -->
+    <Row>
+      <Class>UNITCLASS_ELDER</Class>
+      <Type>UNIT_ELDER</Type>
+      <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
+      <Cost>-1</Cost>
+      <Moves>2</Moves>
+      <MoveRate>GREAT_PERSON</MoveRate>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+      <Special>SPECIALUNIT_PEOPLE</Special>
+      <HurryCostModifier>-1</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_ELDER_DESC</Description>
+      <Help>TXT_KEY_UNIT_ELDER_STRATEGY</Help>
+      <Strategy>TXT_KEY_UNIT_ELDER_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_UNIT_ELDER_PEDIA</Civilopedia>
+      <AdvancedStartCost>-1</AdvancedStartCost>
+      <WorkRate>1</WorkRate>
+      <CombatLimit>0</CombatLimit>
+      <DontShowYields>true</DontShowYields>
+      <UnitArtInfo>ART_DEF_UNIT_AUSTRALOPITHECUS</UnitArtInfo>
+      <UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>10</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+
+
 
 
 
@@ -1888,7 +1945,7 @@ UnitFlagAtlas
       <Class>UNITCLASS_TRIBE_SPLIT</Class>
       <Type>UNIT_TRIBE_SPLIT</Type>
       <PrereqTech>TECH_MIGRATION</PrereqTech>
-      <Moves>2</Moves>
+      <Moves>1</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
       <HurryCostModifier>20</HurryCostModifier>
@@ -1899,7 +1956,7 @@ UnitFlagAtlas
       <Strategy>TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY</Strategy>
       <Help>TXT_KEY_UNIT_HELP_TRIBE_SPLIT_HELP</Help>
       <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
-      <Food>true</Food>
+      <Food>1</Food>
       <Found>true</Found>
       <CombatLimit>0</CombatLimit>
       <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
@@ -3424,9 +3481,41 @@ UnitFlagAtlas
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_HIDE_RACK</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
 
 
 
+    <Row>
+      <Class>UNITCLASS_DUMMY</Class>
+      <Type>UNIT_DUMMY_EXTRA_VISIBILTY</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <BaseSightRange>3</BaseSightRange>
+      <Immobile>1</Immobile>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
 
 
 
@@ -5919,8 +6008,6 @@ UnitFlagAtlas
 
 
 
-
-
     <!--
 
     <Row>
@@ -5935,11 +6022,6 @@ UnitFlagAtlas
       <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
     -->
-
-
-
-
-
 
 
 

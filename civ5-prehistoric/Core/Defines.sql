@@ -1,17 +1,85 @@
+/*
+ * DEFINES
+ *
+ * @file:       defines.sql
+ * @modifier:   Carlos F Hernandez (apshai; carloscodex; carlosfhernandez)
+ * @author:     Firaxis; 2k Games (Thank you Sid Meier)
+ * @date:       2014.06.15
+ *
+ * Global config options.
+ *
+ * IMPORTANT NOTE! Some of these are just representations of internal settings
+ * and even though you may define them here they will NOT reflect the change
+ * in the game. The values seem to be hard-coded within the DLL.
+ *
+ * Most options can be changed. Those that cannot will be suffixed with an 
+ * underscore with the original option NOT having the underscor
+ *
+ * THIS_IS_A_NONCIGURABLE_OPTION_
+ * THIS_IS_AN_UNKNOWN_CONFIUGRABLE_OPTION
+ * 
+ * Configurable options will most likely be "set" in SQL, although I will have
+ * some test setting of values. Eventually, the configurable options will
+ * be marked somehow (in comments)
+ * 
+ * 
+ * 
 
 
--- ATE Defines  SET Value =_XXXXXX WHERE Name = ''
+Some standards used within this document:
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SQL LINE BELOW:
+UPDATE Defines  SET Value = XXXXXX.XXX WHERE Name = 'DEFINE_NAME_XX_HERE';              -- (XXX) original value and extra notes
+UPDATE Defines  SET Value = XXXXXX.XXX WHERE Name = 'DEFINE_NAME_XX_HERE';              -- (XXX)
+UPDATE Defines  SET Value = XXXXXX     WHERE Name = 'DEFINE_NAME_XX_HERE';
+UPDATE Defines  SET Value =XXXXXXX     WHERE Name = 'DEFINE_NAME_XX_HERE';              -- extra X posiiton if needed
+UPDATE Defines  SET Value =      X     WHERE Name = 'DEFINE_NAME_XX_HERE';
+UPDATE Defines  SET Value =XXXXXXXXXXX WHERE Name = 'DEFINE_NAME_XX_HERE';              -- very large value
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+COMMENTS LINE BELOW:
+THIS_IS_A_DEFINE                      BNW [VAN] {G&K}
+THIS_IS_A_DEFINE                        1 [ 20] {  2} These are some notes
+THIS_IS_A_DEFINE                       50 [  5] Right justified values
+THIS_IS_A_DEFINE                     1000 {500} VAN(illa) and G&K are optional
+THIS_IS_A_DEFINE               1000000000 {500} A very large value can be used as long as it doesn't interfere with the NAME
+THIS_IS_A_DEFINE                        1 [ 20] {  2} These are some notes
+THIS_IS_A_DEFINE                        1 [12345] {123456789} large values in previous version don't have x position stops if overflowed
+THIS_IS_A_DEFINE                        1 A current value without previous version values
+THIS_IS_DEFINE_WITH_A_VERY_LARGE_NAME     1234 A large name with a value that won't fit in the x-position
+THIS_IS_DEFINE_WITH_A_VERY_LARGE___NAME 1 A large name with a value that DOES fit
+THIS_IS_DEFINE_WITH_A_VERY_LARGE_NAME          1234 A large name with a value that needs more space - notice the tab stop
+THIS_IS_DEFINE_WITH_A_VERY_VERY_VERY_LARGE_NAME     1234 A very large name that puts the value in the next stop position
+THIS_IS_DEFINE_WITH_A_VERY_VERY_VERY_LARGE_NAME     1234 [123] {  3} A very large name with values including previous version
+
+                                    38   43
+        10        20        30    36 | 41 |   48   53    ...
+                                   | |  | |    |    |    |
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+VALUE STOPS:                     [X*]XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX where [X*] is optional digits as long as they don't overrun the NAME
+(Yes, this is overkill documentation formatting but being bipolar sometimes I get very focused on this stuff)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*/
+
+
+
 
 
 
 -- Time
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
--- CAN_WORK_WATER_FROM_GAME_START 1 - Determines whether you can work water tiles within city borders from the begining of the game or if you need to unlock this ability
--- EVENT_MESSAGE_TIME
--- START_YEAR
--- WEEKS_PER_MONTHS
-
+/*
+CAN_WORK_WATER_FROM_GAME_START 1 - Determines whether you can work water tiles within city borders from the begining of the game or if you need to unlock this ability
+EVENT_MESSAGE_TIME
+START_YEAR
+WEEKS_PER_MONTHS
+*/
 
 
 
@@ -21,30 +89,34 @@
 -- Cities
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE Defines  SET Value =     200 WHERE Name = 'CITY_STRENGTH_DEFAULT';
-UPDATE Defines  SET Value =     300 WHERE Name = 'CITY_STRENGTH_HILL_CHANGE';
-UPDATE Defines  SET Value =     200 WHERE Name = 'CITY_STRENGTH_DEFAULT';
-UPDATE Defines  SET Value =     200 WHERE Name = 'CITY_STRENGTH_DEFAULT';
+UPDATE Defines  SET Value =     300     WHERE Name = 'MAX_CITY_HIT_POINTS';             -- (200)
 
 
-UPDATE Defines  SET Value =       0 WHERE Name = 'INITIAL_CITY_POPULATION'; -- works
-UPDATE Defines  SET Value =       0 WHERE Name = 'CITY_PLOTS_RADIUS';
-UPDATE Defines  SET Value =       1 WHERE Name = 'CITY_PLOTS_DIAMETER';
-UPDATE Defines  SET Value =       2 WHERE Name = 'NUM_CITY_PLOTS';
+UPDATE Defines  SET Value =       0     WHERE Name = 'INITIAL_CITY_POPULATION';         -- works
+UPDATE Defines  SET Value =       0     WHERE Name = 'CITY_PLOTS_RADIUS';               -- 
+UPDATE Defines  SET Value =       1     WHERE Name = 'CITY_PLOTS_DIAMETER';             -- 
+UPDATE Defines  SET Value =       2     WHERE Name = 'NUM_CITY_PLOTS';                  -- 
 
 
 -- TODO: 3 will penalize food, 2 will remove one population
-UPDATE Defines  SET Value =       4 WHERE Name = 'CITY_MIN_SIZE_FOR_SETTLERS';
+UPDATE Defines  SET Value =       4     WHERE Name = 'CITY_MIN_SIZE_FOR_SETTLERS';
 
 
+UPDATE Defines  SET Value =     200     WHERE Name = 'CITY_STRENGTH_DEFAULT';
+UPDATE Defines  SET Value =     300     WHERE Name = 'CITY_STRENGTH_HILL_CHANGE';
+UPDATE Defines  SET Value =     200     WHERE Name = 'CITY_STRENGTH_DEFAULT';
+UPDATE Defines  SET Value =     200     WHERE Name = 'CITY_STRENGTH_DEFAULT';
 
 /*
+
+MAX_CITY_HIT_POINTS                   200 ( 20) 
+CITY_HIT_POINTS_HEALED_PER_TURN        20 (  2) 
 
 INITIAL_CITY_POPULATION *               1 The number of citizens in newly settled cities.
 BASE_CITY_GROWTH_THRESHOLD             15 Base amount of food required for a city to grow.
 MIN_CITY_RANGE                          2 The minimum number of spaces between cities placed on the same continent
 
-CITY_MIN_SIZE_FOR_SETTLERS              2
+CITY_MIN_SIZE_FOR_SETTLERS              2 
 
 CITY_RING_1_MULTIPLIER                  6
 CITY_RING_2_MULTIPLIER                  3
@@ -90,6 +162,11 @@ CITY_MAX_NUM_BUILDINGS                  1
 -- Border Expansion
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+UPDATE Defines  SET Value =      80     WHERE Name = 'PLOT_BASE_COST';                  -- ( 50)
+UPDATE Defines  SET Value =      25     WHERE Name = 'CULTURE_COST_FIRST_PLOT';         -- ( 15)
+UPDATE Defines  SET Value =       4     WHERE Name = 'MAXIMUM_BUY_PLOT_DISTANCE';       -- (  3)
+UPDATE Defines  SET Value =       5     WHERE Name = 'MAXIMUM_ACQUIRE_PLOT_DISTANCE';   -- (  5)
+
 /*
 
 PLOT_BASE_COST                         50 Cost of buying the first hex of land
@@ -125,7 +202,9 @@ PLOT_INFLUENCE_NO_ADJACENT_OWNED_COST     1000
 -- Visibility
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE Defines  SET Value =       0 WHERE Name = 'PLOT_VISIBILITY_RANGE'; -- [1]
+UPDATE Defines  SET Value =       0     WHERE Name = 'PLOT_VISIBILITY_RANGE';           -- (  1)
+UPDATE Defines  SET Value =       1     WHERE Name = 'UNIT_VISIBILITY_RANGE';           -- (  1)
+
 
 /*
 
@@ -157,40 +236,50 @@ SEAWATER_SEE_THROUGH_CHANGE             1
 
 
 
--- Combat
+-- Unit Combat & Healing
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE Defines  SET Value =     200 WHERE Name = 'MAX_HIT_POINTS'; -- [100]
-UPDATE Defines  SET Value =     300 WHERE Name = 'MAX_CITY_HIT_POINTS'; -- [200]
-UPDATE Defines  SET Value =      15 WHERE Name = 'COMBAT_DAMAGE'; -- [20]
-UPDATE Defines  SET Value =      30 WHERE Name = 'NONCOMBAT_UNIT_RANGED_DAMAGE'; -- 40 | The damage dealt to noncombat units from ranged attacks.
+UPDATE Defines  SET Value =     200     WHERE Name = 'MAX_HIT_POINTS';                -- (100)
+
+UPDATE Defines  SET Value =      15     WHERE Name = 'ENEMY_HEAL_RATE';               -- ( 10)
+UPDATE Defines  SET Value =      15     WHERE Name = 'NEUTRAL_HEAL_RATE';             -- ( 10)
+UPDATE Defines  SET Value =      20     WHERE Name = 'FRIENDLY_HEAL_RATE';            -- ( 20)
+
+UPDATE Defines  SET Value =      15     WHERE Name = 'COMBAT_DAMAGE';                 -- ( 20)
+UPDATE Defines  SET Value =      30     WHERE Name = 'NONCOMBAT_UNIT_RANGED_DAMAGE';  -- ( 40) - The damage dealt to noncombat units from ranged attacks.
+
 
 /*
 
-NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER
-FLAT_LAND_EXTRA_DEFENSE (-10) = bonus for units on flatland (10% penalty)
-HILLS_EXTRA_DEFENSE (25) = bonus for units on hill terrain (25%)
-RIVER_ATTACK_MODIFIER (-20) = bonus for attacking across a river (20% penalty)
-AMPHIB_ATTACK_MODIFIER (-50) = bonus for attacking from sea to land (50% penalty)
+                                      BNW [VAN] {G&K}
+MAX_CITY_HIT_POINTS                   200 [ 20]  
+MAX_HIT_POINTS                        100 [ 10]  
+ENEMY_HEAL_RATE                        10 [  1] The amount of hp a unit will heal per turn in enemy territory.
+NEUTRAL_HEAL_RATE                      10 [  1] The amount of hp a unit will heal per turn in neutral territory.
+FRIENDLY_HEAL_RATE                     20 [  2] The amount of hp a unit will heal per turn in friendly territory.
+CITY_HEAL_RATE                         25 [  3] The amount of hp a unit will heal per turn in a city.
+INSTA_HEAL_RATE                        50 
 
-ENEMY_HEAL_RATE (1) = The amount of hp a unit will heal per turn in enemy territory.
-NEUTRAL_HEAL_RATE (1) = The amount of hp a unit will heal per turn in neutral territory.
-FRIENDLY_HEAL_RATE (2) = The amount of hp a unit will heal per turn in friendly territory.
-CITY_HEAL_RATE (3) = The amount of hp a unit will heal per turn in a city.
+FLAT_LAND_EXTRA_DEFENSE                 0 [-10] bonus for units on flatland (10% penalty)
+HILLS_EXTRA_DEFENSE                    25 bonus for units on hill terrain (25%)
+RIVER_ATTACK_MODIFIER                 -20 bonus for attacking across a river (20% penalty)
+AMPHIB_ATTACK_MODIFIER                -50 bonus for attacking from sea to land (50% penalty)
 
 ATTACK_SAME_STRENGTH_MIN_DAMAGE (2400) = The minimum amount of damage melee units deal when evenly matched in hundreths (4 damage).
-RANGE_ATTACK_RANGED_DEFENDER_MOD (100) = The defensive value for ranged units against ranged attacks (125%).
-ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (400) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
-WOUNDED_DAMAGE_MULTIPLIER (50) =
+ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (400) (1200) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
+WOUNDED_DAMAGE_MULTIPLIER (50) (33) =
 TRAIT_WOUNDED_DAMAGE_MOD (-50) =
 
+RANGE_ATTACK_RANGED_DEFENDER_MOD (100) = The defensive value for ranged units against ranged attacks (125%).
 RANGE_ATTACK_SAME_STRENGTH_MIN_DAMAGE (200) = The minimum amount of damage ranged units deal when evenly matched in hundreths (2 damage).
 RANGE_ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (400) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-2 typically)
-AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE (200) = The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
-AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE (200) = developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
-INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE (400) = The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
-INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (300) = developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
+AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE (200) (2400) = developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
+AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE (200) (1200) = The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
+INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE (400) (2400) = The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
+INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (300) (1200) = developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
 AIR_SWEEP_INTERCEPTION_DAMAGE_MOD (75) = The amount of damage air units deal in interception (75%).
+
+NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER (40) = 
 
 */
 
@@ -239,6 +328,13 @@ MAX_NATIONAL_WONDERS_PER_CITY          -1 The number of national wonders a city 
 MAX_NATIONAL_WONDERS_PER_CITY_FOR_OCC  -1 The number of national wonders a city may construct using One City Challenge (unlimited).
 MAX_BUILDINGS_PER_CITY                 -1 The number of buildings a city may construct (unlimited).
 
+NUM_BUILDING_AND_TECH_PREREQS           3 The max number of "and" prerequisites the engine will read for buildings before ignoring them.
+NUM_BUILDING_RESOURCE_PREREQS           5 The max number of resource prerequisites the engine will read for buildings before ignoring them.
+
+BUILDING_PRODUCTION_DECAY_TIME         50 
+BUILDING_PRODUCTION_DECAY_PERCENT      99 The amount of decay that is allowable for a building to reach, if started then dropped lower in the building que, if other City builds take preference, before it is dropped from the que altogether.
+
+
 */
 
 
@@ -269,7 +365,10 @@ FOOD_CONSUMPTION_PER_POPULATION         2 The amount of food each citizen consum
 -- Happiness
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE Defines  SET Value =   0.833 WHERE Name = 'UNHAPPINESS_PER_POPULATION';
+UPDATE Defines  SET Value =       0.75  WHERE Name = 'UNHAPPINESS_PER_POPULATION';          -- [1]
+UPDATE Defines  SET Value =       3     WHERE Name = 'UNHAPPINESS_PER_CITY';                -- [2]
+UPDATE Defines  SET Value =       5     WHERE Name = 'UNHAPPINESS_PER_CAPTURED_CITY';       -- [5]
+UPDATE Defines  SET Value =       1.34  WHERE Name = 'UNHAPPINESS_PER_OCCUPIED_POPULATION'; -- [1.34]
 
 
 /*
@@ -318,8 +417,9 @@ WLTKD_GROWTH_MULTIPLIER (25) = The increase in excess food under We Love The Kin
 --          A) to bigger values in later eras
 --          B) to different bonuses first, then gold later
 -- TODO: 2) Postpone all Minor Civs from appears until later eras
-UPDATE Defines  SET Value =      20 WHERE Name = 'MINOR_CIV_CONTACT_GOLD_FIRST';
-UPDATE Defines  SET Value =      10 WHERE Name = 'MINOR_CIV_CONTACT_GOLD_OTHER';
+
+UPDATE Defines  SET Value =      20     WHERE Name = 'MINOR_CIV_CONTACT_GOLD_FIRST';
+UPDATE Defines  SET Value =      10     WHERE Name = 'MINOR_CIV_CONTACT_GOLD_OTHER';
 
 
 
@@ -408,7 +508,7 @@ TRAIT_WOUNDED_DAMAGE_MOD              -50
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 -- TODO: configurable to allow for other mods
-UPDATE Defines  SET Value =     150 WHERE Name = 'BARBARIAN_MAX_XP_VALUE';
+UPDATE Defines  SET Value =     150     WHERE Name = 'BARBARIAN_MAX_XP_VALUE';
 
 /*
 
@@ -440,11 +540,11 @@ COMBAT_EXPERIENCE_IN_BORDERS_PERCENT (100) =
 
 
 
-
+-- ? MISC
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 -- TODO: enable this later
-UPDATE Defines  SET Value =       1 WHERE Name = 'CAN_WORK_WATER_FROM_GAME_START';
+UPDATE Defines  SET Value =       1     WHERE Name = 'CAN_WORK_WATER_FROM_GAME_START';
 
 /*
 
@@ -470,8 +570,7 @@ NUM_VICTORY_POINT_AWARDS (5) =
 NUM_OR_TECH_PREREQS (3) = The max number of "or" prerequisites the engine will read for techs before ignoring them.
 NUM_AND_TECH_PREREQS (4) = The max number of "and" prerequisites the engine will read for techs before ignoring them.
 NUM_UNIT_AND_TECH_PREREQS (3) =The max number of "and" tech prerequisites the engine will read for units before ignoring them.
-NUM_BUILDING_AND_TECH_PREREQS (3) = The max number of "and" prerequisites the engine will read for buildings before ignoring them.
-NUM_BUILDING_RESOURCE_PREREQS (5) = The max number of resource prerequisites the engine will read for buildings before ignoring them.
+
 BASE_RESEARCH_RATE (1) =
 
 
@@ -497,11 +596,60 @@ CONSCRIPT_MIN_CITY_POPULATION (5) =
 CONSCRIPT_POPULATION_PER_COST (60) =
 MIN_TIMER_UNIT_DOUBLE_MOVES (32) =
 COMBAT_DAMAGE (20) = 
-NONCOMBAT_UNIT_RANGED_DAMAGE (4) = Teh damage dealt to noncombat units from ranged attacks.
-NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER (40) = 
+
+
+
+
+TECH_COST_EXTRA_TEAM_MEMBER_MODIFIER (50) = 
+TECH_COST_TOTAL_KNOWN_TEAM_MODIFIER (30) =
+TECH_COST_KNOWN_PREREQ_MODIFIER (20) = 
+PEACE_TREATY_LENGTH (10) = The number of turns you may not attack an opponent after signing a peace treaty with them.
+COOP_WAR_LOCKED_LENGTH (15) = 
+
+
+BASE_FEATURE_PRODUCTION_PERCENT (67) =
+FEATURE_PRODUCTION_PERCENT_MULTIPLIER (0) =
+DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT (67) =
+DEFAULT_WAR_VALUE_FOR_UNIT (100) =
+UNIT_PRODUCTION_PERCENT (100) =
+MAX_UNIT_SUPPLY_PRODMOD (70) =
+BUILDING_PRODUCTION_PERCENT (100) =
+PROJECT_PRODUCTION_PERCENT (100) =
+MAXED_UNIT_GOLD_PERCENT (100) = 
+MAXED_BUILDING_GOLD_PERCENT (100) =
+MAXED_PROJECT_GOLD_PERCENT (300) =
+MAX_CITY_DEFENSE_DAMAGE (100) =
+
+
+CIRCUMNAVIGATE_FREE_MOVES (0) = The number of extra moves given to naval units of the first civ to circumnavigate the world.
+BASE_CAPTURE_GOLD (20) = The base value of gold when capturing a city.
+CAPTURE_GOLD_PER_POPULATION (10) = The amount of bonus gold granted per population of a captured city.
+CAPTURE_GOLD_RAND1 (20) = 
+CAPTURE_GOLD_RAND2 (20) =
+CAPTURE_GOLD_MAX_TURNS (50) =
+BARBARIAN_CITY_ATTACK_MODIFIER (-25) = The bonus barbarians receive when attacking cities (-25%).
+UNIT_PRODUCTION_DECAY_PERCENT (98) = The amount of decay allowed for a unit to reach, if started then dropped lower in the building que, if other City Builds take preference, before it is dropped from the que altogether.BASE_UNIT_UPGRADE_COST (10) = 
+UNIT_UPGRADE_COST_PER_PRODUCTION (2) = 
+UNIT_UPGRADE_COST_MULTIPLIER_PER_ERA (0.0) =
+UNIT_UPGRADE_COST_EXPONENT (1.0) =
+UNIT_UPGRADE_COST_VISIBLE_DIVISOR (5) =
+UNIT_UPGRADE_COST_DISCOUNT_MAX (-75) =
+WAR_SUCCESS_UNIT_CAPTURING (1) =
+WAR_SUCCESS_CITY_CAPTURING (10) = 
+DIPLO_VOTE_SECRETARY_GENERAL_INTERVAL (4) =
+TEAM_VOTE_MIN_CANDIDATES (2) = 
+RESEARCH_AGREEMENT_TIMER (20) = The base number of turns a research agreement takes using standard settings.
+
+
+
+
+
+
+
+
 
 QUICKSAVE (QuickSave) =
-
+--------------------------------------------------------------------------------
 LAKE_PLOT_RAND (160) = In Civ4 these were the same numbers. It meant that for every 160 tiles of the map there was a random roll, to include a lake.
 PLOTS_PER_RIVER_EDGE (12) = That means that a river will usually be of 6 plots length, unless the map-script overrides this limit.
 RIVER_SOURCE_MIN_RIVER_RANGE (4) = A river should flow at least 4 plots from it's source, unless the map-script overrides it.
@@ -552,17 +700,6 @@ MIN_UNIT_GOLDEN_AGE_TURNS (3) = The minimum length of golden ages sparked by gre
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Nuke mechanics:
 --------------------------------------------------------------------------------
 NUKE_FALLOUT_PROB (50) = The chance of hexes attacked by a nuke to receive the fallout feature (50%).
@@ -585,53 +722,6 @@ NUKE_BLAST_RADIUS (2) = The number of hexes (radius) surrounding targetted tile 
 
 
 
-
-
-TECH_COST_EXTRA_TEAM_MEMBER_MODIFIER (50) = 
-TECH_COST_TOTAL_KNOWN_TEAM_MODIFIER (30) =
-TECH_COST_KNOWN_PREREQ_MODIFIER (20) = 
-PEACE_TREATY_LENGTH (10) = The number of turns you may not attack an opponent after signing a peace treaty with them.
-COOP_WAR_LOCKED_LENGTH (15) = 
-
-
-BASE_FEATURE_PRODUCTION_PERCENT (67) =
-FEATURE_PRODUCTION_PERCENT_MULTIPLIER (0) =
-DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT (67) =
-DEFAULT_WAR_VALUE_FOR_UNIT (100) =
-UNIT_PRODUCTION_PERCENT (100) =
-MAX_UNIT_SUPPLY_PRODMOD (70) =
-BUILDING_PRODUCTION_PERCENT (100) =
-PROJECT_PRODUCTION_PERCENT (100) =
-MAXED_UNIT_GOLD_PERCENT (100) = 
-MAXED_BUILDING_GOLD_PERCENT (100) =
-MAXED_PROJECT_GOLD_PERCENT (300) =
-MAX_CITY_DEFENSE_DAMAGE (100) =
-
-
-CIRCUMNAVIGATE_FREE_MOVES (0) = The number of extra moves given to naval units of the first civ to circumnavigate the world.
-BASE_CAPTURE_GOLD (20) = The base value of gold when capturing a city.
-CAPTURE_GOLD_PER_POPULATION (10) = The amount of bonus gold granted per population of a captured city.
-CAPTURE_GOLD_RAND1 (20) = 
-CAPTURE_GOLD_RAND2 (20) =
-CAPTURE_GOLD_MAX_TURNS (50) =
-BARBARIAN_CITY_ATTACK_MODIFIER (-25) = The bonus barbarians receive when attacking cities (-25%).
-BUILDING_PRODUCTION_DECAY_TIME (50) = 
-BUILDING_PRODUCTION_DECAY_PERCENT (99) = The amount of decay that is allowable for a building to reach, if started then dropped lower in the building que, if other City builds take preference, before it is dropped from the que altogether.UNIT_PRODUCTION_DECAY_TIME (10) = 
-UNIT_PRODUCTION_DECAY_PERCENT (98) = The amount of decay allowed for a unit to reach, if started then dropped lower in the building que, if other City Builds take preference, before it is dropped from the que altogether.BASE_UNIT_UPGRADE_COST (10) = 
-UNIT_UPGRADE_COST_PER_PRODUCTION (2) = 
-UNIT_UPGRADE_COST_MULTIPLIER_PER_ERA (0.0) =
-UNIT_UPGRADE_COST_EXPONENT (1.0) =
-UNIT_UPGRADE_COST_VISIBLE_DIVISOR (5) =
-UNIT_UPGRADE_COST_DISCOUNT_MAX (-75) =
-WAR_SUCCESS_UNIT_CAPTURING (1) =
-WAR_SUCCESS_CITY_CAPTURING (10) = 
-DIPLO_VOTE_SECRETARY_GENERAL_INTERVAL (4) =
-TEAM_VOTE_MIN_CANDIDATES (2) = 
-RESEARCH_AGREEMENT_TIMER (20) = The base number of turns a research agreement takes using standard settings.
-
-
-
-
 Policy mechanics:
 --------------------------------------------------------------------------------
 BASE_POLICY_COST (25) = The base cost of a civilization's first social policy.
@@ -640,12 +730,6 @@ POLICY_COST_EXPONENT (1.70) =
 POLICY_COST_VISIBLE_DIVISOR (5) =
 SWITCH_POLICY_BRANCHES_ANARCHY_TURNS (1) = The number of turns of anarchy when a civilzation switches between incompatible social policies.
 POLICY_COST_DISCOUNT_MAX (-75) = The maximum percentile discount allowed for social policy cost.
-
-
-
-
-
-
 
 
 
@@ -678,6 +762,10 @@ GOLD_PURCHASE_VISIBLE_DIVISOR (10) =
 PROJECT_PURCHASING_DISABLED (1) = Can a civilization purchase projects? (1 = disabled)
 HURRY_GOLD_TECH_EXPONENT (1.10) =
 HURRY_GOLD_CULTURE_EXPONENT (1.10) =
+
+
+
+
 
 
 
@@ -718,7 +806,7 @@ POST_COMBAT_TEXT_DELAY (1.0) =
 UNIT_AUTO_EXPLORE_DISABLED (0) = Is auto-explore disabled? (0 = no.)
 UNIT_WORKER_AUTOMATION_DISABLED (0) = Is worker automation disabled? (0 = no.)
 UNIT_DELETE_DISABLED (0) = Is unit delete disabled? (0 = no.)
-
+UNIT_PRODUCTION_DECAY_TIME (10) = 
 
 
 MIN_START_AREA_TILES (4) = An area of less than 4 tiles will not be picked by the map script as a starting area for a CS or a Civilization.

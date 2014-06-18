@@ -193,7 +193,10 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
 
 
 
-  else -- unitclass is not dummy
+  -- 
+  -- NOT UNITCLASS_BUILDING_TRIGGER
+  --
+  else 
   
     logger:debug( "[SerialEvenUnitCreated_Pre] *NOT* a unit dummy class" )
 
@@ -204,6 +207,12 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
 
     logger:debug( "[SerialEvenUnitCreated_Pre] set unit (" .. unittype .. " " .. unitID .. ") home city (" .. city:GetName() .. ")" )
     SetUnitHomeCity(unit, city)
+
+
+
+    -- check to see if early founding unit does not take away population
+    UnitFoundingException(unit, city)
+
 
 
     -- check for possible promotions
@@ -232,6 +241,15 @@ function UnitSetXY_Pre(playerID, unitID, x ,y)
 
   print( "Player " .. playerID .. " has moved to (" .. x .. ", " .. y .. ")" ) 
 
+
+
+
+  -- check early founding units not too far away or start losing health
+  -- building portable grass shelter will help with this
+    -- TODO: AI ... arg ...
+
+
+
 end
 GameEvents.UnitSetXY.Add(UnitSetXY_Pre)
 
@@ -245,6 +263,28 @@ GameEvents.UnitSetXY.Add(UnitSetXY_Pre)
 
 
 
+
+
+
+--
+-- UnitFoundingException
+--
+-- TODO: move this logic to table
+--
+function UnitFoundingException( unit, unitclass, city )
+
+  -- early founding units
+  if unitclass=="UNITCLASS_TRIBE_SPLIT" or unitclass=="UNITCLASS_SETTLER" then
+
+    if not city:IsHasBuilding( "BUILDING_OPEN_SHELTER" ) then -- TODO: or ERA past a certain point
+      city:SetPopulation( city:GetPopulation() - 1, true )
+    end
+
+  end
+
+end
+
+
 --
 -- UnitBuildingPromotion
 --
@@ -252,7 +292,7 @@ GameEvents.UnitSetXY.Add(UnitSetXY_Pre)
 -- @param {UnitType} unittype - this is the type name (e.g. "UNIT_WARRIOR")
 -- @param {City} city - the city object instance
 --
--- Checks the custom table, Building_UnitPRomotions to see if the unit is 
+-- Checks the custom table, Building_UnitPromotions to see if the unit is 
 -- elligible for a promotion based on the existence of a building and the 
 -- unit type.
 --

@@ -353,6 +353,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
     <Folder Include="Greats" />
     <Folder Include="Beliefs" />
     <Folder Include="Resources\Peat\" />
+    <Folder Include="Resources\Reindeer\" />
     <Folder Include="Resources\Society\" />
     <Folder Include="Resources\Tar\" />
     <Folder Include="UI" />
@@ -2131,6 +2132,10 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Core\Specialists.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Core\Terrain.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2336,6 +2341,10 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Resources\Flint\FlintArt.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Resources\Reindeer\Reindeer.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

@@ -13,6 +13,7 @@
 ║   Buildings
 ║   Building_Flavors
 ║
+║   Building_BuildingClassYieldChanges
 ║   Building_YieldChanges+
 ║   Building_ResourceYieldChanges+
 ║   Building_FeatureYieldChanges
@@ -59,8 +60,141 @@
 ║
 ║
 ║   *Language_en_US
-║
 ║ 
+╠═══════════════════════════════════════════════════════════════════════════════
+║ 
+║ Buildings can affect:
+║
+║ - gold                                main table
+║
+║ - buildings                           
+║   - free                              main table
+║   - free this city                    main table
+║
+║ - technology           
+║   - one free tech                     main table
+║
+║ - unit
+║   - free                              Building_FreeUnits
+║   - upgrade cost                      main table
+║   - heal rate (? who)                 main table
+║   - experience (?)                    main table
+║     - global                          main table
+║     - by domain                       Building_DomainFreeExperiences
+║     - by domain per work              Building_DomainFreeExperiencesPerGreatWork
+║     - by combat type                  Building_UnitCombatFreeExperience
+║   - worker speed                      main table
+║   - promotions                        main table
+║     - trained                         main table
+║
+║ - production
+║   - military                          main table
+║     - instant increase                main table
+║   - space modifier                    main table
+║     - global                          main table
+║   - building modifier                 main table
+║   - wonder modifier                   main table
+║   - by domain modifiers               Building_DomainProductionModifiers
+║   - by combat type modifier           Building_UnitCombatProductionModifers
+║
+║ - happiness
+║   - happiness                         main table
+║   - happiness by class                Building_BuildingClassHappiness
+║   - unmodded                          main table
+║   - unhappiness modifier              main table
+║   - no occuppied unhappiness          main table
+║
+║ - population & food 
+║   - global                            main table
+║   - food kept                         main table
+║
+║ - yield
+║   - global                            Building_GlobalYieldModifiers
+║   - by building class                 Building_BuildingClassYieldChanges
+║   - by feature                        Building_FeatureYieldChanges
+║   - each lake plot                    Building_LakePlotYieldChanges
+║   - each river plot                   Building_RiverPlotYieldChanges
+║   - each sea plot                     Building_SeaPlotYieldChanges
+║   - by resource                       Building_ResourceYieldChanges
+║   - by resource modifier              Building_ResourceYieldModifiers         | %
+║   - by sea resource                   Building_SeaResourceYieldChanges        | int
+║   - by specialist                     Building_SpecialistYieldChanges         | int
+║   - by terrain                        Building_TerrainYieldChanges            | int
+║   - by area                           Building_AreaYieldModifiers             | %
+║   - modifications                     Building_YieldChanges                   | int
+║   - modifications percentage          Building_YieldModifers                  | %
+║   - modifications per pop             Building_YieldChangesPerPop
+║   - modifications per pop             Building_YieldChangesPerReligion
+║
+║ - city
+║   - defense                           main table
+║   - hit points                        main table
+║   - walls                             main table
+║   - global defense                    main table
+║
+║ - golden age
+║   - golden age start                  main table
+║   - modifier                          main table
+║
+║ - luxuries
+║   - bonus                             
+║
+║ - religion
+║   - extra missionary spreads          main table
+║   - religious pressure                main table
+║
+║ - culutre
+║   - rate modifier
+║     - global
+║   - plot culture cost
+║     - global
+║   - plot buy cost modifier
+║     - global
+║
+║ - tourism
+║   - landmark tourism percent
+║
+║ - trade
+║   -
+║   -
+║   -
+║   -
+║
+║ - specialists, greats, & works
+║   - great people rate modifier
+║     - global
+║   - great people rate change
+║   - great general rate
+║   - great person expend gold
+║   - free great
+║   - great scientist beaker modifier
+║   - specialist extra culture
+║   - specialist count
+║   - great works tourism modifier
+║   - great works count
+║   - free great work
+║   - great work slot
+║   - specialist type
+║
+║ - policy
+║   -
+║   -
+║ - espionage
+║   -
+║   -
+║   
+║
+║
+║
+║
+║
+║
+║
+║
+║
+║
+║
+║
 ╠═══════════════════════════════════════════════════════════════════════════════
 ║
 ║   Unlock Improvements or Modified Improvements
@@ -80,6 +214,11 @@
 ║   Example: 'Food Source' instead of just 'Food' (or something more conceptual
 ║   like mana or 'Society'. So 'Society/Social' points allow for more units. 
 ║   Could also be 'Evolution'.
+║
+║
+║
+║
+║
 ║
 ║
 ║
@@ -197,11 +336,63 @@
     </Row>
     <Row>
       <BuildingType>BUILDING_BONE_PILE</BuildingType>
-      <UnitType>UNITCLASS_SHAMAN</UnitType>
+      <UnitType>UNIT_SHAMAN</UnitType>
       <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
     </Row>
 
 
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GRASS_SHELTER</BuildingType>
+      <UnitType>UNIT_TRIBE_SPLIT</UnitType>
+      <UnitPromotionType>PROMOTION_PORTABLE_SHELTER</UnitPromotionType>
+    </Row>
+
+
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_PROTECTOR</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_WATCHER</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_BUSHMAN</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_ADVENTURER</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_HUNTER</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_SAVAGE</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitPromotionType>PROMOTION_HIDE_ARMOR</UnitPromotionType>
+    </Row>        
 
 
 
@@ -281,6 +472,11 @@
   │   - BUILDINGCLASS_CAUSEWAY_DUMMY
   │   - BUILDINGCLASS_FIRE_PIT_DUMMY
   │   - BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY
+  │
+  │
+  │   - BUILDINGCLASS_DUMMY_OPEN_SHELTER
+  │
+  │
   │
   │
   │
@@ -461,6 +657,14 @@
       <DefaultBuilding>BUILDING_PREHISTORIC_TRIBE_DUMMY</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC</Description>
     </Row>
+
+
+    <Row>
+      <Type>BUILDINGCLASS_DUMMY_OPEN_SHELTER</Type>
+      <DefaultBuilding>BUILDING_DUMMY_OPEN_SHELTER</DefaultBuilding>
+      <Description>Dummy Open Shelter</Description>
+    </Row>
+
 
 
 
@@ -719,6 +923,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     <Row>
       <Type>BUILDINGCLASS_GATHERING_ROCK</Type>
       <DefaultBuilding>BUILDING_GATHERING_ROCK</DefaultBuilding>
@@ -799,12 +1014,19 @@
   │     + BUILDING_LUXURY_HUT  
   │
   │
+  │
+  │
   │   Capitol Enhancements:
   │   - BUILDING_TREE_LIFE
   │     - BRANCH_OF_MANA
   │     - TOUMAIS_CANOPY
   │
   │
+  │
+  │
+  │   Dummy Buildings
+  │   - BUILDINGCLASS_DUMMY_OPEN_SHELTER
+  │     + BUILDING_DUMMY_OPEN_SHELTER  
   │
   │
   │
@@ -1359,6 +1581,7 @@
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Gold>2</Gold>
       <Capital>true</Capital>
+      <Defense>50</Defense>
       <NukeImmune>true</NukeImmune>
       <MinAreaSize>-1</MinAreaSize>
       <DisplayPosition>32</DisplayPosition>
@@ -1688,8 +1911,9 @@
 
 
     <!-- BONE_PILE -->
-    <!-- TODO: validate bonus to bone using units
-         TODO: ??? 
+    <!-- 
+      combat bonus to certain units (TODO: validate)
+      TODO: ??? 
     -->
     <Row>
       <Type>BUILDING_BONE_PILE</Type>
@@ -1743,8 +1967,11 @@
 
 
     <!-- OPEN_SHELTER -->
-    <!-- TOOD: some sort of population percentange increase or 
-               single increase -->
+    <!--
+      +1 food (TODO: validate)
+      TODO: +2 food if open plains (decide: on or around)
+      early founding units don't take away from population (TODO: validate)
+    -->
     <Row>
       <Type>BUILDING_OPEN_SHELTER</Type>
       <BuildingClass>BUILDINGCLASS_OPEN_SHELTER</BuildingClass>
@@ -1763,9 +1990,23 @@
       <PortraitIndex>16</PortraitIndex>
     </Row>
 
+    <Row>
+      <Type>BUILDING_DUMMY_OPEN_SHELTER</Type>
+      <BuildingClass>BUILDINGCLASS_DUMMY_OPEN_SHELTER</BuildingClass>
+      <Cost>-1</Cost>
+      <Description>Dummy Open Shelter</Description>
+      <Help></Help>
+      <MinAreaSize>-1</MinAreaSize>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+      <DisplayPosition>-1</DisplayPosition>
+    </Row>
+
+
 
     <!-- ADVANCED_SHELTER -->
-    <!-- Multiple Subtypes -->
+    <!-- TODO: Multiple Subtypes -->
     <!-- TODO: added defense, population -->
     <Row>
       <Type>BUILDING_ADVANCED_SHELTER</Type>
@@ -1787,7 +2028,10 @@
 
 
     <!-- PORTABLE_GRASS_SHELTER -->
-    <!-- TODO: possible increase in distance of settline type units -->
+    <!-- 
+      TODO: possible increase in distance of settline type units 
+      early founding units movement from 1 to 2 (TODO: validate)
+    -->
     <Row>
       <Type>BUILDING_PORTABLE_GRASS_SHELTER</Type>
       <BuildingClass>BUILDINGCLASS_PORTABLE_GRASS_SHELTER</BuildingClass>
@@ -1878,8 +2122,9 @@
 
 
     <!-- WATERPROOF_HUT -->
-    <!-- TODO: (future defense against natural elements)
-         TODO: population, jungle bonuses somehow -->
+    <!-- TODO: [FUTURE] defense against natural elements
+         TODO: population, jungle bonuses somehow 
+    -->
     <Row>
       <Type>BUILDING_WATERPROOF_HUT</Type>
       <BuildingClass>BUILDINGCLASS_WATERPROOF_HUT</BuildingClass>
@@ -1911,8 +2156,11 @@
 
 
     <!-- RUBBLE_WALL -->
-    <!-- + city defense | TODO: validate -->
-    <!-- TODO: consider effect of declaring this a "CityWall" in XML -->
+    <!--
+      + city defense (TODO: validate)
+      + slinger (TODO: validate)
+      TODO: consider effect of declaring this a "CityWall" in XML 
+    -->
     <Row>
       <Type>BUILDING_RUBBLE_WALL</Type>
       <BuildingClass>BUILDINGCLASS_RUBBLE_WALL</BuildingClass>
@@ -1925,7 +2173,7 @@
       <Civilopedia>TXT_KEY_BUILDING_RUBBLE_WALL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_RUBBLE_WALL_QUOTE</Quote>
       <!-- <CityWall>1</CityWall> -->
-      <Defense>100</Defense>
+      <Defense>75</Defense>
       <ExtraCityHitPoints>10</ExtraCityHitPoints>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -1937,7 +2185,10 @@
     </Row>
 
     <!-- WATER_STORAGE -->
-    <!-- population, ... -->
+    <!-- 
+      population + -- food kept 5% (TODO: validate)
+      TODO: ???
+    -->
     <Row>
       <Type>BUILDING_WATER_STORAGE</Type>
       <BuildingClass>BUILDINGCLASS_WATER_STORAGE</BuildingClass>
@@ -1949,6 +2200,7 @@
       <Strategy>TXT_KEY_BUILDING_WATER_STORAGE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_WATER_STORAGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_WATER_STORAGE_QUOTE</Quote>
+      <FoodKept>5</FoodKept>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -1994,7 +2246,11 @@
 
 
     <!-- BURIAL_SITE -->
-    <!-- TODO: (early beliefs bonus) + ... -->
+    <!-- 
+      TODO: [FUTURE] early beliefs bonus
+      +1 Happiness
+      TODO: ???
+    -->
     <Row>
       <Type>BUILDING_BURIAL_SITE</Type>
       <BuildingClass>BUILDINGCLASS_BURIAL_SITE</BuildingClass>
@@ -2040,7 +2296,11 @@
 
 
     <!-- HUNTING_TRAILS -->
-    <!-- TODO: hunting and hunting resource bonus, maybe improvement bonus -->
+    <!-- 
+      TODO: hunting and hunting resource bonus, maybe improvement bonus 
+      TODO: 
+      +1 Gold Truffles (TODO: validate)
+    -->
     <Row>
       <Type>BUILDING_HUNTING_TRAILS</Type>
       <BuildingClass>BUILDINGCLASS_HUNTING_TRAILS</BuildingClass>
@@ -2071,7 +2331,11 @@
 
 
     <!-- CAMPFIRE -->
-    <!-- TODO: Happy, ... --> 
+    <!-- 
+      No Maintenance
+      +1 Happiness
+      certain food resources provide 25% food increase for plot (TODO: validate)
+    --> 
     <Row>
       <Type>BUILDING_CAMPFIRE</Type>
       <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
@@ -2083,6 +2347,7 @@
       <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
+      <Happiness>1</Happiness>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -2104,8 +2369,11 @@
 
 
     <!-- HIDEOUT -->
-    <!-- TODO: Either city defense and/or
-               allows fort-like structure(s) must be within X of city -->
+    <!-- 
+      Defense: 100
+      TODO: Allows fort-like structure(s) (tbd 1 or N or X) must be within R 
+            of city. 
+    -->
     <Row>
       <Type>BUILDING_HIDEOUT</Type>
       <BuildingClass>BUILDINGCLASS_HIDEOUT</BuildingClass>
@@ -2117,6 +2385,7 @@
       <Strategy>TXT_KEY_BUILDING_HIDEOUT_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_HIDEOUT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_HIDEOUT_QUOTE</Quote>
+      <Defense>100</Defense>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -2137,7 +2406,9 @@
 
 
     <!-- MIDDEN -->
-    <!-- TODO: yay for sanitation -->
+    <!-- 
+      +5% food / growth (TODO: validate)
+    -->
     <Row>
       <Type>BUILDING_MIDDEN</Type>
       <BuildingClass>BUILDINGCLASS_MIDDEN</BuildingClass>
@@ -2158,7 +2429,7 @@
 
 
     <!-- STORAGE_PIT -->
-    <!-- population, ... -->
+    <!-- +5% food storage (TODO: validate) -->
     <Row>
       <Type>BUILDING_STORAGE_PIT</Type>
       <BuildingClass>BUILDINGCLASS_STORAGE_PIT</BuildingClass>
@@ -2171,6 +2442,7 @@
       <Strategy>TXT_KEY_BUILDING_STORAGE_PIT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_STORAGE_PIT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_STORAGE_PIT_QUOTE</Quote>
+      <FoodKept>5</FoodKept>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
       <HurryCostModifier>25</HurryCostModifier>
@@ -2180,8 +2452,11 @@
 
 
     <!-- LOOKOUT_TREE -->
-    <!-- TODO: Could just be lookout tree/post/rock, etc. An imporvement 
-               that provides better visibility, than hills, let's say -->
+    <!-- 
+      TODO: Could just be lookout tree/post/rock, etc. An imporvement 
+            that provides better visibility, than hills, let's say. 
+      TODO: Could be extra sight for city.
+    -->
     <Row>
       <Type>BUILDING_LOOKOUT_TREE</Type>
       <BuildingClass>BUILDINGCLASS_LOOKOUT_TREE</BuildingClass>
@@ -2319,7 +2594,7 @@
 
 
     <!-- MEAT_RACK -->
-    <!-- food, ... -->
+    <!-- TODO: +1 Food -->
     <Row>
       <Type>BUILDING_MEAT_RACK</Type>
       <BuildingClass>BUILDINGCLASS_MEAT_RACK</BuildingClass>
@@ -2354,7 +2629,7 @@
 
 
     <!-- HIDE_RACK -->
-    <!-- TODO: better defense for certain troops -->
+    <!-- hide armore & better defense for certain troops (TODO: validate) -->
     <Row>
       <Type>BUILDING_HIDE_RACK</Type>
       <BuildingClass>BUILDINGCLASS_HIDE_RACK</BuildingClass>
@@ -2422,6 +2697,11 @@
 
 
     <!-- FIRE_PIT -->
+    <!-- +1 Happiness -->
+    <!-- 
+      TODO: check against campfire 
+      TODO: ???
+    -->
     <Row>
       <Type>BUILDING_FIRE_PIT</Type>
       <BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
@@ -2996,6 +3276,31 @@
 
 
 
+
+
+
+
+  <!--
+  ╔════════════════════════════════════════════════════════════════════════════╗
+  ║█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█║
+  ║▌                                                                          ▐║
+  ║▌ Building Updates                                                         ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▌                                                                          ▐║
+  ║▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ║                                                                            ║
+  ╚════════════════════════════════════════════════════════════════════════════╝
+  -->
   <Buildings>
 
 
@@ -3026,6 +3331,9 @@
 
 
 
+
+
+
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
@@ -3036,16 +3344,7 @@
   --> 
   <Building_Flavors>
 
-    <Row>
-      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
-      <FlavorType>FLAVOR_GOLD</FlavorType>
-      <Flavor>25</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
-      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>25</Flavor>
-    </Row>
+
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
       <FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -3056,6 +3355,20 @@
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
       <Flavor>15</Flavor>
     </Row>
+
+
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+
+
     <Row>
       <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
       <FlavorType>FLAVOR_EXPANSION</FlavorType>
@@ -3156,6 +3469,139 @@
 
 
 
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FREE UNITS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_FreeUnits>
+
+    <Row>
+      <BuildingType>BUILDING_DUMMY_OPEN_SHELTER</BuildingType>
+      <UnitType>UNIT_SLINGER</UnitType>
+      <NumUnits>1</NumUnits>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_TREE</BuildingType>
+      <UnitType>UNIT_DUMMY_LOOKOUT_TREE</UnitType>
+      <NumUnits>1</NumUnits>
+    </Row>
+
+
+  </Building_FreeUnits>
+
+
+
+
+  <Building_FreeSpecialistCounts>
+
+
+
+
+  </Building_FreeSpecialistCounts>
+
+
+
+
+
+
+
+  <Building_UnitCombatFreeExperience>
+
+
+
+  </Building_UnitCombatFreeExperience>
+
+
+
+
+
+
+
+  <Building_UnitCombatProductionModifers>
+
+
+
+  </Building_UnitCombatProductionModifers>
+
+
+
+
+
+
+  <Building_DomainFreeExperiences>
+
+
+
+  </Building_DomainFreeExperiences>
+
+
+
+
+
+
+
+  <Building_DomainProductionModifiers>
+
+
+
+
+  </Building_DomainProductionModifiers>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING BUILDINGCLASS YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_BuildingClassYieldChanges>
+
+    <Row>
+      <BuildingType>BUILDING_DUMMY_OPEN_SHELTER</BuildingType>
+      <BuildingClassType>BUILDING_OPEN_SHELTER</BuildingClassType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <YieldChange>1</YieldChange>
+    </Row>
+
+  </Building_BuildingClassYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--
   ┌─────────────────────────────────────────────────────────────────────────────
   │
@@ -3173,36 +3619,60 @@
     </Row>
 
     <Row>
+      <BuildingType>BUILDING_OPEN_SHELTER</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+
+    <Row>
       <BuildingType>BUILDING_CAMPFIRE</BuildingType>
       <YieldType>YIELD_GOLD</YieldType>
       <Yield>1</Yield>
     </Row>
+
+
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yiel
+        dType>YIELD_PRODUCTION</YieldType>
       <Yield>1</Yield>
     </Row>
+
     <Row>
       <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
       <YieldType>YIELD_PRODUCTION</YieldType>
       <Yield>1</Yield>
     </Row>
+
+
     <Row>
       <BuildingType>BUILDING_FIRE_PIT</BuildingType>
       <YieldType>YIELD_FOOD</YieldType>
       <Yield>1</Yield>
     </Row>
+
+
     <Row>
       <BuildingType>BUILDING_MIDDEN</BuildingType>
       <YieldType>YIELD_FOOD</YieldType>
       <Yield>1</Yield>
     </Row>
 
+
+    <Row>
+      <BuildingType>BUILDING_MEAT_RACK</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+
     <Row>
       <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
       <YieldType>YIELD_FOOD</YieldType>
       <Yield>1</Yield>
     </Row>
+
 
     <Row>
       <BuildingType>BUILDING_ROCK_PAINTINGS</BuildingType>
@@ -3211,6 +3681,53 @@
     </Row>
 
   </Building_YieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING YIELD MODIFIERS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_YieldModifers>
+
+    <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
+    <YieldType>YIELD_FOOD</YieldType>
+    <Yield>5</Yield>
+
+    <BuildingType>BUILDING_MIDDEN</BuildingType>
+    <YieldType>YIELD_FOOD</YieldType>
+    <Yield>5</Yield>
+
+  </Building_YieldModifers>
+
+
+
+
+
 
 
 
@@ -3238,6 +3755,8 @@
   └─────────────────────────────────────────────────────────────────────────────
   --> 
   <Building_ResourceYieldChanges>
+
+
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
       <ResourceType>RESOURCE_SUGAR</ResourceType>
@@ -3250,7 +3769,376 @@
       <YieldType>YIELD_GOLD</YieldType>
       <Yield>1</Yield>
     </Row>
+
+
+    <Row>
+      <BuildingType>BUILDING_HUNTING_TRAILS</BuildingType>
+      <ResourceType>RESOURCE_TRUFFLES</ResourceType>
+      <YieldType>YIELD_GOLD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+
+
   </Building_ResourceYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE YIELD MODIFIERS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_ResourceYieldModifiers>
+
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <ResourceType>RESOURCE_DEER</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>25</Yield>    
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <ResourceType>RESOURCE_REINDEER</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>25</Yield>    
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <ResourceType>RESOURCE_FOUL</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>25</Yield>    
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <ResourceType>RESOURCE_APE</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>25</Yield>    
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <ResourceType>RESOURCE_CROCODILE</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>25</Yield>    
+    </Row>
+
+
+  </Building_ResourceYieldModifiers>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RESOURCE QUANTITY
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_ResourceQuantity>
+
+    <Row>
+      <BuildingType>BUILDING_PREHISTORIC_TRIBE_DUMMY</BuildingType>
+      <ResourceType>RESOURCE_HORSE</ResourceType>
+      <Quantity>10</Quantity>
+    </Row>
+
+
+  </Building_ResourceQuantity>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING SEA RESOURCE YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_SeaResourceYieldChanges>
+    
+
+  </Building_SeaResourceYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING TERRAIN YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_TerrainYieldChanges>
+
+
+  </Building_TerrainYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FEATURE YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_FeatureYieldChanges>
+
+
+  </Building_FeatureYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING RIVER PLOT YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_RiverPlotYieldChanges>
+    
+
+  </Building_RiverPlotYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING SEA PLOT YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_SeaPlotYieldChanges>
+    
+
+  </Building_SeaPlotYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING LAKE PLOT YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_LakePlotYieldChanges>
+    
+
+  </Building_LakePlotYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING SPECIALIST YIELD CHANGES
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_SpecialistYieldChanges></Building_SpecialistYieldChanges>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING THEMING BONUS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
+  <Building_ThemingBonuses></Building_ThemingBonuses>
+
+
+
+
+
+
+
+
+  <!--
+  <Building_TechEnhancedYieldChanges></Building_ThemingBonuses>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3281,6 +4169,8 @@
   └─────────────────────────────────────────────────────────────────────────────
   --> 
   <Building_ClassesNeededInCity>
+
+
     <Row>
       <BuildingType>BUILDING_TREE_LIFE</BuildingType>
       <BuildingClassType>BUILDINGCLASS_TREE_LIFE</BuildingClassType>
@@ -3293,6 +4183,8 @@
       <BuildingType>BUILDING_FIRE_PIT</BuildingType>
       <BuildingClassType>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClassType>
     </Row>
+
+
   </Building_ClassesNeededInCity>
 
 
@@ -3345,46 +4237,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
-  │
-  │   BUILDING FREE UNITS
-  │
-  │
-  └─────────────────────────────────────────────────────────────────────────────
-  -->
-  <Building_FreeUnits>
-
-  </Building_FreeUnits>
-  <!--
-  #TODO: [CFH] Find out why this was in here
-	<Building_FreeUnits>
-		<Row>
-			<BuildingType>BUILDING_CHIEF_HUT</BuildingType>
-			<UnitType>UNIT_PRE_ELDER</UnitType>
-			<NumUnits>1</NumUnits>
-		</Row>
-	</Building_FreeUnits>
-  -->
 
 
 
@@ -3503,25 +4355,18 @@
 
 
 
-
-  <!--
-  ┌─────────────────────────────────────────────────────────────────────────────
-  │
-  │   BUILDING RESOURCE QUANTITY
-  │
-  │
-  └─────────────────────────────────────────────────────────────────────────────
-  --> 
-  <Building_ResourceQuantity>
-
-    <Row>
-      <BuildingType>BUILDING_PREHISTORIC_TRIBE_DUMMY</BuildingType>
-      <ResourceType>RESOURCE_HORSE</ResourceType>
-      <Quantity>10</Quantity>
-    </Row>
+  
 
 
-  </Building_ResourceQuantity>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3861,6 +4706,29 @@
     </Row>
     
 
+
+
+
+
+
+
+
+
+    <!--
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                         LOWER PALEOLITHIC                              │
+    └────────────────────────────────────────────────────────────────────────┘
+    -->
+
+
+
+
+
+
+
+
+
+
     <!-- BUILDING_SPRING_SOURCE -->
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_TITLE">
       <Text>Spring Source</Text>
@@ -4017,6 +4885,26 @@
     </Row>    
 
 
+
+
+
+
+
+
+
+    <!--
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │                             PALEOLITHIC                                │
+    └────────────────────────────────────────────────────────────────────────┘
+    -->
+
+
+
+
+
+
+
+
     <!-- BUILDING_CAUSEWAY -->
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_TITLE">
       <Text>Causeway</Text>
@@ -4047,6 +4935,12 @@
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_HELP">
       <Text>Waterproof Hut Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_STATEGY">
+      <Text>Waterproof Hut Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_PEDIA">
+      <Text>Waterproof Hut Pedia</Text>
     </Row>
 
 
@@ -4101,16 +4995,16 @@
       <Text>Campfire</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_HELP">
-      <Text>Increases the [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] of your community.[NEWLINE][NEWLINE]A campfire never becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR].</Text>
+      <Text>Increase [ICON_FOOD] Food production by 25% from [ICON_RES_DEER] [COLOR_YELLOW]Deer[ENDCOLOR], [COLOR_YELLOW]Reindeer[ENDCOLOR], [COLOR_YELLOW]Foul[ENDCOLOR], [COLOR_YELLOW]Ape[ENDCOLOR], and [COLOR_YELLOW]Crocodile[ENDCOLOR] resources. Increases the [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] of your community.[NEWLINE][NEWLINE]A campfire never becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_QUOTE">
       <Text>"Governing a great nation is like cooking a small fish - too much handling will spoil it."[NEWLINE] - Lao Tzu[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_STATEGY">
-      <Text>A campfire plays a central role in your early settlement. Build it to increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR]. This double bonus and relative cost makes this building a great asset.</Text>
+      <Text>A campfire plays a central role in your early settlement. Build it to increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and provide additional [ICON_FOOD] Food bonuses to certain [ICON_FOOD}] resources. This double bonus and relative cost makes this building a great asset.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
-      <Text>A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.[NEWLINE]</Text>
+      <Text>A campfire provided a place to gather, allowed for cooking, and gave warmth and comfort. It improved morale and unified the tribe, but at the same time, lead to more nefarious activities.[NEWLINE]By cooking their food, early man was able to transofrm their food in a way that provided slightly different nutritional value and a change in digestion, allowing for an increase in brain function and less of a need in the amount of food needed to sustain oneself.</Text>
     </Row>
 
 

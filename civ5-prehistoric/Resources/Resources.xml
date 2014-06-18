@@ -38,12 +38,14 @@
     </Update>
 
 
+
     <!-- Tech: Simple Tools -->
 
     <Update>
       <Where Type="RESOURCE_AUROCHS" />
       <Set TechReveal="TECH_SCAVENGING" />
     </Update>
+
 
 
     <!-- Tech: Gathering -->
@@ -53,13 +55,31 @@
       <Set TechReveal="TECH_GATHERING" />
     </Update>    
     
+
     
     <!-- Tech: Hunting -->
     
     <Update>
       <Where Type="RESOURCE_DEER" />
       <Set TechReveal="TECH_HUNTING_GATHERING" />
-    </Update>    
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_REINDEER" />
+      <Set TechReveal="TECH_HUNTING_GATHERING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_FOUL" />
+      <Set TechReveal="TECH_HUNTING_GATHERING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_APE" />
+      <Set TechReveal="TECH_HUNTING_GATHERING" />
+    </Update>
+    <Update>
+      <Where Type="RESOURCE_CROCODILE" />
+      <Set TechReveal="TECH_HUNTING_GATHERING" />
+    </Update>
+
 
 
     <!-- Tech: Harpooning -->
@@ -78,6 +98,7 @@
     </Update>
 
 
+
     <!-- Tech: Tool Specialization -->
 
 
@@ -90,6 +111,7 @@
       <Set TechReveal="TECH_ART" />
     </Update>    
     
+
     
     <!-- Tech: Agriculture -->
     <!-- Worker, Farm -->
@@ -107,6 +129,7 @@
     </Update>
 
 
+
     <!-- Tech: Pottery -->
     <!-- Granary -->
     <Update>
@@ -115,6 +138,7 @@
     </Update>
     
 
+
     <!-- Tech: Trapping -->
     <!-- Circus -->
     <Update>
@@ -122,6 +146,7 @@
       <Set TechReveal="TECH_TRAPPING" />
     </Update>
     
+
 
     <!-- Tech: Trading -->
     
@@ -142,6 +167,7 @@
       <Set TechReveal="TECH_TRADING" />
     </Update>
     
+
     
     <!-- Tech: Mining -->
     <!-- Construct a Mine, Chop Down a Forest -->
@@ -159,6 +185,7 @@
     </Update>
 
 
+
     <!-- Tech: Numbers -->
     <Update>
       <Where Type="RESOURCE_SILK" />
@@ -168,6 +195,7 @@
       <Where Type="RESOURCE_SPICES" />
       <Set TechReveal="TECH_NUMBERS" />
     </Update>    
+
 
 
     <!-- Tech: Animal Domestication -->
@@ -180,6 +208,7 @@
       <Set TechReveal="TECH_ANIMAL_DOMESTICATION" />
     </Update>
 
+
     
     <!-- The Wheel -->
     <!-- Chariot Archer, Water Mill, Contruct a Road -->
@@ -188,6 +217,7 @@
       <Set TechReveal="TECH_THE_WHEEL" />
     </Update>
     
+
 
     <!-- Tech: Mineralogy -->
     <Update>
@@ -204,6 +234,7 @@
     </Update>
 
 
+
     <!-- Tech: Sailing -->
     <!-- Work Boat, Trireme, Cargo Ship, Fish Boats, Embassies -->
     <Update>
@@ -211,11 +242,13 @@
       <Set TechReveal="TECH_SAILING" />
     </Update>
     
+
     
     <!-- Tech: Calendar -->
     <!-- Stonehenge, Stone Works, Plantation -->
 
     
+
     <!-- Tech: Caravaning -->
     <Update>
       <Where Type="RESOURCE_WINE" />
@@ -223,11 +256,13 @@
     </Update>
 
 
+
     <!-- Tech: Husbandry -->
     <Update>
       <Where Type="RESOURCE_HORSE" />
       <Set TechReveal="TECH_ANIMAL_HUSBANDRY" />
     </Update>
+
 
 
     <!-- Tech: Bronze Working -->
