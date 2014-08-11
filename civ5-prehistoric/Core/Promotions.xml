@@ -542,6 +542,17 @@
 
 
 
+    <Row>
+      <Type>PROMOTION_PREHISTORIC_DARKNESS</Type>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS</Description>
+      <Help>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_PEDIA</PediaEntry>
+      <Sound>AS2D_IF_LEVELUP</Sound>
+      <VisibilityChange>-3</VisibilityChange>
+      <PortraitIndex>59</PortraitIndex>
+      <IconAtlas>ABILITY_ATLAS</IconAtlas>
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
+    </Row> 
 
     <Row>
       <Type>PROMOTION_PREHISTORIC_SIGHTLESS</Type>
@@ -552,7 +563,7 @@
       <VisibilityChange>-2</VisibilityChange>
       <PortraitIndex>59</PortraitIndex>
       <IconAtlas>ABILITY_ATLAS</IconAtlas>
-      <PediaType>PEDIA_ATTRIBUTES</PediaType>      
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
     </Row> 
 
     <Row>
@@ -567,6 +578,8 @@
       <PediaType>PEDIA_ATTRIBUTES</PediaType>      
     </Row> 
 
+
+    <!-- can only move where unit does not have to reveal map -->
     <Row>
       <Type>PROMOTION_PREHISTORIC_MAPPING</Type>
       <Description>TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_DESC</Description>
@@ -576,10 +589,10 @@
       <NoRevealMap>1</NoRevealMap>
       <PortraitIndex>59</PortraitIndex>
       <IconAtlas>ABILITY_ATLAS</IconAtlas>
-      <PediaType>PEDIA_ATTRIBUTES</PediaType>      
+      <PediaType>PEDIA_ATTRIBUTES</PediaType>
     </Row>     
 
-
+    <!-- PROMOTION_SIGHT_PENALTY -->
 
 
 

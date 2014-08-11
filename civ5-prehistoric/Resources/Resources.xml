@@ -1,10 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 8/10/2012 10:54:22 AM -->
 <GameData>
-	
-	
+  
+  
 
-	<Resources>
+  <Resources>
+
+    <Row>
+      <Type>RESOURCE_DUMMY_PRODUCTION</Type>
+      <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
+      <TechReveal>TECH_DUMMY</TechReveal>
+      <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
+      <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>45</MinLatitude>
+      <MaxLatitude>45</MaxLatitude>
+      <RandApp1>0</RandApp1>
+      <RandApp2>0</RandApp2>
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <!-- MinLandPercent, GroupRange, GroupRand, ResourceUsage, PresentOnAllValidPlots, Area [000000] -->
+      <Hills>0</Hills>
+      <Flatlands>0</Flatlands>
+      <!-- NoRiverSide, OnlyMinorCivs -->
+      <!--<IconString>[ICON_RES_DUMMY]</IconString>-->
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>RESOURCE_DUMMY_FOOD</Type>
+      <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
+      <TechReveal>TECH_DUMMY</TechReveal>
+      <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
+      <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>45</MinLatitude>
+      <MaxLatitude>45</MaxLatitude>
+      <RandApp1>0</RandApp1>
+      <RandApp2>0</RandApp2>
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <!-- MinLandPercent, GroupRange, GroupRand, ResourceUsage, PresentOnAllValidPlots, Area [000000] -->
+      <Hills>0</Hills>
+      <Flatlands>0</Flatlands>
+      <!-- NoRiverSide, OnlyMinorCivs -->
+      <!--<IconString>[ICON_RES_DUMMY]</IconString>-->
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </Row>
+
+    <Row>
+      <Type>RESOURCE_DUMMY_GOLD</Type>
+      <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
+      <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
+      <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
+      <TechReveal>TECH_DUMMY</TechReveal>
+      <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
+      <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
+      <PlacementOrder>4</PlacementOrder>
+      <ConstAppearance>50</ConstAppearance>
+      <MinAreaSize>3</MinAreaSize>
+      <MinLatitude>45</MinLatitude>
+      <MaxLatitude>45</MaxLatitude>
+      <RandApp1>0</RandApp1>
+      <RandApp2>0</RandApp2>
+      <Player>0</Player>
+      <TilesPer>5</TilesPer>
+      <!-- MinLandPercent, GroupRange, GroupRand, ResourceUsage, PresentOnAllValidPlots, Area [000000] -->
+      <Hills>0</Hills>
+      <Flatlands>0</Flatlands>
+      <!-- NoRiverSide, OnlyMinorCivs -->
+      <!--<IconString>[ICON_RES_DUMMY]</IconString>-->
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>RESOURCE_ATLAS_PRE</IconAtlas>
+    </Row>
+
+
+
+
+
+
+
+
+
 
     <!-- NEW RESOURCES -->
     
@@ -284,5 +371,151 @@
 
   </Resources>
   
+
+
+
+
+  
+  <!--
+  <Resource_YieldChanges>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Resource_YieldChanges>
+  -->
+
+  <!-- FLAVORS -->
+  <!--
+  <Resource_Flavors>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Resource_Flavors>
+  -->
+  
+  <!-- BOOLEANS -->
+  <!--
+  <Resource_TerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN_TUNDRA</TerrainType>
+    </Row>    
+  </Resource_TerrainBooleans>
+  -->
+
+  <!--
+  <Resource_FeatureBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <FeatureType>FEATURE__FOREST</FeatureType>
+    </Row>
+  </Resource_FeatureBooleans>  
+
+  <Resource_FeatureTerrainBooleans>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__GRASS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__PLAINS</TerrainType>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_BERRIES</ResourceType>
+      <TerrainType>TERRAIN__TUNDRA</TerrainType>
+    </Row>    
+  </Resource_FeatureTerrainBooleans>
+  -->
+  
+  <Resource_QuantityTypes>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_PRODUCTION</ResourceType>
+      <Quantity>1</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_FOOD</ResourceType>
+      <Quantity>1</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_GOLD</ResourceType>
+      <Quantity>1</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_PRODUCTION_GOOD</ResourceType>
+      <Quantity>2</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_FOOD_GOOD</ResourceType>
+      <Quantity>2</Quantity>
+    </Row>
+    <Row>
+      <ResourceType>RESOURCE_DUMMY_GOLD_GOOD</ResourceType>
+      <Quantity>2</Quantity>
+    </Row>       
+  </Resource_QuantityTypes>
+
+
+  <!--
+  <ArtDefine_Landmarks>
+
+    <Row>
+      <Era>Any</Era>
+      <State>Any</State>
+      <Scale>0.5</Scale>
+      <ImprovementType>ART_DEF_IMPROVEMENT_NONE</ImprovementType>
+      <LayoutHandler>SNAPSHOT</LayoutHandler>
+      <ResourceType>ART_DEF_RESOURCE_BERRIES</ResourceType>
+      <Model>resource_berries.fxsxml</Model>
+      <TerrainContour>1</TerrainContour>
+    </Row>
+    
+  </ArtDefine_Landmarks>
+  -->
+
+  <!--
+  <Language_en_US>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_TITLE">
+      <Text>Berries</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_PEDIA">
+      <Text>The botanical definition of a berry is a fleshy fruit produced from a single ovary. Grapes are an example. The berry is the most common type of fleshy fruit in which the entire ovary wall ripens into an edible pericarp. They may have one or more carpels with a thin covering and fleshy interiors. The seeds are usually embedded in the flesh of the ovary.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_RESOURCE_BERRIES_HELP">
+      <Text>+1 [ICON_FOOD] Food from [COLOR_POSITIVE]Foraging Sites[ENDCOLOR].</Text>
+    </Row>
+  </Language_en_US>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 </GameData>

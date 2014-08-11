@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+
+  <!-- NEW FEATURES -->
+  
+  <Features>
+    <Row>
+      <Type>FEATURE_BRUSH</Type>
+
+    </Row>
+    <Row>
+      <Type>FEATURE_PREHISTORIC</Type>
+
+    </Row>
+    <Row>
+      <Type>FEATURE_DARKNESS</Type>
+
+    </Row>
+    <Row>
+      <Type>FEATURE_CRAG</Type>
+
+    </Row>
+  </Features>
+
+</GameData>

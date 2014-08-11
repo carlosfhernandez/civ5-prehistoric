@@ -242,6 +242,31 @@ function UnitSetXY_Pre(playerID, unitID, x ,y)
   print( "Player " .. playerID .. " has moved to (" .. x .. ", " .. y .. ")" ) 
 
 
+  local player = Players[playerID];
+  local playerTeamID = player:GetTeam();
+
+  if (player == nil) then return end;
+  
+  local unit = player:GetUnitByID(unitID);
+  
+  if (unit == nil or unit:IsDead()) then return end
+
+  local unitclass = unit:GetUnitClassType()
+  local unittype = GameInfo.Units[ unit:GetUnitType() ].Type
+  local plot = unit:GetPlot()
+
+
+
+  if (unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_PREHISTORIC_MAPPING"].ID)) then
+
+    for neighbor in Neighbors(plot) do
+      -- set plot visible
+      neighbor:SetRevealed(playerTeamID, true)
+      neighbor:UpdateFog()
+    end
+
+  end
+
 
 
   -- check early founding units not too far away or start losing health

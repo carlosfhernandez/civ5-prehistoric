@@ -277,6 +277,18 @@
 
 
 
+  <Table name="Building_NearUnitCombatModifiers">
+    <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
+    <Column name="UnitCombatType" type="text" reference="UnitCombat(Type"/>
+    <Column name="Attack" type="integer"/>
+    <Column name="Defense" type="integer"/>
+    <Column name="Range" type="integer"/>
+    <Column name="Falloff" type="integer"/>
+  </Table>
+
+
+
+
 
 
   <Building_UnitPromotions>
@@ -1233,48 +1245,48 @@
   ╟────────────────────────────────────────────────────────────────────────────────────────────
   ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
-  ║                        |   |   |   |     |     |                               
-  ║ TREE                   |   |   |   |     |     |                               
-  ║ LOOKOUT_ROCK           |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
+  ║                        |   |   |   |     |     |                                           
+  ║ 1 - - - - - - -        |   |   |   |     |     |                                           
+  ║ TREE                   |   |   |   |     |     |                                           
+  ║ 4 - - - - - - -        |   |   |   |     |     |                                           
+  ║ LOOKOUT_ROCK           |   |   |   |     |     |                                           
+  ║                        |   |   |   |     |     |                                           
+  ║
   ╟──────────────────────────────────────────────────────────────────────────────────────────── 
   ║                                                                     LOWER PALEOLITHIC
   ╟────────────────────────────────────────────────────────────────────────────────────────────
   ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────  
+  ║ 5 - - - - - - -        |   |   |   |     |     |                                           
   ║ SPRING_SOURCE          |   |   |   |     |     |                               
   ║ GOLDEN_PATH            |   |   |   |     |     |                               
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
+  ║ 6 - - - - - - -        |   |   |   |     |     |                                           
   ║ STONE_PILE             |   |   |   |     |     |                               
   ║ GRAND_OVERLOOK         |   |   |   |     |     |                                           
   ║ OVERLOOK               |   |   |   |     |     |                                           
   ║ CHERT_DEPOSIT          |   |   |   |     |     |                                           
   ║ GATHERING_CIRCLE       |   |   |   |     |     |                                           
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
+  ║ 7 - - - - - - -        |   |   |   |     |     |                                           
   ║ BONE_PILE              |   |   |   |     |     |                                           
   ║ OPEN_SHELTER           |   |   |   |     |     |                                           
   ║ PORTABLE_GRASS_S       |   |   |   |     |     |                                           
   ║ ADVANCED_SHELTER       |   |   |   |     |     |                                           
-  ║ ?ALPHAS_CAVE           |   |   |   |     |     |                                           
+  ║ *ALPHAS_CAVE           |   |   |   |     |     |                                           
   ║                        |   |   |   |     |     |                                           
-  ║                        |   |   |   |     |     |                                           
-  ║                        |   |   |   |     |     |                                           
+  ║                                                                                            
   ╟──────────────────────────────────────────────────────────────────────────────────────────── 
   ║                                                                     PALEOLITHIC            
   ╟────────────────────────────────────────────────────────────────────────────────────────────
   ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH           
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────  
+  ║ 8 - - - - - - -        |   |   |   |     |     |                                           
   ║ CAUSEWAY               |   |   |   |     |     |                    PAL COMPLEX_TOOOLS
   ║ WATERPROOF_HUT         |   |   |   |     |     |                                           
   ║ RUBBLE_WALL            |   |   |   |     |     |                                           
   ║ WATER_STORAGE          |   |   |   |     |     |                                           
-  ║ ?CHIEF_UPGRADE         |   |   |   |     |     |                                           
-  ║ ?BURIAL_SITE           |   |   |   |     |     |                                           
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
+  ║ *CHIEF_UPGRADE         |   |   |   |     |     |                                           
+  ║ BURIAL_SITE            |   |   |   |     |     |                                           
+  ║ 9 - - - - - - -        |   |   |   |     |     |                                           
   ║ HUNTING_TRAILS         |   |   |   |     |     |                                           
   ║ CAMPFIRE               |   |   |   |     |     |                                           
   ║ HIDEOUT                |   |   |   |     |     |                                           
@@ -1282,53 +1294,38 @@
   ║ STORAGE_PIT            |   |   |   |     |     |                                           
   ║ LOOKOUT_TREE           |   |   |   |     |     |                                           
   ║ GREAT_ROCK             |   |   |   |     |     |                                           
-  ║ ?CHIEFTAINS_HUT        |   |   |   |     |     |                                           
+  ║ *CHIEFTAINS_HUT        |   |   |   |     |     |                                           
   ║ NOMADIC_CAMP           |   |   |   |     |     |                                           
   ║                        |   |   |   |     |     |                                           
-  ║
-  ║
+  ║                                                                                            
   ╟──────────────────────────────────────────────────────────────────────────────────────────── 
   ║                                                                     NEOLITHIC              
   ╟────────────────────────────────────────────────────────────────────────────────────────────
   ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH           
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ─────────────────── 
+  ║ 10- - - - - - -        |   |   |   |     |     |                                           
   ║ MEAT_RACK              |   |   |   |     |     |                                           
   ║ HIDE_RACK              |   |   |   |     |     |                                           
   ║ TREE_STAND             |   |   |   |     |     |                                           
   ║ FIREPIT                |   |   |   |     |     |                                           
   ║ WARDS                  |   |   |   |     |     |                                           
-  ║ ?VILLAGE_ALERT         |   |   |   |     |     |                                           
+  ║ VILLAGE_ALERT          |   |   |   |     |     |                                           
+  ║ *LUXURY_HUT            |   |   |   |     |     |                                           
   ║ PICKET                 |   |   |   |     |     |                                           
   ║ EARTHEN_WALL           |   |   |   |     |     |                                           
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
-  ║ BEAD_WORKER            |   |   |   |     |     |                                           
+  ║ 11- - - - - - -        |   |   |   |     |     |                                           
+  ║ BEAD_MAKER             |   |   |   |     |     |                                           
   ║ BLUBBER_WORKER         |   |   |   |     |     |                                           
   ║ FOOD_STORAGE           |   |   |   |     |     |                               
   ║ DEFENSIVE_DITCHES      |   |   |   |     |     |                                           
-  ║ ?PALACE                |   |   |   |     |     |                               
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
+  ║ *PALACE                |   |   |   |     |     |                               
+  ║ 12- - - - - - -        |   |   |   |     |     |                                           
   ║ @SHRINE                |   |   |   |     |     |                    NEO IDOLS
   ║ @-PYRAMID              |   |   |   |     |     |                    NEO IDOLS
   ║ ROCK_PAINTING          |   |   |   |     |     |                               
   ║ PALISADE               |   |   |   |     |     |                               
   ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║
-  ║
-  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
-  ║                                                                     
-  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
-  ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH           
-  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
-  ║                        |   |   |   |     |     |                              
-  ║                        |   |   |   |     |     |                                  
-  ║                        |   |   |   |     |     |
-  ║                        |   |   |   |     |     |                                           
-  ║
-  ║
-  ║
+  ║                                                                                            
   ╟──────────────────────────────────────────────────────────────────────────────────────────── 
   ║                                                                     ANCIENT
   ╟────────────────────────────────────────────────────────────────────────────────────────────  
@@ -1337,13 +1334,13 @@
   ║ BUILDING         COST M|C|F|Z|H|S|P|     |D|+HP|BONUS               ERA PRE TECH
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
   ║ .                      |   |   |   |     |     |                    ANC AGRICULTURE 
-  ║ - - - - - - - -        |   |   |   |     |     |              
+  ║ 14- - - - - - -        |   |   |   |     |     |              
   ║ GRANARY            75 1|   |   |   |     |     |                    ANC POTTERY
   ║ CIRCUS                 |   |   |   |     |     |                    ANC TRAPPING
-  ║ - - - - - - - -        |   |   |   |     |     |                                           
+  ║ 15- - - - - - -        |   |   |   |     |     |                                           
   ║ WATERMILL          94 2|  2|   |  1|     |     |                    ANC THE_WHEEL
   ║ -FLOATING_GARDEN   94 1|   |   |   |     |     |                    ANC THE_WHEEL
-  ║ - - - - - - - -        |   |   |   |     |     | 
+  ║ 16- - - - - - -        |   |   |   |     |     | 
   ║ STONE_WORKS        94  |   |   |   |     |     |                    ANC SAILING
   ║ LIBRARY            94 1|   |   |*  |1    |     |                               
   ║ -ROYAL_LIBRARY     94 1|   |   |   |     |     |                               
@@ -1355,22 +1352,50 @@
   ║ BARRACKS           94 1|   |   |   |     |     |+15XP Units         ANC BRONZE_WORKING
   ║ -KREPOST           94 1|   |   |   |     |     |+15XP Units *01     ANC BRONZE_WORKING 
   ║ -IKANDA            94 1|   |   |   |     |     |*02                               
+  ║                        |   |   |   |     |     |
   ║
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     CLASSICAL
+  ╟────────────────────────────────────────────────────────────────────────────────────────────  
+  ║                 x_.__  
   ╟────────────────────────────────────────────────────────────────────────────────────────────
   ║ BUILDING         COST M|C|F|Z|H|S|P|     |D|+HP|BONUS               ERA PRE TECH
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
+  ║ 17- - - - - - -        |   |   |   |     |     |                                           
   ║ LIGHTHOUSE         94 1|  *|   |  *|     |     |*03                 CLA OPTICS
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
-  ║                        |   |   |   |     |     |                               
+  ║ STABLE                 |   |   |   |     |     |                               
+  ║ -DUCAL_STABLE          |   |   |   |     |     |                               
+  ║ CARAVANSARY            |   |   |   |     |     |                               
+  ║ COURTHOUSE             |   |   |   |     |     |                               
+  ║ COLLOSEUM              |   |   |   |     |     |                               
+  ║ 18- - - - - - -        |   |   |   |     |     |                                           
+  ║ TEMPLE                 |   |   |   |     |     |                              
+  ║ -MUD_PYRAMID_MOS       |   |   |   |     |     |                                  
+  ║ -BURIAL_TOMB           |   |   |   |     |     |
+  ║ AMPHITHEATRE           |   |   |   |     |     |                                  
+  ║ ...                    |   |   |   |     |     |
+  ║                        |   |   |   |     |     |                                  
+  ║                        |   |   |   |     |     |
+  ║                        |   |   |   |     |     |                                  
+  ║                        |   |   |   |     |     |
+  ║                        |   |   |   |     |     |                                           
   ║
   ║
   ║
   ║
   ║
-  ║
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     MEDIEVAL
+  ╟────────────────────────────────────────────────────────────────────────────────────────────  
+  ║                 x_.__  
+  ╟────────────────────────────────────────────────────────────────────────────────────────────
+  ║ BUILDING         COST M|C|F|Z|H|S|P|     |D|+HP|BONUS               ERA PRE TECH
+  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
+  ║ 19- - - - - - -        |   |   |   |     |     |                                             
+  ║ GARDEN                 |   |   |   |     |     |                              
+  ║ ...                    |   |   |   |     |     |                                  
+  ║                        |   |   |   |     |     |
+  ║                        |   |   |   |     |     |                                           
 
 
 
@@ -1670,6 +1695,14 @@
 
 
 
+    <!-- Lower Paleolithic 05 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
     <!-- 
           ◄█▓▒░ ● BIPEDALISM ● ░▒▓█► 
     -->
@@ -1730,7 +1763,7 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- Lower Paleolithic 06 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -1744,7 +1777,7 @@
 
 
     <!-- STONE_PILE -->
-    <!--  +10% attach to certain units | TODO: verify 
+    <!--  +10% attack to certain units | TODO: verify 
           TODO: if using stone as resource, make storage bigger
           TODO: +1 Production (verify balance)
           TODO: grant stone wall extra defense -->
@@ -1896,7 +1929,7 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- Lower Paleolithic 07 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -2064,6 +2097,20 @@
      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
     -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Paleolithic 08 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
 
 
 
@@ -2280,7 +2327,7 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- Paleolithic 09 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -2587,6 +2634,14 @@
 
 
 
+    <!-- Neolithic 10 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+
+
+
+
+
+
+
 
     <!-- 
           ◄█▓▒░ ● COORDINATED_HUNTING ● ░▒▓█► 
@@ -2697,10 +2752,8 @@
 
 
     <!-- FIRE_PIT -->
-    <!-- +1 Happiness -->
     <!-- 
-      TODO: check against campfire 
-      TODO: ???
+      +5% food kept; TODO: validate
     -->
     <Row>
       <Type>BUILDING_FIRE_PIT</Type>
@@ -2713,8 +2766,8 @@
       <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_FIRE_PIT_QUOTE</Quote>
+      <FoodKept>5</FoodKept>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <Happiness>1</Happiness>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
       <NeverCapture>true</NeverCapture>
@@ -2842,6 +2895,7 @@
       <Strategy>TXT_KEY_BUILDING_PICKET_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_PICKET_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_PICKET_QUOTE</Quote>
+      <Defense>50</Defense>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -2865,6 +2919,7 @@
       <Strategy>TXT_KEY_BUILDING_EARTHEN_WALL_STATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_EARTHEN_WALL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_EARTHEN_WALL_QUOTE</Quote>
+      <Defense>50</Defense>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
       <ConquestProb>66</ConquestProb>
@@ -2881,7 +2936,7 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
+    <!-- Neolithic 11 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
 
@@ -3119,37 +3174,7 @@
 
 
 
-    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
-
-    <!-- CAMPFIRE -->
-    <!--
-    <Row>
-      <Type>BUILDING_CAMPFIRE</Type>
-      <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
-      <Cost>22</Cost>
-      <GoldMaintenance>0</GoldMaintenance>
-      <PrereqTech>TECH_FIRE</PrereqTech>
-      <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
-      <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
-      <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
-      <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
-      <ArtDefineTag>MONUMENT</ArtDefineTag>
-      <Happiness>1</Happiness>
-      <MinAreaSize>-1</MinAreaSize>
-      <ConquestProb>66</ConquestProb>
-      <NeverCapture>true</NeverCapture>
-      <HurryCostModifier>40</HurryCostModifier>
-      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>2</PortraitIndex>
-    </Row>    
-    -->
-
-
-
-
-
-
+    <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
  
     <!-- TODO: shelters and sub-shelters types
@@ -3254,9 +3279,6 @@
     </Row>    
     -->
 
-
-
-
 ]]>
 
 
@@ -3302,8 +3324,6 @@
   ╚════════════════════════════════════════════════════════════════════════════╝
   -->
   <Buildings>
-
-
 
     <!-- TODO!!! -->
     <!-- Gain a free Palisade in all Cities after constructing the Palace -->
@@ -3502,6 +3522,19 @@
 
 
 
+
+
+
+
+
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING FREE SPECILIAS COUNTS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_FreeSpecialistCounts>
 
 
@@ -3514,7 +3547,14 @@
 
 
 
-
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING UNIT COMBAT FREE EXPERIENCE
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_UnitCombatFreeExperience>
 
 
@@ -3526,7 +3566,14 @@
 
 
 
-
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING UNIT COMBAT PRODUCTION MODIFIERS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_UnitCombatProductionModifers>
 
 
@@ -3538,6 +3585,14 @@
 
 
 
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING DOMAIN EXPERIENCE
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_DomainFreeExperiences>
 
 
@@ -3549,7 +3604,14 @@
 
 
 
-
+  <!--
+  ┌─────────────────────────────────────────────────────────────────────────────
+  │
+  │   BUILDING DOMAIN PRODUCTION MODIFIERS
+  │
+  │
+  └─────────────────────────────────────────────────────────────────────────────
+  --> 
   <Building_DomainProductionModifiers>
 
 
@@ -3580,15 +3642,12 @@
 
     <Row>
       <BuildingType>BUILDING_DUMMY_OPEN_SHELTER</BuildingType>
-      <BuildingClassType>BUILDING_OPEN_SHELTER</BuildingClassType>
+      <BuildingClassType>BUILDINGCLASS_OPEN_SHELTER</BuildingClassType>
       <YieldType>YIELD_FOOD</YieldType>
       <YieldChange>1</YieldChange>
     </Row>
 
   </Building_BuildingClassYieldChanges>
-
-
-
 
 
 
@@ -3634,8 +3693,7 @@
 
     <Row>
       <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <Yiel
-        dType>YIELD_PRODUCTION</YieldType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
       <Yield>1</Yield>
     </Row>
 

@@ -17,6 +17,40 @@ logger:info( "__FILE__ util/utils" )
 
 -- from IGE
 
+
+-----------------------------------------------------------------------------
+function Neighbors(plot)
+  local i = 0
+  local x = plot:GetX()
+  local y = plot:GetY()
+  return function()
+    while true do
+      if i > 5 then return nil end
+      local neighbor = Map.PlotDirection(x, y, i)
+      i = i + 1
+      if neighbor then return neighbor end
+    end
+  end
+end
+
+
+
+
+-----------------------------------------------------------------------------
+function Neighbors_Pre(plot, radius)
+
+  
+
+
+
+end
+
+
+
+
+
+
+
 -----------------------------------------------------------------------------
 local function GetClosestCity(player, plot)
   local newCity = nil;
@@ -151,7 +185,7 @@ for k, v in pairs(getmetatable(plot).__index) do print(k) end
 
 -- and some example objects:
 local plot = Map.GetPlot(0, 0)
-local player = Playesr[0]
+local player = Players[0]
 local unit = Players[0]:GetFirstReadyUnit()
 
 
@@ -187,10 +221,11 @@ for u in Players[0]:Units() do print(u:GetUnitType()) end
 
 
 -- inital setup for testing
-p =  Players[0]
-u =  p:GetFirstReadyUnit()
+player =  Players[0]
+team = player:GetTeam()
+unit =  player:GetFirstReadyUnit()
 x =  u:GetX()
-pl = u:GetPlot()
+plot = unit:GetPlot()
 
 
 
@@ -203,6 +238,12 @@ UnitBuildingPromotion = nil
 include("Units_Pre")
 
 
+
+
+-- plots 
+plot:SetRevealed(team, false)
+plot:UpdateFog()
+plot:IsVisible()
 
 
 

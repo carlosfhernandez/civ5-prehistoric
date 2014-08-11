@@ -346,7 +346,7 @@
   ║     - Dragoon
   ║     - Prodromoi
   ║     - Paeonian Cavalry
-  ║     - Thracian Cavary
+  ║     - Thracian Cavalry
   ║     - Achaean League
   ║     - Hetaoroi
   ║
@@ -494,6 +494,13 @@
   ║
   ║
   ╚═════════════════════════════════════════════════════════════════════════════
+  
+
+
+
+
+
+
   -->   
   <UnitClasses>
     
@@ -506,6 +513,12 @@
     80     640
     64     512
     45     360
+
+
+
+
+
+
 
     -->
     
@@ -2133,7 +2146,7 @@ UnitFlagAtlas
       <Cost>4</Cost>
       <Moves>1</Moves>
       <NoMaintenance>1</NoMaintenance>
-      <BaseSightRange>0</BaseSightRange>
+      <BaseSightRange>1</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -2206,6 +2219,7 @@ UnitFlagAtlas
       <Combat>7</Combat>
       <Cost>21</Cost>
       <Moves>2</Moves>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -2249,6 +2263,7 @@ UnitFlagAtlas
       <Combat>9</Combat>
       <Cost>32</Cost>
       <Moves>2</Moves>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -2311,6 +2326,7 @@ UnitFlagAtlas
       <Combat>5</Combat>
       <Cost>9</Cost>
       <Moves>1</Moves>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
@@ -2371,6 +2387,7 @@ UnitFlagAtlas
       <Combat>2</Combat>
       <Cost>5</Cost>
       <Moves>1</Moves>
+      <BaseSightRange>1</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
@@ -2404,6 +2421,7 @@ UnitFlagAtlas
       <Combat>4</Combat>
       <Cost>15</Cost>
       <Moves>2</Moves>
+      <BaseSightRange>0</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
@@ -2437,6 +2455,7 @@ UnitFlagAtlas
       <Combat>10</Combat>
       <Cost>55</Cost>
       <Moves>2</Moves>
+      <BaseSightRange>0</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
@@ -2530,6 +2549,7 @@ UnitFlagAtlas
       <Combat>6</Combat>
       <Cost>26</Cost>
       <Moves>3</Moves>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
@@ -2622,6 +2642,7 @@ UnitFlagAtlas
       <Combat>3</Combat>
       <Cost>8</Cost>
       <Moves>2</Moves>
+      <BaseSightRange>1</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_MELEE</CombatClass>
       <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -2784,6 +2805,7 @@ UnitFlagAtlas
       <Cost>6</Cost>
       <Moves>1</Moves>
       <Range>1</Range>
+      <BaseSightRange>0</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -2854,6 +2876,7 @@ UnitFlagAtlas
       <Cost>13</Cost>
       <Moves>2</Moves>
       <Range>2</Range>
+      <BaseSightRange>2</BaseSightRange>
       <HurryCostModifier>20</HurryCostModifier>
       <CombatClass>UNITCOMBAT_ARCHER</CombatClass>
       <DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
@@ -5986,20 +6009,74 @@ UnitFlagAtlas
       <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
     </Row>
 
+
+
+
     <Row>
-      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitType>UNIT_LOOKOUT</UnitType> <!-- BaseSight: 0 (-1) = -1 [plot vis, neighbors revealed but dark] -->
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
+    </Row>    
+
+    <Row>
+      <UnitType>UNIT_ROCK_THROWER</UnitType> <!-- BaseSight: 0 (-2) = -2 [plot + neighbors revealed and dark] -->
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHTLESS</PromotionType>
+    </Row>  
+
+
+    <Row>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType> <!-- BaseSight: 1 (-2) = -1 [plot vis, neighbors 1.5 revealed but dark -->
       <PromotionType>PROMOTION_PREHISTORIC_SIGHTLESS</PromotionType>
     </Row>
 
     <Row>
-      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitType>UNIT_AUTOCHTHON</UnitType> <!-- BaseSight: 1 (-1) = 0 [plot + neighbors 1.5 vis] -->
       <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
 
+
+
+
+
     <Row>
-      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitType>UNIT_BUSHMAN</UnitType> <!-- BaseSight: 1 (-3) = -2  -->
+      <PromotionType>PROMOTION_PREHISTORIC_DARKNESS</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_SLINGER</UnitType> <!-- BaseSight: 2 (-3) = -1  -->
+      <PromotionType>PROMOTION_PREHISTORIC_DARKNESS</PromotionType>
+    </Row>
+
+
+
+
+
+
+    <Row>
+      <UnitType>UNIT_CAVEMAN</UnitType> <!-- BaseSight: 2 (-2) = 0 [plot + neighbors vis, 2.5 revleaed dark] --> 
+      <PromotionType>PROMOTION_PREHISTORIC_SIGHTLESS</PromotionType>
+    </Row>
+
+    <Row>
+      <UnitType>UNIT_NEANDERTHAL</UnitType> <!-- BaseSight: 2 (-1) = 1 [plot + neighbors 1.5 vis, 2.5 revleaed dark] -->
       <PromotionType>PROMOTION_PREHISTORIC_SIGHT</PromotionType>
     </Row>
+
+
+
+    <Row>
+      <UnitType>UNIT_RAIDER</UnitType> <!-- BaseSight: 2 -->
+      <PromotionType>PROMOTION_PREHISTORIC_MAPPING</PromotionType>
+    </Row> 
+
+    <!--
+      Protector:  BaseSight: 2 [plot + neighbors 2.5 vis]
+      Watcher:    BaseSight: 1 [plot + neighbors 1.5 vis]
+      Sentinel:   BaseSight: 0 [plot + neighbors vis]
+    -->
+
+
+
 
     <Row>
       <UnitType>UNIT_SETTLER</UnitType>

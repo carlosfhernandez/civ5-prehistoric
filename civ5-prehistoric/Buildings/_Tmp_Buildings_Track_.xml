@@ -1,0 +1,201 @@
+<!--
+
+..............................................................................
+
+_        Not done
+/        Half done or so
+X        Done for now
+M        Almost done - needs modification
+V        Needs validation
++Soc     Convert gold to Society
++Exp     Add expiration and need to rebuild
+-Hap     Ability to "spend" Happiness
++Bon     Unit Bonus
+()       Must be done
+[]       Potential release additions
+{}       Future release
+
+..............................................................................
+
+
+                   XV    Todo Future
+1
+!TREE_OF_LIFE
+TREE               X     +Soc; +Exp; -Hap
+
+4
+LOOKOUT_ROCK       XV    +Bon +1 Vis
+
+Lower Paleolithic
+
+5
+SPRING_SOURCE      XV    +Bon +1 Mov
+GOLDEN_PATH        _     (Increase access distance to resources)
+
+6
+STONE_PILE         XV    +Bon +10% Attack [ Stone: storage bigger; +1 Prod; Extra Def STONE_WALL ]
+*GRAND_OVERLOOK    _     (New Capitol with bonuses)
+OVERLOOK           _     (+1 city vis range if able to reduce initial city vis)
+CHERT_DEPOSIT      _     (+Bon range units; +1 Gold/Soc? )
+GATHERING_CIRCLE   XV    +1 Hap {Stage 1 Belief}
+
+7
+BONE_PILE          /V    +Bon Combat [ ? ]
+OPEN_SHELTER       /V    +1 Food (+2 if near? open plains) [early founders don't take away pop]
+PORTABLE_GRASS_SHE /V    +1 Mov founding units (increase distance founding units)
+ADVANCED_SHELTER   _     [multiple subtypes based on terrain with different bonuses]
+*ALPHAS_CAVE       _     ?
+
+Paleolithic
+
+8
+CAUSEWAY           ?     (? marsh bonus) 
+WATERPROOF_HUT     _     (? jungle bonus) {defense against natural elements}
+RUBBLE_WALL        XV    + city defense; +Bon slinger; <consider the effect of declaring this a city wall in xml>
+WATER_STORAGE      XV    + pop; + food kept 5%; [?]
+*CHIEF_UPGRADE     /V    +1 Hap; (?) {+Soc}
+BURIAL_SITE        /V    +1 Hap; (?)
+
+9
+HUNTING_TRAILS     /V    +1 gold truffles; (hunting and hinting resources bonuses -or- improvement bonus)
+CAMPFIRE           XV    no maint; +1 Hap; +25% food increase for plot
+HIDEOUT            /V    Def+100; (allow building of hideouts within X tiles of city "forts")
+MIDDEN             XV    +5% food growth; [?]
+STORAGE_PIT        XV    +5% food storage; [?]
+LOOKOUT_TREE       _     (extra city sight)(?); [improvemnt: built on forest to provide same hill visibility]
+GREAT_ROCK         _     (belief or bonuses for certain troops)
+*CHIEFTAINS_HUT    _     *
+NOMADIC_CAMP       _     (possible quicker settling unit or different type - perhaps no pop loss)
+
+Neolithic
+
+10
+MEAT_RACK          XV    +1 Food
+HIDE_RACK          XV    +Bon hide armor for troops
+TREE_STAND         _     (an improvement on the lookout tree)
+FIRE_PIT           /V    <prereq:resource> (+5% or more food storage)
+WARDS              _     (some sort of moral boost for units near or in city)
+*LUXURY_HUT        _      *
+VILLAGE_ALERT      _     (detection of barbarians even in dark areas -- popup alert)
+PICKET             _     (city defense; bonus against troop type)
+EARTHEN_WALL       /V    (city defense; bonus agsinst troop type)[?]
+
+11
+BEAD_MAKER         _     (belief ...)
+BLUBBER_WORKER     _     _
+FOOD_STORAGE       XV    +1 food
+DEFENSIVE_DITCHES  _     (city defense; bonus against troops)(?)
+*PALACE            M     
+
+12
+@SHRINE
+@-PYRAMID
+ROCK_PAINTINGS     XV    Cul+1
+PALISADE           XV    Def+200
+
+
+
+GENERAL MECHANICS TODO:
+- Founders take away pop
+- City reduce vis
+- No city early game -- Leaders
+- Units health reduces at distance from capitol
+- Different capitols expand health distance
+
+
+
+
+  ║                                                                            ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║ Progression                                                                ║
+  ╟────────────────────────────────────────────────────────────────────────────╢
+  ║
+  ║
+  ║
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     PREHISTORIC
+  ╟────────────────────────────────────────────────────────────────────────────────────────────
+  ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH
+  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
+  ║                        |   |   |   |     |     |                                           
+  ║ 1 - - - - - - -        |   |   |   |     |     |                                           
+  ║ TREE                   |   |   |   |     |     |                                           
+  ║ 4 - - - - - - -        |   |   |   |     |     |                                           
+  ║ LOOKOUT_ROCK           |   |   |   |     |     |                                           
+  ║                        |   |   |   |     |     |                                           
+  ║
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     LOWER PALEOLITHIC
+  ╟────────────────────────────────────────────────────────────────────────────────────────────
+  ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH
+  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────  
+  ║ 5 - - - - - - -        |   |   |   |     |     |                                           
+  ║ SPRING_SOURCE          |   |   |   |     |     |                               
+  ║ GOLDEN_PATH            |   |   |   |     |     |                               
+  ║ 6 - - - - - - -        |   |   |   |     |     |                                           
+  ║ STONE_PILE             |   |   |   |     |     |                               
+  ║ GRAND_OVERLOOK         |   |   |   |     |     |                                           
+  ║ OVERLOOK               |   |   |   |     |     |                                           
+  ║ CHERT_DEPOSIT          |   |   |   |     |     |                                           
+  ║ GATHERING_CIRCLE       |   |   |   |     |     |                                           
+  ║ 7 - - - - - - -        |   |   |   |     |     |                                           
+  ║ BONE_PILE              |   |   |   |     |     |                                           
+  ║ OPEN_SHELTER           |   |   |   |     |     |                                           
+  ║ PORTABLE_GRASS_S       |   |   |   |     |     |                                           
+  ║ ADVANCED_SHELTER       |   |   |   |     |     |                                           
+  ║ *ALPHAS_CAVE           |   |   |   |     |     |                                           
+  ║                        |   |   |   |     |     |                                           
+  ║                                                                                            
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     PALEOLITHIC            
+  ╟────────────────────────────────────────────────────────────────────────────────────────────
+  ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH           
+  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────  
+  ║ 8 - - - - - - -        |   |   |   |     |     |                                           
+  ║ CAUSEWAY               |   |   |   |     |     |                    PAL COMPLEX_TOOOLS
+  ║ WATERPROOF_HUT         |   |   |   |     |     |                                           
+  ║ RUBBLE_WALL            |   |   |   |     |     |                                           
+  ║ WATER_STORAGE          |   |   |   |     |     |                                           
+  ║ *CHIEF_UPGRADE         |   |   |   |     |     |                                           
+  ║ BURIAL_SITE            |   |   |   |     |     |                                           
+  ║ 9 - - - - - - -        |   |   |   |     |     |                                           
+  ║ HUNTING_TRAILS         |   |   |   |     |     |                                           
+  ║ CAMPFIRE               |   |   |   |     |     |                                           
+  ║ HIDEOUT                |   |   |   |     |     |                                           
+  ║ MIDDEN                 |   |   |   |     |     |                                           
+  ║ STORAGE_PIT            |   |   |   |     |     |                                           
+  ║ LOOKOUT_TREE           |   |   |   |     |     |                                           
+  ║ GREAT_ROCK             |   |   |   |     |     |                                           
+  ║ *CHIEFTAINS_HUT        |   |   |   |     |     |                                           
+  ║ NOMADIC_CAMP           |   |   |   |     |     |                                           
+  ║                        |   |   |   |     |     |                                           
+  ║                                                                                            
+  ╟──────────────────────────────────────────────────────────────────────────────────────────── 
+  ║                                                                     NEOLITHIC              
+  ╟────────────────────────────────────────────────────────────────────────────────────────────
+  ║ BUILDING         COST M|C|F|Z|H|S|P|W G  |D|+HP|BONUS               ERA PRE TECH           
+  ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ─────────────────── 
+  ║ 10- - - - - - -        |   |   |   |     |     |                                           
+  ║ MEAT_RACK              |   |   |   |     |     |                                           
+  ║ HIDE_RACK              |   |   |   |     |     |                                           
+  ║ TREE_STAND             |   |   |   |     |     |                                           
+  ║ FIREPIT                |   |   |   |     |     |                                           
+  ║ WARDS                  |   |   |   |     |     |                                           
+  ║ VILLAGE_ALERT          |   |   |   |     |     |                                           
+  ║ PICKET                 |   |   |   |     |     |                                           
+  ║ EARTHEN_WALL           |   |   |   |     |     |                                           
+  ║ 11- - - - - - -        |   |   |   |     |     |                                           
+  ║ BEAD_MAKER             |   |   |   |     |     |                                           
+  ║ BLUBBER_WORKER         |   |   |   |     |     |                                           
+  ║ FOOD_STORAGE           |   |   |   |     |     |                               
+  ║ DEFENSIVE_DITCHES      |   |   |   |     |     |                                           
+  ║ *PALACE                |   |   |   |     |     |                               
+  ║ 12- - - - - - -        |   |   |   |     |     |                                           
+  ║ @SHRINE                |   |   |   |     |     |                    NEO IDOLS
+  ║ @-PYRAMID              |   |   |   |     |     |                    NEO IDOLS
+  ║ ROCK_PAINTING          |   |   |   |     |     |                               
+  ║ PALISADE               |   |   |   |     |     |                               
+  ║                        |   |   |   |     |     |                               
+  ║                                                                                            
+-->
+

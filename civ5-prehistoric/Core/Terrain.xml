@@ -3,6 +3,36 @@
 <GameData>
 
 
+  <!-- NEW TERRAINS -->
+  
+  <Terrains>
+    <Row>
+      <Type>TERRAIN_BADLANDS</Type>
+      <Description>Badlands</Description>
+      <Civilopedia>There are the badlands</Civilopedia>
+      <ArtDefineTag>ART_DEF_TERRAIN_SNOW</ArtDefineTag>
+      <Water>0</Water>
+      <Impassable>0</Impassable>
+      <Found>1</Found>
+      <FoundCoast>0</FoundCoast>
+      <FoundFreshWater>0</FoundFreshWater>
+      <Movement>1</Movement>
+      <SeeFrom>1</SeeFrom>
+      <SeeThrough>1</SeeThrough>
+      <BuildModifier>0</BuildModifier>
+      <Defense>0</Defense>
+      <Influence>0</Influence>
+      <Button>Art/Interface\Buttons\WorldBuilder\Terrain_Ice.dds</Button>
+      <WorldSoundScapeAudioBuilder>ASSS_AMBIENCE_TUNDRA</WorldSoundScapeAudioBuilder>
+      <GraphicalOnly>0</GraphicalOnly>
+      <PortrainIndex>15</PortrainIndex>
+      <EffectTypeTag>DIRT</EffectTypeTag>
+      <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+    </Row>
+  </Terrains>
+
+
+
   <!-- Desert -->
   
   <!-- FakeFeatures -->
