@@ -358,7 +358,11 @@ UPDATE Buildings
 SET PrereqTech='TECH_MASONRY'
 WHERE BuildingClass='BUILDINGCLASS_MONUMENT';
 
-
+-- ensure missing building or non prehistoric buildings (possible added by
+-- other mods) are not able to be built until ancient
+UPDATE Buildings 
+SET PrereqTech='TECH_AGRICULTURE' 
+WHERE PrereqTech IS NULL or PrereqTech = ''
 
 
 

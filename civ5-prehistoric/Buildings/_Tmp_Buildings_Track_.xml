@@ -20,7 +20,7 @@ V        Needs validation
 
                    XV    Todo Future
 1
-!TREE_OF_LIFE
+*TREE_OF_LIFE      XV    +2Gol  
 TREE               X     +Soc; +Exp; -Hap
 
 4
@@ -119,6 +119,7 @@ GENERAL MECHANICS TODO:
   ║ ──────────────── ──── ─|─|─|─|─|─|─|     |─|───|─────────────────── ─── ───────────────────
   ║                        |   |   |   |     |     |                                           
   ║ 1 - - - - - - -        |   |   |   |     |     |                                           
+  ║ *TREE_OF_LIFE          |   |   |   |     |     |                                           
   ║ TREE                   |   |   |   |     |     |                                           
   ║ 4 - - - - - - -        |   |   |   |     |     |                                           
   ║ LOOKOUT_ROCK           |   |   |   |     |     |                                           

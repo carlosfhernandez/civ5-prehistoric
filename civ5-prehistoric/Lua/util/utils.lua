@@ -220,6 +220,12 @@ for u in Players[0]:Units() do print(u:GetUnitType()) end
 
 
 
+-- list or get cities from player
+-- this is the only way that is working for me so far:
+c = p:GetCityByID(0)
+
+
+
 -- inital setup for testing
 player =  Players[0]
 team = player:GetTeam()
@@ -241,6 +247,8 @@ include("Units_Pre")
 
 
 -- plots 
+pl = Map.GetPlot( x, y )
+
 plot:SetRevealed(team, false)
 plot:UpdateFog()
 plot:IsVisible()

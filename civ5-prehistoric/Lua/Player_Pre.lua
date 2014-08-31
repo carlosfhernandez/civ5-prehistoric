@@ -26,17 +26,31 @@ player:Cities()
 --]]
 
 
+
+logger.PREFIX = "player"
+
+logger:info( "" )
+logger:info( "__FILE__ Player_Pre" )
+
+
 GameEvents.PlayerDoTurn.Add(function(iPlayer) 
 
-  local pPlayer =     Players[iPlayer];
-  local bIsHuman =    pPlayer:IsHuman();
-  local iHappiness =  pPlayer:GetExcessHappiness();
-  local iTotalGold =  pPlayer:GetGold();
-  local pCapital =    pPlayer:GetCapitalCity();
+  logger:debug( "[PlayerDoTurn]" )
+
+  local pPlayer =     Players[iPlayer]
+  local bIsHuman =    pPlayer:IsHuman()
+  local iHappiness =  pPlayer:GetExcessHappiness()
+  local iTotalGold =  pPlayer:GetGold()
+  local pCapital =    pPlayer:GetCapitalCity()
+
+  local iTurn =        Game:GetGameTurn()
 
 
+  if ( iTurn == 5 ) then -- TODO: remove hard-coded number into global options
+    logger:debug( "free unit adding..." )
+    pPlayer:AddFreeUnit (GameInfo.Units["UNIT_SETTLER"].ID, UNITAI_SETTLE)
 
-
+  end
 
 
 

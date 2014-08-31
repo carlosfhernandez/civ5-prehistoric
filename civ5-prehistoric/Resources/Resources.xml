@@ -440,6 +440,11 @@
   -->
   
   <Resource_QuantityTypes>
+
+
+    <!--  Dummy resources for individual tile enhancements. May also need
+          to look at just modifying tile itself and saving it (if possible) -->
+
     <Row>
       <ResourceType>RESOURCE_DUMMY_PRODUCTION</ResourceType>
       <Quantity>1</Quantity>

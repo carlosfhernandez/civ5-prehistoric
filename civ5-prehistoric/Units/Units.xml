@@ -174,7 +174,7 @@
   ╟───Greats
   ║
   ║   - UNITCLASS_GREAT_LEADER
-  ║
+  ║   - UNITCLASS_GREAT_ELDER
   ║
   ║
   ║
@@ -197,6 +197,15 @@
   ║     - UNITCLASS_GATHERER
   ║     - UNITCLASS_LABORER
   ║   
+  ║   - Religious
+  ║
+  ║
+  ║   - Society
+  ║     - UNITCLASS_ANCIENT
+  ║     - UNITCLASS_ELDER
+  ║
+  ║
+  ║
   ║
   ║
   ║
@@ -478,6 +487,9 @@
   ║
   ║
   ║
+  ╟───Temporary
+  ║
+  ║     - UNITCLASS_TMP_TREE_SETTLER
   ║
   ║
   ║
@@ -530,7 +542,7 @@
 
 
 
-    <!-- || Great Leaders || -->
+    <!-- || Greats || -->
 
     <Row>
       <Type>UNITCLASS_GREAT_LEADER</Type>
@@ -538,7 +550,11 @@
       <DefaultUnit>UNIT_GREAT_LEADER</DefaultUnit>
     </Row>
 
-
+    <Row>
+      <Type>UNITCLASS_GREAT_ELDER</Type>
+      <Description>TXT_KEY_UNIT_GREAT_ELDER_TITLE</Description>
+      <DefaultUnit>UNIT_GREAT_ELDER</DefaultUnit>
+    </Row>
 
 
 
@@ -951,6 +967,33 @@
 
 
 
+
+    <!-- || Temporary || -->
+
+
+    <Row>
+      <Type>UNITCLASS_TMP_TREE_SETTLER</Type>
+      <Description>Temp Tree Settler</Description>
+      <DefaultUnit>UNIT_TMP_TREE_SETTLER</DefaultUnit>
+    </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● -->
 
 
@@ -1052,6 +1095,9 @@
   ║                                                                            ║
   ║   - UNITCLASS_GREAT_LEADER                                                 ║
   ║     + UNIT_GREAT_LEADER                                                    ║
+  ║   - UNITCLASS_GREAT_ELDER                                                  ║
+  ║     + UNIT_GREAT_ELDER                                                     ║
+  ║                                                                            ║
   ║                                                                            ║
   ║                                                                            ║
   ╟────────────────────────────────────                                        ║
@@ -1303,11 +1349,21 @@
   ║
   ║
   ║
+  ║
+  ║   - Testing:
+  ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+  ║     - UNIT_TMP_TREE_SETTLER
+  ║
+  ║
+  ║
+  ║
+  ║
   ║   - Testing:
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNIT_SCOUT_ONE
   ║     - UNIT_SCOUT_TWO
   ║     - UNIT_SCOUT_THREE
+  ║
   ║
   ║
   ║
@@ -1342,6 +1398,7 @@
   ║
   ║
   ║ UNIT          CMBT RCBT RNG COST MOVE             OCBT OCST
+  ║ TMP_TREE_SETTLER
   ║ TRIBE_SPLIT 
   ║ SETTLER 
   ║ 
@@ -1682,13 +1739,14 @@ UnitFlagAtlas
     │ Greats:
     │
     │   Great Leaders
+    │     - early game simulated "settlement"
     │     - provide bonuses similar to Great General
     │     - can also battle
     │     - some can settle
     │     - cannot be built, but can be earned [TODO]
     │
-    │   Elder
-    │
+    │   Great Elder
+    │     - early unit for building "Society"
     │
     │
     │
@@ -1729,8 +1787,8 @@ UnitFlagAtlas
 
     <!-- Elder -->
     <Row>
-      <Class>UNITCLASS_ELDER</Class>
-      <Type>UNIT_ELDER</Type>
+      <Class>UNITCLASS_GREAT_ELDER</Class>
+      <Type>UNIT_GREAT_ELDER</Type>
       <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Cost>-1</Cost>
       <Moves>2</Moves>
@@ -1740,10 +1798,10 @@ UnitFlagAtlas
       <HurryCostModifier>-1</HurryCostModifier>
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
-      <Description>TXT_KEY_UNIT_ELDER_DESC</Description>
-      <Help>TXT_KEY_UNIT_ELDER_STRATEGY</Help>
-      <Strategy>TXT_KEY_UNIT_ELDER_STRATEGY</Strategy>
-      <Civilopedia>TXT_KEY_UNIT_ELDER_PEDIA</Civilopedia>
+      <Description>TXT_KEY_UNIT_GREAT_ELDER_DESC</Description>
+      <Help>TXT_KEY_UNIT_GREAT_ELDER_STRATEGY</Help>
+      <Strategy>TXT_KEY_UNIT_GREAT_ELDER_STRATEGY</Strategy>
+      <Civilopedia>TXT_KEY_UNIT_GREAT_ELDER_PEDIA</Civilopedia>
       <AdvancedStartCost>-1</AdvancedStartCost>
       <WorkRate>1</WorkRate>
       <CombatLimit>0</CombatLimit>
@@ -1951,6 +2009,32 @@ UnitFlagAtlas
     ¦ Settle
     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     -->
+
+
+    <!-- UNIT_TMP_TREE_SETTLER -->
+    <Row>
+      <Class>UNITCLASS_TMP_TREE_SETTLER</Class>
+      <Type>UNIT_TMP_TREE_SETTLER</Type>
+      <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech> <!-- temporary tech position -->
+      <Moves>1</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_TMP_TREE_SETTLER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_TMP_TREE_SETTLER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_TMP_TREE_SETTLER_HELP</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>0</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>63</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+    </Row>  
 
 
     <!-- UNIT_TRIBE_SPLIT -->
@@ -4726,6 +4810,12 @@ UnitFlagAtlas
 
     <!-- | Settle | -->
 
+    <!-- UNIT_TMP_TREE_SETTLER -->
+    <Row>
+      <UnitType>UNIT_TMP_TREE_SETTLER</UnitType>
+      <UnitAIType>UNITAI_SETTLE</UnitAIType>
+    </Row> 
+
     <!-- UNIT_TRIBE_SPLIT -->
     <Row>
       <UnitType>UNIT_TRIBE_SPLIT</UnitType>
@@ -5345,6 +5435,14 @@ UnitFlagAtlas
 
 
     <!-- | Settle | -->
+
+
+    <!-- UNIT_TMP_TREE_SETTLER -->
+    <Row>
+      <UnitType>UNIT_TMP_TREE_SETTLER</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>8</Flavor>
+    </Row> 
 
     <!-- UNIT_TRIBE_SPLIT -->
     <Row>
@@ -6712,6 +6810,23 @@ UnitFlagAtlas
     ¦ Settle
     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     -->
+
+    <!-- UNIT_TMP_TREE_SETTLER -->
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_TITLE">
+      <Text>Tree Settler (temp unit)</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_DESC">
+      <Text>Tree Settler (temp unit)</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA">
+      <Text>Early man did not settle. This unit is here because gameplay hasn't been finished to allow for a "settlement-less" era. In the meantime, your settlements will be VERY limited in size.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_STRATEGY">
+      <Text>Settle early. Don't wait.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_HELP">
+      <Text>A temporary placeholder unit for settling early in the game.</Text>
+    </Row>
 
     <!-- UNIT_TRIBE_SPLIT -->
     <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_TITLE">
