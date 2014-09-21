@@ -199,7 +199,6 @@ local unit = Players[0]:GetFirstReadyUnit()
 ?? for k,v in pairs(GameInfo.Units) do print(k) end
 
 
-
 -- list all current global DEFINES
 for row in GameInfo.Defines() do print(row.Name .. " : " .. row.Value) end
 
@@ -249,9 +248,9 @@ include("Units_Pre")
 -- plots 
 pl = Map.GetPlot( x, y )
 
-plot:SetRevealed(team, false)
-plot:UpdateFog()
-plot:IsVisible()
+pl:SetRevealed(team, false)
+pl:UpdateFog()
+pl:IsVisible()
 
 
 

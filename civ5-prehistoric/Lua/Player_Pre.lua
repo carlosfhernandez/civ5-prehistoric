@@ -43,12 +43,12 @@ GameEvents.PlayerDoTurn.Add(function(iPlayer)
   local iTotalGold =  pPlayer:GetGold()
   local pCapital =    pPlayer:GetCapitalCity()
 
-  local iTurn =        Game:GetGameTurn()
+  local iTurn =       Game:GetGameTurn()
 
 
   if ( iTurn == 5 ) then -- TODO: remove hard-coded number into global options
     logger:debug( "free unit adding..." )
-    pPlayer:AddFreeUnit (GameInfo.Units["UNIT_SETTLER"].ID, UNITAI_SETTLE)
+    pPlayer:AddFreeUnit (GameInfo.Units["UNIT_TMP_TREE_SETTLER"].ID, UNITAI_SETTLE)
 
   end
 

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW) (v0.3.0e-100-preview)</Name>
+    <Name>!Prehistoric Era (BNW) (v0.3.0-experimental-100)[preview]</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
     <ModVersion>100</ModVersion>
     <Stability>Experimental</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0e-100-preview)[ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]This is a non-(semi)-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0e-100-experimental)[preview][ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]emi-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
     <Description>This mod adds millions of years of human history with many new eras going back to the dawn of man.
 
 THIS IS A NON-(SEMI)-FUNCTIONAL PREVIEW (EXPERIMENTAL) RELEASE ONLY! IT IS FOR DEBUGGING PURPOSES AND FOR THOSE THAT WANT TO HELP. 
@@ -34,8 +34,7 @@ This is still in Alpha (and Preview). I will fix problems as soon as I can. Let 
 
 __ UPGRADE __
 
-You may need to delete the mod cache to make this upgrade work. I had to do this once in order to get the new graphics to works.
-</Description>
+You may need to delete the mod cache to make this upgrade work. I had to do this once in order to get the new graphics to works.</Description>
     <Authors>Apshai (CarlosCodex)</Authors>
     <SpecialThanks>Muppets and CivFanatics</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -242,7 +241,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
-    <Homepage>https://github.com/carlosfhernandez/civ5-prehistoric</Homepage>
+    <Homepage>http://https://github.com/carlosfhernandez/civ5-prehistoric</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>

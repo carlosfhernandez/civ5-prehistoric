@@ -61,7 +61,7 @@ THIS_IS_DEFINE_WITH_A_VERY_VERY_VERY_LARGE_NAME     1234 [123] {  3} A very larg
                                    | |  | |    |    |    |
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 VALUE STOPS:                     [X*]XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX where [X*] is optional digits as long as they don't overrun the NAME
-(Yes, this is overkill documentation formatting but being bipolar sometimes I get very focused on this stuff)
+(Yes, this is overkill documentation formatting but being bipolar sometimes I get very focused on this stuff.)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 */

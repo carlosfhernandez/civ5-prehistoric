@@ -182,6 +182,7 @@
   ║
   ║   - UNITCLASS_ALPHA
   ║   - UNITCLASS_PATRIARCH
+  ║   - UNITCLASS_TRIBE_LEADER (sa)
   ║   - UNITCLASS_CHIEF
   ║
   ║
@@ -190,7 +191,7 @@
   ║
   ║   - Settle
   ║
-  ║     - UNITCLASS_TRIBE_SPLIT
+  ║     - UNITCLASS_TRIBE_SPLIT (ss)
   ║   
   ║   - Work
   ║
@@ -299,7 +300,7 @@
   ║
   ║     - UNITCLASS_SAVAGE
   ║     - UNITCLASS_BRUISER ***
-  ║     - UNITCLASS_BRUTE
+  ║     - UNITCLASS_BRUTE *~
   ║     - UNITCLASS_WARMONGER ***
   ║     - UNITCLASS_BATTERING_RAM ***
   ║     - UNITCLASS_SWINGING_RAM *** 
@@ -505,6 +506,28 @@
   ║
   ║
   ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║ (sa) can settle abroad
+  ║ (ss) can settle by splitting from settlement (-pop)
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║
   ╚═════════════════════════════════════════════════════════════════════════════
   
 
@@ -699,6 +722,11 @@
 
     <!-- || Foot Defense || -->
 
+    <Row>
+      <Type>UNITCLASS_VILLAGE_GUARD</Type>
+      <Description>TXT_KEY_UNIT_VILLAGE_GUARD_TITLE</Description>
+      <DefaultUnit>UNIT_VILLAGE_GUARD</DefaultUnit>
+    </Row> 
 
     <Row>
       <Type>UNITCLASS_PROTECTOR</Type>
@@ -799,11 +827,23 @@
       <DefaultUnit>UNIT_SAVAGE</DefaultUnit>
     </Row> 
 
+    <Row>
+      <Type>UNITCLASS_BRUISER</Type>
+      <Description>TXT_KEY_UNIT_BRUISER_TITLE</Description>
+      <DefaultUnit>UNIT_BRUISER</DefaultUnit>
+    </Row> 
 
+    <Row>
+      <Type>UNITCLASS_BRUTE</Type>
+      <Description>TXT_KEY_UNIT_BRUTE_TITLE</Description>
+      <DefaultUnit>UNIT_BRUTE</DefaultUnit>
+    </Row> 
 
-
-
-
+    <Row>
+      <Type>UNITCLASS_WARMONGER</Type>
+      <Description>TXT_KEY_UNIT_WARMONGER_TITLE</Description>
+      <DefaultUnit>UNIT_WARMONGER</DefaultUnit>
+    </Row> 
 
 
 
@@ -1219,6 +1259,12 @@
   ║     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
   ║     - UNITCLASS_SAVAGE
   ║       + UNIT_SAVAGE
+  ║     - UNITCLASS_BRUISER
+  ║       + UNIT_BRUISER
+  ║     - UNITCLASS_BRUTE
+  ║       + UNIT_BRUTE
+  ║     - UNITCLASS_WARMONGER
+  ║       + UNIT_WARMONGER
   ║
   ║
   ║
@@ -1394,21 +1440,27 @@
   ║
   ║
   ║
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ ELDER  
   ║
   ║
   ║
   ║ UNIT          CMBT RCBT RNG COST MOVE             OCBT OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____  
   ║ TMP_TREE_SETTLER
   ║ TRIBE_SPLIT 
   ║ SETTLER 
   ║ 
   ║ 
+  ║
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ GATHERER
   ║ LABORER
   ║ WORKER           0         110    2
   ║  
+  ║
   ║  
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
@@ -1417,6 +1469,13 @@
   ║ MATRIARCH
   ║ CHIEF
   ║ 
+  ║
+  ║  
+  ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
+  ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
+  ║ ELDER  
+  ║ 
+  ║
   ║ 
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
@@ -1453,6 +1512,20 @@
   ║ 
   ║
   ║ EXPLORER        08          65
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║ TBD
+  ║ ______________________________________
+  ║ BRUISER
+  ║ BRUTE
+  ║ WARMONGER
+  ║ VILLAGE_GUARD
+  ║
+  ║
+  ║
   ║
   ║
   ║ 
@@ -1556,144 +1629,6 @@
   
 
 
-  
-
-  Combat, RangedCombat, Cost, FaithCost, RequiresFaithPurchaseEnabled, 
-  PurchaseOnly, MoveAfterPurchase, Moves, Immobile, Range, BaseSightRange, Food, 
-  NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, 
-  PillagePrereqTech, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, 
-  FreePolicies, OneShotTourism, OneShotTourismPercentOthers, 
-  IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, 
-  CaptureWhileEmbarked, "PrereqTech TECH_*", "ObsoleteTech TECH_*", 
-  GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, 
-  AirInterceptRange, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, 
-  BaseBeakersTurnsToCount, BaseCultureTurnsToCount, RushBuilding, BaseHurry, 
-  HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, RemoveHeresy, 
-  ReligionSpreads, ReligiousStrength, FoundReligion, RequiresEnhancedReligion, 
-  ProhibitsSpread, CanBuyCityState, CombatLimit, RangeAttackOnlyInDomain, 
-  RangeAttackIgnoreLOS, Trade, NumExoticGoods, PolicyType, RangedCombatLimit, 
-  XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, 
-  ExtraMaintenanceCost, NoMaintenance, Unhappiness, 
-  "UnitArtInfo ART_DEF_UNIT_*", UnitArtInfoCulturalVariation, 
-  UnitArtInfoEraVariation, "ProjectPrereq PROJECT_*", 
-  "SpaceshipProject PROJECT_*", LeaderPromotion, LeaderExperience, 
-  DontShowYields, ShowInPedia, MoveRate
-
-
-
-ID
-Type
-Class
-
-CombatClass
-
-Domain
-
-DefaultUnitAI
-
-Requirements
-Special
-
-Capture
-CivilianAttackPriority
-
-Combat
-RangedCombat
-
-
-Cost
-FaithCost
-RequiresFaithPurchaseEnabled
-PurchaseOnly
-MoveAfterPurchase
-
-Moves
-Immobile
-Range
-
-
-BaseSightRange
-
-
-Food
-NoBadGoodies
-RivalTerritory
-MilitarySupport
-MilitaryProduction
-Pillage
-PillagePrereqTech
-Found
-FoundAbroad
-CultureBombRadius
-GoldenAgeTurns
-FreePolicies
-OneShotTourism
-OneShotTourismPercentOthers
-IgnoreBuildingDefense
-PrereqResources
-Mechanized
-Suicide
-CaptureWhileEmbarked
-PrereqTech
-ObsoleteTech
-GoodyHutUpgradeUnitClass
-HurryCostModifier
-AdvancedStartCost
-MinAreaSize
-AirInterceptRange
-AirUnitCap
-NukeDamageLevel
-WorkRate
-NumFreeTechs
-BaseBeakersTurnsToCount
-BaseCultureTurnsToCount
-RushBuilding
-BaseHurry
-HurryMultiplier
-BaseGold
-NumGoldPerEra
-SpreadReligion
-RemoveHeresy
-ReligionSpreads
-ReligiousStrength
-FoundReligion
-RequiresEnhancedReligion
-ProhibitsSpread
-CanBuyCityState
-CombatLimit
-RangeAttackOnlyInDomain
-RangeAttackIgnoreLOS
-Trade
-NumExoticGoods
-PolicyType
-RangedCombatLimit
-XPValueAttack
-XPValueDefense
-SpecialCargo
-DomainCargo
-Conscription
-ExtraMaintenanceCost
-NoMaintenance
-Unhappiness
-UnitArtInfo
-UnitArtInfoCulturalVariation
-UnitArtInfoEraVariation
-ProjectPrereq
-SpaceshipProject
-LeaderPromotion
-LeaderExperience
-DontShowYields
-ShowInPedia
-MoveRate
-UnitFlagIconOffset
-PortraitIndex
-IconAtlas
-Civilopedia
-Strategy
-Help
-UnitFlagAtlas
-
-
 
   -->    
   <Units>
@@ -1710,13 +1645,14 @@ UnitFlagAtlas
     (pending)
     - patriarch
     - wanderer
+    - tribe leader
     - nomad wanderer
     - slinger
     - chief
     - neanderthal
     - outrider
     - harbinger
-
+    - village guard
 
     -->
 
@@ -1931,13 +1867,6 @@ UnitFlagAtlas
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
-
-
-
-
-
-
-
 
 
 
@@ -2846,11 +2775,101 @@ UnitFlagAtlas
       <PortraitIndex>20</PortraitIndex>
     </Row> 
 
+    <!-- UNIT_BRUISER -->
+    <Row>
+      <Class>UNITCLASS_BRUISER</Class>
+      <Type>UNIT_BRUISER</Type>
+      <PrereqTech>TECH_FUTURE_TECH</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>14</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_BRUISER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_BRUISER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_BRUISER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_BRUISER_HELP</Help>      
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BRUISER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>20</PortraitIndex>
+    </Row> 
 
+    <!-- UNIT_BRUTE -->
+    <Row>
+      <Class>UNITCLASS_BRUTE</Class>
+      <Type>UNIT_BRUTE</Type>
+      <PrereqTech>TECH_FUTURE_TECH</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>14</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_BRUTE_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_BRUTE_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_BRUTE_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_BRUTE_HELP</Help>      
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_BRUTE</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>20</PortraitIndex>
+    </Row> 
 
-
-
-
+    <!-- UNIT_WARMONGER -->
+    <Row>
+      <Class>UNITCLASS_WARMONGER</Class>
+      <Type>UNIT_WARMONGER</Type>
+      <PrereqTech>TECH_FUTURE_TECH2</PrereqTech>
+      <Combat>5</Combat>
+      <Cost>14</Cost>
+      <Moves>2</Moves>
+      <HurryCostModifier>20</HurryCostModifier>
+      <CombatClass>UNITCOMBAT_MELEE</CombatClass>
+      <DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+      <Domain>DOMAIN_LAND</Domain>
+      <Description>TXT_KEY_UNIT_WARMONGER_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_WARMONGER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_WARMONGER_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_WARMONGER_HELP</Help>      
+      <MilitarySupport>true</MilitarySupport>
+      <MilitaryProduction>true</MilitaryProduction>
+      <Pillage>true</Pillage>
+      <ObsoleteTech>TECH_MATHEMATICS</ObsoleteTech>
+      <GoodyHutUpgradeUnitClass>UNITCLASS_CAVEMAN</GoodyHutUpgradeUnitClass>
+      <AdvancedStartCost>10</AdvancedStartCost>
+      <XPValueAttack>3</XPValueAttack>
+      <XPValueDefense>3</XPValueDefense>
+      <Conscription>1</Conscription>
+      <UnitArtInfo>ART_DEF_UNIT_WARMONGER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>20</PortraitIndex>
+    </Row> 
 
 
 
@@ -3452,7 +3471,7 @@ UnitFlagAtlas
     <Row>
       <Class>UNITCLASS_SETTLER</Class>
       <Type>UNIT_SETTLER</Type>
-      <!-- <PrereqTech>TECH_AGRICULTURE</PrereqTech> -->
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
       <Moves>2</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
       <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
@@ -3477,7 +3496,7 @@ UnitFlagAtlas
     <Row>
       <Class>UNITCLASS_WORKER</Class>
       <Type>UNIT_WORKER</Type>
-      <!-- <PrereqTech>TECH_AGRICULTURE</PrereqTech> -->
+      <PrereqTech>TECH_AGRICULTURE</PrereqTech>
       <Cost>110</Cost>
       <Moves>2</Moves>
       <Capture>UNITCLASS_WORKER</Capture>
@@ -5065,6 +5084,35 @@ UnitFlagAtlas
       <UnitAIType>CITY_BOMBARD</UnitAIType>
     </Row>
 
+    <!-- UNIT_BRUISER -->
+    <Row>
+      <UnitType>UNIT_BRUISER</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BRUISER</UnitType>
+      <UnitAIType>CITY_BOMBARD</UnitAIType>
+    </Row>
+
+    <!-- UNIT_BRUTE -->
+    <Row>
+      <UnitType>UNIT_BRUTE</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_BRUTE</UnitType>
+      <UnitAIType>CITY_BOMBARD</UnitAIType>
+    </Row>
+
+    <!-- UNIT_WARMONGER -->
+    <Row>
+      <UnitType>UNIT_WARMONGER</UnitType>
+      <UnitAIType>UNITAI_ATTACK</UnitAIType>
+    </Row>
+    <Row>
+      <UnitType>UNIT_WARMONGER</UnitType>
+      <UnitAIType>CITY_BOMBARD</UnitAIType>
+    </Row>
 
 
 
@@ -5711,6 +5759,26 @@ UnitFlagAtlas
       <Flavor>12</Flavor>
     </Row>
 
+    <!-- UNIT_BRUISER -->
+    <Row>
+      <UnitType>UNIT_BRUISER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+
+    <!-- UNIT_BRUTE -->
+    <Row>
+      <UnitType>UNIT_BRUTE</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+
+    <!-- UNIT_WARMONGER -->
+    <Row>
+      <UnitType>UNIT_WARMONGER</UnitType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
 
 
 
@@ -6702,15 +6770,12 @@ UnitFlagAtlas
 
 
     <!-- UNIT_GREAT_LEADER -->
-    <!--
+
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_TITLE">
       <Text>Great Leader Class</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_DESC">
       <Text>Great Leader</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_PEDIA">
-      <Text>Great Leader Pedia</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_STRATEGY">
       <Text>Great Leader Strategy</Text>
@@ -6718,9 +6783,27 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_HELP">
       <Text>Great Leader Help</Text>
     </Row> 
-    -->
+    <Row Tag="TXT_KEY_UNIT_GREAT_LEADER_PEDIA">
+      <Text>Great Leader Pedia</Text>
+    </Row>
 
+    <!-- UNIT_GREAT_ELDER -->
 
+    <Row Tag="TXT_KEY_UNIT_GREAT_ELDER_TITLE">
+      <Text>Great Elder Class</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_ELDER_DESC">
+      <Text>Great Elder</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_ELDER_STRATEGY">
+      <Text>Great Elder Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_GREAT_ELDER_HELP">
+      <Text>Great Elder Help</Text>
+    </Row> 
+    <Row Tag="TXT_KEY_UNIT_GREAT_ELDER_PEDIA">
+      <Text>Great Elder Pedia</Text>
+    </Row>
 
 
 
@@ -6737,20 +6820,21 @@ UnitFlagAtlas
 
     <!-- UNIT_ALPHA -->
     <Row Tag="TXT_KEY_UNIT_ALPHA_TITLE">
-      <Text>Alpha Leader</Text>
+      <Text>Alpha</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ALPHA_DESC">
-      <Text>Alpha Leader</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_ALPHA_PEDIA">
-      <Text>Alpha Leader Pedia</Text>
-    </Row>    
+      <Text>Alpha</Text>
+    </Row>  
     <Row Tag="TXT_KEY_UNIT_ALPHA_STRATEGY">
-      <Text>Use your primate Alpha to support other units or strike hard and early.</Text>
+      <Text>Use your primate [COLOR_POSITIVE_TEXT]Alpha[ENDCOLOR] to support other units or strike hard and early.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ALPHA_HELP">
-      <Text>An Alpha Leader is slightly stronger and better than the typical unit it represents. It also provides to other units around them.</Text>
+      <Text>Alpha. This words is used to mean many things. When used with animals and humans it represents the dominant animal in the group, typically a male.</Text>
     </Row>
+    <Row Tag="TXT_KEY_UNIT_ALPHA_PEDIA">
+      <Text>An Alpha (leader class) is slightly stronger and better than the typical unit it represents. It also provides help to other units around them.
+        [NEWLINE][NEWLINE]An Alpha Tiger is still a tiger, but a leader amongst its own. The Alpha, the dominant male (or female) of this early group of homnids shows great strength and nothing more. Perhaps some higher intelligence or intuition is present--at very small levels. And being the Alpha, he breeds. He breeds with many. And man slowly improves its progeny...one generation at a time...until that fateful moment. </Text>
+    </Row>  
 
     <!-- UNIT_PATRIARCH -->
     <Row Tag="TXT_KEY_UNIT_PATRIARCH_TITLE">
@@ -6775,16 +6859,59 @@ UnitFlagAtlas
     </Row>
     <Row Tag="TXT_KEY_UNIT_CHIEF_DESC">
       <Text>Chief</Text>
-    </Row>
-    <Row Tag="TXT_KEY_UNIT_CHIEF_PEDIA">
-      <Text>Chief Pedia</Text>
-    </Row>    
+    </Row>   
     <Row Tag="TXT_KEY_UNIT_CHIEF_STRATEGY">
       <Text>Chief Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_CHIEF_HELP">
       <Text>Chief Help</Text>
     </Row>
+    <Row Tag="TXT_KEY_UNIT_CHIEF_PEDIA">
+      <Text>Chief Pedia</Text>
+    </Row> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  
+    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    │ Elders                                                                    
+    └───────────────────────────────────────────────────────────────────────────
+    -->
+
+
+    <!-- UNIT_ELDER -->
+    <Row Tag="TXT_KEY_UNIT_ELDER_TITLE">
+      <Text>Elder</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ELDER_DESC">
+      <Text>Elder</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ELDER_STRATEGY">
+      <Text>Elder Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ELDER_HELP">
+      <Text>Elder Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_ELDER_PEDIA">
+      <Text>Elder Pedia</Text>
+    </Row>
+
+
+
+
+
 
 
 
@@ -6818,14 +6945,14 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_DESC">
       <Text>Tree Settler (temp unit)</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA">
-      <Text>Early man did not settle. This unit is here because gameplay hasn't been finished to allow for a "settlement-less" era. In the meantime, your settlements will be VERY limited in size.</Text>
-    </Row>    
     <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_STRATEGY">
-      <Text>Settle early. Don't wait.</Text>
+      <Text>Settle early. Don't wait. Take advantage of an unfinished game.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_HELP">
       <Text>A temporary placeholder unit for settling early in the game.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA">
+      <Text>Early man did not settle. This unit is here because gameplay hasn't been finished to allow for a "settlement-less" era. In the meantime, your settlements will be VERY limited in size.</Text>
     </Row>
 
     <!-- UNIT_TRIBE_SPLIT -->
@@ -6835,14 +6962,14 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_DESC">
       <Text>Tribe Split</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_PEDIA">
-      <Text>Tribe Split Pedia</Text>
-    </Row>    
     <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_STRATEGY">
       <Text>Tribe Split Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_HELP">
       <Text>Tribe Split Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_PEDIA">
+      <Text>Tribe Split Pedia</Text>
     </Row>
 
 
@@ -6852,7 +6979,6 @@ UnitFlagAtlas
     ¦ Work
     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     -->
-
 
     <!-- UNIT_GATHERER -->
     <Row Tag="TXT_KEY_UNIT_GATHERER_TITLE">
@@ -7240,16 +7366,66 @@ UnitFlagAtlas
     <Row Tag="TXT_KEY_UNIT_SAVAGE_DESC">
       <Text>Savage</Text>
     </Row>    
-    <Row Tag="TXT_KEY_UNIT_SAVAGE_PEDIA">
-      <Text>In times when weapons were dull and military strategy was virtually non-existent, muscle power was the main tool of winning a fight. Especially strong and big men made good front-line warriors, who often fought in reckless rage. Nearly unstoppable when attacking, the Berserk fighters often did not watch their backs and were susceptible to strategic attacks.</Text>
-    </Row>
     <Row Tag="TXT_KEY_UNIT_SAVAGE_STRATEGY">
       <Text>The Savage is particularly useful when attacking enemy settlements. Armed with half a tree as weapon, he can easily bring down enemy fortifications.[NEWLINE]Protect it from attacks, as it is weak when defending.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_SAVAGE_HELP">
       <Text>An exceptionally big and strong human specimen with a bad temper.[NEWLINE][NEWLINE]Receives a bonus when attacking Cities, but also a penalty when defending.</Text>
     </Row>
+    <Row Tag="TXT_KEY_UNIT_SAVAGE_PEDIA">
+      <Text>In times when weapons were dull and military strategy was virtually non-existent, muscle power was the main tool of winning a fight. Especially strong and big men made good front-line warriors, who often fought in reckless rage. Nearly unstoppable when attacking, the Berserk fighters often did not watch their backs and were susceptible to strategic attacks.</Text>
+    </Row>
 
+    <!-- UNIT_BRUISER -->
+    <Row Tag="TXT_KEY_UNIT_BRUISER_TITLE">
+      <Text>Bruiser</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUISER_DESC">
+      <Text>Bruiser</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_BRUISER_STRATEGY">
+      <Text>Use Bruiser for Siege.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUISER_HELP">
+      <Text>A siege unit.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUISER_PEDIA">
+      <Text>Bruiser Pedia</Text>
+    </Row>
+
+    <!-- UNIT_BRUTE -->
+    <Row Tag="TXT_KEY_UNIT_BRUTE_TITLE">
+      <Text>Brute</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUTE_DESC">
+      <Text>Brute</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_BRUTE_STRATEGY">
+      <Text>Use Brute for Siege.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUTE_HELP">
+      <Text>A siege unit.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_BRUTE_PEDIA">
+      <Text>Brute Pedia</Text>
+    </Row>
+
+    <!-- UNIT_WARMONGER -->
+    <Row Tag="TXT_KEY_UNIT_WARMONGER_TITLE">
+      <Text>Warmonger</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WARMONGER_DESC">
+      <Text>Warmonger</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_WARMONGER_STRATEGY">
+      <Text>Use Warmonger for Siege.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WARMONGER_HELP">
+      <Text>A siege unit.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_WARMONGER_PEDIA">
+      <Text>Warmonger Pedia</Text>
+    </Row>
 
 
 

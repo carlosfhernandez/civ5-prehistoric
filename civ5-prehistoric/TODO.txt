@@ -1,0 +1,50 @@
+todo
+------------------------------------------------------------------------------
+
+
+
+
+
+unorganized random notes
+------------------------------------------------------------------------------
+
+- early game 
+  - ai
+    - ai needs extra bonuses to account for new gameplay and undefined ai 
+    - handicaps for free techs
+  - need 'something' (building?) that provides players with basic growth (science, etc) - could even be a lua script per turn
+  - advisers need to stop talking about cities
+
+- art
+  - icons
+    - schoningen spears all black background - add outline
+    - missing
+      - units
+        - great leader
+        - wanderer
+        - nomad wanderer
+        - slinger
+        - great elder
+        - keeper
+        - gatherer
+        - chief
+        - neanderthal
+        - harbinger
+        - barb alpha
+
+- era
+  - just go ahead and separate middle and upper paleo and just let one era have one dummy tech    
+
+- units
+  - unassigned
+    - brute
+    - bruiser
+
+- tech
+  - add future-future tech or something like that (not linked) that can be a container for other things
+
+
+
+
+
+

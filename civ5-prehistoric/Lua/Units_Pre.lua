@@ -230,6 +230,28 @@ end
 Events.SerialEventUnitCreated.Add(SerialEvenUnitCreated_Pre)
 
 --
+-- SerialEventUnitDestroyed_Pre
+--
+--
+--
+--
+--
+--
+function SerialEventUnitDestroyed_Pre(playerID, UnitID)
+
+  logger:debug( "[SerialEventUnitDestroyed_Pre] " )
+
+  -- check if this was during early game and player's last unit (AI)
+  -- and create new unit
+
+
+
+
+  LuaEvents.SerialEventUnitDestroyed_Pre(playerID, UnitID)
+end
+Events.SerialEventUnitDestroyed.Add(SerialEventUnitDestroyed_Pre)
+
+--
 -- UnitSetXY_Pre
 --
 --

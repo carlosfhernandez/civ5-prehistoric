@@ -2147,7 +2147,7 @@
       <BuildingClass>BUILDINGCLASS_CAUSEWAY_DUMMY</BuildingClass>
       <Cost>-1</Cost>
       <Description>Nearby Marshland</Description>
-      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[/ENDCOLOR] to improve your city.</Help>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[ENDCOLOR] to improve your city.</Help>
       <Strategy>NONE</Strategy>
       <Civilopedia>NONE</Civilopedia>
       <MinAreaSize>-1</MinAreaSize>
@@ -2780,7 +2780,7 @@
       <BuildingClass>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClass>
       <Cost>-1</Cost>
       <Description>Nearby Food</Description>
-      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[/ENDCOLOR] to improve your city.</Help>
+      <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[ENDCOLOR] to improve your city.</Help>
       <MinAreaSize>-1</MinAreaSize>
       <NeverCapture>true</NeverCapture>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
