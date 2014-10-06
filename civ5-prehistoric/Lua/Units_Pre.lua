@@ -115,7 +115,7 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
   -- All other units will check for things such as if a certain building is
   -- already built in the city and should give them bonuses.
   --
-  if unitclass == "UNITCLASS_BUILDING_TRIGGER" then
+  if unitclass == "UNITCLASS_BUILDING_TRIGGER_" then
 
     logger:debug( "[SerialEvenUnitCreated_Pre] Unit dummy class" )
 
@@ -123,6 +123,8 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
     --
 
 
+    -- TODO: Add other checks beyown the simple unit type check in table.
+    --
     -- TODO: Add a build table or add to building table: promotion to give, 
     --       unit_class affecteced, and any other action. For now, we keep the 
     --       logic and definitions in here
@@ -161,6 +163,17 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
       --   end
       -- end
     
+
+
+    elseif unittype == "UNIT_BUILDING_CHERT_DEPOSIT"    then
+
+        
+
+
+    elseif unittype == "UNIT_BUILDING_LOOKOUT_TREE"     then
+
+
+
 
     elseif unittype == "UNIT_BUILDING_TREE"             then
 

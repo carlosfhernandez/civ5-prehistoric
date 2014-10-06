@@ -18,7 +18,9 @@ V        Needs validation
 ..............................................................................
 
 
-                   XV    Todo Future
+*** Prehistoric ***
+
+                   XV    Todo Future Tech Bucket
 1
 *TREE_OF_LIFE      XV    +2Gol  
 TREE               X     +Soc; +Exp; -Hap
@@ -26,7 +28,8 @@ TREE               X     +Soc; +Exp; -Hap
 4
 LOOKOUT_ROCK       XV    +Bon +1 Vis
 
-Lower Paleolithic
+
+*** Lower Paleolithic ***
 
 5
 SPRING_SOURCE      XV    +Bon +1 Mov
@@ -36,7 +39,7 @@ GOLDEN_PATH        _     (Increase access distance to resources)
 STONE_PILE         XV    +Bon +10% Attack [ Stone: storage bigger; +1 Prod; Extra Def STONE_WALL ]
 *GRAND_OVERLOOK    _     (New Capitol with bonuses)
 OVERLOOK           _     (+1 city vis range if able to reduce initial city vis)
-CHERT_DEPOSIT      _     (+Bon range units; +1 Gold/Soc? )
+CHERT_DEPOSIT      /V    +15% Bon Range ( +1 Gold/Soc? )
 GATHERING_CIRCLE   XV    +1 Hap {Stage 1 Belief}
 
 7
@@ -46,11 +49,12 @@ PORTABLE_GRASS_SHE /V    +1 Mov founding units (increase distance founding units
 ADVANCED_SHELTER   _     [multiple subtypes based on terrain with different bonuses]
 *ALPHAS_CAVE       _     ?
 
-Paleolithic
+
+*** Paleolithic ***
 
 8
-CAUSEWAY           ?     (? marsh bonus) 
-WATERPROOF_HUT     _     (? jungle bonus) {defense against natural elements}
+CAUSEWAY           /V    +Mob Marsh (? more marsh bonus)
+WATERPROOF_HUT     /V    + food; +bon 10% heal (? jungle req and bonus) {defense against natural elements}
 RUBBLE_WALL        XV    + city defense; +Bon slinger; <consider the effect of declaring this a city wall in xml>
 WATER_STORAGE      XV    + pop; + food kept 5%; [?]
 *CHIEF_UPGRADE     /V    +1 Hap; (?) {+Soc}
@@ -63,11 +67,12 @@ HIDEOUT            /V    Def+100; (allow building of hideouts within X tiles of 
 MIDDEN             XV    +5% food growth; [?]
 STORAGE_PIT        XV    +5% food storage; [?]
 LOOKOUT_TREE       _     (extra city sight)(?); [improvemnt: built on forest to provide same hill visibility]
-GREAT_ROCK         _     (belief or bonuses for certain troops)
+GREAT_ROCK         /V    +20% vs fortified (belief or bonuses for certain troops; leader bonus)
 *CHIEFTAINS_HUT    _     *
-NOMADIC_CAMP       _     (possible quicker settling unit or different type - perhaps no pop loss)
+NOMADIC_CAMP       /V    allows unit Nomads (?)
 
-Neolithic
+
+*** Neolithic ***
 
 10
 MEAT_RACK          XV    +1 Food

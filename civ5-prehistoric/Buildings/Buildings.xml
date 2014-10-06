@@ -337,6 +337,17 @@
     </Row>
 
     <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <UnitType>UNIT_SPEAR_HUNTER</UnitType>
+      <UnitPromotionType>PROMOTION_ARROWHEADS</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <UnitType>UNITCLASS_PRIMITIVE_ARCHER</UnitType>
+      <UnitPromotionType>PROMOTION_ARROWHEADS</UnitPromotionType>
+    </Row>
+
+    <Row>
       <BuildingType>BUILDING_BONE_PILE</BuildingType>
       <UnitType>UNIT_CLUB_POUNDER</UnitType>
       <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
@@ -352,13 +363,68 @@
       <UnitPromotionType>PROMOTION_BONE_WARFARE</UnitPromotionType>
     </Row>
 
-
     <Row>
       <BuildingType>BUILDING_PORTABLE_GRASS_SHELTER</BuildingType>
       <UnitType>UNIT_TRIBE_SPLIT</UnitType>
       <UnitPromotionType>PROMOTION_PORTABLE_SHELTER</UnitPromotionType>
     </Row>
 
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <UnitType>UNIT_WATCHER</UnitType>
+      <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <UnitType>UNIT_LOOKOUT</UnitType>
+      <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <UnitType>UNIT_SENTINEL</UnitType>
+      <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <UnitType>UNIT_PROTECTOR</UnitType>
+      <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
+    </Row>    
+    
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_AUTOCHTHON</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_CAVEMAN</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_NEANDERTHAL</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_BONE_WARRIOR</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_BUSHMAN</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <UnitType>UNIT_INITIATE</UnitType>
+      <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
+    </Row>
 
     <Row>
       <BuildingType>BUILDING_HIDE_RACK</BuildingType>
@@ -2169,8 +2235,13 @@
 
 
     <!-- WATERPROOF_HUT -->
-    <!-- TODO: [FUTURE] defense against natural elements
-         TODO: population, jungle bonuses somehow 
+    <!-- 
+        +5% food bonus
+        +10% healing for defense and sentinal units in friendly  
+        TODO: 
+        [FUTURE] defense against natural elements
+        jungle requirements
+        jungle bonuses
     -->
     <Row>
       <Type>BUILDING_WATERPROOF_HUT</Type>
@@ -2500,9 +2571,11 @@
 
     <!-- LOOKOUT_TREE -->
     <!-- 
-      TODO: Could just be lookout tree/post/rock, etc. An imporvement 
-            that provides better visibility, than hills, let's say. 
-      TODO: Could be extra sight for city.
+
+      TODO: 
+        Could just be lookout tree/post/rock, etc. An imporvement 
+          that provides better visibility, than hills, let's say. 
+        Could be extra sight for city.
     -->
     <Row>
       <Type>BUILDING_LOOKOUT_TREE</Type>
@@ -2536,7 +2609,12 @@
 
 
     <!-- GREAT_ROCK -->
-    <!-- TODO: belief, bonuses for certain troops -->
+    <!-- 
+      +20% attack fortified mod
+      TODO: 
+        belief, bonuses for certain troops 
+        leader bonus
+      -->
     <Row>
       <Type>BUILDING_GREAT_ROCK</Type>
       <BuildingClass>BUILDINGCLASS_GREAT_ROCK</BuildingClass>
@@ -3510,11 +3588,23 @@
       <NumUnits>1</NumUnits>
     </Row>
 
+
+
+
+
+    <!-- Building Triggers -->
+
     <Row>
       <BuildingType>BUILDING_LOOKOUT_TREE</BuildingType>
-      <UnitType>UNIT_DUMMY_LOOKOUT_TREE</UnitType>
+      <UnitType>UNIT_BUILDING_LOOKOUT_TREE</UnitType>
       <NumUnits>1</NumUnits>
     </Row>
+
+    <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <UnitType>UNIT_BUILDING_CHERT_DEPOSIT</UnitType>
+      <NumUnits>1</NumUnits>
+    </Row>    
 
 
   </Building_FreeUnits>

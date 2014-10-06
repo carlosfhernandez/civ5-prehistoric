@@ -16,6 +16,11 @@
 ║   Unit_ResourceQuantityRequirements
 ║   Unit_Builds
 ║
+║   Unit_Buildings
+║   Unit_BuildingClassRequireds
+║
+║
+║
 ║   *Language_en_US
 ║
 ╚═══════════════════════════════════════════════════════════════════════════════
@@ -191,7 +196,10 @@
   ║
   ║   - Settle
   ║
+  ║     - UNITCLASS_TMP_TREE_SETTLER (st)
   ║     - UNITCLASS_TRIBE_SPLIT (ss)
+  ║     - UNITCLASS_NOMADS (sn)
+  ║     - UNITCLASS_SETTLER (sn)
   ║   
   ║   - Work
   ║
@@ -517,8 +525,8 @@
   ║
   ║
   ║
-  ║
-  ║
+  ║ (st) temprary settling will change abilities
+  ║ (sn) normal settling
   ║ (sa) can settle abroad
   ║ (ss) can settle by splitting from settlement (-pop)
   ║
@@ -644,6 +652,12 @@
       <Type>UNITCLASS_TRIBE_SPLIT</Type>
       <Description>TXT_KEY_UNIT_TRIBE_SPLIT_TITLE</Description>
       <DefaultUnit>UNIT_TRIBE_SPLIT</DefaultUnit>
+    </Row>   
+
+    <Row>
+      <Type>UNITCLASS_NOAMDS</Type>
+      <Description>TXT_KEY_UNIT_NOMADS_TITLE</Description>
+      <DefaultUnit>UNIT_NOMADS</DefaultUnit>
     </Row>   
 
     <Row>
@@ -1159,6 +1173,9 @@
   ║   - Settle
   ║     - UNITCLASS_TRIBE_SPLIT
   ║       + UNIT_TRIBE_SPLIT
+  ║     - UNITCLASS_NOMADS
+  ║       + UNIT_NOMADS
+  ║
   ║
   ║   - Work
   ║     - UNITCLASS_GATHERER
@@ -1450,6 +1467,7 @@
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____  
   ║ TMP_TREE_SETTLER
   ║ TRIBE_SPLIT 
+  ║ NOMADS
   ║ SETTLER 
   ║ 
   ║ 
@@ -1990,6 +2008,32 @@
       <PortraitIndex>34</PortraitIndex>
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
     </Row>  
+
+
+    <!-- UNIT_NOMADS -->
+    <Row>
+      <Class>UNITCLASS_NOMADS</Class>
+      <Type>UNIT_NOMADS</Type>
+      <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
+      <Moves>1</Moves>
+      <Capture>UNITCLASS_WORKER</Capture>
+      <CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+      <HurryCostModifier>20</HurryCostModifier>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+      <Description>TXT_KEY_UNIT_NOMADS_DESC</Description>
+      <Civilopedia>TXT_KEY_UNIT_NOMADS_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_NOMADS_STRATEGY</Strategy>
+      <Help>TXT_KEY_UNIT_HELP_NOMADS_HELP</Help>
+      <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+      <Food>1</Food>
+      <Found>true</Found>
+      <CombatLimit>0</CombatLimit>
+      <UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+      <UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+      <PortraitIndex>34</PortraitIndex>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+    </Row> 
 
 
     <!-- UNIT_SETTLER -->
@@ -3561,7 +3605,7 @@
     └───────────────────────────────────────────────────────────────────────────
     -->
 
-
+    <!-- TODO: Add all these in SQL file -->
     <Row>
       <Class>UNITCLASS_BUILDING_TRIGGER</Class>
       <Type>UNIT_BUILDING_TRIGGER</Type>
@@ -3577,6 +3621,21 @@
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_LOOKOUT_TREE</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>    
     <Row>
       <Class>UNITCLASS_BUILDING_TRIGGER</Class>
       <Type>UNIT_BUILDING_LOOKOUT_ROCK</Type>
@@ -3609,6 +3668,51 @@
     </Row>
     <Row>
       <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_CHERT_DEPOSIT</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_CAUSEWAY</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>  
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
+      <Type>UNIT_BUILDING_GREAT_ROCK</Type>
+      <Cost>-1</Cost>
+      <Moves>0</Moves>
+      <Description>.</Description>
+      <Strategy>.</Strategy>
+      <Help>.</Help>
+      <AdvancedStartCost></AdvancedStartCost><!-- BUILDING_ID -->
+      <UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
+      <UnitFlagAtlas>FLAG_ATLAS_PRE</UnitFlagAtlas>
+      <UnitFlagIconOffset>2</UnitFlagIconOffset>
+      <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>56</PortraitIndex>
+    </Row>  
+    <Row>
+      <Class>UNITCLASS_BUILDING_TRIGGER</Class>
       <Type>UNIT_BUILDING_HIDE_RACK</Type>
       <Cost>-1</Cost>
       <Moves>0</Moves>
@@ -3622,6 +3726,17 @@
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>56</PortraitIndex>
     </Row>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4841,6 +4956,13 @@
       <UnitAIType>UNITAI_SETTLE</UnitAIType>
     </Row> 
 
+    <!-- UNIT_NOMADS -->
+    <Row>
+      <UnitType>UNIT_NOMADS</UnitType>
+      <UnitAIType>UNITAI_SETTLE</UnitAIType>
+    </Row> 
+
+
 
 
     <!-- | Work | -->
@@ -5498,6 +5620,14 @@
       <FlavorType>FLAVOR_EXPANSION</FlavorType>
       <Flavor>12</Flavor>
     </Row> 
+
+    <!-- UNIT_NOMADS -->
+    <Row>
+      <UnitType>UNIT_NOMADS</UnitType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>15</Flavor>
+    </Row> 
+
 
 
 
@@ -6739,6 +6869,57 @@
 
 
 
+  <Unit_BuildingClassRequireds>
+
+    <Row>
+      <UnitType></UnitType>
+      <BuildingClassType>BUILDINGCLASS_NOMADIC_CAMP</BuildingClassType>
+    </Row>
+
+
+
+
+  </Unit_BuildingClassRequireds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6971,6 +7152,24 @@
     <Row Tag="TXT_KEY_UNIT_TRIBE_SPLIT_PEDIA">
       <Text>Tribe Split Pedia</Text>
     </Row>
+
+    <!-- UNIT_NOMADS -->
+    <Row Tag="TXT_KEY_UNIT_NOMADS_TITLE">
+      <Text>Nomads</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NOMADS_DESC">
+      <Text>Nomads</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NOMADS_STRATEGY">
+      <Text>Nomads Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NOMADS_HELP">
+      <Text>Nomads Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_UNIT_NOMADS_PEDIA">
+      <Text>Nomads Pedia</Text>
+    </Row>
+
 
 
 

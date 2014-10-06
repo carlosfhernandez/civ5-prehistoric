@@ -90,7 +90,7 @@ function SerialEventCityCreated_Pre( vHexPos, player, cityID, artStyleType, eraT
   if     era == "ERA_PREHISTORIC"         then
 
     logger:debug( "set city prehistoric limit to 0" )
-    city.SetHighestPopulation(0)
+    city:SetHighestPopulation(0)
 
     LimitCityVisibility(city, 1)
 
@@ -98,17 +98,17 @@ function SerialEventCityCreated_Pre( vHexPos, player, cityID, artStyleType, eraT
   elseif era == "ERA_LOWER_PALEOLITHIC"   then
 
     logger:debug( "set city lower paleolithic limit to 1" )
-    city.SetHighestPopulation(1)
+    city:SetHighestPopulation(1)
 
   elseif era == "ERA_PALEOLITHIC"         then
 
     logger:debug( "set city paleolithic limit to 2" )
-    city.SetHighestPopulation(2)
+    city:SetHighestPopulation(2)
 
   elseif era == "NEOLITHIC"               then
 
     logger:debug( "set city neolithic limit to 3" )
-    city.SetHighestPopulation(3)
+    city:SetHighestPopulation(3)
 
   end
 
