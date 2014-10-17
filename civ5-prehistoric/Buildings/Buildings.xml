@@ -1681,6 +1681,9 @@
       <PortraitIndex>0</PortraitIndex>
     </Row>
 
+
+
+
     <!-- TREE -->
     <!-- TODO:  Social Resource required (using gold for now)
          TODO:  Possible spend happiness for other bonus
@@ -1843,10 +1846,12 @@
 
 
     <!-- STONE_PILE -->
-    <!--  +10% attack to certain units | TODO: verify 
-          TODO: if using stone as resource, make storage bigger
-          TODO: +1 Production (verify balance)
-          TODO: grant stone wall extra defense -->
+    <!--  
+      +10% attack to certain units
+      TODO: if using stone as resource, make storage bigger
+      TODO: +1 Production (verify balance)
+      TODO: grant stone wall extra defense 
+    -->
     <Row>
       <Type>BUILDING_STONE_PILE</Type>
       <BuildingClass>BUILDINGCLASS_STONE_PILE</BuildingClass>
@@ -1872,11 +1877,13 @@
 
     <!-- *** CAPITOL *** -->
     <!-- GRAND_OVERLOOK -->
-    <!-- TODO:  all --> 
+    <!-- 
+      TODO: *
+    --> 
     <Row>
       <Type>BUILDING_GRAND_OVERLOOK</Type>
       <BuildingClass>BUILDINGCLASS_GRAND_OVERLOOK</BuildingClass>
-      <Cost>10</Cost>
+      <Cost>15</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_GRAND_OVERLOOK_DESC</Description>
@@ -1895,8 +1902,10 @@
 
 
     <!-- OVERLOOK -->
-    <!-- TODO: +1 city visibility range if able to reduce initial city viz --> 
-    <!-- TODO: other option -->
+    <!-- 
+      TODO: +1 city visibility range if able to reduce initial city viz 
+      TODO: ?
+    -->
     <Row>
       <Type>BUILDING_OVERLOOK</Type>
       <BuildingClass>BUILDINGCLASS_OVERLOOK</BuildingClass>
@@ -1929,10 +1938,11 @@
     -->
 
 
-    <!-- TODO -->
     <!-- CHERT_DEPOSIT -->
-    <!-- TODO: Bonnus for ranged units
-         TODO: Gold? -->
+    <!-- 
+      Bonus for ranged units
+      TODO: { +Society/Gold  }
+    -->
     <Row>
       <Type>BUILDING_CHERT_DEPOSIT</Type>
       <BuildingClass>BUILDINGCLASS_CHERT_DEPOSIT</BuildingClass>
@@ -1965,8 +1975,10 @@
 
 
     <!-- GATHERING_CIRCLE -->
-    <!-- TODO: (future stage 1 beliefs bonus)
-         TODO: validate +1 Happy -->
+    <!-- 
+      +1 Happiness
+      TODO: { future stage 1 beliefs bonus }
+    -->
     <Row>
       <Type>BUILDING_GATHERING_CIRCLE</Type>
       <BuildingClass>BUILDINGCLASS_GATHERING_CIRCLE</BuildingClass>
@@ -2011,7 +2023,7 @@
 
     <!-- BONE_PILE -->
     <!-- 
-      combat bonus to certain units (TODO: validate)
+      combat bonus to certain units 
       TODO: ??? 
     -->
     <Row>

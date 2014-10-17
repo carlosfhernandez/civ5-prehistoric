@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW) (v0.3.0-experimental-100)[preview]</Name>
+    <Name>!Prehistoric Era (BNW) (v0.3.0exp-build179) [preview]</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
     <ModVersion>100</ModVersion>
     <Stability>Experimental</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0e-100-experimental)[preview][ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]emi-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0exp-build179l)[preview][ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]emi-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
     <Description>This mod adds millions of years of human history with many new eras going back to the dawn of man.
 
 THIS IS A NON-(SEMI)-FUNCTIONAL PREVIEW (EXPERIMENTAL) RELEASE ONLY! IT IS FOR DEBUGGING PURPOSES AND FOR THOSE THAT WANT TO HELP. 
 
-[[ v0.3.0e-100-preview / Steam v100 / 2014-05-13 ]]
+[[ v0.3.0exp-build179 preview / Steam v100 / 2014-05-13 ]]
 
 - New Era: Prehistoric Era.
 - 30 new Technologies: Fire, Gathering, Tools, Numbers, and more.
