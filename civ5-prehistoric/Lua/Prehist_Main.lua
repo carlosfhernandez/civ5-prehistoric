@@ -16,6 +16,8 @@
 --
 -- @example:
 
+
+
 Some ways to use includes in this file:
 
 include("CityBannerManager")
@@ -33,6 +35,7 @@ local files = include("InGame\\PopupsGeneric\\%w+Popup.lua", true);
 for i, v in ipairs(files) do
     print("Loaded Popup - "..v);
 end
+
 
 
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -66,16 +69,36 @@ print( "main      | --------------------------------------------------" );
 
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 --
--- INCLUDES AND LOGGING
+-- LOGGING, INCLUDES, AND MORE
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
+
+-- - - - - - - - - - - - - - - 
+--
+-- Civ V Includes
+--
+include("IconSupport");
+include("InstanceManager");
+include("SupportFunctions");
+include("InfoTooltipInclude");
+
+
+-- - - - - - - - - - - - - - - 
+--
+-- SaveUtils
+--
 -- SaveUtils included *before* logger in case we need to load data, first. 
 include( "SaveUtils" ); MY_MOD_NAME = "PrehistoricEra";
 
+
+-- - - - - - - - - - - - - - - 
+--
+-- Logging
+--
 -- logger is an essential util library to be used in subsequent lua files
-include( "logger" );
+include( "Prehist_Logger" );
 
 -- assign your logging level here:
 logger = Logger:new(Logger.LEVEL.DEBUG)
@@ -85,23 +108,43 @@ logger = Logger:new(Logger.LEVEL.DEBUG)
 -- as the file is included after this point).
 logger.PREFIX = "main"
 
+
+-- - - - - - - - - - - - - - - 
+--
+-- Utility Functions
+--
 -- a variety of utlities that are used through the Prehistoric Mod. these are
 -- all placed within one lirary and are typicall small in nature. 
-include( "utils" );
+include( "Prehist_Utils" );
 
 -- larger utils and functionality can be included here. these functions are 
 -- self-contained and _should_ be able to be used in other mods 
-include( "HasWithinCityBorders" );
+include( "Prehist_HasWithinCityBorders" );
 
+
+-- - - - - - - - - - - - - - - 
+-- Main Prehistoric Files
+--
+--
 -- prehistoric-mod-specific files. at some point I would like to create these
 -- in a way that makes them reusable and modular for use by others. 
-include( "Player_Pre.lua" );
-include( "Units_Pre.lua" );
-include( "City_Pre.lua" );
-include( "Era_Pre.lua" );
+include( "Prehist_Global.lua" );
+include( "Prehist_Game.lua" );
+include( "Prehist_Player.lua" );
+include( "Prehist_Events.lua" );
+include( "Prehist_Units.lua" );
+include( "Prehist_City.lua" );
+include( "Prehist_Era.lua" );
+include( "Prehist_Buildings.lua" );
+include( "Prehist_Terrain.lua" );
 
+
+-- - - - - - - - - - - - - - - 
+-- Future
+--
 -- to be included at some point:
 -- include("Barbarians/CreateAnimals.lua")
+--
 
 
 
@@ -114,9 +157,9 @@ include( "Era_Pre.lua" );
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
--- lost game only when all units are lost
+
 -- TODO: change this for later game -- give player option
-Game.SetOption(9, true)
+Game.SetOption(9, true) -- lose game only when all units are lost
 
 
 

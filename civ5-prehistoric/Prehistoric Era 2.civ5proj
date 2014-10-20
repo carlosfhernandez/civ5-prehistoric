@@ -235,7 +235,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
         <Type>InGameUIAddin</Type>
         <Name>Main_PRE</Name>
         <Description>Main init</Description>
-        <FileName>Lua/Main_Pre.lua</FileName>
+        <FileName>Lua/Prehist_Main.lua</FileName>
       </Content>
     </ModContent>
     <ReloadUnitSystem>true</ReloadUnitSystem>
@@ -2215,39 +2215,43 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Buildings_Pre.lua">
+    <Content Include="Lua\Prehist_Buildings.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\City_Pre.lua">
+    <Content Include="Lua\Prehist_City.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Era_Pre.lua">
+    <Content Include="Lua\Prehist_Era.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Events_Pre.lua">
+    <Content Include="Lua\Prehist_Events.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\func\HasWithinCityBorders.lua">
+    <Content Include="Lua\func\Prehist_HasWithinCityBorders.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Game_Pre.lua">
+    <Content Include="Lua\Prehist_Game.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Global_Pre.lua">
+    <Content Include="Lua\Prehist_Global.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Main_Pre.lua">
+    <Content Include="Lua\Prehist_Main.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Player_Pre.lua">
+    <Content Include="Lua\Prehist_Player.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Prehist_Terrain.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2275,11 +2279,11 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Units_Pre.lua">
+    <Content Include="Lua\Prehist_Units.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\util\logger.lua">
+    <Content Include="Lua\util\Prehist_Logger.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -2287,7 +2291,7 @@ You may need to delete the mod cache to make this upgrade work. I had to do this
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\util\utils.lua">
+    <Content Include="Lua\util\Prehist_Utils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

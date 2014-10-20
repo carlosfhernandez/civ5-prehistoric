@@ -524,7 +524,7 @@ LEGEND
 │ 1                                       │   $│MT│BG│GO│HA│PR│SI│CU│FD│FA│TU│TR│IM│RS│PU│CI│ C│  │ NOTES                                            │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Adaptive Radiation                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├-Adaptive Radiation-------------------------------┘
-│     b-Tree                              │   4│ 0│  │ 2│-?│  │  │  │  │  │  │  │  │  │  │  │  │  │ X    
+│     b-Tree                              │   4│ 0│  │ 1│-?│  │  │  │  │  │  │  │  │  │  │  │  │  │ X    
 │     c-Tree of Life !!!!!!               │   *│  │*2│*2│  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ?
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┐
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -605,8 +605,8 @@ LEGEND
 │ Advanced Perception                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├-Advanced Perception------------------------------┘
 │     b-Stone Pile                        │   6│  │  │  │  │ 1│  │  │  │  │  │  │  │  │ 1│  │  │  │ X  V    +Bon +10% Attack [ Stone: storage bigger; +1 Prod; Extra Def STONE_WALL ]
 │   * u-Watcher (t:sentinel)              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ 
-│     c-Grand Overlook                    │  15│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: ( New capitol with bonuses )
-│     b-Overlook                          │  10│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: ( +1 city vis if able reduce initial vis ) + ( )
+│     c-Grand Overlook                    │  15│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│   N     ( TODO: New capitol with bonuses )
+│     b-Overlook                          │  10│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     ( TODO: +1 city vis if able reduce initial vis ) + ( )
 │     w-First Chopper                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│ ?
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┐
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -656,16 +656,16 @@ LEGEND
 │ Simple Tools                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├-Simple Tools-------------------------------------┘
 │   * u-Protector (t:defense)             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │   * u-Spear Hunter (t:ranged)           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
-│     b-Open Shelter                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Food TODO: ( +2 if near open plains) [early founders don't take away pop]
-│     b-Portable Grass Shelter            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Mov founding units (increase distance founding units)
-│     b-Advanced Shelter                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N         [ TODO: multiple subtypes based on terrain with different bonuses]
-│       - SubShelter: Lean-to             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│       - SubShelter: Stick               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│       - SubShetler: Hide                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│       - SubShelter: Overhang            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│       - SubShelter: Grass               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│       - SubShelter: Cave                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: *
-│     c-Alpha's Cave                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?
+│     b-Open Shelter                      │  24│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Food TODO: ( +2 if near open plains) [early founders don't take away pop]
+│     b-Portable Grass Shelter            │  26│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Mov founding units ( TODO: increase distance founding units )
+│     b-Advanced Shelter                  │  28│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N         [ TODO: multiple subtypes based on terrain with different bonuses; added defense, population ]
+│       - SubShelter: Lean-to             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│       - SubShelter: Stick               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│       - SubShetler: Hide                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│       - SubShelter: Overhang            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│       - SubShelter: Grass               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│       - SubShelter: Cave                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ ? N     TODO: [ * ]
+│     c-Alpha's Cave                      │  36│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO: ?
 │     w-Terra Amata Shelter               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│ ?       TODO: ?
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┐
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -699,7 +699,7 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Complex Tools                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   ? u-Primitive Archer                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
-│     b-Causeway                          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +Mob Marsh (? more marsh bonus)
+│     b-Causeway                          │  30│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +Mob Marsh (? more marsh bonus)
 │     r-Obsidian                          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     r-Flint                             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Schoningen Spears                 │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: TXT
@@ -713,14 +713,14 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Adhesives                               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Waterprrof Hut                    │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    + food; +bon 10% heal (? jungle req and bonus) {defense against natural elements}
+│     b-Waterprrof Hut                    │  30│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    + food; +bon 10% heal (? jungle req and bonus) {defense against natural elements}
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Containers                              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   ? u-Slinger (t:ranged)                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
-│     b-Rubble Wall                       │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    + city defense; +Bon slinger; <consider the effect of declaring this a city wall in xml>
-│     b-Water Storage                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    + pop; + food kept 5%; [?]
+│     b-Rubble Wall                       │  34│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    + city defense; +Bon slinger; <consider the effect of declaring this a city wall in xml>
+│     b-Water Storage                     │  38│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    + pop; + food kept 5%; [?]
 │     w-Bhimbetka Rock Shelters           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: TXT
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -730,8 +730,8 @@ LEGEND
 │   * u-Patriarch (t:leader)              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │   * u-Matriarch (t:leader)              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │   * u-Great Elder (t:elder)             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: ***
-│     c-Chief Upgrade                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?
-│     b-Burial Site                       │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Hap; (?)
+│     c-Chief Upgrade                     │  58│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?
+│     b-Burial Site                       │  45│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 Hap; (?)
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -753,14 +753,14 @@ LEGEND
 │     r-Crocodile                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │   * u-Hunter (t:special)                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │     i-Outpost                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-│     b-Hunting Trails                    │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 gold truffles; TODO: (hunting and hinting resources bonuses -or- improvement bonus)
+│     b-Hunting Trails                    │  52│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +1 gold truffles; TODO: (hunting and hinting resources bonuses -or- improvement bonus)
 │     w-Afontora Gora                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: WONDER-T
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Fire                                    │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   * u-Shaman                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
-│     b-Campfire              (+1G,H)     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    no maint; +1 Hap; +25% food increase for plot
+│     b-Campfire              (+1G,H)     │  60│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    no maint; +1 Hap; +25% food increase for plot
 │   * u-Keeper (Special)                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Gesher Benot Ya’aqov              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: TXT
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
@@ -769,22 +769,22 @@ LEGEND
 │ Foraging                                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   * u-Caveman                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
 │     i-Foraging Site                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-│     b-Hideout                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    Def+100; (allow building of hideouts within X tiles of city "forts") 
+│     b-Hideout                           │  66│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    Def+100; (allow building of hideouts within X tiles of city "forts") 
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Gathering                               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │     r-Banana                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     r-Berries,                          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
-│     b-Midden (+1F)                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +5% food growth; [?]
+│     b-Midden (+1F)                      │  72│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +5% food growth; [?]
 │     b-Storage Pit (+1F)                 │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +5% food storage; [?]
-│     b-Lookout Tree                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (extra city sight)(?); [improvemnt: built on forest to provide same hill visibility]
+│     b-Lookout Tree                      │  76│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (extra city sight)(?); [improvemnt: built on forest to provide same hill visibility]
 │   * u-Gatherer (pre-Laborer)            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Symbolism                               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Great Rock (+F1)                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +20% vs fortified TODO: (belief or bonuses for certain troops; leader bonus)
+│     b-Great Rock (+F1)                  │  90│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    +20% vs fortified TODO: (belief or bonuses for certain troops; leader bonus)
 │     w-Kebara Cave                       │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO:
 │     w-Cougnac Caves                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO:
 │     w-Chauvet Caves                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO:
@@ -794,10 +794,10 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Social Structure-I?                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     c-Chieftain's Hut          (+1G,+1P)│    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO: *
+│     c-Chieftain's Hut          (+1G,+1P)│ 118│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO: *
 │   * u-Chief (t:leader)                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │     w-Sibudu Cave                       │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: TXT
-│     b-Nomadic Camp                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    allows unit Nomads; TODO: (?)
+│     b-Nomadic Camp                      │  93│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│  P V    allows unit Nomads; TODO: (?)
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -831,14 +831,14 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │ Coordinated Hunting                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   * u-Axe Thrower (:ranged)             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
-│     b-Meat Rack                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +1 Food
-│     c-Portable Mammoth Tent             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO: *
+│     b-Meat Rack                         │  95│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +1 Food
+│*****c-Portable Mammoth Tent             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO: ************************************
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │ Orienteering                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                     i-Lookout           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-│     b-Hide Rack                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +Bon hide armor for troops
+│     b-Hide Rack                         │ 105│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V    +Bon hide armor for troops
 │   * u-Raider[Bear] (:skirmish)          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
@@ -846,18 +846,18 @@ LEGEND
 │ Scouting                                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                   ` u-Scout             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │                   ` u-#Pathfinder       │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-│     b-Tree Stand                        │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (an improvement on the lookout tree)
+│     b-Tree Stand                        │ 110│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (an improvement on the lookout tree)
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │ Cooking:                                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-FirePit (Hearth)                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ?│ ?P V    <prereq:resource> TODO: ? (+5% or more food storage)
+│     b-FirePit (Hearth)                  │ 100│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ?│ ?P V    <prereq:resource> TODO: ? (+5% or more food storage)
 │   * u-Neanderthal (t:foot-off-heavy)    │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: MOD
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │ Symbolic Communication                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Wards                             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (some sort of moral boost for units near or in city)
+│     b-Wards                             │ 106│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (some sort of moral boost for units near or in city)
 │   * u-Outrider (t:skirmish)             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: ***
 │     w-Gobekli Tepe                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: TXT
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
@@ -866,10 +866,10 @@ LEGEND
 │ Planning                                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   * u-Thinker (t:support)               │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
 │   * u-Initiate (:vanguard)              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: *
-│     c-Luxury Hut                        │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│?        TODO: ?
-│     b-Village Alert                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (detection of barbarians even in dark areas -- popup alert)
-│     b-Picket                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (city defense; bonus against troop type)
-│     b-Earthen Wall                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│? P V    TODO: ? (city defense; bonus agsinst troop type) TODO: [?]
+│     c-Luxury Hut                        │ 132│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│?        TODO: ?
+│     b-Village Alert                     │ 104│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (detection of barbarians even in dark areas -- popup alert)
+│     b-Picket                            │ 110│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (city defense; bonus against troop type)
+│     b-Earthen Wall                      │ 110│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ -│? P V    TODO: ? (city defense; bonus agsinst troop type) TODO: [?]
 │     w-Gulf of Khambhat                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO: TXT
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -892,7 +892,7 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Expression                              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │     w-Wonderwerk Cave                   │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │-*│         TODO: fine-tune
-│     b-Bead Maker                        │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: ( beliefs ... )
+│     b-Bead Maker                        │ 120│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: ( beliefs ... )
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -902,17 +902,17 @@ LEGEND
 │     r-Fish                              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Skara Brae                        │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO 
 │ *** u-Atlatlist                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO
-│     b-Blubber Worker                    │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO
+│     b-Blubber Worker                    │ 126│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Tool Specialization                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Food Storage (+1F)                │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V
+│     b-Food Storage (+1F)                │ 122│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X  V
 │       {Must have Hunter or Gather unit} │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     n-Raft                              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ 
 │   * u-Laborer                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Carnac Stones                     │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │**│         TODO
-│     b-Defensive Ditches                 │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (city defense; bonus against troops) + (?)
+│     b-Defensive Ditches                 │ 124│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ >│   N     TODO: (city defense; bonus against troops) + (?)
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -925,7 +925,7 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Leadership-IX                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │ **^ u-%Galley {Buildable with limits}   │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │         TODO: repurpose
-│     c-Palace???                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO 
+│     c-Palace???                         │ 142│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ~│ ?       TODO 
 │     w-The Cairn of Barnenez             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
@@ -949,7 +949,7 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Idols:                                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Shrine (+1R)                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
+│     b-Shrine (+1R)                      │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ @│
 │      -#Pyramid                          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Ggantija Temples                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO
 │     w-Grottes du Pape                   │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO
@@ -958,7 +958,7 @@ LEGEND
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Painting-IX                             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Rock Paintings (+1C)              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X
+│     b-Rock Paintings (+1C)              │ 130│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ X
 │     r-Dyes                              │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     w-Spotted Horses, Pech Merle        │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
@@ -972,7 +972,7 @@ LEGEND
 │ Warfare                                 │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │   ? u-Brute                             │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │   * u-Woomerist                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-│     b-Palisade                          │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ X  V    TODO: ?
+│     b-Palisade                          │ 130│  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ .│ X  V    TODO: ?
 │     b-                                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ?
 │     b-                                  │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ ?
 │     w-Ugarit                            │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ *│         TODO
@@ -1037,7 +1037,7 @@ LEGEND
 │ 14 Ancient                              │   $│MT│BG│GO│HA│PR│SI│CU│FD│FA│TU│TR│IM│RS│PU│CI│ C│  │ NOTES                                            │
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │
 │ Pottery                                 │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
-│     b-Granary                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
+│     b-Granary                           │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │ @│
 │     r-Porcelein                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
 │     ------------------------------------┤    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├--------------------------------------------------┤
 │                                         │    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │                                                  │

@@ -15,7 +15,28 @@ logger:info( "__FILE__ util/utils" )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 -- from IGE
+
+
+
+-----------------------------------------------------------------------------
+function L(str, ...)
+  if str == nil then return "???" end
+  if type(str) ~= "string" then return tostring(str) end
+  return Locale.ConvertTextKey(str, ...); -- Locale.Lookup
+end
+
 
 
 -----------------------------------------------------------------------------
@@ -157,6 +178,41 @@ My Notes:
 
 
 
+
+
+
+
+
+-- list ATTRIBUTES for an OBJECT
+for k, v in pairs(getmetatable(player).__index) do print(k) end
+for k, v in pairs(getmetatable(unit).__index) do print(k) end
+for k, v in pairs(getmetatable(city).__index) do print(k) end
+for k, v in pairs(getmetatable(plot).__index) do print(k) end
+
+-- and some example objects:
+local plot = Map.GetPlot(0, 0)
+local player = Players[0]
+local unit = Players[0]:GetFirstReadyUnit()
+
+
+-- list ALL TABLES in DATABASE
+?? for k,v in pairs(GameInfo) do print(k) end
+
+
+-- list COLUMN NAMES from a TABLE
+?? for k,v in pairs(GameInfo.Units) do print(k) end
+
+
+-- list COLUMN VALUES from a TABLE
+for row in GameInfo.Units() do print(row.ID) end
+
+
+-- list FILTERED ROWS from TABLE
+for row in GameInfo.Units{UnitType="UNITCLASS_WARRIOR"} do print(row.ID) end
+
+
+
+
 -- print user data from TABLE in DATABASE (Lua Console State: Main_Pre)
 
 > print(GameInfo.Units)
@@ -177,46 +233,12 @@ My Notes:
 
 
 
--- list attributes for an OBJECT
-for k, v in pairs(getmetatable(player).__index) do print(k) end
-for k, v in pairs(getmetatable(unit).__index) do print(k) end
-for k, v in pairs(getmetatable(city).__index) do print(k) end
-for k, v in pairs(getmetatable(plot).__index) do print(k) end
-
--- and some example objects:
-local plot = Map.GetPlot(0, 0)
-local player = Players[0]
-local unit = Players[0]:GetFirstReadyUnit()
-
-
-
--- list all TABLES in DATABASE
-?? for k,v in pairs(GameInfo) do print(k) end
-
-
-
--- list column names from a TABLE
-?? for k,v in pairs(GameInfo.Units) do print(k) end
-
-
 -- list all current global DEFINES
 for row in GameInfo.Defines() do print(row.Name .. " : " .. row.Value) end
 
 
-
--- list column values from a TABLE
-for row in GameInfo.Units() do print(row.ID) end
-
-
-
--- list certain rows from TABLE
-for row in GameInfo.Units{UnitType="UNITCLASS_WARRIOR"} do print(row.ID) end
-
-
-
 -- list units for a player
 for u in Players[0]:Units() do print(u:GetUnitType()) end
-
 
 
 -- list or get cities from player
@@ -226,12 +248,13 @@ c = p:GetCityByID(0)
 
 
 -- inital setup for testing
+player =  Players[0]; team = player:GetTeam(); unit =  player:GetFirstReadyUnit(); x =  u:GetX(); plot = unit:GetPlot(); city =    player:GetCityByID(0)
 player =  Players[0]
-team = player:GetTeam()
-unit =  player:GetFirstReadyUnit()
-x =  u:GetX()
-plot = unit:GetPlot()
-
+team =    player:GetTeam()
+unit =    player:GetFirstReadyUnit()
+x =       u:GetX()
+plot =    unit:GetPlot()
+city =    player:GetCityByID(0) -- this may not work - only way I can get a city right now
 
 
 

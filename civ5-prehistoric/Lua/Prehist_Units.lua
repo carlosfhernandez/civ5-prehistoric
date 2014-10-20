@@ -290,6 +290,9 @@ function UnitSetXY_Pre(playerID, unitID, x ,y)
 
 
 
+  --
+  -- Visibility Modifications
+  --
   if (unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_PREHISTORIC_MAPPING"].ID)) then
 
     for neighbor in Neighbors(plot) do
@@ -324,10 +327,10 @@ function UnitSetXY_Pre(playerID, unitID, x ,y)
 
     end -- for y
 
+  end -- Visibility Modifications
 
 
 
-  end
 
 
 
@@ -462,6 +465,7 @@ function UnitFoundingException( unit, unitclass, city )
   if unitclass=="UNITCLASS_TRIBE_SPLIT" or unitclass=="UNITCLASS_SETTLER" then
 
     if not city:IsHasBuilding( "BUILDING_OPEN_SHELTER" ) then -- TODO: or ERA past a certain point
+      
       city:SetPopulation( city:GetPopulation() - 1, true )
     end
 

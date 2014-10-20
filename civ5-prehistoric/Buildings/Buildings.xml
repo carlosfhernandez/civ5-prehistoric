@@ -247,7 +247,7 @@
   </Table>
 
 
-  <!-- building expiration in turns -->
+  <!-- building expiration in turns [TODO] -->
   <Table name="Building_Expiration">
     <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
     <Column name="Expiration" type="integer" />
@@ -279,13 +279,13 @@
 
   <Table name="Building_NearUnitCombatModifiers">
     <Column name="BuildingType" type="text" reference="Buildings(Type)"/>
-    <Column name="UnitCombatType" type="text" reference="UnitCombat(Type"/>
+    <Column name="UnitCombatType" type="text" reference="UnitCombat(Type)"/>
     <Column name="Attack" type="integer"/>
     <Column name="Defense" type="integer"/>
     <Column name="Range" type="integer"/>
     <Column name="Falloff" type="integer"/>
   </Table>
-
+  <!-- TODO: Add UnitCombat or use exiting broad combat type -->
 
 
 
@@ -1721,7 +1721,7 @@
 
 
     <!-- LOOKOUT_ROCK -->
-    <!-- +1 visibility for certain units | TODO: validate -->
+    <!-- +1 visibility for certain units -->
     <Row>
       <Type>BUILDING_LOOKOUT_ROCK</Type>
       <BuildingClass>BUILDINGCLASS_LOOKOUT_ROCK</BuildingClass>
@@ -1778,7 +1778,7 @@
 
 
     <!-- SPRING_SOURCE -->
-    <!-- +1 Movement increase for certain units | TODO: validate -->
+    <!-- +1 Movement increase for certain units -->
     <Row>
       <Type>BUILDING_SPRING_SOURCE</Type>
       <BuildingClass>BUILDINGCLASS_SPRING_SOURCE</BuildingClass>
@@ -1804,7 +1804,9 @@
     </Row>
 
     <!-- GOLDEN_PATH -->
-    <!-- TODO: Increase access distance to resources -->
+    <!-- 
+      TODO: Increase access distance to resources 
+    -->
     <Row>
       <Type>BUILDING_GOLDEN_PATH</Type>
       <BuildingClass>BUILDINGCLASS_GOLDEN_PATH</BuildingClass>
@@ -2061,7 +2063,7 @@
     <Row>
       <Type>BUILDING_ALPHAS_CAVE</Type>
       <BuildingClass>BUILDINGCLASS_ALPHAS_CAVE</BuildingClass>
-      <Cost>20</Cost>
+      <Cost>36</Cost>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_ALPHAS_CAVE_DESC</Description>
@@ -2079,9 +2081,9 @@
 
     <!-- OPEN_SHELTER -->
     <!--
-      +1 food (TODO: validate)
+      +1 food
       TODO: +2 food if open plains (decide: on or around)
-      early founding units don't take away from population (TODO: validate)
+      TODO: early founding units don't take away from population
     -->
     <Row>
       <Type>BUILDING_OPEN_SHELTER</Type>
@@ -2117,12 +2119,14 @@
 
 
     <!-- ADVANCED_SHELTER -->
-    <!-- TODO: Multiple Subtypes -->
-    <!-- TODO: added defense, population -->
+    <!-- 
+      TODO: Multiple Subtypes
+      TODO: added defense, population 
+    -->
     <Row>
       <Type>BUILDING_ADVANCED_SHELTER</Type>
       <BuildingClass>BUILDINGCLASS_ADVANCED_SHELTER</BuildingClass>
-      <Cost>24</Cost>
+      <Cost>28</Cost>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_ADVANCED_SHELTER_DESC</Description>
@@ -2141,12 +2145,12 @@
     <!-- PORTABLE_GRASS_SHELTER -->
     <!-- 
       TODO: possible increase in distance of settline type units 
-      early founding units movement from 1 to 2 (TODO: validate)
+      TODO: early founding units movement from 1 to 2
     -->
     <Row>
       <Type>BUILDING_PORTABLE_GRASS_SHELTER</Type>
       <BuildingClass>BUILDINGCLASS_PORTABLE_GRASS_SHELTER</BuildingClass>
-      <Cost>22</Cost>
+      <Cost>26</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <Description>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_DESC</Description>
@@ -2200,7 +2204,10 @@
 
 
     <!-- CAUSEWAY -->
-    <!-- TODO: marsh bonus -->
+    <!-- 
+      Req: Marsh; 
+      TODO: marsh bonus 
+    -->
     <Row>
       <Type>BUILDING_CAUSEWAY</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY</BuildingClass>
@@ -2356,7 +2363,7 @@
     <Row>
       <Type>BUILDING_CHIEF_UPGRADE</Type>
       <BuildingClass>BUILDINGCLASS_CHIEF_UPGRADE</BuildingClass>
-      <Cost>44</Cost>
+      <Cost>58</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Description>TXT_KEY_BUILDING_CHIEF_UPGRADE_DESC</Description>
@@ -2434,7 +2441,7 @@
     <Row>
       <Type>BUILDING_HUNTING_TRAILS</Type>
       <BuildingClass>BUILDINGCLASS_HUNTING_TRAILS</BuildingClass>
-      <Cost>48</Cost>
+      <Cost>52</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_HUNTING_GATHERING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HUNTING_TRAILS_DESC</Description>
@@ -2469,7 +2476,7 @@
     <Row>
       <Type>BUILDING_CAMPFIRE</Type>
       <BuildingClass>BUILDINGCLASS_CAMPFIRE</BuildingClass>
-      <Cost>50</Cost>
+      <Cost>60</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_FIRE</PrereqTech>
       <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
@@ -2507,7 +2514,7 @@
     <Row>
       <Type>BUILDING_HIDEOUT</Type>
       <BuildingClass>BUILDINGCLASS_HIDEOUT</BuildingClass>
-      <Cost>54</Cost>
+      <Cost>66</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_FORAGING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HIDEOUT_DESC</Description>
@@ -2542,7 +2549,7 @@
     <Row>
       <Type>BUILDING_MIDDEN</Type>
       <BuildingClass>BUILDINGCLASS_MIDDEN</BuildingClass>
-      <Cost>56</Cost>
+      <Cost>72</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_GATHERING</PrereqTech>
       <Description>TXT_KEY_BUILDING_MIDDEN_TITLE</Description>
@@ -2592,7 +2599,7 @@
     <Row>
       <Type>BUILDING_LOOKOUT_TREE</Type>
       <BuildingClass>BUILDINGCLASS_LOOKOUT_TREE</BuildingClass>
-      <Cost>60</Cost>
+      <Cost>76</Cost>
       <GoldMaintenance>1</GoldMaintenance>
       <PrereqTech>TECH_GATHERING</PrereqTech>
       <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech>
@@ -2630,7 +2637,7 @@
     <Row>
       <Type>BUILDING_GREAT_ROCK</Type>
       <BuildingClass>BUILDINGCLASS_GREAT_ROCK</BuildingClass>
-      <Cost>60</Cost>
+      <Cost>90</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SYMBOLISM</PrereqTech>
       <Description>TXT_KEY_BUILDING_GREAT_ROCK_DESC</Description>
@@ -2685,7 +2692,7 @@
     <Row>
       <Type>BUILDING_NOMADIC_CAMP</Type>
       <BuildingClass>BUILDINGCLASS_NOMADIC_CAMP</BuildingClass>
-      <Cost>66</Cost>
+      <Cost>93</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
       <Description>TXT_KEY_BUILDING_NOMADIC_CAMP_DESC</Description>
@@ -2743,7 +2750,7 @@
     <Row>
       <Type>BUILDING_MEAT_RACK</Type>
       <BuildingClass>BUILDINGCLASS_MEAT_RACK</BuildingClass>
-      <Cost>68</Cost>
+      <Cost>95</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
       <Description>TXT_KEY_BUILDING_MEAT_RACK_DESC</Description>
@@ -2778,7 +2785,7 @@
     <Row>
       <Type>BUILDING_HIDE_RACK</Type>
       <BuildingClass>BUILDINGCLASS_HIDE_RACK</BuildingClass>
-      <Cost>70</Cost>
+      <Cost>105</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_ORIENTEERING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HIDE_RACK_DESC</Description>
@@ -2813,7 +2820,7 @@
     <Row>
       <Type>BUILDING_TREE_STAND</Type>
       <BuildingClass>BUILDINGCLASS_TREE_STAND</BuildingClass>
-      <Cost>70</Cost>
+      <Cost>110</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SCOUTING</PrereqTech>
       <Description>TXT_KEY_BUILDING_TREE_STAND_DESC</Description>
@@ -2848,7 +2855,7 @@
     <Row>
       <Type>BUILDING_FIRE_PIT</Type>
       <BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
-      <Cost>70</Cost>
+      <Cost>100</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_COOKING</PrereqTech>
       <Description>TXT_KEY_BUILDING_FIRE_PIT_DESC</Description>
@@ -2896,7 +2903,7 @@
     <Row>
       <Type>BUILDING_WARDS</Type>
       <BuildingClass>BUILDINGCLASS_WARDS</BuildingClass>
-      <Cost>72</Cost>
+      <Cost>106</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_SYMBOLIC_COMMUNICATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_WARDS_DESC</Description>
@@ -2929,7 +2936,7 @@
     <Row>
       <Type>BUILDING_LUXURY_HUT</Type>
       <BuildingClass>BUILDINGCLASS_LUXURY_HUT</BuildingClass>
-      <Cost>74</Cost>
+      <Cost>132</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_LUXURY_HUT_DESC</Description>
@@ -2954,7 +2961,7 @@
     <Row>
       <Type>BUILDING_VILLAGE_ALERT</Type>
       <BuildingClass>BUILDINGCLASS_VILLAGE_ALERT</BuildingClass>
-      <Cost>74</Cost>
+      <Cost>104</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_VILLAGE_ALERT_DESC</Description>
@@ -2977,7 +2984,7 @@
     <Row>
       <Type>BUILDING_PICKET</Type>
       <BuildingClass>BUILDINGCLASS_PICKET</BuildingClass>
-      <Cost>74</Cost>
+      <Cost>110</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_PICKET_DESC</Description>
@@ -3001,7 +3008,7 @@
     <Row>
       <Type>BUILDING_EARTHEN_WALL</Type>
       <BuildingClass>BUILDINGCLASS_EARTHEN_WALL</BuildingClass>
-      <Cost>74</Cost>
+      <Cost>110</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_EARTHEN_WALL_DESC</Description>
@@ -3042,7 +3049,7 @@
     <Row>
       <Type>BUILDING_BEAD_MAKER</Type>
       <BuildingClass>BUILDINGCLASS_BEAD_MAKER</BuildingClass>
-      <Cost>78</Cost>
+      <Cost>120</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_EXPRESSION</PrereqTech>
       <Description>TXT_KEY_BUILDING_BEAD_MAKER_DESC</Description>
@@ -3072,7 +3079,7 @@
     <Row>
       <Type>BUILDING_BLUBBER_WORKER</Type>
       <BuildingClass>BUILDINGCLASS_BLUBBER_WORKER</BuildingClass>
-      <Cost>78</Cost>
+      <Cost>126</Cost>
       <GoldMaintenance>0</GoldMaintenance>
       <PrereqTech>TECH_HARPOONING</PrereqTech>
       <Description>TXT_KEY_BUILDING_BLUBBER_WORKER_DESC</Description>
@@ -3103,7 +3110,7 @@
     <Row>
       <Type>BUILDING_FOOD_STORAGE</Type>
       <BuildingClass>BUILDINGCLASS_FOOD_STORAGE</BuildingClass>
-      <Cost>78</Cost>
+      <Cost>122</Cost>
       <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_FOOD_STORAGE_DESC</Description>
       <Help>TXT_KEY_BUILDING_FOOD_STORAGE_DESC</Help>
@@ -3123,7 +3130,7 @@
     <Row>
       <Type>BUILDING_DEFENSIVE_DITCHES</Type>
       <BuildingClass>BUILDINGCLASS_DEFENSIVE_DITCHES</BuildingClass>
-      <Cost>78</Cost>
+      <Cost>124</Cost>
       <PrereqTech>TECH_TOOL_SPECIALIZATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_DEFENSIVE_DITCHES_DESC</Description>
       <Help>TXT_KEY_BUILDING_DEFENSIVE_DITCHES_DESC</Help>
@@ -3152,7 +3159,10 @@
     <!-- PALACE -->
     <!-- PALACE -->
     <!-- TODO: something else -->
-
+    <Update>
+      <Set Cost ="150"/>
+      <Where BuildingClass ="BUILDINGCLASS_PALACE"/>
+    </Update>
 
 
 
@@ -3206,7 +3216,7 @@
       <Type>BUILDING_ROCK_PAINTINGS</Type>
       <BuildingClass>BUILDINGCLASS_ROCK_PAINTINGS</BuildingClass>
       <PrereqTech>TECH_PAINTING</PrereqTech>
-      <Cost>80</Cost>
+      <Cost>130</Cost>
       <Description>TXT_KEY_BUILDING_ROCK_PAINTINGS_DESC</Description>
       <Help>TXT_KEY_BUILDING_ROCK_PAINTINGS_HELP</Help>
       <Strategy>TXT_KEY_BUILDING_ROCK_PAINTINGS_STATEGY</Strategy>
@@ -3233,7 +3243,7 @@
     <Row>
       <Type>BUILDING_PALISADE</Type>
       <BuildingClass>BUILDINGCLASS_PALISADE</BuildingClass>
-      <Cost>80</Cost>
+      <Cost>130</Cost>
       <PrereqTech>TECH_WARFARE</PrereqTech>
       <Description>TXT_KEY_BUILDING_PALISADE_DESC</Description>
       <Help>TXT_KEY_BUILDING_PALISADE_HELP</Help>
@@ -3451,94 +3461,493 @@
   │
   │
   └─────────────────────────────────────────────────────────────────────────────
+
+  FLAVOR_OFFENSE
+  FLAVOR_DEFENSE
+  FLAVOR_CITY_DEFENSE
+  FLAVOR_MILITARY_TRAINING
+  FLAVOR_RECON
+  FLAVOR_RANGED
+  FLAVOR_EXPANSION
+  FLAVOR_GROWTH
+  FLAVOR_TILE_IMPROVEMENT
+  FLAVOR_INFRASTRUCTURE
+  FLAVOR_PRODUCTION
+  FLAVOR_GOLD
+  FLAVOR_SCIENCE
+  FLAVOR_CULTURE
+  FLAVOR_HAPPINESS
+  FLAVOR_GREAT_PEOPLE
+  FLAVOR_WONDER
+
+  FLAVOR_RELIGION
+  FLAVOR_DIPLOMACY
+  FLAVOR_WATER_CONNECTION
+
+  FLAVOR_SOCIETY *
+
+  FLAVOR_ ...
+  ...
+
   --> 
   <Building_Flavors>
 
 
-    <Row>
-      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>8</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
-      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>15</Flavor>
-    </Row>
+    <!-- Starting Building: TREE_OF_LIFE -->
 
 
+    <!-- Make everyone build Tree -->
     <Row>
-      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
-      <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>15</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
-      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>15</Flavor>
-    </Row>
-
-
-    <Row>
-      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
-      <FlavorType>FLAVOR_EXPANSION</FlavorType>
-      <Flavor>30</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+      <BuildingType>BUILDING_TREE</BuildingType>
       <FlavorType>FLAVOR_GOLD</FlavorType>
-      <Flavor>15</Flavor>
+      <Flavor>20</Flavor>
     </Row>
     <Row>
-      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+      <BuildingType>BUILDING_TREE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_TREE</BuildingType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>15</Flavor>
+      <Flavor>20</Flavor>
     </Row>
     <Row>
-      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
-      <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>15</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <BuildingType>BUILDING_</BuildingType>
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>3</Flavor>
+      <Flavor>20</Flavor>
     </Row>
+
     <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
-      <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>18</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+      <BuildingType>BUILDING_LOOKOUT_ROCK</BuildingType>
       <FlavorType>FLAVOR_EXPANSION</FlavorType>
-      <Flavor>5</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
-      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>5</Flavor>
-    </Row>
-    <Row>
-      <BuildingType>BUILDING_SHELTER</BuildingType>
-      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
       <Flavor>10</Flavor>
     </Row>
 
     <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+      <BuildingType>BUILDING_SPRING_SOURCE</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_GOLDEN_PATH</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_GOLDEN_PATH</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_STONE_PILE</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row><!-- CAPITOL -->
+      <BuildingType>BUILDING_GRAND_OVERLOOK</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_OVERLOOK</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_OVERLOOK</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CHERT_DEPOSIT</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_GATHERING_CIRCLE</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_GATHERING_CIRCLE</BuildingType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BONE_PILE</BuildingType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BONE_PILE</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_OPEN_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_OPEN_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_OPEN_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GRASS_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>7</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PORTABLE_GRASS_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_ADVANCED_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_ADVANCED_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_ADVANCED_SHELTER</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row><!-- CAPITOL -->
+      <BuildingType>BUILDING_ALPHAS_CAVE</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAUSEWAY</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_RUBBLE_WALL</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_RUBBLE_WALL</BuildingType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_WATER_STORAGE</BuildingType>
       <FlavorType>FLAVOR_GROWTH</FlavorType>
       <Flavor>18</Flavor>
     </Row>
     <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
-      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <BuildingType>BUILDING_WATER_STORAGE</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BURIAL_SITE</BuildingType>
+      <FlavorType>FLAVOR_REILGION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BURIAL_SITE</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_HUNTING_TRAILS</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_HUNTING_TRAILS</BuildingType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CAMPFIRE</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_HIDEOUT</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_HIDEOUT</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_MIDDEN</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_MIDDEN</BuildingType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_STORAGE_PIT</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_STORAGE_PIT</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_TREE</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row><!-- TODO -->
+    <Row>
+      <BuildingType>BUILDING_LOOKOUT_TREE</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor>
+    </Row><!-- TODO -->
+
+    <Row>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>9</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <!-- CAPITOL -->
+    <Row>
+      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_CHIEF_HUT</BuildingType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_NOMADIC_CAMP</BuildingType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+      <BuildingType>BUILDING_NOMADIC_CAMP</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_NOMADIC_CAMP</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_MEAT_RACK</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_HIDE_RACK</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_TREE_STAND</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_TREE_STAND</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_FIRE_PIT</BuildingType>
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>3</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_WARDS</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_WARDS</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_LUXURY_HUT</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_VILLAGE_ALERT</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_PICKET</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_EARTHEN_WALL</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BEAD_MAKER</BuildingType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_BLUBBER_WORKER</BuildingType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BLUBBER_WORKER</BuildingType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_BLUBBER_WORKER</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_FOOD_STORAGE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <Row>
+      <BuildingType>BUILDING_DEFENSIVE_DITCHES</BuildingType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>1</Flavor><!-- TODO -->
+    </Row>
+
+    <!-- CAPITOL -->
+    <Row>
+      <BuildingType>BUILDING_PALACE</BuildingType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>25</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PALACE</BuildingType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>25</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PALACE</BuildingType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>25</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PALACE</BuildingType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>25</Flavor><!-- TODO -->
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_PALACE</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>25</Flavor><!-- TODO -->
     </Row>
 
     <Row>
@@ -3553,11 +3962,17 @@
       <Flavor>10</Flavor>
     </Row>
 
+
+    <!-- SHRINE -->
+
+
+    <!--
     <Row>
       <BuildingType>BUILDING_GATHERING_ROCK</BuildingType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
       <Flavor>40</Flavor>
     </Row>
+    -->
 
   </Building_Flavors>
 

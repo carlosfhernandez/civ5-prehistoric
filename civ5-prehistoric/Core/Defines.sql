@@ -177,7 +177,6 @@ CULTURE_COST_LATER_PLOT_MULTIPLIER     10
 CULTURE_COST_LATER_PLOT_EXPONENT      1.1
 CULTURE_COST_VISIBLE_DIVISOR            5
 CULTURE_PLOT_COST_MOD_MINIMUM         -85 Minimum culture cost after any discounts (15%)
-MINOR_CIV_PLOT_CULTURE_COST_MULTIPLIER    150
 MAXIMUM_BUY_PLOT_DISTANCE               3 The maximum radius to purchase hexes around a city
 MAXIMUM_ACQUIRE_PLOT_DISTANCE           5 The maximum radius to acquire hexes from a city (have not tested if this is less than MAXIMUM_BUY_PLOT_DISTANCE)
 PLOT_INFLUENCE_DISTANCE_MULTIPLIER    100
@@ -191,10 +190,9 @@ PLOT_BUY_RESOURCE_COST               -100
 PLOT_BUY_YIELD_COST                    10
 PLOT_INFLUENCE_YIELD_POINT_COST        -1
 PLOT_INFLUENCE_NO_ADJACENT_OWNED_COST     1000
+MINOR_CIV_PLOT_CULTURE_COST_MULTIPLIER     150
 
 */
-
-
 
 
 
@@ -220,6 +218,7 @@ UPDATE Defines  SET Value =       1     WHERE Name = 'UNIT_VISIBILITY_RANGE';   
 
 RECON_VISIBILITY_RANGE                  6 The visibility of air units with recon.
 UNIT_VISIBILITY_RANGE                   1
+EMBARKED_VISIBILITY_RANGE               0 The visibility range of embarked units.
 PLOT_VISIBILITY_RANGE                   1 
 MOUNTAIN_SEE_FROM_CHANGE                2
 MOUNTAIN_SEE_THROUGH_CHANGE             2
@@ -265,21 +264,19 @@ HILLS_EXTRA_DEFENSE                    25 bonus for units on hill terrain (25%)
 RIVER_ATTACK_MODIFIER                 -20 bonus for attacking across a river (20% penalty)
 AMPHIB_ATTACK_MODIFIER                -50 bonus for attacking from sea to land (50% penalty)
 
-ATTACK_SAME_STRENGTH_MIN_DAMAGE (2400) = The minimum amount of damage melee units deal when evenly matched in hundreths (4 damage).
-ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (400) (1200) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
-WOUNDED_DAMAGE_MULTIPLIER (50) (33) =
-TRAIT_WOUNDED_DAMAGE_MOD (-50) =
-
-RANGE_ATTACK_RANGED_DEFENDER_MOD (100) = The defensive value for ranged units against ranged attacks (125%).
-RANGE_ATTACK_SAME_STRENGTH_MIN_DAMAGE (200) = The minimum amount of damage ranged units deal when evenly matched in hundreths (2 damage).
-RANGE_ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (400) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-2 typically)
-AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE (200) (2400) = developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
-AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE (200) (1200) = The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
-INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE (400) (2400) = The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
-INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE (300) (1200) = developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
-AIR_SWEEP_INTERCEPTION_DAMAGE_MOD (75) = The amount of damage air units deal in interception (75%).
-
-NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER (40) = 
+ATTACK_SAME_STRENGTH_MIN_DAMAGE                     2400 The minimum amount of damage melee units deal when evenly matched in hundreths (4 damage).
+ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE           400 (1200) = developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
+WOUNDED_DAMAGE_MULTIPLIER                             50 (33)
+TRAIT_WOUNDED_DAMAGE_MOD                             -50 
+RANGE_ATTACK_RANGED_DEFENDER_MOD                     100 The defensive value for ranged units against ranged attacks (125%).
+RANGE_ATTACK_SAME_STRENGTH_MIN_DAMAGE                200 The minimum amount of damage ranged units deal when evenly matched in hundreths (2 damage).
+RANGE_ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE     400 developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-2 typically)
+INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE                400 (2400) = The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
+INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE     300 (1200) = developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
+AIR_SWEEP_INTERCEPTION_DAMAGE_MOD                     75 The amount of damage air units deal in interception (75%).
+NAVAL_COMBAT_DEFENDER_STRENGTH_MULTIPLIER             40
+AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE   200 (2400) = developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
+AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE               200 (1200) = The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
 
 */
 
@@ -362,6 +359,14 @@ FOOD_CONSUMPTION_PER_POPULATION         2 The amount of food each citizen consum
 
 
 
+
+
+
+
+
+
+
+
 -- Happiness
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -433,19 +438,20 @@ UPDATE Defines  SET Value =      10     WHERE Name = 'MINOR_CIV_CONTACT_GOLD_OTH
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 /*
+CITY_CAPTURE_POPULATION_PERCENT        50 The percent of the population a captured city will retain (50%).
 
 BARBARIAN_CAMP_FIRST_TURN_PERCENT_OF_TARGET_TO_ADD (33) =
 BARBARIAN_CAMP_ODDS_OF_NEW_CAMP_SPAWNING (2) =
-BARBARIAN_CAMP_MINIMUM_DISTANCE_CAPITAL (4) = The minimum distance barbarian camps may spawn to a civilization's capital.
+BARBARIAN_CAMP_MINIMUM_DISTANCE_CAPITAL 4 The minimum distance barbarian camps may spawn to a civilization's capital.
 BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP (7) = The minimum distance barbarian camps may spawn to another barbarian camp.
-BARBARIAN_CAMP_COASTAL_SPAWN_ROLL (6) = 
+BARBARIAN_CAMP_COASTAL_SPAWN_ROLL       6
 BARBARIAN_EXTRA_RAGING_UNIT_SPAWN_CHANCE (10) =
-BARBARIAN_NAVAL_UNIT_START_TURN_SPAWN (30) =
-MAX_BARBARIANS_FROM_CAMP_NEARBY (2) =
-MAX_BARBARIANS_FROM_CAMP_NEARBY_RANGE (4) =
-GOLD_FROM_BARBARIAN_CONVERSION (25) = 
-BARBARIAN_CITY_GOLD_RANSOM (200) =
-BARBARIAN_UNIT_GOLD_RANSOM (100) = 
+BARBARIAN_NAVAL_UNIT_START_TURN_SPAWN  30
+MAX_BARBARIANS_FROM_CAMP_NEARBY         2
+MAX_BARBARIANS_FROM_CAMP_NEARBY_RANGE   4
+GOLD_FROM_BARBARIAN_CONVERSION         25
+BARBARIAN_CITY_GOLD_RANSOM            200
+BARBARIAN_UNIT_GOLD_RANSOM            100
 
 */
 
@@ -482,16 +488,17 @@ FRIENDLY_HEAL_RATE                      2 The amount of hp a unit will heal per 
 CITY_HEAL_RATE                          3 The amount of hp a unit will heal per turn in a city.
 ATTACK_SAME_STRENGTH_MIN_DAMAGE       400 The minimum amount of damage melee units deal when evenly matched in hundreths (4 damage).
 RANGE_ATTACK_RANGED_DEFENDER_MOD      125 The defensive value for ranged units against ranged attacks (125%).
-ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE        400 developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
-RANGE_ATTACK_SAME_STRENGTH_MIN_DAMAGE 200 The minimum amount of damage ranged units deal when evenly matched in hundreths (2 damage).
-RANGE_ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE  400 developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-2 typically)
-AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE       200 The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
-AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE      200 developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
-INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE 400 The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
-INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE  300 developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
-AIR_SWEEP_INTERCEPTION_DAMAGE_MOD      75 The amount of damage air units deal in interception (75%).
 WOUNDED_DAMAGE_MULTIPLIER              50
 TRAIT_WOUNDED_DAMAGE_MOD              -50
+ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE           400 developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-3 typically)
+RANGE_ATTACK_SAME_STRENGTH_MIN_DAMAGE                200 The minimum amount of damage ranged units deal when evenly matched in hundreths (2 damage).
+RANGE_ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE     400 developer note: this will actually produce between 0.00 and 3.99 damage (rounded down to 0-2 typically)
+AIR_STRIKE_SAME_STRENGTH_MIN_DEFENSE_DAMAGE          200 The minimum amount of damage air units take when evenly matched in hundreths (2 damage).
+AIR_STRIKE_SAME_STRENGTH_POSSIBLE_EXTRA_DEFENSE_DA MAGE   200 developer note: this will actually produce between 0.00 and 1.99 damage (rounded down to 0-1 typically)
+INTERCEPTION_SAME_STRENGTH_MIN_DAMAGE                400 The minimum amount of damage air units deal in interception when evenly matched in hundreths (4 damage).
+INTERCEPTION_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE     300 developer note: this will actually produce between 0.00 and 2.99 damage (rounded down to 0-2 typically)
+AIR_SWEEP_INTERCEPTION_DAMAGE_MOD                     75 The amount of damage air units deal in interception (75%).
+
 
 */
 
@@ -789,7 +796,7 @@ Embarked mechanics:
 EMBARKED_UNIT_COMBAT_STRENGTH (0) = The combat strength of embarked units (is it flat or percentage?).
 EMBARKED_NOT_CIVILIAN_COMBAT_STRENGTH (500) = Combat strength of non-civilian embarked units which can defend themselves.
 EMBARKED_UNIT_MOVEMENT (2) = The movement rate of embarked units.
-EMBARKED_VISIBILITY_RANGE (0) = The visibility range of embarked units.
+
 
 
 
@@ -919,31 +926,7 @@ PROXIMITY_FAR_DISTANCE_MAP_MULTIPLIER (45) =
 PROXIMITY_FAR_DISTANCE_MAX (50) =
 PROXIMITY_FAR_DISTANCE_MIN (20) =
 
-Border expansion mechanics:
-Spoiler:  
 
-PLOT_BASE_COST (50) = cost of buying the first hex of land
-PLOT_ADDITIONAL_COST_PER_PLOT (5) = additional cost of each further purchased hex of land
-PLOT_COST_APPEARANCE_DIVISOR (5) = rounds cost to a multiple of 5 (but in which direction?)
-CULTURE_COST_FIRST_PLOT (15) = amount of culture required to expand the borders of a city for the first time
-CULTURE_COST_LATER_PLOT_MULTIPLIER (10) = 
-CULTURE_COST_LATER_PLOT_EXPONENT (1.1) =
-CULTURE_COST_VISIBLE_DIVISOR (5) =
-CULTURE_PLOT_COST_MOD_MINIMUM (-85) = minimum culture cost after any discounts (15%)
-MINOR_CIV_PLOT_CULTURE_COST_MULTIPLIER (150) =
-MAXIMUM_BUY_PLOT_DISTANCE (3) = The maximum radius to purchase hexes aruond a city.
-MAXIMUM_ACQUIRE_PLOT_DISTANCE (5) = The maximum radius to acquire hexes from a city (have not tested if this is less than MAXIMUM_BUY_PLOT_DISTANCE).
-PLOT_INFLUENCE_DISTANCE_MULTIPLIER (100) =
-PLOT_INFLUENCE_RING_COST (100) =
-PLOT_INFLUENCE_WATER_COST (25) =
-PLOT_INFLUENCE_IMPROVEMENT_COST (-5) =
-PLOT_INFLUENCE_ROUTE_COST (0) =
-PLOT_INFLUENCE_RESOURCE_COST (-105) =
-PLOT_INFLUENCE_NW_COST (-105) =
-PLOT_BUY_RESOURCE_COST (-100) =
-PLOT_BUY_YIELD_COST (10) =
-PLOT_INFLUENCE_YIELD_POINT_COST (-1) =
-PLOT_INFLUENCE_NO_ADJACENT_OWNED_COST (1000) =
 
 
 Spoiler:  

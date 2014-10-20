@@ -43,8 +43,9 @@ unorganized random notes
 - tech
   - add future-future tech or something like that (not linked) that can be a container for other things
 
+- specialists
 
-
-
+- resources
+  - berries (verify)
 
 

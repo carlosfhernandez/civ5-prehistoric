@@ -11,6 +11,191 @@
  *  ╘══════════════════════════════════════════════════════════════════════════╛
  */
 
+
+--  ┌──────────────────────────────────────────────────────────────────────────┐
+--  │
+--  │ TABLE MODIFICATIONS 
+--  │
+--  └──────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+--
+--    TABLE ADDITIONS
+--
+--    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
+
+-- building, palace/capitol, palace_addition, wonder, national_wonder, 
+-- special_wonder, prereq
+ALTER TABLE Buildings     ADD Category            text    DEFAULT 'building';
+
+-- is visible in the city list
+ALTER TABLE Buildings     ADD IsVisible           boolean DEFAULT 1;
+
+-- is visible in the pedia
+ALTER TABLE Buildings     ADD PediaVisible        boolean DEFAULT 1;
+
+-- name of policy required before displaying in city list
+ALTER TABLE Buildings     ADD PrereqPolicy        text    DEFAULT null;
+
+-- name of religion required before displaying in city list
+ALTER TABLE Buildings     ADD PrereqReligion      text    DEFAULT null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--  ┌──────────────────────────────────────────────────────────────────────────┐
+--  │
+--  │ DATA MODIFICATIONS 
+--  │
+--  └──────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+--
+--    UPDATES
+--
+--    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
+
+
+
+
+--
+--    BUILDING CLASSES
+--
+
+
+-- TODO
+-- Change free BuildingClass from Palace to Tree of Life
+
+UPDATE Civilization_FreeBuildingClasses 
+SET BuildingClassType='BUILDINGCLASS_TREE_LIFE'
+WHERE BuildingClassType='BUILDINGCLASS_PALACE';
+
+-- 
+-- Add base dummy building to provide bonuses (for now - TODO)
+INSERT INTO Civilization_FreeBuildingClasses 
+  SELECT CivilizationType, "BUILDINGCLASS_DUMMY_OPEN_SHELTER" 
+  FROM Civilization_FreeBuildingClasses;
+
+INSERT INTO Civilization_FreeBuildingClasses 
+  SELECT CivilizationType, "BUILDINGCLASS_PREHISTORIC_TRIBE" 
+  FROM Civilization_FreeBuildingClasses;
+
+
+
+
+
+
+--
+--    PREREQ TECHS
+--
+
+
+-- Change PrereqTechs for Palace, Shrine and Monument BuildingClasses:
+
+UPDATE Buildings
+SET PrereqTech='TECH_LEADERSHIP', Cost='40'
+WHERE BuildingClass='BUILDINGCLASS_PALACE';
+
+UPDATE Buildings
+SET PrereqTech='TECH_IDOLS'
+WHERE BuildingClass='BUILDINGCLASS_SHRINE';
+
+UPDATE Buildings
+SET PrereqTech='TECH_MASONRY'
+WHERE BuildingClass='BUILDINGCLASS_MONUMENT';
+
+-- ensure missing building or non prehistoric buildings (possible added by
+-- other mods) are not able to be built until ancient
+UPDATE Buildings 
+SET PrereqTech='TECH_AGRICULTURE' 
+WHERE PrereqTech IS NULL or PrereqTech = ''
+
+
+
+
+
+--
+--    FLAVORS
+--
+
+
+-- Raise/add Flavors for the Palace to force AI to build it:
+
+UPDATE Building_Flavors
+SET Flavor='150'
+WHERE BuildingType='BUILDING_PALACE';
+
+
+
+
+
+--
+-- Cost Adjustment
+-- 
+-- ALTER table Buildings ADD COLUMN PrereqEra AFTER PrereqTech;
+-- UPDATE Buildings SET PrereqEra = (SELECT Era FROM Technologies WHERE Buildings.PrereqTech = Technologies.Type);
+--
+--                         Modified
+-- Original Costs Range    (1.25x + YYY) (1.5x + 100)
+--
+-- ANCIENT     040 - 075   150 - 192     160 - 212
+-- CLASSICAL   075 - 100   217 - 250     212 - 250
+-- MEDIEVAL    120 - 160   300 - 350     280 - 340
+-- RENAISSANCE 200 - 300   425 - 550     400 - 550
+-- INDUSTRIAL  300 - 300                 550 - 550
+-- MODERN      300 - 360                 550 - 640
+-- ATOMIC      400 - 500                 700 - 850
+-- INFORMATION 625 -                    1037 - 
+--
+UPDATE Buildings Set Cost = Cost * 1.25 + 100;
+--UPDATE Buildings Set Cost = Cost + 100 WHERE Buildings.PrereqTech IN 
+  --( SELECT T.Type FROM Technologies AS T INNER JOIN Buildings AS B ON T.Type = B.PrereqTech WHERE T.Era = 'ERA_ANCIENT' );
+
+
+
+--
+--    INSERTS
+--
+--    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
+
+
+--
+--    FLAVORS
+--
+
+
+INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
+	VALUES	("BUILDING_PALACE", "FLAVOR_PRODUCTION", "150");
+INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
+	VALUES	("BUILDING_PALACE", "FLAVOR_EXPANSION", "150");
+
+
+
+
+
 /*
 
 BRAVE NEW WORLD v. ??????
@@ -238,178 +423,6 @@ CityWall ?
 
 
 */
-
-
-
-
-
-
---  ┌──────────────────────────────────────────────────────────────────────────┐
---  │
---  │ TABLE MODIFICATIONS 
---  │
---  └──────────────────────────────────────────────────────────────────────────┘
-
-
-
-
-
-
-
---
---    TABLE ADDITIONS
---
---    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
-
--- building, palace/capitol, palace_addition, wonder, national_wonder, 
--- special_wonder, prereq
-ALTER TABLE Buildings     ADD Category            text    DEFAULT 'building';
-
--- is visible in the city list
-ALTER TABLE Buildings     ADD IsVisible           boolean DEFAULT 1;
-
--- is visible in the pedia
-ALTER TABLE Buildings     ADD PediaVisible        boolean DEFAULT 1;
-
--- name of policy required before displaying in city list
-ALTER TABLE Buildings     ADD PolicyRequired      text    DEFAULT null;
-
--- name of religion required before displaying in city list
-ALTER TABLE Buildings     ADD ReligionRequired    text    DEFAULT null;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---  ┌──────────────────────────────────────────────────────────────────────────┐
---  │
---  │ DATA MODIFICATIONS 
---  │
---  └──────────────────────────────────────────────────────────────────────────┘
-
-
-
-
-
---
---    UPDATES
---
---    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
-
-
-
-
---
---    BUILDING CLASSES
---
-
-
--- TODO
--- Change free BuildingClass from Palace to Tree of Life
-
-UPDATE Civilization_FreeBuildingClasses 
-SET BuildingClassType='BUILDINGCLASS_TREE_LIFE'
-WHERE BuildingClassType='BUILDINGCLASS_PALACE';
-
--- 
--- Add base dummy building to provide bonuses (for now - TODO)
-INSERT INTO Civilization_FreeBuildingClasses 
-  SELECT CivilizationType, "BUILDINGCLASS_DUMMY_OPEN_SHELTER" 
-  FROM Civilization_FreeBuildingClasses;
-
-INSERT INTO Civilization_FreeBuildingClasses 
-  SELECT CivilizationType, "BUILDINGCLASS_PREHISTORIC_TRIBE" 
-  FROM Civilization_FreeBuildingClasses;
-
-
-
-
-
-
---
---    PREREQ TECHS
---
-
-
--- Change PrereqTechs for Palace, Shrine and Monument BuildingClasses:
-
-UPDATE Buildings
-SET PrereqTech='TECH_LEADERSHIP', Cost='40'
-WHERE BuildingClass='BUILDINGCLASS_PALACE';
-
-UPDATE Buildings
-SET PrereqTech='TECH_IDOLS'
-WHERE BuildingClass='BUILDINGCLASS_SHRINE';
-
-UPDATE Buildings
-SET PrereqTech='TECH_MASONRY'
-WHERE BuildingClass='BUILDINGCLASS_MONUMENT';
-
--- ensure missing building or non prehistoric buildings (possible added by
--- other mods) are not able to be built until ancient
-UPDATE Buildings 
-SET PrereqTech='TECH_AGRICULTURE' 
-WHERE PrereqTech IS NULL or PrereqTech = ''
-
-
-
-
-
---
---    FLAVORS
---
-
-
--- Raise/add Flavors for the Palace to force AI to build it:
-
-UPDATE Building_Flavors
-SET Flavor='150'
-WHERE BuildingType='BUILDING_PALACE';
-
-
-
-
-
---
--- Cost Adjustment
--- 
-
-UPDATE Buildings Set Cost = Cost * 1.25;
-
-
-
-
-
-
---
---    INSERTS
---
---    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
-
-
---
---    FLAVORS
---
-
-
-INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
-	VALUES	("BUILDING_PALACE", "FLAVOR_PRODUCTION", "150");
-INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
-	VALUES	("BUILDING_PALACE", "FLAVOR_EXPANSION", "150");
 
 
 
