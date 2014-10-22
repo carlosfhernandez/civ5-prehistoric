@@ -64,27 +64,23 @@ GameEvents.PlayerCityFounded.Add( OnCityFounded2 );
 -- int fogState
 --
 function SerialEventCityCreated_Pre( vHexPos, player, cityID, artStyleType, eraType, continent, populationSize, size, fogState )
-
+  logger:debug( "" )
   logger:debug( "[SerialEventCityCreated_Pre] " )
   logger:debug( " city:" .. cityID )
   logger:debug( " player:" .. player )
   logger:debug( " era:" .. eraType )
-  logger:debug( " popsize:" .. continent )
+  logger:debug( " popsize:" .. populationSize )
   logger:debug( " size:" .. size )
   logger:debug( "" )
-
 
   local p = player
   local e = eraType
   local c = cityID
   local v = vHexPos
-
   local player = Players[p]
   local city = player:GetCityByID(c)
-
   local era = GameInfo.Eras[e].Type
   logger:debug( "era:" .. era )
-
 
   -- Limit maximum growth based on era
   if     era == "ERA_PREHISTORIC"         then
@@ -129,7 +125,7 @@ Events.SerialEventCityCreated.Add( SerialEventCityCreated_Pre )
 -- PlayerID newPlayer
 --
 function SerialEventCityDestroyed_Pre( hexPos, player, cityID, newPlayer )
-
+  logger:debug( "" )
   logger:debug( "[SerialEventCityDestroyed_Pre]" )
   logger:debug( "player:" .. player )
   logger:debug( "city:" .. cityID )

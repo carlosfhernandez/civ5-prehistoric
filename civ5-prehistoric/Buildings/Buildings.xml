@@ -370,58 +370,58 @@
     </Row>
 
     <Row>
-      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
       <UnitType>UNIT_WATCHER</UnitType>
       <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
       <UnitType>UNIT_LOOKOUT</UnitType>
       <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
       <UnitType>UNIT_SENTINEL</UnitType>
       <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_WATERPROOF_HUT</BuildingType>
+      <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
       <UnitType>UNIT_PROTECTOR</UnitType>
       <UnitPromotionType>PROMOTION_HEALTHIER</UnitPromotionType>
     </Row>    
     
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_AUSTRALOPITHECUS</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_AUTOCHTHON</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_CAVEMAN</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_NEANDERTHAL</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_BONE_WARRIOR</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_BUSHMAN</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
     <Row>
-      <BuildingType>BUILDING_PORTABLE_GREAT_ROCK</BuildingType>
+      <BuildingType>BUILDING_GREAT_ROCK</BuildingType>
       <UnitType>UNIT_INITIATE</UnitType>
       <UnitPromotionType>PROMOTION_INSPIRED</UnitPromotionType>
     </Row>
@@ -526,7 +526,7 @@
   │   - BUILDINGCLASS_GRAND_OVERLOOK / SOARING CLIFFS
   │   - BUILDINGCLASS_ALPHAS_CAVE
   │   - BUILDINGCLASS_CHIEF_HUT
-  │   - BUILDINGCLASS_PORTABLE_MAMMOTH_TENT  
+  │   - BUILDINGCLASS_MAMMOTH_TENT  
   │   - BUILDINGCLASS_LUXURY_HUT
   │
   │
@@ -549,10 +549,12 @@
   │
   │   - BUILDINGCLASS_CAUSEWAY_DUMMY
   │   - BUILDINGCLASS_FIRE_PIT_DUMMY
+  │   - BUILDINGCLASS_OPEN_SHELTER_DUMMY
+  │
   │   - BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY
   │
   │
-  │   - BUILDINGCLASS_DUMMY_OPEN_SHELTER
+  │
   │
   │
   │
@@ -657,17 +659,17 @@
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
     <Row>
-      <Type>BUILDINGCLASS_PORTABLE_CAMP</Type>
-      <DefaultBuilding>BUILDING_PORTABLE_CAMP</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_PORTABLE_CAMP_TITLE</Description>
-      <MaxPlayerInstances>1</MaxPlayerInstances>
-    </Row>
-    <Row>
       <Type>BUILDINGCLASS_CHIEF_HUT</Type>
       <DefaultBuilding>BUILDING_CHIEF_HUT</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_CHIEF_HUT_TITLE</Description>
       <MaxPlayerInstances>1</MaxPlayerInstances>
     </Row>
+    <Row>
+      <Type>BUILDINGCLASS_MAMMOTH_TENT</Type>
+      <DefaultBuilding>BUILDING_MAMMOTH_TENT</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_MAMMOTH_TENT_TITLE</Description>
+      <MaxPlayerInstances>1</MaxPlayerInstances>
+    </Row>    
     <Row>
       <Type>BUILDINGCLASS_LUXURY_HUT</Type>
       <DefaultBuilding>BUILDING_LUXURY_HUT</DefaultBuilding>
@@ -731,19 +733,16 @@
       <Description>TXT_KEY_BUILDING_FIRE_PIT_DUMMY_DESC</Description>
     </Row>
     <Row>
+      <Type>BUILDINGCLASS_OPEN_SHELTER_DUMMY</Type>
+      <DefaultBuilding>BUILDING_OPEN_SHELTER_DUMMY</DefaultBuilding>
+      <Description>TXT_KEY_BUILDING_OPEN_SHELTER_DUMMY_DESC</Description>
+    </Row>
+
+    <Row>
       <Type>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</Type>
       <DefaultBuilding>BUILDING_PREHISTORIC_TRIBE_DUMMY</DefaultBuilding>
       <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC</Description>
     </Row>
-
-
-    <Row>
-      <Type>BUILDINGCLASS_DUMMY_OPEN_SHELTER</Type>
-      <DefaultBuilding>BUILDING_DUMMY_OPEN_SHELTER</DefaultBuilding>
-      <Description>Dummy Open Shelter</Description>
-    </Row>
-
-
 
 
 
@@ -1084,10 +1083,10 @@
   │     + BUILDING_ALPHAS_CAVE  
   │   - BUILDINGCLASS_CHIEF_UPGRADE
   │     + BUILDING_CHEIF_UPGRADE
-  │   - BUILDINGCLASS_PORTABLE_CAMP*
-  │     + BUILDING_PORTABLE_CAMP
   │   - BUILDINGCLASS_CHIEF_HUT
   │     + BUILDING_CHIEF_HUT
+  │   - BUILDINGCLASS_MAMMOTH_TENT
+  │     + BUILDING_MAMMOTH_TENT
   │   - BUILDINGCLASS_LUXURY_HUT
   │     + BUILDING_LUXURY_HUT  
   │
@@ -1103,9 +1102,15 @@
   │
   │
   │   Dummy Buildings
-  │   - BUILDINGCLASS_DUMMY_OPEN_SHELTER
-  │     + BUILDING_DUMMY_OPEN_SHELTER  
+  │   - BUILDINGCLASS_CAUSEWAY_DUMMY
+  │     + BUILDING_CAUSEWAY_DUMMY
+  │   - BUILDINGCLASS_FIRE_PIT_DUMMY
+  │     + BUILDING_FIRE_PIT_DUMMY
+  │   - BUILDINGCLASS_OPEN_SHELTER_DUMMY
+  │     + BUILDING_OPEN_SHELTER_DUMMY
   │
+  │   - BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY
+  │     + BUILDING_PREHISTORIC_TRIBE_DUMMY
   │
   │
   │ 
@@ -1648,14 +1653,18 @@
       <Type>BUILDING_PREHISTORIC_TRIBE_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</BuildingClass>
       <Cost>-1</Cost>
-      <Description>Tribe</Description>
+      <Description>Your Tribe</Description>
       <Help>Prehistoric Tribe Base Help</Help>
       <MinAreaSize>-1</MinAreaSize>
       <NeverCapture>true</NeverCapture>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
+      <PortraitIndex>63</PortraitIndex>
       <DisplayPosition>-1</DisplayPosition>
     </Row>
+
+
+
+
 
 
     <!-- *** CAPITOL *** -->
@@ -2075,7 +2084,7 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex><!-- 2 -->
+      <PortraitIndex>61</PortraitIndex><!-- 2 -->
     </Row>
 
 
@@ -2104,9 +2113,10 @@
     </Row>
 
     <Row>
-      <Type>BUILDING_DUMMY_OPEN_SHELTER</Type>
-      <BuildingClass>BUILDINGCLASS_DUMMY_OPEN_SHELTER</BuildingClass>
+      <Type>BUILDING_OPEN_SHELTER_DUMMY</Type>
+      <BuildingClass>BUILDINGCLASS_OPEN_SHELTER_DUMMY</BuildingClass>
       <Cost>-1</Cost>
+      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <Description>Dummy Open Shelter</Description>
       <Help></Help>
       <MinAreaSize>-1</MinAreaSize>
@@ -2231,6 +2241,7 @@
       <Type>BUILDING_CAUSEWAY_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY_DUMMY</BuildingClass>
       <Cost>-1</Cost>
+      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
       <Description>Nearby Marshland</Description>
       <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[ENDCOLOR] to improve your city.</Help>
       <Strategy>NONE</Strategy>
@@ -2358,7 +2369,7 @@
     -->
 
 
-    <!-- CAPITOL -->
+    <!-- CAPITOL UPGRADE -->
     <!-- CHIEF_UPGRADE -->
     <Row>
       <Type>BUILDING_CHIEF_UPGRADE</Type>
@@ -2378,7 +2389,7 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>3</PortraitIndex>
+      <PortraitIndex>61</PortraitIndex>
     </Row>
 
 
@@ -2768,6 +2779,32 @@
     </Row> 
 
 
+    <!-- *** CAPITOL *** -->
+    <!-- MAMMOTH_TENT -->
+    <!-- 
+      TODO: * 
+    -->
+    <Row>
+      <Type>BUILDING_MAMMOTH_TENT</Type>
+      <BuildingClass>BUILDINGCLASS_MAMMOTH_TENT</BuildingClass>
+      <Cost>95</Cost>
+      <GoldMaintenance>0</GoldMaintenance>
+      <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
+      <Description>TXT_KEY_BUILDING_MAMMOTH_TENT_DESC</Description>
+      <Help>TXT_KEY_BUILDING_MAMMOTH_TENT_HELP</Help>
+      <Strategy>TXT_KEY_BUILDING_MAMMOTH_TENT_STATEGY</Strategy>
+      <Civilopedia>TXT_KEY_BUILDING_MAMMOTH_TENT_PEDIA</Civilopedia>
+      <Quote>TXT_KEY_BUILDING_MAMMOTH_TENT_QUOTE</Quote>
+      <ArtDefineTag>MONUMENT</ArtDefineTag>
+      <NukeImmune>true</NukeImmune>
+      <MinAreaSize>-1</MinAreaSize>
+      <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
+      <NeverCapture>true</NeverCapture>
+      <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
+      <PortraitIndex>61</PortraitIndex>
+    </Row> 
+
+
 
 
 
@@ -2850,7 +2887,7 @@
 
     <!-- FIRE_PIT -->
     <!-- 
-      +5% food kept; TODO: validate
+      +5% food kept;
     -->
     <Row>
       <Type>BUILDING_FIRE_PIT</Type>
@@ -2876,6 +2913,7 @@
       <Type>BUILDING_FIRE_PIT_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClass>
       <Cost>-1</Cost>
+      <PrereqTech>TECH_COOKING</PrereqTech>
       <Description>Nearby Food</Description>
       <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[ENDCOLOR] to improve your city.</Help>
       <MinAreaSize>-1</MinAreaSize>
@@ -2951,7 +2989,7 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
+      <PortraitIndex>61</PortraitIndex>
     </Row> 
 
 
@@ -3093,7 +3131,7 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>56</PortraitIndex>
+      <PortraitIndex>62</PortraitIndex>
     </Row> 
 
 
@@ -3963,6 +4001,8 @@
     </Row>
 
 
+
+
     <!-- SHRINE -->
 
 
@@ -4010,11 +4050,16 @@
   <Building_FreeUnits>
 
     <Row>
-      <BuildingType>BUILDING_DUMMY_OPEN_SHELTER</BuildingType>
+      <BuildingType>BUILDING_OPEN_SHELTER_DUMMY</BuildingType>
       <UnitType>UNIT_SLINGER</UnitType>
       <NumUnits>1</NumUnits>
     </Row>
 
+    <Row>
+      <BuildingType>BUILDING_ADVANCED_SHELTER</BuildingType>
+      <UnitType>UNIT_WANDERER</UnitType>
+      <NumUnits>1</NumUnits>
+    </Row>
 
 
 
@@ -4158,7 +4203,7 @@
   <Building_BuildingClassYieldChanges>
 
     <Row>
-      <BuildingType>BUILDING_DUMMY_OPEN_SHELTER</BuildingType>
+      <BuildingType>BUILDING_OPEN_SHELTER_DUMMY</BuildingType>
       <BuildingClassType>BUILDINGCLASS_OPEN_SHELTER</BuildingClassType>
       <YieldType>YIELD_FOOD</YieldType>
       <YieldChange>1</YieldChange>
@@ -4284,22 +4329,38 @@
   │
   │   BUILDING YIELD MODIFIERS
   │
+  │   % Modification
   │
   └─────────────────────────────────────────────────────────────────────────────
   --> 
+
+
+
+  <!--
+    
+  TODO: ERROR: 
+
+  [24171.465] no such table: Building_YieldModifers
+  [24171.465] In Query - insert into Building_YieldModifers('BuildingType', 'YieldType', 'Yield') values (?, ?, ?);
+  [24171.465] In XMLSerializer while updating table Building_YieldModifers from file Buildings/Buildings.xml.
+
   <Building_YieldModifers>
 
-    <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
-    <YieldType>YIELD_FOOD</YieldType>
-    <Yield>5</Yield>
+    <Row>
+      <BuildingType>BUILDING_WATERPROOF_HUT</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>5</Yield>
+    </Row>
 
-    <BuildingType>BUILDING_MIDDEN</BuildingType>
-    <YieldType>YIELD_FOOD</YieldType>
-    <Yield>5</Yield>
+    <Row>
+      <BuildingType>BUILDING_MIDDEN</BuildingType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>5</Yield>
+    </Row>
 
   </Building_YieldModifers>
 
-
+  -->
 
 
 
@@ -4451,6 +4512,7 @@
   --> 
   <Building_ResourceQuantity>
 
+    <!-- TODO: ? Forgot what I was going to do -- possible SOCIETY points -->
     <Row>
       <BuildingType>BUILDING_PREHISTORIC_TRIBE_DUMMY</BuildingType>
       <ResourceType>RESOURCE_HORSE</ResourceType>
@@ -5092,9 +5154,6 @@
     </Row>
 
 
-
-
-
     <!-- CHIEF_HUT -->
     <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_TITLE">
       <Text>Chieftain's Hut</Text>
@@ -5113,27 +5172,21 @@
     </Row>
    
 
-
-
-
-
-
-
-    <!-- PORTABLE_CAMP -->
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_TITLE">
-      <Text>Portable Camp</Text>
+    <!-- BUILDING_MAMMOTH_TENT MAMMOTH_TENT -->
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_TITLE">
+      <Text>Mammoth Tent</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_DESC">
-      <Text>Portable Camp</Text>
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_DESC">
+      <Text>Mammoth Tent</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_HELP">
-      <Text>Portable Camp Help</Text>
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_HELP">
+      <Text>Placeholder Mammoth Tent Help</Text>
     </Row>    
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_STATEGY">
-      <Text>Portable Camp Strategy</Text>
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_STATEGY">
+      <Text>Placeholder Mammoth Tent Strategy</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_CAMP_PEDIA">
-      <Text>Portable Camp Pedia</Text>
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_PEDIA">
+      <Text>Placeholder Mammoth Tent Pedia</Text>
     </Row>
 
 
@@ -5199,7 +5252,7 @@
     <!--
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │                Capitol and Palace Upgrade Buildings                    │▌ 
+    │                           Dummy Buildings                              │▌ 
     └────────────────────────────────────────────────────────────────────────┘▌ 
      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -5216,7 +5269,9 @@
     <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC">
       <Text>Tribe</Text>
     </Row>
-
+    <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_DUMMY_DESC">
+      <Text>Open Area</Text>
+    </Row>
 
 
 
@@ -5259,17 +5314,17 @@
       <Text>Tree</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_HELP">
-      <Text>Tree Help</Text>
+      <Text>Placeholder Tree Help</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_STRATEGY">
-      <Text>Tree Strategy</Text>
+      <Text>Placeholder Tree Strategy</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_PEDIA">
-      <Text>Tree Pedia</Text>
+      <Text>Placeholder Tree Pedia</Text>
     </Row>
 
 
-    <!-- BUILDING_LOOKOUT_ROCK -->
+    <!-- BUILDING_LOOKOUT_ROCK LOOKOUT_ROCK -->
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_TITLE">
       <Text>Lookout Rock</Text>
     </Row>
@@ -5277,9 +5332,14 @@
       <Text>Lookout Rock</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_HELP">
-      <Text>Lookout Rock Help</Text>
+      <Text>Placeholder Lookout Rock Help</Text>
     </Row>
-    
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_STRATEGY">
+      <Text>Placeholder Lookout Rock Strategy</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_PEDIA">
+      <Text>Placeholder Lookout Rock Pedia</Text>
+    </Row>    
 
 
 
@@ -5304,7 +5364,7 @@
 
 
 
-    <!-- BUILDING_SPRING_SOURCE -->
+    <!-- BUILDING_SPRING_SOURCE SPRING_SOURCE -->
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_TITLE">
       <Text>Spring Source</Text>
     </Row>
@@ -5312,11 +5372,17 @@
       <Text>Spring Source</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_HELP">
-      <Text>Spring Source Help</Text>
+      <Text>Placeholder Spring Source Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_STRATEGY">
+      <Text>Placeholder Spring Source Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_PEDIA">
+      <Text>Placeholder Spring Source Pedia</Text>
+    </Row>
 
 
-    <!-- BUILDING_GOLDEN_PATH -->
+    <!-- BUILDING_GOLDEN_PATH GOLDEN_PATH -->
     <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_TITLE">
       <Text>Golden Path</Text>
     </Row>
@@ -5324,11 +5390,17 @@
       <Text>Golden Path</Text>
     </Row>   
     <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_HELP">
-      <Text>Golden Path Help</Text>
+      <Text>Placeholder Golden Path Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_STRATEGY">
+      <Text>Placeholder Golden Path Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_PEDIA">
+      <Text>Placeholder Golden Path Pedia</Text>
     </Row>
 
 
-    <!-- BUILDING_STONE_PILE -->
+    <!-- BUILDING_STONE_PILE STONE_PILE -->
     <Row Tag="TXT_KEY_BUILDING_STONE_PILE_TITLE">
       <Text>Stone Pile</Text>
     </Row>
@@ -5336,11 +5408,17 @@
       <Text>Stone Pile</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_STONE_PILE_HELP">
-      <Text>Stone Pile Help</Text>
+      <Text>Placeholder Stone Pile Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_STONE_PILE_STRATEGY">
+      <Text>Placeholder Stone Pile Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_STONE_PILE_PEDIA">
+      <Text>Placeholder Stone Pile Pedia</Text>
     </Row>
 
     
-    <!-- BUILDING_OVERLOOK -->
+    <!-- BUILDING_OVERLOOK OVERLOOK -->
     <Row Tag="TXT_KEY_BUILDING_OVERLOOK_TITLE">
       <Text>Overlook</Text>
     </Row>
@@ -5348,11 +5426,17 @@
       <Text>Overlook</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_OVERLOOK_HELP">
-      <Text>Overlook Help</Text>
+      <Text>Placeholder Overlook Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OVERLOOK_STRATEGY">
+      <Text>Placeholder Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OVERLOOK_PEDIA">
+      <Text>Placeholder Pedia</Text>
     </Row>
 
 
-    <!-- BUILDING_CHERT_DEPOSIT -->
+    <!-- BUILDING_CHERT_DEPOSIT CHERT_DEPOSIT -->
     <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_TITLE">
       <Text>Chert Deposit</Text>
     </Row>
@@ -5360,10 +5444,17 @@
       <Text>Chert Deposit</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_HELP">
-      <Text>Chert Deposit Help</Text>
+      <Text>Placeholder Chert Deposit Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_STRATEGY">
+      <Text>Placeholder Chert Deposit Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_PEDIA">
+      <Text>Placeholder Chert Deposit Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_GATHERING_CIRCLE GATHERING_CIRCLE -->
     <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_TITLE">
       <Text>Gathering Circle</Text>
     </Row>
@@ -5371,10 +5462,16 @@
       <Text>Gathering Circle</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_HELP">
-      <Text>Gathering Circle Help</Text>
+      <Text>Placeholder Gathering Circle Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_STRATEGY">
+      <Text>Placeholder Gathering Circle HStrategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GATHERING_CIRCLE_PEDIA">
+      <Text>Placeholder Gathering Circle HPedia</Text>
+    </Row>
 
-
+    <!-- BUILDING_  -->
     <Row Tag="TXT_KEY_BUILDING_BONE_PILE_TITLE">
       <Text>Bone Pile</Text>
     </Row>
@@ -5382,10 +5479,17 @@
       <Text>Bone Pile</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_BONE_PILE_HELP">
-      <Text>Bone Pile Help</Text>
+      <Text>Placeholder Bone Pile Help</Text>
     </Row>    
-    
+    <Row Tag="TXT_KEY_BUILDING_BONE_PILE_STRATEGY">
+      <Text>Placeholder Bone Pile Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BONE_PILE_PEDIA">
+      <Text>Placeholder Bone Pile Pedia</Text>
+    </Row>
 
+
+    <!-- BUILDING_SHELTER SHELTER -->
     <Row Tag="TXT_KEY_BUILDING_SHELTER_TITLE">
       <Text>Shelter</Text>
     </Row>
@@ -5393,10 +5497,16 @@
       <Text>Shelter</Text>
     </Row>  
     <Row Tag="TXT_KEY_BUILDING_SHELTER_HELP">
-      <Text>Shelter Help</Text>
+      <Text>Plcaeholder Shelter Help</Text>
     </Row>         
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_STRATEGY">
+      <Text>Placeholder Shelter Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_SHELTER_PEDIA">
+      <Text>Placeholder Shelter Pedia</Text>
+    </Row>
 
-
+    <!-- BUILDING_OPEN_SHELTER OPEN_SHELTER -->
     <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_TITLE">
       <Text>Open Shelter</Text>
     </Row>
@@ -5404,10 +5514,35 @@
       <Text>Open Shelter</Text>
     </Row> 
     <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_HELP">
-      <Text>Open Shelter Help</Text>
+      <Text>Placeholder Open Shelter Help</Text>
     </Row> 
+    <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_STRATEGY">
+      <Text>Placeholder Open Shelter Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_PEDIA">
+      <Text>Placeholder Open Shelter Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_PORTABLE_GRASS_SHELTER PORTABLE_GRASS_SHELTER -->
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_TITLE">
+      <Text>Portable Grass Shelter</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_DESC">
+      <Text>Portable Grass Shelter</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_HELP">
+      <Text>Placeholder Portable Grass Shelter Help</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_STRATEGY">
+      <Text>Placeholder Portable Grass Shelter Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_PEDIA">
+      <Text>Placeholder Portable Grass Shelter Pedia</Text>
+    </Row>
+
+
+    <!-- BUILDING_ADVANCED_SHELTER ADVANCED_SHELTER -->
     <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_TITLE">
       <Text>Advanced Shelter</Text>
     </Row>
@@ -5448,17 +5583,6 @@
         </Row>
 
 
-    <!-- BUILDING_PORTABLE_GRASS_SHELTER -->
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_TITLE">
-      <Text>Portable Grass Shelter</Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_DESC">
-      <Text>Portable Grass Shelter</Text>
-    </Row>    
-    <Row Tag="TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_HELP">
-      <Text>Portable Grass Shelter Help</Text>
-    </Row>    
-
 
 
 
@@ -5480,7 +5604,7 @@
 
 
 
-    <!-- BUILDING_CAUSEWAY -->
+    <!-- BUILDING_CAUSEWAY CAUSEWAY -->
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_TITLE">
       <Text>Causeway</Text>
     </Row>
@@ -5501,7 +5625,7 @@
     </Row>
 
 
-    <!-- BUILDING_WATERPROOF_HUT -->
+    <!-- BUILDING_WATERPROOF_HUT WATERPROOF_HUT -->
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_TITLE">
       <Text>Waterproof Hut</Text>
     </Row>
@@ -5509,16 +5633,17 @@
       <Text>Waterproof Hut</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_HELP">
-      <Text>Waterproof Hut Help</Text>
+      <Text>Placeholder Waterproof Hut Help</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_STATEGY">
-      <Text>Waterproof Hut Strategy</Text>
+      <Text>Placeholder Waterproof Hut Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_PEDIA">
-      <Text>Waterproof Hut Pedia</Text>
+      <Text>Placeholder Waterproof Hut Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_RUBBLE_WALL RUBBLE_WALL -->
     <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_TITLE">
       <Text>Rubble Wall</Text>
     </Row>
@@ -5526,10 +5651,17 @@
       <Text>Rubble Wall</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_HELP">
-      <Text>Rubble Wall Help</Text>
+      <Text>Placeholder Rubble Wall Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_STRATEGY">
+      <Text>Placeholder Rubble Wall Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_RUBBLE_WALL_PEDIA">
+      <Text>Placeholder Rubble Wall Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_WATER_STORAGE WATER_STORAGE -->
     <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_TITLE">
       <Text>Water Storage</Text>
     </Row>
@@ -5537,10 +5669,17 @@
       <Text>Water Storage</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_HELP">
-      <Text>Water Storage Help</Text>
+      <Text>Placeholder Water Storage Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_STRATEGY">
+      <Text>Placeholder Water Storage Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WATER_STORAGE_PEDIA">
+      <Text>Placeholder Water Storage Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_BURIAL_SITE BURIAL_SITE -->
     <Row Tag="TXT_KEY_BUILDING_BURIAL_SITE_TITLE">
       <Text>Burial Site</Text>
     </Row>
@@ -5548,10 +5687,17 @@
       <Text>Burial Site</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_BURIAL_SITE_HELP">
-      <Text>Burial Site Help</Text>
+      <Text>Placeholder Burial Site Help</Text>
     </Row> 
+    <Row Tag="TXT_KEY_BUILDING_BURIAL_SITE_STRATEGY">
+      <Text>Placeholder Burial Site Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BURIAL_SITE_PEDIA">
+      <Text>Placeholder Burial Site Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_HUNTING_TRAILS HUNTING_TRAILS -->
     <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_TITLE">
       <Text>Hunting Trails</Text>
     </Row>
@@ -5559,10 +5705,17 @@
       <Text>Hunting Trails</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_HELP">
-      <Text>Hunting Trails Help</Text>
+      <Text>Placeholder Hunting Trails Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_STRATEGY">
+      <Text>Placeholder Hunting Trails Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_HUNTING_TRAILS_PEDIA">
+      <Text>Placeholder Hunting Trails Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_CAMPFIRE CAMPFIRE -->
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_TITLE">
       <Text>Campfire</Text>
     </Row>
@@ -5583,6 +5736,7 @@
     </Row>
 
 
+    <!-- BUILDING_HIDEOUT HIDEOUT -->
     <Row Tag="TXT_KEY_BUILDING_HIDEOUT_TITLE">
       <Text>Hideout</Text>
     </Row>
@@ -5590,10 +5744,17 @@
       <Text>Hideout</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_HIDEOUT_HELP">
-      <Text>Hideout Help</Text>
+      <Text>Placeholder Hideout Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_HIDEOUT_STRATEGY">
+      <Text>Placeholder Hideout Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_HIDEOUT_PEDIA">
+      <Text>Placeholder Hideout Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_MIDDEN MIDDEN -->
     <Row Tag="TXT_KEY_BUILDING_MIDDEN_TITLE">
       <Text>Midden</Text>
     </Row>
@@ -5614,6 +5775,7 @@
     </Row>
 
 
+    <!-- BUILDING_STORAGE_PIT STORAGE_PIT -->
     <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_TITLE">
       <Text>Storage Pit</Text>
     </Row>
@@ -5621,19 +5783,20 @@
       <Text>Storage Pit</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_HELP">
-      <Text>Storage Pit Help</Text>
+      <Text>Placeholder Storage Pit Help</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_QUOTE">
-      <Text>Storage Pit Quote</Text>
+      <Text>Placeholder Storage Pit Quote</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_STRATEGY">
-      <Text>Storage Pit Strategy</Text>
+      <Text>Placeholder Storage Pit Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_STORAGE_PIT_PEDIA">
-      <Text>Storage Pit Pedia</Text>
+      <Text>Placeholder Storage Pit Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_LOOKOUT_TREE LOOKOUT_TREE -->
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_TREE_TITLE">
       <Text>Lookout Tree</Text>
     </Row>
@@ -5641,10 +5804,17 @@
       <Text>Lookout Tree</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_TREE_HELP">
-      <Text>Lookout Tree Help</Text>
+      <Text>Placeholder Lookout Tree Help</Text>
     </Row>       
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_TREE_STRATEGY">
+      <Text>Placeholder Lookout Tree Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_LOOKOUT_TREE_PEDIA">
+      <Text>Placeholder Lookout Tree Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_GREAT_ROCK GREAT_ROCK -->
     <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_TITLE">
       <Text>Great Rock</Text>
     </Row>
@@ -5652,10 +5822,17 @@
       <Text>Great Rock</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_HLEP">
-      <Text>Great Rock Help</Text>
+      <Text>Placeholder Great Rock Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_STRATEGY">
+      <Text>Placeholder Great Rock Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_GREAT_ROCK_PEDIA">
+      <Text>Placeholder Great Rock Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_NOMADIC_CAMP NOMADIC_CAMP -->
     <Row Tag="TXT_KEY_BUILDING_NOMADIC_CAMP_TITLE">
       <Text>Nomadic Camp</Text>
     </Row>
@@ -5663,10 +5840,17 @@
       <Text>Nomadic Camp</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_NOMADIC_CAMP_HELP">
-      <Text>Nomadic Camp Help</Text>
+      <Text>Placeholder Nomadic Camp Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_NOMADIC_CAMP_STRATEGY">
+      <Text>Placeholder Nomadic Camp Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_NOMADIC_CAMP_PEDIA">
+      <Text>Placeholder Nomadic Camp Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_MEAT_RACK MEAT_RACK -->
     <Row Tag="TXT_KEY_BUILDING_MEAT_RACK_TITLE">
       <Text>Meat Rack</Text>
     </Row>
@@ -5674,10 +5858,17 @@
       <Text>Meat Rack</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_MEAT_RACK_HELP">
-      <Text>Meat Rack Help</Text>
+      <Text>Placeholder Meat Rack Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_MEAT_RACK_STRATEGY">
+      <Text>Placeholder Meat Rack Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_MEAT_RACK_PEDIA">
+      <Text>Placeholder Meat Rack Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_HIDE_RACK HIDE_RACK -->
     <Row Tag="TXT_KEY_BUILDING_HIDE_RACK_TITLE">
       <Text>Hide Rack</Text>
     </Row>
@@ -5685,10 +5876,17 @@
       <Text>Hide Rack</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_HIDE_RACK_HELP">
-      <Text>Hide Rack Help</Text>
+      <Text>Placeholder Hide Rack Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_HIDE_RACK_STRATEGY">
+      <Text>Placeholder Hide Rack Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_HIDE_RACK_PEDIA">
+      <Text>Placeholder Hide Rack Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_TREE_STAND TREE_STAND -->
     <Row Tag="TXT_KEY_BUILDING_TREE_STAND_TITLE">
       <Text>Tree Stand</Text>
     </Row>
@@ -5696,10 +5894,17 @@
       <Text>Tree Stand</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_STAND_HELP">
-      <Text>Tree Stand Help</Text>
+      <Text>Placeholder Tree Stand Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_TREE_STAND_STRATEGY">
+      <Text>Placeholder Tree Stand Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_TREE_STAND_PEDIA">
+      <Text>Placeholder Tree Stand Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_  -->
     <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_TITLE">
       <Text>Fire Pit</Text>
     </Row>
@@ -5724,6 +5929,7 @@
     </Row>
 
 
+    <!-- BUILDING_WARDS WARDS -->
     <Row Tag="TXT_KEY_BUILDING_WARDS_TITLE">
       <Text>Wards</Text>
     </Row>
@@ -5731,21 +5937,36 @@
       <Text>Wards</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WARDS_HELP">
-      <Text>Wards Help</Text>
+      <Text>Placeholder Wards Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_WARDS_STRATEGY">
+      <Text>Placeholder Wards Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_WARDS_PEDIA">
+      <Text>Placeholder Wards Pedia</Text>
+    </Row>
 
-
+    
+    <!-- * CAPITOL * -->
+    <!-- BUILDING_LUXURY_HUT LUXURY_HUT -->
     <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_TITLE">
-      <Text>Wards</Text>
+      <Text>Luxury Hut</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_DESC">
-      <Text>Wards</Text>
+      <Text>Luxury Hut</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_HELP">
-      <Text>Wards Help</Text>
+      <Text>Placeholder Luxury Hut Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_STRATEGY">
+      <Text>Placeholder Luxury Hut Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_LUXURY_HUT_PEDIA">
+      <Text>Placeholder Luxury Hut Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_VILLAGE_ALERT VILLAGE_ALERT -->
     <Row Tag="TXT_KEY_BUILDING_VILLAGE_ALERT_TITLE">
       <Text>Village Alert</Text>
     </Row>
@@ -5753,10 +5974,17 @@
       <Text>Village Alert</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_VILLAGE_ALERT_HELP">
-      <Text>Village Alert Help</Text>
+      <Text>Placeholder Village Alert Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_VILLAGE_ALERT_STRATEGY">
+      <Text>Placeholder Village Alert Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_VILLAGE_ALERT_PEDIA">
+      <Text>Placeholder Village Alert Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_PICKET PICKET -->
     <Row Tag="TXT_KEY_BUILDING_PICKET_TITLE">
       <Text>Picket</Text>
     </Row>
@@ -5764,10 +5992,17 @@
       <Text>Picket</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_PICKET_HELP">
-      <Text>Picket Help</Text>
+      <Text>Placeholder Picket Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_PICKET_STRATEGY">
+      <Text>Placeholder Picket Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PICKET_PEDIA">
+      <Text>Placeholder Picket Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_EARTHEN_WALL EARTHEN_WALL -->
     <Row Tag="TXT_KEY_BUILDING_EARTHEN_WALL_TITLE">
       <Text>Earthen Wall</Text>
     </Row>
@@ -5775,10 +6010,17 @@
       <Text>Earthen Wall</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_EARTHEN_WALL_HELP">
-      <Text>Earthen Wall Help</Text>
+      <Text>Placeholder Earthen Wall Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_EARTHEN_WALL_STRATEGY">
+      <Text>Placeholder Earthen Wall Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_EARTHEN_WALL_PEDIA">
+      <Text>Placeholder Earthen Wall Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_BEAD_MAKER BEAD_MAKER -->
     <Row Tag="TXT_KEY_BUILDING_BEAD_MAKER_TITLE">
       <Text>Bead Maker</Text>
     </Row>
@@ -5786,10 +6028,17 @@
       <Text>Bead Maker</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_BEAD_MAKER_HELP">
-      <Text>Bead Maker Help</Text>
+      <Text>Placeholder Bead Maker Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_BEAD_MAKER_STRATEGY">
+      <Text>Placeholder Bead Maker Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BEAD_MAKER_PEDIA">
+      <Text>Placeholder Bead Maker Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_BLUBBER_WORKER BLUBBER_WORKER -->
     <Row Tag="TXT_KEY_BUILDING_BLUBBER_WORKER_TITLE">
       <Text>Blubber Worker</Text>
     </Row>
@@ -5797,10 +6046,17 @@
       <Text>Blubber Worker</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_BLUBBER_WORKER_HELP">
-      <Text>Blubber Worker Help</Text>
+      <Text>Placeholder Blubber Worker Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_BLUBBER_WORKER_STRATEGY">
+      <Text>Placeholder Blubber Worker Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_BLUBBER_WORKER_PEDIA">
+      <Text>Placeholder Blubber Worker Pedia</Text>
+    </Row>
 
 
+    <!-- BUILDING_FOOD_STORAGE FOOD_STORAGE -->
     <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_TITLE">
       <Text>Food Storage</Text>
     </Row>
@@ -5814,10 +6070,11 @@
       <Text>The Food Storage is usually a cool cave or cavity, where food is kept fresh longer. Build it to increase the Growth of your City.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_PEDIA">
-      <Text>Food Storage Pedia</Text>
+      <Text>Placeholder Food Storage Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_DEFENSIVE_DITCHES DEFENSIVE_DITCHES -->
     <Row Tag="TXT_KEY_BUILDING_DEFENSIVE_DITCHES_TITLE">
       <Text>Defensive Ditches</Text>
     </Row>
@@ -5825,13 +6082,17 @@
       <Text>Defensive Ditches</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_DEFENSIVE_DITCHES_HELP">
-      <Text>Defensive Ditches Help</Text>
+      <Text>Placeholder Defensive Ditches Help</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_DEFENSIVE_DITCHES_STRATEGY">
+      <Text>Placeholder Defensive Ditches Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_DEFENSIVE_DITCHES_PEDIA">
+      <Text>Placeholder Defensive Ditches Pedia</Text>
+    </Row>
 
 
-    <!-- Shrine -->
-
-
+    <!-- BUILDING_ROCK_PAINTINGS ROCK_PAINTINGS -->
     <Row Tag="TXT_KEY_BUILDING_ROCK_PAINTINGS_TITLE">
       <Text>Rock Paintings</Text>
     </Row>
@@ -5845,10 +6106,11 @@
       <Text>Rock Paintings increase your Civilization's [ICON_CULTURE] Culture. Millennia later, archaeologists will be in awe of your amazing work.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_ROCK_PAINTINGS_PEDIA">
-      <Text>Rock Paintings Pedia</Text>
+      <Text>Placeholder Rock Paintings Pedia</Text>
     </Row>
 
 
+    <!-- BUILDING_PALISADE PALISADE -->
     <Row Tag="TXT_KEY_BUILDING_PALISADE_TITLE">
       <Text>Palisade</Text>
     </Row>
@@ -5862,7 +6124,7 @@
       <Text>The Palisade is a simple, but effective City fortification. Build it to protect your community from enemy attacks.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_PALISADE_PEDIA">
-      <Text>Palisade Pedia</Text>
+      <Text>Placeholder Palisade Pedia</Text>
     </Row>
 
 
@@ -5871,6 +6133,23 @@
     <!-- Unused -->
 
 
+<!--
+
+    <Row Tag="TXT_KEY_BUILDING_ROCK_TITLE">
+      <Text>Rock</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ROCK_DESC">
+      <Text>Rock</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ROCK_HELP">
+      <Text>Placeholder Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ROCK_STRATEGY">
+      <Text>Placeholder Strategy</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_ROCK_PEDIA">
+      <Text>Placeholder Pedia</Text>
+    </Row>
 
 
 

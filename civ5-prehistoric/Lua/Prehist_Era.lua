@@ -27,7 +27,7 @@ logger:info( "__FILE__ Era_Pre" )
 -- PlayerID currPlayer
 --
 function SerialEventEraChanged_Pre( arg0, currPlayer )
-
+  logger:debug( "" )
   logger:debug( "[SerialEventEraChanged_Pre]")
   logger:debug( "arg0:" .. arg0 )
 

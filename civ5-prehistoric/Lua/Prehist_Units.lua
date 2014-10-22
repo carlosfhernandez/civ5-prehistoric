@@ -83,28 +83,35 @@ logger:info( "__FILE__ Units_Pre" )
 -- trigger. The dummy unit references the building and any other actions.
 --
 function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureType, civID, primaryColor, secondaryColor, unitFlagIndex, fogState, selected, military, notInvisible)
-
-  logger:debug( "[SerialEvenUnitCreated_Pre] " )
+  local subprefix = "[SerialEvenUnitCreated_Pre] "
+  logger:debug( "" )
+  logger:debug( subprefix )
   
   -- check to make sure we have a proper unit and not a dead one or one with 
   -- the "newly created flag/promotion" already assigned
   local player = Players[playerID];
-  
   if (player == nil) then return end;
   
   local unit = player:GetUnitByID(unitID);
-  
+  logger:debug( subprefix .. "player:" .. player:GetName() )
+  logger:debug( subprefix .. "unitid:" .. unitID )
+  logger:debug( subprefix .. "unittype:" .. GameInfo.Units[ unit:GetUnitType() ].Type )
+  logger:debug( subprefix .. "unitclass:" .. unit:GetUnitClassType() )
+  if notInvisible then print( "notInvisible" ) else print( "not notInvisible" ) end
   if (unit == nil or unit:IsDead() or unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_CREATED"].ID)) then
+    if unit:IsDead() then
+      logger:debug( subprefix .. "unit was dead" )
+    end
+    if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_CREATED"].ID) then
+      logger:debug( subprefix .. "unit had promotion CREATED" )
+    end
     return;
   end
-
 
   local unitclass = unit:GetUnitClassType()
   local unittype = GameInfo.Units[ unit:GetUnitType() ].Type
   local plot = unit:GetPlot()
-  local city = FindCity(plot, 2)
-
-
+  local city = GetClosestCityByRadius(plot, 2)
 
 
 
@@ -167,13 +174,14 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
 
     elseif unittype == "UNIT_BUILDING_CHERT_DEPOSIT"    then
 
-        
+      -- TODO:        
 
 
     elseif unittype == "UNIT_BUILDING_LOOKOUT_TREE"     then
 
-
-
+      -- TODO: prevent abuse selling and buying again
+      next_plot = city:GetNextBuyablePlot()
+      TakePlot( player, next_plot )
 
     elseif unittype == "UNIT_BUILDING_TREE"             then
 
@@ -210,14 +218,14 @@ function SerialEvenUnitCreated_Pre(playerID, unitID, hexVec, unitType, cultureTy
   --
   else 
   
-    logger:debug( "[SerialEvenUnitCreated_Pre] *NOT* a unit dummy class" )
+    logger:debug( subprefix .. "*NOT* a unit dummy class" )
 
     if city == nil then
-      logger:debug( "[SerialEvenUnitCreated_Pre] exiting since city was not found within radius" )
+      logger:debug( subprefix .. "exiting since city was not found within radius" )
       return nil
     end
 
-    logger:debug( "[SerialEvenUnitCreated_Pre] set unit (" .. unittype .. " " .. unitID .. ") home city (" .. city:GetName() .. ")" )
+    logger:debug( subprefix .. "set unit (" .. unittype .. " " .. unitID .. ") home city (" .. city:GetName() .. ")" )
     SetUnitHomeCity(unit, city)
 
 
@@ -251,8 +259,9 @@ Events.SerialEventUnitCreated.Add(SerialEvenUnitCreated_Pre)
 --
 --
 function SerialEventUnitDestroyed_Pre(playerID, UnitID)
-
-  logger:debug( "[SerialEventUnitDestroyed_Pre] " )
+  local subprefix = "[SerialEventUnitDestroyed_Pre] "
+  logger:debug( "")
+  logger:debug( subprefix )
 
   -- check if this was during early game and player's last unit (AI)
   -- and create new unit
@@ -272,8 +281,10 @@ Events.SerialEventUnitDestroyed.Add(SerialEventUnitDestroyed_Pre)
 --
 -- 
 function UnitSetXY_Pre(playerID, unitID, x ,y)
-
-  logger:debug( "[UnitSetXY] Player " .. playerID .. " has moved to (" .. x .. ", " .. y .. ")" ) 
+  local subprefix = "[UnitSetXY]"
+  logger:debug( "" )
+  logger:debug( subprefix )
+  logger:debug( subprefix .. "Player " .. playerID .. " has moved to (" .. x .. ", " .. y .. ")" ) 
 
   local player = Players[playerID];
   local playerTeamID = player:GetTeam();
@@ -295,7 +306,7 @@ function UnitSetXY_Pre(playerID, unitID, x ,y)
   --
   if (unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_PREHISTORIC_MAPPING"].ID)) then
 
-    for neighbor in Neighbors(plot) do
+    for neighbor in NeighborPlots(plot) do
       -- set plot visible
 
       -- TODO: Check the current effect on game!
@@ -351,8 +362,9 @@ GameEvents.UnitSetXY.Add(UnitSetXY_Pre)
 --
 --
 function SerialEventUnitMove_Pre()
-
-  logger:debug( "[SerialEventUnitMove_Pre]" )
+  local subprefix = "[SerialEventUnitMove_Pre]"
+  logger:debug( "" )
+  logger:debug( subprefix )
 
 end
 Events.SerialEventUnitMove.Add(SerialEventUnitMove_Pre)
@@ -365,8 +377,9 @@ Events.SerialEventUnitMove.Add(SerialEventUnitMove_Pre)
 --
 --
 function SerialEventUnitMoveToHex_Pre()
-
-  logger:debug( "[SerialEventUnitMoveToHex_Pre]" )
+  local subprefix = "[SerialEventUnitMoveToHex_Pre]"
+  logger:debug( "" )
+  logger:debug( subprefix )
 
 end
 -- Events.SerialEventUnitMoveToHex.Add(SerialEventUnitMoveToHex_Pre)
@@ -525,91 +538,6 @@ function SetUnitHomeCity(unit, city)
 
 end
 
--- FindCity
---
--- @param {Plot} plotstart
--- @param {Int} radius
---
--- get home city hack kluge dirty rotten attempt because I can't find the
--- right way to get this. this won't work 100%, either, because I am only
--- checking for the closes city within an X-radius (default=2). 
---
--- THere is potential problem if your city is surrounded by units when the
--- new dummy unit built and gets placed somwhere far away that is closer
--- to another city.
---
--- All this kluging around is ugly. I may try to figure out a way to ensure
--- this unit can stack into the city regardless of what is there.
---
--- TODO: ANY HELP WOULD BE APPRECIATED
---
-function FindCity(plotStart, radius)
-
-  local x = plotStart:GetX();
-  local y = plotStart:GetY();
-  local r = radius;
-
-
-  local bCity = plotStart:IsCity();
-
-  local bCityRadius = plotStart:IsCityRadius();
-  local bCityPlayerRadius = plotStart:IsPlayerCityRadius();
-  logger:debug( "IsCityRadius: " .. ( bCityRadius and "true" or "false" ) );
-  logger:debug( "IsPlayerCityRadius: " .. ( bCityPlayerRadius and "true" or "false" ) );
-
-
-  local city = plotStart:GetPlotCity();
-  local plot = plotStart;
-
-
-  if not city then
-
-    for dx = -r, r do
-      for dy = -r, r do
-        
-        plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, r);
-
-        if plot then
-          local plot_location_debug = "[ " .. x .. " x " .. y .. "   " .. dx .. " x " .. dy .. "]";
-          -- logger:debug( "check plot location: " ..  plot_location_debug );
-          if plot:IsCity() then
-            city = plot:GetPlotCity();
-            break;
-          end
-        end -- if plot
-
-      end -- for x
-
-      if city then break end;
-
-    end -- for y
-
-
-  end -- if not city
-
-
-  -- debug -- lots of debug, some of it to find out what certain function do
-  if city then
-    logger:debug( "[FindCity] " )
-    logger:debug( "[FindCity] city found!" );
-    local cityID = city:GetID();
-    local player = city:GetOwner();
-    local cityPlayerRadiusCount = plot:GetPlayerCityRadiusCount(player);
-    local cityRadiusCount = plot:GetCityRadiusCount(player);
-    local workingCity = plot:GetWorkingCity();
-    logger:debug( "[FindCity] city id: " .. cityID );
-    logger:debug( "[FindCity] city owner: " .. player );
-    logger:debug( "[FindCity] cityRadiusCount: " .. cityRadiusCount );
-    logger:debug( "[FindCity] cityPlayerRadiusCount: " .. cityPlayerRadiusCount );
-  else
-    logger:debug( "[FindCity] " )
-    logger:debug( "[FindCity] city *NOT* found!" )
-  end
-
-
-  return city;
-
-end
 
 
 

@@ -32,7 +32,7 @@ function(iPlayer, buildingTypeID)
     end
   end
   return true
-end)
+end);
 
 
 

@@ -95,11 +95,7 @@ WHERE BuildingClassType='BUILDINGCLASS_PALACE';
 -- 
 -- Add base dummy building to provide bonuses (for now - TODO)
 INSERT INTO Civilization_FreeBuildingClasses 
-  SELECT CivilizationType, "BUILDINGCLASS_DUMMY_OPEN_SHELTER" 
-  FROM Civilization_FreeBuildingClasses;
-
-INSERT INTO Civilization_FreeBuildingClasses 
-  SELECT CivilizationType, "BUILDINGCLASS_PREHISTORIC_TRIBE" 
+  SELECT CivilizationType, "BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY" 
   FROM Civilization_FreeBuildingClasses;
 
 

@@ -2887,7 +2887,7 @@
     <Row>
       <Class>UNITCLASS_WARMONGER</Class>
       <Type>UNIT_WARMONGER</Type>
-      <PrereqTech>TECH_FUTURE_TECH2</PrereqTech>
+      <PrereqTech>TECH_FUTURE_TECH</PrereqTech>
       <Combat>5</Combat>
       <Cost>14</Cost>
       <Moves>2</Moves>
@@ -3902,7 +3902,7 @@
 
 
     <!-- Villagers -->
-
+    <!--
     <Row>
       <Class>UNITCLASS_VILLAGER</Class>
       <Type>UNIT_VILLAGER_EURO_ZERO</Type>
@@ -4396,7 +4396,11 @@
       <IconAtlas>UNIT_ATLAS_PRE</IconAtlas>
       <PortraitIndex>2</PortraitIndex>
     </Row>
+    -->
 
+    
+    <!-- Unit Singles -->
+    <!--
     <Row>
       <Class>UNITCLASS_SCOUTER</Class>
       <Type>UNIT_SCOUT_ONE</Type>
@@ -4773,7 +4777,7 @@
       <IconAtlas>UNIT_ATLAS_1</IconAtlas>
       <PortraitIndex>3</PortraitIndex>
     </Row> 
-
+    -->
 
 
 
