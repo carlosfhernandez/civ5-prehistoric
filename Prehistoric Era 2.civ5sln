@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Prehistoric Era 2", "civ5-prehistoric\Prehistoric Era 2.civ5proj", "{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Default|x86.ActiveCfg = Default|x86
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Default|x86.Build.0 = Default|x86
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Package Only|x86.ActiveCfg = Package Only|x86
+		{AD5E13DF-4968-4D3A-B492-19F285D4C8AD}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

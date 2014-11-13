@@ -347,11 +347,11 @@ function CanBuild_Causeway ( iPlayer )
 
   local f_succ = function ( city, plot )
     logger:debug( "[CanBuild_Causeway] TRUE" )
-    city:SetNumRealBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ, 1 );
+    city:SetNumRealBuilding( GameInfoTypes.BUILDING_CAUSEWAY_DUMMY, 1 );
   end
 
   local f_pretest = function ( city, plot )
-    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY ))
+    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY_DUMMY ) or city:IsHasBuilding( GameInfoTypes.BUILDING_CAUSEWAY ))
   end
 
   HasWithinCity ( player, 'features', GameInfoTypes.FEATURE_MARSH, f_succ, f_pretest )
@@ -369,11 +369,11 @@ function CanBuild_FirePit ( iPlayer )
 
   local f_succ = function ( city, plot )
     logger:debug( "[CanBuild_FirePit] TRUE")
-    city:SetNumRealBuilding( GameInfoTypes.BUILDING_FIRE_PIT_PREREQ, 1 );
+    city:SetNumRealBuilding( GameInfoTypes.BUILDING_FIRE_PIT_DUMMY, 1 );
   end
 
   local f_pretest = function ( city, plot )
-    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT_PREREQ ) or city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT ))
+    return not (city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT_DUMMY ) or city:IsHasBuilding( GameInfoTypes.BUILDING_FIRE_PIT ))
   end
 
   HasWithinCity ( player, 'resources', ANIMAL_RESOURCES, f_succ, f_pretest )

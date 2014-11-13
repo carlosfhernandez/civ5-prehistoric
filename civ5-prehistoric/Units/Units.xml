@@ -1463,6 +1463,8 @@
   ║
   ║
   ║
+  ║
+  ║ CIVILIAN - SETTLE
   ║ UNIT          CMBT RCBT RNG COST MOVE             OCBT OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____  
   ║ TMP_TREE_SETTLER
@@ -1471,30 +1473,30 @@
   ║ SETTLER 
   ║ 
   ║ 
-  ║
+  ║ CIVILIAN - WORK
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ GATHERER
   ║ LABORER
   ║ WORKER           0         110    2
   ║  
-  ║
-  ║  
+  ║ 
+  ║ LEADER
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
-  ║ ALPHA  
+  ║ ALPHA            4          10    2
   ║ PATRIARCH 
   ║ MATRIARCH
   ║ CHIEF
   ║ 
   ║
-  ║  
+  ║ ELDER  
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ ELDER  
   ║ 
   ║
-  ║ 
+  ║ COMBAT
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ WANDERER         2           4    1  0
@@ -1532,10 +1534,8 @@
   ║ EXPLORER        08          65
   ║
   ║
-  ║
-  ║
-  ║
   ║ TBD
+  ║ UNIT
   ║ ______________________________________
   ║ BRUISER
   ║ BRUTE
@@ -1543,10 +1543,7 @@
   ║ VILLAGE_GUARD
   ║
   ║
-  ║
-  ║
-  ║
-  ║ 
+  ║ WATER 
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
   ║ ______________ ___ ___ __ ____ ____ __                            ___ ____
   ║ LOG
@@ -1554,7 +1551,7 @@
   ║ GALLEY
   ║ 
   ║ 
-  ║                                                                   ORIGINAL
+  ║ EXISTING                                                         ORIGINAL
   ║ UNIT           COMBATS RG COST MOVE MT                         COMBATS COST
   ║ ______________ _______ __ ____ ____ __                         _______ ____
   ║ SCOUT           10|       $ 38  2*                                |     025
@@ -1958,6 +1955,7 @@
     -->
 
 
+    <!-- TODO: placeholder art -->
     <!-- UNIT_TMP_TREE_SETTLER -->
     <Row>
       <Class>UNITCLASS_TMP_TREE_SETTLER</Class>
@@ -1972,7 +1970,7 @@
       <Description>TXT_KEY_UNIT_TMP_TREE_SETTLER_DESC</Description>
       <Civilopedia>TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_UNIT_TMP_TREE_SETTLER_STRATEGY</Strategy>
-      <Help>TXT_KEY_UNIT_HELP_TMP_TREE_SETTLER_HELP</Help>
+      <Help>TXT_KEY_UNIT_TMP_TREE_SETTLER_HELP</Help>
       <Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
       <Food>0</Food>
       <Found>true</Found>
@@ -2198,7 +2196,7 @@
     <Row>
       <Class>UNITCLASS_AUSTRALOPITHECUS</Class>
       <Type>UNIT_AUSTRALOPITHECUS</Type>
-      <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
+      <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
       <Combat>2</Combat>
       <Cost>4</Cost>
       <Moves>1</Moves>
@@ -6948,9 +6946,9 @@
 
 
     <!--  
-    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    ┌─────────────────────────────────────────────────────────────────────────
     │ Greats                                                                    
-    └───────────────────────────────────────────────────────────────────────────
+    └─────────────────────────────────────────────────────────────────────────
     -->
 
 
@@ -6997,9 +6995,9 @@
 
 
     <!--  
-    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    ┌─────────────────────────────────────────────────────────────────────────
     │ Leaders                                                                    
-    └───────────────────────────────────────────────────────────────────────────
+    └─────────────────────────────────────────────────────────────────────────
     -->
 
 
@@ -7110,9 +7108,9 @@
 
 
     <!--  
-    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    ┌─────────────────────────────────────────────────────────────────────────
     │ Civilians                                                                    
-    └───────────────────────────────────────────────────────────────────────────
+    └─────────────────────────────────────────────────────────────────────────
     -->
 
 
@@ -7231,9 +7229,9 @@
 
 
     <!--  
-    ┌───────────────────────────────────────────────────────────────────────────                                                                    
+    ┌─────────────────────────────────────────────────────────────────────────
     │ Combat                                                                    
-    └───────────────────────────────────────────────────────────────────────────
+    └─────────────────────────────────────────────────────────────────────────
     -->
 
 
@@ -7250,16 +7248,15 @@
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_DESC">
       <Text>Australopithecus</Text>
     </Row>    
-    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_PEDIA">
-      <Text>Australopithecus</Text>
-    </Row>
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_STRATEGY">
-      <Text>Australopithecus Strategy</Text>
+      <Text>Your weakest and only unit at the start. Use him carefully. Your ownly option may be to explore the nearby surroundings.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_HELP">
-      <Text>Australopithecus Help</Text>
+      <Text>Australopithecus is generic combat unit with many limits. There is nothing special about him. He is very limited in sight.</Text>
     </Row>
-
+    <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_PEDIA">
+      <Text>Australopithecus Pedia</Text>
+    </Row>
 
 
 

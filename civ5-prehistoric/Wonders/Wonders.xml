@@ -399,7 +399,7 @@
       <Civilopedia>TXT_KEY_WONDER_ARDI_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_ARDI_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_ARDI_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>30</Cost>
       <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -2325,10 +2325,10 @@
 
 
     <Row Tag="TXT_KEY_WONDER_CARNAC_STONES_TITLE">
-      <Text>Lucy's Path</Text>
+      <Text>Carnac Stones</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_CARNAC_STONES_DESC">
-      <Text>Lucy's Path</Text>
+      <Text>Carnac Stones</Text>
     </Row>
 
 

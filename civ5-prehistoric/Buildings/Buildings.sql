@@ -184,9 +184,9 @@ UPDATE Buildings Set Cost = Cost * 1.25 + 100;
 
 
 INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
-	VALUES	("BUILDING_PALACE", "FLAVOR_PRODUCTION", "150");
+  VALUES  ("BUILDING_PALACE", "FLAVOR_PRODUCTION", "150");
 INSERT INTO "Building_Flavors" ('BuildingType', 'FlavorType',  'Flavor')
-	VALUES	("BUILDING_PALACE", "FLAVOR_EXPANSION", "150");
+  VALUES  ("BUILDING_PALACE", "FLAVOR_EXPANSION", "150");
 
 
 
@@ -419,7 +419,6 @@ CityWall ?
 
 
 */
-
 
 
 

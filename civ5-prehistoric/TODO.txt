@@ -2,6 +2,7 @@ todo
 ------------------------------------------------------------------------------
 
 
+!!! MISSING TECH_PAINTING PREREQ !!!
 
 
 
@@ -55,4 +56,10 @@ unorganized random notes
 
 - bugs
   - first city gets FLOATING GARDENS granted on 2nd turn
+
+- handicap: balance
+
+- traits: balance (prereqs)
+
+- temporary traits (trait roulette)
 

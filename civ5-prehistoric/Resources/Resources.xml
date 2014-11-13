@@ -11,7 +11,7 @@
       <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
       <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
       <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
-      <TechReveal>TECH_DUMMY</TechReveal>
+      <TechReveal>NULL</TechReveal>
       <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
       <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
       <PlacementOrder>4</PlacementOrder>
@@ -37,7 +37,7 @@
       <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
       <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
       <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
-      <TechReveal>TECH_DUMMY</TechReveal>
+      <TechReveal>NULL</TechReveal>
       <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
       <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
       <PlacementOrder>4</PlacementOrder>
@@ -63,7 +63,7 @@
       <Description>TXT_KEY_RESOURCE_PRODUCTION_DESC</Description>
       <ResourceClassType>RESOURCECLASS_BONUS</ResourceClassType>
       <ArtDefineTag>ART_DEF_RESOURCE_DUMMY</ArtDefineTag>
-      <TechReveal>TECH_DUMMY</TechReveal>
+      <TechReveal>NULL</TechReveal>
       <!-- PolicyReveal, TechCityTrade, TechObsolete, AIStopTradingEra -->
       <!-- StartingResourceQuantity, Normalize, AITradeModifier, AIObjective -->
       <PlacementOrder>4</PlacementOrder>
@@ -150,7 +150,7 @@
       <Where Type="RESOURCE_DEER" />
       <Set TechReveal="TECH_HUNTING_GATHERING" />
     </Update>
-    <Update>
+    <Update><!-- !! -->
       <Where Type="RESOURCE_REINDEER" />
       <Set TechReveal="TECH_HUNTING_GATHERING" />
     </Update>

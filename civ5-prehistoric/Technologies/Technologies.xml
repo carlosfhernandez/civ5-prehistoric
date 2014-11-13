@@ -2670,23 +2670,21 @@ Techs for an 8x8 Grid:
 
 
 
-
+    <!--
     <Row>
       <Type>TECH_DUMMY</Type>
       <Cost>9999</Cost>
       <Description>-</Description>
       <Help>-</Help>
-      <!-- <Civilopedia>-</Civilopedia> -->
-      <!-- <Quote>-</Quote> -->
       <Era>ERA_FUTURE</Era>
       <Trade>false</Trade>
       <GoodyTech>0</GoodyTech>
-      <!-- <GridX>16</GridX> -->
-      <!-- <GridY>6</GridY> -->
+      <GridX>0</GridX>
+      <GridY>0</GridY>
       <PortraitIndex>63</PortraitIndex>
       <IconAtlas>TECH_ATLAS_PRE</IconAtlas>
     </Row>
-
+    -->
 
 
 

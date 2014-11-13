@@ -725,23 +725,27 @@
     <Row>
       <Type>BUILDINGCLASS_CAUSEWAY_DUMMY</Type>
       <DefaultBuilding>BUILDING_CAUSEWAY_DUMMY</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_CAUSEWAY_DUMMY_DESC</Description>
+      <Description>TXT_KEY_BUILDING_CAUSEWAY_DUMMY_TITLE</Description>
     </Row>
+
     <Row>
       <Type>BUILDINGCLASS_FIRE_PIT_DUMMY</Type>
       <DefaultBuilding>BUILDING_FIRE_PIT_DUMMY</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_FIRE_PIT_DUMMY_DESC</Description>
+      <Description>TXT_KEY_BUILDING_FIRE_PIT_DUMMY_TITLE</Description>
     </Row>
+
     <Row>
       <Type>BUILDINGCLASS_OPEN_SHELTER_DUMMY</Type>
       <DefaultBuilding>BUILDING_OPEN_SHELTER_DUMMY</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_OPEN_SHELTER_DUMMY_DESC</Description>
+      <Description>TXT_KEY_BUILDING_OPEN_SHELTER_DUMMY_TITLE</Description>
     </Row>
+
+
 
     <Row>
       <Type>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</Type>
       <DefaultBuilding>BUILDING_PREHISTORIC_TRIBE_DUMMY</DefaultBuilding>
-      <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC</Description>
+      <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_TITLE</Description>
     </Row>
 
 
@@ -1592,6 +1596,19 @@
   ░
   ░
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+
+  HIDING BUILDINGS
+
+      <Cost>-1</Cost>
+      <FaithCost>-1</FaithCost>
+      <PrereqTech>NULL</PrereqTech>
+      <GreatWorkCount>-1</GreatWorkCount>
+
+
+
+
   -->
 
 
@@ -1653,16 +1670,18 @@
       <Type>BUILDING_PREHISTORIC_TRIBE_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_PREHISTORIC_TRIBE_DUMMY</BuildingClass>
       <Cost>-1</Cost>
-      <Description>Your Tribe</Description>
-      <Help>Prehistoric Tribe Base Help</Help>
+      <FaithCost>-1</FaithCost>
+      <PrereqTech>NULL</PrereqTech>
+      <GreatWorkCount>-1</GreatWorkCount>
+      <Description>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC</Description>
+      <Help>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_HELP</Help>
+      <Civilopedia>TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_PEDIA</Civilopedia>
       <MinAreaSize>-1</MinAreaSize>
       <NeverCapture>true</NeverCapture>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
       <PortraitIndex>63</PortraitIndex>
       <DisplayPosition>-1</DisplayPosition>
     </Row>
-
-
 
 
 
@@ -1705,7 +1724,7 @@
       <PrereqTech>TECH_ADAPTIVE_RADIATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_TREE_DESC</Description>
       <Help>TXT_KEY_BUILDING_TREE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_TREE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_TREE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_TREE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_TREE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1739,7 +1758,7 @@
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_LOOKOUT_ROCK_DESC</Description>
       <Help>TXT_KEY_BUILDING_LOOKOUT_ROCK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_LOOKOUT_ROCK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_LOOKOUT_ROCK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_LOOKOUT_ROCK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_LOOKOUT_ROCK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1796,7 +1815,7 @@
       <PrereqTech>TECH_BIPEDALISM</PrereqTech>
       <Description>TXT_KEY_BUILDING_SPRING_SOURCE_DESC</Description>
       <Help>TXT_KEY_BUILDING_SPRING_SOURCE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SPRING_SOURCE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SPRING_SOURCE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_SPRING_SOURCE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_SPRING_SOURCE_QUOTE</Quote>
       <!-- test -->
@@ -1824,7 +1843,7 @@
       <PrereqTech>TECH_BIPEDALISM</PrereqTech>
       <Description>TXT_KEY_BUILDING_GOLDEN_PATH_DESC</Description>
       <Help>TXT_KEY_BUILDING_GOLDEN_PATH_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_GOLDEN_PATH_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_GOLDEN_PATH_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_GOLDEN_PATH_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_GOLDEN_PATH_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1871,7 +1890,7 @@
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_STONE_PILE_DESC</Description>
       <Help>TXT_KEY_BUILDING_STONE_PILE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_STONE_PILE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_STONE_PILE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_STONE_PILE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_STONE_PILE_QUOTE</Quote>
       <FreePromotion>PROMOTION_FINE_STONE</FreePromotion>
@@ -1899,7 +1918,7 @@
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_GRAND_OVERLOOK_DESC</Description>
       <Help>TXT_KEY_BUILDING_GRAND_OVERLOOK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDINGGRAND_OVERLOOK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDINGGRAND_OVERLOOK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_GRAND_OVERLOOK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_GRAND_OVERLOOK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1925,7 +1944,7 @@
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <Description>TXT_KEY_BUILDING_OVERLOOK_DESC</Description>
       <Help>TXT_KEY_BUILDING_OVERLOOK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_OVERLOOK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_OVERLOOK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_OVERLOOK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_OVERLOOK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -1962,7 +1981,7 @@
       <PrereqTech>TECH_ADAPTED_TOOLS</PrereqTech>
       <Description>TXT_KEY_BUILDING_CHERT_DEPOSIT_DESC</Description>
       <Help>TXT_KEY_BUILDING_CHERT_DEPOSIT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CHERT_DEPOSIT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_CHERT_DEPOSIT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CHERT_DEPOSIT_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <ObsoleteTech>TECH_CALENDAR</ObsoleteTech>
@@ -1998,7 +2017,7 @@
       <PrereqTech>TECH_GRUNTS_AND_GROWLS</PrereqTech>
       <Description>TXT_KEY_BUILDING_GATHERING_CIRCLE_DESC</Description>
       <Help>TXT_KEY_BUILDING_GATHERING_CIRCLE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_GATHERING_CIRCLE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_GATHERING_CIRCLE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_GATHERING_CIRCLE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_GATHERING_CIRCLE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2045,7 +2064,7 @@
       <PrereqTech>TECH_SCAVENGING</PrereqTech>
       <Description>TXT_KEY_BUILDING_BONE_PILE_DESC</Description>
       <Help>TXT_KEY_BUILDING_BONE_PILE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_BONE_PILE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_BONE_PILE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_BONE_PILE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <Happiness>1</Happiness>
@@ -2077,7 +2096,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_ALPHAS_CAVE_DESC</Description>
       <Help>TXT_KEY_BUILDING_ALPHAS_CAVE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_ALPHAS_CAVE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_ALPHAS_CAVE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_ALPHAS_CAVE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -2102,7 +2121,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_OPEN_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_OPEN_SHELTER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_OPEN_SHELTER_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_OPEN_SHELTER_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_OPEN_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -2116,7 +2135,9 @@
       <Type>BUILDING_OPEN_SHELTER_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_OPEN_SHELTER_DUMMY</BuildingClass>
       <Cost>-1</Cost>
-      <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
+      <FaithCost>-1</FaithCost>
+      <PrereqTech>NULL</PrereqTech>
+      <GreatWorkCount>-1</GreatWorkCount>
       <Description>Dummy Open Shelter</Description>
       <Help></Help>
       <MinAreaSize>-1</MinAreaSize>
@@ -2141,7 +2162,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_ADVANCED_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_ADVANCED_SHELTER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_ADVANCED_SHELTER_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_ADVANCED_SHELTER_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_ADVANCED_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -2165,7 +2186,7 @@
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <Description>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_DESC</Description>
       <Help>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_PORTABLE_GRASS_SHELTER_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -2226,7 +2247,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_CAUSEWAY_DESC</Description>
       <Help>TXT_KEY_BUILDING_CAUSEWAY_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_CAUSEWAY_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CAUSEWAY_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_CAUSEWAY_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2241,7 +2262,9 @@
       <Type>BUILDING_CAUSEWAY_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_CAUSEWAY_DUMMY</BuildingClass>
       <Cost>-1</Cost>
-      <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
+      <FaithCost>-1</FaithCost>
+      <PrereqTech>NULL</PrereqTech>
+      <GreatWorkCount>-1</GreatWorkCount>
       <Description>Nearby Marshland</Description>
       <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Causeway[ENDCOLOR] to improve your city.</Help>
       <Strategy>NONE</Strategy>
@@ -2281,7 +2304,7 @@
       <PrereqTech>TECH_ADHESIVES</PrereqTech>
       <Description>TXT_KEY_BUILDING_WATERPROOF_HUT_DESC</Description>
       <Help>TXT_KEY_BUILDING_WATERPROOF_HUT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_WATERPROOF_HUT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_WATERPROOF_HUT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_WATERPROOF_HUT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_WATERPROOF_HUT_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2317,7 +2340,7 @@
       <PrereqTech>TECH_CONTAINERS</PrereqTech>
       <Description>TXT_KEY_BUILDING_RUBBLE_WALL_DESC</Description>
       <Help>TXT_KEY_BUILDING_RUBBLE_WALL_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_RUBBLE_WALL_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_RUBBLE_WALL_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_RUBBLE_WALL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_RUBBLE_WALL_QUOTE</Quote>
       <!-- <CityWall>1</CityWall> -->
@@ -2345,7 +2368,7 @@
       <PrereqTech>TECH_CONTAINERS</PrereqTech>
       <Description>TXT_KEY_BUILDING_WATER_STORAGE_DESC</Description>
       <Help>TXT_KEY_BUILDING_WATER_STORAGE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_WATER_STORAGE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_WATER_STORAGE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_WATER_STORAGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_WATER_STORAGE_QUOTE</Quote>
       <FoodKept>5</FoodKept>
@@ -2379,7 +2402,7 @@
       <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Description>TXT_KEY_BUILDING_CHIEF_UPGRADE_DESC</Description>
       <Help>TXT_KEY_BUILDING_CHIEF_UPGRADE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CHIEF_UPGRADE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_CHIEF_UPGRADE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CHIEF_UPGRADE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_CHIEF_UPGRADE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2407,7 +2430,7 @@
       <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Description>TXT_KEY_BUILDING_BURIAL_SITE_DESC</Description>
       <Help>TXT_KEY_BUILDING_BURIAL_SITE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_BURIAL_SITE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_BURIAL_SITE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_BURIAL_SITE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_BURIAL_SITE_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2457,7 +2480,7 @@
       <PrereqTech>TECH_HUNTING_GATHERING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HUNTING_TRAILS_DESC</Description>
       <Help>TXT_KEY_BUILDING_HUNTING_TRAILS_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_HUNTING_TRAILS_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_HUNTING_TRAILS_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_HUNTING_TRAILS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_HUNTING_TRAILS_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2492,7 +2515,7 @@
       <PrereqTech>TECH_FIRE</PrereqTech>
       <Description>TXT_KEY_BUILDING_CAMPFIRE_DESC</Description>
       <Help>TXT_KEY_BUILDING_CAMPFIRE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_CAMPFIRE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_CAMPFIRE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_CAMPFIRE_QUOTE</Quote>
       <Happiness>1</Happiness>
@@ -2530,7 +2553,7 @@
       <PrereqTech>TECH_FORAGING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HIDEOUT_DESC</Description>
       <Help>TXT_KEY_BUILDING_HIDEOUT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_HIDEOUT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_HIDEOUT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_HIDEOUT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_HIDEOUT_QUOTE</Quote>
       <Defense>100</Defense>
@@ -2653,7 +2676,7 @@
       <PrereqTech>TECH_SYMBOLISM</PrereqTech>
       <Description>TXT_KEY_BUILDING_GREAT_ROCK_DESC</Description>
       <Help>TXT_KEY_BUILDING_GREAT_ROCK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_GREAT_ROCK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_GREAT_ROCK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_GREAT_ROCK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_GREAT_ROCK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2708,7 +2731,7 @@
       <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
       <Description>TXT_KEY_BUILDING_NOMADIC_CAMP_DESC</Description>
       <Help>TXT_KEY_BUILDING_NOMADIC_CAMP_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_NOMADIC_CAMP_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_NOMADIC_CAMP_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_NOMADIC_CAMP_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_NOMADIC_CAMP_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2766,7 +2789,7 @@
       <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
       <Description>TXT_KEY_BUILDING_MEAT_RACK_DESC</Description>
       <Help>TXT_KEY_BUILDING_MEAT_RACK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_MEAT_RACK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_MEAT_RACK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_MEAT_RACK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_MEAT_RACK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2792,7 +2815,7 @@
       <PrereqTech>TECH_COORDINATED_HUNTING</PrereqTech>
       <Description>TXT_KEY_BUILDING_MAMMOTH_TENT_DESC</Description>
       <Help>TXT_KEY_BUILDING_MAMMOTH_TENT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_MAMMOTH_TENT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_MAMMOTH_TENT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_MAMMOTH_TENT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_MAMMOTH_TENT_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2827,7 +2850,7 @@
       <PrereqTech>TECH_ORIENTEERING</PrereqTech>
       <Description>TXT_KEY_BUILDING_HIDE_RACK_DESC</Description>
       <Help>TXT_KEY_BUILDING_HIDE_RACK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_HIDE_RACK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_HIDE_RACK_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_HIDE_RACK_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_HIDE_RACK_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2862,7 +2885,7 @@
       <PrereqTech>TECH_SCOUTING</PrereqTech>
       <Description>TXT_KEY_BUILDING_TREE_STAND_DESC</Description>
       <Help>TXT_KEY_BUILDING_TREE_STAND_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_TREE_STAND_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_TREE_STAND_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_TREE_STAND_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_TREE_STAND_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2897,7 +2920,7 @@
       <PrereqTech>TECH_COOKING</PrereqTech>
       <Description>TXT_KEY_BUILDING_FIRE_PIT_DESC</Description>
       <Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_FIRE_PIT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_FIRE_PIT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_FIRE_PIT_QUOTE</Quote>
       <FoodKept>5</FoodKept>
@@ -2913,7 +2936,9 @@
       <Type>BUILDING_FIRE_PIT_DUMMY</Type>
       <BuildingClass>BUILDINGCLASS_FIRE_PIT_DUMMY</BuildingClass>
       <Cost>-1</Cost>
-      <PrereqTech>TECH_COOKING</PrereqTech>
+      <FaithCost>-1</FaithCost>
+      <PrereqTech>NULL</PrereqTech>
+      <GreatWorkCount>-1</GreatWorkCount>
       <Description>Nearby Food</Description>
       <Help>Opens up posibility of building [COLOR_POSITIVE_TEXT]Fire Pit[ENDCOLOR] to improve your city.</Help>
       <MinAreaSize>-1</MinAreaSize>
@@ -2922,9 +2947,6 @@
       <PortraitIndex>24</PortraitIndex>
       <DisplayPosition>-1</DisplayPosition>
     </Row>
-
-
-
 
 
 
@@ -2946,7 +2968,7 @@
       <PrereqTech>TECH_SYMBOLIC_COMMUNICATION</PrereqTech>
       <Description>TXT_KEY_BUILDING_WARDS_DESC</Description>
       <Help>TXT_KEY_BUILDING_WARDS_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_WARDS_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_WARDS_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_WARDS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_WARDS_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -2979,7 +3001,7 @@
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_LUXURY_HUT_DESC</Description>
       <Help>TXT_KEY_BUILDING_LUXURY_HUT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_LUXURY_HUT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_LUXURY_HUT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_LUXURY_HUT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_LUXURY_HUT_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3004,7 +3026,7 @@
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_VILLAGE_ALERT_DESC</Description>
       <Help>TXT_KEY_BUILDING_VILLAGE_ALERT_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_VILLAGE_ALERT_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_VILLAGE_ALERT_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_VILLAGE_ALERT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_VILLAGE_ALERT_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3027,7 +3049,7 @@
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_PICKET_DESC</Description>
       <Help>TXT_KEY_BUILDING_PICKET_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_PICKET_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_PICKET_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_PICKET_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_PICKET_QUOTE</Quote>
       <Defense>50</Defense>
@@ -3051,7 +3073,7 @@
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <Description>TXT_KEY_BUILDING_EARTHEN_WALL_DESC</Description>
       <Help>TXT_KEY_BUILDING_EARTHEN_WALL_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_EARTHEN_WALL_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_EARTHEN_WALL_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_EARTHEN_WALL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_EARTHEN_WALL_QUOTE</Quote>
       <Defense>50</Defense>
@@ -3092,7 +3114,7 @@
       <PrereqTech>TECH_EXPRESSION</PrereqTech>
       <Description>TXT_KEY_BUILDING_BEAD_MAKER_DESC</Description>
       <Help>TXT_KEY_BUILDING_BEAD_MAKER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_BEAD_MAKER_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_BEAD_MAKER_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_BEAD_MAKER_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_BEAD_MAKER_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3122,7 +3144,7 @@
       <PrereqTech>TECH_HARPOONING</PrereqTech>
       <Description>TXT_KEY_BUILDING_BLUBBER_WORKER_DESC</Description>
       <Help>TXT_KEY_BUILDING_BLUBBER_WORKER_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_BLUBBER_WORKER_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_BLUBBER_WORKER_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_BLUBBER_WORKER_PEDIA</Civilopedia>
       <Quote>TXT_KEY_BUILDING_BLUBBER_WORKER_QUOTE</Quote>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3257,7 +3279,7 @@
       <Cost>130</Cost>
       <Description>TXT_KEY_BUILDING_ROCK_PAINTINGS_DESC</Description>
       <Help>TXT_KEY_BUILDING_ROCK_PAINTINGS_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_ROCK_PAINTINGS_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_ROCK_PAINTINGS_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_ROCK_PAINTINGS_PEDIA</Civilopedia> 
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -3285,7 +3307,7 @@
       <PrereqTech>TECH_WARFARE</PrereqTech>
       <Description>TXT_KEY_BUILDING_PALISADE_DESC</Description>
       <Help>TXT_KEY_BUILDING_PALISADE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_PALISADE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
       <Civilopedia>TXT_KEY_BUILDING_PALISADE_PEDIA</Civilopedia>      
       <ArtDefineTag>MONUMENT</ArtDefineTag>
       <MinAreaSize>-1</MinAreaSize>
@@ -3324,7 +3346,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_SHELTER_CAVE_DESC</Description>
       <Help>TXT_KEY_BUILDING_SHELTER_CAVE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_CAVE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_CAVE_STRATEGY</Strategy>
       <Quote>TXT_KEY_BUILDING_SHELTER_CAVE_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_SHELTER_CAVE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3344,7 +3366,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_SHELTER_HIDE_DESC</Description>
       <Help>TXT_KEY_BUILDING_SHELTER_HIDE_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_HIDE_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_HIDE_STRATEGY</Strategy>
       <Quote>TXT_KEY_BUILDING_SHELTER_HIDE_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_SHELTER_HIDE_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3364,7 +3386,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_SHELTER_GRASS_DESC</Description>
       <Help>TXT_KEY_BUILDING_SHELTER_GRASS_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_GRASS_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_GRASS_STRATEGY</Strategy>
       <Quote>TXT_KEY_BUILDING_SHELTER_GRASS_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_SHELTER_GRASS_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3384,7 +3406,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_SHELTER_STICK_DESC</Description>
       <Help>TXT_KEY_BUILDING_SHELTER_STICK_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_STICK_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_STICK_STRATEGY</Strategy>
       <Quote>TXT_KEY_BUILDING_SHELTER_STICK_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_SHELTER_STICK_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3404,7 +3426,7 @@
       <ObsoleteTech>TECH_MASONRY</ObsoleteTech>
       <Description>TXT_KEY_BUILDING_SHELTER_OVERHANG_DESC</Description>
       <Help>TXT_KEY_BUILDING_SHELTER_OVERHANG_HELP</Help>
-      <Strategy>TXT_KEY_BUILDING_SHELTER_OVERHANG_STATEGY</Strategy>
+      <Strategy>TXT_KEY_BUILDING_SHELTER_OVERHANG_STRATEGY</Strategy>
       <Quote>TXT_KEY_BUILDING_SHELTER_OVERHANG_QUOTE</Quote>
       <Civilopedia>TXT_KEY_BUILDING_SHELTER_OVERHANG_PEDIA</Civilopedia>
       <ArtDefineTag>MONUMENT</ArtDefineTag>
@@ -3538,22 +3560,32 @@
     <Row>
       <BuildingType>BUILDING_TREE</BuildingType>
       <FlavorType>FLAVOR_GOLD</FlavorType>
-      <Flavor>20</Flavor>
+      <Flavor>30</Flavor>
     </Row>
     <Row>
       <BuildingType>BUILDING_TREE</BuildingType>
       <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>20</Flavor>
+      <Flavor>30</Flavor>
     </Row>
     <Row>
       <BuildingType>BUILDING_TREE</BuildingType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>20</Flavor>
+      <Flavor>30</Flavor>
     </Row>
     <Row>
       <BuildingType>BUILDING_</BuildingType>
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>20</Flavor>
+      <Flavor>30</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_</BuildingType>
+      <FlavorType>FLAVOR_SOCIETY</FlavorType>
+      <Flavor>30</Flavor>
+    </Row>
+    <Row>
+      <BuildingType>BUILDING_</BuildingType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>30</Flavor>
     </Row>
 
     <Row>
@@ -4233,11 +4265,18 @@
   --> 
   <Building_YieldChanges>
 
+    <!-- TODO: +YIELD_SOCIETY -->
     <Row>
       <BuildingType>BUILDING_TREE_LIFE</BuildingType>
       <YieldType>YIELD_GOLD</YieldType>
       <Yield>2</Yield>
     </Row>
+
+    <Row>
+      <BuildingType>BUILDING_TREE</BuildingType>
+      <YieldType>YIELD_SCIENCE</YieldType>
+      <Yield>1</Yield>
+    </Row>    
 
     <Row>
       <BuildingType>BUILDING_OPEN_SHELTER</BuildingType>
@@ -5074,7 +5113,7 @@
     <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_HELP">
       <Text> Help</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_STRATEGY">
       <Text> Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_BLDGTEMPLATE_PEDIA">
@@ -5110,7 +5149,7 @@
     <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_HELP">
       <Text>A tall, beautiful and fruitful tree, around which your community has been founded. [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_STRATEGY">
       <Text>The concept of a tree of life has been used in science, religion, philosophy, mythology, and other areas. A tree of life is a common motif in various world theologies, mythologies, and philosophies. A mystical concept alluding to the interconnection of all life on our planet; and a metaphor for common descent in the evolutionary sense. The term tree of life may also be used as a synonym for 'sacred tree'.[NEWLINE](Quoted from en.wikipedia.org/wiki/Tree_of_life)</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_LIFE_PEDIA">
@@ -5128,7 +5167,7 @@
     <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_HELP">
       <Text>Being at the top-most point of soaring cliffs give you visibility over your tribe and the surrounding land. [NEWLINE][NEWLINE]Indicates this City is the [ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR] of the empire, until the construction of the [COLOR_POSITIVE_TEXT]Palace[ENDCOLOR].</Text>
     </Row>    
-    <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_STRATEGY">
       <Text>Grand Overlook Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_GRAND_OVERLOOK_PEDIA">
@@ -5146,7 +5185,7 @@
     <Row Tag="TXT_KEY_BUILDING_ALPHAS_CAVE_HELP">
       <Text>Man starting understanding the concept of building their shelter or using the existing environment. The leader always takes the best spot, but in return, provides bonsues for his or her people.</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_ALPHAS_CAVE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_ALPHAS_CAVE_STRATEGY">
       <Text>Alpha's Cave Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_ALPHAS_CAVE_PEDIA">
@@ -5164,7 +5203,7 @@
     <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_HELP">
       <Text>Your personal luxurious, glorious and magnificent hut. Comes with a comfortable bed made of a big flat rock.[NEWLINE]May only be built once in a Civilization. Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Masonry[ENDCOLOR].</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_STRATEGY">
       <Text>The Chieftain's Hut is the center of early human politics. Here you act as leader, judge and counsellor to your people.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CHIEF_HUT_PEDIA">
@@ -5182,7 +5221,7 @@
     <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_HELP">
       <Text>Placeholder Mammoth Tent Help</Text>
     </Row>    
-    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_STRATEGY">
       <Text>Placeholder Mammoth Tent Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_MAMMOTH_TENT_PEDIA">
@@ -5222,7 +5261,7 @@
     <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_HELP">
       <Text>Chief Upgrade Help</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_STRATEGY">
       <Text> Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CHIEF_UPGRADE_PEDIA">
@@ -5263,12 +5302,24 @@
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_DUMMY_DESC">
       <Text>Marshland</Text>
     </Row>
+    
     <Row Tag="TXT_KEY_BUILDING_FIRE_PIT_DUMMY_DESC">
       <Text>Animals</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC">
-      <Text>Tribe</Text>
+
+    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_TITLE">
+      <Text>Your tribe</Text>
     </Row>
+    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_DESC">
+      <Text>Your small tribe</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_HELP">
+      <Text>Your small tribe</Text>
+    </Row>
+    <Row Tag="TXT_KEY_BUILDING_PREHISTORIC_TRIBE_DUMMY_PEDIA">
+      <Text>Huddled together in fear, your small tribe of wanderers and wonderers comprise the beginnings of civilization. Together, the huddled mass is their own home, protected by the pack.</Text>
+    </Row>
+
     <Row Tag="TXT_KEY_BUILDING_OPEN_SHELTER_DUMMY_DESC">
       <Text>Open Area</Text>
     </Row>
@@ -5314,10 +5365,10 @@
       <Text>Tree</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_HELP">
-      <Text>Placeholder Tree Help</Text>
+      <Text>A perfect tree that can be used to provides shelter, basic resources, and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] (+1 [COLOR_ADVISOR_HIGHLIGHT_TEXT]Society[ENCOLOR]) to your budding band of survivalists.</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_STRATEGY">
-      <Text>Placeholder Tree Strategy</Text>
+      <Text>Get an early jump on [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] ([COLOR_ADVISOR_HIGHLIGHT_TEXT]Society[ENCOLOR]) with this quick and cheap "building".</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_PEDIA">
       <Text>Placeholder Tree Pedia</Text>
@@ -5555,7 +5606,7 @@
     <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_QUOTE">
       <Text>"Some like it hot."[NEWLINE] - movie[NEWLINE]</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_STRATEGY">
       <Text>Advanced Shelter Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_ADVANCED_SHELTER_PEDIA">
@@ -5575,7 +5626,7 @@
         <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_QUOTE">
           <Text>"Some like it hot."[NEWLINE] - movie[NEWLINE]</Text>
         </Row>
-        <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_STATEGY">
+        <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_STRATEGY">
           <Text>The basic stick shelter is one of the most primitive of shelters, still in use today. Its great advantage was the portable nature of the core components. It could also be built almost anywhere. Simple to set up, it protects only against the basic elements.[NEWLINE][NEWLINE]Provides [ICON_HAPPINESS_1] [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] for your community as they are able to shelter themselves from some environmental elements.</Text>
         </Row>
         <Row Tag="TXT_KEY_BUILDING_SHELTER_LEANTO_PEDIA">
@@ -5617,7 +5668,7 @@
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_QUOTE">
       <Text>"The Dead Marshes, yes, yes: that is their name." [NEWLINE] - Little Green Guy[NEWLINE]</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_STRATEGY">
       <Text>Build a causeway if you have marshland within your boundaries or are next to a river. This will increase your settlement's [ICON_PRODUCTION] [COLOR_POSITIVE_TEXT]Production[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAUSEWAY_PEDIA">
@@ -5635,7 +5686,7 @@
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_HELP">
       <Text>Placeholder Waterproof Hut Help</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_STRATEGY">
       <Text>Placeholder Waterproof Hut Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_WATERPROOF_HUT_PEDIA">
@@ -5728,7 +5779,7 @@
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_QUOTE">
       <Text>"Governing a great nation is like cooking a small fish - too much handling will spoil it."[NEWLINE] - Lao Tzu[NEWLINE]</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_STRATEGY">
       <Text>A campfire plays a central role in your early settlement. Build it to increase [COLOR_POSITIVE_TEXT]Happiness[ENDCOLOR] and provide additional [ICON_FOOD] Food bonuses to certain [ICON_FOOD}] resources. This double bonus and relative cost makes this building a great asset.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CAMPFIRE_PEDIA">
@@ -6066,7 +6117,7 @@
     <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_HELP">
       <Text>Grants additional [ICON_FOOD] Food for your community.[NEWLINE]Becomes [COLOR_WARNING_TEXT]Obsolete[ENDCOLOR] with the discovery of [COLOR_WARNING_TEXT]Pottery[ENDCOLOR].</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_STATEGY">
+    <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_STRATEGY">
       <Text>The Food Storage is usually a cool cave or cavity, where food is kept fresh longer. Build it to increase the Growth of your City.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_FOOD_STORAGE_PEDIA">

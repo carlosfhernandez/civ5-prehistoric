@@ -306,9 +306,9 @@
 
     <Row>
       <Type>PROMOTION_CREATED</Type>
-      <Description>TXT_KEY_PROMOTION_CREATED</Description>
+      <Description>TXT_KEY_PROMOTION_CREATED_DESC</Description>
       <Help>TXT_KEY_PROMOTION_CREATED_HELP</Help>
-      <PediaEntry>TXT_KEY_PROMOTION_CREATED</PediaEntry>
+      <PediaEntry>TXT_KEY_PROMOTION_CREATED_PEDIA</PediaEntry>
       <CannotBeChosen>true</CannotBeChosen>
       <Sound>AS2D_IF_LEVELUP</Sound>
       <PortraitIndex>26</PortraitIndex>
@@ -355,9 +355,9 @@
     <!-- TESTING -->
     <Row>
       <Type>PROMOTION_PREHISTORIC_DARKNESS</Type>
-      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS</Description>
-      <Help>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_HELP</Help>
-      <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_PEDIA</PediaEntry>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_DARKNESS_DESC</Description>
+      <Help>TXT_KEY_PROMOTION_PREHISTORIC_DARKNESS_HELP</Help>
+      <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_DARKNESS_PEDIA</PediaEntry>
       <CannotBeChosen>true</CannotBeChosen>
       <Sound>AS2D_IF_LEVELUP</Sound>
       <VisibilityChange>-3</VisibilityChange>
@@ -368,7 +368,7 @@
 
     <Row>
       <Type>PROMOTION_PREHISTORIC_SIGHTLESS</Type>
-      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS</Description>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_DESC</Description>
       <Help>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_HELP</Help>
       <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_PEDIA</PediaEntry>
       <CannotBeChosen>true</CannotBeChosen>
@@ -381,7 +381,7 @@
 
     <Row>
       <Type>PROMOTION_PREHISTORIC_SIGHT</Type>
-      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT</Description>
+      <Description>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_DESC</Description>
       <Help>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_HELP</Help>
       <PediaEntry>TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_PEDIA</PediaEntry>
       <CannotBeChosen>true</CannotBeChosen>
@@ -1009,23 +1009,90 @@
 
 
 
-    <!-- ABILITIES -->
+    <!--  
+    ┌─────────────────────────────────────────────────────────────────────────
+    │ Abilities                                                                    
+    └─────────────────────────────────────────────────────────────────────────
+    -->
 
 
-    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHT">
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Limits
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_DARKNESS_DESC">
+      <Text>Prehistoric Extremely Limited Sight</Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_DESC">
+      <Text>Prehistoric Very Limited Sight</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_HELP">
+      <Text>Your unit limited ability to take in and evaluate surroundings, to deduce. Although they "see", they do not comprehend.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHTLESS_PEDIA">
+      <Text>"Sight" is a misnomer. It is the ability of a unit to assess their surroundings that provides knowledge of the area. Deduction skills and logic help with assessment. The ability to create relationships in the mind, and to connect these relationships allowed for a greater expanse of "sight".
+        [NEWLINE][NEWLINE]As an example, prehistoric man, such as Australopithecus, has trouble rationalizing tracks, and therefore could not "know" the possible animals within the area. They may have started to know what a horse hoofprint looked like, but they could not make the leap of logic that a similar looking hoof was perhaps a similar animal. 
+        [NEWLINE][NEWLINE]And so, prehistoric man was limited to their immediate surroundings.
+      </Text>
+    </Row>
+
+
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_SIGHT_DESC">
       <Text>Prehistoric Limited Sight</Text>
     </Row>
+
+
     <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_DESC">
       <Text>Prehistoric Limited Mapping</Text>
     </Row>    
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_HELP">
+      <Text>Limits mapping and returns darkness to map</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_PROMOTION_PREHISTORIC_MAPPING_PEDIA">
+      <Text>Although a prehistoric individual may have remembered certain areas and how to get to and from them, it was much harder to pass this information down from generation to generation. Without a proper language structure and proper cognition skills this information would be lost.</Text>
+    </Row>    
+    
 
 
 
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Negative
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Neutral
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+
+    <!--  
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    ¦ Positive
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    -->
+
+
+
+
+<!--
 TXT_KEY_PROMOTION_CITY_RECKLESS_HELP
 -20% [ICON_STRENGTH] Combat Strength when defending.
 
 TXT_KEY_PROMOTION_CITY_BRUTEFORCE_HELP
-
+-->
 
 
 
