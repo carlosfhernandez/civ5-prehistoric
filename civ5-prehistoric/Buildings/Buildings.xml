@@ -3153,7 +3153,7 @@
       <NeverCapture>true</NeverCapture>
       <HurryCostModifier>40</HurryCostModifier>
       <IconAtlas>BUILDING_ATLAS_PRE</IconAtlas>
-      <PortraitIndex>62</PortraitIndex>
+      <PortraitIndex>60</PortraitIndex>
     </Row> 
 
 
@@ -5365,10 +5365,10 @@
       <Text>Tree</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_HELP">
-      <Text>A perfect tree that can be used to provides shelter, basic resources, and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] (+1 [COLOR_ADVISOR_HIGHLIGHT_TEXT]Society[ENCOLOR]) to your budding band of survivalists.</Text>
+      <Text>A perfect tree that can be used to provides shelter, basic resources, and +1 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] (+1 [COLOR_GREY]Society[ENDCOLOR]) to your budding band of survivalists.</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_STRATEGY">
-      <Text>Get an early jump on [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] ([COLOR_ADVISOR_HIGHLIGHT_TEXT]Society[ENCOLOR]) with this quick and cheap "building".</Text>
+      <Text>Get an early jump on [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] ([COLOR_GREY]Society[ENDCOLOR]) with this quick and cheap "building".</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_TREE_PEDIA">
       <Text>Placeholder Tree Pedia</Text>
@@ -5383,7 +5383,7 @@
       <Text>Lookout Rock</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_HELP">
-      <Text>Placeholder Lookout Rock Help</Text>
+      <Text>Provides certain units with a little [COLOR_POSITIVE_TEXT]extra visibility[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_LOOKOUT_ROCK_STRATEGY">
       <Text>Placeholder Lookout Rock Strategy</Text>
@@ -5423,7 +5423,7 @@
       <Text>Spring Source</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_HELP">
-      <Text>Placeholder Spring Source Help</Text>
+      <Text>Provides [COLOR_POSITIVE_TEXT]extra movement[ENDCOLOR] for certain units.</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_SPRING_SOURCE_STRATEGY">
       <Text>Placeholder Spring Source Strategy</Text>
@@ -5441,7 +5441,7 @@
       <Text>Golden Path</Text>
     </Row>   
     <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_HELP">
-      <Text>Placeholder Golden Path Help</Text>
+      <Text>[COLOR_DARK_GREY]Increased access to resouces.[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_GOLDEN_PATH_STRATEGY">
       <Text>Placeholder Golden Path Strategy</Text>

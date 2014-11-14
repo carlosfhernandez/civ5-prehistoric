@@ -54,9 +54,6 @@
     
   </Resources>
 
-  
-  <!-- YIELDS -->
-  <!--
   <Resource_YieldChanges>
     <Row>
       <ResourceType>RESOURCE_BERRIES</ResourceType>
@@ -64,10 +61,7 @@
       <Yield>1</Yield>
     </Row>
   </Resource_YieldChanges>
-  -->
-  
-  <!-- FLAVORS -->
-  
+
   <Resource_Flavors>
     <Row>
       <ResourceType>RESOURCE_BERRIES</ResourceType>
@@ -76,9 +70,6 @@
     </Row>
   </Resource_Flavors>
 
-  
-  <!-- BOOLEANS -->
-  
   <Resource_TerrainBooleans>
     <Row>
       <ResourceType>RESOURCE_BERRIES</ResourceType>

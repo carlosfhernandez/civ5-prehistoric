@@ -402,6 +402,7 @@
       <Cost>30</Cost>
       <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
+      <Gold>2</Gold> <!-- TODO: Society -->
       <NukeImmune>true</NukeImmune>
       <HurryCostModifier>-1</HurryCostModifier>
       <MinAreaSize>-1</MinAreaSize>
@@ -2111,7 +2112,21 @@
   <Language_en_US>
 
 
-
+    <Row Tag="TXT_KEY_WONDER__TITLE">
+      <Text>[Placeholder] Name</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER__DESC">
+      <Text>[Placeholder] Name</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER__HELP">
+      <Text>[Placeholder] Name Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER__QUOTE">
+      <Text>[Placeholder] Name Quote</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER__PEDIA">
+      <Text>[Placeholder] Name Pedia</Text>
+    </Row>
 
     <Row Tag="TXT_KEY_WONDER_ARDI_TITLE">
       <Text>Ardi's Tree</Text>
@@ -2119,13 +2134,30 @@
     <Row Tag="TXT_KEY_WONDER_ARDI_DESC">
       <Text>Ardi's Tree</Text>
     </Row>
-
+    <Row Tag="TXT_KEY_WONDER_ARDI_HELP">
+      <Text>The tree used by the famous Ardipithecus ramidus, "Ardi". Provides valuable [COLOR_GREY]Society[ENDCOLOR] points (+2 [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR]).</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_ARDI_QUOTE">
+      <Text>"Ardi means 'ground floor', so why do we celebrate his tree?"</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_ARDI_PEDIA">
+      <Text>[Placeholder] Ardi's Tree Pedia</Text>
+    </Row>
 
     <Row Tag="TXT_KEY_WONDER_LUCY_TITLE">
       <Text>Lucy's Path</Text>
     </Row>
     <Row Tag="TXT_KEY_WONDER_LUCY_DESC">
       <Text>Lucy's Path</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LUCY_HELP">
+      <Text>Lucy, Australopithecus afarensis, showed the path of true upright walking. Gives your units [COLOR_GREY][Placeholder][ENDCOLOR]</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LUCY_QUOTE">
+      <Text>[Placeholder] Lucy's Path Quote</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LUCY_PEDIA">
+      <Text>[Placeholder] Lucy's Path Pedia</Text>
     </Row>
 
 
@@ -2135,7 +2167,16 @@
     <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_DESC">
       <Text>Laetoli Footprints</Text>
     </Row>
-
+    <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_HELP">
+      <Text>[Placeholder] Laetoli Footprints Help</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_QUOTE">
+      <Text>[Placeholder] Laetoli Footprints Quote</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_PEDIA">
+      <Text>[Placeholder] Laetoli Footprints Pedia</Text>
+    </Row>
+    
 
     <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_TITLE">
       <Text>First Chopper</Text>

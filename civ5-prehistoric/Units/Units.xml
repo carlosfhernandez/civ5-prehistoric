@@ -1455,6 +1455,25 @@
   ║ Combat Progression                                                         ║
   ╟────────────────────────────────────────────────────────────────────────────╢
   ║
+  ║ CBT:   Combat
+  ║ RCB:   Ranged Combat
+  ║ RG:    Range
+  ║ COST:  Cost
+  ║ MOVE:  Movement
+  ║ MT:    
+  ║ FD:    Food
+  ║
+  ║
+  ║ OCB:   Original Combat
+  ║ OCST:  Original Cost
+  ║
+  ║
+  ║
+  ║
+  ║
+  ║ UNIT           CBT RCB RG COST MOVE MT FD                         OCB OCST
+  ║
+  ║
   ║
   ║
   ║ UNIT           CBT RCB RG COST MOVE MT                            OCB OCST
@@ -1784,8 +1803,8 @@
     │ 
     │ Leaders:
     │
-    │ - provide bonuses to other units
-    │ - only can be built at one time (TBD)
+    │ - TODO: provide bonuses to other units
+    │ - TODO: there can only be one at a time
     │
     └───────────────────────────────────────────────────────────────────────────
     -->
@@ -1826,7 +1845,7 @@
     <Row>
       <Class>UNITCLASS_PATRIARCH</Class>
       <Type>UNIT_PATRIARCH</Type>
-      <PrereqTech>TECH_PRIMATE_COGNITION</PrereqTech>
+      <PrereqTech>TECH_FAMILY_TIES</PrereqTech>
       <Combat>8</Combat>
       <Cost>24</Cost>
       <Moves>2</Moves>
@@ -7012,11 +7031,11 @@
       <Text>Use your primate [COLOR_POSITIVE_TEXT]Alpha[ENDCOLOR] to support other units or strike hard and early.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ALPHA_HELP">
-      <Text>Alpha. This words is used to mean many things. When used with animals and humans it represents the dominant animal in the group, typically a male.</Text>
+      <Text>Alpha. This word is used to mean many things. When used with animals and humans it represents the dominant animal in the group, typically a male. Adds special [COLOR_POSITIVE_TEXT]bonuses[ENDCOLOR] to surrounding units.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_ALPHA_PEDIA">
       <Text>An Alpha (leader class) is slightly stronger and better than the typical unit it represents. It also provides help to other units around them.
-        [NEWLINE][NEWLINE]An Alpha Tiger is still a tiger, but a leader amongst its own. The Alpha, the dominant male (or female) of this early group of homnids shows great strength and nothing more. Perhaps some higher intelligence or intuition is present--at very small levels. And being the Alpha, he breeds. He breeds with many. And man slowly improves its progeny...one generation at a time...until that fateful moment. </Text>
+        [NEWLINE][NEWLINE]An Alpha Tiger is still a tiger, but a leader amongst its own. The Alpha, the dominant male (or female) of this early group of hominids shows great strength and nothing more. Perhaps some higher intelligence or intuition is present--at very small levels. And being the Alpha, he breeds. He breeds with many. And man slowly improves its progeny...one generation at a time...until that fateful moment. </Text>
     </Row>  
 
     <!-- UNIT_PATRIARCH -->
@@ -7132,7 +7151,7 @@
       <Text>Settle early. Don't wait. Take advantage of an unfinished game.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_HELP">
-      <Text>A temporary placeholder unit for settling early in the game.</Text>
+      <Text>A [COLOR_RED]temporary[ENDCOLOR] placeholder unit for settling early in the game.[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_TMP_TREE_SETTLER_PEDIA">
       <Text>Early man did not settle. This unit is here because gameplay hasn't been finished to allow for a "settlement-less" era. In the meantime, your settlements will be VERY limited in size.</Text>
@@ -7252,7 +7271,7 @@
       <Text>Your weakest and only unit at the start. Use him carefully. Your ownly option may be to explore the nearby surroundings.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_HELP">
-      <Text>Australopithecus is generic combat unit with many limits. There is nothing special about him. He is very limited in sight.</Text>
+      <Text>Australopithecus is generic combat unit with many limits. There is nothing special about him. He has very [COLOR_NEGATIVE_TEXT]limited sight[ENDCOLOR].</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_AUSTRALOPITHECUS_PEDIA">
       <Text>Australopithecus Pedia</Text>
@@ -7887,15 +7906,16 @@
     <Row Tag="TXT_KEY_UNIT_WANDERER_DESC">
       <Text>Wanderer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_WANDERER_PEDIA">
-      <Text>Wanderer Pedia</Text>
-    </Row>
     <Row Tag="TXT_KEY_UNIT_WANDERER_STRATEGY">
       <Text>Wanderers learned to move quicker and have a higher curiousity. Use them to explore early on.</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_WANDERER_HELP">
       <Text>A wanderer unit has better movement that his early counterparts. He is very weak, so be careful.</Text>
-    </Row> 
+    </Row>     
+    <Row Tag="TXT_KEY_UNIT_WANDERER_PEDIA">
+      <Text>Wanderer Pedia</Text>
+    </Row>
+
 
     <!-- UNIT_NOMAD_WANDERER -->
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_TITLE">
@@ -7904,15 +7924,16 @@
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_DESC">
       <Text>Nomad Wanderer</Text>
     </Row>
-    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_PEDIA">
-      <Text>Nomad Wanderer Pedia</Text>
-    </Row>
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_STRATEGY">
       <Text>Nomad Wanderer Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_HELP">
-      <Text>Nomad  WAnderer Help</Text>
-    </Row> 
+      <Text>A wanderer without the limits of the regular wanderer and increased abilities away from the settlement.</Text>
+    </Row>    
+    <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_PEDIA">
+      <Text>Nomad Wanderer Pedia</Text>
+    </Row>
+ 
 
     <!-- UNIT_ADVENTURER -->
     <Row Tag="TXT_KEY_UNIT_ADVENTURER_TITLE">

@@ -62,7 +62,7 @@ data = {}
 GameEvents.PlayerDoTurn.Add(function(iPlayer) 
   local subprefix = "[PlayerDoTurn] "
   logger:debug( "" )
-  logger:debug( subprefix )
+  logger:debug( subprefix .. "===============================================" )
 
 
   local pPlayer =     Players[iPlayer]
@@ -74,6 +74,7 @@ GameEvents.PlayerDoTurn.Add(function(iPlayer)
   local iTurn =       Game:GetGameTurn()
 
   logger:debug( subprefix .. "player:" .. pPlayer:GetName() )
+  logger:debug( subprefix .. "===============================================" )
   logger:debug( subprefix .. "turn:" .. iTurn )
 
   if ( iTurn == 5 ) then -- TODO: remove hard-coded number into global options

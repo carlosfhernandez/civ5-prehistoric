@@ -1,25 +1,20 @@
 todo
 ------------------------------------------------------------------------------
 
-
-!!! MISSING TECH_PAINTING PREREQ !!!
-
-
-
-unorganized random notes
-------------------------------------------------------------------------------
+- bugs
 
 - early game 
-  - ai
-    - ai needs extra bonuses to account for new gameplay and undefined ai 
-    - handicaps for free techs
-  - need 'something' (building?) that provides players with basic growth (science, etc) - could even be a lua script per turn
   - advisers need to stop talking about cities
+
+- gameplay
+  - option: end game all units killed (return to player option)
+  - science: provide early one point science
+  - need 'something' (building?) that provides players with basic growth (science, etc) - could even be a lua script per turn
 
 - art
   - icons
     - schoningen spears all black background - add outline
-    - missing
+    * missing
       - units
         - great leader
         - wanderer
@@ -41,6 +36,18 @@ unorganized random notes
     - brute
     - bruiser
   - early game units being created for civs either autochthon or austra -- should be only one
+  * unfinished units
+    * definition
+    * graphics (see 'art')
+  * goody hut upgrade
+  * unit small icons
+  * create graphic for temporary tree settler unit: single austro?
+
+- buildings
+  - remove non-functional wonders and buildings and units
+
+- wonders
+  * ensure they are not built by AI [FLAVOR]
 
 - tech
   - add future-future tech or something like that (not linked) that can be a container for other things
@@ -54,12 +61,21 @@ unorganized random notes
   - early game units being created: alpha and patriarch -- need to change
   - barbarians should not spawn so early
 
+- ai
+  - handicap balance
+    - handicap for free techs
+  - ai needs extra bonuses to account for new gameplay and undefined ai 
+
+- traits
+  - balance (prereqs)
+  - temporary traits (trait roulette)
+
+- sound and music
+
+
+
+
+FIXED
+
 - bugs
   - first city gets FLOATING GARDENS granted on 2nd turn
-
-- handicap: balance
-
-- traits: balance (prereqs)
-
-- temporary traits (trait roulette)
-

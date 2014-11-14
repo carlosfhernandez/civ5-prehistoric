@@ -1086,4 +1086,3 @@ ALLOW_EXTENDED_PLAY (1) = Is the player allowed to continue with the game once i
 
 
 */
-
