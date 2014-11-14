@@ -1,7 +1,11 @@
 Civilization V Prehistoric Mod
 ==============================
 
-Extends the game back millions years and multiple eras into the days when "man" first descended from the trees! [[wiki]](https://github.com/carlosfhernandez/civ5-prehistoric/wiki/Civilization-V---Prehistoric-Era-Mod)
+#[wiki](https://github.com/carlosfhernandez/civ5-prehistoric/wiki/Civilization-V---Prehistoric-Era-Mod)
+
+Extends the game back millions years and multiple eras into the days when "man" first descended from the trees! 
+
+[todo list](https://github.com/carlosfhernandez/civ5-prehistoric/wiki/todo)
 
 Table of Contents
 -----------------
