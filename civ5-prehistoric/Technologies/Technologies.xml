@@ -4016,13 +4016,13 @@ Techs for an 8x8 Grid:
       <Text>Bipedalism</Text>
     </Row>   
     <Row Tag="TXT_KEY_TECH_BIPEDALISM_HELP">
-      <Text>Bipedalism Help</Text>
+      <Text>Opens up [COLOR_HIGHLIGHT_TEXT]Wanderer[ENDCOLOR] units which allow for improved exploration. Your settlement can now create buildings which aid in mobility: [COLOR_POSITIVE_TEXT]Spring Source[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Golden Path[ENDCOLOR.</Text>
     </Row>   
     <Row Tag="TXT_KEY_TECH_BIPEDALISM_PEDIA">
       <Text>Bipedalism Pedia</Text>
     </Row> 
     <Row Tag="TXT_KEY_TECH_BIPEDALISM_QUOTE">
-      <Text>Bipedalism Quote</Text>
+      <Text>[NEWLINE][TAB][TAB]"All truly great thoughts are conceived while walking."[NEWLINE][TAB][TAB]  -  Friedrich Nietzsche[NEWLINE][TAB]</Text>
     </Row> 
 
 

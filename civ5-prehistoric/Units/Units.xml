@@ -7925,13 +7925,13 @@
       <Text>Nomad Wanderer</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_STRATEGY">
-      <Text>Nomad Wanderer Strategy</Text>
+      <Text>Placeholder Nomad Wanderer Strategy</Text>
     </Row>
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_HELP">
       <Text>A wanderer without the limits of the regular wanderer and increased abilities away from the settlement.</Text>
     </Row>    
     <Row Tag="TXT_KEY_UNIT_NOMAD_WANDERER_PEDIA">
-      <Text>Nomad Wanderer Pedia</Text>
+      <Text>Placeholder Nomad Wanderer Pedia</Text>
     </Row>
  
 

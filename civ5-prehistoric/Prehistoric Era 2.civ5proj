@@ -3,44 +3,39 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{ad5e13df-4968-4d3a-b492-19f285d4c8ad}</ProjectGuid>
-    <Name>!Prehistoric Era (BNW) (v0.3.0exp-build179) [preview]</Name>
+    <Name>Prehistoric Era (BNW) (v0.3.0e-build212) [test]</Name>
     <Guid>7c63c188-045b-4955-bbea-6c685d119c86</Guid>
-    <ModVersion>100</ModVersion>
+    <ModVersion>14</ModVersion>
     <Stability>Experimental</Stability>
-    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0exp-build179l)[preview][ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]emi-functional PREVIEW (experimental) release only![ENDCOLOR]</Teaser>
+    <Teaser>[COLOR_POSITIVE_TEXT](v0.3.0e-build212)[test][ENDCOLOR] [COLOR_PROJECT_TEXT]The Prehistoric Era takes man back millions of years to the point where man descended from the trees. New techs, units, buildings, wonders, and more.[NEWLINE][COLOR_RED]Test (experimental) release only! Please help with feedback.[ENDCOLOR]</Teaser>
     <Description>This mod adds millions of years of human history with many new eras going back to the dawn of man.
 
-THIS IS A NON-(SEMI)-FUNCTIONAL PREVIEW (EXPERIMENTAL) RELEASE ONLY! IT IS FOR DEBUGGING PURPOSES AND FOR THOSE THAT WANT TO HELP. 
+THIS IS TEST PREVIEW RELEASE ONLY! IF YOU WOULD LIKE TO HELP WITH FEEDBACK PLEASE DO!
 
-[[ v0.3.0exp-build179 preview / Steam v100 / 2014-05-13 ]]
+[[ v0.3.0-exp-build212 preview / Steam v14 / 2014-11-17 ]]
 
 - New Era: Prehistoric Era.
 - 30 new Technologies: Fire, Gathering, Tools, Numbers, and more.
-- 25 new buildings, 4 wonders
-- 2 new resources and a new improvement (Fraging Site).
+- 26 new buildings, 15 wonders
+- 4 new resources and a new improvement
 - 18 New Units: Autocthon, Primitive Archer, Shaman, Caveman, Savage
-- Laborer to build early improvements
-
+- New game cocepts
 
 __ KNOWN ISSUES __
-
-This is still in Alpha (and Preview). I will fix problems as soon as I can. Let me know.
 
 - Timed Game: I need to determine the appropriate turn addition to each timed setting. 
 - AI improved but still falls short in some places.
 - Start date (6000 BC) has comptability issues with other mods.
 
-
-
 __ UPGRADE __
 
-You may need to delete the mod cache to make this upgrade work. I had to do this once in order to get the new graphics to works.</Description>
+You may need to delete the mod cache to make this upgrade work. I had to do this once in order to get the new graphics to work.</Description>
     <Authors>Apshai (CarlosCodex)</Authors>
     <SpecialThanks>Muppets and CivFanatics</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>100</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
-    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMultiplayer>false</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>Prehistoric Era 2</AssemblyName>

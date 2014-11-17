@@ -5370,6 +5370,9 @@
     <Row Tag="TXT_KEY_BUILDING_TREE_STRATEGY">
       <Text>Get an early jump on [ICON_GOLD] [COLOR_POSITIVE_TEXT]Gold[ENDCOLOR] ([COLOR_GREY]Society[ENDCOLOR]) with this quick and cheap "building".</Text>
     </Row>    
+    <Row Tag="TXT_KEY_BUILDING_TREE_QUOTE">
+      <Text>Placehold Tree Quote</Text>
+    </Row>
     <Row Tag="TXT_KEY_BUILDING_TREE_PEDIA">
       <Text>Placeholder Tree Pedia</Text>
     </Row>
@@ -5495,7 +5498,7 @@
       <Text>Chert Deposit</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_HELP">
-      <Text>Placeholder Chert Deposit Help</Text>
+      <Text>Finding a [COLOR_POSITIVE_TEXT]Chert Deposit[ENDCOLOR] gives units enhanced weapons.</Text>
     </Row>    
     <Row Tag="TXT_KEY_BUILDING_CHERT_DEPOSIT_STRATEGY">
       <Text>Placeholder Chert Deposit Strategy</Text>

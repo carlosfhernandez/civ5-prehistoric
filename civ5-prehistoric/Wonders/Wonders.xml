@@ -399,7 +399,7 @@
       <Civilopedia>TXT_KEY_WONDER_ARDI_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_ARDI_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_ARDI_HELP</Help>
-      <Cost>30</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_GREAT_DIVERGENCE</PrereqTech>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <Gold>2</Gold> <!-- TODO: Society -->
@@ -434,7 +434,7 @@
       <Civilopedia>TXT_KEY_WONDER_LUCY_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_LUCY_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_LUCY_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -454,7 +454,7 @@
       <Civilopedia>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_LAETOLI_FOOTPRINTS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_ANCIENT</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -510,7 +510,7 @@
       <Civilopedia>TXT_KEY_WONDER_FIRST_CHOPPER_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_FIRST_CHOPPER_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_FIRST_CHOPPER_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_ADVANCED_PERCEPTION</PrereqTech>
       <MaxStartEra>ERA_LOWER_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -539,7 +539,7 @@
       <Civilopedia>TXT_KEY_WONDER_OLDUVAI_GORGE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_OLDUVAI_GORGE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_OLDUVAI_GORGE_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_ADAPTED_TOOLS</PrereqTech>
       <MaxStartEra>ERA_LOWER_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -579,7 +579,7 @@
       <Civilopedia>TXT_KEY_WONDER_TWIGGY_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TWIGGY_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TWIGGY_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_SCAVENGING</PrereqTech>
       <MaxStartEra>ERA_LOWER_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -607,7 +607,7 @@
       <Civilopedia>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TORRALBA_AND_AMBRONA_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_CURIOUSITY</PrereqTech>
       <MaxStartEra>ERA_LOWER_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -637,7 +637,7 @@
       <Civilopedia>TXT_KEY_WONDER_TERRA_AMATA_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_TERRA_AMATA_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_TERRA_AMATA_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_SIMPLE_TOOLS</PrereqTech>
       <MaxStartEra>ERA_LOWER_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -704,7 +704,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_COMPLEX_TOOLS</PrereqTech>
       <MaxStartEra>ERA_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -733,7 +733,7 @@
       <Civilopedia>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_BHIMBETKA_ROCK_SHELTERS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_CONTAINERS</PrereqTech>
       <MaxStartEra>ERA_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -776,7 +776,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -806,7 +806,7 @@
       <Civilopedia>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GESHER_BENOT_YA_AQOV_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_FIRE</PrereqTech>
       <MaxStartEra>ERA_PALEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -838,7 +838,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -860,7 +860,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -882,7 +882,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -904,7 +904,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -926,7 +926,7 @@
       <Civilopedia>TXT_KEY_WONDER_SCHONINGEN_SPEARS_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SCHONINGEN_SPEARS_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SCHONINGEN_SPEARS_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_BIPEDAL_ADAPTION</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -958,7 +958,7 @@
       <Civilopedia>TXT_KEY_WONDER_SIBUDU_CAVE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_SIBUDU_CAVE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_SIBUDU_CAVE_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_SOCIAL_STRUCTURE</PrereqTech>
       <MaxStartEra>ERA_CLASSICAL</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -1024,7 +1024,7 @@
       <Civilopedia>TXT_KEY_WONDER_GOBEKLI_TEPE_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GOBEKLI_TEPE_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GOBEKLI_TEPE_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_SYMBOLIC_COMMUNICATION</PrereqTech>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -1054,7 +1054,7 @@
       <Civilopedia>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_GULF_OF_KHAMBHAT_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_PLANNING</PrereqTech>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -1095,7 +1095,7 @@
       <Civilopedia>TXT_KEY_WONDER_MAS_D_AZIL_PEDIA</Civilopedia>
       <Quote>TXT_KEY_WONDER_MAS_D_AZIL_QUOTE</Quote>
       <Help>TXT_KEY_WONDER_MAS_D_AZIL_HELP</Help>
-      <Cost>100</Cost>
+      <Cost>999</Cost>
       <PrereqTech>TECH_COLLABORATIVE_HUNTING</PrereqTech>
       <MaxStartEra>ERA_NEOLITHIC</MaxStartEra>
       <NukeImmune>true</NukeImmune>
@@ -2184,6 +2184,15 @@
     <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_DESC">
       <Text>First Chopper</Text>
     </Row>    
+    <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_HELP">
+      <Text>The [COLOR_MAGENTA]First Chopper[ENDCOLOR], a crude stone copping tool, launches your civilization into a new era production ... and warfare.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_QUOTE">
+      <Text>[Placeholder] Name Quote</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_FIRST_CHOPPER_PEDIA">
+      <Text>[Placeholder] Name Pedia</Text>
+    </Row>
 
 
     <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_TITLE">
@@ -2192,6 +2201,15 @@
     <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_DESC">
       <Text>Olduvai Gorge Tools</Text>
     </Row>    
+    <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_HELP">
+      <Text>A magnificent discovery by your small thriving band, the Olduvai Gorge Tools gives your the power to quickly advance and improve.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_QUOTE">
+      <Text>[Placeholder] Olduvai Gorge Tools Quote</Text>
+    </Row>
+    <Row Tag="TXT_KEY_WONDER_OLDUVAI_GORGE_PEDIA">
+      <Text>[Placeholder] Olduvai Gorge Tools Pedia</Text>
+    </Row>
 
 
     <Row Tag="TXT_KEY_WONDER_TWIGGY_TITLE">

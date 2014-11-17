@@ -2,9 +2,22 @@ todo
 ------------------------------------------------------------------------------
 
 - bugs
+  - explorer unit has rifle and comes too early
+  - promotions being handed out all over the place
+  - some people start with warrior unit
+  - From the " Prehistoric Era (BNW) (v 13).modinfo " you fix the bug with Shoshone Pathfinder promtion - "Native Tongue" not working. This way you can also use the Additional ruin rewards mod.
+  - Heal rate +1 per turn
+  - Found an AI cheat in Prehistory. My big, bad Caveman did a Barb encampment and captured an English Worker while my Civ was still restricted to Laborers. Could it be [??] that the Barb capture mechanics convert captured Laborers to Workers??
+  - You might want to look into the old Mongol Unit from Civ IV Warlords. It was a roving camp which would randomly spawn units. The type of unit would depend on what terrain the camp was in at the beginning of the turn. This would allow nomadic Civs to create units.
+  - limit goody popup population on early game -- maybe on turn lua ceck population to ensure levels
+  - wanderer has too much visibility (3)
+
+- turns 
+  - see Korea DLC05 ChangeTurnIncrement.xml
 
 - early game 
   - advisers need to stop talking about cities
+  - remove city owned hexes
 
 - gameplay
   - option: end game all units killed (return to player option)
@@ -27,6 +40,8 @@ todo
         - neanderthal
         - harbinger
         - barb alpha
+  - welcome to lower paleolithic splash screen
+
 
 - era
   - just go ahead and separate middle and upper paleo and just let one era have one dummy tech    
